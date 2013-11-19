@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sergio Acosta - Simian</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css' />
+  <style>
+	  #container {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    width: 320px;
+	    height: 320px;
+	    margin-top: -160px; /* Half the height */
+	    margin-left: -160px; /* Half the width */
+	    overflow: hidden;
+	    text-align: center;
+	  }
+	  #message {
+	    font-family: 'PT Sans', sans-serif;
+	    font-size: 1.85em;
+	    color: #660000;
+	    margin: 0;
+	    opacity: 0;
+
+	    -webkit-transition: all 0.3s ease-out;
+	       -moz-transition: all 0.3s ease-out;
+	         -o-transition: all 0.3s ease-out;
+	            transition: all 0.3s ease-out;
+	  }
+
+	  #meanwhile {
+	    font-family: 'PT Sans', sans-serif;
+	    font-size: 1em;
+	    color: #660000;
+	    margin: 1em auto 0;
+	    opacity: 0;
+
+	    -webkit-transition: all 0.3s ease-out;
+	       -moz-transition: all 0.3s ease-out;
+	         -o-transition: all 0.3s ease-out;
+	            transition: all 0.3s ease-out;
+	  }
+
+	  .active {
+	    opacity: 1 !important;
+	  }
+
+	  a {
+	    color: #CC2F33;
+	    text-decoration: none;
+	  }
+	  a:hover {
+	    text-decoration: underline;
+	  }
+  </style>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160" />
+  <meta name="msapplication-TileColor" content="#b91d47" />
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
+</head>
+<body>
+	<div id="container">
+	  <h2 id="message">
+	    Sorry, we're redesigning
+	  </h2>
+	  <p id="meanwhile">
+	    Meanwhile, you can ping me <a href="mailto:sergio@simian.co">sergio@simian.co</a>
+	  </p>
+	</div>
+	<script>
+    window.onload = function () {
+      setTimeout(function(){ document.getElementById('message').setAttribute('class', 'active'); }, 1000);
+      setTimeout(function(){ document.getElementById('meanwhile').setAttribute('class', 'active'); }, 1500);
+    }
+  </script>
+</body>
+</html>
