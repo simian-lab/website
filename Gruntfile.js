@@ -60,7 +60,11 @@ module.exports = function(grunt) {
         watchTask: true
       },
       bsFiles: {
-        src: 'styles/*.css'
+        src: [
+          '<%= config.app %>/styles/*.css',
+          '<%= config.app %>/**/*.html',
+          '<%= config.app %>/**/*.js'
+        ]
       }
     },
     connect: {
