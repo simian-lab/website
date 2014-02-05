@@ -5,24 +5,36 @@
 <!--[if gt IE 8]><!--> <html class="" ng-app="simian"> <!--<![endif]-->
 <head>
 	<title>Simian</title>
-
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <!-- build:css({.tmp,app}) /styles/main.css -->
-  <link rel="stylesheet" href="/styles/styles.css">
-  <!-- endbuild -->
-</head>
-<body>
-
-  <div ui-view></div>
-
   <script src="/components/angular/angular.js"></script>
+  <!--embed de angular-translate-->
+ 
   <!-- build:js scripts/app.js-->
   <script src="app.js"></script>
   <!-- endbuild -->
 
   <!-- build:js scripts/modules.js-->
   <script src="/components/angular-ui-router/release/angular-ui-router.js"></script>
+   <script src="components/angular-translate/angular-translate.js"></script>
+   <script src="components/angular-translate/angular-translate.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- build:css({.tmp,app}) /styles/main.css -->
+  <link rel="stylesheet" href="/styles/styles.css">
+  <!-- endbuild -->
+</head>
+<body> 
+  <div ng-controller="Ctrl">
+    <h3>{{ 'HEADLINE' | translate }}</h3>
+    <p>{{ 'PARAGRAPH' | translate }}</p>
+    <p translate="VARIABLE_REPLACEMENT" translate-values="{ name: 'Pablo'}"></p>
+    <button ng-click="changeLanguage('es')" translate="Español"></button>
+    <button ng-click="changeLanguage('en')" translate="English"></button>
+  </div>
+
+  <div ui-view></div>
+
+  
+  
   <!-- endbuild -->
 </body>
 </html>
