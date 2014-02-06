@@ -6,15 +6,18 @@
   "license": "MIT",
   "private": true,
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+  "**/.*",
+  "node_modules",
+  "bower_components",
+  "test",
+  "tests"
   ],
   "dependencies": {
     "angular": "~1.2.9",
     "angular-ui-router": "0.2.8-bowratic-tedium",
     "angular-translate": "~1.1.1"
+  }
+  "resolutions": {
+    "angular": "~1.2.9"
   }
 }
