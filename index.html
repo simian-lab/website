@@ -5,9 +5,14 @@
 <!--[if gt IE 8]><!--> <html class="" ng-app="simian"> <!--<![endif]-->
 <head>
 	<title>Simian</title>
+  <style>
+    h1 {text-align:center;}
+    h2 {text-align:left;}
+    p.derecho {text-align:right;}
+    p.izquierdo {text-align:justify;}
+  </style>
   <script src="/components/angular/angular.js"></script>
-  <!--embed de angular-translate-->
- 
+  <!--embed de angular-translate--> 
   <!-- build:js scripts/app.js-->
   <script src="app.js"></script>
   <!-- endbuild -->
@@ -24,9 +29,29 @@
 </head>
 <body> 
   <div ng-controller="Ctrl">
-    <h3>{{ 'HEADLINE' | translate }}</h3>
-    <p>{{ 'PARAGRAPH' | translate }}</p>
-    <p translate="VARIABLE_REPLACEMENT" translate-values="{ name: 'Pablo'}"></p>
+    <h1>{{ 'HEADLINE_MAIN' | translate }}</h1>
+  <img src="http://ballingonabudget.org/wp-content/uploads/2013/06/Thinking_Chimp.jpg">
+  <h2>{{ 'HEADLINE_ONE' | translate }}</h2>  
+  <p class="izquierdo">{{ 'PARAGRAPH' | translate }}</p>
+  <img src="http://i01.i.aliimg.com/wsphoto/v0/336600131/30pcs-lot-100cm-Super-Cartoon-Monkey-Automatic-Retractable-Tape-Measure-Mascot-Keychains.jpg_250x250.jpg">
+  <h2>{{ 'HEADLINE_TWO' | translate }}</h2>
+  <p class="derecho">{{ 'PARAGRAPH' | translate }}</p>
+  <img src="http://codedmonkey.files.wordpress.com/2011/01/code_monkey_desktop_by_ispaz247.jpg">
+  <h2>{{ 'HEADLINE_THREE' | translate }}</h2>
+  <p class="derecho">{{ 'PARAGRAPH' | translate }}</p>
+  <img src="http://i.istockimg.com/file_thumbview_approve/19779171/2/stock-illustration-19779171-monkey-mechanic.jpg">
+  <h2>{{ 'HEADLINE_FOUR' | translate }}</h2>
+  <p class="izquierdo">{{ 'PARAGRAPH' | translate }}</p>
+  <h1>{{ 'HEADLINE_FIVE' | translate }}</h1>
+  <h1>{{ 'HEADLINE_SIX' | translate }}</h1>
+  <p class="izquierdo">Go to Heaven for the climate, Hell for the company. -- Mark Twain</p>
+  <p class="Derecho">Get your facts first, then you can distort them as you please. -- Mark Twain</p>
+  <h1>{{ 'HEADLINE_SEVEN' | translate }}</h1>
+  <h1>{{ 'HEADLINE_EIGHT' | translate }}</h1>
+  <p class="izquierdo">Sergio Acosta</p>
+  <p class="Derecho">Nicol&aacute;s Saiz</p>
+  <p class="izquierdo">Iv&aacute;n V&aacute;squez</p>
+  <p class="Derecho">Pablo Garc&iacute;a</p>
     <button ng-click="changeLanguage('es')" translate="Español"></button>
     <button ng-click="changeLanguage('en')" translate="English"></button>
   </div>
