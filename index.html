@@ -5,18 +5,9 @@
 <!--[if gt IE 8]><!--> <html class="" ng-app="simian"> <!--<![endif]-->
 <head>
 	<title>Simian</title>
-  <style>
-    h1 {text-align:center;}
-    h2 {text-align:left;}
-    p.derecho {text-align:right;}
-    p.izquierdo {text-align:justify;}
-  </style>
   <script src="/components/angular/angular.js"></script>
-  <!--embed de angular-translate--> 
   <!-- build:js scripts/app.js-->
   <script src="app.js"></script>
-  <!-- endbuild -->
-
   <!-- build:js scripts/modules.js-->
   <script src="/components/angular-ui-router/release/angular-ui-router.js"></script>
    <script src="components/angular-translate/angular-translate.js"></script>
@@ -29,37 +20,66 @@
 </head>
 <body> 
   <div ng-controller="Ctrl">
-    <h1>{{ 'HEADLINE_MAIN' | translate }}</h1>
-  <img src="http://ballingonabudget.org/wp-content/uploads/2013/06/Thinking_Chimp.jpg">
-  <h2>{{ 'HEADLINE_ONE' | translate }}</h2>  
-  <p class="izquierdo">{{ 'PARAGRAPH' | translate }}</p>
-  <img src="http://i01.i.aliimg.com/wsphoto/v0/336600131/30pcs-lot-100cm-Super-Cartoon-Monkey-Automatic-Retractable-Tape-Measure-Mascot-Keychains.jpg_250x250.jpg">
-  <h2>{{ 'HEADLINE_TWO' | translate }}</h2>
-  <p class="derecho">{{ 'PARAGRAPH' | translate }}</p>
-  <img src="http://codedmonkey.files.wordpress.com/2011/01/code_monkey_desktop_by_ispaz247.jpg">
-  <h2>{{ 'HEADLINE_THREE' | translate }}</h2>
-  <p class="derecho">{{ 'PARAGRAPH' | translate }}</p>
-  <img src="http://i.istockimg.com/file_thumbview_approve/19779171/2/stock-illustration-19779171-monkey-mechanic.jpg">
-  <h2>{{ 'HEADLINE_FOUR' | translate }}</h2>
-  <p class="izquierdo">{{ 'PARAGRAPH' | translate }}</p>
-  <h1>{{ 'HEADLINE_FIVE' | translate }}</h1>
-  <h1>{{ 'HEADLINE_SIX' | translate }}</h1>
-  <p class="izquierdo">Go to Heaven for the climate, Hell for the company. -- Mark Twain</p>
-  <p class="Derecho">Get your facts first, then you can distort them as you please. -- Mark Twain</p>
-  <h1>{{ 'HEADLINE_SEVEN' | translate }}</h1>
-  <h1>{{ 'HEADLINE_EIGHT' | translate }}</h1>
-  <p class="izquierdo">Sergio Acosta</p>
-  <p class="Derecho">Nicol&aacute;s Saiz</p>
-  <p class="izquierdo">Iv&aacute;n V&aacute;squez</p>
-  <p class="Derecho">Pablo Garc&iacute;a</p>
+    <nav>
+      <a href="#Vision">{{ 'HEADLINE_ONE' | translate }}</a> |
+      <a href="#Analysis">{{ 'HEADLINE_TWO' | translate }}</a> |
+      <a href="#Develop">{{ 'HEADLINE_THREE' | translate }}</a> |
+      <a href="#Maint">{{ 'HEADLINE_FOUR' | translate }}</a> |
+      <a href="#Work">{{ 'HEADLINE_FIVE' | translate }}</a> |
+      <a href="#Clients">{{ 'HEADLINE_SIX' | translate }}</a> |
+      <a href="#Process">{{ 'HEADLINE_SEVEN' | translate }}</a> |
+      <a href="#Team">{{ 'HEADLINE_EIGHT' | translate }}</a> 
+    </nav>
+    <header>
+        <h1>{{ 'HEADLINE_MAIN' | translate }}</h1>
+    </header>
+    <section>            
+      <figure>
+        <img src="http://ballingonabudget.org/wp-content/uploads/2013/06/Thinking_Chimp.jpg">
+      </figure>
+      <h2 id="Vision">{{ 'HEADLINE_ONE' | translate }}</h2>
+      <p>{{ 'PARAGRAPH' | translate }}</p>
+      <figure>
+        <img src="http://i01.i.aliimg.com/wsphoto/v0/336600131/30pcs-lot-100cm-Super-Cartoon-Monkey-Automatic-Retractable-Tape-Measure-Mascot-Keychains.jpg_250x250.jpg">
+      </figure>
+      <h2 id="Analysis">{{ 'HEADLINE_TWO' | translate }}</h2>
+      <p>{{ 'PARAGRAPH' | translate }}</p>
+      <figure>
+        <img src="http://codedmonkey.files.wordpress.com/2011/01/code_monkey_desktop_by_ispaz247.jpg">
+      </figure>
+      <h2 id="Develop">{{ 'HEADLINE_THREE' | translate }}</h2>
+      <p>{{ 'PARAGRAPH' | translate }}</p>
+      <figure>
+        <img src="http://i.istockimg.com/file_thumbview_approve/19779171/2/stock-illustration-19779171-monkey-mechanic.jpg">
+      </figure>
+      <h2 id="Maint">{{ 'HEADLINE_FOUR' | translate }}</h2>
+      <p>{{ 'PARAGRAPH' | translate }}</p>
+    </section>  
+    <section>
+      <h1 id="Work">{{ 'HEADLINE_FIVE' | translate }}</h1>
+    </section>
+    <section>
+      <h1 id="Clients">{{ 'HEADLINE_SIX' | translate }}</h1>
+      <p>Go to Heaven for the climate, Hell for the company. -- Mark Twain</p>
+      <p>Get your facts first, then you can distort them as you please. -- Mark Twain</p>    
+    </section>
+    <section>
+      <h1 id="Process">{{ 'HEADLINE_SEVEN' | translate }}</h1>
+      <figure>
+        <img src="http://www.kitchenmonki.com/images/monkey_mixing_bowl_2.gif">
+      </figure>
+    </section>
+    <section>
+      <h1 id="Team">{{ 'HEADLINE_EIGHT' | translate }}</h1>
+      <p>Sergio Acosta</p>
+      <p>Nicol&aacute;s Saiz</p>
+      <p>Iv&aacute;n V&aacute;squez</p>
+      <p>Pablo Garc&iacute;a</p>
+    </section>  
     <button ng-click="changeLanguage('es')" translate="Español"></button>
     <button ng-click="changeLanguage('en')" translate="English"></button>
-  </div>
-
-  <div ui-view></div>
-
-  
-  
+  </div>  
+  <div ui-view></div>   
   <!-- endbuild -->
 </body>
 </html>
