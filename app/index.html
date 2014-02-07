@@ -5,18 +5,32 @@
 <!--[if gt IE 8]><!--> <html class="" ng-app="simian"> <!--<![endif]-->
 <head>
 	<title>Simian</title>
-  <script src="/components/angular/angular.js"></script>
-  <!-- build:js scripts/app.js-->
-  <script src="app.js"></script>
-  <!-- build:js scripts/modules.js-->
-  <script src="/components/angular-ui-router/release/angular-ui-router.js"></script>
-   <script src="components/angular-translate/angular-translate.js"></script>
-   <script src="components/angular-translate/angular-translate.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="Refresh" content="30">
+  <meta name="keywords" content="Simian, web develop, tecnology"/>
+  <meta name="author" content="Simian">
+  <meta name="description" content="Simian, we develop tecnology for human beings" />
+  <meta name="robots" content="index, follow">
+  <meta name="fragment" content="!" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Simian Tecnology for human beings"/>
+  <meta property="og:url" content="http://www.simian.co/home.html"/>
+  <meta property="og:site_name" content="Simian Site"/>
+  <meta property="og:type" content="website"/>
+  <!-- Twitter data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@simianlab">
+  <meta name="twitter:title" content="Simian Tecnology for human beings">
+  <meta name="twitter:description" content="Simian, we develop tecnology for human beings">
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="The Name or Title Here">
+  <meta itemprop="description" content="This is the page description">
+  <!-- Google Authorship and Publisher Markup -->
+  <link rel="author" href="https://plus.google.com/u/0/+SimianCo/posts"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <!-- build:css({.tmp,app}) /styles/main.css -->
   <link rel="stylesheet" href="/styles/styles.css">
-  <!-- endbuild -->
 </head>
 <body> 
   <div ng-controller="Ctrl">
@@ -79,7 +93,16 @@
     <button ng-click="changeLanguage('es')" translate="Español"></button>
     <button ng-click="changeLanguage('en')" translate="English"></button>
   </div>  
-  <div ui-view></div>   
-  <!-- endbuild -->
+  <div ui-view>
+    <i>Some content will load here!</i>
+  </div>
+  <script src="/components/angular/angular.js"></script>
+  <!-- build:js scripts/app.js-->
+  <script src="app.js"></script>
+  <!-- build:js scripts/modules.js-->
+  
+   <script src="components/angular-translate/angular-translate.js"></script>
+   <script src="components/angular-translate/angular-translate.min.js"></script>
+  <script src="/components/angular-ui-router/release/angular-ui-router.js"></script> 
 </body>
 </html>
