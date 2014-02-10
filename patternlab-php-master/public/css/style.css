@@ -276,7 +276,7 @@ figcaption {
 
 /*------------------------------------*\
     $FORMS
-\*------------------------------------*/
+    \*------------------------------------*/
 form ol, form ul {
   list-style: none;
   margin-left: 0; }
@@ -288,7 +288,8 @@ fieldset {
 
 label {
   display: block;
-  padding-bottom: 0.5em; }
+  padding-bottom: 0.5em;
+  color: #239392; }
 
 button, input, select, textarea {
   font-family: inherit;
@@ -297,8 +298,15 @@ button, input, select, textarea {
 
 input, textarea {
   width: 100%;
-  border: 1px solid #333333;
-  padding: 0.5em 0.65rem; }
+  border: 1px solid #999;
+  padding: 0.5em 0.65rem;
+  border-radius: 5px;
+  color: #666;
+  font-weight: 300; }
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #96d60b; }
 
 input[type=text], input[type=search], input[type=url], input[type=number], textarea {
   -webkit-appearance: none; }
@@ -349,7 +357,7 @@ input[type="search"]::-webkit-search-decoration {
 
 /*------------------------------------*\
     $SPECIFIC FORMS
-\*------------------------------------*/
+    \*------------------------------------*/
 /* Search Form */
 .search-field {
   padding-right: 3em; }

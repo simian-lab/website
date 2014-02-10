@@ -1,60 +1,69 @@
 /*------------------------------------*\
     $FORMS
-\*------------------------------------*/
-form ol, form ul {
-	list-style: none;
-	margin-left: 0;
-}
+    \*------------------------------------*/
+    form ol, form ul {
+    	list-style: none;
+    	margin-left: 0;
+    }
 
-fieldset {
-	border: 0;
-	padding: 0;
-	margin: 0;
-}
+    fieldset {
+    	border: 0;
+    	padding: 0;
+    	margin: 0;
+    }
 
-label {
-	display: block;
-	padding-bottom: $space-half;
-}
+    label {
+    	display: block;
+    	padding-bottom: 0.5em;
+    	color: $blue;
+    }
 
-button, input, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
-    margin: 0 1px 0;
-}
+    button, input, select, textarea {
+    	font-family: inherit;
+    	font-size: 100%;
+    	margin: 0 1px 0;
+    }
 
-input, textarea {
-	width: 100%;
-	border: 1px solid $gray;
-	padding: $pad-half 0.65rem;
-}
+    input, textarea {
+    	width: 100%;
+    	border: 1px solid #999;
+    	padding: 0.5em 0.65rem;
+    	border-radius: 5px;
+    	color: #666;
+    	font-weight: 300;
+    }
 
-input[type=text], input[type=search], input[type=url], input[type=number], textarea {
-	-webkit-appearance: none;
-}
+    input:focus, textarea:focus, select:focus {
+    	outline: none;
+    	box-shadow: 0 0 5px #96d60b;
+    }
 
-button, input[type="submit"] {
-	padding: $pad-half;
-	background: $gray-dark;
-	border: 1px solid $gray;
-	cursor: pointer;
-}
+    input[type=text], input[type=search], input[type=url], input[type=number], textarea {
+    	-webkit-appearance: none;
+    }
 
-input[type="checkbox"],
-input[type="radio"] {
-    width: auto;
-    margin-right: 0.3em;
-}
+    button, input[type="submit"] {
+    	padding: $pad-half;
+    	background: $gray-dark;
+    	border: 1px solid $gray;
+    	cursor: pointer;
+    }
 
-input[type="search"] {
-    -webkit-appearance: none;
-    border-radius: 0;
-}
+    input[type="checkbox"],
+    input[type="radio"] {
+    	width: auto;
+    	margin-right: 0.3em;
+    }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
+    input[type="search"] {
+    	-webkit-appearance: none;
+    	border-radius: 0;
+    }
+
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+    	-webkit-appearance: none;
+    }
 
 //Form Field Container
 .field-container {
@@ -96,16 +105,16 @@ input[type="search"]::-webkit-search-decoration {
 
 /*------------------------------------*\
     $SPECIFIC FORMS
-\*------------------------------------*/
+    \*------------------------------------*/
 
-/* Search Form */
-.search-field {
-	padding-right: 3em;
-}
-.inline-form .search-submit {
-	background: none;
-	padding: 0.78em 1em;
-	border: 0;
-	border-left: 1px solid $gray;
-	color: $gray;
-}
+    /* Search Form */
+    .search-field {
+    	padding-right: 3em;
+    }
+    .inline-form .search-submit {
+    	background: none;
+    	padding: 0.78em 1em;
+    	border: 0;
+    	border-left: 1px solid $gray;
+    	color: $gray;
+    }
