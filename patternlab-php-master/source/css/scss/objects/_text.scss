@@ -1,0 +1,54 @@
+//Intro text
+.intro {
+	font-family: "Georgia W01 Regular";
+    margin-bottom: 27px;
+    font-size: 26px;
+    border-top: 1px;
+    border-bottom: 1px;
+    padding: 30px;
+    text-align: center;
+    border-top-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    margin-top: 27px;
+    line-height: 39px;
+    border-color: rgba(150,214,11,1);
+    color: rgba(79,65,56,1);
+}
+
+//Pullquote
+.pullquote {
+	font-family: $font-secondary;
+	font-size: $font-size-large;
+}
+
+//Caption 
+.caption {
+	font-style: italic;
+}
+
+//Passages of text
+.text {
+	a {
+		text-decoration: none;
+	}
+
+	ul {
+		list-style: disc;
+		margin: 0 0 $space 1.2em;
+
+		ul {
+			margin-bottom: 0;
+		}
+	}
+
+	ol {
+		list-style: decimal;
+		margin: 0 0 $space 1.5em;
+
+		ol {
+			margin-bottom: 0;
+		}
+	}
+}
