@@ -1,7 +1,11 @@
-ol, ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+li {
+	font-family: Georgia, serif;
+}
+
+ul > li:before {
+	content: '\00bb';
+	color: $blue;
+	margin-right: 0.25em;
 }
 
 /* Definition Lists */
