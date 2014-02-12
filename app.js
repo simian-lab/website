@@ -68,7 +68,18 @@ angular.module('simian', ['ui.router', 'pascalprecht.translate'])
     templateUrl: '/topbar/topbar.html'
   }
 })
-
+.controller('navigationController', ['$scope', '$location', function ($scope, $location) {
+  $scope.navClass = function (page) {
+    var currentRoute = $location.path().substring(1) || 'home';
+    return page === currentRoute ? 'active' : '';
+  };        
+}])
+.directive('navigation', function(){
+  return {
+    restrict: 'A',
+    templateUrl: '/navigation/navigation.html'
+  }
+})
 .controller('Ctrl', ['$translate', '$scope', function ($translate, $scope) {
 
   $scope.changeLanguage = function (langKey) {
