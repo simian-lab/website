@@ -23,11 +23,11 @@ angular.module('simian', ['ui.router', 'pascalprecht.translate'])
 
   var translationsES = {
     HEADLINE_MAIN: 'Construimos tecnología para seres humanos',
-    PARAGRAPH: 'Normally, both your asses would be dead as fucking fried chicken,'
-    + ' but you happen to pull this shit while Im in a transitional period so I dont'
-    + ' wanna kill you, I wanna help you. But I cant give you this case, it dont'
-    + ' belong to me. Besides, Ive already been through too much shit this morning'
-    + ' over this case to hand it over to your dumb ass.',
+    PARAGRAPH: 'Normally, both your asses would be dead as fucking fried chicken,' +
+    ' but you happen to pull this shit while Im in a transitional period so I dont' +
+    ' wanna kill you, I wanna help you. But I cant give you this case, it dont' +
+    ' belong to me. Besides, Ive already been through too much shit this morning' +
+    ' over this case to hand it over to your dumb ass.',
     VARIABLE_REPLACEMENT: 'Hola, {{name}}',
     HEADLINE_ONE: 'Visión',
     HEADLINE_TWO: 'Análisis',
@@ -59,20 +59,20 @@ angular.module('simian', ['ui.router', 'pascalprecht.translate'])
   $translateProvider.translations('en', translationsEN);
   $translateProvider.translations('es', translationsES);
   $translateProvider.preferredLanguage('en');
-  $translateProvider.fallbackLanguage('en');;
+  $translateProvider.fallbackLanguage('en');
 })
 
 // Do we need to move this directive to another place?
 .directive('topbar', function() {
   return {
     templateUrl: '/topbar/topbar.html'
-  }
+  };
 })
 
 .controller('Ctrl', ['$translate', '$scope', function ($translate, $scope) {
 
   $scope.changeLanguage = function (langKey) {
     $translate.uses(langKey);
-    $translate()
+    $translate();
   };
 }]);

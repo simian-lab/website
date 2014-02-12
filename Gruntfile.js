@@ -154,7 +154,8 @@ module.exports = function(grunt) {
       options: {
         jshintrc: '.jshintrc',
         ignores: [
-          '<%= config.app %>/components/**/*.js'
+          '<%= config.app %>/components/**/*.js',
+          'Gruntfile.js'
         ],
       },
       all: [
@@ -170,7 +171,9 @@ module.exports = function(grunt) {
         'compass'
       ],
       dist: [
-        'compass:dist'
+        'compass:dist',
+        'imagemin',
+        'htmlmin'
       ]
     },
     ngmin: {
@@ -181,6 +184,62 @@ module.exports = function(grunt) {
           src: '*.js',
           dest: '<%= config.dist %>/scripts'
         }]
+      }
+    },
+    cssmin: {
+      dist: {
+       files: [{
+          expand: true,
+          cwd: '.tmp/styles/',
+          src: ['**/*.css'],
+          dest: '<%= config.dist %>/styles/',
+          ext: '.css'
+        }]
+      }
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          /*removeCommentsFromCDATA: true,
+          // https://github.com/yeoman/grunt-usemin/issues/44
+          //collapseWhitespace: true,
+          collapseBooleanAttributes: true,
+          removeAttributeQuotes: true,
+          removeRedundantAttributes: true,
+          useShortDoctype: true,
+          removeEmptyAttributes: true,
+          removeOptionalTags: true*/
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>',
+          src: ['index.html'],
+          dest: '<%= config.dist %>'
+        }]
+      }
+    },
+    imagemin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>/assets/img',
+          src: [
+            '<%= config.app %>/images/*.{png,jpg,jpeg}'
+          ],
+          dest: '<%= config.dist %>/assets/img'
+        }]
+      }
+    },
+    uglify: {
+      options: {
+        mangle: false
+      },
+      dist: {
+        files: {
+          '<%= config.dist %>/scripts/scripts.js': [
+            '<%= config.dist %>/scripts/scripts.js'
+          ]
+        }
       }
     }
   });
@@ -199,9 +258,14 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('build', [
+    'clean:dist',
     'useminPrepare',
     'concurrent:dist',
+    'concat',
     'ngmin',
+    'cssmin',
+    'uglify',
+    'rev',
     'usemin'
   ]);
 };
