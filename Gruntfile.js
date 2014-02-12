@@ -125,6 +125,35 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      dist: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= config.app %>',
+          dest: '<%= config.dist %>',
+          src: [
+            '*.{ico,png,txt,xml}',
+            'components/**/*',
+            'images/{,*/}*.{gif,webp,svg}',
+            '/fonts/*'
+          ]
+        }, {
+          expand: true,
+          cwd: '.tmp/images',
+          dest: '<%= config.dist %>/images',
+          src: [
+            'generated/*'
+          ]
+        }]
+      },
+      update: {
+        expand: true,
+        cwd: '<%= config.dist %>/scripts/',
+        src: '*',
+        dest: '<%= config.dist %>/scripts',
+      }
+    },
     rev: {
       options: {
         encoding: 'utf8',
@@ -262,6 +291,7 @@ module.exports = function(grunt) {
     'useminPrepare',
     'concurrent:dist',
     'concat',
+    'copy',
     'ngmin',
     'cssmin',
     'uglify',
