@@ -7,18 +7,18 @@ angular.module('simian', ['ui.router', 'pascalprecht.translate'])
   $locationProvider.hashPrefix('!');
 
   $stateProvider
-    .state('home', {
-      url: '/',
-      templateUrl: '/home/home.html'
-    })
-    .state('enter', {
-      url: '/enter',
-      templateUrl: '/enter/enter.html'
-    })
-    .state('kienyke', {
-      url: '/kienyke',
-      templateUrl: '/kienyke/kienyke.html'
-    });
+  .state('home', {
+    url: '/',
+    templateUrl: '/home/home.html'
+  })
+  .state('enter', {
+    url: '/enter',
+    templateUrl: '/enter/enter.html'
+  })
+  .state('kienyke', {
+    url: '/kienyke',
+    templateUrl: '/kienyke/kienyke.html'
+  });
 
 
   var translationsES = {
@@ -62,24 +62,13 @@ angular.module('simian', ['ui.router', 'pascalprecht.translate'])
   $translateProvider.fallbackLanguage('en');;
 })
 
+// Do we need to move this directive to another place?
 .directive('topbar', function() {
   return {
-    restrict: 'A',
     templateUrl: '/topbar/topbar.html'
   }
 })
-.controller('navigationController', ['$scope', '$location', function ($scope, $location) {
-  $scope.navClass = function (page) {
-    var currentRoute = $location.path().substring(1) || 'home';
-    return page === currentRoute ? 'active' : '';
-  };        
-}])
-.directive('navigation', function(){
-  return {
-    restrict: 'A',
-    templateUrl: '/navigation/navigation.html'
-  }
-})
+
 .controller('Ctrl', ['$translate', '$scope', function ($translate, $scope) {
 
   $scope.changeLanguage = function (langKey) {
