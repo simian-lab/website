@@ -68,7 +68,11 @@ angular.module('simian', ['ui.router', 'pascalprecht.translate'])
     templateUrl: '/topbar/topbar.html'
   };
 })
-
+.directive('footer', function(){
+  return {
+    templateUrl: '/footer/footer.html'
+  }
+})
 .controller('Ctrl', ['$translate', '$scope', function ($translate, $scope) {
 
   $scope.changeLanguage = function (langKey) {
