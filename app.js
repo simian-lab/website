@@ -62,6 +62,13 @@ angular.module('simian', ['ui.router', 'pascalprecht.translate'])
   $translateProvider.fallbackLanguage('en');;
 })
 
+.directive('topbar', function() {
+  return {
+    restrict: 'A',
+    templateUrl: '/topbar/topbar.html'
+  }
+})
+
 .controller('Ctrl', ['$translate', '$scope', function ($translate, $scope) {
 
   $scope.changeLanguage = function (langKey) {
