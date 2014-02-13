@@ -1,0 +1,24 @@
+.contact-form {
+	padding: 2%;
+	width: 50%;
+
+	input, textarea {
+		margin-bottom: 10px;
+	}
+
+	.btn {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100px;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.contact-form {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+}

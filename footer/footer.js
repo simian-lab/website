@@ -2,7 +2,7 @@
 
 angular.module('simian.footer', [])
 
-.controller('footerrController', function() {
+.controller('footerController', function() {
   // TODO: something
 })
 

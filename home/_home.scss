@@ -1,0 +1,150 @@
+h1 {
+	margin-bottom: 3%;
+}
+
+header {
+	padding-bottom: 3%;
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	a {
+		display: block !important;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100px;
+	}
+}
+
+.main-row {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 62.5rem;
+	padding: 1.5em 0;
+	width: 100%;
+}
+
+// The styles for the 'us' section.
+.us {
+
+	div {
+		background-repeat: no-repeat
+	}
+
+	.envision {
+		background-image:url('http://ballingonabudget.org/wp-content/uploads/2013/06/Thinking_Chimp.jpg');
+	}
+
+	.analysis {
+		background-image:url('http://i01.i.aliimg.com/wsphoto/v0/336600131/30pcs-lot-100cm-Super-Cartoon-Monkey-Automatic-Retractable-Tape-Measure-Mascot-Keychains.jpg_250x250.jpg');
+	}
+
+	.design {
+		background-image:url('http://i01.i.aliimg.com/wsphoto/v0/336600131/30pcs-lot-100cm-Super-Cartoon-Monkey-Automatic-Retractable-Tape-Measure-Mascot-Keychains.jpg_250x250.jpg');
+	}
+
+	.development {
+		background-image:url('http://codedmonkey.files.wordpress.com/2011/01/code_monkey_desktop_by_ispaz247.jpg');
+		background-size: 35%;
+	}
+
+	.mantain {
+		background-image:url('http://i.istockimg.com/file_thumbview_approve/19779171/2/stock-illustration-19779171-monkey-mechanic.jpg');
+	}
+
+	.description {
+		padding-left: 2%;
+		padding-right: 2%;
+		width: 60%;
+
+		h2 {
+			margin: .67em 0;
+		}
+	}
+
+	.right {
+		overflow: hidden;
+		figure {
+			float: left;
+		}
+		.description {
+			float: right;
+		}
+	}
+
+	.left {
+		background-position: 90%;
+		overflow: hidden;
+		figure {
+			float: right;
+		}
+		.description {
+			float: left;
+		}
+	}
+}
+
+// The styles for the 'process' section.
+.process {
+	img {
+		width: 100%;
+	}
+}
+
+// The styles for the 'team' section.
+.team {
+	overflow: hidden;
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.left, .right {
+		padding: 0;
+		width: 50%;
+	}
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+
+	header {
+		a {
+			margin-top: 10%;
+		}
+	}
+	
+	h1 {
+		font-size: 2em;
+		line-height: 30px;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size: 0.9em;
+		line-height: 140%
+	}
+
+	.description {
+		width: 100%;
+	}
+}
