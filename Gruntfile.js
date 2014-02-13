@@ -136,7 +136,7 @@ module.exports = function(grunt) {
             '*.{ico,png,txt,xml}',
             'components/**/*',
             'images/{,*/}*.{gif,webp,svg}',
-            '/fonts/*'
+            'fonts/*'
           ]
         }, {
           expand: true,
