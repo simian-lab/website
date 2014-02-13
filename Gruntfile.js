@@ -125,6 +125,35 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      dist: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= config.app %>',
+          dest: '<%= config.dist %>',
+          src: [
+            '*.{ico,png,txt,xml}',
+            'components/**/*',
+            'images/{,*/}*.{gif,webp,svg}',
+            'fonts/*'
+          ]
+        }, {
+          expand: true,
+          cwd: '.tmp/images',
+          dest: '<%= config.dist %>/images',
+          src: [
+            'generated/*'
+          ]
+        }]
+      },
+      update: {
+        expand: true,
+        cwd: '<%= config.dist %>/scripts/',
+        src: '*',
+        dest: '<%= config.dist %>/scripts',
+      }
+    },
     rev: {
       options: {
         encoding: 'utf8',
@@ -144,8 +173,14 @@ module.exports = function(grunt) {
       }
     },
     usemin: {
-      html: ['<%= config.dist %>/**/*.html'],
-      css: ['<%= config.dist %>/**/*.css'],
+      html: [
+      '<%= config.dist %>/**/*.html',
+      '!<%= config.dist %>/components/**/*.html'
+      ],
+      css: [
+        '<%= config.dist %>/**/*.css',
+        '!<%= config.dist %>/components/**/*.css'
+        ],
       options: {
         dirs: ['<%= config.dist %>']
       }
@@ -154,7 +189,8 @@ module.exports = function(grunt) {
       options: {
         jshintrc: '.jshintrc',
         ignores: [
-          '<%= config.app %>/components/**/*.js'
+          '<%= config.app %>/components/**/*.js',
+          'Gruntfile.js'
         ],
       },
       all: [
@@ -169,9 +205,16 @@ module.exports = function(grunt) {
       test: [
         'compass'
       ],
-      dist: [
-        'compass:dist'
-      ]
+      dist: {
+        tasks: [
+          'compass:dist',
+          'imagemin',
+          'htmlmin'
+        ],
+        options: {
+          limit: 4
+        }
+      }
     },
     ngmin: {
       dist: {
@@ -182,6 +225,78 @@ module.exports = function(grunt) {
           dest: '<%= config.dist %>/scripts'
         }]
       }
+    },
+    cssmin: {
+      dist: {
+       files: [{
+          expand: true,
+          cwd: '.tmp/styles/',
+          src: [
+            '**/*.css',
+            '!**/components/**/*.css'
+          ],
+          dest: '<%= config.dist %>/styles/',
+          ext: '.css'
+        }]
+      }
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          /*removeCommentsFromCDATA: true,
+          // https://github.com/yeoman/grunt-usemin/issues/44
+          //collapseWhitespace: true,
+          collapseBooleanAttributes: true,
+          removeAttributeQuotes: true,
+          removeRedundantAttributes: true,
+          useShortDoctype: true,
+          removeEmptyAttributes: true,
+          removeOptionalTags: true*/
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>',
+          src: [
+            '**/*.html',
+            '!**/components/**/*.html',
+          ],
+          dest: '<%= config.dist %>'
+        }]
+      }
+    },
+    imagemin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>/assets/img',
+          src: [
+            '<%= config.app %>/images/*.{png,jpg,jpeg}'
+          ],
+          dest: '<%= config.dist %>/assets/img'
+        }]
+      }
+    },
+    uglify: {
+      options: {
+        mangle: false
+      },
+      dist: {
+        files: {
+          '<%= config.dist %>/scripts/scripts.js': [
+            '<%= config.dist %>/scripts/scripts.js'
+          ]
+        }
+      }
+    },
+    plato: {
+      generate_reports: {
+        files: {
+          'reports': [
+          '<%= config.app %>/**/*.js',
+          '!<%= config.app %>/components/**/*.js',
+          ]
+        }
+      },
     }
   });
 
@@ -199,9 +314,17 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('build', [
+    'clean:dist',
+    'jshint',
+    'plato',
     'useminPrepare',
     'concurrent:dist',
+    'concat',
+    'copy',
     'ngmin',
+    'cssmin',
+    'uglify',
+    'rev',
     'usemin'
   ]);
 };

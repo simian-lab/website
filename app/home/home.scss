@@ -1,4 +1,89 @@
-.home {
-  font: 1rem Helvetica, Arial, sans-serif;
-  color: red;
+header {
+	padding-bottom: 5em;
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto
+	}
+}
+
+.main-row {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 62.5rem;
+	padding: 1.5em 0;
+	width: 100%;
+}
+
+// The styles for the 'us' section.
+.us {
+	figure {
+		max-width: 40%;
+	}
+
+	.description {
+		padding-left: 1em;
+		padding-right: 1em;
+		width: 60%;
+
+		h2 {
+			margin: .67em 0;
+		}
+	}
+
+	.right {
+		overflow: hidden;
+		figure {
+			float: left;
+		}
+		.description {
+			float: right;
+		}
+	}
+
+	.left {
+		overflow: hidden;
+		figure {
+			float: right;
+		}
+		.description {
+			float: left;
+		}
+	}
+}
+
+// The styles for the 'process' section.
+.process {
+	img {
+		width: 100%;
+	}
+}
+
+// The styles for the 'team' section.
+.team {
+	overflow: hidden;
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.left, .right {
+		padding: 0;
+		width: 50%;
+	}
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+	}
 }

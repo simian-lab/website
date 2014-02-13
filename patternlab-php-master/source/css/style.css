@@ -627,6 +627,24 @@ td {
       max-height: none;
       margin: 0.65em 0.5em 0 0; } }
 
+.topbar {
+  overflow: hidden;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px; }
+  .topbar .menu-button {
+    float: left; }
+  .topbar .contact-link {
+    border-color: #cacaca;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    float: right;
+    padding: 5px 10px; }
+    .topbar .contact-link .icon-mail {
+      color: #cacaca; }
+
 /*------------------------------------*\
     $NAVIGATION
 \*------------------------------------*/
@@ -774,6 +792,9 @@ td {
 
 .icon-github:before {
   content: "\e605"; }
+
+.icon-list:before {
+  content: "\e606"; }
 
 /*------------------------------------*\
     $BUTTONS
