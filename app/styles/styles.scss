@@ -4,7 +4,10 @@
 // some styles there.
 @import '../../patternlab-php-master/source/css/style';
 
+@import 'variables';
+
 @import '../enter/enter';
+@import '../footer/footer';
 @import '../home/home';
 @import '../kienyke/kienyke';
 @import '../topbar/topbar'; 

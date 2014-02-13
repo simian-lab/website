@@ -3,6 +3,7 @@
 angular.module('simian', [
   'ui.router',
   'pascalprecht.translate',
+  'simian.footer',
   'simian.home',
   'simian.topbar',
   'simian.footer'
