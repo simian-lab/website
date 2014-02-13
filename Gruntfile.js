@@ -173,8 +173,14 @@ module.exports = function(grunt) {
       }
     },
     usemin: {
-      html: ['<%= config.dist %>/**/*.html'],
-      css: ['<%= config.dist %>/**/*.css'],
+      html: [
+      '<%= config.dist %>/**/*.html',
+      '!<%= config.dist %>/components/**/*.html'
+      ],
+      css: [
+        '<%= config.dist %>/**/*.css',
+        '!<%= config.dist %>/components/**/*.css'
+        ],
       options: {
         dirs: ['<%= config.dist %>']
       }
@@ -225,7 +231,10 @@ module.exports = function(grunt) {
        files: [{
           expand: true,
           cwd: '.tmp/styles/',
-          src: ['**/*.css'],
+          src: [
+            '**/*.css',
+            '!**/components/**/*.css'
+          ],
           dest: '<%= config.dist %>/styles/',
           ext: '.css'
         }]
@@ -247,7 +256,10 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>',
-          src: [ '**/*.html' ],
+          src: [
+            '**/*.html',
+            '!**/components/**/*.html',
+          ],
           dest: '<%= config.dist %>'
         }]
       }
@@ -275,6 +287,16 @@ module.exports = function(grunt) {
           ]
         }
       }
+    },
+    plato: {
+      generate_reports: {
+        files: {
+          'reports': [
+          '<%= config.app %>/**/*.js',
+          '!<%= config.app %>/components/**/*.js',
+          ]
+        }
+      },
     }
   });
 
@@ -293,23 +315,10 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'jshint',
+    'plato',
     'useminPrepare',
     'concurrent:dist',
-    'concat',
-    'copy',
-    'ngmin',
-    'cssmin',
-    'uglify',
-    'rev',
-    'usemin'
-  ]);
-
-  grunt.registerTask('light-build', [
-    'clean:dist',
-    'useminPrepare',
-    'compass:dist',
-    'imagemin',
-    'htmlmin',
     'concat',
     'copy',
     'ngmin',
