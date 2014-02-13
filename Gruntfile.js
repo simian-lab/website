@@ -298,4 +298,19 @@ module.exports = function(grunt) {
     'rev',
     'usemin'
   ]);
+
+  grunt.registerTask('light-build', [
+    'clean:dist',
+    'useminPrepare',
+    'compass:dist',
+    'imagemin',
+    'htmlmin',
+    'concat',
+    'copy',
+    'ngmin',
+    'cssmin',
+    'uglify',
+    'rev',
+    'usemin'
+  ]);
 };
