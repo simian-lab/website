@@ -2,8 +2,8 @@
     $BUTTONS
     \*------------------------------------*/
     .btn {
-    	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($green), to(#85BE08));
-    	border: 0;
+    	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($green), to(#85BE08)) !important;
+    	border: 0 !important;
     	box-shadow: 1px 1px 3px #7AAB0F;
     	-webkit-border-radius: 5px;
     	-moz-border-radius: 5px;
@@ -28,7 +28,6 @@
     	}
     }
 
-    // del azul 239392 al 1E807F con un borde 228B8A
     .alt{
     		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($blue), to(#1E807F));
     		box-shadow: 1px 1px 3px #228B8A;
