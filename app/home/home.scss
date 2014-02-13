@@ -1,6 +1,11 @@
 header {
-	padding-top: 5em;
 	padding-bottom: 5em;
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto
+	}
 }
 
 .main-row {
@@ -11,7 +16,7 @@ header {
 	width: 100%;
 }
 
-// The styles to the 'us' section.
+// The styles for the 'us' section.
 .us {
 	figure {
 		max-width: 40%;
@@ -70,6 +75,7 @@ header {
 	}
 
 	.left, .right {
+		padding: 0;
 		width: 50%;
 	}
 
