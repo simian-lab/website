@@ -199,11 +199,16 @@ module.exports = function(grunt) {
       test: [
         'compass'
       ],
-      dist: [
-        'compass:dist',
-        'imagemin',
-        'htmlmin'
-      ]
+      dist: {
+        tasks: [
+          'compass:dist',
+          'imagemin',
+          'htmlmin'
+        ],
+        options: {
+          limit: 4
+        }
+      }
     },
     ngmin: {
       dist: {
@@ -242,7 +247,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>',
-          src: ['*.html', '**/*.html'],
+          src: [ '**/*.html' ],
           dest: '<%= config.dist %>'
         }]
       }
