@@ -37,9 +37,8 @@
   <!-- endbuild -->
 </head>
 <body>
-  <!-- In the top bar we have the menu and the contact link. -->
-  <div topbar></div>
-
+  
+  <div topbar class="topbar"></div>
   <div ui-view></div>
   <div footer id="footer"></div>
   <script src="/components/angular/angular.js"></script>
@@ -47,6 +46,8 @@
   <script src="/app.js"></script>
   <!-- endbuild -->
   <!-- build:js /scripts/modules.js-->
+  <script src="/home/home.js"></script>
+  <script src="/topbar/topbar.js"></script>
   <script src="/components/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="components/angular-translate/angular-translate.js"></script>
   <!-- endbuild -->
