@@ -5,9 +5,9 @@ angular.module('simian', [
   'pascalprecht.translate',
   'simian.home',
   'simian.topbar'
-  ])
+])
 
-.config(function($stateProvider, $locationProvider, $translateProvider) {
+.config(function($stateProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
   $locationProvider.hashPrefix('!');
 
