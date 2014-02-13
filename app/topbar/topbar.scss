@@ -1,0 +1,28 @@
+.topbar {
+	overflow: hidden;
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+
+	.menu-button, .contact-link {
+		border-color: $gray-menu;
+		border-radius: 50%;
+		border-style: solid;
+		border-width: 1px;
+		padding: 7px 10px;
+	}
+
+	.icon-list, .icon-mail {
+		color: $gray-menu;
+		font-size: 2em
+	}
+
+	.menu-button {		
+		float: left;		
+	}
+
+	.contact-link {
+		float: right;		
+	}
+}

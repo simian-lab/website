@@ -43,3 +43,28 @@
 		margin: 0.65em 0.5em 0 0;
 	}
 }
+
+.topbar{
+	overflow: hidden;
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+
+	.menu-button{
+		float: left;
+	}
+
+	.contact-link{
+		border-color: #cacaca;
+		border-radius: 50%;
+		border-style: solid;
+		border-width: 1px;
+		float: right;
+		padding: 5px 10px;
+
+		.icon-mail{
+			color: $gray-menu;
+		}
+	}
+}
