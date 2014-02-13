@@ -1,18 +1,14 @@
-<section>
+<section id="contact">
   <h1 id="Contact">Contact Us</h1>
   <form action="http://127.0.0.1:7544/contact" method="post">
-    <div id="contact-name">
-      <label>Name:</label>
-      <input type="text" id="name" placeholder="Name" ng-model="contact.name" ng-minlength="3" required>
-    </div>
-    <div id="contact-email">
-      <label>Email:</label>
-      <input type="email" id="email" placeholder="peter@example.com" ng-model="contact.email" ng-minlength="3" required>
-    </div>
-    <div id="contact-message">
-      <label>Message:</label>
-      <textarea id="message" ng-model="contact.message" ng-minlength="3" required></textarea>
-    </div>
+    <fieldset>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Name" ng-minlength="3" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="peter@example.com" ng-minlength="3" required>
+      <label for"message">Message:</label>
+      <textarea id="message" placeholder="What's on your mind?" ng-minlength="3" required></textarea>
     <input type="submit" value="Send Message">
+    </fieldset>    
   </form>
 </section>
