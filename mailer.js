@@ -4,19 +4,13 @@ var app     = express();
 app.use(express.bodyParser());
 
 app.post('/contact', function(req, res) {
-  //res.send(req.body);
   var nodemailer = require('nodemailer');
   var mailOpts,smtpTrans;
-  smtpTrans = nodemailer.createTransport('SMTP', {
-    service: 'Gmail',
-    auth: {
-      user: "northren.moon@gmail.com",
-      pass: "92Mayhem16" 
-    }
-  });
+  smtpTrans = nodemailer.createTransport("Direct", {debug: true});
+
   //Mail options
   mailOpts = {
-      from: req.body.Name + ' &lt;' + req.body.email + '&gt;', //grab form data from the request body object
+      from: req.body.Name + ' <' + req.body.Email + '>', //grab form data from the request body object
       to: 'pablo@simian.co',
       subject: 'Website contact form ' + req.body.Name,
       text: req.body.Message
@@ -25,11 +19,11 @@ app.post('/contact', function(req, res) {
     if(error){
         console.log(error);
         res.send('Oops, there was an error sending the message');
-        
+
     }else{
         console.log("Message sent: " + response.message);
-        res.send('Mesage sent succesful' + req.body);
-        
+        res.send('Mesage sent succesfully');
+
     }
     smtpTrans.close(); // shut down the connection pool, no more messages
   });
@@ -38,5 +32,4 @@ app.post('/contact', function(req, res) {
 app.listen(7544, function() {
   console.log('Server running at http://127.0.0.1:7544/');
 });
-
 
