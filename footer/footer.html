@@ -2,18 +2,14 @@
   <div class="contact-form">
     <h1 id="Contact">Contact Us</h1>
     <form action="http://127.0.0.1:7544/contact" method="post">
-      <div id="contact-name">
-        <label>Name:</label>
-        <input type="text" id="name" placeholder="Write your full name" ng-model="contact.name" ng-minlength="3" required>
-      </div>
-      <div id="contact-email">
-        <label>Email:</label>
-        <input type="email" id="email" placeholder="We don't spam!" ng-model="contact.email" ng-minlength="3" required>
-      </div>
-      <div id="contact-message">
-        <label>Message:</label>
-        <textarea id="message" placeholder="Write your message :)" ng-model="contact.message" ng-minlength="3" required></textarea>
-      </div>
+      <fieldset>
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" placeholder="Write your full name" ng-model="contact.name" ng-minlength="3" required>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email" placeholder="We don't spam!" ng-model="contact.email" ng-minlength="3" required>
+        <label for="Message">Message:</label>
+        <textarea id="Message" name="Message" placeholder="Write your message :)" ng-model="contact.message" ng-minlength="3" required></textarea>
+      </fieldset>   
       <input type="submit" class="btn" value="Send Message">
     </form>
   </div>
