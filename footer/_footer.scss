@@ -1,6 +1,16 @@
+footer {
+	overflow: hidden;
+}
+
 .contact-form {
-	padding: 2%;
+	float: left;
+	padding: 5% 2%;
 	width: 50%;
+
+	@media screen and (max-width: $tablet) {
+		padding: 7%;
+		width: 100%;
+	}
 
 	input, textarea {
 		margin-bottom: 10px;
@@ -14,11 +24,62 @@
 	}
 }
 
-@media screen and (max-width: $tablet) {
-	.contact-form {
-		display: block;
+.mail-social {
+	float: right;
+	padding-top: 12%;
+	width: 50%;
+
+	@media screen and (max-width: $tablet) {
+		float: none;
+		width: 100%;
+	}
+
+	h2 {
+		font-size: 4em;
+		margin: 3% 0;
+		text-align: center;
+
+		@media screen and (max-width: $tablet) {
+			font-size: 2em;
+		}
+	}
+
+	span {
+		font-size: 5em;
+		margin: 12px;
+
+		@media screen and (max-width: $tablet) {
+			font-size: 2em;
+			margin: 5px;
+		}
+	}
+
+	span:hover {
+		color: $gray-menu;
+	}
+
+	.social-networks{
 		margin-left: auto;
 		margin-right: auto;
-		width: 90%;
+		width: 60%;
+
+		@media screen and (max-width: $tablet) {
+			width: 75%;
+		}
+	}	
+
+	.location {		
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+		width: 75%;
+
+		h2 {
+			text-align: left;
+		}
+
+		.icon-location {
+			float: left;
+		}
 	}
 }
