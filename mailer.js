@@ -30,6 +30,6 @@ app.post('/contact', function(req, res) {
 });
 
 app.listen(7544, function() {
-  console.log('Server running at http://127.0.0.1:7544/');
+  console.log('Server running at http://contactMailer/');
 });
 
