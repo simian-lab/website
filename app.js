@@ -5,8 +5,7 @@ angular.module('simian', [
   'pascalprecht.translate',
   'simian.footer',
   'simian.home',
-  'simian.topbar',
-  'simian.footer'
+  'simian.topbar'
 ])
 
 .config(function($stateProvider, $locationProvider) {
