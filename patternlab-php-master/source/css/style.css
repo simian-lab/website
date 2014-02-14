@@ -627,24 +627,6 @@ td {
       max-height: none;
       margin: 0.65em 0.5em 0 0; } }
 
-.topbar {
-  overflow: hidden;
-  padding-top: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 15px; }
-  .topbar .menu-button {
-    float: left; }
-  .topbar .contact-link {
-    border-color: #cacaca;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 1px;
-    float: right;
-    padding: 5px 10px; }
-    .topbar .contact-link .icon-mail {
-      color: #cacaca; }
-
 /*------------------------------------*\
     $NAVIGATION
 \*------------------------------------*/
@@ -691,7 +673,7 @@ td {
 .footer {
   clear: both;
   overflow: hidden;
-  background: #131313;
+  background: #333333;
   color: white;
   line-height: 1.2; }
   .footer a {
@@ -800,8 +782,8 @@ td {
     $BUTTONS
     \*------------------------------------*/
 .btn {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#96d60b), to(#85be08));
-  border: 0;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#96d60b), to(#85be08)) !important;
+  border: 0 !important;
   box-shadow: 1px 1px 3px #7AAB0F;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
