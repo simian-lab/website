@@ -778,6 +778,9 @@ td {
 .icon-list:before {
   content: "\e606"; }
 
+.icon-location:before {
+  content: "\e607"; }
+
 /*------------------------------------*\
     $BUTTONS
     \*------------------------------------*/
