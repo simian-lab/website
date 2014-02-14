@@ -11,7 +11,7 @@ app.post('/contact', function(req, res) {
   //Mail options
   mailOpts = {
       from: req.body.Name + ' <' + req.body.Email + '>', //grab form data from the request body object
-      to: 'pablo@simian.co',
+      to: 'info@simian.co',
       subject: 'Website contact form ' + req.body.Name,
       text: req.body.Message
   };
