@@ -8,7 +8,7 @@ angular.module('simian.topbar', [])
 
 .directive('topbar', function() {
   return {
-    templateUrl: '/topbar/topbar.html'
+    templateUrl: '/topbar/topbar.tpl.html'
   };
 })
 ;

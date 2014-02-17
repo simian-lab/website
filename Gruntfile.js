@@ -198,6 +198,24 @@ module.exports = function(grunt) {
         '<%= config.app %>/**/*.js'
       ]
     },
+    htmlangular: {
+      options: {
+        tmplext: 'tpl.html',
+        customtags: [],
+        customattrs: [
+          'topbar',
+          'footer'
+        ],
+        relaxerror: [],
+        reportpath: null
+      },
+      files: {
+        src: [
+          '<%= config.app %>/**/*.html',
+          '!<%= config.app %>/components/**/*.html'
+        ],
+      },
+    },
     concurrent: {
       server: [
         'compass:server'
@@ -316,6 +334,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'jshint',
+    'htmlangular',
     'plato',
     'useminPrepare',
     'concurrent:dist',
@@ -326,5 +345,10 @@ module.exports = function(grunt) {
     'uglify',
     'rev',
     'usemin'
+  ]);
+
+  grunt.registerTask('validate', [
+    'jshint',
+    'htmlangular'
   ]);
 };

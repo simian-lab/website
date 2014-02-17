@@ -15,15 +15,15 @@ angular.module('simian', [
   $stateProvider
   .state('home', {
     url: '/',
-    templateUrl: '/home/home.html'
+    templateUrl: '/home/home.tpl.html'
   })
   .state('enter', {
-    url: '/enter',
-    templateUrl: '/enter/enter.html'
+    url: '/enter/',
+    templateUrl: '/enter/enter.tpl.html'
   })
   .state('kienyke', {
-    url: '/kienyke',
-    templateUrl: '/kienyke/kienyke.html'
+    url: '/kienyke/',
+    templateUrl: '/kienyke/kienyke.tpl.html'
   });
 })
 
