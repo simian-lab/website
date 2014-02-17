@@ -8,7 +8,7 @@ angular.module('simian.footer', [])
 
 .directive('footer', function() {
   return {
-    templateUrl: '/footer/footer.html'
+    templateUrl: '/footer/footer.tpl.html'
   };
 })
 ;
