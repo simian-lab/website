@@ -1,7 +1,7 @@
 <footer>
   <div class="contact-form">
     <h1 id="Contact">Contact Us</h1>
-    <form action={{ 'CONTACT_ROUTE' }} method="post">
+    <form action="{{CONTACT_ROUTE}}" method="post">
       <div id="contact-name">
         <label>Name:</label>
         <input type="text" id="Name" name="Name" placeholder="Write your full name" ng-model="contact.name" ng-minlength="3" required>
