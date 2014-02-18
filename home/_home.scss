@@ -1,16 +1,23 @@
 h1 {
-	margin-bottom: 3%;
+	margin-bottom: 2%;
 }
 
 header {
-	padding-bottom: 3%;
+	background-image: url('/images/mainPicture.svg');
+	background-position: right;
+	background-position-y: 103%;
+	background-repeat: no-repeat;
+	background-size: 86%;
+	height: 35em;
 
 	img {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
+}
 
+.title {
 	a {
 		display: block !important;
 		margin-left: auto;
@@ -31,7 +38,10 @@ header {
 .us {
 
 	div {
-		background-repeat: no-repeat
+		background-position-y: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin: 20px 0;
 	}
 
 	.envision {
@@ -39,7 +49,7 @@ header {
 	}
 
 	.analysis {
-		background-image:url('http://i01.i.aliimg.com/wsphoto/v0/336600131/30pcs-lot-100cm-Super-Cartoon-Monkey-Automatic-Retractable-Tape-Measure-Mascot-Keychains.jpg_250x250.jpg');
+		background-image:url('/images/analysis.svg');
 	}
 
 	.design {
@@ -52,7 +62,7 @@ header {
 	}
 
 	.mantain {
-		background-image:url('http://i.istockimg.com/file_thumbview_approve/19779171/2/stock-illustration-19779171-monkey-mechanic.jpg');
+		background-image:url('/images/mantain.svg');
 	}
 
 	.description {
@@ -66,6 +76,7 @@ header {
 	}
 
 	.right {
+		background-position-x: left;
 		overflow: hidden;
 		figure {
 			float: left;
@@ -76,6 +87,7 @@ header {
 	}
 
 	.left {
+		background-position-x: right;
 		background-position: 90%;
 		overflow: hidden;
 		figure {
