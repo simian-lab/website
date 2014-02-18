@@ -1,5 +1,6 @@
 'use strict';
 
 angular.module('simian.configuration', [])
-    .constant('CONTACT_ROUTE', 'mySimianLocal/contact:port')
-    ;
+   .run(function ($rootScope, $sce) {
+      $rootScope.CONTACT_ROUTE= $sce.trustAsResourceUrl('http://myRoute:7544/contacts');
+   });
