@@ -1,19 +1,22 @@
 <footer>
-
   <div class="contact-form">
     <h1 id="Contact">Contact Us</h1>
-    <form action="http://contactMailer/contact" method="post">
+    <form action={{ 'CONTACT_ROUTE' }} method="post">
       <div id="contact-name">
         <label>Name:</label>
-        <input type="text" id="name" placeholder="Write your full name" ng-model="contact.name" ng-minlength="3" required>
+        <input type="text" id="Name" name="Name" placeholder="Write your full name" ng-model="contact.name" ng-minlength="3" required>
       </div>
       <div id="contact-email">
         <label>Email:</label>
-        <input type="email" id="email" placeholder="We don't spam!" ng-model="contact.email" ng-minlength="3" required>
+        <input type="email" id="Email" name="Email" placeholder="We don't spam!" ng-model="contact.email" ng-minlength="3" required>
       </div>
       <div id="contact-message">
         <label>Message:</label>
-        <textarea id="message" placeholder="Write your message :)" ng-model="contact.message" ng-minlength="3" required></textarea>
+        <textarea id="Message" name="Message" placeholder="Write your message :)" ng-model="contact.message" ng-minlength="3" required></textarea>
+      </div>
+      <div id="contact-hidden">
+        <label>If you're human, leave this blank</label>
+        <input type="text" id="captcha" name="captcha" ng-model="contact.hidden"> 
       </div>
       <input type="submit" class="btn" value="Send Message">
     </form>

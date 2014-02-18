@@ -1,9 +1,17 @@
 var express = require('express');
 var app     = express();
+var dotenv = require('dotenv');
+dotenv.load();
+var emailAddress = process.env.MAIL_ADDRESS;
+var portMailer = process.env.MAIL_PORT;
 
 app.use(express.bodyParser());
 
 app.post('/contact', function(req, res) {
+  if(req.body.captcha!=''){
+    res.send('No message for spambots');
+    smtpTrans.close(); // shut down the connection pool, no more messages
+  }
   var nodemailer = require('nodemailer');
   var mailOpts,smtpTrans;
   smtpTrans = nodemailer.createTransport("Direct", {debug: true});
@@ -11,7 +19,7 @@ app.post('/contact', function(req, res) {
   //Mail options
   mailOpts = {
       from: req.body.Name + ' <' + req.body.Email + '>', //grab form data from the request body object
-      to: 'info@simian.co',
+      to: emailAddress,
       subject: 'Website contact form ' + req.body.Name,
       text: req.body.Message
   };
@@ -29,7 +37,7 @@ app.post('/contact', function(req, res) {
   });
 });
 
-app.listen(7544, function() {
+app.listen(portMailer, function() {
   console.log('Server running at http://contactMailer/');
 });
 
