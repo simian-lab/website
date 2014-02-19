@@ -4,11 +4,17 @@ h1 {
 
 header {
 	background-image: url('/images/mainPicture.svg');
-	background-position: right;
-	background-position-y: 103%;
+	background-position: center;
+	background-position-y: 12em;
 	background-repeat: no-repeat;
 	background-size: 86%;
 	height: 35em;
+
+	@media screen and (max-width: $tablet) {
+		background-position-y: 6em;
+		background-size: 220%;
+		height: 20em;
+	}
 
 	img {
 		display: block;
@@ -42,6 +48,11 @@ header {
 		background-repeat: no-repeat;
 		background-size: contain;
 		margin: 20px 0;
+
+		@media screen and (max-width: $tablet) {
+			margin: 0;
+			padding: 0;
+		}
 	}
 
 	.envision {
@@ -50,6 +61,7 @@ header {
 
 	.analysis {
 		background-image:url('/images/analysis.svg');
+		background-size: 45%;
 	}
 
 	.design {
@@ -63,6 +75,7 @@ header {
 
 	.mantain {
 		background-image:url('/images/mantain.svg');
+		background-size: 30%;
 	}
 
 	.description {
