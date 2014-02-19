@@ -6,7 +6,8 @@ angular.module('simian', [
   'simian.footer',
   'simian.home',
   'simian.topbar',
-  'simian.configuration'
+  'simian.configuration',
+  'simian.tracker'
 ])
 
 .config(function($stateProvider, $locationProvider) {
