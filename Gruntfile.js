@@ -334,7 +334,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'jshint',
-    'htmlangular',
+    //'htmlangular',
     'plato',
     'useminPrepare',
     'concurrent:dist',

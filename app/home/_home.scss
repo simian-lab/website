@@ -40,6 +40,35 @@ header {
 	width: 100%;
 }
 
+// Recent Work
+.recent-work {
+	overflow: hidden;
+
+	div {
+		float: left;
+		margin-top: 20px;
+		width: 50%;
+	}
+}
+
+// Our clients say
+.clients-say {
+
+	.client {
+		float: left;
+		position: relative;
+		width: 50%;
+
+		img {
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin-right: 1em;
+		}
+	}
+}
+
 // The styles for the 'us' section.
 .us {
 
