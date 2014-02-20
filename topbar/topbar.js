@@ -9,7 +9,7 @@ angular.module('simian.topbar', [])
 	// class helper functions from bonzo https://github.com/ded/bonzo
 
 	function classReg( className ) {
-		return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+		return new RegExp('(^|\\s+)' + className + '(\\s+|$)');
 	}
 
 	// classList support for class management
@@ -47,26 +47,26 @@ angular.module('simian.topbar', [])
 	}
 
 	var classie = {
-  // full names
-  hasClass: hasClass,
-  addClass: addClass,
-  removeClass: removeClass,
-  toggleClass: toggleClass,
-  // short names
-  has: hasClass,
-  add: addClass,
-  remove: removeClass,
-  toggle: toggleClass
-};
+		// full names
+		hasClass: hasClass,
+		addClass: addClass,
+		removeClass: removeClass,
+		toggleClass: toggleClass,
+		// short names
+		has: hasClass,
+		add: addClass,
+		remove: removeClass,
+		toggle: toggleClass
+	};
 
 	// transport
 	if ( typeof define === 'function' && define.amd ) {
- 	 // AMD
- 	 define( classie );
- 	} else {
-  	// browser global
-  	window.classie = classie;
-  }
+		// AMD
+		define( classie );
+	} else {
+		// browser global
+		window.classie = classie;
+	}
 
 	// End Classie
 	
@@ -82,31 +82,31 @@ angular.module('simian.topbar', [])
 	}
 
 	var docElem = window.document.documentElement,
-		// support transitions
-		support = Modernizr.csstransitions,
-		// transition end event name
-		transEndEventNames = {
-			'WebkitTransition': 'webkitTransitionEnd',
-			'MozTransition': 'transitionend',
-			'OTransition': 'oTransitionEnd',
-			'msTransition': 'MSTransitionEnd',
-			'transition': 'transitionend'
-		},
-		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-		docscroll = 0,
-		// click event (if mobile use touchstart)
-		clickevent = mobilecheck() ? 'touchstart' : 'click';
+	// support transitions
+	support = Modernizr.csstransitions,
+	// transition end event name
+	transEndEventNames = {
+		'WebkitTransition': 'webkitTransitionEnd',
+		'MozTransition': 'transitionend',
+		'OTransition': 'oTransitionEnd',
+		'msTransition': 'MSTransitionEnd',
+		'transition': 'transitionend'
+	},
+	transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+	docscroll = 0,
+	// click event (if mobile use touchstart)
+	clickevent = mobilecheck() ? 'touchstart' : 'click';
 
-		function init() {
-			var showMenu = document.getElementById( 'showMenu' ),
-			perspectiveWrapper = document.getElementById( 'perspective' ),
-			container = perspectiveWrapper.querySelector( '.container' ),
-			contentWrapper = container.querySelector( '.wrapper' );
+	function init() {
+		var showMenu = document.getElementById( 'showMenu' ),
+		perspectiveWrapper = document.getElementById( 'perspective' ),
+		container = perspectiveWrapper.querySelector( '.container' ),
+		contentWrapper = container.querySelector( '.wrapper' );
 
-			showMenu.addEventListener( clickevent, function( ev ) {
-				ev.stopPropagation();
-				ev.preventDefault();
-				docscroll = scrollY();
+		showMenu.addEventListener( clickevent, function( ev ) {
+			ev.stopPropagation();
+			ev.preventDefault();
+			docscroll = scrollY();
 			// change top of contentWrapper
 			contentWrapper.style.top = docscroll * -1 + 'px';
 			// mac chrome issue:
@@ -117,12 +117,14 @@ angular.module('simian.topbar', [])
 			setTimeout( function() { classie.add( perspectiveWrapper, 'animate' ); }, 25 );
 		});
 
-			container.addEventListener( clickevent, function( ev ) {
-				if( classie.has( perspectiveWrapper, 'animate') ) {
-					var onEndTransFn = function( ev ) {
-						if( support && ( ev.target.className !== 'container' || ev.propertyName.indexOf( 'transform' ) == -1 ) ) return;
-						this.removeEventListener( transEndEventName, onEndTransFn );
-						classie.remove( perspectiveWrapper, 'modalview' );
+		container.addEventListener( clickevent, function( ev ) {
+			if( classie.has( perspectiveWrapper, 'animate') ) {
+				var onEndTransFn = function( ev ) {
+					if( support && ( ev.target.className !== 'container' || ev.propertyName.indexOf( 'transform' ) === -1 ) ) {
+						return;
+					}
+					this.removeEventListener( transEndEventName, onEndTransFn );
+					classie.remove( perspectiveWrapper, 'modalview' );
 					// mac chrome issue:
 					document.body.scrollTop = document.documentElement.scrollTop = docscroll;
 					// change top of contentWrapper
@@ -138,11 +140,11 @@ angular.module('simian.topbar', [])
 			}
 		});
 
-			perspectiveWrapper.addEventListener( clickevent, function( ev ) { return false; } );
-		}
+		perspectiveWrapper.addEventListener( clickevent, function( ev ) { return false; } );
+	}
 
-		init();
-	})
+	init();
+})
 
 .directive('topbar', function() {
 	return {
