@@ -1,36 +1,43 @@
 'use strict';
 
 angular.module('simian.tracker', ['simian.configuration'])
-  .factory('AnalyticsTracker',function($rootScope, $window, $location, $routeParams) {
+  .factory('AnalyticsTracker',function($rootScope,$window) {
     return {
       trackGAPageview: function(path){
-        ga('send', 'pageview', path);
+        $window.ga('send', 'pageview', path);
+      },
+      trackGAEvent: function(category, action, label){
+        $window.ga('send', 'event', category, action, label);
+      },
+      pageTrack: function(path) {
+        // We set this in a timeout so we know for sure the DOM
+        // has been updated with the correct meta-shtick
+        var self = this;
+
+        setTimeout(function() {
+          self.trackGAPageview(path);
+        }, 10);
+      },
+      eventTrack: function(category, action, label) {
+        this.trackGAEvent(category, action, label);
       }
-    }    
+    };
   })
-  .value('trackID'{
-  	load: function($rootScope){
-  		switch{
-  			case 'simian':
-  			  this.trackID ='UA-48202840-1';
-  			  break;
-  			case 'dev':
-  			  this.trackID ='UA-48202840-2';
-  			  break;
-  			case 'alpha':
-  			  this.trackID ='UA-48202840-3';
-  			  break;
-  			case 'beta':
-  			  this.trackID ='UA-48202840-4';
-  			  break;
-  		}
-  	}
-  })
-  .run(  	
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', this.trackID, 'simian.co');
-    ga('send', 'pageview');
-  );
+  .value('trackID', {
+    load: function($rootScope){
+      switch($rootScope.ENVIRONMENT){
+        case 'simian':
+          this.trackID ='UA-48202840-1';
+          break;
+        case 'dev':
+          this.trackID ='UA-48202840-2';
+          break;
+        case 'alpha':
+          this.trackID ='UA-48202840-3';
+          break;
+        case 'beta':
+          this.trackID ='UA-48202840-4';
+          break;
+      }
+    }
+  });

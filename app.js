@@ -5,6 +5,8 @@ angular.module('simian', [
   'pascalprecht.translate',
   'simian.footer',
   'simian.home',
+  'simian.kienyke',
+  'simian.enter',
   'simian.topbar',
   'simian.configuration',
   'simian.tracker'

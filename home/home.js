@@ -43,4 +43,6 @@ angular.module('simian.home', [])
   $translateProvider.preferredLanguage('en');
   $translateProvider.fallbackLanguage('en');
 })
-;
+.controller('HomeController', function($location, AnalyticsTracker) {
+  AnalyticsTracker.pageTrack($location.url());
+});
