@@ -1,4 +1,4 @@
-<footer>
+<footer ng-controller="footerController">
   <div class="contact-form">
     <h1 id="Contact">Contact Us</h1>
     <form action="{{CONTACT_ROUTE}}" method="post">
@@ -18,7 +18,7 @@
         <label>If you're human, leave this blank</label>
         <input type="text" id="captcha" name="captcha" ng-model="contact.hidden"> 
       </div>
-      <input type="submit" class="btn" value="Send Message">
+      <input type="submit" class="btn" value="Send Message" ng-click="event()">
     </form>
   </div>
 

@@ -8,6 +8,6 @@ describe('footer', function() {
   it('Replaces the element with content', function() {
     var element = $compile('<div footer class="footer"></div>')($rootScope);
     $rootScope.$digest();
-    expect(element.html())
+    expect(element.html());
   });
 });
