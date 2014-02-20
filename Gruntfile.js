@@ -233,12 +233,14 @@ imagemin: {
   }
 },
 
-// Jasmine
+// Jasmine: https://github.com/gruntjs/grunt-contrib-jasmine
 jasmine: {
-  src: 'app/**/*.js',
+  src: [
+  'app/components/angular/angular.js',
+  'app/**/*.js'
+  ],
   options: {
     specs: 'spec/*Spec.js',
-    helpers: 'spec/*Helper.js'
   }
 },
 
@@ -248,7 +250,9 @@ jshint: {
     ignores: [
     '<%= config.app %>/components/**/*.js',
     'Gruntfile.js',
-    'app/topbar/modernizr.custom.25376.js'
+    '<%= config.app %>/topbar/modernizr.custom.25376.js',
+    // This is temporal.
+    'app/topbar/*.js'
     ],
   },
   all: [
@@ -392,7 +396,8 @@ grunt.registerTask('build', [
 
 grunt.registerTask('validate', [
   'jshint',
-  'htmlangular'
+  'htmlangular',
+  //'jasmine'
   ]);
 
 grunt.loadNpmTasks('grunt-contrib-yuidoc');

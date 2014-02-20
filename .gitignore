@@ -6,4 +6,4 @@ app/components
 dist
 logs
 reports
-/documentation/
+documentation
