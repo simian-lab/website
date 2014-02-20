@@ -26,7 +26,9 @@
     "grunt-replace": "~0.6.1",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-plato": "~0.2.1",
-    "grunt-html-angular-validate": "~0.2.3"
+    "grunt-html-angular-validate": "~0.2.3",
+    "grunt-contrib-jasmine": "~0.6.1",
+    "grunt-contrib-yuidoc": "~0.5.0"
   },
   "dependencies": {
     "grunt-karma": "~0.6.2",
