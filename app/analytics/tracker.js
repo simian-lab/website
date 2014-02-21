@@ -3,6 +3,24 @@
 angular.module('simian.tracker', ['simian.configuration'])
   .factory('AnalyticsTracker',function($rootScope,$window) {
     return {
+      initGATracker: function(){
+        var domainId;
+        switch($rootScope.ENVIRONMENT){
+        case 'simian':
+          domainId ='UA-48202840-1';
+          break;
+        case 'dev':
+          domainId ='UA-48202840-2';
+          break;
+        case 'alpha':
+          domainId ='UA-48202840-3';
+          break;
+        case 'beta':
+          domainId ='UA-48202840-4';
+          break;
+      }
+        $window.ga('create', domainId, 'simian.co');
+      },
       trackGAPageview: function(path){
         $window.ga('send', 'pageview', path);
       },
@@ -22,22 +40,4 @@ angular.module('simian.tracker', ['simian.configuration'])
         this.trackGAEvent(category, action, label);
       }
     };
-  })
-  .value('trackID', {
-    load: function($rootScope){
-      switch($rootScope.ENVIRONMENT){
-        case 'simian':
-          this.trackID ='UA-48202840-1';
-          break;
-        case 'dev':
-          this.trackID ='UA-48202840-2';
-          break;
-        case 'alpha':
-          this.trackID ='UA-48202840-3';
-          break;
-        case 'beta':
-          this.trackID ='UA-48202840-4';
-          break;
-      }
-    }
   });

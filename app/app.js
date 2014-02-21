@@ -31,8 +31,8 @@ angular.module('simian', [
   });
 })
 
-.controller('Ctrl', ['$translate', '$scope', function ($translate, $scope) {
-
+.controller('Ctrl', ['$translate', '$scope','AnalyticsTracker', function ($translate, $scope, AnalyticsTracker) {
+  AnalyticsTracker.initGATracker();
   $scope.changeLanguage = function (langKey) {
     $translate.uses(langKey);
     $translate();
