@@ -74,6 +74,10 @@ footer {
 		overflow: hidden;
 		width: 75%;
 
+		@media screen and (max-width: $tablet) {
+			margin-bottom: 10%;
+		}
+
 		h2 {
 			text-align: left;
 		}
