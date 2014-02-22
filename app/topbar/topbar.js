@@ -140,7 +140,8 @@ angular.module('simian.topbar', [])
 			}
 		});
 
-		perspectiveWrapper.addEventListener( clickevent, function( ev ) { return false; } );
+		perspectiveWrapper.addEventListener( clickevent, function( ev ) { 
+			return false; } );
 	}
 
 	init();

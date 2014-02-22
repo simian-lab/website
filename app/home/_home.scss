@@ -42,12 +42,22 @@ header {
 
 // Recent Work
 .recent-work {
-	overflow: hidden;
 
 	div {
 		float: left;
 		margin-top: 20px;
 		width: 50%;
+	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	p {
+		text-align: center;
 	}
 }
 
@@ -58,6 +68,10 @@ header {
 		float: left;
 		position: relative;
 		width: 50%;
+
+		@media screen and (max-width: 568px) {
+			width: 100%;
+		}
 
 		img {
 			border-radius: 50%;
