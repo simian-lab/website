@@ -252,7 +252,8 @@ jshint: {
     'Gruntfile.js',
     '<%= config.app %>/topbar/modernizr.custom.25376.js',
     // This is temporal.
-    'app/topbar/*.js'
+    'app/topbar/*.js',
+    'app/vendor/*.js'
     ],
   },
   all: [

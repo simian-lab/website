@@ -32,59 +32,17 @@ header {
 	}
 }
 
-.main-row {
+.main-row section {
+	@include pie-clearfix;
+}
+
+// The styles for the 'us' section.
+.us {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 62.5rem;
 	padding: 1.5em 0;
 	width: 100%;
-}
-
-// Recent Work
-.recent-work {
-
-	div {
-		float: left;
-		margin-top: 20px;
-		width: 50%;
-	}
-
-	img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-	}
-
-	p {
-		text-align: center;
-	}
-}
-
-// Our clients say
-.clients-say {
-
-	.client {
-		float: left;
-		position: relative;
-		width: 50%;
-
-		@media screen and (max-width: 568px) {
-			width: 100%;
-		}
-
-		img {
-			border-radius: 50%;
-			width: 100px;
-			height: 100px;
-			float: left;
-			margin-right: 1em;
-		}
-	}
-}
-
-// The styles for the 'us' section.
-.us {
 
 	div {
 		background-position-y: center;
@@ -155,6 +113,61 @@ header {
 	}
 }
 
+// Recent Work
+.recent-work {
+	background-color: $gray;
+	padding: 3% 10%;
+
+	div {
+		float: left;
+		margin-top: 20px;
+		width: 50%;
+	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	p {
+		color: white;
+		text-align: center;
+	}
+}
+
+// Our clients say
+.clients-say {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 62.5rem;
+	padding: 10% 0;
+	width: 100%;
+
+	.client {
+		float: left;
+		position: relative;
+		width: 50%;
+
+		@media screen and (max-width: 568px) {
+			width: 100%;
+		}
+
+		h1 {
+			margin-bottom: 5%;
+		}
+
+		img {
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin-right: 1em;
+		}
+	}
+}
+
 // The styles for the 'process' section.
 .process {
 	img {
@@ -164,7 +177,12 @@ header {
 
 // The styles for the 'team' section.
 .team {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 62.5rem;
 	overflow: hidden;
+	padding: 1.5em 0;
+	width: 100%;
 
 	img {
 		display: block;
