@@ -383,7 +383,7 @@ grunt.registerTask('build', [
   'jshint',
   //'htmlangular',
   'plato',
-  //'yuidoc',
+  'yuidoc',
   'useminPrepare',
   'concurrent:dist',
   'concat',
