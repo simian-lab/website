@@ -28,7 +28,7 @@ angular.module('simian.home', [])
     ' belong to me. Besides, Ive already been through too much shit this morning' +
     ' over this case to hand it over to your dumb ass.',
     VARIABLE_REPLACEMENT: 'Hi, {{name}}',
-    HEADLINE_ONE: 'Envision',
+    HEADLINE_ONE: 'Us',
     HEADLINE_TWO: 'Analysis',
     HEADLINE_THREE: 'Development',
     HEADLINE_FOUR: 'Maintenance',
