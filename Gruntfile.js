@@ -176,6 +176,38 @@ module.exports = function(grunt) {
   }
 },
 
+// Docular: http://grunt-docular.com/
+docular: {
+  docular_webapp_target : "documentation",
+  groups: [
+  {
+    groupTitle: 'Simian Website',
+    groupId: 'simian',
+    groupIcon: 'icon-beer',
+    showSource: true,
+    sections: [
+    {
+      id: "documentation",
+      title: "Documentation",
+      showSource: false,
+      scripts: [
+      'app/analytics',
+      'app/enter',
+      'app/footer',
+      'app/home',
+      'app/kienyke',
+      'app/topbar',
+      'app/app.js',
+      'app/configuration.js'
+      ],
+    },
+    ]
+  }
+  ],
+  showDocularDocs: false,
+  showAngularDocs: false
+},
+
 htmlangular: {
   options: {
     tmplext: 'tpl.html',
@@ -235,12 +267,13 @@ imagemin: {
 
 // Jasmine: https://github.com/gruntjs/grunt-contrib-jasmine
 jasmine: {
-  src: [
-  'app/components/angular/angular.js',
-  'app/**/*.js'
-  ],
+  src: 'app/**/*.js',
   options: {
     specs: 'spec/*Spec.js',
+    vendor: [
+    'app/components/angular/angular.js',
+    'http://code.angularjs.org/1.1.0/angular-mocks.js'
+    ]
   }
 },
 
@@ -351,18 +384,6 @@ watch: {
     ]
   }
 },
-
-// YuiDoc: https://github.com/gruntjs/grunt-contrib-yuidoc
-yuidoc: {
-  compile: {
-    logo: '../app/images/logo.svg',
-    options: {
-      paths: 'app/',
-      exclude:'app/components',
-      outdir: 'documentation/'
-    }
-  }
-}
 });
 
 grunt.registerTask('server', function(target) {
@@ -380,10 +401,10 @@ grunt.registerTask('server', function(target) {
 
 grunt.registerTask('build', [
   'clean:dist',
+  'docular',
   'jshint',
   //'htmlangular',
   'plato',
-  'yuidoc',
   'useminPrepare',
   'concurrent:dist',
   'concat',
@@ -401,5 +422,7 @@ grunt.registerTask('validate', [
   //'jasmine'
   ]);
 
-grunt.loadNpmTasks('grunt-contrib-yuidoc');
+// Load the npm tasks.
+grunt.loadNpmTasks('grunt-docular');
+grunt.loadNpmTasks('grunt-contrib-jasmine');
 };
