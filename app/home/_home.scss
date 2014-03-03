@@ -3,7 +3,7 @@ h1 {
 }
 
 header {
-	background-image: url('/images/mainPicture.svg');
+	background-image: url(/images/mainPicture.svg);
 	background-position: center;
 	background-position-y: 12em;
 	background-repeat: no-repeat;
@@ -57,25 +57,25 @@ header {
 	}
 
 	.envision {
-		background-image:url('http://ballingonabudget.org/wp-content/uploads/2013/06/Thinking_Chimp.jpg');
+		background-image:url(http://ballingonabudget.org/wp-content/uploads/2013/06/Thinking_Chimp.jpg);
 	}
 
 	.analysis {
-		background-image:url('/images/analysis.svg');
+		background-image:url(/images/analysis.svg);
 		background-size: 45%;
 	}
 
 	.design {
-		background-image:url('http://i01.i.aliimg.com/wsphoto/v0/336600131/30pcs-lot-100cm-Super-Cartoon-Monkey-Automatic-Retractable-Tape-Measure-Mascot-Keychains.jpg_250x250.jpg');
+		background-image:url(http://i01.i.aliimg.com/wsphoto/v0/336600131/30pcs-lot-100cm-Super-Cartoon-Monkey-Automatic-Retractable-Tape-Measure-Mascot-Keychains.jpg_250x250.jpg);
 	}
 
 	.development {
-		background-image:url('http://codedmonkey.files.wordpress.com/2011/01/code_monkey_desktop_by_ispaz247.jpg');
+		background-image:url(http://codedmonkey.files.wordpress.com/2011/01/code_monkey_desktop_by_ispaz247.jpg);
 		background-size: 35%;
 	}
 
 	.mantain {
-		background-image:url('/images/mantain.svg');
+		background-image:url(/images/mantain.svg);
 		background-size: 30%;
 	}
 
