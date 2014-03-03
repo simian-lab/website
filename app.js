@@ -1,5 +1,14 @@
 'use strict';
 
+/**
+ * @doc module
+ * @name app
+ * @description
+ *
+ * ## Title
+ *
+ * TODO: Complete this.
+ */
 angular.module('simian', [
   'ui.router',
   'pascalprecht.translate',
