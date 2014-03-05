@@ -19,7 +19,9 @@ angular.module('simian.tracker', ['simian.configuration'])
           domainId ='UA-48202840-4';
           break;
       }
-      $window.ga('create', domainId, 'simian.co');
+      $window.ga('create', domainId, {
+        'cookieDomain': 'none'
+      });
     },
     trackGAPageview: function(path){
       $window.ga('send', 'pageview', path);

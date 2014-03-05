@@ -1,16 +1,26 @@
 'use strict'
-describe('footer', function() {
+describe('footer test', function() {
   var $compile;
   var $rootScope;
-  beforeEach(module('simian.footer'));
-  beforeEach(inject(function(_$compile_, _$rootScope_){
+  var $httpBackend;
+  var createController;
+  beforeEach(angular.module('simian.footer', ['simian.configuration']));
+  beforeEach(inject(function($inyector,_$compile_, _$rootScope_){
     $compile = _$compile_;
     $rootScope = _$rootScope_;
+    $httpBackend = $inyector.get('$httpBackend');
+    createController = function() {
+      return $controller('footerController', {'$scope' : $rootScope });
+    };
   }));
-  it('Footer Spec', function() {
+  it('should show html', function() {
     var element = $compile('<div footer class="footer"></div>')($rootScope);
     $rootScope.$digest();
-    var rutaContacto = $rootScope.CONTACT_ROUTE
-    expect(element.html()).toContain("form action="rutaContacto" method="post"");
+    expect(element.html()).toContain('form name="contact" ng-submit="sendForm()"');
   });
+  it('should send http request', function(){
+    var rutaContacto = $rootScope.CONTACT_ROUTE;
+    var controller = createController();
+    expectPost(rutaContacto,)
+  })
 });
