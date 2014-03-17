@@ -1,8 +1,18 @@
 'use strict';
 
+/**
+ * @doc module
+ * @name home
+ * @description
+ *
+ * ## Title
+ *
+ * TODO: Complete this.
+ */
 angular.module('simian.home', [])
 
 .config(function($translateProvider){
+
 	var translationsES = {
     HEADLINE_MAIN: 'Construimos tecnología para seres humanos',
     PARAGRAPH: 'Normally, both your asses would be dead as fucking fried chicken,' +
@@ -20,6 +30,7 @@ angular.module('simian.home', [])
     HEADLINE_SEVEN: 'Nuestro proceso',
     HEADLINE_EIGHT: 'El equipo'
   };
+  
   var translationsEN = {
     HEADLINE_MAIN: 'We build tecnology for human beings',
     PARAGRAPH: 'Normally, both your asses would be dead as fucking fried chicken,' +
@@ -28,7 +39,7 @@ angular.module('simian.home', [])
     ' belong to me. Besides, Ive already been through too much shit this morning' +
     ' over this case to hand it over to your dumb ass.',
     VARIABLE_REPLACEMENT: 'Hi, {{name}}',
-    HEADLINE_ONE: 'Envision',
+    HEADLINE_ONE: 'What we do',
     HEADLINE_TWO: 'Analysis',
     HEADLINE_THREE: 'Development',
     HEADLINE_FOUR: 'Maintenance',
@@ -43,4 +54,7 @@ angular.module('simian.home', [])
   $translateProvider.preferredLanguage('en');
   $translateProvider.fallbackLanguage('en');
 })
-;
+
+.controller('HomeController', function($location, AnalyticsTracker) {
+  AnalyticsTracker.pageTrack($location.url());
+});

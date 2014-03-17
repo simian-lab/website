@@ -26,13 +26,16 @@
     "grunt-replace": "~0.6.1",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-plato": "~0.2.1",
-    "grunt-html-angular-validate": "~0.2.3"
+    "grunt-html-angular-validate": "~0.2.3",
+    "grunt-contrib-jasmine": "latest",
+    "grunt-docular": "~0.1.2"
   },
   "dependencies": {
     "grunt-karma": "~0.6.2",
     "nodemailer": "~0.6.0",
     "express": "~3.4.8",
     "forever": "~0.10.11",
-    "dotenv": "~0.2.4"
+    "dotenv": "~0.2.4",
+    "grunt-contrib-jasmine": "~0.6.1"
   }
 }

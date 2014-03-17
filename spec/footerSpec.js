@@ -1,13 +1,16 @@
 'use strict'
 describe('footer', function() {
-  beforeEach(module('myApp'));
+  var $compile;
+  var $rootScope;
+  beforeEach(module('simian.footer'));
   beforeEach(inject(function(_$compile_, _$rootScope_){
     $compile = _$compile_;
     $rootScope = _$rootScope_;
   }));
-  it('Replaces the element with content', function() {
+  it('Footer Spec', function() {
     var element = $compile('<div footer class="footer"></div>')($rootScope);
     $rootScope.$digest();
-    expect(element.html())
+    var rutaContacto = $rootScope.CONTACT_ROUTE
+    expect(element.html()).toContain("form action="rutaContacto" method="post"");
   });
 });
