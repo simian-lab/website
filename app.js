@@ -1,12 +1,24 @@
 'use strict';
 
+/**
+ * @doc module
+ * @name app
+ * @description
+ *
+ * ## Title
+ *
+ * TODO: Complete this.
+ */
 angular.module('simian', [
   'ui.router',
   'pascalprecht.translate',
   'simian.footer',
   'simian.home',
+  'simian.kienyke',
+  'simian.enter',
   'simian.topbar',
-  'simian.configuration'
+  'simian.configuration',
+  'simian.tracker'
 ])
 
 .config(function($stateProvider, $locationProvider) {
@@ -28,8 +40,8 @@ angular.module('simian', [
   });
 })
 
-.controller('Ctrl', ['$translate', '$scope', function ($translate, $scope) {
-
+.controller('Ctrl', ['$translate', '$scope','AnalyticsTracker', function ($translate, $scope, AnalyticsTracker) {
+  AnalyticsTracker.initGATracker();
   $scope.changeLanguage = function (langKey) {
     $translate.uses(langKey);
     $translate();

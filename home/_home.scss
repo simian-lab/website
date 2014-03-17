@@ -3,12 +3,18 @@ h1 {
 }
 
 header {
-	background-image: url('/images/mainPicture.svg');
-	background-position: right;
-	background-position-y: 103%;
+	background-image: url(/images/mainPicture.svg);
+	background-position: center;
+	background-position-y: 12em;
 	background-repeat: no-repeat;
 	background-size: 86%;
 	height: 35em;
+
+	@media screen and (max-width: $tablet) {
+		background-position-y: 6em;
+		background-size: 220%;
+		height: 20em;
+	}
 
 	img {
 		display: block;
@@ -26,43 +32,51 @@ header {
 	}
 }
 
-.main-row {
+.main-row section {
+	@include pie-clearfix;
+}
+
+// The styles for the 'us' section.
+.us {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 62.5rem;
 	padding: 1.5em 0;
 	width: 100%;
-}
-
-// The styles for the 'us' section.
-.us {
 
 	div {
 		background-position-y: center;
 		background-repeat: no-repeat;
 		background-size: contain;
 		margin: 20px 0;
+
+		@media screen and (max-width: $tablet) {
+			margin: 0;
+			padding: 0;
+		}
 	}
 
 	.envision {
-		background-image:url('http://ballingonabudget.org/wp-content/uploads/2013/06/Thinking_Chimp.jpg');
+		background-image:url(http://ballingonabudget.org/wp-content/uploads/2013/06/Thinking_Chimp.jpg);
 	}
 
 	.analysis {
-		background-image:url('/images/analysis.svg');
+		background-image:url(/images/analysis.svg);
+		background-size: 45%;
 	}
 
 	.design {
-		background-image:url('http://i01.i.aliimg.com/wsphoto/v0/336600131/30pcs-lot-100cm-Super-Cartoon-Monkey-Automatic-Retractable-Tape-Measure-Mascot-Keychains.jpg_250x250.jpg');
+		background-image:url(http://i01.i.aliimg.com/wsphoto/v0/336600131/30pcs-lot-100cm-Super-Cartoon-Monkey-Automatic-Retractable-Tape-Measure-Mascot-Keychains.jpg_250x250.jpg);
 	}
 
 	.development {
-		background-image:url('http://codedmonkey.files.wordpress.com/2011/01/code_monkey_desktop_by_ispaz247.jpg');
+		background-image:url(http://codedmonkey.files.wordpress.com/2011/01/code_monkey_desktop_by_ispaz247.jpg);
 		background-size: 35%;
 	}
 
 	.mantain {
-		background-image:url('/images/mantain.svg');
+		background-image:url(/images/mantain.svg);
+		background-size: 30%;
 	}
 
 	.description {
@@ -99,6 +113,61 @@ header {
 	}
 }
 
+// Recent Work
+.recent-work {
+	background-color: $gray;
+	padding: 3% 10%;
+
+	div {
+		float: left;
+		margin-top: 20px;
+		width: 50%;
+	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	p {
+		color: white;
+		text-align: center;
+	}
+}
+
+// Our clients say
+.clients-say {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 62.5rem;
+	padding: 10% 0;
+	width: 100%;
+
+	.client {
+		float: left;
+		position: relative;
+		width: 50%;
+
+		@media screen and (max-width: 568px) {
+			width: 100%;
+		}
+
+		h1 {
+			margin-bottom: 5%;
+		}
+
+		img {
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin-right: 1em;
+		}
+	}
+}
+
 // The styles for the 'process' section.
 .process {
 	img {
@@ -108,7 +177,12 @@ header {
 
 // The styles for the 'team' section.
 .team {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 62.5rem;
 	overflow: hidden;
+	padding: 1.5em 0;
+	width: 100%;
 
 	img {
 		display: block;
