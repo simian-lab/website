@@ -51,7 +51,7 @@ module.exports = function(grunt) {
       },
       server: '.tmp'
     },
-    
+
     compass: {
       options: {
         sassDir: '<%= config.app %>/styles',
@@ -104,6 +104,13 @@ module.exports = function(grunt) {
             return [
             lrSnippet,
             pushState(),
+            function(req, res, next){
+              if(req.url.indexOf('svgz') != -1) {
+                res.setHeader('Content-Encoding', 'gzip');
+              }
+
+              next();
+            },
             mountFolder(connect, '.tmp'),
             mountFolder(connect, 'app')
             ];
