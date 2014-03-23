@@ -13,40 +13,30 @@ angular.module('simian.home', [])
 
 .config(function($translateProvider){
 
-	var translationsES = {
-    HEADLINE_MAIN: 'Construimos tecnología para seres humanos',
-    PARAGRAPH: 'Normally, both your asses would be dead as fucking fried chicken,' +
-    ' but you happen to pull this shit while Im in a transitional period so I dont' +
-    ' wanna kill you, I wanna help you. But I cant give you this case, it dont' +
-    ' belong to me. Besides, Ive already been through too much shit this morning' +
-    ' over this case to hand it over to your dumb ass.',
-    VARIABLE_REPLACEMENT: 'Hola, {{name}}',
-    HEADLINE_ONE: 'Visión',
-    HEADLINE_TWO: 'Análisis',
-    HEADLINE_THREE: 'Desarrollo',
-    HEADLINE_FOUR: 'Mantenimiento',
-    HEADLINE_FIVE: 'Trabajo Reciente',
-    HEADLINE_SIX: 'Nuestros clientes dicen',
-    HEADLINE_SEVEN: 'Nuestro proceso',
-    HEADLINE_EIGHT: 'El equipo'
-  };
-  
+  var translationsES = {/* TODO: REDO THIS! */};
+
   var translationsEN = {
-    HEADLINE_MAIN: 'We build tecnology for human beings',
-    PARAGRAPH: 'Normally, both your asses would be dead as fucking fried chicken,' +
-    ' but you happen to pull this shit while Im in a transitional period so I dont' +
-    ' wanna kill you, I wanna help you. But I cant give you this case, it dont' +
-    ' belong to me. Besides, Ive already been through too much shit this morning' +
-    ' over this case to hand it over to your dumb ass.',
-    VARIABLE_REPLACEMENT: 'Hi, {{name}}',
-    HEADLINE_ONE: 'What we do',
-    HEADLINE_TWO: 'Analysis',
-    HEADLINE_THREE: 'Development',
-    HEADLINE_FOUR: 'Maintenance',
-    HEADLINE_FIVE: 'Recent Work',
-    HEADLINE_SIX: 'Our Clients Say',
-    HEADLINE_SEVEN: 'Our Process',
-    HEADLINE_EIGHT: 'The Team'
+    MAIN_HEADLINE:          'We build technology for human beings',
+    ENVISION_HEADLINE:      'Envision',
+    ENVISION_PARAGRAPH:     'Successful products are born from clear objectives.' +
+                            'We can help you shaping your ideas, just define the goals' +
+                            'and we\'ll show you how to get there.',
+    ANALYSIS_HEADLINE:      'Analysis',
+    ANALYSIS_PARAGRAPH:     'Without measurement, there\'s no way to tell if you\'re' +
+                            'pointing in the right direction. Through stats and analysis' +
+                            'we can help you understand your customers.',
+    DESIGN_HEADLINE:        'Design',
+    DESIGN_PARAGRAPH:       'We don\'t just make pretty things; we craft products that' +
+                            'are useful and achieve your goals. Instead of drawing plain images,' +
+                            'we design dynamic user experiences right in the browser.',
+    DEVELOPMENT_HEADLINE:   'Development',
+    DEVELOPMENT_PARAGRAPH:  'We understand how the Internet works, from network' +
+                            'infrastructure up to browser quirks. We use the latest technologies' +
+                            'to build your project, whether it\'s a small site or a high traffic product.',
+    MAINTENANCE_HEADLINE:   'Maintenance',
+    MAINTENANCE_PARAGRAPH:  'We grow alongside our customers. We like to innovate constantly with' +
+                            'your products as your goals and customers evolve in time.'
+
   };
 
   $translateProvider.translations('en', translationsEN);
