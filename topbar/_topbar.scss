@@ -4,17 +4,51 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
+
+  transition: 0.3s ease-out background,
+              0.2s ease-out padding;
+
+  &.scrolled {
+    background: rgba(
+                  red($menu-button-color),
+                  green($menu-button-color),
+                  blue($menu-button-color),
+                  0.85);
+    padding: 0;
+
+    .menu-button, .contact-link {
+      width: 3.5rem;
+      height: 3.5rem;
+      padding: 1rem 1rem;
+      border-radius: 0;
+      background: transparent;
+    }
+  }
 
   .menu-button, .contact-link {
     background-color: $menu-button-color;
     border-radius: 50%;
-    //@include box-shadow(0 0 2px darken($gray-menu, 10%));
+    @include box-shadow(0 0 0.25rem darken($gray-menu, 10%));
     color: $gray-menu;
     font-size: 1.4rem;
     width: 2.5rem;
     height: 2.5rem;
     padding: 0.5rem 0.595rem;
     vertical-align: top;
+    transition: 0.2s ease-out color,
+                0.2s ease-out border-radius,
+                0.2s ease-out background,
+                0.2s ease-out padding,
+                0.2s ease-out height,
+                0.2s ease-out width,
+                0.2s ease-out box-shadow;
+
+    &:hover {
+      color: #96d60b;
+      text-shadow: none;
+      box-shadow: 0 0 0.25rem #96d60b;
+    }
   }
 
   .menu-button {
