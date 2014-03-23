@@ -2,13 +2,17 @@ h1 {
   margin-bottom: 2%;
 }
 
+#logo {
+  width: 60%;
+}
+
 header {
   background-image: url(/images/mainPicture.svgz);
   background-position: center;
   background-position-y: 12em;
   background-repeat: no-repeat;
   background-size: 86%;
-  height: 35em;
+  height: 35rem;
 
   @media screen and (max-width: $tablet) {
     background-position-y: 6em;
@@ -33,7 +37,7 @@ header {
 }
 
 .main-row section {
-  @include pie-clearfix;
+  //@include pie-clearfix;
 }
 
 // The styles for the 'us' section.
