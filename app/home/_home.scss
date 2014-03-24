@@ -1,14 +1,17 @@
-h1 {
-  margin-bottom: 1.5rem;
+.home section {
+  @include pie-clearfix;
+}
 
-  @media screen and (max-width: $tablet) {
-    font-size: 1.85rem;
-    line-height: 1;
-  }
+.hide {
+  display: none;
 }
 
 #logo {
   width: 60%;
+  height: 40%; // This is required for the object.
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
@@ -39,12 +42,6 @@ header {
       margin-top: 10%;
     }
   }
-
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .title {
@@ -57,12 +54,16 @@ header {
   }
 }
 
-.home section {
-  @include pie-clearfix;
+h1 {
+  margin-bottom: 1.5rem;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 1.85rem;
+    line-height: 1;
+  }
 }
 
-// The styles for the 'us' section.
-.us {
+#what-we-do {
   margin-left: auto;
   margin-right: auto;
   max-width: 62.5rem;
@@ -70,38 +71,64 @@ header {
   width: 100%;
 
   div {
-    background-position-y: center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 20px 0;
 
     @media screen and (max-width: $tablet) {
-      margin: 0;
-      padding: 0;
+      //margin: 0;
+      //padding: 0;
     }
   }
 
+  p, h2 {
+    padding: 0 1rem;
+  }
+
   .envision {
-    background-image:url(http://ballingonabudget.org/wp-content/uploads/2013/06/Thinking_Chimp.jpg);
+    //background-image:url(/images/analysis.svg);
   }
 
   .analysis {
-    background-image:url(/images/analysis.svg);
-    background-size: 45%;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 15rem;
+      position: absolute;
+      background-image: url(/images/analysis.svg);
+      opacity: 0.20;
+      top: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-x: 8rem;
+    }
   }
 
   .design {
-    background-image:url(http://i01.i.aliimg.com/wsphoto/v0/336600131/30pcs-lot-100cm-Super-Cartoon-Monkey-Automatic-Retractable-Tape-Measure-Mascot-Keychains.jpg_250x250.jpg);
+    //background-image:url(/images/analysis.svg);
   }
 
   .development {
-    background-image:url(http://codedmonkey.files.wordpress.com/2011/01/code_monkey_desktop_by_ispaz247.jpg);
-    background-size: 35%;
+    //background-image:url(/images/analysis.svg);
+    //background-size: 35%;
   }
 
   .mantain {
-    background-image:url(/images/mantain.svg);
-    background-size: 30%;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 15rem;
+      position: absolute;
+      background-image: url(/images/mantain.svg);
+      opacity: 0.20;
+      top: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-x: -1rem;
+    }
   }
 
   .description {
@@ -119,8 +146,10 @@ header {
   }
 
   .right {
-    background-position-x: left;
-    overflow: hidden;
+    //background-position-x: left;
+    //overflow: hidden;
+    padding: 0;
+
     figure {
       float: left;
     }
@@ -130,9 +159,11 @@ header {
   }
 
   .left {
-    background-position-x: right;
-    background-position: 90%;
-    overflow: hidden;
+    //background-position-x: right;
+    //background-position: 90%;
+    //overflow: hidden;
+    padding: 0;
+
     figure {
       float: right;
     }
@@ -142,8 +173,7 @@ header {
   }
 }
 
-// Recent Work
-.recent-work {
+#recent-work {
   background-color: $gray;
   padding: 3% 10%;
 
@@ -171,8 +201,7 @@ header {
   }
 }
 
-// Our clients say
-.clients-say {
+#clients-say {
   margin-left: auto;
   margin-right: auto;
   max-width: 62.5rem;
@@ -202,15 +231,13 @@ header {
   }
 }
 
-// The styles for the 'process' section.
-.process {
+#process {
   img {
     width: 100%;
   }
 }
 
-// The styles for the 'team' section.
-.team {
+#team {
   margin-left: auto;
   margin-right: auto;
   max-width: 62.5rem;

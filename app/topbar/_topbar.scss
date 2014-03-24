@@ -5,6 +5,7 @@
   top: 0;
   width: 100%;
   z-index: 1;
+  text-align: center;
 
   transition: 0.3s ease-out background,
               0.2s ease-out padding;
@@ -16,6 +17,7 @@
                   blue($menu-button-color),
                   0.85);
     padding: 0;
+    box-shadow: 0 0 0.5rem $gray-menu;
 
     .menu-button, .contact-link {
       width: 3.5rem;
@@ -23,6 +25,10 @@
       padding: 1rem 1rem;
       border-radius: 0;
       background: transparent;
+    }
+
+    .topbar-logo {
+      display: inline-block;
     }
   }
 
@@ -57,6 +63,14 @@
 
   .contact-link {
     float: right;
+  }
+
+  .topbar-logo {
+    width: 3rem;
+    display: none;
+    text-align: center;
+    opacity: 0.5;
+    margin: 0.5rem 0 0;
   }
 }
 
