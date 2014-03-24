@@ -1,89 +1,105 @@
 footer {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .contact-form {
-	float: left;
-	padding: 5% 2%;
-	width: 50%;
+  float: left;
+  padding: 5% 2%;
+  width: 50%;
 
-	@media screen and (max-width: $tablet) {
-		padding: 7%;
-		width: 100%;
-	}
+  @media screen and (max-width: $tablet) {
+    padding: 7%;
+    width: 100%;
+  }
 
-	input, textarea {
-		margin-bottom: 10px;
-	}
+  input, textarea {
+    margin-bottom: 10px;
+  }
 
-	.btn {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100px;
-	}
+  textarea {
+    min-height: 10rem;
+  }
+
+  .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8rem;
+    font-size: 1rem;
+  }
 }
 
 .mail-social {
-	float: right;
-	padding-top: 12%;
-	width: 50%;
+  float: right;
+  padding-top: 12%;
+  width: 50%;
 
-	@media screen and (max-width: $tablet) {
-		float: none;
-		width: 100%;
-	}
+  @media screen and (max-width: $tablet) {
+    float: none;
+    width: 100%;
+  }
 
-	h2 {
-		font-size: 4em;
-		margin: 3% 0;
-		text-align: center;
+  h2 {
+    font-size: 4em;
+    margin: 3% 0;
+    text-align: center;
 
-		@media screen and (max-width: $tablet) {
-			font-size: 2em;
-		}
-	}
+    a {
+      color: $blue;
+    }
 
-	span {
-		font-size: 5em;
-		margin: 12px;
+    @media screen and (max-width: $tablet) {
+      font-size: 2em;
+    }
+  }
 
-		@media screen and (max-width: $tablet) {
-			font-size: 2em;
-			margin: 5px;
-		}
-	}
+  span {
+    font-size: 5em;
+    margin: 12px;
 
-	span:hover {
-		color: $gray-menu;
-	}
+    &:hover {
+      color: $gray-menu;
+    }
 
-	.social-networks{
-		margin-left: auto;
-		margin-right: auto;
-		width: 60%;
+    @media screen and (max-width: $tablet) {
+      font-size: 2em;
+      margin: 5px;
+    }
+  }
 
-		@media screen and (max-width: $tablet) {
-			width: 75%;
-		}
-	}	
+  .social-networks{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
 
-	.location {		
-		margin-left: auto;
-		margin-right: auto;
-		overflow: hidden;
-		width: 75%;
+    @media screen and (max-width: $tablet) {
+      width: 75%;
+    }
+  }
 
-		@media screen and (max-width: $tablet) {
-			margin-bottom: 10%;
-		}
+  .location {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 75%;
 
-		h2 {
-			text-align: left;
-		}
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 10%;
+    }
 
-		.icon-location {
-			float: left;
-		}
-	}
+    h2 {
+      text-align: center;
+    }
+
+    .icon-location {
+      font-size: 2rem;
+      color: white;
+      margin: 0;
+    }
+  }
+}
+
+#contact-hidden {
+  display: none;
 }
