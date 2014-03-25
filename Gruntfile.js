@@ -148,7 +148,7 @@ module.exports = function(grunt) {
           src: [
           '*.{ico,png,txt,xml}',
           'components/**/*',
-        'images/{,*/}*.{gif,webp,svg}',
+        'images/{,*/}*.{gif,webp,svg,svgz}',
         'fonts/*'
         ]
       }, {
@@ -387,7 +387,7 @@ watch: {
     '<%= config.app %>/**/*.html',
     '<%= config.app %>/**/*.css',
     '<%= config.app %>/**/*.js',
-    '<%= config.app %>/**/*.{png,jpg,jpeg,gif,webp,svg}'
+    '<%= config.app %>/**/*.{png,jpg,jpeg,gif,webp,svg,svgz}'
     ]
   }
 },
