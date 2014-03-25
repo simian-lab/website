@@ -2,13 +2,21 @@ footer {
   overflow: hidden;
 }
 
+.footer-container {
+  @include clearfix();
+  margin: 0 auto;
+  max-width: 62.5rem;
+}
+
 .contact-form {
   float: left;
-  padding: 5% 2%;
-  width: 50%;
-
   padding: 7%;
   width: 100%;
+
+  @media screen and (min-width: 62rem) {
+    padding: 5% 2%;
+    width: 50%;
+  }
 
   input, textarea {
     margin-bottom: 10px;
@@ -20,63 +28,59 @@ footer {
 
   .btn {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem auto;
     width: 8rem;
     font-size: 1rem;
   }
 }
 
 .mail-social {
-  float: right;
   padding-top: 12%;
-  width: 50%;
-
-  float: none;
   width: 100%;
 
+  @media screen and (min-width: 62rem) {
+    float: right;
+    width: 50%;
+  }
+
   h2 {
-    font-size: 4em;
+    font-size: 3rem;
     margin: 3% 0;
     text-align: center;
 
     a {
       color: $blue;
     }
-
-
-    font-size: 2em;
-
   }
 
   span {
-    font-size: 5em;
-    margin: 12px;
+    font-size: 3rem;
+    margin: 0.25rem;
+
+    @media screen and (min-width: 62rem) {
+      font-size: 4rem;
+      margin: 0 0.25rem;
+    }
 
     &:hover {
       color: $gray-menu;
     }
-
-    font-size: 2em;
-    margin: 5px;
   }
 
   .social-networks{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+    margin: 1rem auto;
     text-align: center;
-
     width: 75%;
+
+    @media screen and (min-width: 62rem) {
+      width: 60%;
+    }
   }
 
   .location {
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
+    margin: 1rem auto;
     width: 75%;
-
-    margin-bottom: 10%;
+    @include clearfix();
 
     h2 {
       text-align: center;
