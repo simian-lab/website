@@ -51,7 +51,7 @@ module.exports = function(grunt) {
       },
       server: '.tmp'
     },
-    
+
     compass: {
       options: {
         sassDir: '<%= config.app %>/styles',
@@ -104,6 +104,13 @@ module.exports = function(grunt) {
             return [
             lrSnippet,
             pushState(),
+            function(req, res, next){
+              if(req.url.indexOf('svgz') != -1) {
+                res.setHeader('Content-Encoding', 'gzip');
+              }
+
+              next();
+            },
             mountFolder(connect, '.tmp'),
             mountFolder(connect, 'app')
             ];
@@ -141,7 +148,7 @@ module.exports = function(grunt) {
           src: [
           '*.{ico,png,txt,xml}',
           'components/**/*',
-        'images/{,*/}*.{gif,webp,svg}',
+        'images/{,*/}*.{gif,webp,svg,svgz}',
         'fonts/*'
         ]
       }, {
@@ -174,6 +181,38 @@ module.exports = function(grunt) {
       ext: '.css'
     }]
   }
+},
+
+// Docular: http://grunt-docular.com/
+docular: {
+  docular_webapp_target : "documentation",
+  groups: [
+  {
+    groupTitle: 'Simian Website',
+    groupId: 'simian',
+    groupIcon: 'icon-beer',
+    showSource: true,
+    sections: [
+    {
+      id: "documentation",
+      title: "Documentation",
+      showSource: false,
+      scripts: [
+      'app/analytics',
+      'app/enter',
+      'app/footer',
+      'app/home',
+      'app/kienyke',
+      'app/topbar',
+      'app/app.js',
+      'app/configuration.js'
+      ],
+    },
+    ]
+  }
+  ],
+  showDocularDocs: false,
+  showAngularDocs: false
 },
 
 htmlangular: {
@@ -235,12 +274,13 @@ imagemin: {
 
 // Jasmine: https://github.com/gruntjs/grunt-contrib-jasmine
 jasmine: {
-  src: [
-  'app/components/angular/angular.js',
-  'app/**/*.js'
-  ],
+  src: 'app/**/*.js',
   options: {
     specs: 'spec/*Spec.js',
+    vendor: [
+    'app/components/angular/angular.js',
+    'http://code.angularjs.org/1.1.0/angular-mocks.js'
+    ]
   }
 },
 
@@ -347,22 +387,10 @@ watch: {
     '<%= config.app %>/**/*.html',
     '<%= config.app %>/**/*.css',
     '<%= config.app %>/**/*.js',
-    '<%= config.app %>/**/*.{png,jpg,jpeg,gif,webp,svg}'
+    '<%= config.app %>/**/*.{png,jpg,jpeg,gif,webp,svg,svgz}'
     ]
   }
 },
-
-// YuiDoc: https://github.com/gruntjs/grunt-contrib-yuidoc
-yuidoc: {
-  compile: {
-    logo: '../app/images/logo.svg',
-    options: {
-      paths: 'app/',
-      exclude:'app/components',
-      outdir: 'documentation/'
-    }
-  }
-}
 });
 
 grunt.registerTask('server', function(target) {
@@ -380,10 +408,10 @@ grunt.registerTask('server', function(target) {
 
 grunt.registerTask('build', [
   'clean:dist',
+  'docular',
   'jshint',
   //'htmlangular',
   'plato',
-  'yuidoc',
   'useminPrepare',
   'concurrent:dist',
   'concat',
@@ -401,5 +429,7 @@ grunt.registerTask('validate', [
   //'jasmine'
   ]);
 
-grunt.loadNpmTasks('grunt-contrib-yuidoc');
+// Load the npm tasks.
+grunt.loadNpmTasks('grunt-docular');
+grunt.loadNpmTasks('grunt-contrib-jasmine');
 };

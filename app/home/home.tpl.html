@@ -1,104 +1,50 @@
 <div class="home">
 
   <header>
-    <img src="/images/logo.svg" alt="Simian Logo">
+    <img src="/images/logo.svg" id="logo" alt="Simian" />
   </header>
 
   <div class="title">
-    <h1>{{ 'HEADLINE_MAIN' | translate }}</h1>
-    <p><a href="#Contact" class="btn">Contact Us</a></p>
+    <h1>{{ 'MAIN_HEADLINE' | translate }}</h1>
+    <a href="#Contact" class="btn">Contact Us</a>
   </div>
 
-  <div class="main-row">
-    <section id="us" class="us">
+  <section id="what-we-do">
+    <div class="envision">
+      <h2 id="Envision" class="right">{{ 'ENVISION_HEADLINE' | translate }}</h2>
+      <p class="description right">{{ 'ENVISION_PARAGRAPH' | translate }}</p>
+    </div>
 
-      <div class="envision right">
-        <div class="description">
-          <h2 id="Envision">{{ 'HEADLINE_ONE' | translate }}</h2>
-          <p>{{ 'PARAGRAPH' | translate }}</p>
-        </div>
-      </div>
+    <div class="analysis">
+      <h2 id="Analysis" class="left">{{ 'ANALYSIS_HEADLINE' | translate }}</h2>
+      <p class="description left">{{ 'ANALYSIS_PARAGRAPH' | translate }}</p>
+    </div>
 
-      <div class="analysis left">
-        <div class="description">
-          <h2 id="Analysis">{{ 'HEADLINE_TWO' | translate }}</h2>
-          <p>{{ 'PARAGRAPH' | translate }}</p>
-        </div>
-      </div>
+    <div class="design">
+      <h2 id="Design" class="right">{{ 'DESIGN_HEADLINE' | translate }}</h2>
+      <p class="description right">{{ 'DESIGN_PARAGRAPH' | translate }}</p>
+    </div>
 
-      <div class="design right">
-        <div class="description">
-          <h2 id="Design">{{ 'HEADLINE_TWO' | translate }}</h2>
-          <p>{{ 'PARAGRAPH' | translate }}</p>
-        </div>
-      </div>
+    <div class="development">
+      <h2 id="Develop" class="left">{{ 'DEVELOPMENT_HEADLINE' | translate }}</h2>
+      <p class="description left">{{ 'DEVELOPMENT_PARAGRAPH' | translate }}</p>
+    </div>
 
-      <div class="development left">
-        <div class="description">
-          <h2 id="Develop">{{ 'HEADLINE_THREE' | translate }}</h2>
-          <p>{{ 'PARAGRAPH' | translate }}</p>
-        </div>
-      </div>
+    <div class="mantain">
+      <h2 id="Maint" class="right">{{ 'MAINTENANCE_HEADLINE' | translate }}</h2>
+      <p class="description right">{{ 'MAINTENANCE_PARAGRAPH' | translate }}</p>
+    </div>
+  </section>
 
-      <div class="mantain right">
-        <div class="description">
-          <h2 id="Maint">{{ 'HEADLINE_FOUR' | translate }}</h2>
-          <p>{{ 'PARAGRAPH' | translate }}</p>
-        </div>
-      </div>
+  <section id="team">
+    <h1 id="Team">{{ 'TEAM_HEADLINE' | translate }}</h1>
 
-    </section>
-
-    <section class="recent-work">
-      <h1 id="Work">{{ 'HEADLINE_FIVE' | translate }}</h1>
-      <div>
-        <figure>
-          <img src="http://www.enter.co/apple-touch-icon-144-precomposed.png" alt=".CO">
-          <figcaption><p>Rediseñamos el sitio de ENTER.CO</p></figcaption>
-        </figure>
-      </div>
-      <div>
-        <figure>
-          <img src="http://www.enter.co/apple-touch-icon-144-precomposed.png" alt=".CO">
-          <figcaption><p>Construimos una app para móviles y tablets</p></figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="clients-say">
-      <h1 id="Clients">{{ 'HEADLINE_SIX' | translate }}</h1>
-
-      <div class="client">
-        <img src="http://www.platafor.ma/custom/authors/juanfelipe-9.jpg?dim=100" alt="juanfelipe" />
-        <blockquote>
-          <p>Go to Heaven for the climate, Hell for the company. - Mark Twain</p>
-        </blockquote>
-      </div>
-
-      <div class="client">
-        <img src="http://www.platafor.ma/custom/authors/juancarlos-8.jpg?dim=100" alt="juancarlos" />
-        <blockquote>
-          <p>Get your facts first, then you can distort them as you please. - Mark Twain</p>
-        </blockquote>
-      </div>
-    </section>
-
-    <section class="process">
-      <h1 id="Process">{{ 'HEADLINE_SEVEN' | translate }}</h1>
+    <div class="checho left">
       <figure>
-        <img src="http://www.kitchenmonki.com/images/monkey_mixing_bowl_2.gif" alt="kitchen" />
+        <img src="images/checho.svg" alt="Checho Simian" title="Sergio Acosta – Simian">
       </figure>
-    </section>
-
-    <section class="team">
-      <h1 id="Team">{{ 'HEADLINE_EIGHT' | translate }}</h1>
-
-      <div class="checho left">
-        <figure>
-          <img src="images/checho.svg" alt="Checho Simian" title="Sergio Acosta Simian">
-        </figure>
-        <a href="http://sergioacosta.co/" target="_blank"><p>Sergio Acosta</p></a>
-      </div>
+      <a href="http://sergioacosta.co/" target="_blank"><p>Sergio Acosta</p></a>
+    </div>
 
       <div class="ivan right">
         <figure>
@@ -122,5 +68,5 @@
       </div>
     </section>
 
-  </div>
+
 </div>

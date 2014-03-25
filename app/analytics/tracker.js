@@ -1,6 +1,16 @@
 'use strict';
 
+/**
+ * @doc module
+ * @name tracker
+ * @description
+ *
+ * ## Title
+ *
+ * TODO: Complete this.
+ */
 angular.module('simian.tracker', ['simian.configuration'])
+
 .factory('AnalyticsTracker',function($rootScope,$window) {
   return {
     initGATracker: function(){

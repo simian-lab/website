@@ -2,7 +2,8 @@
     $BUTTONS
     \*------------------------------------*/
     .btn {
-    	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($green), to(#85BE08)) !important;
+    	//background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($green), to(#85BE08)) !important;
+        background: linear-gradient($green, #85BE08) !important; /* Standard syntax */
     	border: 0 !important;
     	box-shadow: 1px 1px 3px #7AAB0F;
     	-webkit-border-radius: 5px;
@@ -18,7 +19,7 @@
     	text-align: center;
 
     	&:hover, &:focus {
-    		background: $gray;
+    		//background: $gray;
     		color: $white;
     	}
 
