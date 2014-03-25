@@ -57,6 +57,7 @@ angular.module('simian.footer', ['simian.configuration'])
  */
 .directive('footer', function() {
   return {
-    templateUrl: '/footer/footer.tpl.html'
+    templateUrl: '/footer/footer.tpl.html',
+    replace: true
   };
 });
