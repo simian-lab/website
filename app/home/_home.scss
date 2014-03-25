@@ -7,40 +7,55 @@
 }
 
 #logo {
-  width: 60%;
-  height: 40%; // This is required for the object.
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  max-width: 27rem;
+  width: 60%;
 }
 
 header {
   background-image: url(/images/mainPicture.svgz);
-  background-position: center;
-  background-position-y: 12em;
+  background-position: center 3.5rem;
   background-repeat: no-repeat;
-  background-size: 86%;
-  height: 35rem;
+  background-size: 220%;
   position: relative;
 
   &:after {
-    display: block;
-    position: absolute;
-    content: '';
+    // TODO: Compass this
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
     bottom: 0;
+    content: '';
+    display: block;
+    height: 12em;
     width: 100%;
-    height: 10em;
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(255, 255, 255, 1));
-  }
 
-  @media screen and (max-width: $tablet) {
-    background-position-y: 3.5rem;
-    background-size: 220%;
-    height: 20rem;
-
-    a {
-      margin-top: 10%;
+    @media screen and (min-width: 27rem) {
+      height: 13em;
     }
+
+    @media screen and (min-width: 30rem) {
+      height: 14em;
+    }
+
+    @media screen and (min-width: 37rem) {
+      height: 18em;
+    }
+
+    @media screen and (min-width: 43rem) {
+      height: 22em;
+    }
+  }
+}
+
+h1 {
+  font-size: 1.85rem;
+  line-height: 1;
+  margin: 0px auto 2rem;
+  width: 18rem;
+
+  @media screen and (min-width: 31rem) {
+    font-size: 2.75rem;
+    width: 27rem;
   }
 }
 
@@ -51,37 +66,76 @@ header {
     margin-right: auto;
     width: 7rem;
     font-size: 1rem;
-  }
-}
-
-h1 {
-  margin-bottom: 1.5rem;
-
-  @media screen and (max-width: $tablet) {
-    font-size: 1.85rem;
-    line-height: 1;
+    @media screen and (min-width: 31rem) {
+      width: 8rem;
+      font-size: 1.25rem;
+    }
   }
 }
 
 #what-we-do {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 62.5rem;
   padding: 1.5em 0;
   width: 100%;
 
   div {
+    padding: 0;
     background-repeat: no-repeat;
     background-size: contain;
-
-    @media screen and (max-width: $tablet) {
-      //margin: 0;
-      //padding: 0;
-    }
+    @include pie-clearfix();
   }
 
   p, h2 {
     padding: 0 1rem;
+
+    @media screen and (min-width: 31rem) {
+      padding: 0 2rem;
+    }
+  }
+
+  h2 {
+    @media screen and (min-width: 37rem) {
+      font-size: 2.25rem;
+    }
+  }
+
+  .left {
+    float: none;
+    @media screen and (min-width: 31rem) {
+      text-align: left;
+    }
+  }
+
+  .right {
+    float: none;
+    @media screen and (min-width: 31rem) {
+      text-align: right;
+    }
+  }
+
+  .description {
+    width: 100%;
+
+    @media screen and (min-width: 31rem) {
+      width: 60%;
+    }
+
+    @media screen and (min-width: 37rem) {
+      font-size: 1.25rem;
+    }
+
+    &.left {
+      @media screen and (min-width: 31rem) {
+        float: left;
+      }
+    }
+
+    &.right {
+      @media screen and (min-width: 31rem) {
+        float: right;
+      }
+    }
   }
 
   .envision {
@@ -91,7 +145,7 @@ h1 {
   .analysis {
     position: relative;
 
-    &:after {
+    &:before {
       content: '';
       width: 100%;
       height: 15rem;
@@ -101,7 +155,15 @@ h1 {
       top: 0;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position-x: 8rem;
+      background-position: 8rem 0;
+
+      @media screen and (min-width: 30rem) {
+        background-position: 12rem 0;
+      }
+
+      @media screen and (min-width: 40rem) and (orientation: landscape) {
+        background-position: 20rem 0;
+      }
     }
   }
 
@@ -111,13 +173,12 @@ h1 {
 
   .development {
     //background-image:url(/images/analysis.svg);
-    //background-size: 35%;
   }
 
   .mantain {
     position: relative;
 
-    &:after {
+    &:before {
       content: '';
       width: 100%;
       height: 15rem;
@@ -127,48 +188,7 @@ h1 {
       top: 0;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position-x: -1rem;
-    }
-  }
-
-  .description {
-    padding-left: 2%;
-    padding-right: 2%;
-    width: 60%;
-
-    @media screen and (max-width: $tablet) {
-      width: 100%;
-    }
-
-    h2 {
-      margin: .67em 0;
-    }
-  }
-
-  .right {
-    //background-position-x: left;
-    //overflow: hidden;
-    padding: 0;
-
-    figure {
-      float: left;
-    }
-    .description {
-      float: right;
-    }
-  }
-
-  .left {
-    //background-position-x: right;
-    //background-position: 90%;
-    //overflow: hidden;
-    padding: 0;
-
-    figure {
-      float: right;
-    }
-    .description {
-      float: left;
+      background-position: -1rem 0;
     }
   }
 }
@@ -194,10 +214,8 @@ h1 {
     color: white;
     text-align: center;
 
-    @media screen and (max-width: $tablet) {
-      font-size: 0.9em;
-      line-height: 140%;
-    }
+    font-size: 0.9em;
+    line-height: 140%;
   }
 }
 
@@ -211,11 +229,7 @@ h1 {
   .client {
     float: left;
     position: relative;
-    width: 50%;
-
-    @media screen and (max-width: 568px) {
-      width: 100%;
-    }
+    width: 100%;
 
     h1 {
       margin-bottom: 5%;
@@ -238,8 +252,7 @@ h1 {
 }
 
 #team {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 62.5rem;
   overflow: hidden;
   padding: 1.5em 0;
@@ -256,8 +269,16 @@ h1 {
   }
 
   .left, .right {
-    padding: 0;
+    padding: 0 1rem;
     width: 50%;
+
+    @media screen and (min-width: 31rem) {
+      padding: 0 2rem;
+    }
+
+    @media screen and (min-width: 37rem) {
+      padding: 0 3rem;
+    }
   }
 
   .left {
