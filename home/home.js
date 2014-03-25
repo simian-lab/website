@@ -50,13 +50,13 @@ angular.module('simian.home', [])
   var translationsEN = {
     MAIN_HEADLINE:          'We build technology for human beings',
     ENVISION_HEADLINE:      'Envision',
-    ENVISION_PARAGRAPH:     'Successful products are born from clear objectives.' +
-                            'We can help you shaping your ideas, just define the goals' +
+    ENVISION_PARAGRAPH:     'Successful products are born from clear objectives. ' +
+                            'We can help you shape your ideas, just define the goals ' +
                             'and we\'ll show you how to get there.',
     ANALYSIS_HEADLINE:      'Analysis',
-    ANALYSIS_PARAGRAPH:     'Without measurement, there\'s no way to tell if you\'re' +
-                            'pointing in the right direction. Through stats and analysis' +
-                            'we can help you understand how your customers interact with' +
+    ANALYSIS_PARAGRAPH:     'Without measurement, there\'s no way to tell if you\'re ' +
+                            'pointing in the right direction. Through stats and analysis ' +
+                            'we can help you understand how your customers interact with ' +
                             ' your product.',
     DESIGN_HEADLINE:        'Design',
     DESIGN_PARAGRAPH:       'We don\'t just make pretty things; we craft products that ' +

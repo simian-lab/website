@@ -7,10 +7,8 @@ footer {
   padding: 5% 2%;
   width: 50%;
 
-  @media screen and (max-width: $tablet) {
-    padding: 7%;
-    width: 100%;
-  }
+  padding: 7%;
+  width: 100%;
 
   input, textarea {
     margin-bottom: 10px;
@@ -34,10 +32,8 @@ footer {
   padding-top: 12%;
   width: 50%;
 
-  @media screen and (max-width: $tablet) {
-    float: none;
-    width: 100%;
-  }
+  float: none;
+  width: 100%;
 
   h2 {
     font-size: 4em;
@@ -48,9 +44,9 @@ footer {
       color: $blue;
     }
 
-    @media screen and (max-width: $tablet) {
-      font-size: 2em;
-    }
+
+    font-size: 2em;
+
   }
 
   span {
@@ -61,10 +57,8 @@ footer {
       color: $gray-menu;
     }
 
-    @media screen and (max-width: $tablet) {
-      font-size: 2em;
-      margin: 5px;
-    }
+    font-size: 2em;
+    margin: 5px;
   }
 
   .social-networks{
@@ -73,9 +67,7 @@ footer {
     width: 60%;
     text-align: center;
 
-    @media screen and (max-width: $tablet) {
-      width: 75%;
-    }
+    width: 75%;
   }
 
   .location {
@@ -84,9 +76,7 @@ footer {
     overflow: hidden;
     width: 75%;
 
-    @media screen and (max-width: $tablet) {
-      margin-bottom: 10%;
-    }
+    margin-bottom: 10%;
 
     h2 {
       text-align: center;
