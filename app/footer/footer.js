@@ -12,7 +12,11 @@ angular.module('simian.footer', ['simian.configuration'])
       Email: contact.email,
       Message: contact.message,
       captcha: contact.hidden
-    })
+    }).success(function (data, status, headers, config) {
+      // TODO
+    }).error(function (data, status, headers, config) {
+      // TODO
+    });
   };
 })
 
