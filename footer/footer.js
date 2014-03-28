@@ -46,6 +46,7 @@ angular.module('simian.footer', ['simian.configuration'])
 .controller('footerController', function($rootScope, $scope, $http, AnalyticsTracker) {
   // TODO: something
   var CONTACT_ROUTE = $rootScope.CONTACT_ROUTE;
+  $scope.hidden = '';
   $scope.sendForm = function(){
     AnalyticsTracker.eventTrack('button', 'click', 'contact button');
     $http.post(CONTACT_ROUTE,{
