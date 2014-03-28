@@ -43,7 +43,7 @@ angular.module('simian.footer', ['simian.configuration'])
   $translateProvider.fallbackLanguage('en');
 })
 
-.controller('footerController', function($scope, AnalyticsTracker) {
+.controller('footerController', function($rootScope, $scope, AnalyticsTracker) {
   // TODO: something
   var CONTACT_ROUTE = $rootScope.CONTACT_ROUTE;
   $scope.sendForm = function(){
