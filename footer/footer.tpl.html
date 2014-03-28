@@ -2,7 +2,7 @@
   <div class="footer-container">
     <div class="contact-form">
       <h1 id="Contact">{{ 'CONTACT_HEADLINE' | translate }}</h1>
-      <form action="{{CONTACT_ROUTE}}" method="post">
+      <form name="contact-form-data" method="post" role="form"  ng-submit="sendForm()">
         <div id="contact-name">
           <label>{{ 'NAME_LABEL' | translate }}</label>
           <input type="text" id="Name" name="Name" placeholder="{{ 'NAME_PLACEHOLDER' | translate }}"
@@ -23,7 +23,7 @@
           <input type="text" id="captcha" name="captcha"
             ng-model="contact.hidden">
         </div>
-        <input type="submit" class="btn" value="Send Message" ng-click="event()">
+        <input type="submit" class="btn" value="Send Message">
       </form>
     </div>
 
