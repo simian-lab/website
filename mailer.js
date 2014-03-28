@@ -9,7 +9,7 @@ app.use(express.bodyParser());
 
 app.post('/contact', function(req, res) {
   if(req.body.captcha!=''){
-    res.send('No message for spambots');
+    res.status(403).send('No message for spambots');
     smtpTrans.close(); // shut down the connection pool, no more messages
   }
   var nodemailer = require('nodemailer');
@@ -18,7 +18,8 @@ app.post('/contact', function(req, res) {
 
   //Mail options
   mailOpts = {
-      from: req.body.Name + ' <' + req.body.Email + '>', //grab form data from the request body object
+      //grab form data from the request body object
+      from: req.body.Name + ' <' + req.body.Email + '>',
       to: emailAddress,
       subject: 'Website contact form ' + req.body.Name,
       text: req.body.Message
@@ -26,7 +27,7 @@ app.post('/contact', function(req, res) {
   smtpTrans.sendMail(mailOpts, function(error, response){
     if(error){
         console.log(error);
-        res.send('Oops, there was an error sending the message');
+        res.status(500).send('Oops, there was an error sending the message');
 
     }else{
         console.log("Message sent: " + response.message);
@@ -40,4 +41,3 @@ app.post('/contact', function(req, res) {
 app.listen(portMailer, function() {
   console.log('Server running at http://contactMailer/');
 });
-

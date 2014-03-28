@@ -2,28 +2,28 @@
   <div class="footer-container">
     <div class="contact-form">
       <h1 id="Contact">{{ 'CONTACT_HEADLINE' | translate }}</h1>
-      <form action="{{CONTACT_ROUTE}}" method="post">
+      <form method="post">
         <div id="contact-name">
           <label>{{ 'NAME_LABEL' | translate }}</label>
           <input type="text" id="Name" name="Name" placeholder="{{ 'NAME_PLACEHOLDER' | translate }}"
-            ng-model="contact.name" ng-minlength="3" required>
+            ng-model="name" ng-minlength="3" required>
         </div>
         <div id="contact-email">
           <label>{{ 'EMAIL_LABEL' | translate }}</label>
           <input type="email" id="Email" name="Email" placeholder="{{ 'EMAIL_PLACEHOLDER' | translate }}"
-            ng-model="contact.email" ng-minlength="3" required>
+            ng-model="email" ng-minlength="3" required>
         </div>
         <div id="contact-message">
           <label>{{ 'MESSAGE_LABEL' | translate }}</label>
           <textarea id="Message" name="Message" placeholder="{{ 'MESSAGE_PLACEHOLDER' | translate }}"
-            ng-model="contact.message" ng-minlength="3" required></textarea>
+            ng-model="message" ng-minlength="3" required></textarea>
         </div>
         <div id="contact-hidden">
           <label>{{ 'HIDDEN_LABEL' | translate }}</label>
           <input type="text" id="captcha" name="captcha"
-            ng-model="contact.hidden">
+            ng-model="hidden">
         </div>
-        <input type="submit" class="btn" value="Send Message" ng-click="event()">
+        <input type="submit" class="btn" value="Send Message" ng-click="sendForm()">
       </form>
     </div>
 
