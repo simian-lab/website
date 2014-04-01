@@ -22,7 +22,10 @@ angular.module('simian.footer', ['simian.configuration'])
     NAME_PLACEHOLDER:     'Escribe tu nombre completo',
     EMAIL_PLACEHOLDER:    'No enviamos Spam',
     MESSAGE_PLACEHOLDER:  'Escribe tu mensaje :)',
-    LOCATION_TITLE:       '¿Dónde estamos?'
+    LOCATION_TITLE:       '¿Dónde estamos?',
+    URGENT_LABEL:         'Telegrama urgente',
+    SENDER_LABEL:         'Remitente',
+    SENDING_LABEL:        'Enviando...'
   };
 
   var translationsEN = {
@@ -34,7 +37,10 @@ angular.module('simian.footer', ['simian.configuration'])
     NAME_PLACEHOLDER:     'Write your full name',
     EMAIL_PLACEHOLDER:    'We don\'t spam!',
     MESSAGE_PLACEHOLDER:  'Write your message :)',
-    LOCATION_TITLE:       'Where are we?'
+    LOCATION_TITLE:       'Where are we?',
+    URGENT_LABEL:         'Urgent telegram',
+    SENDER_LABEL:         'Sender',
+    SENDING_LABEL:        'Sending...'
   };
 
   $translateProvider.translations('en', translationsEN);
@@ -44,20 +50,39 @@ angular.module('simian.footer', ['simian.configuration'])
 })
 
 .controller('footerController', function($rootScope, $scope, $http, AnalyticsTracker) {
-  // TODO: something
   var CONTACT_ROUTE = $rootScope.CONTACT_ROUTE;
   $scope.hidden = '';
-  $scope.sendForm = function(){
+  $scope.formClass = 'footer';
+  $scope.headline = 'CONTACT_HEADLINE';
+
+  $scope.sendForm = function() {
     AnalyticsTracker.eventTrack('button', 'click', 'contact button');
-    $http.post(CONTACT_ROUTE,{
+    $scope.formClass += ' packaged';
+    $scope.headline = 'SENDING_LABEL';
+
+    $http.post(CONTACT_ROUTE, {
       Name: $scope.name,
       Email: $scope.email,
       Message: $scope.message,
       captcha: $scope.hidden
-    }).success(function (data, status, headers, config) {
-      alert('success!');
-    }).error(function (data, status, headers, config) {
-      alert('failure :(');
+    }).success(function () {
+      setTimeout(function() {
+        $scope.formStatus = 'Message sent'; // TODO: Translate this!
+        $scope.formClass += ' sent';
+        $scope.$apply();
+      }, 800);
+
+    }).error(function () {
+      $scope.formClass += ' error';
+      $scope.formStatus = 'Couldn\'t send message'; // TODO: Translate this!
+
+      setTimeout(function() {
+        $scope.formStatus = '';
+        $scope.formClass = 'footer';
+        $scope.headline = 'CONTACT_HEADLINE';
+
+        $scope.$apply();
+      }, 5000);
     });
   };
 })
