@@ -12,6 +12,7 @@
 angular.module('simian.configuration', [])
 
 .run(function ($rootScope, $sce) {
-  $rootScope.CONTACT_ROUTE= $sce.trustAsResourceUrl('http://localhost:7544/contacts');
-  $rootScope.ENVIRONMENT= 'dev';
+  $rootScope.CONTACT_ROUTE = $sce.trustAsResourceUrl('@@contact_form_route');
+  $rootScope.ANALYTICS_ID = '@@google_analytics_id';
+  $rootScope.ENVIRONMENT = '@@env';
 });

@@ -181,247 +181,310 @@ module.exports = function(grunt) {
       ext: '.css'
     }]
   }
-},
+  },
 
-// Docular: http://grunt-docular.com/
-docular: {
-  docular_webapp_target : "documentation",
-  groups: [
-  {
-    groupTitle: 'Simian Website',
-    groupId: 'simian',
-    groupIcon: 'icon-beer',
-    showSource: true,
-    sections: [
+  // Docular: http://grunt-docular.com/
+  docular: {
+    docular_webapp_target : "documentation",
+    groups: [
     {
-      id: "documentation",
-      title: "Documentation",
-      showSource: false,
-      scripts: [
-      'app/analytics',
-      'app/enter',
-      'app/footer',
-      'app/home',
-      'app/kienyke',
-      'app/topbar',
-      'app/app.js',
-      'app/configuration.js'
-      ],
-    },
-    ]
-  }
-  ],
-  showDocularDocs: false,
-  showAngularDocs: false
-},
-
-htmlangular: {
-  options: {
-    tmplext: 'tpl.html',
-    customtags: [],
-    customattrs: [
-    'topbar',
-    'footer'
+      groupTitle: 'Simian Website',
+      groupId: 'simian',
+      groupIcon: 'icon-beer',
+      showSource: true,
+      sections: [
+      {
+        id: "documentation",
+        title: "Documentation",
+        showSource: false,
+        scripts: [
+        'app/analytics',
+        'app/enter',
+        'app/footer',
+        'app/home',
+        'app/kienyke',
+        'app/topbar',
+        'app/app.js',
+        'app/configuration.js'
+        ],
+      },
+      ]
+    }
     ],
-    relaxerror: [],
-    reportpath: null
+    showDocularDocs: false,
+    showAngularDocs: false
   },
-  files: {
-    src: [
-    '<%= config.app %>/**/*.html',
-    '!<%= config.app %>/components/**/*.html'
-    ],
-  },
-},
 
-htmlmin: {
-  dist: {
+  htmlangular: {
     options: {
-      /*removeCommentsFromCDATA: true,
-      // https://github.com/yeoman/grunt-usemin/issues/44
-      //collapseWhitespace: true,
-      collapseBooleanAttributes: true,
-      removeAttributeQuotes: true,
-      removeRedundantAttributes: true,
-      useShortDoctype: true,
-      removeEmptyAttributes: true,
-      removeOptionalTags: true*/
+      tmplext: 'tpl.html',
+      customtags: [],
+      customattrs: [
+      'topbar',
+      'footer'
+      ],
+      relaxerror: [],
+      reportpath: null
     },
-    files: [{
-      expand: true,
-      cwd: '<%= config.app %>',
+    files: {
       src: [
-      '**/*.html',
-      '!**/components/**/*.html',
+      '<%= config.app %>/**/*.html',
+      '!<%= config.app %>/components/**/*.html'
       ],
-      dest: '<%= config.dist %>'
-    }]
-  }
-},
+    },
+  },
 
-imagemin: {
-  dist: {
-    files: [{
-      expand: true,
-      cwd: '<%= config.app %>/assets/img',
-      src: [
-      '<%= config.app %>/images/*.{png,jpg,jpeg}'
+  htmlmin: {
+    dist: {
+      options: {
+        /*removeCommentsFromCDATA: true,
+        // https://github.com/yeoman/grunt-usemin/issues/44
+        //collapseWhitespace: true,
+        collapseBooleanAttributes: true,
+        removeAttributeQuotes: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeOptionalTags: true*/
+      },
+      files: [{
+        expand: true,
+        cwd: '<%= config.app %>',
+        src: [
+        '**/*.html',
+        '!**/components/**/*.html',
+        ],
+        dest: '<%= config.dist %>'
+      }]
+    }
+  },
+
+  imagemin: {
+    dist: {
+      files: [{
+        expand: true,
+        cwd: '<%= config.app %>/assets/img',
+        src: [
+        '<%= config.app %>/images/*.{png,jpg,jpeg}'
+        ],
+        dest: '<%= config.dist %>/assets/img'
+      }]
+    }
+  },
+
+  // Jasmine: https://github.com/gruntjs/grunt-contrib-jasmine
+  jasmine: {
+    src: 'app/**/*.js',
+    options: {
+      specs: 'spec/*Spec.js',
+      vendor: [
+      'app/components/angular/angular.js',
+      'http://code.angularjs.org/1.1.0/angular-mocks.js'
+      ]
+    }
+  },
+
+  jshint: {
+    options: {
+      jshintrc: '.jshintrc',
+      ignores: [
+      '<%= config.app %>/components/**/*.js',
+      'Gruntfile.js',
+      '<%= config.app %>/topbar/modernizr.custom.25376.js',
+      // This is temporal.
+      'app/topbar/*.js',
+      'app/vendor/*.js'
       ],
-      dest: '<%= config.dist %>/assets/img'
-    }]
-  }
-},
-
-// Jasmine: https://github.com/gruntjs/grunt-contrib-jasmine
-jasmine: {
-  src: 'app/**/*.js',
-  options: {
-    specs: 'spec/*Spec.js',
-    vendor: [
-    'app/components/angular/angular.js',
-    'http://code.angularjs.org/1.1.0/angular-mocks.js'
-    ]
-  }
-},
-
-jshint: {
-  options: {
-    jshintrc: '.jshintrc',
-    ignores: [
-    '<%= config.app %>/components/**/*.js',
+    },
+    all: [
     'Gruntfile.js',
-    '<%= config.app %>/topbar/modernizr.custom.25376.js',
-    // This is temporal.
-    'app/topbar/*.js',
-    'app/vendor/*.js'
-    ],
-  },
-  all: [
-  'Gruntfile.js',
-  '<%= config.app %>/**/*.js'
-  ]
-},
-
-ngmin: {
-  dist: {
-    files: [{
-      expand: true,
-      cwd: '<%= config.dist %>/scripts',
-      src: '*.js',
-      dest: '<%= config.dist %>/scripts'
-    }]
-  }
-},
-
-// Plato: https://github.com/jsoverson/grunt-plato
-plato: {
-  generate_reports: {
-    files: {
-      'reports': [
-      '<%= config.app %>/**/*.js',
-      '!<%= config.app %>/components/**/*.js',
-      ]
-    }
-  },
-},
-
-rev: {
-  options: {
-    encoding: 'utf8',
-    algorithm: 'md5',
-    length: 8
-  },
-  files: {
-    src: [
-    'dist/scripts/*.js'
+    '<%= config.app %>/**/*.js'
     ]
-  }
-},
-
-uglify: {
-  options: {
-    mangle: false
   },
-  dist: {
-    files: {
-      '<%= config.dist %>/scripts/scripts.js': [
-      '<%= config.dist %>/scripts/scripts.js'
-      ]
+
+  ngmin: {
+    dist: {
+      files: [{
+        expand: true,
+        cwd: '<%= config.dist %>/scripts',
+        src: '*.js',
+        dest: '<%= config.dist %>/scripts'
+      }]
     }
-  }
-},
-
-usemin: {
-  html: [
-  '<%= config.dist %>/**/*.html',
-  '!<%= config.dist %>/components/**/*.html'
-  ],
-  css: [
-  '<%= config.dist %>/**/*.css',
-  '!<%= config.dist %>/components/**/*.css'
-  ],
-  options: {
-    dirs: ['<%= config.dist %>']
-  }
-},
-
-useminPrepare: {
-  html: '<%= config.app %>/index.html',
-  options: {
-    dest: '<%= config.dist %>'
-  }
-},
-
-watch: {
-  compass: {
-    files: [
-    '<%= config.app %>/**/*.scss'
-    ],
-    tasks: ['compass:server']
   },
-  livereload: {
-    options: {
-      livereload: LIVERELOAD_PORT
+
+  // Plato: https://github.com/jsoverson/grunt-plato
+  plato: {
+    generate_reports: {
+      files: {
+        'reports': [
+        '<%= config.app %>/**/*.js',
+        '!<%= config.app %>/components/**/*.js',
+        ]
+      }
     },
-    files: [
-    '<%= config.app %>/**/*.html',
-    '<%= config.app %>/**/*.css',
-    '<%= config.app %>/**/*.js',
-    '<%= config.app %>/**/*.{png,jpg,jpeg,gif,webp,svg,svgz}'
-    ]
-  }
-},
+  },
+
+  replace: {
+    local: {
+      options: {
+        variables: {
+          'contact_form_route': 'http://simian.local:7544/contact',
+          'google_analytics_id': 'UA-48202840-1',
+          'env': 'local'
+        }
+      },
+      files: [{
+        src: '<%= config.app %>/config/source.configuration.js',
+        dest: '<%= config.app %>/configuration.js'
+      }]
+    },
+    dev: {
+      options: {
+        variables: {
+          'contact_form_route': 'http://dev.mail.simian.co/contact',
+          'google_analytics_id': 'UA-48202840-2',
+          'env': 'dev'
+        }
+      },
+      files: [{
+        src: '<%= config.app %>/config/source.configuration.js',
+        dest: '<%= config.app %>/configuration.js'
+      }]
+    },
+    alpha: {
+      options: {
+        variables: {
+          'contact_form_route': 'http://alpha.mail.simian.co/contact',
+          'google_analytics_id': 'UA-48202840-3',
+          'env': 'alpha'
+        }
+      },
+      files: [{
+        src: '<%= config.app %>/config/source.configuration.js',
+        dest: '<%= config.app %>/configuration.js'
+      }]
+    },
+    prod: {
+      options: {
+        variables: {
+          'contact_form_route': 'http://mail.simian.co/contact',
+          'google_analytics_id': 'UA-48202840-4',
+          'env': 'prod'
+        }
+      },
+      files: [{
+        src: '<%= config.app %>/config/source.configuration.js',
+        dest: '<%= config.app %>/configuration.js'
+      }]
+    }
+  },
+
+  rev: {
+    options: {
+      encoding: 'utf8',
+      algorithm: 'md5',
+      length: 8
+    },
+    files: {
+      src: [
+      'dist/scripts/*.js'
+      ]
+    }
+  },
+
+  uglify: {
+    options: {
+      mangle: false
+    },
+    dist: {
+      files: {
+        '<%= config.dist %>/scripts/scripts.js': [
+        '<%= config.dist %>/scripts/scripts.js'
+        ]
+      }
+    }
+  },
+
+  usemin: {
+    html: [
+    '<%= config.dist %>/**/*.html',
+    '!<%= config.dist %>/components/**/*.html'
+    ],
+    css: [
+    '<%= config.dist %>/**/*.css',
+    '!<%= config.dist %>/components/**/*.css'
+    ],
+    options: {
+      dirs: ['<%= config.dist %>']
+    }
+  },
+
+  useminPrepare: {
+    html: '<%= config.app %>/index.html',
+    options: {
+      dest: '<%= config.dist %>'
+    }
+  },
+
+  watch: {
+    compass: {
+      files: [
+      '<%= config.app %>/**/*.scss'
+      ],
+      tasks: ['compass:server']
+    },
+    livereload: {
+      options: {
+        livereload: LIVERELOAD_PORT
+      },
+      files: [
+      '<%= config.app %>/**/*.html',
+      '<%= config.app %>/**/*.css',
+      '<%= config.app %>/**/*.js',
+      '<%= config.app %>/**/*.{png,jpg,jpeg,gif,webp,svg,svgz}'
+      ]
+    }
+  },
 });
 
 grunt.registerTask('server', function(target) {
   if(target === 'dist') {
-    return grunt.task.run(['build', 'connect:dist:keepalive']);
+    return grunt.task.run(['build:prod', 'connect:dist:keepalive']);
   }
 
   grunt.task.run([
+    'replace:local',
     'concurrent:server',
     'connect:livereload',
     'browser_sync',
     'watch'
-    ]);
+  ]);
 });
 
-grunt.registerTask('build', [
-  'clean:dist',
-  'docular',
-  'jshint',
-  //'htmlangular',
-  'plato',
-  'useminPrepare',
-  'concurrent:dist',
-  'concat',
-  'copy',
-  'ngmin',
-  'cssmin',
-  'uglify',
-  'rev',
-  'usemin'
+grunt.registerTask('build', function(target) {
+  if (target == null) {
+    return grunt.warn('Build target must be specified, like build:dev.');
+  }
+
+  grunt.task.run([
+    'clean:dist',
+    'replace:' + target,
+    'docular',
+    'jshint',
+    //'htmlangular',
+    'plato',
+    'useminPrepare',
+    'concurrent:dist',
+    'concat',
+    'copy',
+    'ngmin',
+    'cssmin',
+    'uglify',
+    'rev',
+    'usemin'
   ]);
+});
 
 grunt.registerTask('validate', [
   'jshint',

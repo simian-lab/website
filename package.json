@@ -23,7 +23,7 @@
     "grunt-contrib-cssmin": "~0.7.0",
     "grunt-contrib-htmlmin": "~0.2.0",
     "grunt-contrib-imagemin": "~0.5.0",
-    "grunt-replace": "~0.6.1",
+    "grunt-replace": "~0.7.6",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-plato": "~0.2.1",
     "grunt-html-angular-validate": "~0.2.3",

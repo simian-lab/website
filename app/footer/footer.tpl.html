@@ -1,7 +1,10 @@
-<footer ng-controller="footerController" class="footer">
+<footer ng-controller="footerController" ng-class="formClass">
   <div class="footer-container">
+    <span class="sending-message">
+      {{formStatus}}
+    </span>
     <div class="contact-form">
-      <h1 id="Contact">{{ 'CONTACT_HEADLINE' | translate }}</h1>
+      <h1 id="Contact">{{ headline | translate }}</h1>
       <form name="contact-form-data" method="post" role="form"  ng-submit="sendForm()">
         <div id="contact-name">
           <label>{{ 'NAME_LABEL' | translate }}</label>

@@ -12,6 +12,7 @@
 angular.module('simian.configuration', [])
 
 .run(function ($rootScope, $sce) {
-  $rootScope.CONTACT_ROUTE= $sce.trustAsResourceUrl('http://simian.co:7544/contact');
-  $rootScope.ENVIRONMENT= 'dev'; //Available env: simian, dev, alpha, beta
+  $rootScope.CONTACT_ROUTE = $sce.trustAsResourceUrl('http://simian.local:7544/contact');
+  $rootScope.ANALYTICS_ID = 'UA-48202840-1';
+  $rootScope.ENVIRONMENT = 'local';
 });

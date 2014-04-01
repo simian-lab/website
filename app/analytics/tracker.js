@@ -14,21 +14,8 @@ angular.module('simian.tracker', ['simian.configuration'])
 .factory('AnalyticsTracker',function($rootScope,$window) {
   return {
     initGATracker: function(){
-      var domainId;
-      switch($rootScope.ENVIRONMENT){
-        case 'simian':
-          domainId ='UA-48202840-1';
-          break;
-        case 'dev':
-          domainId ='UA-48202840-2';
-          break;
-        case 'alpha':
-          domainId ='UA-48202840-3';
-          break;
-        case 'beta':
-          domainId ='UA-48202840-4';
-          break;
-      }
+      var domainId = $rootScope.ANALYTICS_ID;
+
       $window.ga('create', domainId, {
         'cookieDomain': 'none'
       });
