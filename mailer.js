@@ -51,5 +51,5 @@ app.post('/contact', function(req, res) {
 });
 
 app.listen(portMailer, function() {
-  console.log('Server running at http://contactMailer/');
+  console.log('Server running in port ' + portMailer);
 });
