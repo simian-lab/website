@@ -342,7 +342,7 @@ module.exports = function(grunt) {
     dev: {
       options: {
         variables: {
-          'contact_form_route': 'http://mail.simian.co/contact',
+          'contact_form_route': 'http://mailsend.simian.co/contact',
           'google_analytics_id': 'UA-48202840-2',
           'env': 'dev'
         }
@@ -355,7 +355,7 @@ module.exports = function(grunt) {
     alpha: {
       options: {
         variables: {
-          'contact_form_route': 'http://mail.simian.co/contact',
+          'contact_form_route': 'http://mailsend.simian.co/contact',
           'google_analytics_id': 'UA-48202840-3',
           'env': 'alpha'
         }
@@ -368,7 +368,7 @@ module.exports = function(grunt) {
     prod: {
       options: {
         variables: {
-          'contact_form_route': 'http://mail.simian.co/contact',
+          'contact_form_route': 'http://mailsend.simian.co/contact',
           'google_analytics_id': 'UA-48202840-4',
           'env': 'prod'
         }
