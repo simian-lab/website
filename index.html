@@ -63,9 +63,7 @@
 <body>
 
   <div id="perspective" class="perspective effect-movedown">
-    <div class="container">
-      <!-- wrapper needed for scroll -->
-      <div class="wrapper">
+    <div id="perspective-container" class="container">
         <!-- Top Navigation -->
         <div class="main clearfix">
 
@@ -74,20 +72,7 @@
           <div footer class="footer"></div>
 
         </div><!-- /main -->
-      </div><!-- wrapper -->
     </div><!-- /container -->
-
-    <nav class="outer-nav top horizontal">
-      <a href="#whatwedo">{{ 'ENVISION_HEADLINE' | translate }}</a>
-      <a href="#Work">{{ 'WORK_HEADLINE' | translate }}</a>
-      <a href="#Clients">{{ 'CLIENTS_HEADLINE' | translate }}</a>
-      <a href="#Process">{{ 'PROCESS_HEADLINE' | translate }}</a>
-      <a href="#Team">{{ 'TEAM_HEADLINE' | translate }}</a>
-      <label>Recent projects</label>
-      <a href="/enter">ENTER.CO</a>
-      <a href="/kienyke">Kienyke.com</a>
-    </nav>
-
   </div><!-- /perspective -->
 
   <script src="/components/angular/angular.js"></script>
