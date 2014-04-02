@@ -28,15 +28,18 @@ angular.module('simian', [
   $stateProvider
   .state('home', {
     url: '/',
-    templateUrl: '/home/home.tpl.html'
+    templateUrl: '/home/home.tpl.html',
+    controller: 'HomeController'
   })
   .state('enter', {
     url: '/enter/',
-    templateUrl: '/enter/enter.tpl.html'
+    templateUrl: '/enter/enter.tpl.html',
+    controller: 'EnterController'
   })
   .state('kienyke', {
     url: '/kienyke/',
-    templateUrl: '/kienyke/kienyke.tpl.html'
+    templateUrl: '/kienyke/kienyke.tpl.html',
+    controller: 'KienykeController'
   });
 })
 
