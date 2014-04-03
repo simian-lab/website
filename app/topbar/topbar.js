@@ -137,6 +137,7 @@ angular.module('simian.topbar', [])
         var id = href.substr(1, href.length);
 
         closeMenu(ev, id);
+        $scope.trackNavigation(id);
       };
 
       /**
