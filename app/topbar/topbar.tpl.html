@@ -3,16 +3,11 @@
 
   <img src="/images/monkeyface.svg" alt="Simian" class="topbar-logo" />
 
-  <a href="#Contact" class="contact-link icon-mail">&nbsp;</a>
+  <a href="#Contact" ng-click="scroll('Contact')" class="contact-link icon-mail">&nbsp;</a>
 
-  <nav id="navigation" class="outer-nav top horizontal">
-    <a href="#whatwedo">{{ 'ENVISION_HEADLINE' | translate }}</a>
-    <a href="#Work">{{ 'WORK_HEADLINE' | translate }}</a>
-    <a href="#Clients">{{ 'CLIENTS_HEADLINE' | translate }}</a>
-    <a href="#Process">{{ 'PROCESS_HEADLINE' | translate }}</a>
-    <a href="#Team">{{ 'TEAM_HEADLINE' | translate }}</a>
-    <label>Recent projects</label>
-    <a href="/enter">ENTER.CO</a>
-    <a href="/kienyke">Kienyke.com</a>
+  <nav id="navigation" class="outer-nav left vertical">
+    <a href="/#what-we-do">{{ 'WHAT_WE_DO_HEADLINE' | translate }}</a>
+    <a href="/#team">{{ 'TEAM_HEADLINE' | translate }}</a>
+    <a href="/#Contact">{{ 'CONTACT_HEADLINE' | translate }}</a>
   </nav>
 </div>

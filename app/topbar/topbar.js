@@ -11,7 +11,7 @@
  */
 angular.module('simian.topbar', [])
 
-.controller('topbarController', function($scope, AnalyticsTracker) {
+.controller('topbarController', function($scope, AnalyticsTracker, smoothScroll) {
 
   /**
   * @doc function
@@ -45,6 +45,11 @@ angular.module('simian.topbar', [])
     AnalyticsTracker.eventTrack('Navigation', 'Menu link clicked', link);
   };
 
+  $scope.scroll = function(id) {
+    smoothScroll(document.getElementById(id), {
+      offset: 60 // The height of the topbar
+    });
+  };
 })
 
 /**
@@ -53,38 +58,35 @@ angular.module('simian.topbar', [])
  * @description
  * This is the best directive ever!!
  */
- .directive('topbar', function($window) {
+ .directive('topbar', function($window, $location, $anchorScroll) {
   return {
     templateUrl: '/topbar/topbar.tpl.html',
     controller: 'topbarController',
     replace: true,
     link: function($scope, $element, $attrs) {
+
+      // Initialize variables
       var showMenu = angular.element(document.getElementById( 'showMenu' )),
       perspectiveWrapper = angular.element(document.getElementById( 'perspective' )),
       navigation = angular.element(document.getElementById( 'navigation' )),
       container = angular.element(document.getElementById( 'perspective-container' ));
 
+      /**
+      * @doc function
+      * @name topbar.function:renestNavigationElement
+      * @description
+      * Changes the position of the <nav> element in the DOM.
+      */
       function renestNavigationElement() {
         perspectiveWrapper.append(navigation.remove());
       };
 
-      /**
-      * @doc function
-      * @name topbar.function:scrollY
-      * @description
-      * TODO: Determines how much the page has scrolled?.
-      */
-      function scrollY() {
-        return window.pageYOffset || docElem.scrollTop;
-      }
-
       function openMenu(ev) {
         ev.stopPropagation();
         ev.preventDefault();
-        docscroll = scrollY();
 
         // mac chrome issue:
-        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        //document.body.scrollTop = document.documentElement.scrollTop = 0;
 
         // add modalview class
         perspectiveWrapper.addClass('modalview');
@@ -97,7 +99,10 @@ angular.module('simian.topbar', [])
         $scope.trackOpenMenu();
       };
 
-      function closeMenu(ev) {
+      function closeMenu(ev, scroll) {
+        ev.stopPropagation();
+        ev.preventDefault();
+
         if(perspectiveWrapper.hasClass('animate')) {
 
           var onEndTransFn = function( ev ) {
@@ -110,6 +115,9 @@ angular.module('simian.topbar', [])
 
             // mac chrome issue:
             document.body.scrollTop = document.documentElement.scrollTop = docscroll;
+
+            if(scroll)
+              $scope.scroll(scroll);
           };
 
           if( support ) {
@@ -122,6 +130,13 @@ angular.module('simian.topbar', [])
           perspectiveWrapper.removeClass('animate');
           $scope.trackCloseMenu();
         }
+      };
+
+      function goToMenuLink(ev) {
+        var href = ev.currentTarget.hash;
+        var id = href.substr(1, href.length);
+
+        closeMenu(ev, id);
       };
 
       /**
@@ -139,6 +154,12 @@ angular.module('simian.topbar', [])
 
         // Bind closing event to the main element
         container.bind('click', closeMenu);
+
+        var anchors = navigation.children();
+
+        for (var i = 0; i < anchors.length; i++) {
+          angular.element(anchors[i]).bind('click', goToMenuLink);
+        }
 
         // Make sure the parent element doesn't do anything when it's clicked.
         perspectiveWrapper.bind('click', function( ev ) {

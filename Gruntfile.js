@@ -330,7 +330,7 @@ module.exports = function(grunt) {
       options: {
         variables: {
           'contact_form_route': 'http://simian.local:7544/contact',
-          'google_analytics_id': 'UA-48202840-1',
+          'google_analytics_id': 'UA-48202840-2',
           'env': 'local'
         }
       },
@@ -365,11 +365,24 @@ module.exports = function(grunt) {
         dest: '<%= config.app %>/configuration.js'
       }]
     },
-    prod: {
+    beta: {
       options: {
         variables: {
           'contact_form_route': 'http://mailsend.simian.co/contact',
           'google_analytics_id': 'UA-48202840-4',
+          'env': 'beta'
+        }
+      },
+      files: [{
+        src: '<%= config.app %>/config/source.configuration.js',
+        dest: '<%= config.app %>/configuration.js'
+      }]
+    },
+    prod: {
+      options: {
+        variables: {
+          'contact_form_route': 'http://mailsend.simian.co/contact',
+          'google_analytics_id': 'UA-48202840-1',
           'env': 'prod'
         }
       },

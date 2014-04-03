@@ -15,6 +15,7 @@ angular.module('simian.home', [])
 
   var translationsES = {
     MAIN_HEADLINE:          'Construimos tecnología para seres humanos',
+    WHAT_WE_DO_HEADLINE:    'Lo que hacemos',
     ENVISION_HEADLINE:      'Ideación',
     ENVISION_PARAGRAPH:     'Un producto exitoso empieza con un objetivo claro. ' +
                             'Te ayudamos a darle forma a tus ideas, tú defines las ' +
@@ -49,6 +50,7 @@ angular.module('simian.home', [])
 
   var translationsEN = {
     MAIN_HEADLINE:          'We build technology for human beings',
+    WHAT_WE_DO_HEADLINE:    'What we do',
     ENVISION_HEADLINE:      'Envision',
     ENVISION_PARAGRAPH:     'Successful products are born from clear objectives. ' +
                             'We can help you shape your ideas, just define the goals ' +
@@ -84,6 +86,12 @@ angular.module('simian.home', [])
   $translateProvider.fallbackLanguage('en');
 })
 
-.controller('HomeController', function($location, AnalyticsTracker) {
+.controller('HomeController', function($scope, $location, AnalyticsTracker, smoothScroll) {
   AnalyticsTracker.pageTrack($location.url());
+
+  $scope.scroll = function(id) {
+    smoothScroll(document.getElementById(id), {
+      offset: 60 // The height of the topbar
+    });
+  };
 });
