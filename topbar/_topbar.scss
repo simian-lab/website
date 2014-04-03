@@ -6,7 +6,9 @@
   width: 100%;
   z-index: 1;
   text-align: center;
+  -webkit-transform: translateZ(0);
 
+  // TODO: Prefix this!
   transition: 0.3s ease-out background,
               0.2s ease-out padding;
 
@@ -42,6 +44,8 @@
     height: 2.5rem;
     padding: 0.5rem 0.595rem;
     vertical-align: top;
+
+    // TODO: Prefix this!
     transition: 0.2s ease-out color,
                 0.2s ease-out border-radius,
                 0.2s ease-out background,
@@ -137,12 +141,15 @@ html, body, .perspective {
 }
 
 .modalview .wrapper {
+  // TODO: Prefix this!
   -webkit-transform: translateZ(-1px); /* solves a rendering bug in Chrome on Windows */
 }
 
 .animate .container::after {
   opacity: 1;
   height: 101%;
+
+  // TODO: Prefix this!
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
@@ -155,6 +162,8 @@ html, body, .perspective {
 
   &.vertical {
     top: 50%;
+
+    // TODO: Prefix this!
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     -webkit-transform-style: preserve-3d;
@@ -166,6 +175,8 @@ html, body, .perspective {
     width: 75%;
     max-width: 1000px;
     text-align: center;
+
+    // TODO: Prefix this!
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
@@ -192,6 +203,8 @@ html, body, .perspective {
     font-weight: 300;
     margin: 0 0 30px 0;
     color: #fff;
+
+    // TODO: Prefix this!
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
     -webkit-transform-style: preserve-3d;
@@ -207,6 +220,8 @@ html, body, .perspective {
       text-transform: none;
       line-height: 1;
       margin-right: 10px;
+
+      // TODO: Prefix this!
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       -webkit-backface-visibility: hidden;
@@ -223,78 +238,68 @@ html, body, .perspective {
   }
 }
 
-/* Effect Move Down */
-
-.effect-movedown {
-  background: #4f4138;
+.effect-airbnb {
+	background: #4f4138;
 }
 
-.effect-movedown .container {
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
+.effect-airbnb .container {
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
 }
 
-.effect-movedown .container::after {
-  background: rgba(52, 73, 94, 0.5);
+.effect-airbnb.animate .container {
+	-webkit-transform: translateZ(-1500px) translateX(100%) rotateY(-45deg);
+	transform: translateZ(-1500px) translateX(100%) rotateY(-45deg);
 }
 
-.effect-movedown.animate .container {
-  -webkit-transform: translateY(100%) translateZ(-1500px);
-  transform: translateY(100%) translateZ(-1500px);
+.no-csstransforms3d .effect-airbnb.animate .container {
+	left: 75%;
 }
 
-.no-csstransforms3d .effect-movedown.animate .container {
-  top: 75%;
+.effect-airbnb .outer-nav a {
+	opacity: 0;
+	-webkit-transform: translateX(-150px);
+	transform: translateX(-150px);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
 }
 
-.effect-movedown .outer-nav a {
-  opacity: 0;
-  -webkit-transform: translateY(-20px);
-  transform: translateY(-20px);
-  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
-  transition: transform 0.4s, opacity 0.4s;
+.effect-airbnb.animate .outer-nav a {
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
 }
 
-.effect-movedown .outer-nav a:hover {
-  color: #ed8151;
+.effect-airbnb.animate .outer-nav a:nth-child(2) {
+	-webkit-transition-delay: 0.04s;
+	transition-delay: 0.04s;
 }
 
-.effect-movedown.animate .outer-nav a {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
+.effect-airbnb.animate .outer-nav a:nth-child(3) {
+	-webkit-transition-delay: 0.08s;
+	transition-delay: 0.08s;
 }
 
-.effect-movedown.animate .outer-nav a:nth-child(2) {
-  -webkit-transition-delay: 0.04s;
-  transition-delay: 0.04s;
+.effect-airbnb.animate .outer-nav a:nth-child(4) {
+	-webkit-transition-delay: 0.12s;
+	transition-delay: 0.12s;
 }
 
-.effect-movedown.animate .outer-nav a:nth-child(3) {
-  -webkit-transition-delay: 0.08s;
-  transition-delay: 0.08s;
+.effect-airbnb.animate .outer-nav a:nth-child(5) {
+	-webkit-transition-delay: 0.16s;
+	transition-delay: 0.16s;
 }
 
-.effect-movedown.animate .outer-nav a:nth-child(4) {
-  -webkit-transition-delay: 0.12s;
-  transition-delay: 0.12s;
+.effect-airbnb.animate .outer-nav a:nth-child(6) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
 }
 
-.effect-movedown.animate .outer-nav a:nth-child(5) {
-  -webkit-transition-delay: 0.16s;
-  transition-delay: 0.16s;
-}
-
-.effect-movedown.animate .outer-nav a:nth-child(6) {
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-
-.effect-movedown.animate .outer-nav a:nth-child(7) {
-  -webkit-transition-delay: 0.24s;
-  transition-delay: 0.24s;
+.effect-airbnb.animate .outer-nav a:nth-child(7) {
+	-webkit-transition-delay: 0.24s;
+	transition-delay: 0.24s;
 }
 
 /* Media Queries */

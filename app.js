@@ -12,6 +12,7 @@
 angular.module('simian', [
   'ui.router',
   'pascalprecht.translate',
+  'smoothScroll',
   'simian.footer',
   'simian.home',
   'simian.kienyke',
