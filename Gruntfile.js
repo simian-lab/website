@@ -146,12 +146,13 @@ module.exports = function(grunt) {
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
           src: [
-          '*.{ico,png,txt,xml}',
-          'components/**/*',
-        'images/{,*/}*.{gif,webp,svg,svgz}',
-        'fonts/*'
-        ]
-      }, {
+            '*.{ico,png,txt,xml}',
+            'components/**/*',
+            'images/{,*/}*.{png,jpg,jpeg,gif,webp,svg,svgz}',
+            'img/{,*/}*.{gif,webp,svg,svgz}',
+            'fonts/*'
+          ]
+        }, {
         expand: true,
         cwd: '.tmp/images',
         dest: '<%= config.dist %>/images',
