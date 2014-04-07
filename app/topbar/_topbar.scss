@@ -198,11 +198,12 @@ html, body, .perspective {
   }
 
   a {
-    display: inline-block;
-    white-space: nowrap;
-    font-weight: 300;
-    margin: 0 0 30px 0;
     color: #fff;
+    display: inline-block;
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0 0 30px 0;
+    white-space: nowrap;
 
     // TODO: Prefix this!
     -webkit-transition: color 0.3s;
@@ -212,7 +213,7 @@ html, body, .perspective {
 
     &:before {
       display: inline-block;
-      font-family: 'typicons';
+      font-family: 'simian';
       speak: none;
       font-style: normal;
       font-weight: normal;
