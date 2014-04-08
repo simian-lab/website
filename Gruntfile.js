@@ -407,6 +407,14 @@ module.exports = function(grunt) {
     }
   },
 
+  sitemap: {
+    dist: {
+      siteRoot: '<%= config.dist %>/',
+      homepage: 'http://simian.co/',
+      pattern: '*.html'
+    }
+  },
+
   uglify: {
     options: {
       mangle: false
@@ -484,8 +492,9 @@ grunt.registerTask('build', function(target) {
   grunt.task.run([
     'clean:dist',
     'replace:' + target,
-    'docular',
     'jshint',
+    'sitemap:dist',
+    'docular',
     //'htmlangular',
     'plato',
     'useminPrepare',
