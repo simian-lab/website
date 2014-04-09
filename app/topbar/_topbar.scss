@@ -228,6 +228,32 @@ html, body, .perspective {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
     }
+
+    &.title {
+      margin-bottom: 0;
+      color: #239392;
+    }
+
+    &.lang {
+      margin-bottom: 0 !important;
+      font-size: 1.5rem;
+
+      &:before {
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+      }
+
+      &.es:before {
+        background: url(/images/es.png);
+      }
+      &.en:before {
+        background: url(/images/en.png);
+      }
+    }
   }
 
   &.vertical a {

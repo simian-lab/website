@@ -11,6 +11,27 @@
  */
 angular.module('simian.topbar', [])
 
+.config(function($translateProvider){
+
+  var translationsES = {
+    SPANISH_LABEL:          'Español',
+    ENGLISH_LABEL:          'English',
+    LANGUAGE_LABEL:         'Lenguaje'
+  };
+
+  var translationsEN = {
+    SPANISH_LABEL:          'Español',
+    ENGLISH_LABEL:          'English',
+    LANGUAGE_LABEL:         'Language'
+  };
+
+  $translateProvider.translations('en', translationsEN);
+  $translateProvider.translations('es', translationsES);
+
+  $translateProvider.determinePreferredLanguage();
+  $translateProvider.fallbackLanguage('en');
+})
+
 .controller('topbarController', function($scope, AnalyticsTracker, smoothScroll) {
 
   /**
@@ -36,7 +57,7 @@ angular.module('simian.topbar', [])
   /**
   * @doc function
   * @name topbar.controller:trackNavigation
-  @ param {string} label for the link the user clicked on
+  * @param {string} label for the link the user clicked on
   * @description
   * Tracks an event in analytics when the user clicks on the navigation
   * links in the menu.
@@ -45,6 +66,13 @@ angular.module('simian.topbar', [])
     AnalyticsTracker.eventTrack('Navigation', 'Menu link clicked', link);
   };
 
+  /**
+  * @doc function
+  * @name topbar.controller:scroll
+  * @param {string} id of the element to scroll to
+  * @description
+  * Scrolls the viewport to the specified element
+  */
   $scope.scroll = function(id) {
     smoothScroll(document.getElementById(id), {
       offset: 60 // The height of the topbar
@@ -58,7 +86,7 @@ angular.module('simian.topbar', [])
  * @description
  * This is the best directive ever!!
  */
- .directive('topbar', function($window, $location, $anchorScroll) {
+ .directive('topbar', function($window, $location, $anchorScroll, $translate) {
   return {
     templateUrl: '/topbar/topbar.tpl.html',
     controller: 'topbarController',
@@ -142,9 +170,24 @@ angular.module('simian.topbar', [])
 
       /**
       * @doc function
+      * @name topbar.function:changeLanguage
+      * @param {string} the new language for the UI
+      * @description
+      * Changes the UI language
+      */
+      function changeLanguage(ev) {
+        ev.preventDefault();
+        $translate.use(ev.currentTarget.classList[1]);
+        closeMenu(ev);
+
+        $scope.$apply();
+      };
+
+      /**
+      * @doc function
       * @name topbar.function:init
       * @description
-      * TODO: Initialize the menu behavior.
+      * Initialize the menu behavior.
       */
       function init() {
         // Change the location of the menu
@@ -159,7 +202,11 @@ angular.module('simian.topbar', [])
         var anchors = navigation.children();
 
         for (var i = 0; i < anchors.length; i++) {
-          angular.element(anchors[i]).bind('click', goToMenuLink);
+          if(anchors[i].className.indexOf('lang') === -1)
+            angular.element(anchors[i]).bind('click', goToMenuLink);
+          else {
+            angular.element(anchors[i]).bind('click', changeLanguage);
+          }
         }
 
         // Make sure the parent element doesn't do anything when it's clicked.

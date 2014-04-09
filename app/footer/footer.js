@@ -22,6 +22,7 @@ angular.module('simian.footer', ['simian.configuration'])
     NAME_PLACEHOLDER:     'Escribe tu nombre completo',
     EMAIL_PLACEHOLDER:    'No enviamos Spam',
     MESSAGE_PLACEHOLDER:  'Escribe tu mensaje :)',
+    SEND_LABEL:           'Enviar Mensaje',
     LOCATION_TITLE:       '¿Dónde estamos?',
     URGENT_LABEL:         'Telegrama urgente',
     SENDER_LABEL:         'Remitente',
@@ -37,6 +38,7 @@ angular.module('simian.footer', ['simian.configuration'])
     NAME_PLACEHOLDER:     'Write your full name',
     EMAIL_PLACEHOLDER:    'We don\'t spam!',
     MESSAGE_PLACEHOLDER:  'Write your message :)',
+    SEND_LABEL:           'Send Message',
     LOCATION_TITLE:       'Where are we?',
     URGENT_LABEL:         'Urgent telegram',
     SENDER_LABEL:         'Sender',
@@ -45,7 +47,8 @@ angular.module('simian.footer', ['simian.configuration'])
 
   $translateProvider.translations('en', translationsEN);
   $translateProvider.translations('es', translationsES);
-  $translateProvider.preferredLanguage('en');
+
+  $translateProvider.determinePreferredLanguage();
   $translateProvider.fallbackLanguage('en');
 })
 
