@@ -15,7 +15,8 @@ angular.module('simian.home', [])
 
   var translationsES = {
     MAIN_HEADLINE:          'Construimos tecnología para seres humanos',
-    WHAT_WE_DO_HEADLINE:    'Lo que hacemos',
+    CONTACT_LABEL:          'Contáctanos',
+    WHAT_WE_DO_HEADLINE:    '¿Que hacemos?',
     ENVISION_HEADLINE:      'Ideación',
     ENVISION_PARAGRAPH:     'Un producto exitoso empieza con un objetivo claro. ' +
                             'Te ayudamos a darle forma a tus ideas, tú defines las ' +
@@ -44,12 +45,13 @@ angular.module('simian.home', [])
     KYK_LINK:               'KIENYKE, un sitio mobile-first',
     CLIENTS_HEADLINE:       'Lo que dicen nuestros clientes',
     PROCESS_HEADLINE:       'Nuestro proceso',
-    TEAM_HEADLINE:          'El equipo'
+    TEAM_HEADLINE:          'Equipo'
 
   };
 
   var translationsEN = {
     MAIN_HEADLINE:          'We build technology for human beings',
+    CONTACT_LABEL:          'Contact Us',
     WHAT_WE_DO_HEADLINE:    'What we do',
     ENVISION_HEADLINE:      'Envision',
     ENVISION_PARAGRAPH:     'Successful products are born from clear objectives. ' +
@@ -82,7 +84,8 @@ angular.module('simian.home', [])
 
   $translateProvider.translations('en', translationsEN);
   $translateProvider.translations('es', translationsES);
-  $translateProvider.preferredLanguage('en');
+
+  $translateProvider.determinePreferredLanguage();
   $translateProvider.fallbackLanguage('en');
 })
 
