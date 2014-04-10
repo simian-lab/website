@@ -260,15 +260,28 @@ module.exports = function(grunt) {
     }
   },
 
+  htmlSnapshot: {
+    all: {
+      options: {
+        snapshotPath: 'snapshots/',
+        sitePath: 'http://simian.co/',
+        msWaitForPages: 4000,
+        urls:[
+          '',
+        ]
+      }
+    }
+  },
+
   imagemin: {
     dist: {
       files: [{
         expand: true,
-        cwd: '<%= config.app %>/assets/img',
+        cwd: '<%= config.app %>/images',
         src: [
-        '<%= config.app %>/images/*.{png,jpg,jpeg}'
+        '**/*.{png,jpg,jpeg}'
         ],
-        dest: '<%= config.dist %>/assets/img'
+        dest: '<%= config.dist %>/images'
       }]
     }
   },

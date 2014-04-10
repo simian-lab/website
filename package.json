@@ -23,14 +23,16 @@
     "grunt-contrib-uglify": "~0.3.2",
     "grunt-contrib-cssmin": "~0.7.0",
     "grunt-contrib-htmlmin": "~0.2.0",
-    "grunt-contrib-imagemin": "~0.5.0",
+    "grunt-contrib-imagemin": "~0.6.1",
     "grunt-replace": "~0.7.6",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-plato": "~0.2.1",
     "grunt-html-angular-validate": "~0.2.3",
     "grunt-contrib-jasmine": "latest",
     "grunt-docular": "~0.1.2",
-    "grunt-sitemap": "~1.1.0"
+    "grunt-sitemap": "~1.1.0",
+    "grunt-html-snapshot": "~0.6.1",
+    "phantomjs": "~1.9.7-3"
   },
   "dependencies": {
     "grunt-karma": "~0.6.2",
