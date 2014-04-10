@@ -128,9 +128,6 @@ angular.module('simian.topbar', [])
       };
 
       function closeMenu(ev, scroll) {
-        ev.stopPropagation();
-        ev.preventDefault();
-
         if(perspectiveWrapper.hasClass('animate')) {
 
           var onEndTransFn = function( ev ) {
