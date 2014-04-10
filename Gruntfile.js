@@ -506,7 +506,6 @@ grunt.registerTask('build', function(target) {
     'clean:dist',
     'replace:' + target,
     'jshint',
-    'sitemap:dist',
     'docular',
     //'htmlangular',
     'plato',
@@ -518,7 +517,8 @@ grunt.registerTask('build', function(target) {
     'cssmin',
     'uglify',
     'rev',
-    'usemin'
+    'usemin',
+    'sitemap:dist'
   ]);
 });
 

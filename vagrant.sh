@@ -15,6 +15,9 @@ apt-get install nodejs -y
 
 # Make sure we got git. This is needed for bower.
 apt-get install git -y
+
+# This is required for phantomjs
+apt-get install fontconfig
  
 # Get RVM and Ruby, with compass
 curl -sSL https://get.rvm.io | bash -s stable
