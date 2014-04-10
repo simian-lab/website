@@ -518,7 +518,8 @@ grunt.registerTask('build', function(target) {
     'uglify',
     'rev',
     'usemin',
-    'sitemap:dist'
+    'sitemap:dist',
+    'htmlSnapshot'
   ]);
 });
 
