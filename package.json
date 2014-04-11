@@ -30,7 +30,8 @@
     "grunt-html-angular-validate": "~0.2.3",
     "grunt-contrib-jasmine": "latest",
     "grunt-docular": "~0.1.2",
-    "grunt-sitemap": "~1.1.0"
+    "grunt-sitemap": "~1.1.0",
+    "grunt-html-snapshot": "~0.6.1"
   },
   "dependencies": {
     "grunt-karma": "~0.6.2",
