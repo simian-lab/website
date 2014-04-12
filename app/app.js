@@ -58,12 +58,12 @@ angular.module('simian', [
     controller: 'HomeController'
   })
   .state('enter', {
-    url: '/enter/',
+    url: '/clients/enter/',
     templateUrl: '/enter/enter.tpl.html',
     controller: 'EnterController'
   })
   .state('kienyke', {
-    url: '/kienyke/',
+    url: '/clients/kienyke/',
     templateUrl: '/kienyke/kienyke.tpl.html',
     controller: 'KienykeController'
   });
