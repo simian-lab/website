@@ -28,11 +28,10 @@ angular.module('simian', [
 
   // Make sure all routes work with and without trailing slash
   $urlRouterProvider.rule(function($injector, $location) {
-    var path = $location.path()
+    var path = $location.path(),
       // Note: misnomer. This returns a query object, not a search string
-      , search = $location.search()
-      , params
-      ;
+      search = $location.search(),
+      params;
 
     // check to see if the path already ends in '/'
     if (path[path.length - 1] === '/') {
