@@ -206,6 +206,7 @@ h1 {
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 8rem 0;
+      z-index: -1; // So it doesn't go on top of the text
 
       @media screen and (min-width: 30rem) {
         background-position: 12rem 0;
@@ -251,6 +252,7 @@ h1 {
       background-size: contain;
       background-repeat: no-repeat;
       background-position: -1rem 0;
+      z-index: -1; // So it doesn't go on top of the text
 
       @media screen and (min-width: 62rem) {
         background-position: 1rem 0;
