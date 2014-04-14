@@ -261,13 +261,15 @@ module.exports = function(grunt) {
   },
 
   htmlSnapshot: {
-    all: {
+    dist: {
       options: {
-        snapshotPath: 'snapshots/',
+        snapshotPath: '<%= config.dist %>/snapshots/',
         sitePath: 'http://simian.co/',
         msWaitForPages: 4000,
         urls:[
-          '',
+          '/',
+          '/clients/enter',
+          '/clients/kienyke'
         ]
       }
     }
@@ -519,7 +521,7 @@ grunt.registerTask('build', function(target) {
     'rev',
     'usemin',
     'sitemap:dist',
-    'htmlSnapshot'
+    'htmlSnapshot:dist'
   ]);
 });
 
