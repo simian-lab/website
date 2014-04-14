@@ -8,22 +8,22 @@
 
 /* TEAM */
 
-	Front-End leader & Master ruker: Ivan Vásquez
+	Front-End leader & Designer: Ivan Vásquez
 	Contact: ivan [at] simian.co
 	Twitter: @ivancamilov
-	Location: Pablo VI, Bogota, Colombia
+	Location: Pablo VI, Bogotá, Colombia
 
 	Project Manager & Front-End developer: Sergio Acosta
 	Contact: sergio [at] simian.co
 	Twitter: @checho_acosta
-	Location: Alhambra, Bogota, Colombia
+	Location: Alhambra, Bogotá, Colombia
 
 	Front-End developer & Rising star: Nicolás Saiz
 	Contact: nicolas [at] simian.co
 	Twitter: @saiznicolas
-	Location: Corferias, Bogota, Colombia
+	Location: Corferias, Bogotá, Colombia
 
-	Evolving monkey: Pablo Garcia
+	Intern & Evolving monkey: Pablo Garcia
 	Contact: pablo [at] simian.co
 	Twitter: @pablo_alejo_gar
 	Location: Cota, Cundinamarca, Colombia
@@ -37,11 +37,12 @@
 		Angélica Luna
 		Mafe Garzón
 
-	Bogota Beer Company: http://www.bogotabeercompany.com/
+  Official drinks provided by:
+	  Bogota Beer Company: http://www.bogotabeercompany.com/
 
 
 /* SITE */
-	Language: Español
+	Language: Español, English
 	Doctype: HTML5
 	IDE: Sublime Text, Atom, vim
 	Standards: HTML5, CSS3
