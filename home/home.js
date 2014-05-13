@@ -32,7 +32,7 @@ angular.module('simian.home', [])
                             'dibujar imágenes estáticas, diseñamos experiencias de ' +
                             'usuario directamente en el navegador.',
     DEVELOPMENT_HEADLINE:   'Desarrollo',
-    DEVELOPMENT_PARAGRAPH:  'Entendemos como funciona Internet, desde la infraestructura ' +
+    DEVELOPMENT_PARAGRAPH:  'Entendemos cómo funciona Internet, desde la infraestructura ' +
                             'de red hasta las peculiaridades de los navegadores. Usamos ' +
                             'las últimas tecnologías para construir tu proyecto, bien sea ' +
                             'un sitio pequeño o un producto de alto tráfico.',
