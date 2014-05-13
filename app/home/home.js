@@ -16,7 +16,7 @@ angular.module('simian.home', [])
   var translationsES = {
     MAIN_HEADLINE:          'Construimos tecnología para seres humanos',
     CONTACT_LABEL:          'Contáctanos',
-    WHAT_WE_DO_HEADLINE:    '¿Que hacemos?',
+    WHAT_WE_DO_HEADLINE:    '¿Qué hacemos?',
     ENVISION_HEADLINE:      'Ideación',
     ENVISION_PARAGRAPH:     'Un producto exitoso empieza con un objetivo claro. ' +
                             'Te ayudamos a darle forma a tus ideas, tú defines las ' +
