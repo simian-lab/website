@@ -1,0 +1,50 @@
+   _____
+  / ____|
+ | (___  __ _ __   ___ __  __ _ _ __
+  \___ \|  | '_ \/ _  |  |/ _` | '_ \
+  ____) |  | | |  | | |  | (_| | | | |
+ |_____/|__|_| |__| |_|__|\__,_|_| |_|
+
+
+/* TEAM */
+
+	Front-End leader & Designer: Ivan Vásquez
+	Contact: ivan [at] simian.co
+	Twitter: @ivancamilov
+	Location: Pablo VI, Bogotá, Colombia
+
+	Project Manager & Front-End developer: Sergio Acosta
+	Contact: sergio [at] simian.co
+	Twitter: @checho_acosta
+	Location: Alhambra, Bogotá, Colombia
+
+	Front-End developer & Rising star: Nicolás Saiz
+	Contact: nicolas [at] simian.co
+	Twitter: @saiznicolas
+	Location: Corferias, Bogotá, Colombia
+
+	Intern & Evolving monkey: Pablo García
+	Contact: pablo [at] simian.co
+	Twitter: @pablo_alejo_gar
+	Location: Cota, Cundinamarca, Colombia
+
+
+	If you'd like to be part of our team, write us at work [at] simian.co
+
+/* THANKS */
+
+	The rest of the Simian family:
+		Angélica Luna
+		Maria Fernanda Garzón
+
+  Official drinks provided by:
+	  Bogota Beer Company: http://www.bogotabeercompany.com/
+
+
+/* SITE */
+	Language: Español, English
+	Doctype: HTML5
+	IDE: Sublime Text, Atom, vim
+	Standards: HTML5, CSS3
+	Components: Angular
+	Software: Git
