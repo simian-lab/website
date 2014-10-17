@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+ - 0.10.31
+
+env:
+  global:
+    - APP_NAME=simian-website
+
+script:
+  - mocha
+
+after_success:
+  - git push -f git@heroku.com:$APP_NAME.git $BRANCH:master
+
+# include
+branches:
+  only:
+    - develop
