@@ -1,0 +1,394 @@
+.topbar {
+  overflow: hidden;
+  padding: 1rem 1.25rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  -webkit-transform: translateZ(0);
+
+  // TODO: Prefix this!
+  transition: 0.3s ease-out background,
+              0.2s ease-out padding;
+
+  &.scrolled {
+    background: rgba(
+                  red($menu-button-color),
+                  green($menu-button-color),
+                  blue($menu-button-color),
+                  0.85);
+    padding: 0;
+    box-shadow: 0 0 0.5rem $gray-menu;
+
+    .menu-button, .contact-link {
+      width: 3.5rem;
+      height: 3.5rem;
+      padding: 1rem 1rem;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .topbar-logo {
+      display: inline-block;
+    }
+  }
+
+  .menu-button, .contact-link {
+    background-color: $menu-button-color;
+    border-radius: 50%;
+    @include box-shadow(0 0 0.25rem darken($gray-menu, 10%));
+    color: $gray-menu;
+    font-size: 1.4rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem 0.595rem;
+    vertical-align: top;
+
+    // TODO: Prefix this!
+    transition: 0.2s ease-out color,
+                0.2s ease-out border-radius,
+                0.2s ease-out background,
+                0.2s ease-out padding,
+                0.2s ease-out height,
+                0.2s ease-out width,
+                0.2s ease-out box-shadow;
+
+    &:hover {
+      color: #96d60b;
+      text-shadow: none;
+      box-shadow: 0 0 0.25rem #96d60b;
+    }
+  }
+
+  .menu-button {
+    float: left;
+  }
+
+  .contact-link {
+    float: right;
+  }
+
+  .topbar-logo {
+    width: 3rem;
+    display: none;
+    text-align: center;
+    opacity: 0.5;
+    margin: 0.5rem 0 0;
+  }
+}
+
+// Here begins the navigation component.
+
+html, body, .perspective {
+  width: 100%;
+  height: 100%;
+}
+
+.perspective {
+  background: #aaa;
+  position: relative;
+}
+
+.container {
+  background: #fff;
+  min-height: 100%;
+  position: relative;
+  outline: 1px solid rgba(0,0,0,0);
+  z-index: 10;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    opacity: 0;
+    background: rgba(0,0,0,0.2);
+    /* the transition delay of the height needs to be synced with the container transition time */
+    -webkit-transition: opacity 0.4s, height 0s 0.4s;
+    transition: opacity 0.4s, height 0s 0.4s;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.component {
+  margin: 0 auto;
+  width: 60%;
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+/* Modal view */
+.perspective.modalview {
+  position: fixed;
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+}
+
+.modalview .container {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.modalview .wrapper {
+  // TODO: Prefix this!
+  -webkit-transform: translateZ(-1px); /* solves a rendering bug in Chrome on Windows */
+}
+
+.animate .container::after {
+  opacity: 1;
+  height: 101%;
+
+  // TODO: Prefix this!
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+/* Outer Nav */
+.outer-nav {
+  position: absolute;
+  height: auto;
+  font-size: 2em;
+
+  &.vertical {
+    top: 50%;
+
+    // TODO: Prefix this!
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  &.horizontal {
+    left: 50%;
+    width: 75%;
+    max-width: 1000px;
+    text-align: center;
+
+    // TODO: Prefix this!
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  &.left {
+    left: 25%;
+  }
+
+  &.right {
+    right: 25%;
+  }
+
+  &.top {
+    top: 25%;
+  }
+
+  &.bottom {
+    bottom: 25%;
+  }
+
+  a {
+    color: #fff;
+    display: inline-block;
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0 0 30px 0;
+    white-space: nowrap;
+
+    // TODO: Prefix this!
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    &:before {
+      display: inline-block;
+      font-family: 'simian';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      margin-right: 10px;
+
+      // TODO: Prefix this!
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    &.title {
+      margin-bottom: 0;
+      color: #239392;
+    }
+
+    &.lang {
+      margin-bottom: 0 !important;
+      font-size: 1.5rem;
+
+      &:before {
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+      }
+
+      &.es:before {
+        background: url(/images/es.png);
+      }
+      &.en:before {
+        background: url(/images/en.png);
+      }
+    }
+  }
+
+  &.vertical a {
+    display: block;
+  }
+
+  &.horizontal a {
+    margin: 15px 20px;
+  }
+}
+
+.effect-airbnb {
+	background: #4f4138;
+}
+
+.effect-airbnb .container {
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.effect-airbnb.animate .container {
+	-webkit-transform: translateZ(-1500px) translateX(100%) rotateY(-45deg);
+	transform: translateZ(-1500px) translateX(100%) rotateY(-45deg);
+}
+
+.no-csstransforms3d .effect-airbnb.animate .container {
+	left: 75%;
+}
+
+.effect-airbnb .outer-nav a {
+	opacity: 0;
+	-webkit-transform: translateX(-150px);
+	transform: translateX(-150px);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+.effect-airbnb.animate .outer-nav a {
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.effect-airbnb.animate .outer-nav a:nth-child(2) {
+	-webkit-transition-delay: 0.04s;
+	transition-delay: 0.04s;
+}
+
+.effect-airbnb.animate .outer-nav a:nth-child(3) {
+	-webkit-transition-delay: 0.08s;
+	transition-delay: 0.08s;
+}
+
+.effect-airbnb.animate .outer-nav a:nth-child(4) {
+	-webkit-transition-delay: 0.12s;
+	transition-delay: 0.12s;
+}
+
+.effect-airbnb.animate .outer-nav a:nth-child(5) {
+	-webkit-transition-delay: 0.16s;
+	transition-delay: 0.16s;
+}
+
+.effect-airbnb.animate .outer-nav a:nth-child(6) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.effect-airbnb.animate .outer-nav a:nth-child(7) {
+	-webkit-transition-delay: 0.24s;
+	transition-delay: 0.24s;
+}
+
+/* Media Queries */
+@media screen and (max-width: 77em) {
+
+  .outer-nav.top {
+    top: 15%;
+  }
+
+  .outer-nav.bottom {
+    bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 36.625em), screen and (max-height: 41.75em) {
+
+  .outer-nav.top {
+    top: 5%;
+  }
+
+  .outer-nav.bottom {
+    bottom: 5%;
+  }
+
+  .outer-nav.horizontal {
+    font-size: 1.7em;
+    width: 6.2em;
+  }
+
+  .outer-nav.horizontal a {
+    display: block;
+    text-align: left;
+  }
+
+  /* Special Case */
+  .effect-rotatetop .outer-nav.horizontal {
+    width: 95%;
+    bottom: auto;
+    top: 50%;
+  }
+
+  .effect-rotatetop .outer-nav.horizontal a {
+    display: inline-block;
+  }
+
+}
+
+@media screen and (max-width: 31em), screen and (max-height: 36.2em) {
+  .outer-nav.horizontal,
+  .outer-nav.vertical {
+    font-size: 1.2em;
+    width: 6.8em;
+  }
+
+  .outer-nav.right {
+    right: auto;
+    left: 50%;
+  }
+}
+
+@media screen and (max-height: 31.6em) {
+  .outer-nav a {
+    margin-bottom: 20px;
+  }
+}

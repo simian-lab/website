@@ -1,1 +1,10 @@
 .vagrant
+.tmp
+.sass-cache
+node_modules
+app/components
+dist
+logs
+reports
+documentation
+snapshots
