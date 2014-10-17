@@ -34,11 +34,11 @@
     "grunt-html-snapshot": "~0.6.1"
   },
   "dependencies": {
-    "grunt-karma": "~0.6.2",
-    "nodemailer": "~0.6.0",
-    "express": "~3.4.8",
-    "forever": "~0.10.11",
     "dotenv": "~0.2.4",
-    "grunt-contrib-jasmine": "~0.6.1"
+    "express": "^3.4.8",
+    "forever": "~0.10.11",
+    "grunt-contrib-jasmine": "~0.6.1",
+    "grunt-karma": "~0.6.2",
+    "nodemailer": "~0.6.0"
   }
 }
