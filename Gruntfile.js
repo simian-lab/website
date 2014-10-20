@@ -526,7 +526,7 @@ grunt.registerTask('build', function(target) {
 });
 
 grunt.registerTask('heroku', [
-  'server:dist'
+  'build:prod'
   ]);
 
 grunt.registerTask('validate', [
