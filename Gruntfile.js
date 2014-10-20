@@ -525,6 +525,10 @@ grunt.registerTask('build', function(target) {
   ]);
 });
 
+grunt.registerTask('heroku', [
+  'server:dist'
+  ]);
+
 grunt.registerTask('validate', [
   'jshint',
   'htmlangular',
