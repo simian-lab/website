@@ -525,10 +525,6 @@ grunt.registerTask('build', function(target) {
   ]);
 });
 
-grunt.registerTask('heroku', [
-  'build:prod'
-  ]);
-
 grunt.registerTask('validate', [
   'jshint',
   'htmlangular',
