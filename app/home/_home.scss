@@ -43,8 +43,7 @@ header {
   }
 
   &:after {
-    // TODO: Compass this
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    @include background-image (linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)));
     bottom: 0;
     content: '';
     display: block;
@@ -190,6 +189,7 @@ h1 {
 
   .envision {
       position: relative;
+      margin: 3rem 0 3rem 0;
 
       &:before {
         content: '';
@@ -227,7 +227,7 @@ h1 {
       z-index: -1; // So it doesn't go on top of the text
 
       @media screen and (min-width: 30rem) {
-        background-position: 12rem 0;
+        background-position: 15rem 0;
       }
 
       @media screen and (min-width: 40rem) and (orientation: landscape) {
@@ -250,6 +250,7 @@ h1 {
 
   .design {
       position: relative;
+      margin: 3rem 0 3rem 0;
 
       &:before {
         content: '';
@@ -287,7 +288,7 @@ h1 {
       z-index: -1; // So it doesn't go on top of the text
 
       @media screen and (min-width: 30rem) {
-        background-position: 12rem 0;
+        background-position: 15rem 0;
       }
 
       @media screen and (min-width: 40rem) and (orientation: landscape) {
@@ -310,6 +311,7 @@ h1 {
 
   .mantain {
     position: relative;
+    margin: 3rem 0 3rem 0;
 
     &:before {
       content: '';

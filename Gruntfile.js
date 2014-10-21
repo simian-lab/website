@@ -54,7 +54,8 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        includePaths: require('node-bourbon').includePaths
+        includePaths: require('node-bourbon').includePaths,
+        outputStyle: 'compressed'
       },
       dist: {
         files: {
@@ -476,11 +477,11 @@ module.exports = function(grunt) {
   },
 
   watch: {
-    compass: {
-      files: [
-      '<%= config.app %>/**/*.scss'
-      ],
-      tasks: ['compass:server']
+    sass: {
+      files: {
+        '<%= config.app %>/styles/styles.css': '<%= config.app %>/styles/styles.scss'
+      },
+      tasks: ['sass:dist']
     },
     livereload: {
       options: {
