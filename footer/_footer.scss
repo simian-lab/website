@@ -64,7 +64,7 @@ footer {
   .contact-form {
     background: #FFF;
     border: 0.25rem dashed #96d60b;
-    @include box-shadow(0 0 0.5rem 0.25rem black);
+    box-shadow :0 0 0.5rem 0.25rem black;
     margin: 1rem 5%;
     position: relative;
     width: 90%;
@@ -80,7 +80,7 @@ footer {
       background-repeat: no-repeat;
       background-color: #f1f1f1;
       background-position: center center;
-      @include box-shadow(0 0 0.25rem #999);
+      box-shadow: 0 0 0.25rem #999;
       content: '';
       display: block;
       height: 9rem;
@@ -178,7 +178,7 @@ footer {
 
 .sending-message {
   background: #f1f1f1;
-  @include border-radius(1rem 1rem 0 0);
+  border-radius :1rem 1rem 0 0;
   bottom: 0;
   color: #666;
   display: block;
