@@ -52,6 +52,17 @@ module.exports = function(grunt) {
       server: '.tmp'
     },
 
+    sass: {
+      options: {
+        includePaths: require('node-bourbon').includePaths
+      },
+      dist: {
+        files: {
+          '<%= config.app %>/styles/styles.css': '<%= config.app %>/styles/styles.scss'
+        }
+      }
+    },
+
     compass: {
       options: {
         sassDir: '<%= config.app %>/styles',
@@ -76,14 +87,14 @@ module.exports = function(grunt) {
 
     concurrent: {
       server: [
-      'compass:server'
+      'sass:dist'
       ],
       test: [
-      'compass'
+      'sass'
       ],
       dist: {
         tasks: [
-        'compass:dist',
+        'sass:dist',
         'imagemin',
         'htmlmin'
         ],

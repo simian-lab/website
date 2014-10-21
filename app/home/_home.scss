@@ -1,5 +1,5 @@
 .home section {
-  @include pie-clearfix;
+  @include clearfix();
 }
 
 .hide {
@@ -133,7 +133,7 @@ h1 {
     padding: 0;
     background-repeat: no-repeat;
     background-size: contain;
-    @include pie-clearfix();
+    @include clearfix();
   }
 
   p, h2 {
