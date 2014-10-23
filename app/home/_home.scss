@@ -129,10 +129,13 @@ h1 {
   width: 100%;
 
   div {
-    padding: 0;
+    padding: 12rem 0 0 0;
     background-repeat: no-repeat;
     background-size: contain;
     @include clearfix();
+    @media screen and (min-width: 31rem) {
+      padding: 0;
+    }
   }
 
   p, h2 {
@@ -216,18 +219,19 @@ h1 {
     &:before {
       content: '';
       width: 100%;
-      height: 15rem;
+      height: 13rem;
       position: absolute;
       background-image: url(/images/analysis.svg);
       opacity: 0.20;
       top: 0;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: 8rem 0;
+      background-position: -1rem -1rem;
       z-index: -1; // So it doesn't go on top of the text
 
       @media screen and (min-width: 30rem) {
         background-position: 15rem 0;
+        height: 15rem;
       }
 
       @media screen and (min-width: 40rem) and (orientation: landscape) {
@@ -262,7 +266,7 @@ h1 {
         top: 0;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: -1rem 0;
+        background-position: -1rem -3rem;
         z-index: -1; // So it doesn't go on top of the text
 
         @media screen and (min-width: 62rem) {
@@ -277,18 +281,19 @@ h1 {
     &:before {
       content: '';
       width: 100%;
-      height: 15rem;
+      height: 13rem;
       position: absolute;
       background-image: url(/images/development.svg);
       opacity: 0.20;
       top: 0;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: 8rem 0;
+      background-position: -1rem 0;
       z-index: -1; // So it doesn't go on top of the text
 
       @media screen and (min-width: 30rem) {
         background-position: 15rem 0;
+        height: 15rem;
       }
 
       @media screen and (min-width: 40rem) and (orientation: landscape) {
@@ -323,7 +328,7 @@ h1 {
       top: 0;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: -1rem 0;
+      background-position: -1rem -1rem;
       z-index: -1; // So it doesn't go on top of the text
 
       @media screen and (min-width: 62rem) {
