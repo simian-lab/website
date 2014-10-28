@@ -208,12 +208,16 @@ h1 {
         top: 0;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: 1rem -1rem;
+        background-position: center;
         z-index: -1; // So it doesn't go on top of the text
+
+        @media screen and (min-width: 35rem){
+          background-position: 1rem -1rem;
+          height: 15rem;
+        }
 
         @media screen and (min-width: 62rem) {
           background-position: 1rem 0;
-          height: 15rem;
         }
       }
   }
@@ -231,11 +235,11 @@ h1 {
       top: 0;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: 2rem -2rem;
+      background-position: center -1rem;
       z-index: -1; // So it doesn't go on top of the text
 
       @media screen and (min-width: 35rem) {
-        background-position: 19rem 0;
+        background-position: 20rem 0;
         height: 15rem;
       }
 
@@ -275,8 +279,12 @@ h1 {
         top: 0;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: 2rem -3rem;
+        background-position: center -3rem;
         z-index: -1; // So it doesn't go on top of the text
+
+        @media screen and (min-width: 35rem){
+          background-position: 2rem -3rem;
+        }
 
         @media screen and (min-width: 62rem) {
           background-position: 1rem -4rem;
@@ -297,7 +305,7 @@ h1 {
       top: 0;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: 3rem 0rem;
+      background-position: center;
       z-index: -1; // So it doesn't go on top of the text
 
       @media screen and (min-width: 35rem) {
@@ -341,12 +349,16 @@ h1 {
       top: 0;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: 1rem -1rem;
+      background-position: center;
       z-index: -1; // So it doesn't go on top of the text
+
+      @media screen and (min-width: 35rem){
+        background-position: 1rem -1rem;
+        height: 15rem;
+      }
 
       @media screen and (min-width: 62rem) {
         background-position: 1rem 0;
-        height: 15rem;
       }
     }
   }
