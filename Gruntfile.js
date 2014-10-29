@@ -546,5 +546,4 @@ grunt.registerTask('validate', [
 // Load the npm tasks.
 grunt.loadNpmTasks('grunt-docular');
 grunt.loadNpmTasks('grunt-contrib-jasmine');
-grunt.registerTask('heroku', ['build:prod']);
 };
