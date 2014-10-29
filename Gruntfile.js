@@ -357,7 +357,7 @@ module.exports = function(grunt) {
     local: {
       options: {
         variables: {
-          'contact_form_route': 'http://simian.local:7544/contact',
+          'contact_form_route': 'http://localhost:5000/contact',
           'google_analytics_id': 'UA-48202840-2',
           'env': 'local'
         }
@@ -370,7 +370,7 @@ module.exports = function(grunt) {
     dev: {
       options: {
         variables: {
-          'contact_form_route': 'http://mailsend.simian.co/contact',
+          'contact_form_route': 'https://simian-website.herokuapp.com/contact',
           'google_analytics_id': 'UA-48202840-2',
           'env': 'dev'
         }
@@ -383,7 +383,7 @@ module.exports = function(grunt) {
     alpha: {
       options: {
         variables: {
-          'contact_form_route': 'http://mailsend.simian.co/contact',
+          'contact_form_route': 'https://simian-website.herokuapp.com/contact',
           'google_analytics_id': 'UA-48202840-3',
           'env': 'alpha'
         }
@@ -396,7 +396,7 @@ module.exports = function(grunt) {
     beta: {
       options: {
         variables: {
-          'contact_form_route': 'http://mailsend.simian.co/contact',
+          'contact_form_route': 'https://simian-website.herokuapp.com/contact',
           'google_analytics_id': 'UA-48202840-4',
           'env': 'beta'
         }
@@ -409,7 +409,7 @@ module.exports = function(grunt) {
     prod: {
       options: {
         variables: {
-          'contact_form_route': 'http://mailsend.simian.co/contact',
+          'contact_form_route': 'https://simian-website.herokuapp.com/contact',
           'google_analytics_id': 'UA-48202840-1',
           'env': 'prod'
         }
@@ -546,4 +546,5 @@ grunt.registerTask('validate', [
 // Load the npm tasks.
 grunt.loadNpmTasks('grunt-docular');
 grunt.loadNpmTasks('grunt-contrib-jasmine');
+grunt.registerTask('heroku', ['build:prod']);
 };
