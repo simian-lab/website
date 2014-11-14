@@ -52,6 +52,18 @@ module.exports = function(grunt) {
       server: '.tmp'
     },
 
+    sass: {
+      options: {
+        includePaths: require('node-bourbon').includePaths,
+        outputStyle: 'compressed'
+      },
+      dist: {
+        files: {
+          '<%= config.app %>/styles/styles.css': '<%= config.app %>/styles/styles.scss'
+        }
+      }
+    },
+
     compass: {
       options: {
         sassDir: '<%= config.app %>/styles',
@@ -76,14 +88,14 @@ module.exports = function(grunt) {
 
     concurrent: {
       server: [
-      'compass:server'
+      'sass:dist'
       ],
       test: [
-      'compass'
+      'sass'
       ],
       dist: {
         tasks: [
-        'compass:dist',
+        'sass:dist',
         'imagemin',
         'htmlmin'
         ],
@@ -345,7 +357,7 @@ module.exports = function(grunt) {
     local: {
       options: {
         variables: {
-          'contact_form_route': 'http://simian.local:7544/contact',
+          'contact_form_route': 'http://localhost:5000/contact',
           'google_analytics_id': 'UA-48202840-2',
           'env': 'local'
         }
@@ -358,7 +370,7 @@ module.exports = function(grunt) {
     dev: {
       options: {
         variables: {
-          'contact_form_route': 'http://mailsend.simian.co/contact',
+          'contact_form_route': 'https://simian-website.herokuapp.com/contact',
           'google_analytics_id': 'UA-48202840-2',
           'env': 'dev'
         }
@@ -371,7 +383,7 @@ module.exports = function(grunt) {
     alpha: {
       options: {
         variables: {
-          'contact_form_route': 'http://mailsend.simian.co/contact',
+          'contact_form_route': 'https://simian-website.herokuapp.com/contact',
           'google_analytics_id': 'UA-48202840-3',
           'env': 'alpha'
         }
@@ -384,7 +396,7 @@ module.exports = function(grunt) {
     beta: {
       options: {
         variables: {
-          'contact_form_route': 'http://mailsend.simian.co/contact',
+          'contact_form_route': 'https://simian-website.herokuapp.com/contact',
           'google_analytics_id': 'UA-48202840-4',
           'env': 'beta'
         }
@@ -397,7 +409,7 @@ module.exports = function(grunt) {
     prod: {
       options: {
         variables: {
-          'contact_form_route': 'http://mailsend.simian.co/contact',
+          'contact_form_route': 'https://simian-website.herokuapp.com/contact',
           'google_analytics_id': 'UA-48202840-1',
           'env': 'prod'
         }
@@ -465,11 +477,11 @@ module.exports = function(grunt) {
   },
 
   watch: {
-    compass: {
-      files: [
-      '<%= config.app %>/**/*.scss'
-      ],
-      tasks: ['compass:server']
+    sass: {
+      files: {
+        '<%= config.app %>/styles/styles.css': '<%= config.app %>/styles/styles.scss'
+      },
+      tasks: ['sass:dist']
     },
     livereload: {
       options: {

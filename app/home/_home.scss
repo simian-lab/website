@@ -1,5 +1,5 @@
 .home section {
-  @include pie-clearfix;
+  @include clearfix();
 }
 
 .hide {
@@ -14,7 +14,7 @@
 }
 
 header {
-  background-image: url(/images/mainPicture.svgz);
+  background-image: url(/images/mainPicture.svg);
   background-position: center 3.5rem;
   background-repeat: no-repeat;
   background-size: 220%;
@@ -43,8 +43,7 @@ header {
   }
 
   &:after {
-    // TODO: Compass this
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    @include background-image (linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)));
     bottom: 0;
     content: '';
     display: block;
@@ -103,7 +102,7 @@ h1 {
   margin: 0px auto 2rem;
   width: 18rem;
 
-  @media screen and (min-width: 31rem) {
+  @media screen and (min-width: 35rem) {
     font-size: 2.75rem;
     width: 27rem;
   }
@@ -116,7 +115,7 @@ h1 {
     margin-right: auto;
     width: 7rem;
     font-size: 1rem;
-    @media screen and (min-width: 31rem) {
+    @media screen and (min-width: 35rem) {
       width: 8rem;
       font-size: 1.25rem;
     }
@@ -130,16 +129,19 @@ h1 {
   width: 100%;
 
   div {
-    padding: 0;
+    padding: 12rem 0 0 0;
     background-repeat: no-repeat;
     background-size: contain;
-    @include pie-clearfix();
+    @include clearfix();
+    @media screen and (min-width: 35rem) {
+      padding: 0;
+    }
   }
 
   p, h2 {
     padding: 0 1rem;
 
-    @media screen and (min-width: 31rem) {
+    @media screen and (min-width: 35rem) {
       padding: 0 2rem;
     }
   }
@@ -152,14 +154,14 @@ h1 {
 
   .left {
     float: none;
-    @media screen and (min-width: 31rem) {
+    @media screen and (min-width: 35rem) {
       text-align: left;
     }
   }
 
   .right {
     float: none;
-    @media screen and (min-width: 31rem) {
+    @media screen and (min-width: 35rem) {
       text-align: right;
     }
   }
@@ -167,7 +169,7 @@ h1 {
   .description {
     width: 100%;
 
-    @media screen and (min-width: 31rem) {
+    @media screen and (min-width: 35rem) {
       width: 60%;
     }
 
@@ -176,13 +178,13 @@ h1 {
     }
 
     &.left {
-      @media screen and (min-width: 31rem) {
+      @media screen and (min-width: 35rem) {
         float: left;
       }
     }
 
     &.right {
-      @media screen and (min-width: 31rem) {
+      @media screen and (min-width: 35rem) {
         float: right;
       }
     }
@@ -190,19 +192,29 @@ h1 {
 
   .envision {
       position: relative;
+      margin: 2rem 0 2rem 0;
+
+      @media screen and (min-width: 35rem) {
+        margin: 3rem 0 3rem 0;
+      }
 
       &:before {
         content: '';
         width: 100%;
-        height: 15rem;
+        height: 13rem;
         position: absolute;
         background-image: url(/images/envision.svg);
-        opacity: 0.20;
+        opacity: 0.5;
         top: 0;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: -1rem 0;
+        background-position: center;
         z-index: -1; // So it doesn't go on top of the text
+
+        @media screen and (min-width: 35rem){
+          background-position: 1rem -1rem;
+          height: 15rem;
+        }
 
         @media screen and (min-width: 62rem) {
           background-position: 1rem 0;
@@ -216,30 +228,31 @@ h1 {
     &:before {
       content: '';
       width: 100%;
-      height: 15rem;
+      height: 13rem;
       position: absolute;
       background-image: url(/images/analysis.svg);
-      opacity: 0.20;
+      opacity: 0.5;
       top: 0;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: 8rem 0;
+      background-position: center -1rem;
       z-index: -1; // So it doesn't go on top of the text
 
-      @media screen and (min-width: 30rem) {
-        background-position: 12rem 0;
+      @media screen and (min-width: 35rem) {
+        background-position: 20rem 0;
+        height: 15rem;
       }
 
       @media screen and (min-width: 40rem) and (orientation: landscape) {
-        background-position: 20rem 0;
+        background-position: 22rem 0;
       }
 
-      @media screen and (min-width: 37rem) {
-        background-position: 18rem 0;
+      @media screen and (min-width: 42rem) {
+        background-position: 25rem 0;
       }
 
-      @media screen and (min-width: 43rem) {
-        background-position: 27rem 0;
+      @media screen and (min-width: 49rem) {
+        background-position: 30rem 0;
       }
 
       @media screen and (min-width: 55rem) {
@@ -250,6 +263,11 @@ h1 {
 
   .design {
       position: relative;
+      margin: 0;
+
+      @media screen and (min-width: 35rem) {
+        margin: 3rem 0 3rem 0;
+      }
 
       &:before {
         content: '';
@@ -257,12 +275,16 @@ h1 {
         height: 15rem;
         position: absolute;
         background-image: url(/images/design.svg);
-        opacity: 0.20;
+        opacity: 0.5;
         top: 0;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: -1rem 0;
+        background-position: center -3rem;
         z-index: -1; // So it doesn't go on top of the text
+
+        @media screen and (min-width: 35rem){
+          background-position: 2rem -3rem;
+        }
 
         @media screen and (min-width: 62rem) {
           background-position: 1rem -4rem;
@@ -276,30 +298,31 @@ h1 {
     &:before {
       content: '';
       width: 100%;
-      height: 15rem;
+      height: 11rem;
       position: absolute;
       background-image: url(/images/development.svg);
-      opacity: 0.20;
+      opacity: 0.5;
       top: 0;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: 8rem 0;
+      background-position: center;
       z-index: -1; // So it doesn't go on top of the text
 
-      @media screen and (min-width: 30rem) {
-        background-position: 12rem 0;
+      @media screen and (min-width: 35rem) {
+        background-position: 19rem 0;
+        height: 15rem;
       }
 
       @media screen and (min-width: 40rem) and (orientation: landscape) {
-        background-position: 20rem 0;
+        background-position: 22rem 0;
       }
 
-      @media screen and (min-width: 37rem) {
-        background-position: 18rem 0;
+      @media screen and (min-width: 42rem) {
+        background-position: 25rem 0;
       }
 
-      @media screen and (min-width: 43rem) {
-        background-position: 27rem 0;
+      @media screen and (min-width: 49rem) {
+        background-position: 30rem 0;
       }
 
       @media screen and (min-width: 55rem) {
@@ -310,19 +333,29 @@ h1 {
 
   .mantain {
     position: relative;
+    margin: 0 0 3rem 0;
+
+    @media screen and (min-width: 35rem) {
+      margin: 3rem 0 3rem 0;
+    }
 
     &:before {
       content: '';
       width: 100%;
-      height: 15rem;
+      height: 13rem;
       position: absolute;
       background-image: url(/images/maintenance.svg);
-      opacity: 0.20;
+      opacity: 0.5;
       top: 0;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: -1rem 0;
+      background-position: center;
       z-index: -1; // So it doesn't go on top of the text
+
+      @media screen and (min-width: 35rem){
+        background-position: 1rem -1rem;
+        height: 15rem;
+      }
 
       @media screen and (min-width: 62rem) {
         background-position: 1rem 0;
@@ -410,7 +443,7 @@ h1 {
     padding: 0 1rem;
     width: 50%;
 
-    @media screen and (min-width: 31rem) {
+    @media screen and (min-width: 35rem) {
       padding: 0 2rem;
     }
 
