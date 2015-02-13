@@ -45,7 +45,8 @@ angular.module('simian.home', [])
     KYK_LINK:               'KIENYKE, un sitio mobile-first',
     CLIENTS_HEADLINE:       'Lo que dicen nuestros clientes',
     PROCESS_HEADLINE:       'Nuestro proceso',
-    TEAM_HEADLINE:          'Equipo'
+    TEAM_HEADLINE:          'Equipo',
+    BLOG_LINK:              'Nuestro blog'
 
   };
 
@@ -78,7 +79,8 @@ angular.module('simian.home', [])
     KYK_LINK:               'KIENYKE, mobile-first website',
     CLIENTS_HEADLINE:       'Our clients say',
     PROCESS_HEADLINE:       'Our process',
-    TEAM_HEADLINE:          'The team'
+    TEAM_HEADLINE:          'The team',
+    BLOG_LINK:              'Our blog'
 
   };
 
