@@ -46,7 +46,8 @@ angular.module('simian.home', [])
     CLIENTS_HEADLINE:       'Lo que dicen nuestros clientes',
     PROCESS_HEADLINE:       'Nuestro proceso',
     TEAM_HEADLINE:          'Equipo',
-    BLOG_LINK:              'Nuestro blog'
+    BLOG_LINK:              'Nuestro blog',
+    PORTFOLIO_HEADLINE:     'Portafolio'
 
   };
 
@@ -80,7 +81,8 @@ angular.module('simian.home', [])
     CLIENTS_HEADLINE:       'Our clients say',
     PROCESS_HEADLINE:       'Our process',
     TEAM_HEADLINE:          'The team',
-    BLOG_LINK:              'Our blog'
+    BLOG_LINK:              'Our blog',
+    PORTFOLIO_HEADLINE:     'Portfolio'
 
   };
 
