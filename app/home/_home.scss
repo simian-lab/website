@@ -422,6 +422,23 @@ h1 {
   }
 }
 
+#portfolio {
+  .clients {
+    figure {
+      float: left;
+      width: 33%;
+
+      @media screen and (max-width: $tablet) {
+        width: 50%;
+      }
+
+      &:first-child {
+        height: 1rem;
+      }
+    }
+  }
+}
+
 #team {
   margin: 0 auto;
   max-width: 62.5rem;
