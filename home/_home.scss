@@ -434,10 +434,6 @@ h1 {
       @media screen and (max-width: $tablet) {
         width: 50%;
       }
-
-      &:first-child {
-        height: 1rem;
-      }
     }
   }
 }
