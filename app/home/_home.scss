@@ -424,6 +424,7 @@ h1 {
 
 #portfolio {
   background-color: #e8e8e8;
+  margin: 0 5%;
   padding-top: 1rem;
 
   .clients {
@@ -433,6 +434,11 @@ h1 {
 
       @media screen and (max-width: $tablet) {
         width: 50%;
+      }
+
+      figcaption {
+        font-style: normal;
+        text-align: center;
       }
     }
   }
