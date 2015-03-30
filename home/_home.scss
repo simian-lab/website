@@ -422,6 +422,28 @@ h1 {
   }
 }
 
+#portfolio {
+  background-color: #e8e8e8;
+  padding: 0 5%;
+  padding-top: 1rem;
+
+  .clients {
+    figure {
+      float: left;
+      width: 33%;
+
+      @media screen and (max-width: $tablet) {
+        width: 50%;
+      }
+
+      figcaption {
+        font-style: normal;
+        text-align: center;
+      }
+    }
+  }
+}
+
 #team {
   margin: 0 auto;
   max-width: 62.5rem;
