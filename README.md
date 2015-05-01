@@ -1,3 +1,3 @@
 website
 =======
-Public repo for the redesign of our site.
+Public repo for the Simian site.
