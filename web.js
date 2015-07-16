@@ -7,6 +7,13 @@ var emailAddress = process.env.MAIL_ADDRESS;
 app.use(express.bodyParser());
 app.use('/', express.static(__dirname + '/app'));
 
+app.all('*', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+
 app.post('/contact', function(req, res) {
   // Website you wish to allow to connect
   res.setHeader('Access-Control-Allow-Origin', process.env.SENDER);
