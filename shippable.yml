@@ -16,4 +16,4 @@ after_success:
 # include
 branches:
   only:
-    - develop
+    - master
