@@ -37,7 +37,7 @@
   .menu-button, .contact-link {
     background-color: $menu-button-color;
     border-radius: 50%;
-    @include box-shadow(0 0 0.25rem darken($gray-menu, 10%));
+    box-shadow: 0 0 0.25rem darken($gray-menu, 10%);
     color: $gray-menu;
     font-size: 1.4rem;
     width: 2.5rem;
