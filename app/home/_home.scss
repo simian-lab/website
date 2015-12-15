@@ -441,7 +441,13 @@ h1 {
         text-align: center;
       }
     }
-  }
+    //Just right for mobiles
+    .right-mobile{
+      @media screen and (max-width: $tablet) {
+        float: right;
+      }
+    }
+  }  
 }
 
 #team {
@@ -484,5 +490,17 @@ h1 {
 
   .right {
     float: right;
+  } 
+  .sebastian{
+    margin-left: 0;
+    @media screen and (min-width: 48rem) {
+      margin-left: 25%;
+    }
+  }
+  .natalia{
+    margin-right: 0;
+    @media screen and (min-width: 48rem) {
+      margin-right: 25%;
+    }
   }
 }
