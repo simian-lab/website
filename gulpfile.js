@@ -12,3 +12,7 @@ gulp.task('sass', function () {
   }).on('error', sass.logError))
 	.pipe(gulp.dest('app/styles/'))
 });
+
+gulp.task('sass:watch', function(){
+	gulp.watch('app/**/*.scss', ['sass']);
+});
