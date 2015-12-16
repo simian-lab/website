@@ -447,6 +447,22 @@ h1 {
         float: right;
       }
     }
+    .loe{
+      img{
+        margin-bottom: 2em;
+      }
+    }
+    .osos{
+      float: none;      
+    }
+    .fedesoft{
+      img{
+        margin-bottom: 1.5em;
+        @media screen and (max-width: $tablet) {
+          margin-bottom: 2.5em;
+        }
+      }
+    }
   }  
 }
 
@@ -502,5 +518,12 @@ h1 {
     @media screen and (min-width: 48rem) {
       margin-right: 25%;
     }
+  }
+  .checho, .ivan{
+    p{
+      @media screen and (min-width: 48rem){
+        margin-bottom: 0;
+      }
+    }    
   }
 }
