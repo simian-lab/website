@@ -447,13 +447,27 @@ h1 {
         float: right;
       }
     }
+    //Special adjustments for some pieces
     .loe{
       img{
         margin-bottom: 2em;
       }
     }
+    .cyberlunes{
+      @media screen and (max-width: $tablet) {
+        margin-bottom: 0.5em;
+      }
+      img{
+        @media screen and (max-width: $tablet) {
+          margin-bottom: 0;
+        }
+      }
+    }
     .osos{
-      float: none;      
+      float: none;
+      @media screen and (max-width: $tablet) {
+        float: right;
+      }      
     }
     .fedesoft{
       img{
