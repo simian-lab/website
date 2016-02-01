@@ -1,19 +1,14 @@
 language: node_js
 
 node_js:
- - 0.10.31
-
-env:
-  global:
-    - APP_NAME=simian-website
+ - 4.2.3
 
 script:
   - mocha
 
 after_success:
-  #- git push -f git@heroku.com:$APP_NAME.git $BRANCH:master
   - if [ $BRANCH == "develop" ]; then git push -f git@heroku.com:beta-simian.git $BRANCH:master; fi
-  - if [ $BRANCH == "master" ]; then git push -f git@heroku.com:$APP_NAME.git $BRANCH:master; fi
+  - if [ $BRANCH == "master" ]; then git push -f git@heroku.com:$simian-website.git $BRANCH:master; fi
 
 # include
 branches:

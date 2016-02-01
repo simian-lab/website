@@ -1,40 +1,71 @@
-'use strict';
+var bourbon = require('node-bourbon'),
+    browserSync = require('browser-sync').create(),
+    clean = require('gulp-clean'),
+    cssNano = require('gulp-cssnano'),
+    gulp = require('gulp'),
+    imagemin = require('gulp-imagemin'),
+    jscs = require('gulp-jscs'),
+    rev = require('gulp-rev'),
+    sass = require('gulp-sass'),
+    usemin = require('gulp-usemin');
 
-var gulp = require('gulp'),
-	sass = require('gulp-sass'),
-	bourbon = require('node-bourbon'),
-	browserSync = require("browser-sync").create(),
-	reload = browserSync.reload;
+gulp.task('build', ['clean', 'usemin', 'images', 'serve-prod']);
 
-gulp.task('reload', function() {
-  browserSync.reload();
+gulp.task('clean', function() {
+  gulp.src('prod', {
+    read: false
+  })
+  .pipe(clean());
 });
 
-// Static Server + watching scss/html files
+gulp.task('default', ['serve']);
+
+gulp.task('images', function() {
+  gulp.src('dev/img/*')
+  .pipe(imagemin({
+    optimizationLevel:  3,
+    progressive:        true,
+    interlaced:         true
+  }))
+  .pipe(gulp.dest('prod/img'));
+});
+
+gulp.task('jscs', function() {
+  gulp.src('dev/js')
+  .pipe(jscs())
+  .pipe(jscs.reporter());
+});
+
+gulp.task('sass', function() {
+  gulp.src('dev/sass/*.scss')
+  .pipe(sass({
+    includePaths: require('node-bourbon').includePaths
+  }).on('error', sass.logError))
+  .pipe(gulp.dest('dev/css'))
+  .pipe(browserSync.stream());
+});
+
 gulp.task('serve', ['sass'], function() {
 
-    browserSync.init({
-        server: "app"
-    });
+  browserSync.init({
+    server: 'dev'
+  });
 
+  gulp.watch('dev/sass/*.scss', ['sass']);
+  gulp.watch('dev/*.html').on('change', browserSync.reload);
 });
 
-
-gulp.task('sass', function () {
-	gulp.src('app/styles/**.scss')
-	.pipe(sass({
-    includePaths: bourbon.includePaths,
-    outputStyle: 'compressed',
-    sourcemap: true
-  }).on('error', sass.logError))
-	.pipe(gulp.dest('app/styles/'))
-	.pipe(reload({stream:true}))
+gulp.task('serve-prod', function() {
+  browserSync.init({
+    server: 'prod',
+    port: process.env.PORT || 5000
+  })
 });
 
-gulp.task('watch', function(){
-	gulp.watch('app/**/*.scss', { interval: 500 }, ['sass']);
-	gulp.watch("app/**/*.html", { interval: 500 }, ['reload']);
-	gulp.watch("app/**/*.js", { interval: 500 }, ['reload']);
+gulp.task('usemin', function() {
+  gulp.src('dev/*.html')
+  .pipe(usemin({
+    css: [cssNano(), rev()]
+  }))
+  .pipe(gulp.dest('prod'));
 });
-
-gulp.task('default', ['sass', 'serve', 'watch']);

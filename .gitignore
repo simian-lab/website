@@ -1,9 +1,4 @@
-.vagrant
-.tmp
-.sass-cache
+
 node_modules
-dist
-logs
-reports
-documentation
-snapshots
+prod
+styles.css
