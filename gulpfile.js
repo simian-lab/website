@@ -7,7 +7,8 @@ var bourbon = require('node-bourbon'),
     jscs = require('gulp-jscs'),
     rev = require('gulp-rev'),
     sass = require('gulp-sass'),
-    usemin = require('gulp-usemin');
+    usemin = require('gulp-usemin'),
+    jshint = require('gulp-jshint');
 
 gulp.task('build', ['clean', 'usemin', 'images', 'serve-prod']);
 
@@ -31,8 +32,8 @@ gulp.task('images', function() {
 });
 
 gulp.task('jscs', function() {
-  gulp.src('dev/js')
-  .pipe(jscs())
+  gulp.src('dev/js/*.js')
+  .pipe(jscs({fix: true}))
   .pipe(jscs.reporter());
 });
 
@@ -68,4 +69,10 @@ gulp.task('usemin', function() {
     css: [cssNano(), rev()]
   }))
   .pipe(gulp.dest('prod'));
+});
+
+gulp.task('hint', function() {
+  gulp.src('dev/js/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter());
 });
