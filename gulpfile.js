@@ -4,11 +4,11 @@ var bourbon = require('node-bourbon'),
     cssNano = require('gulp-cssnano'),
     gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
+    jshint = require('gulp-jshint'),
     jscs = require('gulp-jscs'),
     rev = require('gulp-rev'),
     sass = require('gulp-sass'),
-    usemin = require('gulp-usemin'),
-    jshint = require('gulp-jshint');
+    usemin = require('gulp-usemin');
 
 gulp.task('build', ['clean', 'usemin', 'images', 'serve-prod']);
 
@@ -31,9 +31,15 @@ gulp.task('images', function() {
   .pipe(gulp.dest('prod/img'));
 });
 
+gulp.task('jshint', function() {
+  gulp.src('dev/js/*.js')
+  .pipe(jshint())
+  .pipe(jshint.reporter());
+});
+
 gulp.task('jscs', function() {
   gulp.src('dev/js/*.js')
-  .pipe(jscs({fix: true}))
+  .pipe(jscs())
   .pipe(jscs.reporter());
 });
 
@@ -52,6 +58,7 @@ gulp.task('serve', ['sass'], function() {
     server: 'dev'
   });
 
+  gulp.watch('dev/js/*.js', ['jshint', 'jscs']).on('change', browserSync.reload);
   gulp.watch('dev/sass/*.scss', ['sass']);
   gulp.watch('dev/*.html').on('change', browserSync.reload);
 });
@@ -69,10 +76,4 @@ gulp.task('usemin', function() {
     css: [cssNano(), rev()]
   }))
   .pipe(gulp.dest('prod'));
-});
-
-gulp.task('hint', function() {
-  gulp.src('dev/js/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter());
 });
