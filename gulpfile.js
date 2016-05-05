@@ -11,7 +11,7 @@ var bourbon = require('node-bourbon'),
     uglify = require('gulp-uglify'),
     usemin = require('gulp-usemin');
 
-gulp.task('build', [ 'usemin', 'html', 'images' ]);
+gulp.task('build', [ 'usemin', 'html', 'images', 'fonts' ]);
 
 gulp.task('clean', function() {
   gulp.src('prod', {
@@ -32,10 +32,15 @@ gulp.task('images', function() {
   .pipe(gulp.dest('prod/img'));
 });
 
+gulp.task('fonts', function() {
+  gulp.src('dev/fonts/*')
+  .pipe(gulp.dest('prod/fonts'));
+});
+
 gulp.task('html', function() {
   gulp.src('dev/modules/**/*.html')
   .pipe(gulp.dest('prod/modules'));
-})
+});
 
 gulp.task('jshint', function() {
   gulp.src('dev/js/*.js')
