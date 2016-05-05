@@ -1,27 +1,27 @@
 <header>
-  <a href="">
+  <a href="" ng-click="changeState('home')">
     <img src="../img/logo-simian.png" alt="">
   </a>
 
   <nav>
     <ul>
       <li>
-        <a href="">Qué hacemos</a>
+        <a href="" ng-click="changeState('we-do')" ng-class="{active: activeSection == 'we-do'}">Qué hacemos</a>
       </li>
       <li>
-        <a href="">Nuestros proyectos</a>
+        <a href="" ng-click="changeState('projects')" ng-class="{active: activeSection == 'projects'}">Nuestros proyectos</a>
       </li>
       <li>
-        <a href="">Quiénes han estado con nosotros</a>
+        <a href="" ng-click="changeState('clients')" ng-class="{active: activeSection == 'clients'}">Quiénes han estado con nosotros</a>
       </li>
       <li>
-        <a href="">Quiénes somos</a>
+        <a href="" ng-click="changeState('we-are')" ng-class="{active: activeSection == 'we-are'}">Quiénes somos</a>
       </li>
       <li>
-        <a href="">Donde encontrarnos</a>
+        <a href="" ng-click="changeState('location')" ng-class="{active: activeSection == 'location'}">Donde encontrarnos</a>
       </li>
       <li>
-        <a href="">Compartimos lo que sabemos</a>
+        <a href="" ng-click="changeState('we-share')" ng-class="{active: activeSection == 'we-share'}">Compartimos lo que sabemos</a>
       </li>
     </ul>
   </nav>
@@ -30,10 +30,10 @@
     <a href="http://blog.simian.co/" target="_blank">
       <img src="../img/our-blog.png" alt="">
     </a>
-    <a href="">
+    <a href="" ng-click="changeLanguage('es')">
       <img src="../img/es-button.png" alt="">
     </a>
-    <a href="">
+    <a href="" ng-click="changeLanguage('en')">
       <img src="../img/en-button.png" alt="">
     </a>
   </div>
