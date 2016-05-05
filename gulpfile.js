@@ -3,6 +3,7 @@ var bourbon = require('node-bourbon'),
     clean = require('gulp-clean'),
     cssNano = require('gulp-cssnano'),
     gulp = require('gulp'),
+    historyApiFallback = require('connect-history-api-fallback'),
     imagemin = require('gulp-imagemin'),
     jshint = require('gulp-jshint'),
     jscs = require('gulp-jscs'),
@@ -66,7 +67,8 @@ gulp.task('sass', function() {
 gulp.task('serve', [ 'sass' ], function() {
 
   browserSync.init({
-    server: 'dev'
+    server: 'dev',
+    middleware: [ historyApiFallback() ]
   });
 
   gulp.watch('dev/**/*.js').on('change', browserSync.reload);
