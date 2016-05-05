@@ -81,3 +81,18 @@ header {
     top: 2rem; }
     header .header-buttons a {
       margin: 0 0.5rem; }
+
+footer h1 {
+  color: #FFFFFF;
+  font-family: "amaticbold";
+  font-size: 6rem;
+  text-align: center; }
+
+.footer-home {
+  background-color: #4FA2C0; }
+
+.footer-we-do, .footer-clients, .footer-location {
+  background-color: #70C1B3; }
+
+.footer-projects, .footer-we-share {
+  background-color: #F25F5C; }

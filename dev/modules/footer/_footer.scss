@@ -1,0 +1,20 @@
+footer {
+  h1 {
+    color: $white;
+    font-family: $amatic_bold;
+    font-size: 6rem;
+    text-align: center;
+  }
+}
+
+.footer-home {
+  background-color: $blue;
+}
+
+.footer-we-do, .footer-clients, .footer-location {
+  background-color: $green;
+}
+
+.footer-projects, .footer-we-share {
+  background-color: $red;
+}
