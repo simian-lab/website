@@ -20,7 +20,7 @@
       <div ui-view></div>
     </div>
 
-    <simian-footer></simian-footer>
+    <simian-footer ng-show="activeSection != 'we-are'"></simian-footer>
 
     <!-- build:scripts /scripts/scripts.js -->
     <script src="/bower_components/angular/angular.js"></script>
@@ -28,8 +28,16 @@
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
     <script src="/js/app.js"></script>
+
     <script src="/modules/header/header.js"></script>
     <script src="/modules/footer/footer.js"></script>
+    <script src="/modules/home/home.js"></script>
+    <script src="/modules/we-do/we-do.js"></script>
+    <script src="/modules/projects/projects.js"></script>
+    <script src="/modules/clients/clients.js"></script>
+    <script src="/modules/we-are/we-are.js"></script>
+    <script src="/modules/location/location.js"></script>
+    <script src="/modules/we-share/we-share.js"></script>
     <!-- endbuild -->
   </body>
 </html>

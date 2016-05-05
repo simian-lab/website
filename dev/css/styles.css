@@ -68,11 +68,13 @@ header {
         header nav ul li a {
           color: #FFFFFF;
           font-family: "quicksandlight";
-          font-size: 0.9rem;
+          font-size: 0.85rem;
           line-height: 1.2rem;
           text-decoration: none;
           text-align: center;
           text-transform: uppercase; }
+        header nav ul li .active {
+          color: #DED96B; }
   header .header-buttons {
     position: absolute;
     right: 1rem;
