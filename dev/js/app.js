@@ -1,5 +1,6 @@
 angular.module('simian', [
   'ui.router',
+  'pascalprecht.translate',
 
   'simian.header',
   'simian.footer',
@@ -13,9 +14,11 @@ angular.module('simian', [
 ])
 
 .config([
-  '$locationProvider', '$stateProvider', '$urlRouterProvider',
-  function($locationProvider, $stateProvider, $urlRouterProvider) {
+  '$locationProvider', '$stateProvider', '$translateProvider', '$urlRouterProvider',
+  function($locationProvider, $stateProvider, $translateProvider, $urlRouterProvider) {
     $locationProvider.html5Mode(true).hashPrefix('!');
+
+    $translateProvider.preferredLanguage('es');
 
     $stateProvider
     .state('home', {

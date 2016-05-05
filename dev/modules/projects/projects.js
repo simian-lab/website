@@ -8,4 +8,14 @@ angular.module('simian.projects', [])
     console.log('ProjectsController');
   }
 ])
+
+.config(function($translateProvider) {
+    $translateProvider.translations('es', {
+      PROJECTS_TITLE: 'Nuestros proyectos'
+    });
+    $translateProvider.translations('en', {
+      PROJECTS_TITLE: 'Our projects'
+    });
+  }
+)
 ;

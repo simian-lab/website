@@ -3,8 +3,8 @@
 angular.module('simian.header', [])
 
 .controller('HeaderController', [
-  '$scope', '$state', '$timeout',
-  function($scope, $state, $timeout) {
+  '$scope', '$state', '$timeout', '$translate',
+  function($scope, $state, $timeout, $translate) {
 
     $timeout(function() {
       $scope.activeSection = $state.current.name;
@@ -13,6 +13,10 @@ angular.module('simian.header', [])
     $scope.changeState = function(state) {
       $scope.activeSection = state;
       $state.go(state);
+    }
+
+    $scope.changeLanguage = function(language) {
+      $translate.use(language);
     }
   }
 ])
