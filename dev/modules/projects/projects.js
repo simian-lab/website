@@ -9,7 +9,9 @@ angular.module('simian.projects', [])
   }
 ])
 
-.config(function($translateProvider) {
+.config([
+  '$translateProvider',
+  function($translateProvider) {
     $translateProvider.translations('es', {
       PROJECTS_TITLE: 'Nuestros proyectos'
     });
@@ -17,5 +19,5 @@ angular.module('simian.projects', [])
       PROJECTS_TITLE: 'Our projects'
     });
   }
-)
+])
 ;

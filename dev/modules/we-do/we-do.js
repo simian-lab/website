@@ -9,7 +9,9 @@ angular.module('simian.we-do', [])
   }
 ])
 
-.config(function($translateProvider) {
+.config([
+  '$translateProvider',
+  function($translateProvider) {
     $translateProvider.translations('es', {
       WE_DO_TITLE: 'Qué hacemos'
     });
@@ -17,5 +19,5 @@ angular.module('simian.we-do', [])
       WE_DO_TITLE: 'We do'
     });
   }
-)
+])
 ;
