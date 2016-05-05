@@ -1,0 +1,28 @@
+header {
+  background-image: url("../img/header-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 8.5rem;
+  position: relative; }
+  header a {
+    display: inline-block; }
+  header nav {
+    left: 23%;
+    position: absolute;
+    top: 2.5rem;
+    width: 60%; }
+    header nav ul {
+      display: flex; }
+      header nav ul li {
+        margin: 0 1rem; }
+        header nav ul li a {
+          color: #FFFFFF;
+          text-decoration: none;
+          text-align: center;
+          text-transform: uppercase; }
+  header .header-buttons {
+    position: absolute;
+    right: 1rem;
+    top: 2rem; }
+    header .header-buttons a {
+      margin: 0 0.5rem; }

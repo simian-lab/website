@@ -1,0 +1,19 @@
+{
+  "name": "Simian",
+  "description": "Simian website.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Simian"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Simian"
+  ],
+  "homepage": "https://github.com/simian-lab/website",
+  "moduleType": [],
+  "private": true,
+  "dependencies": {
+    "angular": "1.5.5",
+    "angular-ui-router": "~0.2.18"
+  }
+}

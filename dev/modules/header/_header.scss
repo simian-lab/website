@@ -1,0 +1,43 @@
+header {
+  background-image: url('../img/header-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 8.5rem;
+  position: relative;
+
+  a {
+    display: inline-block;
+  }
+
+  nav {
+    left: 23%;
+    position: absolute;
+    top: 2.5rem;
+    width: 60%;
+
+    ul {
+      display: flex;
+
+      li {
+        margin: 0 1rem;
+
+        a {
+          color: $white;
+          text-decoration: none;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .header-buttons {
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+
+    a {
+      margin: 0 0.5rem;
+    }
+  }
+}

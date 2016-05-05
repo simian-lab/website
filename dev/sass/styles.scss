@@ -1,11 +1,5 @@
-@import "bourbon";
+@import 'bourbon';
 
-@import "variables";
+@import 'variables';
 
-h1 {
-  color: $red;
-}
-
-h2 {
-  color: $blue;
-}
+@import '../modules/header/header';

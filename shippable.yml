@@ -8,7 +8,7 @@ script:
 
 after_success:
   - if [ $BRANCH == "develop" ]; then git push -f git@heroku.com:beta-simian.git $BRANCH:master; fi
-  - if [ $BRANCH == "master" ]; then git push -f git@heroku.com:$simian-website.git $BRANCH:master; fi
+  - if [ $BRANCH == "master" ]; then git push -f git@heroku.com:simian-website.git $BRANCH:master; fi
 
 # include
 branches:

@@ -1,16 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="simian">
   <head>
+    <base href="/">
     <title>Simian</title>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- build:css styles.css -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- build:styles /styles/styles.css -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <!-- endbuild -->
   </head>
-  <body>
-    <h1>¡Hola Mundo!</h1>
-    <h2>Hola amiguitos</h2>
+  <body ng-controller="AppController">
+
+    <simian-header></simian-header>
+
+    <div class="main-content">
+      <div ui-view></div>
+    </div>
+
+    <simian-footer></simian-footer>
+
+    <!-- build:scripts /scripts/scripts.js -->
+    <script src="/bower_components/angular/angular.js"></script>
+
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="/js/app.js"></script>
+    <script src="/modules/header/header.js"></script>
+    <script src="/modules/footer/footer.js"></script>
+    <!-- endbuild -->
   </body>
 </html>
