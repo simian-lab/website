@@ -68,7 +68,7 @@ header {
         header nav ul li a {
           color: #FFFFFF;
           font-family: "quicksandlight";
-          font-size: 0.85rem;
+          font-size: 0.75rem;
           line-height: 1.2rem;
           text-decoration: none;
           text-align: center;
@@ -82,17 +82,109 @@ header {
     header .header-buttons a {
       margin: 0 0.5rem; }
 
-footer h1 {
+footer:not(.footer-home) {
+  background-position: center top;
+  background-size: cover;
+  padding-top: 6rem; }
+
+footer .footer-title {
   color: #FFFFFF;
   font-family: "amaticbold";
   font-size: 6rem;
+  padding-bottom: 1.563rem;
   text-align: center; }
 
+footer .footer-content {
+  padding-top: 2.5rem; }
+  footer .footer-content::after {
+    clear: both;
+    content: "";
+    display: table; }
+  footer .footer-content .contact-form, footer .footer-content .contact-info {
+    float: left;
+    padding: 0 4%;
+    width: 42%; }
+  footer .footer-content .contact-form input, footer .footer-content .contact-form textarea {
+    border: none;
+    color: #FFFFFF;
+    margin: 0.4375rem 0;
+    padding: 0 0.5rem; }
+    footer .footer-content .contact-form input:focus, footer .footer-content .contact-form textarea:focus {
+      outline: none; }
+      footer .footer-content .contact-form input:focus::-webkit-input-placeholder, footer .footer-content .contact-form textarea:focus::-webkit-input-placeholder {
+        opacity: 0.5; }
+      footer .footer-content .contact-form input:focus::-moz-placeholder, footer .footer-content .contact-form textarea:focus::-moz-placeholder {
+        opacity: 0.5; }
+      footer .footer-content .contact-form input:focus:-moz-placeholder, footer .footer-content .contact-form textarea:focus:-moz-placeholder {
+        opacity: 0.5; }
+      footer .footer-content .contact-form input:focus:-ms-input-placeholder, footer .footer-content .contact-form textarea:focus:-ms-input-placeholder {
+        opacity: 0.5; }
+    footer .footer-content .contact-form input::-webkit-input-placeholder, footer .footer-content .contact-form textarea::-webkit-input-placeholder {
+      color: #FFFFFF; }
+    footer .footer-content .contact-form input::-moz-placeholder, footer .footer-content .contact-form textarea::-moz-placeholder {
+      color: #FFFFFF; }
+    footer .footer-content .contact-form input:-moz-placeholder, footer .footer-content .contact-form textarea:-moz-placeholder {
+      color: #FFFFFF; }
+    footer .footer-content .contact-form input:-ms-input-placeholder, footer .footer-content .contact-form textarea:-ms-input-placeholder {
+      color: #FFFFFF; }
+  footer .footer-content .contact-form input {
+    height: 3.125rem; }
+  footer .footer-content .contact-form textarea {
+    padding-top: 0.5rem; }
+  footer .footer-content .contact-form label {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    margin: 0.5rem; }
+  footer .footer-content .contact-form .submit {
+    background-image: url("../img/send-button.svg");
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.5rem;
+    height: 3.438rem;
+    margin-top: 2.813rem;
+    width: 9.688rem; }
+  footer .footer-content .contact-info .info-title {
+    color: #3F3832;
+    font-family: "amaticbold";
+    font-size: 4.5rem;
+    margin-bottom: 3.125rem; }
+  footer .footer-content .contact-info .info .field {
+    height: 5rem;
+    margin-bottom: 4.063rem;
+    position: relative; }
+    footer .footer-content .contact-info .info .field .field-content {
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 0 0.5rem;
+      position: absolute;
+      top: 50%; }
+      footer .footer-content .contact-info .info .field .field-content a {
+        color: #FFFFFF;
+        text-decoration: none; }
+  footer .footer-content input, footer .footer-content .field, footer .footer-content textarea, footer .footer-content label {
+    font-family: "quicksandlight"; }
+  footer .footer-content input:not(.submit), footer .footer-content .field, footer .footer-content textarea {
+    background-image: linear-gradient(to right, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to bottom, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to bottom, #333 55%, rgba(255, 255, 255, 0) 0%);
+    background-position: top, bottom, left, right;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 11px 1px, 11px 1px, 1px 11px, 1px 11px;
+    font-size: 1.625rem;
+    width: 100%; }
+
 .footer-home {
-  background-color: #4FA2C0; }
+  background-color: #00A1C1; }
+  .footer-home .footer-content .contact-form input, .footer-home .footer-content .contact-form textarea {
+    background-color: #00A1C1; }
 
 .footer-we-do, .footer-clients, .footer-location {
-  background-color: #70C1B3; }
+  background-image: url("../img/footer-bg-green.svg"); }
+  .footer-we-do .footer-content .contact-form input, .footer-we-do .footer-content .contact-form textarea, .footer-clients .footer-content .contact-form input, .footer-clients .footer-content .contact-form textarea, .footer-location .footer-content .contact-form input, .footer-location .footer-content .contact-form textarea {
+    background-color: #1DC0B2; }
 
 .footer-projects, .footer-we-share {
-  background-color: #F25F5C; }
+  background-image: url("../img/footer-bg-red.svg"); }
+  .footer-projects .footer-content .contact-form input, .footer-projects .footer-content .contact-form textarea, .footer-we-share .footer-content .contact-form input, .footer-we-share .footer-content .contact-form textarea {
+    background-color: #F25F5C; }

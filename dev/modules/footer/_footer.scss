@@ -1,20 +1,151 @@
 footer {
-  h1 {
+
+  &:not(.footer-home) {
+    background-position: center top;
+    background-size: cover;
+    padding-top: 6rem;
+  }
+
+  .footer-title {
     color: $white;
     font-family: $amatic_bold;
     font-size: 6rem;
+    padding-bottom: 1.563rem;
     text-align: center;
+  }
+
+  .footer-content {
+    @include clearfix();
+    $footer-content-padding: 4%;
+    padding-top: 2.5rem;
+
+    .contact-form, .contact-info {
+      float: left;
+      padding: 0 $footer-content-padding;
+      width: 50% - $footer-content-padding * 2;
+    }
+
+    .contact-form {
+      input, textarea {
+        border: none;
+        color: $white;
+        margin: 0.4375rem 0;
+        padding: 0 0.5rem;
+
+        &:focus {
+          outline: none;
+
+          @include placeholder {
+            opacity: 0.5;
+          }
+        }
+
+        @include placeholder {
+          color: $white;
+        }
+      }
+
+      input {
+        height: 3.125rem;
+      }
+
+      textarea {
+        padding-top: 0.5rem;
+      }
+
+      label {
+        color: $white;
+        font-size: 1.2rem;
+        margin: 0.5rem;
+      }
+
+      .submit {
+        background-image: url('../img/send-button.svg');
+        color: $black;
+        cursor: pointer;
+        font-size: 1.5rem;
+        height: 3.438rem;
+        margin-top: 2.813rem;
+        width: 9.688rem;
+      }
+    }
+
+    .contact-info {
+      .info-title {
+        color: $brown;
+        font-family: $amatic_bold;
+        font-size: 4.5rem;
+        margin-bottom: 3.125rem;
+      }
+
+      .info {
+        .field {
+          height: 5rem;
+          margin-bottom: 4.063rem;
+          position: relative;
+
+          .field-content {
+            @include transform(translateY(-50%));
+            padding: 0 0.5rem;
+            position: absolute;
+            top: 50%;
+
+            a {
+              color: $white;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    input, .field, textarea, label {
+      font-family: $quicksand_light;
+    }
+
+    input:not(.submit), .field, textarea {
+      background-image: linear-gradient(to right, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to bottom, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to bottom, #333 55%, rgba(255, 255, 255, 0) 0%);
+      background-position: top, bottom, left, right;
+      background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+      background-size: 11px 1px, 11px 1px, 1px 11px, 1px 11px;
+      font-size: 1.625rem;
+      width: 100%;
+    }
   }
 }
 
 .footer-home {
   background-color: $blue;
+
+  .footer-content {
+    .contact-form {
+      input, textarea {
+        background-color: $blue;
+      }
+    }
+  }
 }
 
 .footer-we-do, .footer-clients, .footer-location {
-  background-color: $green;
+  background-image: url('../img/footer-bg-green.svg');
+
+  .footer-content {
+    .contact-form {
+      input, textarea {
+        background-color: $green;
+      }
+    }
+  }
 }
 
 .footer-projects, .footer-we-share {
-  background-color: $red;
+  background-image: url('../img/footer-bg-red.svg');
+
+  .footer-content {
+    .contact-form {
+      input, textarea {
+        background-color: $red;
+      }
+    }
+  }
 }
