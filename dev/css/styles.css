@@ -86,16 +86,22 @@ footer:not(.footer-home) {
   background-position: center top;
   background-size: cover;
   padding-top: 6rem; }
+  footer:not(.footer-home) .footer-title {
+    background-size: 89%; }
 
 footer .footer-title {
+  background-image: url(../img/footer-line-horizontal.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
   color: #FFFFFF;
   font-family: "amaticbold";
   font-size: 6rem;
-  padding-bottom: 1.563rem;
+  padding-bottom: 3.5rem;
   text-align: center; }
 
 footer .footer-content {
-  padding-top: 2.5rem; }
+  padding-top: 1.7rem; }
   footer .footer-content::after {
     clear: both;
     content: "";
@@ -104,45 +110,49 @@ footer .footer-content {
     float: left;
     padding: 0 4%;
     width: 42%; }
-  footer .footer-content .contact-form input, footer .footer-content .contact-form textarea {
-    border: none;
-    color: #FFFFFF;
-    margin: 0.4375rem 0;
-    padding: 0 0.5rem; }
-    footer .footer-content .contact-form input:focus, footer .footer-content .contact-form textarea:focus {
-      outline: none; }
-      footer .footer-content .contact-form input:focus::-webkit-input-placeholder, footer .footer-content .contact-form textarea:focus::-webkit-input-placeholder {
-        opacity: 0.5; }
-      footer .footer-content .contact-form input:focus::-moz-placeholder, footer .footer-content .contact-form textarea:focus::-moz-placeholder {
-        opacity: 0.5; }
-      footer .footer-content .contact-form input:focus:-moz-placeholder, footer .footer-content .contact-form textarea:focus:-moz-placeholder {
-        opacity: 0.5; }
-      footer .footer-content .contact-form input:focus:-ms-input-placeholder, footer .footer-content .contact-form textarea:focus:-ms-input-placeholder {
-        opacity: 0.5; }
-    footer .footer-content .contact-form input::-webkit-input-placeholder, footer .footer-content .contact-form textarea::-webkit-input-placeholder {
-      color: #FFFFFF; }
-    footer .footer-content .contact-form input::-moz-placeholder, footer .footer-content .contact-form textarea::-moz-placeholder {
-      color: #FFFFFF; }
-    footer .footer-content .contact-form input:-moz-placeholder, footer .footer-content .contact-form textarea:-moz-placeholder {
-      color: #FFFFFF; }
-    footer .footer-content .contact-form input:-ms-input-placeholder, footer .footer-content .contact-form textarea:-ms-input-placeholder {
-      color: #FFFFFF; }
-  footer .footer-content .contact-form input {
-    height: 3.125rem; }
-  footer .footer-content .contact-form textarea {
-    padding-top: 0.5rem; }
-  footer .footer-content .contact-form label {
-    color: #FFFFFF;
-    font-size: 1.2rem;
-    margin: 0.5rem; }
-  footer .footer-content .contact-form .submit {
-    background-image: url("../img/send-button.svg");
-    color: #000000;
-    cursor: pointer;
-    font-size: 1.5rem;
-    height: 3.438rem;
-    margin-top: 2.813rem;
-    width: 9.688rem; }
+  footer .footer-content .contact-form {
+    background-image: url(../img/footer-line-vertical.svg);
+    background-position: right top;
+    background-repeat: no-repeat; }
+    footer .footer-content .contact-form input, footer .footer-content .contact-form textarea {
+      border: none;
+      color: #FFFFFF;
+      margin: 0.4375rem 0;
+      padding: 0 0.5rem; }
+      footer .footer-content .contact-form input:focus, footer .footer-content .contact-form textarea:focus {
+        outline: none; }
+        footer .footer-content .contact-form input:focus::-webkit-input-placeholder, footer .footer-content .contact-form textarea:focus::-webkit-input-placeholder {
+          opacity: 0.5; }
+        footer .footer-content .contact-form input:focus::-moz-placeholder, footer .footer-content .contact-form textarea:focus::-moz-placeholder {
+          opacity: 0.5; }
+        footer .footer-content .contact-form input:focus:-moz-placeholder, footer .footer-content .contact-form textarea:focus:-moz-placeholder {
+          opacity: 0.5; }
+        footer .footer-content .contact-form input:focus:-ms-input-placeholder, footer .footer-content .contact-form textarea:focus:-ms-input-placeholder {
+          opacity: 0.5; }
+      footer .footer-content .contact-form input::-webkit-input-placeholder, footer .footer-content .contact-form textarea::-webkit-input-placeholder {
+        color: #FFFFFF; }
+      footer .footer-content .contact-form input::-moz-placeholder, footer .footer-content .contact-form textarea::-moz-placeholder {
+        color: #FFFFFF; }
+      footer .footer-content .contact-form input:-moz-placeholder, footer .footer-content .contact-form textarea:-moz-placeholder {
+        color: #FFFFFF; }
+      footer .footer-content .contact-form input:-ms-input-placeholder, footer .footer-content .contact-form textarea:-ms-input-placeholder {
+        color: #FFFFFF; }
+    footer .footer-content .contact-form input {
+      height: 3.125rem; }
+    footer .footer-content .contact-form textarea {
+      padding-top: 0.5rem; }
+    footer .footer-content .contact-form label {
+      color: #FFFFFF;
+      font-size: 1.2rem;
+      margin: 0.5rem; }
+    footer .footer-content .contact-form .submit {
+      background-image: url("../img/send-button.svg");
+      color: #000000;
+      cursor: pointer;
+      font-size: 1.5rem;
+      height: 3.438rem;
+      margin-top: 2.813rem;
+      width: 9.688rem; }
   footer .footer-content .contact-info .info-title {
     color: #3F3832;
     font-family: "amaticbold";
@@ -172,7 +182,7 @@ footer .footer-content {
     background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
     background-size: 11px 1px, 11px 1px, 1px 11px, 1px 11px;
     font-size: 1.625rem;
-    width: 100%; }
+    width: 97%; }
 
 .footer-home {
   background-color: #00A1C1; }

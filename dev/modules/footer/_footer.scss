@@ -4,20 +4,28 @@ footer {
     background-position: center top;
     background-size: cover;
     padding-top: 6rem;
+
+    .footer-title {
+      background-size: 89%;
+    }
   }
 
   .footer-title {
+    background-image: url(../img/footer-line-horizontal.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
     color: $white;
     font-family: $amatic_bold;
     font-size: 6rem;
-    padding-bottom: 1.563rem;
+    padding-bottom: 3.5rem;
     text-align: center;
   }
 
   .footer-content {
     @include clearfix();
     $footer-content-padding: 4%;
-    padding-top: 2.5rem;
+    padding-top: 1.7rem;
 
     .contact-form, .contact-info {
       float: left;
@@ -26,6 +34,10 @@ footer {
     }
 
     .contact-form {
+      background-image: url(../img/footer-line-vertical.svg);
+      background-position: right top;
+      background-repeat: no-repeat;
+
       input, textarea {
         border: none;
         color: $white;
@@ -109,7 +121,7 @@ footer {
       background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
       background-size: 11px 1px, 11px 1px, 1px 11px, 1px 11px;
       font-size: 1.625rem;
-      width: 100%;
+      width: 97%;
     }
   }
 }
