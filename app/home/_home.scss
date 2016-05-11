@@ -450,12 +450,15 @@ h1 {
     //Special adjustments for some pieces
     .loe{
       img{
-        margin-bottom: 2em;
+        margin-top: 2em;
+        @media screen and (max-width: $tablet) {
+          margin-bottom: 2.5em;
+        }
       }
     }
     .cyberlunes{
       @media screen and (max-width: $tablet) {
-        margin-bottom: 0.5em;
+        margin-bottom: -0.5em;
       }
       img{
         @media screen and (max-width: $tablet) {
@@ -463,19 +466,58 @@ h1 {
         }
       }
     }
-    .osos{
-      float: none;
-      @media screen and (max-width: $tablet) {
-        float: right;
-      }
-    }
     .fedesoft{
       img{
-        margin-bottom: 1.5em;
+        margin-top: 2em;
         @media screen and (max-width: $tablet) {
           margin-bottom: 2.5em;
         }
       }
+    }
+    .osos{
+
+      img{
+            //margin-left: 13em;
+            //transform: scale(1.2);
+            //margin-left: 12em;
+            @media screen and (max-width: $tablet) {
+              margin-bottom: 0;
+            }
+         }
+      /*float: none;
+      @media screen and (max-width: $tablet) {
+        //float: right;
+      }*/
+    }
+    .blu{
+      margin-left: 12em;
+      img{
+            //margin-left: 13em;
+            //transform: scale(1.2);
+            //height: auto;
+            //max-width: 100%;
+            margin-top: 1em;
+            margin-bottom: 2em;
+            margin-left: 1.5em;
+            height: 13em;
+    /* margin-left: -1em; */
+        /*@media screen and (max-width: $tablet) {
+          //margin-bottom: 0em;
+          margin-top: 6em;
+        }*/
+      }
+      figure
+      {
+        margin-left: 4em;
+      }
+      /*@media screen and (max-width: $tablet) {
+        margin-bottom: 0.5em;
+      }
+      img{
+        @media screen and (max-width: $tablet) {
+          margin-bottom: 0;
+        }
+      }*/
     }
   }
 }
