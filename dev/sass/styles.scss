@@ -5,3 +5,11 @@
 
 @import '../modules/header/header';
 @import '../modules/footer/footer';
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $amatic_bold;
+}
+
+p {
+  font-family: $quicksand_light;
+}
