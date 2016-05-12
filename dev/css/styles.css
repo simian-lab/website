@@ -50,10 +50,12 @@
 
 header {
   background-image: url("../img/header-background.svg");
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 8.5rem;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   header a {
     display: inline-block; }
   header nav {
@@ -82,70 +84,62 @@ header {
     header .header-buttons a {
       margin: 0 0.5rem; }
 
-footer:not(.footer-home) {
-  background-position: center top;
-  background-size: cover;
-  padding-top: 6rem; }
-  footer:not(.footer-home) .footer-title {
-    background-size: 89%; }
-
-footer .footer-title {
+footer .background-section .footer-title {
   background-image: url(../img/footer-line-horizontal.svg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100%;
   color: #FFFFFF;
-  font-family: "amaticbold";
   font-size: 6rem;
   padding-bottom: 3.5rem;
   text-align: center; }
 
-footer .footer-content {
+footer .background-section .footer-content {
   padding-top: 1.7rem; }
-  footer .footer-content::after {
+  footer .background-section .footer-content::after {
     clear: both;
     content: "";
     display: table; }
-  footer .footer-content .contact-form, footer .footer-content .contact-info {
+  footer .background-section .footer-content .contact-form, footer .background-section .footer-content .contact-info {
     float: left;
     padding: 0 4%;
     width: 42%; }
-  footer .footer-content .contact-form {
+  footer .background-section .footer-content .contact-form {
     background-image: url(../img/footer-line-vertical.svg);
     background-position: right top;
     background-repeat: no-repeat; }
-    footer .footer-content .contact-form input, footer .footer-content .contact-form textarea {
+    footer .background-section .footer-content .contact-form input, footer .background-section .footer-content .contact-form textarea {
       border: none;
       color: #FFFFFF;
       margin: 0.4375rem 0;
       padding: 0 0.5rem; }
-      footer .footer-content .contact-form input:focus, footer .footer-content .contact-form textarea:focus {
+      footer .background-section .footer-content .contact-form input:focus, footer .background-section .footer-content .contact-form textarea:focus {
         outline: none; }
-        footer .footer-content .contact-form input:focus::-webkit-input-placeholder, footer .footer-content .contact-form textarea:focus::-webkit-input-placeholder {
+        footer .background-section .footer-content .contact-form input:focus::-webkit-input-placeholder, footer .background-section .footer-content .contact-form textarea:focus::-webkit-input-placeholder {
           opacity: 0.5; }
-        footer .footer-content .contact-form input:focus::-moz-placeholder, footer .footer-content .contact-form textarea:focus::-moz-placeholder {
+        footer .background-section .footer-content .contact-form input:focus::-moz-placeholder, footer .background-section .footer-content .contact-form textarea:focus::-moz-placeholder {
           opacity: 0.5; }
-        footer .footer-content .contact-form input:focus:-moz-placeholder, footer .footer-content .contact-form textarea:focus:-moz-placeholder {
+        footer .background-section .footer-content .contact-form input:focus:-moz-placeholder, footer .background-section .footer-content .contact-form textarea:focus:-moz-placeholder {
           opacity: 0.5; }
-        footer .footer-content .contact-form input:focus:-ms-input-placeholder, footer .footer-content .contact-form textarea:focus:-ms-input-placeholder {
+        footer .background-section .footer-content .contact-form input:focus:-ms-input-placeholder, footer .background-section .footer-content .contact-form textarea:focus:-ms-input-placeholder {
           opacity: 0.5; }
-      footer .footer-content .contact-form input::-webkit-input-placeholder, footer .footer-content .contact-form textarea::-webkit-input-placeholder {
+      footer .background-section .footer-content .contact-form input::-webkit-input-placeholder, footer .background-section .footer-content .contact-form textarea::-webkit-input-placeholder {
         color: #FFFFFF; }
-      footer .footer-content .contact-form input::-moz-placeholder, footer .footer-content .contact-form textarea::-moz-placeholder {
+      footer .background-section .footer-content .contact-form input::-moz-placeholder, footer .background-section .footer-content .contact-form textarea::-moz-placeholder {
         color: #FFFFFF; }
-      footer .footer-content .contact-form input:-moz-placeholder, footer .footer-content .contact-form textarea:-moz-placeholder {
+      footer .background-section .footer-content .contact-form input:-moz-placeholder, footer .background-section .footer-content .contact-form textarea:-moz-placeholder {
         color: #FFFFFF; }
-      footer .footer-content .contact-form input:-ms-input-placeholder, footer .footer-content .contact-form textarea:-ms-input-placeholder {
+      footer .background-section .footer-content .contact-form input:-ms-input-placeholder, footer .background-section .footer-content .contact-form textarea:-ms-input-placeholder {
         color: #FFFFFF; }
-    footer .footer-content .contact-form input {
+    footer .background-section .footer-content .contact-form input {
       height: 3.125rem; }
-    footer .footer-content .contact-form textarea {
+    footer .background-section .footer-content .contact-form textarea {
       padding-top: 0.5rem; }
-    footer .footer-content .contact-form label {
+    footer .background-section .footer-content .contact-form label {
       color: #FFFFFF;
       font-size: 1.2rem;
       margin: 0.5rem; }
-    footer .footer-content .contact-form .submit {
+    footer .background-section .footer-content .contact-form .submit {
       background-image: url("../img/send-button.svg");
       color: #000000;
       cursor: pointer;
@@ -153,16 +147,15 @@ footer .footer-content {
       height: 3.438rem;
       margin-top: 2.813rem;
       width: 9.688rem; }
-  footer .footer-content .contact-info .info-title {
+  footer .background-section .footer-content .contact-info .info-title {
     color: #3F3832;
-    font-family: "amaticbold";
     font-size: 4.5rem;
     margin-bottom: 3.125rem; }
-  footer .footer-content .contact-info .info .field {
+  footer .background-section .footer-content .contact-info .info .field {
     height: 5rem;
     margin-bottom: 4.063rem;
     position: relative; }
-    footer .footer-content .contact-info .info .field .field-content {
+    footer .background-section .footer-content .contact-info .info .field .field-content {
       -webkit-transform: translateY(-50%);
       -moz-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -171,12 +164,38 @@ footer .footer-content {
       padding: 0 0.5rem;
       position: absolute;
       top: 50%; }
-      footer .footer-content .contact-info .info .field .field-content a {
+      footer .background-section .footer-content .contact-info .info .field .field-content a {
         color: #FFFFFF;
         text-decoration: none; }
-  footer .footer-content input, footer .footer-content .field, footer .footer-content textarea, footer .footer-content label {
+    footer .background-section .footer-content .contact-info .info .field .social p, footer .background-section .footer-content .contact-info .info .field .social .social-icons {
+      float: left; }
+    footer .background-section .footer-content .contact-info .info .field .social p {
+      margin-top: 0.5rem; }
+    footer .background-section .footer-content .contact-info .info .field .social .social-icons {
+      margin: 0 1rem; }
+      footer .background-section .footer-content .contact-info .info .field .social .social-icons li {
+        display: inline-block; }
+        footer .background-section .footer-content .contact-info .info .field .social .social-icons li a {
+          background-image: url("../img/icon-background.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          display: block;
+          height: 2.5rem;
+          position: relative;
+          width: 2.5rem; }
+          footer .background-section .footer-content .contact-info .info .field .social .social-icons li a img {
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            display: block;
+            left: 50%;
+            position: absolute;
+            top: 50%; }
+  footer .background-section .footer-content input, footer .background-section .footer-content .field, footer .background-section .footer-content textarea, footer .background-section .footer-content label {
     font-family: "quicksandlight"; }
-  footer .footer-content input:not(.submit), footer .footer-content .field, footer .footer-content textarea {
+  footer .background-section .footer-content input:not(.submit), footer .background-section .footer-content .field, footer .background-section .footer-content textarea {
     background-image: linear-gradient(to right, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to bottom, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to bottom, #333 55%, rgba(255, 255, 255, 0) 0%);
     background-position: top, bottom, left, right;
     background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
@@ -184,17 +203,36 @@ footer .footer-content {
     font-size: 1.625rem;
     width: 97%; }
 
-.footer-home {
+footer:not(.footer-home) .background-section {
+  background-position: center top;
+  background-size: cover;
+  padding-top: 6rem; }
+  footer:not(.footer-home) .background-section .footer-title {
+    background-size: 89%; }
+
+footer .footer-end {
+  text-align: center; }
+  footer .footer-end p {
+    font-size: 1.5rem;
+    margin: 2rem 0; }
+
+.footer-home .background-section {
   background-color: #00A1C1; }
-  .footer-home .footer-content .contact-form input, .footer-home .footer-content .contact-form textarea {
+  .footer-home .background-section .footer-content .contact-form input, .footer-home .background-section .footer-content .contact-form textarea {
     background-color: #00A1C1; }
 
-.footer-we-do, .footer-clients, .footer-location {
+.footer-we-do .background-section, .footer-clients .background-section, .footer-location .background-section {
   background-image: url("../img/footer-bg-green.svg"); }
-  .footer-we-do .footer-content .contact-form input, .footer-we-do .footer-content .contact-form textarea, .footer-clients .footer-content .contact-form input, .footer-clients .footer-content .contact-form textarea, .footer-location .footer-content .contact-form input, .footer-location .footer-content .contact-form textarea {
+  .footer-we-do .background-section .footer-content .contact-form input, .footer-we-do .background-section .footer-content .contact-form textarea, .footer-clients .background-section .footer-content .contact-form input, .footer-clients .background-section .footer-content .contact-form textarea, .footer-location .background-section .footer-content .contact-form input, .footer-location .background-section .footer-content .contact-form textarea {
     background-color: #1DC0B2; }
 
-.footer-projects, .footer-we-share {
+.footer-projects .background-section, .footer-we-share .background-section {
   background-image: url("../img/footer-bg-red.svg"); }
-  .footer-projects .footer-content .contact-form input, .footer-projects .footer-content .contact-form textarea, .footer-we-share .footer-content .contact-form input, .footer-we-share .footer-content .contact-form textarea {
+  .footer-projects .background-section .footer-content .contact-form input, .footer-projects .background-section .footer-content .contact-form textarea, .footer-we-share .background-section .footer-content .contact-form input, .footer-we-share .background-section .footer-content .contact-form textarea {
     background-color: #F25F5C; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "amaticbold"; }
+
+p {
+  font-family: "quicksandlight"; }
