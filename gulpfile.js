@@ -24,7 +24,7 @@ gulp.task('clean', function() {
 gulp.task('default', [ 'serve' ]);
 
 gulp.task('images', function() {
-  gulp.src('dev/img/*')
+  gulp.src('dev/img/**/*')
   .pipe(imagemin({
     optimizationLevel:  3,
     progressive:        true,
