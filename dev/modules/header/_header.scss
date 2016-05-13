@@ -1,9 +1,11 @@
 header {
-  background-image: url('../img/header-background.svg');
+  background-image: url('../img/header/header-background.svg');
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 8.5rem;
-  position: relative;
+  position: relative; // This will be fixed.
+  width: 100%;
 
   a {
     display: inline-block;

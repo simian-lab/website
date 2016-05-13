@@ -1,40 +1,40 @@
 <header>
-  <a href="" ng-click="changeState('home')">
-    <img src="../img/logo-simian.png" alt="">
+  <a href="" ui-sref="home">
+    <img src="../img/header/logo-simian.png" alt="">
   </a>
 
   <nav>
     <ul>
       <li>
-        <a href="" ng-click="changeState('we-do')" ng-class="{active: activeSection == 'we-do'}">Qué hacemos</a>
+        <a href="" ui-sref="we-do" ng-class="{active: activeSection == 'we-do'}">Qué hacemos</a>
       </li>
       <li>
-        <a href="" ng-click="changeState('projects')" ng-class="{active: activeSection == 'projects'}">Nuestros proyectos</a>
+        <a href="" ui-sref="projects" ng-class="{active: activeSection == 'projects'}">Nuestros proyectos</a>
       </li>
       <li>
-        <a href="" ng-click="changeState('clients')" ng-class="{active: activeSection == 'clients'}">Quiénes han estado con nosotros</a>
+        <a href="" ui-sref="clients" ng-class="{active: activeSection == 'clients'}">Quiénes han estado con nosotros</a>
       </li>
       <li>
-        <a href="" ng-click="changeState('we-are')" ng-class="{active: activeSection == 'we-are'}">Quiénes somos</a>
+        <a href="" ui-sref="we-are" ng-class="{active: activeSection == 'we-are'}">Quiénes somos</a>
       </li>
       <li>
-        <a href="" ng-click="changeState('location')" ng-class="{active: activeSection == 'location'}">Donde encontrarnos</a>
+        <a href="" ui-sref="location" ng-class="{active: activeSection == 'location'}">Donde encontrarnos</a>
       </li>
       <li>
-        <a href="" ng-click="changeState('we-share')" ng-class="{active: activeSection == 'we-share'}">Compartimos lo que sabemos</a>
+        <a href="" ui-sref="we-share" ng-class="{active: activeSection == 'we-share'}">Compartimos lo que sabemos</a>
       </li>
     </ul>
   </nav>
 
   <div class="header-buttons">
     <a href="http://blog.simian.co/" target="_blank">
-      <img src="../img/our-blog.svg" alt="">
+      <img src="../img/header/our-blog.svg" alt="">
     </a>
     <a href="" ng-click="changeLanguage('es')">
-      <img src="../img/es-button.svg" alt="">
+      <img src="../img/header/es-button.svg" alt="">
     </a>
     <a href="" ng-click="changeLanguage('en')">
-      <img src="../img/en-button.svg" alt="">
+      <img src="../img/header/en-button.svg" alt="">
     </a>
   </div>
 </header>
