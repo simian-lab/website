@@ -60,9 +60,11 @@ angular.module('simian', [
 ])
 
 .controller('AppController', [
-  '$scope',
-  function($scope) {
-    console.log('AppController');
+  '$rootScope', '$scope',
+  function($rootScope, $scope) {
+    $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+      $rootScope.activeSection = toState.name;
+    });
   }
 ])
 ;
