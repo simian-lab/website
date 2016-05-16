@@ -1,24 +1,39 @@
 <div id="home">
+
+  <div class="clients-container">
+    <div class="title">
+      <h1>Quiénes</h1>
+      <h2>Han estado</h2>
+      <p>con nosotros</p>
+    </div>
+    <simian-clients limit="12"></simian-clients>
+  </div>
+
   <div class="we-are">
     <div class="title">
       <h1>Quiénes</h1>
       <p>somos</p>
     </div>
     <div class="monkeys">
+
       <div class="bosses">
-        <div class="monkey">
-          <img src="../img/monkeys/sergio.svg" alt="">
+        <div class="monkey" ng-repeat="boss in bosses">
+          <img ng-src="{{boss.avatar}}" alt="{{boss.name}}">
           <a href=""></a>
-          <h1>Sergio Acosta</h1>
-          <p>CEO & Developer</p>
-        </div>
-        <div class="monkey">
-          <img src="../img/monkeys/ivan.svg" alt="">
-          <a href=""></a>
-          <h1>Ivan Vásquez</h1>
-          <p>Developer</p>
+          <h1>{{boss.name}}</h1>
+          <p>{{boss.position}}</p>
         </div>
       </div>
+
+      <div class="simians grid">
+        <div class="monkey" ng-repeat="simian in simians">
+          <img ng-src="{{simian.avatar}}" alt="{{simian.name}}">
+          <a href=""></a>
+          <h1>{{simian.name}}</h1>
+          <p>{{simian.position}}</p>
+        </div>
+      </div>
+
     </div>
   </div>
 

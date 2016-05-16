@@ -1,12 +1,14 @@
 #home {
+
   .we-are {
     background-image: url('../img/home/we-are-background.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     .title {
+      @include transform(translateX(-50%));
       display: inline-block;
-      left: 30%;
+      left: 50%;
       margin-bottom: 5%;
       position: relative;
 
@@ -66,14 +68,14 @@
       }
 
       .bosses {
-        display: flex;
+        @include display(flex);
+        @include justify-content(space-around);
         margin: 0 auto;
         width: 80%;
+      }
 
-        .monkey {
-          margin: 0 5%;
-          width: 40%;
-        }
+      .bosses, .simians {
+        @include align-items(baseline);
       }
     }
   }
