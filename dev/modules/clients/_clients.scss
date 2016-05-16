@@ -1,0 +1,24 @@
+.clients-container {
+  position: relative;
+
+  .title {
+    @include transform(translateX(-50%));
+    left: 50%;
+    display: inline-block;
+    position: relative;
+
+    h1 {
+      color: $blue;
+      font-size: 16.2rem;
+    }
+
+    h2 {
+      color: $red;
+      font-size: 7rem;
+    }
+
+    p {
+      font-size: 3rem;
+    }
+  }
+}

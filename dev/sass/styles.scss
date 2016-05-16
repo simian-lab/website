@@ -7,6 +7,7 @@
 @import '../modules/footer/footer';
 
 @import '../modules/home/home';
+@import '../modules/clients/clients';
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $amatic_bold;
@@ -31,4 +32,12 @@ h1, p {
   text-align: center;
   text-decoration: none;
   width: 9.688rem;
+}
+
+.grid {
+  @include align-items(center);
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-around);
+  margin: 2rem 0;
 }
