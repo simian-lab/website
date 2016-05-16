@@ -10,7 +10,8 @@ angular.module('simian', [
   'simian.clients',
   'simian.we-are',
   'simian.location',
-  'simian.we-share'
+  'simian.we-share',
+  'simian.monkeys'
 ])
 
 .config([
