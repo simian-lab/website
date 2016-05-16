@@ -1,0 +1,39 @@
+{
+  "monkeys": [
+    {
+      "name": "Sergio Acosta",
+      "avatar": "../img/monkeys/sergio.svg",
+      "position": "CEO & Developer"
+    },
+    {
+      "name": "Iván Vásquez",
+      "avatar": "../img/monkeys/ivan.svg",
+      "position": "Developer"
+    },
+    {
+      "name": "Nicolás Saiz",
+      "avatar": "../img/monkeys/nico.svg",
+      "position": "Developer"
+    },
+    {
+      "name": "Pablo García",
+      "avatar": "../img/monkeys/pablo.svg",
+      "position": "Developer"
+    },
+    {
+      "name": "Sebastián Giraldo",
+      "avatar": "../img/monkeys/sebastian.svg",
+      "position": "Developer"
+    },
+    {
+      "name": "Natalia Cortés",
+      "avatar": "../img/monkeys/natalia.svg",
+      "position": "Web Designer"
+    },
+    {
+      "name": "Alejandro Robayo",
+      "avatar": "../img/monkeys/alejandro.svg",
+      "position": "Developer"
+    }
+  ]
+}
