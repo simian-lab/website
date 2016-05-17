@@ -142,9 +142,12 @@ footer .background-section {
         font-size: 1.2rem;
         margin: 0.5rem; }
       footer .background-section .footer-content .contact-form .button {
+        background-image: url("../img/yellow-button.svg");
         cursor: pointer;
         font-size: 1.5rem;
-        margin-top: 2.813rem; }
+        margin-top: 2.813rem;
+        padding-left: 2.1rem;
+        text-align: left; }
     footer .background-section .footer-content .contact-info .info-title {
       font-size: 4.5rem;
       margin-bottom: 3.125rem; }
@@ -236,6 +239,48 @@ footer .footer-end {
   .footer-projects .background-section .footer-content .contact-form input, .footer-projects .background-section .footer-content .contact-form textarea, .footer-we-share .background-section .footer-content .contact-form input, .footer-we-share .background-section .footer-content .contact-form textarea {
     background-color: #F25F5C; }
 
+#home .our-stuff .title {
+  background-image: url("../img/home/our-stuff-title.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 18rem;
+  margin: 0 auto;
+  width: 35rem; }
+  #home .our-stuff .title .container {
+    padding: 2.5rem 7rem 1.5rem 9rem;
+    width: 20rem; }
+    #home .our-stuff .title .container p {
+      font-size: 4rem; }
+    #home .our-stuff .title .container h1 {
+      color: #DED96B;
+      font-size: 9rem; }
+
+#home .clients-container .see-more {
+  position: relative; }
+  #home .clients-container .see-more::before, #home .clients-container .see-more::after {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-image: url("../img/home/see-more-line.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    display: block;
+    height: 2rem;
+    position: absolute;
+    width: 40%;
+    top: 50%; }
+  #home .clients-container .see-more::before {
+    left: 3%; }
+  #home .clients-container .see-more::after {
+    right: 3%; }
+  #home .clients-container .see-more .button {
+    background-image: url("../img/red-button.svg");
+    margin: 3rem auto; }
+
 #home .we-are {
   background-image: url("../img/home/we-are-background.svg");
   background-repeat: no-repeat;
@@ -278,8 +323,16 @@ footer .footer-end {
   #home .we-are .monkeys {
     margin: 0 auto;
     width: 70%; }
-    #home .we-are .monkeys .monkey img {
-      width: 100%; }
+    #home .we-are .monkeys .monkey .image-container {
+      position: relative; }
+      #home .we-are .monkeys .monkey .image-container img {
+        width: 100%; }
+      #home .we-are .monkeys .monkey .image-container a {
+        bottom: 1%;
+        height: 3rem;
+        position: absolute;
+        right: 15%;
+        width: 3rem; }
     #home .we-are .monkeys .monkey h1, #home .we-are .monkeys .monkey p {
       text-align: center; }
     #home .we-are .monkeys .monkey h1 {
@@ -287,6 +340,11 @@ footer .footer-end {
     #home .we-are .monkeys .monkey p {
       font-family: "quicksandlight";
       font-size: 1.5rem; }
+    #home .we-are .monkeys .item {
+      -webkit-flex-basis: 26%;
+      -moz-flex-basis: 26%;
+      flex-basis: 26%;
+      -ms-flex-preferred-size: 26%; }
     #home .we-are .monkeys .bosses {
       display: -webkit-box;
       display: -moz-box;
@@ -349,6 +407,7 @@ footer .footer-end {
     top: 50%;
     width: 35%; }
     #home .find-us .see-more .button {
+      background-image: url("../img/yellow-button.svg");
       margin: 3rem auto; }
 
 .clients-container {
@@ -367,9 +426,21 @@ footer .footer-end {
       font-size: 16.2rem; }
     .clients-container .title h2 {
       color: #F25F5C;
-      font-size: 7rem; }
+      font-size: 7rem;
+      text-shadow: -1px 0 #3F3832, 0 1px #3F3832, 1px 0 #3F3832, 0 -1px #3F3832; }
     .clients-container .title p {
       font-size: 3rem; }
+  .clients-container .clients-grid .grid {
+    margin: 0 auto;
+    width: 80%; }
+    .clients-container .clients-grid .grid .item {
+      -webkit-flex-basis: 33%;
+      -moz-flex-basis: 33%;
+      flex-basis: 33%;
+      -ms-flex-preferred-size: 33%; }
+      .clients-container .clients-grid .grid .item img {
+        display: block;
+        margin: 0 auto; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "amaticbold"; }
@@ -380,9 +451,12 @@ a, input, label, p, textarea {
 h1, p {
   color: #3F3832; }
 
+.bold-border {
+  text-shadow: -2px 0 #3F3832, 0 2px #3F3832, 2px 0 #3F3832, 0 -2px #3F3832; }
+
 .button {
-  background-image: url("../img/send-button.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   color: #000000 !important;
   display: block;
   font-size: 1.5rem;
@@ -426,3 +500,9 @@ h1, p {
   justify-content: space-around;
   -ms-flex-pack: distribute;
   margin: 2rem 0; }
+
+.more-link {
+  background-image: url("../img/more-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block; }

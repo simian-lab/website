@@ -21,9 +21,13 @@ h1, p {
   color: $brown;
 }
 
+.bold-border {
+  text-shadow: -2px 0 $brown, 0 2px $brown, 2px 0 $brown, 0 -2px $brown;
+}
+
 .button {
-  background-image: url('../img/send-button.svg');
   background-repeat: no-repeat;
+  background-size: contain;
   color: $black !important;
   display: block;
   font-size: 1.5rem;
@@ -40,4 +44,11 @@ h1, p {
   @include flex-wrap(wrap);
   @include justify-content(space-around);
   margin: 2rem 0;
+}
+
+.more-link {
+  background-image: url('../img/more-icon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
 }
