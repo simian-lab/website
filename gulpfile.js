@@ -12,7 +12,7 @@ var bourbon = require('node-bourbon'),
     uglify = require('gulp-uglify'),
     usemin = require('gulp-usemin');
 
-gulp.task('build', [ 'usemin', 'html', 'images', 'fonts' ]);
+gulp.task('build', [ 'usemin', 'html', 'images', 'fonts', 'json' ]);
 
 gulp.task('clean', function() {
   gulp.src('prod', {
@@ -53,6 +53,11 @@ gulp.task('jscs', function() {
   gulp.src('dev/js/*.js')
   .pipe(jscs())
   .pipe(jscs.reporter());
+});
+
+gulp.task('json', function() {
+  gulp.src('dev/json/*.json')
+  .pipe(gulp.dest('prod/json'));
 });
 
 gulp.task('sass', function() {

@@ -14,6 +14,10 @@
       "logo": "../img/clients/bancoldex.png"
     },
     {
+      "name": "Blu Radio",
+      "logo": "../img/clients/blu-radio.png"
+    },
+    {
       "name": "Bogotá CSS",
       "logo": "../img/clients/bogota-css.png",
       "url": "http://www.meetup.com/es/BogotaCSS/"
@@ -25,6 +29,10 @@
     {
       "name": "Caracol",
       "logo": "../img/clients/caracol.png"
+    },
+    {
+      "name": "Carro Ya",
+      "logo": "../img/clients/carro-ya.png"
     },
     {
       "name": "Compartamos Colombia",
@@ -56,12 +64,20 @@
     },
     {
       "name": "KienyKe",
-      "logo": "../img/clients/kyenyke.png",
+      "logo": "../img/clients/kienyke.png",
       "url": "http://www.kienyke.com/"
+    },
+    {
+      "name": "Kika Vargas",
+      "logo": "../img/clients/kika-vargas.png"
     },
     {
       "name": "LOE",
       "logo": "../img/clients/loe.png"
+    },
+    {
+      "name": "Riding Unicorns",
+      "logo": "../img/clients/riding-unicorns.png"
     },
     {
       "name": "Samsung",
@@ -70,6 +86,10 @@
     {
       "name": "Samsung Club",
       "logo": "../img/clients/samsung-club.png"
+    },
+    {
+      "name": "Semana",
+      "logo": "../img/clients/semana.svg"
     },
     {
       "name": "Social Atom",
