@@ -1,0 +1,107 @@
+{
+  "clients": [
+    {
+      "name": "4 Direcciones",
+      "logo": "../img/clients/4-direcciones.png"
+    },
+    {
+      "name": "AIJ",
+      "logo": "../img/clients/aij.png",
+      "url": "http://aij.org.co/"
+    },
+    {
+      "name": "Bancóldex",
+      "logo": "../img/clients/bancoldex.png"
+    },
+    {
+      "name": "Blu Radio",
+      "logo": "../img/clients/blu-radio.png"
+    },
+    {
+      "name": "Bogotá CSS",
+      "logo": "../img/clients/bogota-css.png",
+      "url": "http://www.meetup.com/es/BogotaCSS/"
+    },
+    {
+      "name": "Cámara de Comercio de Bogotá",
+      "logo": "../img/clients/camara-de-comercio.png"
+    },
+    {
+      "name": "Caracol",
+      "logo": "../img/clients/caracol.png"
+    },
+    {
+      "name": "Carro Ya",
+      "logo": "../img/clients/carro-ya.png"
+    },
+    {
+      "name": "Compartamos Colombia",
+      "logo": "../img/clients/compartamos-colombia.png"
+    },
+    {
+      "name": "Cyberlunes",
+      "logo": "../img/clients/cyberlunes.png"
+    },
+    {
+      "name": "El Tiempo",
+      "logo": "../img/clients/el-tiempo.png"
+    },
+    {
+      "name": "Éxito",
+      "logo": "../img/clients/exito.png"
+    },
+    {
+      "name": "Fedesoft",
+      "logo": "../img/clients/fedesoft.png"
+    },
+    {
+      "name": "Gerente",
+      "logo": "../img/clients/gerente.png"
+    },
+    {
+      "name": "Interfaz",
+      "logo": "../img/clients/interfaz.jpeg"
+    },
+    {
+      "name": "KienyKe",
+      "logo": "../img/clients/kienyke.png",
+      "url": "http://www.kienyke.com/"
+    },
+    {
+      "name": "Kika Vargas",
+      "logo": "../img/clients/kika-vargas.png"
+    },
+    {
+      "name": "LOE",
+      "logo": "../img/clients/loe.png"
+    },
+    {
+      "name": "Riding Unicorns",
+      "logo": "../img/clients/riding-unicorns.png"
+    },
+    {
+      "name": "Samsung",
+      "logo": "../img/clients/samsung.png"
+    },
+    {
+      "name": "Samsung Club",
+      "logo": "../img/clients/samsung-club.png"
+    },
+    {
+      "name": "Semana",
+      "logo": "../img/clients/semana.svg"
+    },
+    {
+      "name": "Social Atom",
+      "logo": "../img/clients/social-atom.png"
+    },
+    {
+      "name": "Usted ya sabe quién soy yo",
+      "logo": "../img/clients/ud-ya-sabe.png"
+    },
+    {
+      "name": "Univision",
+      "logo": "../img/clients/univision.png"
+    }
+  ]
+}
