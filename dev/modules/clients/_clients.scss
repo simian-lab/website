@@ -15,10 +15,27 @@
     h2 {
       color: $red;
       font-size: 7rem;
+      text-shadow: -1px 0 $brown, 0 1px $brown, 1px 0 $brown, 0 -1px $brown;
     }
 
     p {
       font-size: 3rem;
+    }
+  }
+
+  .clients-grid {
+    .grid {
+      margin: 0 auto;
+      width: 80%;
+
+      .item {
+        @include flex-basis(33%);
+
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
     }
   }
 }
