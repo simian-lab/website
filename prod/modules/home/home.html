@@ -1,10 +1,82 @@
 <div id="home">
 
+  <div class="hero">
+    <div class="title">
+      <p>Es así</p>
+      <p>como lo</p>
+      <h1 class="bold-border">Hacemos</h1>
+    </div>
+
+    <div class="simian-tools">
+      <img class="simian" src="../img/home/simian-monkey.svg" alt="">
+
+      <div class="tools">
+        <img class="idea" src="../img/home/hero-idea.svg" alt="">
+        <img class="development" src="../img/home/hero-development.svg" alt="">
+        <img class="design" src="../img/home/hero-design.svg" alt="">
+        <img class="banano" src="../img/home/hero-banano.svg" alt="">
+        <img class="support" src="../img/home/hero-support.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="our-projects">
+    <div class="intro">
+      <div class="title-container">
+        <div class="title">
+          <p>Estos han sido</p>
+          <p>nuestros</p>
+          <h1 class="bold-border">Proyectos</h1>
+        </div>
+      </div>
+
+      <div class="text">
+        <p>
+          Proin tortor turpis, sodales a convallis non, cursus vitae felis. Donec accumsan metus a feugiat consequat. Nullam vel egestas velit. Proin dapibus dictum odio, in porttitor sem finibus id. Proin porta lacus ac porta consequat. Donec nec condimentum augue. Mauris mi lacus, consequat non nibh sed, ultricies mollis est. Nullam eget efficitur massa, et gravida sem. Morbi ex erat, egestas non vulputate in, molestie porttitor lectus. Nulla rutrum consequat purus sit amet ultrices. Donec id laoreet dui. Pellentesque lorem orci, rutrum tristique vehicula sit amet, fermentum ut massa. Nunc nec auctor quam.
+        </p>
+      </div>
+    </div>
+
+    <div id="projects-slider" class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide" ng-repeat="project in projects">
+            <h1 class="name">{{project.name}}</h1>
+            <div class="preview-container {{project.previewType}}">
+              <img ng-src="/img/{{project.previewType}}.svg" alt="{{project.name}}">
+              <a href="" class="more-link"></a>
+            </div>
+            <div class=quote>
+              <img ng-src="{{project.quote.avatar}}" alt="" class="avatar">
+              <p class="text">{{project.quote.text}}</p>
+              <p class="author">{{project.quote.author}}</p>
+              <p class="position">{{project.quote.position}}</p>
+              <p class="project-country"><span class="project">{{project.name}},</span> {{project.quote.country}}</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
   <div class="our-stuff">
     <div class="title">
       <div class="container">
         <p>Lo</p>
         <h1 class="bold-border">Nuestro</h1>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div class="project">
+        <img class="phone" src="../img/home/eventcenter.svg" alt="">
+        <img class="white-sign" src="../img/home/our-stuff-white.svg" alt="">
+      </div>
+
+      <div class="project">
+        <img class="white-sign" src="../img/home/our-stuff-white.svg" alt="">
+        <img class="phone" src="../img/home/doctly.svg" alt="">
       </div>
     </div>
   </div>
