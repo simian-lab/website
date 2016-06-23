@@ -7,12 +7,13 @@ var bourbon = require('node-bourbon'),
     imagemin = require('gulp-imagemin'),
     jshint = require('gulp-jshint'),
     jscs = require('gulp-jscs'),
+    plato = require('plato'),
     rev = require('gulp-rev'),
     sass = require('gulp-sass'),
     uglify = require('gulp-uglify'),
     usemin = require('gulp-usemin');
 
-gulp.task('build', [ 'usemin', 'html', 'images', 'fonts', 'json' ]);
+gulp.task('build', [ 'usemin', 'html', 'images', 'fonts', 'json', 'plato' ]);
 
 gulp.task('clean', function() {
   gulp.src('prod', {
@@ -58,6 +59,21 @@ gulp.task('jscs', function() {
 gulp.task('json', function() {
   gulp.src('dev/json/*.json')
   .pipe(gulp.dest('prod/json'));
+});
+
+gulp.task('plato', function() {
+  var files, output;
+
+  files = 'dev/modules/**/*.js';
+  output = 'plato';
+
+  var options = {
+    title: 'Simian Website'
+  };
+
+  var callback = function (report) {};
+
+  plato.inspect(files, output, options, callback);
 });
 
 gulp.task('sass', function() {
