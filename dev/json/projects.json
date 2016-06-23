@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "name": "ENTER.CO",
+      "preview": "/img/preview/enter.jpg",
+      "previewType": "tablet",
+      "quote": {
+        "avatar": "/img/avatar.jpg",
+        "text": "Lorem Ipsum es simplemente el texto de relleno de las imprentas, simplemente el text de relleno",
+        "author": "Nicolás Saiz",
+        "position": "Gerente General",
+        "country": "Colombia"
+      }
+    },
+    {
+      "name": "KienYKe",
+      "preview": "/img/preview/enter.jpg",
+      "previewType": "desktop",
+      "quote": {
+        "avatar": "/img/avatar.jpg",
+        "text": "Lorem Ipsum es simplemente el texto de relleno de las imprentas, simplemente el text de relleno",
+        "author": "Pablo García",
+        "position": "Gerente General",
+        "country": "Colombia"
+      }
+    },
+    {
+      "name": "Bancóldex",
+      "preview": "/img/preview/enter.jpg",
+      "previewType": "phone",
+      "quote": {
+        "avatar": "/img/avatar.jpg",
+        "text": "Lorem Ipsum es simplemente el texto de relleno de las imprentas, simplemente el text de relleno",
+        "author": "Natalia Cortés",
+        "position": "Gerente General",
+        "country": "Colombia"
+      }
+    },
+    {
+      "name": "Cyberlunes",
+      "preview": "/img/preview/enter.jpg",
+      "previewType": "tablet",
+      "quote": {
+        "avatar": "/img/avatar.jpg",
+        "text": "Lorem Ipsum es simplemente el texto de relleno de las imprentas, simplemente el text de relleno",
+        "author": "Nicolás Saiz",
+        "position": "Gerente General",
+        "country": "Colombia"
+      }
+    }
+  ]
+}
