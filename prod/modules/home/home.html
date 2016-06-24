@@ -37,25 +37,28 @@
       </div>
     </div>
 
-    <div id="projects-slider" class="swiper-container">
-      <div class="swiper-wrapper">
-          <div class="swiper-slide" ng-repeat="project in projects">
-            <h1 class="name">{{project.name}}</h1>
-            <div class="preview-container {{project.previewType}}">
-              <img ng-src="/img/{{project.previewType}}.svg" alt="{{project.name}}">
-              <a href="" class="more-link"></a>
+    <div class="slider-container">
+      <div class="swiper-button-prev"></div>
+
+      <div id="projects-slider" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="project in projects">
+              <h1 class="name">{{project.name}}</h1>
+              <div class="preview-container {{project.previewType}}">
+                <img ng-src="/img/{{project.previewType}}.svg" alt="{{project.name}}">
+                <a href="" class="more-link"></a>
+              </div>
+              <div class=quote>
+                <img ng-src="{{project.quote.avatar}}" alt="" class="avatar">
+                <p class="text">{{project.quote.text}}</p>
+                <p class="author">{{project.quote.author}}</p>
+                <p class="position">{{project.quote.position}}</p>
+                <p class="project-country"><span class="project">{{project.name}},</span> {{project.quote.country}}</p>
+              </div>
             </div>
-            <div class=quote>
-              <img ng-src="{{project.quote.avatar}}" alt="" class="avatar">
-              <p class="text">{{project.quote.text}}</p>
-              <p class="author">{{project.quote.author}}</p>
-              <p class="position">{{project.quote.position}}</p>
-              <p class="project-country"><span class="project">{{project.name}},</span> {{project.quote.country}}</p>
-            </div>
-          </div>
+        </div>
       </div>
 
-      <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
   </div>
