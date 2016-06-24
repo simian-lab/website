@@ -1,0 +1,32 @@
+.clients-container {
+  .see-more {
+    position: relative;
+
+    &::before, &::after {
+      @include transform(translateY(-50%));
+      background-image: url('../img/home/see-more-line.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      height: 2rem;
+      position: absolute;
+      width: 40%;
+      top: 50%;
+    }
+
+    &::before {
+      left: 3%;
+    }
+
+    &::after {
+      right: 3%;
+    }
+
+    .button {
+      background-image: url('../img/red-button.svg');
+      margin: 3rem auto;
+    }
+  }
+}

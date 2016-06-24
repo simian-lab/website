@@ -1,0 +1,63 @@
+.our-stuff {
+  background-image: url('../img/home/our-stuff-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
+
+  .title {
+    background-image: url('../img/home/our-stuff-title.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 18rem;
+    margin: 0 auto;
+    width: 35rem;
+
+    .container {
+      padding: 2.5rem 7rem 1.5rem 9rem;
+      width: 20rem;
+
+      p {
+        font-size: 4rem;
+      }
+
+      h1 {
+        color: $yellow;
+        font-size: 9rem;
+      }
+    }
+  }
+
+  .projects {
+    display: flex;
+    justify-content: center;
+
+    .project {
+
+      .phone, .white-sign {
+        position: relative;
+      }
+
+      .phone {
+        z-index: 1;
+        width: 30%;
+      }
+
+      .white-sign {
+        top: 2rem;
+        width: 67%;
+      }
+
+      &:first-child {
+        .white-sign {
+          left: -10rem;
+        }
+      }
+
+      &:last-child {
+        .white-sign {
+          left: 4rem;
+        }
+      }
+    }
+  }
+}

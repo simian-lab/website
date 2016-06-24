@@ -21,6 +21,10 @@ angular.module('simian.home', [])
       $scope.projects = response.projects;
 
       $timeout(function() {
+        /**
+        * We are using a slider library called Swiper.
+        * This is its API: http://idangero.us/swiper/api/#.V22dh5PhDOT
+        */
         var projectsSlider = new Swiper('#projects-slider', {
           loop: true,
           nextButton: '.swiper-button-next',

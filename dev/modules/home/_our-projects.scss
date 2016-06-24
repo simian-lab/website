@@ -1,0 +1,143 @@
+.our-projects {
+  .intro {
+    @include display(flex);
+
+    .title-container {
+      background-image: url('../img/home/our-projects-sign.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      .title {
+        p {
+          font-size: 4rem;
+
+          &:nth-child(2) {
+            font-size: 7rem;
+          }
+        }
+
+        h1 {
+          color: $yellow;
+          font-size: 10.5rem;
+        }
+      }
+    }
+
+    .text {
+      @include align-self(center);
+    }
+  }
+
+  #projects-slider {
+    width: 80%;
+
+    .swiper-wrapper {
+      .swiper-slide {
+
+        .name {
+          font-size: 4rem;
+          text-align: center;
+          margin: 1rem 0;
+        }
+
+        .preview-container {
+          @include display(flex);
+          @include align-self(flex-end);
+          min-height: 19.69rem;
+          position: relative;
+
+          img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+          }
+
+          &.desktop {
+
+            img {
+              width: 95%;
+            }
+
+            .more-link {
+              bottom: 20%;
+              right: 2%;
+            }
+          }
+
+          &.phone {
+
+            img {
+              width: 35%;
+            }
+
+            .more-link {
+              bottom: 6%;
+              right: 28%;
+            }
+          }
+
+          &.tablet {
+
+            img {
+              width: 52%;
+            }
+
+            .more-link {
+              bottom: 0%;
+              right: 18%;
+            }
+          }
+        }
+
+        .quote {
+          margin: 2rem 0;
+          text-align: center;
+
+          .avatar {
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            width: 5.813rem;
+          }
+
+          p {
+            margin: 0.5rem 0;
+          }
+
+          .text {
+            color: $gray;
+            font-family: $quicksand_light;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 0 1rem;
+          }
+
+          .author, .project-country .project {
+            color: $red;
+          }
+
+          .author {
+            font-size: 1.3rem;
+          }
+
+          .position {
+            font-size: 1.4rem;
+          }
+
+          .project-country {
+            font-family: $quicksand_bold;
+            font-size: 1.4rem;
+
+            .project {
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+
+    .swiper-button-prev {
+
+    }
+  }
+}

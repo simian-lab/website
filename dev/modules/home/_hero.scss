@@ -1,0 +1,80 @@
+.hero {
+  .title {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+
+    &::before, &::after {
+      background-image: url('../img/home/hero-title-border.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+      height: 25rem;
+      position: absolute;
+      top: 5%;
+      width: 13%;
+    }
+
+    &::before {
+      @include transform(rotateY(180deg));
+      left: 30%;
+    }
+
+    &::after {
+      left: 57%;
+    }
+
+    h1 {
+      color: $green;
+      font-size: 12rem;
+    }
+
+    p {
+      font-size: 5rem;
+    }
+  }
+
+  .simian-tools {
+    margin: 0 auto;
+    padding: 10% 0;
+    position: relative;
+    width: 60%;
+
+    .simian {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    .tools {
+      img {
+        position: absolute;
+        width: 27%;
+      }
+
+      .idea {
+        left: 24%;
+        top: 9%;
+      }
+
+      .development {
+        left: -17%;
+        top: 34%;
+      }
+
+      .design {
+        left: 75%;
+        top: 50%;
+      }
+
+      .banano {
+        bottom: 7%;
+      }
+
+      .support {
+        left: 45%;
+        top: 78%;
+      }
+    }
+  }
+}

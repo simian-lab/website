@@ -1,0 +1,49 @@
+.find-us {
+  background-image: url('../img/home/find-us-background.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  p {
+    font-size: 3rem;
+  }
+
+  .sign {
+    display: inline-block;
+    margin-bottom: 3%;
+    margin-left: 1.4%;
+    margin-top: 6%;
+    position: relative;
+    width: 35%;
+
+    img {
+      width: 100%;
+    }
+
+    .sign-text {
+      left: 25%;
+      position: absolute;
+      text-align: center;
+      top: 15%;
+
+      h1 {
+        color: $yellow;
+        font-size: 13rem;
+      }
+    }
+  }
+
+  .see-more {
+    position: absolute;
+    right: 3%;
+    text-align: center;
+    top: 50%;
+    width: 35%;
+
+    .button {
+      background-image: url('../img/yellow-button.svg');
+      margin: 3rem auto;
+    }
+  }
+}

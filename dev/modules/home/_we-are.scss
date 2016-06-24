@@ -1,0 +1,92 @@
+.we-are {
+  background-image: url('../img/home/we-are-background.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .title {
+    @include transform(translateX(-50%));
+    display: inline-block;
+    left: 50%;
+    margin-bottom: 5%;
+    position: relative;
+
+    h1 {
+      color: $red;
+      font-size: 12rem;
+    }
+
+    p {
+      font-size: 6rem;
+      text-align: center;
+    }
+
+    &::after, &::before {
+      background-image: url('../img/home/question-mark.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      height: 23rem;
+      position: absolute;
+      top: 0;
+      width: 8rem;
+    }
+
+    &::before {
+      @include transform(rotate(155deg));
+      left: -7rem;
+    }
+
+    &::after {
+      right: -7rem;
+    }
+  }
+
+  .monkeys {
+    margin: 0 auto;
+    width: 70%;
+
+    .monkey {
+      .image-container {
+        position: relative;
+
+        img {
+          width: 100%;
+        }
+
+        a {
+          bottom: 1%;
+          right: 15%;
+        }
+      }
+
+      h1, p {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-family: $quicksand_light;
+        font-size: 1.5rem;
+      }
+    }
+
+    .item {
+      @include flex-basis(26%);
+    }
+
+    .bosses {
+      @include display(flex);
+      @include justify-content(space-around);
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    .bosses, .simians {
+      @include align-items(baseline);
+    }
+  }
+}
