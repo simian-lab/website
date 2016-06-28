@@ -3,6 +3,8 @@
 @import 'fonts';
 @import 'variables';
 
+@import '../modules/404/404';
+
 @import '../modules/header/header';
 @import '../modules/footer/footer';
 
@@ -48,6 +50,10 @@ h1, p {
   @include flex-wrap(wrap);
   @include justify-content(space-around);
   margin: 2rem 0;
+}
+
+.main-content:not(.section-404) {
+  margin-top: $header-height;
 }
 
 .more-link {

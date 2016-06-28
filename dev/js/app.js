@@ -56,7 +56,13 @@ angular.module('simian', [
       controller: 'WeShareController',
       templateUrl: '/modules/we-share/we-share.html',
       url: '/we-share'
+    })
+    .state('404', {
+      templateUrl: '/modules/404/404.html',
+      url: '/404'
     });
+
+    $urlRouterProvider.otherwise('/404');
   }
 ])
 

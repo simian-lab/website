@@ -1,0 +1,25 @@
+#error-404 {
+  background-color: $yellow;
+  overflow: hidden;
+  padding-top: 8.5rem;
+
+  .text {
+    text-align: center;
+
+    h2 {
+      color: $red;
+      font-size: 3rem;
+    }
+
+    h1 {
+      font-size: 5rem;
+    }
+  }
+
+  .background {
+    background-image: url('../img/404.png');
+    background-position: center bottom;
+    background-size: cover;
+    height: 35rem;
+  }
+}
