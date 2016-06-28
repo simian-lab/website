@@ -3,7 +3,7 @@
     <img src="../img/header/logo-simian.png" alt="">
   </a>
 
-  <nav>
+  <nav ng-hide="activeSection == '404'">
     <ul>
       <li>
         <a href="" ui-sref="we-do" ng-class="{active: activeSection == 'we-do'}">Qué hacemos</a>
@@ -26,7 +26,7 @@
     </ul>
   </nav>
 
-  <div class="header-buttons">
+  <div class="header-buttons" ng-hide="activeSection == '404'">
     <a href="http://blog.simian.co/" target="_blank">
       <img src="../img/header/our-blog.svg" alt="">
     </a>

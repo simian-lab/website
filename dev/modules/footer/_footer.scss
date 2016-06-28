@@ -23,12 +23,23 @@ footer {
         float: left;
         padding: 0 $footer-content-padding;
         width: 50% - $footer-content-padding * 2;
+
+        @media screen and (max-width: $mobile-large) {
+          float: none;
+          margin: 0 auto;
+          padding: 0;
+          width: 90%;
+        }
       }
 
       .contact-form {
         background-image: url(../img/footer/footer-line-vertical.svg);
         background-position: right top;
         background-repeat: no-repeat;
+
+        @media screen and (max-width: $mobile-large) {
+          background: none;
+        }
 
         input, textarea {
           border: none;
@@ -92,6 +103,12 @@ footer {
               position: absolute;
               top: 50%;
 
+              .field-text {
+                @media screen and (max-width: $mobile-large) {
+                  display: none;
+                }
+              }
+
               a {
                 color: $white;
                 text-decoration: none;
@@ -144,6 +161,10 @@ footer {
         background-size: 11px 1px, 11px 1px, 1px 11px, 1px 11px;
         font-size: 1.625rem;
         width: 97%;
+
+        @media screen and (max-width: $mobile-large) {
+          width: 100%;
+        }
       }
     }
   }
@@ -220,6 +241,20 @@ footer {
           background-color: $red;
         }
       }
+    }
+  }
+}
+
+.footer-404 {
+  background-color: $yellow;
+
+  .background-section .footer-content .contact-form {
+    input, textarea {
+      background-color: $yellow;
+    }
+
+    .button {
+      background-image: url('../img/red-button.svg');
     }
   }
 }

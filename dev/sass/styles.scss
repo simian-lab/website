@@ -29,6 +29,10 @@ h1, p {
 
 .bold-border {
   text-shadow: -2px 0 $brown, 0 2px $brown, 2px 0 $brown, 0 -2px $brown;
+
+  @media screen and (max-width: $mobile-large) {
+    text-shadow: -1px 0 $brown, 0 1px $brown, 1px 0 $brown, 0 -1px $brown;
+  }
 }
 
 .button {

@@ -7,10 +7,6 @@
     @include clearfix();
     padding-top: 5rem;
 
-    .title-container, .text {
-      float: left;
-    }
-
     .title-container {
       background-image: url('../img/home/our-projects-sign.svg');
       background-repeat: no-repeat;
@@ -43,6 +39,16 @@
 
       p {
         font-size: 1.5rem;
+      }
+    }
+
+    .title-container, .text {
+      float: left;
+
+      @media screen and (max-width: $mobile-large) {
+        float: none;
+        padding: 0;
+        width: 90%;
       }
     }
   }

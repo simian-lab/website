@@ -48,14 +48,33 @@
   font-weight: normal;
   font-style: normal; }
 
+#error-404 {
+  background-color: #DED96B;
+  overflow: hidden;
+  padding-top: 8.5rem; }
+  #error-404 .text {
+    text-align: center; }
+    #error-404 .text h2 {
+      color: #F25F5C;
+      font-size: 3rem; }
+    #error-404 .text h1 {
+      font-size: 5rem; }
+  #error-404 .background {
+    background-image: url("../img/404.png");
+    background-position: center bottom;
+    background-size: cover;
+    height: 35rem; }
+
 header {
   background-image: url("../img/header/header-background.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 8.5rem;
-  position: relative;
-  width: 100%; }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 15; }
   header a {
     display: inline-block; }
   header nav {
@@ -63,6 +82,9 @@ header {
     position: absolute;
     top: 2.5rem;
     width: 60%; }
+    @media screen and (max-width: 30rem) {
+      header nav {
+        display: none; } }
     header nav ul {
       display: flex; }
       header nav ul li {
@@ -81,6 +103,9 @@ header {
     position: absolute;
     right: 1rem;
     top: 2rem; }
+    @media screen and (max-width: 30rem) {
+      header .header-buttons {
+        display: none; } }
     header .header-buttons a {
       margin: 0 0.5rem; }
 
@@ -105,10 +130,19 @@ footer .background-section {
       float: left;
       padding: 0 4%;
       width: 42%; }
+      @media screen and (max-width: 30rem) {
+        footer .background-section .footer-content .contact-form, footer .background-section .footer-content .contact-info {
+          float: none;
+          margin: 0 auto;
+          padding: 0;
+          width: 90%; } }
     footer .background-section .footer-content .contact-form {
       background-image: url(../img/footer/footer-line-vertical.svg);
       background-position: right top;
       background-repeat: no-repeat; }
+      @media screen and (max-width: 30rem) {
+        footer .background-section .footer-content .contact-form {
+          background: none; } }
       footer .background-section .footer-content .contact-form input, footer .background-section .footer-content .contact-form textarea {
         border: none;
         color: #FFFFFF;
@@ -164,6 +198,9 @@ footer .background-section {
         padding: 0 0.5rem;
         position: absolute;
         top: 50%; }
+        @media screen and (max-width: 30rem) {
+          footer .background-section .footer-content .contact-info .info .field .field-content .field-text {
+            display: none; } }
         footer .background-section .footer-content .contact-info .info .field .field-content a {
           color: #FFFFFF;
           text-decoration: none; }
@@ -200,6 +237,9 @@ footer .background-section {
       background-size: 11px 1px, 11px 1px, 1px 11px, 1px 11px;
       font-size: 1.625rem;
       width: 97%; }
+      @media screen and (max-width: 30rem) {
+        footer .background-section .footer-content input:not(.button), footer .background-section .footer-content .field, footer .background-section .footer-content textarea {
+          width: 100%; } }
 
 footer:not(.footer-home) .background-section {
   background-position: center top;
@@ -239,6 +279,13 @@ footer .footer-end {
   .footer-projects .background-section .footer-content .contact-form input, .footer-projects .background-section .footer-content .contact-form textarea, .footer-we-share .background-section .footer-content .contact-form input, .footer-we-share .background-section .footer-content .contact-form textarea {
     background-color: #F25F5C; }
 
+.footer-404 {
+  background-color: #DED96B; }
+  .footer-404 .background-section .footer-content .contact-form input, .footer-404 .background-section .footer-content .contact-form textarea {
+    background-color: #DED96B; }
+  .footer-404 .background-section .footer-content .contact-form .button {
+    background-image: url("../img/red-button.svg"); }
+
 #home .hero .title {
   margin: 0 auto;
   position: relative;
@@ -252,6 +299,9 @@ footer .footer-end {
     position: absolute;
     top: 5%;
     width: 13%; }
+    @media screen and (max-width: 30rem) {
+      #home .hero .title::before, #home .hero .title::after {
+        display: none; } }
   #home .hero .title::before {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
@@ -264,21 +314,36 @@ footer .footer-end {
   #home .hero .title h1 {
     color: #1DC0B2;
     font-size: 12rem; }
+    @media screen and (max-width: 30rem) {
+      #home .hero .title h1 {
+        font-size: 5rem; } }
   #home .hero .title p {
     font-size: 5rem; }
+    @media screen and (max-width: 30rem) {
+      #home .hero .title p {
+        font-size: 2rem; } }
 
 #home .hero .simian-tools {
   margin: 0 auto;
   padding: 10% 0;
   position: relative;
   width: 60%; }
+  @media screen and (max-width: 30rem) {
+    #home .hero .simian-tools {
+      width: 90%; } }
   #home .hero .simian-tools .simian {
     display: block;
     margin: 0 auto;
     max-width: 100%; }
+    @media screen and (max-width: 30rem) {
+      #home .hero .simian-tools .simian {
+        display: none; } }
   #home .hero .simian-tools .tools img {
     position: absolute;
     width: 27%; }
+    @media screen and (max-width: 30rem) {
+      #home .hero .simian-tools .tools img {
+        position: relative; } }
   #home .hero .simian-tools .tools .idea {
     left: 24%;
     top: 9%; }
@@ -293,6 +358,11 @@ footer .footer-end {
   #home .hero .simian-tools .tools .support {
     left: 45%;
     top: 78%; }
+  @media screen and (max-width: 30rem) {
+    #home .hero .simian-tools .tools .idea, #home .hero .simian-tools .tools .development, #home .hero .simian-tools .tools .design, #home .hero .simian-tools .tools .banano, #home .hero .simian-tools .tools .support {
+      bottom: 0;
+      left: 0;
+      top: 0; } }
 
 #home .our-projects {
   background-image: url("../img/footer/footer-bg-red.svg");
@@ -304,8 +374,6 @@ footer .footer-end {
       clear: both;
       content: "";
       display: table; }
-    #home .our-projects .intro .title-container, #home .our-projects .intro .text {
-      float: left; }
     #home .our-projects .intro .title-container {
       background-image: url("../img/home/our-projects-sign.svg");
       background-repeat: no-repeat;
@@ -327,6 +395,13 @@ footer .footer-end {
       width: 45%; }
       #home .our-projects .intro .text p {
         font-size: 1.5rem; }
+    #home .our-projects .intro .title-container, #home .our-projects .intro .text {
+      float: left; }
+      @media screen and (max-width: 30rem) {
+        #home .our-projects .intro .title-container, #home .our-projects .intro .text {
+          float: none;
+          padding: 0;
+          width: 90%; } }
   #home .our-projects .slider-container {
     position: relative; }
     #home .our-projects .slider-container .swiper-button-prev,
@@ -646,6 +721,9 @@ h1, p {
 
 .bold-border {
   text-shadow: -2px 0 #3F3832, 0 2px #3F3832, 2px 0 #3F3832, 0 -2px #3F3832; }
+  @media screen and (max-width: 30rem) {
+    .bold-border {
+      text-shadow: -1px 0 #3F3832, 0 1px #3F3832, 1px 0 #3F3832, 0 -1px #3F3832; } }
 
 .button {
   background-repeat: no-repeat;
@@ -693,6 +771,9 @@ h1, p {
   justify-content: space-around;
   -ms-flex-pack: distribute;
   margin: 2rem 0; }
+
+.main-content:not(.section-404) {
+  margin-top: 8.5rem; }
 
 .more-link {
   background-image: url("../img/more-icon.svg");

@@ -3,9 +3,11 @@ header {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 8.5rem;
-  position: relative; // This will be fixed.
+  height: $header-height;
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 15;
 
   a {
     display: inline-block;
@@ -16,6 +18,10 @@ header {
     position: absolute;
     top: 2.5rem;
     width: 60%;
+
+    @media screen and (max-width: $mobile-large) {
+      display: none;
+    }
 
     ul {
       display: flex;
@@ -44,6 +50,10 @@ header {
     position: absolute;
     right: 1rem;
     top: 2rem;
+
+    @media screen and (max-width: $mobile-large) {
+      display: none;
+    }
 
     a {
       margin: 0 0.5rem;

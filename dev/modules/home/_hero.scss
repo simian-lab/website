@@ -13,6 +13,10 @@
       position: absolute;
       top: 5%;
       width: 13%;
+
+      @media screen and (max-width: $mobile-large) {
+        display: none;
+      }
     }
 
     &::before {
@@ -27,10 +31,18 @@
     h1 {
       color: $green;
       font-size: 12rem;
+
+      @media screen and (max-width: $mobile-large) {
+        font-size: 5rem;
+      }
     }
 
     p {
       font-size: 5rem;
+
+      @media screen and (max-width: $mobile-large) {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -40,16 +52,28 @@
     position: relative;
     width: 60%;
 
+    @media screen and (max-width: $mobile-large) {
+      width: 90%;
+    }
+
     .simian {
       display: block;
       margin: 0 auto;
       max-width: 100%;
+
+      @media screen and (max-width: $mobile-large) {
+        display: none;
+      }
     }
 
     .tools {
       img {
         position: absolute;
         width: 27%;
+
+        @media screen and (max-width: $mobile-large) {
+          position: relative;
+        }
       }
 
       .idea {
@@ -74,6 +98,14 @@
       .support {
         left: 45%;
         top: 78%;
+      }
+
+      .idea, .development, .design, .banano, .support {
+        @media screen and (max-width: $mobile-large) {
+          bottom: 0;
+          left: 0;
+          top: 0;
+        }
       }
     }
   }

@@ -16,3 +16,15 @@ $quicksand_bold_italic: 'quicksandbold_italic';
 $quicksand_light: 'quicksandlight';
 $quicksand_light_italic: 'quicksandlight_italic';
 $quicksand_regular: 'quicksandregular';
+
+// Breakpoints
+$mobile-small: 22.5rem; // 360px
+$mobile-medium: 25rem; // 400px
+$mobile-large: 30rem; // 480px
+
+$tablet-small: 37.5rem; // 600px
+$tablet-medium: 45rem; // 720px
+$tablet-large: 52.5rem; // 840px
+
+// Other variables
+$header-height: 8.5rem;
