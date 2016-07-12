@@ -1,0 +1,86 @@
+.hero {
+      padding-bottom: 200%;
+  .title {
+      margin-top: -5.7%;
+      background-image: url("../img/we-share/fondo.svg");
+      background-repeat: no-repeat;
+      background-position: center -1%;
+      background-size: 103%;
+      padding-top: 140%;
+
+      @media screen and (max-width: $mobile-large) {
+        display: none;
+      }
+
+      .text-header{
+        p {
+          font-size: 6rem;
+          position: absolute;
+          margin-top: -133%;
+          left: 26%;
+          width: 58%;
+
+          @media screen and (max-width: $mobile-large) {
+            font-size: 2.2rem;
+            margin-top: -223%;
+            left: 35%;
+          }
+          @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+            font-size: 3rem;
+            margin-top: -135%;
+            left: 39%;
+          }
+          @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+            font-size: 2rem;
+            margin-top: -135%;
+            left: 39%;
+        }
+      }
+      h1 {
+        color: $red;
+        font-size: 12.5rem;
+        position: absolute;
+        margin-top: -126%;
+        left: 24%;
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 4.0rem;
+          margin-top: -215%;
+          left: 20%;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          font-size: 4rem;
+          margin-top: -128%;
+          left: 34%;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+          font-size: 3rem;
+          margin-top: -129%;
+          left: 32%;
+        }
+      }
+    }
+    .graph-tool {
+      margin: 0 auto;
+      position: absolute;
+      left: 28%;
+      margin-top: -113%;
+
+      @media screen and (max-width: $mobile-large) {
+        margin-top: -192%;
+        width: 96%;
+        left: 4%;
+      }
+
+      .graph {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        position: relative;
+
+        @media screen and (max-width: $mobile-large) {
+        }
+      }
+    }
+  }
+}

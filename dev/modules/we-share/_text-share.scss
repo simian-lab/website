@@ -1,0 +1,86 @@
+.text-share{
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  margin-top: -284%;
+  z-index: -2;
+
+  @media screen and (max-width: $mobile-large) {
+    margin-top: -160%;
+  }
+
+  .title {
+    h1 {
+      color: $red;
+      font-size: 7.5rem;
+      position: absolute;
+      margin-top: 14%;
+      left: 20%;
+
+      @media screen and (max-width: $mobile-large) {
+        font-size: 3rem;
+        left: 12%;
+      }
+      @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+        font-size: 4.5rem;
+        margin-top: -33%;
+        left: 10%
+      }
+      @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+          font-size: 3.5rem;
+        }
+    }
+    p {
+      font-size: 4rem;
+
+      &:nth-child(2) {
+        font-size: 2rem;
+        position: absolute;
+        margin-top: 25%;
+        left: 20%;
+        width: 55%;
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 1rem;
+          margin-top: -16%;
+          left: 12%;
+          width: 78%;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          font-size: 1.5rem;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+          font-size: 1rem;
+        }
+      }
+    }
+    .text {
+      width: 100%;
+
+      p {
+        font-size: 1.5rem;
+        position: absolute;
+        margin-top: 31%;
+        left: 20%;
+        width: 58%;
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 1rem;
+          margin-top: -4%;
+          left: 12%;
+          width: 77%;
+        }
+
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          font-size: 1rem;
+          margin-top: -11%;
+          width: 59%;
+        }
+
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
