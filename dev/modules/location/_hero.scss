@@ -1,0 +1,93 @@
+.hero{
+  .header{
+    margin-top: -5.7%;
+    background-image: url("../img/location/fondo_header.svg");
+    background-repeat: no-repeat;
+    background-position: center -1%;
+    background-size: 103%;
+    padding-top: 140%;
+
+    @media screen and (max-width: $mobile-large) {
+      margin-top: -11.7%;
+      background-size: 178%;
+      padding-top: 235%;
+    }
+
+    @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+      margin-top: -7.7%;
+    }
+    .text-header{
+      p {
+        font-size: 5rem;
+        position: absolute;
+        margin-top: -135%;
+        left: 40%;
+        width: 58%;
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 2.2rem;
+          margin-top: -223%;
+          left: 35%;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          font-size: 3rem;
+          margin-top: -135%;
+          left: 39%;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+          font-size: 2rem;
+          margin-top: -135%;
+          left: 39%;
+
+        }
+      }
+      h1 {
+        color: $yellow;
+        font-size: 7.5rem;
+        position: absolute;
+        margin-top: -129%;
+        left: 33%;
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 4.0rem;
+          margin-top: -215%;
+          left: 20%;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          font-size: 4rem;
+          margin-top: -128%;
+          left: 34%;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+           font-size: 3rem;
+           margin-top: -129%;
+           left: 32%;
+        }
+      }
+    }
+    .graph-tool {
+      margin: 0 auto;
+      width: 82%;
+      position: absolute;
+      left: 11%;
+      margin-top: -117%;
+      z-index: -1;
+
+      @media screen and (max-width: $mobile-large) {
+        margin-top: -192%;
+        width: 96%;
+        left: 4%;
+      }
+
+      .graph {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        position: relative;
+
+        @media screen and (max-width: $mobile-large) {
+        }
+      }
+    }
+  }
+}
