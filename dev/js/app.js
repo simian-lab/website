@@ -67,9 +67,11 @@ angular.module('simian', [
 ])
 
 .controller('AppController', [
-  '$rootScope', '$scope',
-  function($rootScope, $scope) {
+  '$anchorScroll', '$rootScope', '$scope',
+  function($anchorScroll, $rootScope, $scope) {
     $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+      // We scroll to the top of the page when we change the state.
+      $anchorScroll();
       $rootScope.activeSection = toState.name;
     });
   }
