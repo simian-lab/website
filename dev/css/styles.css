@@ -52,13 +52,33 @@
   background-color: #DED96B;
   overflow: hidden;
   padding-top: 8.5rem; }
+  #error-404 .home {
+    color: #3F3832;
+    font-size: 1.3rem;
+    left: 7%;
+    position: relative;
+    top: 0.5rem;
+    text-decoration: none; }
+    @media screen and (max-width: 30rem) {
+      #error-404 .home {
+        display: none; } }
   #error-404 .text {
     text-align: center; }
+    @media screen and (max-width: 30rem) {
+      #error-404 .text {
+        margin-top: 3rem; } }
     #error-404 .text h2 {
       color: #F25F5C;
-      font-size: 3rem; }
+      font-family: "amatic_scregular";
+      font-size: 3.5rem; }
+      @media screen and (max-width: 30rem) {
+        #error-404 .text h2 {
+          font-size: 3rem; } }
     #error-404 .text h1 {
-      font-size: 5rem; }
+      font-size: 7rem; }
+      @media screen and (max-width: 30rem) {
+        #error-404 .text h1 {
+          font-size: 5rem; } }
   #error-404 .background {
     background-image: url("../img/404.png");
     background-position: center bottom;

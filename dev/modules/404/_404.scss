@@ -3,16 +3,42 @@
   overflow: hidden;
   padding-top: 8.5rem;
 
+  .home {
+    color: $brown;
+    font-size: 1.3rem;
+    left: 7%;
+    position: relative;
+    top: 0.5rem;
+    text-decoration: none;
+
+    @media screen and (max-width: $mobile-large) {
+      display: none;
+    }
+  }
+
   .text {
     text-align: center;
 
+    @media screen and (max-width: $mobile-large) {
+      margin-top: 3rem;
+    }
+
     h2 {
       color: $red;
-      font-size: 3rem;
+      font-family: $amatic_regular;
+      font-size: 3.5rem;
+
+      @media screen and (max-width: $mobile-large) {
+        font-size: 3rem;
+      }
     }
 
     h1 {
-      font-size: 5rem;
+      font-size: 7rem;
+
+      @media screen and (max-width: $mobile-large) {
+        font-size: 5rem;
+      }
     }
   }
 
