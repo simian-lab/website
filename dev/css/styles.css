@@ -1122,101 +1122,101 @@ footer .footer-end {
           max-width: 80%;
           left: -1%;
           margin-top: -75%; } }
-  #we-share .video-share .video .icon_play {
+  #we-share .video-share .video .icon-play {
     position: absolute;
     margin-top: -59%;
     left: 42%; }
     @media screen and (max-width: 30rem) {
-      #we-share .video-share .video .icon_play {
+      #we-share .video-share .video .icon-play {
         width: 16%;
         margin-top: -93%;
         left: 42%; } }
     @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon_play {
+      #we-share .video-share .video .icon-play {
         margin-top: -63%;
         left: 39%; } }
     @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon_play {
+      #we-share .video-share .video .icon-play {
         margin-top: -64%;
         left: 38%;
         width: 23%; } }
-  #we-share .video-share .video .icon_left {
+  #we-share .video-share .video .icon-left {
     position: absolute;
     margin-top: -56%;
     left: 92%; }
     @media screen and (max-width: 30rem) {
-      #we-share .video-share .video .icon_left {
+      #we-share .video-share .video .icon-left {
         display: none; } }
     @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon_left {
+      #we-share .video-share .video .icon-left {
         left: 88%; } }
     @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon_left {
+      #we-share .video-share .video .icon-left {
         left: 88%;
         width: 12%; } }
-  #we-share .video-share .video .icon_right {
+  #we-share .video-share .video .icon-right {
     position: absolute;
     margin-top: -56%;
     left: 2%; }
     @media screen and (max-width: 30rem) {
-      #we-share .video-share .video .icon_right {
+      #we-share .video-share .video .icon-right {
         display: none; } }
     @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon_right {
+      #we-share .video-share .video .icon-right {
         left: 0%; } }
     @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon_right {
+      #we-share .video-share .video .icon-right {
         left: -1%;
         width: 12%; } }
-  #we-share .video-share .video .icon_pause {
+  #we-share .video-share .video .icon-pause {
     position: absolute;
     margin-top: -32%;
     left: 10%; }
     @media screen and (max-width: 30rem) {
-      #we-share .video-share .video .icon_pause {
+      #we-share .video-share .video .icon-pause {
         width: 13%;
         margin-top: -62%;
         left: 3%; } }
     @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon_pause {
+      #we-share .video-share .video .icon-pause {
         margin-top: -34%;
         left: 14%; } }
     @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon_pause {
+      #we-share .video-share .video .icon-pause {
         left: 15%;
         width: 11%; } }
-  #we-share .video-share .video .icon_play_green {
+  #we-share .video-share .video .icon-play-green {
     position: absolute;
     margin-top: -32%;
     left: 14%; }
     @media screen and (max-width: 30rem) {
-      #we-share .video-share .video .icon_play_green {
+      #we-share .video-share .video .icon-play-green {
         width: 13%;
         margin-top: -62%;
         left: 11%; } }
     @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon_play_green {
+      #we-share .video-share .video .icon-play-green {
         margin-top: -34%;
         left: 9%; } }
     @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon_play_green {
+      #we-share .video-share .video .icon-play-green {
         left: 9%;
         width: 11%; } }
-  #we-share .video-share .video .icon_volume {
+  #we-share .video-share .video .icon-volume {
     position: absolute;
     margin-top: -32%;
     left: 80%; }
     @media screen and (max-width: 30rem) {
-      #we-share .video-share .video .icon_volume {
+      #we-share .video-share .video .icon-volume {
         width: 22%;
         margin-top: -63%;
         left: 77%; } }
     @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon_volume {
+      #we-share .video-share .video .icon-volume {
         margin-top: -35%;
         left: 79%; } }
     @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon_volume {
+      #we-share .video-share .video .icon-volume {
         left: 77%;
         width: 20%; } }
 
