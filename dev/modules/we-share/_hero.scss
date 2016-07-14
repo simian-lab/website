@@ -1,41 +1,58 @@
 .hero {
-      padding-bottom: 200%;
+  padding-bottom: 152%;
+
+  @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+    padding-bottom: 189%;
+  }
+  @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+    padding-bottom: 240%;
+  }
+  @media screen and (max-width: $mobile-large) {
+    padding-bottom: 500%;
+  }
+
   .title {
-      margin-top: -5.7%;
-      background-image: url("../img/we-share/fondo.svg");
-      background-repeat: no-repeat;
-      background-position: center -1%;
-      background-size: 103%;
-      padding-top: 140%;
+    margin-top: -5.7%;
+    background-image: url("../img/we-share/fondo.svg");
+    background-repeat: no-repeat;
+    background-position: center -1%;
+    background-size: 103%;
+    padding-top: 140%;
 
-      @media screen and (max-width: $mobile-large) {
-        display: none;
-      }
+    @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+      margin-top: -7.7%;
+    }
 
-      .text-header{
-        p {
-          font-size: 6rem;
-          position: absolute;
-          margin-top: -133%;
-          left: 26%;
-          width: 58%;
+    @media screen and (max-width: $mobile-large) {
+      margin-top: -10.7%;
+      background-size: 127%;
+    }
 
-          @media screen and (max-width: $mobile-large) {
-            font-size: 2.2rem;
-            margin-top: -223%;
-            left: 35%;
-          }
-          @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
-            font-size: 3rem;
-            margin-top: -135%;
-            left: 39%;
-          }
-          @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
-            font-size: 2rem;
-            margin-top: -135%;
-            left: 39%;
+    .text-header{
+      p {
+        font-size: 6rem;
+        position: absolute;
+        margin-top: -134%;
+        left: 25%;
+        width: 58%;
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 2.2rem;
+          margin-top: -132%;
+          left: 17%;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+          font-size: 4rem;
+          margin-top: -134%;
+          left: 25%;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+          font-size: 2.5rem;
+          margin-top: -130%;
+          left: 30%;
         }
       }
+
       h1 {
         color: $red;
         font-size: 12.5rem;
@@ -44,32 +61,38 @@
         left: 24%;
 
         @media screen and (max-width: $mobile-large) {
-          font-size: 4.0rem;
-          margin-top: -215%;
-          left: 20%;
+          font-size: 4.5rem;
+          margin-top: -124%;
+          left: 15%;
         }
-        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
-          font-size: 4rem;
-          margin-top: -128%;
-          left: 34%;
+
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+          font-size: 8rem;
+          margin-top: -126%;
+          left: 22%;
         }
-        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
-          font-size: 3rem;
-          margin-top: -129%;
-          left: 32%;
+
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+          font-size: 5.5rem;
+          margin-top: -124%;
+          left: 27%;
         }
       }
     }
     .graph-tool {
       margin: 0 auto;
       position: absolute;
-      left: 28%;
+      left: 27%;
       margin-top: -113%;
 
       @media screen and (max-width: $mobile-large) {
-        margin-top: -192%;
-        width: 96%;
-        left: 4%;
+        margin-top: -106%;
+        width: 80%;
+        left: 18%;
+      }
+
+      @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+          left: 20%;
       }
 
       .graph {
