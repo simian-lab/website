@@ -1,0 +1,109 @@
+.hero {
+  padding-bottom: 152%;
+
+  @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+    padding-bottom: 189%;
+  }
+  @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+    padding-bottom: 240%;
+  }
+  @media screen and (max-width: $mobile-large) {
+    padding-bottom: 500%;
+  }
+
+  .title {
+    margin-top: -5.7%;
+    background-image: url("../img/we-share/fondo.svg");
+    background-repeat: no-repeat;
+    background-position: center -1%;
+    background-size: 103%;
+    padding-top: 140%;
+
+    @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+      margin-top: -7.7%;
+    }
+
+    @media screen and (max-width: $mobile-large) {
+      margin-top: -10.7%;
+      background-size: 127%;
+    }
+
+    .text-header{
+      p {
+        font-size: 6rem;
+        position: absolute;
+        margin-top: -134%;
+        left: 25%;
+        width: 58%;
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 2.2rem;
+          margin-top: -132%;
+          left: 17%;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+          font-size: 4rem;
+          margin-top: -134%;
+          left: 25%;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+          font-size: 2.5rem;
+          margin-top: -130%;
+          left: 30%;
+        }
+      }
+
+      h1 {
+        color: $red;
+        font-size: 12.5rem;
+        position: absolute;
+        margin-top: -126%;
+        left: 24%;
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 4.5rem;
+          margin-top: -124%;
+          left: 15%;
+        }
+
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+          font-size: 8rem;
+          margin-top: -126%;
+          left: 22%;
+        }
+
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+          font-size: 5.5rem;
+          margin-top: -124%;
+          left: 27%;
+        }
+      }
+    }
+    .graph-tool {
+      margin: 0 auto;
+      position: absolute;
+      left: 27%;
+      margin-top: -113%;
+
+      @media screen and (max-width: $mobile-large) {
+        margin-top: -106%;
+        width: 80%;
+        left: 18%;
+      }
+
+      @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+          left: 20%;
+      }
+
+      .graph {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        position: relative;
+
+        @media screen and (max-width: $mobile-large) {
+        }
+      }
+    }
+  }
+}

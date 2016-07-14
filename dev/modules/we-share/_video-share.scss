@@ -1,0 +1,188 @@
+.video-share {
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  margin-top: -172%;
+
+  @media screen and (max-width: $mobile-large) {
+    margin-top: -442%;;
+  }
+  @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+    margin-top: -205%;
+  }
+  @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+    margin-top: -235%;
+  }
+
+  .title {
+    background-image: url("../img/we-share/banano_fondo_video.svg");
+    background-repeat: no-repeat;
+    background-position: center -1%;
+    background-size: 101%;
+    padding-top: 77%;
+
+    @media screen and (max-width: $mobile-large) {
+      background-size: 131%;
+      padding-top: 114%;
+    }
+
+    .text-header {
+      h1 {
+        color: $black;
+        font-size: 5rem;
+        position: absolute;
+        margin-top: -84%;
+        left: 25%;
+
+        @media screen and (max-width: $mobile-large) {
+          margin-top: -122%;
+          font-size: 2.5rem;
+          left: 12%;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          font-size: 2.7rem;
+          margin-top: -81%;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+          font-size: 2.5rem;
+          margin-top: -83%;
+        }
+      }
+    }
+  }
+
+  .video {
+    .borde {
+      margin: 0 auto;
+      position: absolute;
+      width: 100%;
+      .borde-video {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        position: relative;
+        margin-top: -75%;
+        left: -2%;
+
+        @media screen and (max-width: $mobile-large) {
+          max-width: 92%;
+          margin-top: -109%;
+          left: 0%;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          max-width: 80%;
+          left: -1%;
+          margin-top: -75%;
+        }
+      }
+    }
+      .icon-play {
+        position: absolute;
+        margin-top: -59%;
+        left: 42%;
+        @media screen and (max-width: $mobile-large) {
+          width: 16%;
+          margin-top: -93%;
+          left: 42%;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          margin-top: -63%;
+          left: 39%;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+          margin-top: -64%;
+          left: 38%;
+          width: 23%;
+        }
+      }
+
+      .icon-left {
+        position: absolute;
+        margin-top: -56%;
+        left: 92%;
+        @media screen and (max-width: $mobile-large) {
+          display: none;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          left: 88%;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+          left: 88%;
+          width: 12%;
+        }
+      }
+
+      .icon-right {
+        position: absolute;
+        margin-top: -56%;
+        left: 2%;
+        @media screen and (max-width: $mobile-large) {
+          display: none;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          left: 0%;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+          left: -1%;
+          width: 12%;
+        }
+      }
+
+      .icon-pause {
+        position: absolute;
+        margin-top: -32%;
+        left: 10%;
+        @media screen and (max-width: $mobile-large) {
+          width: 13%;
+          margin-top: -62%;
+          left: 3%;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          margin-top: -34%;
+          left: 14%;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+          left: 15%;
+          width: 11%;
+        }
+      }
+
+      .icon-play-green {
+        position: absolute;
+        margin-top: -32%;
+        left: 14%;
+        @media screen and (max-width: $mobile-large) {
+          width: 13%;
+          margin-top: -62%;
+          left: 11%;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          margin-top: -34%;
+          left: 9%;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+          left: 9%;
+          width: 11%;
+        }
+      }
+
+      .icon-volume {
+        position: absolute;
+        margin-top: -32%;
+        left: 80%;
+        @media screen and (max-width: $mobile-large) {
+          width: 22%;
+          margin-top: -63%;
+          left: 77%;
+        }
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large){
+          margin-top: -35%;
+          left: 79%;
+        }
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large){
+          left: 77%;
+          width: 20%;
+        }
+      }
+    }
+}

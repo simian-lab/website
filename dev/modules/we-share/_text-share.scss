@@ -1,0 +1,101 @@
+.text-share{
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  margin-top: -233%;
+
+  @media screen and (max-width: $mobile-large) {
+    margin-top: -510%;
+  }
+
+  @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+    margin-top: -270%;
+  }
+
+  @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+    margin-top: -318%;
+  }
+
+  .title {
+    h1 {
+      color: $red;
+      font-size: 6.5rem;
+      position: absolute;
+      margin-top: 14%;
+      left: 25%;
+
+      @media screen and (max-width: $mobile-large) {
+        margin-top: -39%;
+        font-size: 3.5rem;
+        left: 12%;
+      }
+
+      @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+        font-size: 5rem;
+        margin-top: 17%;
+      }
+
+      @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+          font-size: 3.5rem;
+      }
+    }
+
+    p {
+      font-size: 4rem;
+
+      &:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: absolute;
+        margin-top: 25%;
+        left: 25%;
+        width: 55%;
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 1rem;
+          margin-top: -16%;
+          left: 12%;
+          width: 78%;
+        }
+
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+          font-size: 1.2rem;
+          margin-top: 29%;
+        }
+
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .text {
+      width: 100%;
+
+      p {
+        font-size: 1.5rem;
+        position: absolute;
+        margin-top: 31%;
+        left: 25%;
+        width: 55%;
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 1rem;
+          margin-top: -4%;
+          left: 12%;
+          width: 77%;
+        }
+
+        @media screen and (max-width: 65.625rem) and (min-width: $mobile-large) {
+          font-size: 1.2rem;
+          margin-top: 34%;
+        }
+
+        @media screen and (max-width: 43.750rem) and (min-width: $mobile-large) {
+          font-size: 1rem;
+          margin-top: 35%;
+        }
+      }
+    }
+  }
+}
