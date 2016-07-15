@@ -45,7 +45,12 @@
   .background {
     background-image: url('../img/404.png');
     background-position: center bottom;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 35rem;
+
+    @media screen and (min-width: 1600px) {
+      height: 45rem;
+    }
   }
 }

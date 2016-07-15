@@ -82,8 +82,12 @@
   #error-404 .background {
     background-image: url("../img/404.png");
     background-position: center bottom;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 35rem; }
+    @media screen and (min-width: 1600px) {
+      #error-404 .background {
+        height: 45rem; } }
 
 header {
   background-image: url("../img/header/header-background.svg");
