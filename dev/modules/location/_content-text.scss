@@ -1,0 +1,154 @@
+.content-text{
+  margin: 0 auto;
+  width: 100%;
+
+  .text-find {
+    padding-left: 10rem;
+    @media screen and (min-width: $laptop-large) {
+      padding-left: 10rem;
+    }
+    @media screen and (max-width: $tablet-large) {
+      padding-left: 7rem;
+    }
+    @media screen and (max-width: $tablet-medium) {
+      padding-left: 5rem;
+    }
+    @media screen and (max-width: $mobile-large) {
+      padding-left: 3rem;
+    }
+    h1 {
+      color: $red;
+      font-size: 7.5rem;
+
+      @media screen and (min-width: $laptop-large) {
+        font-size: 8.5rem;
+      }
+      @media screen and (max-width: $laptop-small) {
+        font-size: 6.5rem;
+      }
+      @media screen and (max-width: $tablet-large) {
+        font-size: 4.5rem;
+      }
+      @media screen and (max-width: $tablet-medium) {
+        font-size: 3.5rem;
+      }
+      @media screen and (max-width: $tablet-small) {
+        font-size: 3rem;
+      }
+      @media screen and (max-width: $mobile-large) {
+        font-size: 4.5rem;
+      }
+      @media screen and (max-width: $mobile-large) {
+        font-size: 4rem;
+      }
+    }
+    .subtitle{
+      p {
+        font-size: 1.5rem;
+        padding-top: 4rem;
+        font-weight: bold;
+        width: 61%;
+        @media screen and (min-width: $laptop-large) {
+          font-size: 2rem;
+          padding-top: 4rem;
+        }
+        @media screen and (max-width: $laptop-small) {
+          font-size: 1.2rem;
+        }
+        @media screen and (max-width: $tablet-large) {
+          font-size: 1rem;
+          padding-top: 2rem;
+        }
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 0.9rem;
+          padding-top: 2rem;
+        }
+        @media screen and (max-width: $tablet-small) {
+          font-size: 0.7rem;
+        }
+        @media screen and (max-width: $mobile-large) {
+          font-size: 1.5rem;
+          padding-top: 4rem;
+          width: 94%;
+        }
+        @media screen and (max-width: $mobile-medium) {
+          font-size: 1.3rem;
+          padding-top: 3rem;
+        }
+      }
+    }
+    .text {
+      width: 61%;
+      padding-top: 3rem;
+      @media screen and (max-width: $tablet-large) {
+        padding-top: 1rem;
+      }
+      @media screen and (max-width: $mobile-large) {
+        width: 91%;
+      }
+
+      p {
+        font-size: 1.5rem;
+        @media screen and (min-width: $laptop-large) {
+          font-size: 2rem;
+        }
+        @media screen and (max-width: $laptop-small) {
+          font-size: 1.2rem;
+        }
+        @media screen and (max-width: $tablet-large) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 0.9rem;
+        }
+        @media screen and (max-width: $tablet-small) {
+          font-size: 0.7rem;
+        }
+        @media screen and (max-width: $mobile-large) {
+          font-size: 1.5rem;
+        }
+        @media screen and (max-width: $mobile-medium) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .icon_location {
+      .icon{
+        width: 27%;
+        margin-left: 68%;
+        margin-top: -36%;
+        @media screen and (min-width: $laptop-large) {
+          margin-left: 66%;
+          margin-top: -41%;
+        }
+        @media screen and (max-width: $laptop-small) {
+          width: 24%
+        }
+        @media screen and (max-width: $tablet-large) {
+          width: 20%;
+        }
+        @media screen and (max-width: $tablet-medium) and (min-width: $mobile-large) {
+          width: 18%;
+        }
+        @media screen and (max-width: $mobile-large) and (min-width: $mobile-medium) {
+          position: absolute;
+          width: 17%;
+          margin-left: 18rem;
+          margin-top: -32rem;
+        }
+        @media screen and (max-width: $mobile-medium) {
+          position: absolute;
+          width: 16%;
+          margin-left: 16rem;
+          margin-top: -28rem;
+        }
+        @media screen and (max-width: $mobile-small) {
+          width: 15%;
+          margin-left: 15rem;
+          margin-top: -31rem;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
