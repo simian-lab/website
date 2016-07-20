@@ -742,7 +742,7 @@ footer .footer-end {
   @media screen and (min-width: 90rem) {
     #location .header {
       margin-bottom: -5rem; } }
-  @media screen and (max-width: 75rem) {
+  @media screen and (max-width: 90rem) {
     #location .header {
       background-size: 110%;
       margin-top: -7rem; } }
@@ -751,7 +751,7 @@ footer .footer-end {
       margin-bottom: -7rem; } }
   @media screen and (max-width: 52.5rem) {
     #location .header {
-      background-size: 124%; } }
+      background-size: 128%; } }
   @media screen and (max-width: 45rem) {
     #location .header {
       margin-bottom: -8rem;
@@ -774,7 +774,7 @@ footer .footer-end {
     @media screen and (min-width: 90rem) {
       #location .header .text-header {
         padding-top: 5rem; } }
-    @media screen and (max-width: 75rem) {
+    @media screen and (max-width: 90rem) {
       #location .header .text-header {
         padding-top: 6rem; } }
     @media screen and (max-width: 52.5rem) {
@@ -832,7 +832,7 @@ footer .footer-end {
     #location .find {
       background-position: center 114%;
       margin-bottom: -7%; } }
-  @media screen and (max-width: 75rem) {
+  @media screen and (max-width: 90rem) {
     #location .find {
       margin-bottom: -5rem; } }
   @media screen and (max-width: 64rem) {
@@ -1103,408 +1103,358 @@ footer .footer-end {
           margin-top: -31rem;
           position: absolute; } }
 
-#we-share .hero {
-  padding-bottom: 152%; }
-  @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-    #we-share .hero {
-      padding-bottom: 189%; } }
-  @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-    #we-share .hero {
-      padding-bottom: 240%; } }
+#we-share .header {
+  background-image: url("../img/we-share/fondo.svg");
+  height: 63rem;
+  background-repeat: no-repeat;
+  background-size: 103%;
+  margin-top: -3rem;
+  margin-bottom: -42rem; }
+  @media screen and (min-width: 90rem) {
+    #we-share .header {
+      margin-bottom: -39rem; } }
+  @media screen and (max-width: 64rem) {
+    #we-share .header {
+      margin-bottom: -45rem; } }
+  @media screen and (max-width: 52.5rem) {
+    #we-share .header {
+      margin-bottom: -49rem; } }
+  @media screen and (max-width: 45rem) {
+    #we-share .header {
+      margin-bottom: -51rem; } }
+  @media screen and (max-width: 37.5rem) {
+    #we-share .header {
+      background-size: 118%; } }
   @media screen and (max-width: 30rem) {
-    #we-share .hero {
-      padding-bottom: 500%; } }
-  #we-share .hero .title {
-    margin-top: -5.7%;
-    background-image: url("../img/we-share/fondo.svg");
-    background-repeat: no-repeat;
-    background-position: center -1%;
-    background-size: 103%;
-    padding-top: 140%; }
-    @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .hero .title {
-        margin-top: -7.7%; } }
-    @media screen and (max-width: 30rem) {
-      #we-share .hero .title {
-        margin-top: -10.7%;
-        background-size: 127%; } }
-    #we-share .hero .title .text-header p {
-      font-size: 6rem;
-      position: absolute;
-      margin-top: -134%;
-      left: 25%;
-      width: 58%; }
+    #we-share .header {
+      background-size: 137%; } }
+  @media screen and (max-width: 25rem) {
+    #we-share .header {
+      margin-bottom: -52rem; } }
+  #we-share .header .text {
+    text-align: center;
+    padding-top: 5rem; }
+    #we-share .header .text p {
+      font-size: 5rem; }
+      @media screen and (min-width: 90rem) {
+        #we-share .header .text p {
+          font-size: 6rem; } }
+      @media screen and (max-width: 64rem) {
+        #we-share .header .text p {
+          font-size: 4.5rem; } }
+      @media screen and (max-width: 52.5rem) {
+        #we-share .header .text p {
+          font-size: 3.5rem; } }
+      @media screen and (max-width: 45rem) {
+        #we-share .header .text p {
+          font-size: 3rem; } }
       @media screen and (max-width: 30rem) {
-        #we-share .hero .title .text-header p {
-          font-size: 2.2rem;
-          margin-top: -132%;
-          left: 17%; } }
-      @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-        #we-share .hero .title .text-header p {
-          font-size: 4rem;
-          margin-top: -134%;
-          left: 25%; } }
-      @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-        #we-share .hero .title .text-header p {
-          font-size: 2.5rem;
-          margin-top: -130%;
-          left: 30%; } }
-    #we-share .hero .title .text-header h1 {
+        #we-share .header .text p {
+          font-size: 2.5rem; } }
+      @media screen and (max-width: 25rem) {
+        #we-share .header .text p {
+          font-size: 2rem; } }
+    #we-share .header .text h1 {
       color: #F25F5C;
-      font-size: 12.5rem;
-      position: absolute;
-      margin-top: -126%;
-      left: 24%; }
+      font-size: 10.5rem; }
+      @media screen and (min-width: 90rem) {
+        #we-share .header .text h1 {
+          font-size: 12.5rem; } }
+      @media screen and (max-width: 64rem) {
+        #we-share .header .text h1 {
+          font-size: 9.5rem; } }
+      @media screen and (max-width: 52.5rem) {
+        #we-share .header .text h1 {
+          font-size: 7.5rem; } }
+      @media screen and (max-width: 45rem) {
+        #we-share .header .text h1 {
+          font-size: 6.5rem; } }
       @media screen and (max-width: 30rem) {
-        #we-share .hero .title .text-header h1 {
-          font-size: 4.5rem;
-          margin-top: -124%;
-          left: 15%; } }
-      @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-        #we-share .hero .title .text-header h1 {
-          font-size: 8rem;
-          margin-top: -126%;
-          left: 22%; } }
-      @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-        #we-share .hero .title .text-header h1 {
-          font-size: 5.5rem;
-          margin-top: -124%;
-          left: 27%; } }
-    #we-share .hero .title .graph-tool {
-      margin: 0 auto;
-      position: absolute;
-      left: 27%;
-      margin-top: -113%; }
-      @media screen and (max-width: 30rem) {
-        #we-share .hero .title .graph-tool {
-          margin-top: -106%;
-          width: 80%;
-          left: 18%; } }
-      @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-        #we-share .hero .title .graph-tool {
-          left: 20%; } }
-      #we-share .hero .title .graph-tool .graph {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        position: relative; }
+        #we-share .header .text h1 {
+          font-size: 5.5rem; } }
+      @media screen and (max-width: 25rem) {
+        #we-share .header .text h1 {
+          font-size: 5rem; } }
 
-#we-share .text-share {
-  margin: 0 auto;
-  width: 100%;
-  position: absolute;
-  margin-top: -233%; }
-  @media screen and (max-width: 30rem) {
-    #we-share .text-share {
-      margin-top: -510%; } }
-  @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-    #we-share .text-share {
-      margin-top: -270%; } }
-  @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-    #we-share .text-share {
-      margin-top: -318%; } }
-  #we-share .text-share .title h1 {
-    color: #F25F5C;
-    font-size: 6.5rem;
-    position: absolute;
-    margin-top: 14%;
-    left: 25%; }
+#we-share .content {
+  margin-bottom: 1rem; }
+  @media screen and (max-width: 45rem) {
+    #we-share .content {
+      margin-bottom: 0rem; } }
+  #we-share .content .graph {
+    position: relative;
+    padding-left: 9rem; }
+    @media screen and (min-width: 90rem) {
+      #we-share .content .graph {
+        padding-left: 12rem; } }
+    @media screen and (max-width: 64rem) {
+      #we-share .content .graph {
+        padding-left: 7rem; } }
+    @media screen and (max-width: 52.5rem) {
+      #we-share .content .graph {
+        padding-left: 6rem; } }
     @media screen and (max-width: 30rem) {
-      #we-share .text-share .title h1 {
-        margin-top: -39%;
-        font-size: 3.5rem;
-        left: 12%; } }
-    @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .text-share .title h1 {
-        font-size: 5rem;
-        margin-top: 17%; } }
-    @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .text-share .title h1 {
-        font-size: 3.5rem; } }
-  #we-share .text-share .title p {
-    font-size: 4rem; }
-    #we-share .text-share .title p:nth-child(2) {
-      font-size: 1.5rem;
-      font-weight: bold;
-      position: absolute;
-      margin-top: 25%;
-      left: 25%;
-      width: 55%; }
-      @media screen and (max-width: 30rem) {
-        #we-share .text-share .title p:nth-child(2) {
-          font-size: 1rem;
-          margin-top: -16%;
-          left: 12%;
-          width: 78%; } }
-      @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-        #we-share .text-share .title p:nth-child(2) {
-          font-size: 1.2rem;
-          margin-top: 29%; } }
-      @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-        #we-share .text-share .title p:nth-child(2) {
-          font-size: 1rem; } }
-  #we-share .text-share .title .text {
-    width: 100%; }
-    #we-share .text-share .title .text p {
-      font-size: 1.5rem;
-      position: absolute;
-      margin-top: 31%;
-      left: 25%;
-      width: 55%; }
-      @media screen and (max-width: 30rem) {
-        #we-share .text-share .title .text p {
-          font-size: 1rem;
-          margin-top: -4%;
-          left: 12%;
-          width: 77%; } }
-      @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-        #we-share .text-share .title .text p {
-          font-size: 1.2rem;
-          margin-top: 34%; } }
-      @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-        #we-share .text-share .title .text p {
-          font-size: 1rem;
-          margin-top: 35%; } }
-
-#we-share .video-share {
-  margin: 0 auto;
-  width: 100%;
-  position: absolute;
-  margin-top: -172%; }
-  @media screen and (max-width: 30rem) {
-    #we-share .video-share {
-      margin-top: -442%; } }
-  @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-    #we-share .video-share {
-      margin-top: -205%; } }
-  @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-    #we-share .video-share {
-      margin-top: -235%; } }
-  #we-share .video-share .title {
-    background-image: url("../img/we-share/banano_fondo_video.svg");
-    background-repeat: no-repeat;
-    background-position: center -1%;
-    background-size: 101%;
-    padding-top: 77%; }
-    @media screen and (max-width: 30rem) {
-      #we-share .video-share .title {
-        background-size: 131%;
-        padding-top: 114%; } }
-    #we-share .video-share .title .text-header h1 {
-      color: #000000;
-      font-size: 5rem;
-      position: absolute;
-      margin-top: -84%;
-      left: 25%; }
-      @media screen and (max-width: 30rem) {
-        #we-share .video-share .title .text-header h1 {
-          margin-top: -122%;
-          font-size: 2.5rem;
-          left: 12%; } }
-      @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-        #we-share .video-share .title .text-header h1 {
-          font-size: 2.7rem;
-          margin-top: -81%; } }
-      @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-        #we-share .video-share .title .text-header h1 {
-          font-size: 2.5rem;
-          margin-top: -83%; } }
-  #we-share .video-share .video .borde {
-    margin: 0 auto;
-    position: absolute;
-    width: 100%; }
-    #we-share .video-share .video .borde .borde-video {
+      #we-share .content .graph {
+        padding-left: 1rem; } }
+    #we-share .content .graph .monkey {
       display: block;
       margin: 0 auto;
-      max-width: 80%;
-      position: relative;
-      margin-top: -75%;
-      left: -2%; }
+      max-width: 100%; }
+      @media screen and (min-width: 90rem) {
+        #we-share .content .graph .monkey {
+          width: 81%; } }
+      @media screen and (max-width: 64rem) {
+        #we-share .content .graph .monkey {
+          width: 67%; } }
+      @media screen and (max-width: 52.5rem) {
+        #we-share .content .graph .monkey {
+          width: 77%; } }
       @media screen and (max-width: 30rem) {
-        #we-share .video-share .video .borde .borde-video {
-          max-width: 92%;
-          margin-top: -109%;
-          left: 0%; } }
-      @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-        #we-share .video-share .video .borde .borde-video {
-          max-width: 80%;
-          left: -1%;
-          margin-top: -75%; } }
-  #we-share .video-share .video .icon-play {
-    position: absolute;
-    margin-top: -59%;
-    left: 42%; }
+        #we-share .content .graph .monkey {
+          width: 80%; } }
+  #we-share .content .text {
+    margin: 0 auto;
+    width: 55%; }
     @media screen and (max-width: 30rem) {
-      #we-share .video-share .video .icon-play {
-        width: 16%;
-        margin-top: -93%;
-        left: 42%; } }
-    @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon-play {
-        margin-top: -63%;
-        left: 39%; } }
-    @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon-play {
-        margin-top: -64%;
-        left: 38%;
-        width: 23%; } }
-  #we-share .video-share .video .icon-left {
-    position: absolute;
-    margin-top: -56%;
-    left: 92%; }
-    @media screen and (max-width: 30rem) {
-      #we-share .video-share .video .icon-left {
-        display: none; } }
-    @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon-left {
-        left: 88%; } }
-    @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon-left {
-        left: 88%;
-        width: 12%; } }
-  #we-share .video-share .video .icon-right {
-    position: absolute;
-    margin-top: -56%;
-    left: 2%; }
-    @media screen and (max-width: 30rem) {
-      #we-share .video-share .video .icon-right {
-        display: none; } }
-    @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon-right {
-        left: 0%; } }
-    @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon-right {
-        left: -1%;
-        width: 12%; } }
-  #we-share .video-share .video .icon-pause {
-    position: absolute;
-    margin-top: -32%;
-    left: 10%; }
-    @media screen and (max-width: 30rem) {
-      #we-share .video-share .video .icon-pause {
-        width: 13%;
-        margin-top: -62%;
-        left: 3%; } }
-    @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon-pause {
-        margin-top: -34%;
-        left: 14%; } }
-    @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon-pause {
-        left: 15%;
-        width: 11%; } }
-  #we-share .video-share .video .icon-play-green {
-    position: absolute;
-    margin-top: -32%;
-    left: 14%; }
-    @media screen and (max-width: 30rem) {
-      #we-share .video-share .video .icon-play-green {
-        width: 13%;
-        margin-top: -62%;
-        left: 11%; } }
-    @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon-play-green {
-        margin-top: -34%;
-        left: 9%; } }
-    @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon-play-green {
-        left: 9%;
-        width: 11%; } }
-  #we-share .video-share .video .icon-volume {
-    position: absolute;
-    margin-top: -32%;
-    left: 80%; }
-    @media screen and (max-width: 30rem) {
-      #we-share .video-share .video .icon-volume {
-        width: 22%;
-        margin-top: -63%;
-        left: 77%; } }
-    @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon-volume {
-        margin-top: -35%;
-        left: 79%; } }
-    @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-      #we-share .video-share .video .icon-volume {
-        left: 77%;
-        width: 20%; } }
-
-#we-share .content-share {
-  margin: 0 auto;
-  width: 100%;
-  position: absolute;
-  margin-top: -126%; }
-  @media screen and (max-width: 30rem) {
-    #we-share .content-share {
-      margin-top: -375%; } }
-  @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-    #we-share .content-share {
-      margin-top: -155%; } }
-  @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-    #we-share .content-share {
-      margin-top: -175%; } }
-  #we-share .content-share .content {
-    margin-left: 23%; }
-    @media screen and (max-width: 30rem) {
-      #we-share .content-share .content {
-        margin-left: 18%; } }
-    #we-share .content-share .content .text .title p {
+      #we-share .content .text {
+        width: 81%; } }
+    #we-share .content .text .title h1 {
       color: #F25F5C;
-      font-size: 2rem;
-      width: 80%;
-      margin-top: 10%;
-      margin-left: -3%;
-      font-weight: bold; }
+      font-size: 6.5rem; }
+      @media screen and (min-width: 90rem) {
+        #we-share .content .text .title h1 {
+          font-size: 8rem; } }
+      @media screen and (max-width: 52.5rem) {
+        #we-share .content .text .title h1 {
+          font-size: 6rem; } }
+      @media screen and (max-width: 45rem) {
+        #we-share .content .text .title h1 {
+          font-size: 4rem; } }
       @media screen and (max-width: 30rem) {
-        #we-share .content-share .content .text .title p {
-          font-size: 1.5rem;
-          margin-top: 10%;
-          width: 100%; } }
-      @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-        #we-share .content-share .content .text .title p {
-          font-size: 1.5rem; } }
-      @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-        #we-share .content-share .content .text .title p {
+        #we-share .content .text .title h1 {
+          font-size: 5rem; } }
+      @media screen and (max-width: 25rem) {
+        #we-share .content .text .title h1 {
+          font-size: 3.5rem; } }
+    #we-share .content .text .subtitle {
+      padding-top: 3rem; }
+      @media screen and (max-width: 45rem) {
+        #we-share .content .text .subtitle {
+          padding-top: 2rem; } }
+      #we-share .content .text .subtitle p {
+        font-size: 1.5rem;
+        font-weight: bold; }
+        @media screen and (min-width: 90rem) {
+          #we-share .content .text .subtitle p {
+            font-size: 2rem; } }
+        @media screen and (max-width: 52.5rem) {
+          #we-share .content .text .subtitle p {
+            font-size: 1.3rem; } }
+        @media screen and (max-width: 45rem) {
+          #we-share .content .text .subtitle p {
+            font-size: 1rem; } }
+        @media screen and (max-width: 30rem) {
+          #we-share .content .text .subtitle p {
+            font-size: 1.5rem; } }
+        @media screen and (max-width: 25rem) {
+          #we-share .content .text .subtitle p {
+            font-size: 1rem; } }
+    #we-share .content .text .text-content p {
+      font-size: 1.5rem; }
+      @media screen and (min-width: 90rem) {
+        #we-share .content .text .text-content p {
+          font-size: 2rem; } }
+      @media screen and (max-width: 52.5rem) {
+        #we-share .content .text .text-content p {
           font-size: 1.3rem; } }
-    #we-share .content-share .content .text .text-content p {
-      font-size: 1.5rem;
-      margin-top: -17%;
-      margin-left: 32%;
-      width: 45%; }
-      @media screen and (max-width: 30rem) {
-        #we-share .content-share .content .text .text-content p {
-          font-size: 1rem;
-          margin-top: -1%;
-          margin-left: -9%;
-          width: 100%; } }
-      @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-        #we-share .content-share .content .text .text-content p {
-          font-size: 1.3rem; } }
-      @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-        #we-share .content-share .content .text .text-content p {
+      @media screen and (max-width: 45rem) {
+        #we-share .content .text .text-content p {
           font-size: 1rem; } }
-    #we-share .content-share .content .text .figure {
-      margin-top: 1%;
-      margin-left: -3%; }
       @media screen and (max-width: 30rem) {
-        #we-share .content-share .content .text .figure {
-          margin-top: 0%;
-          margin-left: -5%; } }
-      @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-        #we-share .content-share .content .text .figure {
-          margin-top: 0%;
-          margin-left: -4%; } }
-      @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-        #we-share .content-share .content .text .figure {
-          margin-top: -18%; } }
-      @media screen and (max-width: 65.625rem) and (min-width: 30rem) {
-        #we-share .content-share .content .text .figure .icon {
-          width: 30%; } }
-      @media screen and (max-width: 43.75rem) and (min-width: 30rem) {
-        #we-share .content-share .content .text .figure .icon {
-          width: 32%; } }
+        #we-share .content .text .text-content p {
+          font-size: 1.5rem; } }
+      @media screen and (max-width: 25rem) {
+        #we-share .content .text .text-content p {
+          font-size: 1rem; } }
+    #we-share .content .text .title-video {
+      padding-top: 6rem; }
+      @media screen and (max-width: 45rem) {
+        #we-share .content .text .title-video {
+          padding-top: 3rem; } }
+      #we-share .content .text .title-video h1 {
+        font-size: 5rem;
+        margin: 0 auto; }
+        @media screen and (min-width: 90rem) {
+          #we-share .content .text .title-video h1 {
+            font-size: 6rem; } }
+        @media screen and (max-width: 52.5rem) {
+          #we-share .content .text .title-video h1 {
+            font-size: 4rem; } }
+        @media screen and (max-width: 45rem) {
+          #we-share .content .text .title-video h1 {
+            font-size: 3rem; } }
+        @media screen and (max-width: 25rem) {
+          #we-share .content .text .title-video h1 {
+            font-size: 2.5rem; } }
+
+#we-share .video {
+  background-image: url("../img/we-share/banano_fondo_video.svg");
+  background-repeat: no-repeat;
+  background-size: 103%;
+  padding-bottom: 15rem; }
+  @media screen and (min-width: 90rem) {
+    #we-share .video {
+      padding-bottom: 22rem; } }
+  @media screen and (max-width: 64rem) {
+    #we-share .video {
+      padding-bottom: 7rem; } }
+  @media screen and (max-width: 52.5rem) {
+    #we-share .video {
+      padding-bottom: 5rem; } }
+  #we-share .video .video-content {
+    margin: 0 auto;
+    position: relative; }
+    #we-share .video .video-content .border {
+      display: block;
+      margin: 0 auto;
+      max-width: 88%;
+      padding-top: 2%; }
+    #we-share .video .video-content .bottom-video img {
+      position: absolute; }
+    #we-share .video .video-content .bottom-video .icon-play {
+      top: 32%;
+      left: 42%;
+      width: 17%; }
+    #we-share .video .video-content .bottom-video .icon-left {
+      top: 43%;
+      left: 93%;
+      width: 7%; }
+      @media screen and (min-width: 90rem) {
+        #we-share .video .video-content .bottom-video .icon-left {
+          left: 90%; } }
+    #we-share .video .video-content .bottom-video .icon-right {
+      top: 43%;
+      width: 7%; }
+      @media screen and (min-width: 90rem) {
+        #we-share .video .video-content .bottom-video .icon-right {
+          left: 4%; } }
+      @media screen and (max-width: 64rem) {
+        #we-share .video .video-content .bottom-video .icon-right {
+          left: 1%; } }
+    #we-share .video .video-content .bottom-video .icon-pause {
+      width: 7%;
+      top: 94%;
+      left: 6%; }
+      @media screen and (min-width: 90rem) {
+        #we-share .video .video-content .bottom-video .icon-pause {
+          left: 13%; } }
+      @media screen and (max-width: 64rem) {
+        #we-share .video .video-content .bottom-video .icon-pause {
+          left: 6%; } }
+    #we-share .video .video-content .bottom-video .icon-play-green {
+      width: 7%;
+      top: 94%;
+      left: 10%; }
+      @media screen and (min-width: 90rem) {
+        #we-share .video .video-content .bottom-video .icon-play-green {
+          left: 17%; } }
+      @media screen and (max-width: 64rem) {
+        #we-share .video .video-content .bottom-video .icon-play-green {
+          left: 10%; } }
+    #we-share .video .video-content .bottom-video .icon-volume {
+      top: 94%;
+      left: 84%;
+      width: 13%; }
+      @media screen and (min-width: 90rem) {
+        #we-share .video .video-content .bottom-video .icon-volume {
+          left: 76%; } }
+      @media screen and (max-width: 64rem) {
+        #we-share .video .video-content .bottom-video .icon-volume {
+          left: 83%; } }
+
+#we-share .share-content .content {
+  margin: 0 auto;
+  width: 53%;
+  margin-bottom: -6rem; }
+  @media screen and (max-width: 52.5rem) {
+    #we-share .share-content .content {
+      width: 63%;
+      margin-bottom: -6rem; } }
+  @media screen and (max-width: 45rem) {
+    #we-share .share-content .content {
+      margin-bottom: -5rem; } }
+  @media screen and (max-width: 37.5rem) {
+    #we-share .share-content .content {
+      margin-bottom: 3rem; } }
+  @media screen and (max-width: 30rem) {
+    #we-share .share-content .content {
+      width: 84%; } }
+  #we-share .share-content .content .title p {
+    color: #F25F5C;
+    font-size: 2rem;
+    width: 93%;
+    font-weight: bold; }
+    @media screen and (min-width: 90rem) {
+      #we-share .share-content .content .title p {
+        font-size: 2.5rem;
+        width: 98%; } }
+    @media screen and (max-width: 52.5rem) {
+      #we-share .share-content .content .title p {
+        font-size: 1.7rem;
+        width: 98%; } }
+    @media screen and (max-width: 30rem) {
+      #we-share .share-content .content .title p {
+        font-size: 2rem; } }
+    @media screen and (max-width: 25rem) {
+      #we-share .share-content .content .title p {
+        font-size: 1.7rem; } }
+  #we-share .share-content .content .text-content {
+    position: relative;
+    left: 19rem;
+    top: -10rem;
+    width: 54%; }
+    @media screen and (min-width: 90rem) {
+      #we-share .share-content .content .text-content {
+        left: 27rem;
+        top: -16rem;
+        width: 57%; } }
+    @media screen and (max-width: 52.5rem) {
+      #we-share .share-content .content .text-content {
+        left: 15rem;
+        top: -9rem; } }
+    @media screen and (max-width: 37.5rem) {
+      #we-share .share-content .content .text-content {
+        left: 0rem;
+        top: 0rem;
+        width: 100%; } }
+    #we-share .share-content .content .text-content p {
+      font-size: 1.5rem; }
+      @media screen and (min-width: 90rem) {
+        #we-share .share-content .content .text-content p {
+          font-size: 2rem; } }
+      @media screen and (max-width: 52.5rem) {
+        #we-share .share-content .content .text-content p {
+          font-size: 1.3rem; } }
       @media screen and (max-width: 30rem) {
-        #we-share .content-share .content .text .figure .icon {
-          width: 71%; } }
+        #we-share .share-content .content .text-content p {
+          font-size: 1.5rem; } }
+      @media screen and (max-width: 25rem) {
+        #we-share .share-content .content .text-content p {
+          font-size: 1.2rem; } }
+  @media screen and (min-width: 90rem) {
+    #we-share .share-content .content .figure .icon {
+      width: 58%; } }
+  @media screen and (max-width: 52.5rem) {
+    #we-share .share-content .content .figure .icon {
+      width: 46%; } }
+  @media screen and (max-width: 37.5rem) {
+    #we-share .share-content .content .figure .icon {
+      width: 40%;
+      margin-left: 5rem; } }
+  @media screen and (max-width: 30rem) {
+    #we-share .share-content .content .figure .icon {
+      width: 70%;
+      margin-left: 3rem; } }
 
 * {
   box-sizing: border-box; }

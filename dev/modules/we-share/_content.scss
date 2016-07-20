@@ -1,0 +1,134 @@
+.content{
+  margin-bottom: 1rem;
+  @media screen and (max-width: $tablet-medium) {
+    margin-bottom: 0rem;
+  }
+  .graph {
+    position: relative;
+    padding-left: 9rem;
+    @media screen and (min-width: $laptop-medium) {
+      padding-left: 12rem;
+    }
+    @media screen and (max-width: $laptop-small) {
+      padding-left: 7rem;
+    }
+    @media screen and (max-width: $tablet-large) {
+      padding-left: 6rem;
+    }
+    @media screen and (max-width: $mobile-large) {
+      padding-left: 1rem;
+    }
+    .monkey {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      @media screen and (min-width: $laptop-medium) {
+        width: 81%;
+      }
+      @media screen and (max-width: $laptop-small) {
+        width: 67%;
+      }
+      @media screen and (max-width: $tablet-large) {
+        width: 77%;
+      }
+      @media screen and (max-width: $mobile-large) {
+        width: 80%;
+      }
+    }
+  }
+  .text{
+    margin: 0 auto;
+    width: 55%;
+    @media screen and (max-width: $mobile-large) {
+      width: 81%;
+    }
+    .title{
+      h1{
+        color: $red;
+        font-size: 6.5rem;
+        @media screen and (min-width: $laptop-medium) {
+          font-size: 8rem;
+        }
+        @media screen and (max-width: $tablet-large) {
+          font-size: 6rem;
+        }
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 4rem;
+        }
+        @media screen and (max-width: $mobile-large) {
+          font-size: 5rem;
+        }
+        @media screen and (max-width: $mobile-medium) {
+          font-size: 3.5rem;
+        }
+      }
+    }
+    .subtitle{
+      padding-top: 3rem;
+      @media screen and (max-width: $tablet-medium) {
+        padding-top: 2rem;
+      }
+      p{
+        font-size: 1.5rem;
+        font-weight: bold;
+        @media screen and (min-width: $laptop-medium) {
+          font-size: 2rem;
+        }
+        @media screen and (max-width: $tablet-large) {
+          font-size: 1.3rem;
+        }
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: $mobile-large) {
+          font-size: 1.5rem;
+        }
+        @media screen and (max-width: $mobile-medium) {
+          font-size: 1rem;
+        }
+      }
+    }
+    .text-content{
+      p{
+        font-size: 1.5rem;
+        @media screen and (min-width: $laptop-medium) {
+          font-size: 2rem;
+        }
+        @media screen and (max-width: $tablet-large) {
+          font-size: 1.3rem;
+        }
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: $mobile-large) {
+          font-size: 1.5rem;
+        }
+        @media screen and (max-width: $mobile-medium) {
+          font-size: 1rem;
+        }
+      }
+    }
+    .title-video{
+      padding-top: 6rem;
+      @media screen and (max-width: $tablet-medium) {
+        padding-top: 3rem;
+      }
+      h1{
+        font-size: 5rem;
+        margin: 0 auto;
+        @media screen and (min-width: $laptop-medium) {
+          font-size: 6rem;
+        }
+        @media screen and (max-width: $tablet-large) {
+          font-size: 4rem;
+        }
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 3rem;
+        }
+        @media screen and (max-width: $mobile-medium) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}

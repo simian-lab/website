@@ -1,0 +1,103 @@
+.video{
+  background-image: url("../img/we-share/banano_fondo_video.svg");
+  background-repeat: no-repeat;
+  background-size: 103%;
+  padding-bottom: 15rem;
+  @media screen and (min-width: $laptop-medium) {
+    padding-bottom: 22rem;
+  }
+  @media screen and (max-width: $laptop-small) {
+    padding-bottom: 7rem;
+  }
+  @media screen and (max-width: $tablet-large) {
+    padding-bottom: 5rem;
+  }
+
+  .video-content{
+    margin: 0 auto;
+    position: relative;
+    .border {
+      display: block;
+      margin: 0 auto;
+      max-width: 88%;
+      padding-top: 2%;
+      @media screen and (min-width: $laptop-large) {
+        padding-top: 7%;
+      }
+    }
+    .bottom-video{
+      img {
+        position: absolute;
+      }
+      .icon-play {
+        top: 32%;
+        left: 42%;
+        width: 17%;
+        @media screen and (min-width: $laptop-large) {
+          top: 36%;
+        }
+      }
+
+      .icon-left {
+        top: 43%;
+        left: 93%;
+        width: 7%;
+        @media screen and (min-width: $laptop-large) {
+          left: 85%;;
+          width: 17%;
+        }
+      }
+
+      .icon-right {
+        top: 43%;
+        width: 7%;
+        @media screen and (min-width: $laptop-large) {
+          left: 4%;
+          width: 13%;
+        }
+        @media screen and (max-width: $laptop-small) {
+          left: 1%;
+        }
+      }
+
+      .icon-pause {
+        width: 7%;
+        top: 94%;
+        left: 6%;
+        @media screen and (min-width: $laptop-large) {
+          left: 13%;
+          width: 13%;
+        }
+        @media screen and (max-width: $laptop-small) {
+          left: 6%;
+        }
+      }
+
+      .icon-play-green {
+        width: 7%;
+        top: 94%;
+        left: 10%;
+        @media screen and (min-width: $laptop-large) {
+          left: 20%;
+          width: 13%;
+        }
+        @media screen and (max-width: $laptop-small) {
+          left: 10%;
+        }
+      }
+
+      .icon-volume {
+        top: 94%;
+        left: 84%;
+        width: 13%;
+        @media screen and (min-width: $laptop-large) {
+          left: 71%;
+          width: 22%;
+        }
+        @media screen and (max-width: $laptop-small) {
+          left: 83%;
+        }
+      }
+    }
+  }
+}
