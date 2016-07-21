@@ -28,10 +28,14 @@
     margin-bottom: -52rem;
   }
 
-  .text{
+  .text {
     text-align: center;
     padding-top: 5rem;
-    p{
+    @media screen and (max-width: $tablet-large) {
+      padding-top: 3rem;
+    }
+
+    p {
       font-size: 5rem;
       @media screen and (min-width: $laptop-medium) {
         font-size: 6rem;
@@ -52,7 +56,8 @@
         font-size: 2rem;
       }
     }
-    h1{
+
+    h1 {
       color: $red;
       font-size: 10.5rem;
       @media screen and (min-width: $laptop-medium) {

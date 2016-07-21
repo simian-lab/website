@@ -17,6 +17,7 @@
       width: 84%;
     }
     .title {
+
       p {
         color: $red;
         font-size: 2rem;
@@ -45,8 +46,8 @@
       top: -10rem;
       width: 54%;
       @media screen and (min-width: $laptop-medium) {
-        left: 27rem;
-        top: -16rem;
+        left: 19rem;
+        top: -10rem;
         width: 57%;
       }
       @media screen and (max-width: $tablet-large) {
@@ -58,6 +59,7 @@
         top: 0rem;
         width: 100%;
       }
+
       p {
         font-size: 1.5rem;
         @media screen and (min-width: $laptop-medium) {
@@ -76,10 +78,8 @@
     }
 
     .figure {
+
       .icon {
-        @media screen and (min-width: $laptop-medium) {
-          width: 58%;
-        }
         @media screen and (max-width: $tablet-large) {
           width: 46%;
         }

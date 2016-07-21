@@ -13,28 +13,38 @@
     padding-bottom: 5rem;
   }
 
-  .video-content{
+  .video-content {
     margin: 0 auto;
     position: relative;
+
     .border {
       display: block;
       margin: 0 auto;
       max-width: 88%;
       padding-top: 2%;
-      @media screen and (min-width: $laptop-large) {
+      @media screen and (min-width: $laptop-large) and (max-width: 117.500em){
         padding-top: 7%;
       }
+      @media screen and (min-width: 117.500em) {
+        padding-top: 9%;
+      }
     }
-    .bottom-video{
+
+    .bottom-video {
+
       img {
         position: absolute;
       }
+
       .icon-play {
         top: 32%;
         left: 42%;
         width: 17%;
-        @media screen and (min-width: $laptop-large) {
-          top: 36%;
+        @media screen and (min-width: $laptop-large) and (max-width: 117.500em) {
+          width: 15%;
+        }
+        @media screen and (min-width: 117.500em) {
+          top: 40%;
         }
       }
 
@@ -42,18 +52,32 @@
         top: 43%;
         left: 93%;
         width: 7%;
-        @media screen and (min-width: $laptop-large) {
-          left: 85%;;
-          width: 17%;
+        @media screen and (min-width: 117.500em) {
+          left: 79%;
+          top: 51%;
+        }
+        @media screen and (min-width: $laptop-large) and (max-width: 117.500em) {
+          left: 81%;
+          width: 8%;
+        }
+        @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
+          left: 86%;
         }
       }
 
       .icon-right {
         top: 43%;
         width: 7%;
-        @media screen and (min-width: $laptop-large) {
-          left: 4%;
-          width: 13%;
+        @media screen and (min-width: 117.500em) {
+          left: 14%;
+          top: 51%;
+        }
+        @media screen and (min-width: $laptop-large) and (max-width: 117.500em) {
+          left: 10%;
+          width: 8%;
+        }
+        @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large){
+          left: 8%;
         }
         @media screen and (max-width: $laptop-small) {
           left: 1%;
@@ -64,9 +88,16 @@
         width: 7%;
         top: 94%;
         left: 6%;
-        @media screen and (min-width: $laptop-large) {
-          left: 13%;
-          width: 13%;
+        @media screen and (min-width: 117.500em) {
+          left: 21%;
+          top: 95%;
+        }
+        @media screen and (min-width: $laptop-large) and (max-width: 117.500em)  {
+          left: 17%;
+          width: 8%;
+        }
+        @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large){
+          left: 14%;
         }
         @media screen and (max-width: $laptop-small) {
           left: 6%;
@@ -77,9 +108,16 @@
         width: 7%;
         top: 94%;
         left: 10%;
-        @media screen and (min-width: $laptop-large) {
-          left: 20%;
-          width: 13%;
+        @media screen and (min-width: 117.500em) {
+          left: 26%;
+          top: 95%;
+        }
+        @media screen and (min-width: $laptop-large) and (max-width: 117.500em){
+          left: 22%;
+          width: 8%;
+        }
+        @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large){
+          left: 18%;
         }
         @media screen and (max-width: $laptop-small) {
           left: 10%;
@@ -90,9 +128,15 @@
         top: 94%;
         left: 84%;
         width: 13%;
-        @media screen and (min-width: $laptop-large) {
+        @media screen and (min-width: 117.500em) {
+          left: 68%;
+        }
+        @media screen and (min-width: $laptop-large) and (max-width: 117.500em){
           left: 71%;
-          width: 22%;
+          width: 13%;
+        }
+        @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
+          left: 76%;
         }
         @media screen and (max-width: $laptop-small) {
           left: 83%;
