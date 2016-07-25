@@ -1,0 +1,83 @@
+.design-do {
+  background-image: url("../img/we-do/fondo_que_hacemos-01.svg");
+  background-repeat: no-repeat;
+  background-size: 103%;
+  margin-top: -13%;
+
+  @media screen and (max-width: $mobile-large) {
+    margin-top: 10%;
+  }
+
+  .brush {
+    margin: 0 auto;
+    width: 25rem;
+    @media screen and (max-width: $laptop-small) {
+      width: inherit;
+    }
+
+    .brush-icon {
+      margin-top: 37%;
+
+      @media screen and (min-width: $laptop-large) {
+        margin-top: 90%;
+      }
+      @media screen and (min-width: $laptop-medium) {
+        margin-top: 60%;
+      }
+      @media screen and (max-width: $laptop-small) {
+        margin-top: 9%;
+        margin-left: 32%;
+        width: 34%;
+      }
+      @media screen and (max-width: $mobile-large) {
+        margin-top: -3%;
+        margin-left: 20%;
+        width: 60%;
+      }
+    }
+  }
+
+  .text-design {
+    text-align: center;
+    margin: 0 auto;
+    width: 37%;
+    @media screen and (max-width: $mobile-large) {
+      width: 59%;
+    }
+
+    h1 {
+        color: $yellow;
+        font-size: 4rem;
+        @media screen and (max-width: $laptop-small) {
+          font-size: 3rem;
+        }
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 2rem;
+        }
+        @media screen and (max-width: $mobile-large) {
+          font-size: 3rem;
+        }
+      }
+
+    p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      @media screen and (max-width: $laptop-small) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: $tablet-medium) {
+        font-size: 0.7rem;
+      }
+      @media screen and (max-width: $mobile-large) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: $mobile-medium) {
+        width: 122%;
+        margin-left: -10%;
+      }
+      @media screen and (max-width: $mobile-small) {
+          font-size: 0.9rem;
+      }
+    }
+  }
+}

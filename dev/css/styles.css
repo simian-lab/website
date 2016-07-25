@@ -1456,6 +1456,557 @@ footer .footer-end {
       width: 70%;
       margin-left: 3rem; } }
 
+#we-do .header-do .text-header {
+  text-align: center; }
+  #we-do .header-do .text-header .title p {
+    font-size: 5rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .header-do .text-header .title p {
+        font-size: 4rem; } }
+    @media screen and (max-width: 45rem) {
+      #we-do .header-do .text-header .title p {
+        font-size: 3rem; } }
+    @media screen and (max-width: 30rem) {
+      #we-do .header-do .text-header .title p {
+        font-size: 4rem; } }
+  #we-do .header-do .text-header .subtitle h1 {
+    color: #1DC0B2;
+    font-size: 10rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .header-do .text-header .subtitle h1 {
+        font-size: 7rem; } }
+    @media screen and (max-width: 45rem) {
+      #we-do .header-do .text-header .subtitle h1 {
+        font-size: 5rem; } }
+    @media screen and (max-width: 30rem) {
+      #we-do .header-do .text-header .subtitle h1 {
+        font-size: 7rem; } }
+
+#we-do .header-do .graph {
+  margin: 0 auto;
+  width: 42rem; }
+  @media screen and (max-width: 64rem) {
+    #we-do .header-do .graph {
+      width: 100%; } }
+  @media screen and (max-width: 30rem) {
+    #we-do .header-do .graph {
+      display: none; } }
+  #we-do .header-do .graph .line {
+    margin-top: -13rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .header-do .graph .line {
+        margin-top: -9.5rem;
+        margin-left: 20%;
+        width: 61%; } }
+    @media screen and (max-width: 45rem) {
+      #we-do .header-do .graph .line {
+        margin-top: -6.5rem; } }
+
+@media screen and (max-width: 30rem) {
+  #we-do .header-do .icon-do {
+    padding-top: 1rem; } }
+
+#we-do .header-do .icon-do .idea {
+  margin: 0 auto;
+  width: 64rem; }
+  @media screen and (max-width: 64rem) {
+    #we-do .header-do .icon-do .idea {
+      width: inherit; } }
+  @media screen and (max-width: 30rem) {
+    #we-do .header-do .icon-do .idea {
+      margin-bottom: 50%; } }
+  #we-do .header-do .icon-do .idea .idea-icon {
+    margin-top: -9%; }
+    @media screen and (max-width: 64rem) {
+      #we-do .header-do .icon-do .idea .idea-icon {
+        margin-top: -8%;
+        width: 34%;
+        margin-left: 3rem; } }
+    @media screen and (max-width: 30rem) {
+      #we-do .header-do .icon-do .idea .idea-icon {
+        width: 60%;
+        margin-left: 19%;
+        margin-top: inherit; } }
+
+#we-do .header-do .icon-do .banana {
+  margin: 0 auto;
+  width: 0rem; }
+  @media screen and (max-width: 64rem) {
+    #we-do .header-do .icon-do .banana {
+      width: inherit; } }
+  @media screen and (max-width: 45rem) {
+    #we-do .header-do .icon-do .banana {
+      margin-top: -1%; } }
+  @media screen and (max-width: 30rem) {
+    #we-do .header-do .icon-do .banana {
+      margin-top: inherit; } }
+  #we-do .header-do .icon-do .banana .banana-icon {
+    margin-top: -28.6rem;
+    margin-left: 6rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .header-do .icon-do .banana .banana-icon {
+        margin-top: -38%;
+        margin-left: 59%;
+        width: 34%; } }
+    @media screen and (max-width: 30rem) {
+      #we-do .header-do .icon-do .banana .banana-icon {
+        margin-top: inherit;
+        margin-left: 20%;
+        width: 60%; } }
+
+#we-do .header-do .text-content {
+  margin: 0 auto;
+  width: 65rem; }
+  @media screen and (max-width: 64rem) {
+    #we-do .header-do .text-content {
+      width: inherit; } }
+  #we-do .header-do .text-content .text-work {
+    text-align: center;
+    width: 28rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .header-do .text-content .text-work {
+        width: 46%; } }
+    @media screen and (max-width: 30rem) {
+      #we-do .header-do .text-content .text-work {
+        width: 66%;
+        margin-top: -121%;
+        margin-left: 16%;
+        margin-bottom: 126%; } }
+    @media screen and (max-width: 25rem) {
+      #we-do .header-do .text-content .text-work {
+        margin-left: 12%; } }
+    @media screen and (max-width: 22.5rem) {
+      #we-do .header-do .text-content .text-work {
+        margin-left: 9%;
+        margin-bottom: 135%; } }
+    #we-do .header-do .text-content .text-work h1 {
+      color: #1DC0B2;
+      font-size: 4rem; }
+      @media screen and (max-width: 64rem) {
+        #we-do .header-do .text-content .text-work h1 {
+          font-size: 3rem; } }
+      @media screen and (max-width: 45rem) {
+        #we-do .header-do .text-content .text-work h1 {
+          font-size: 2rem; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .header-do .text-content .text-work h1 {
+          font-size: 3rem; } }
+      @media screen and (max-width: 25rem) {
+        #we-do .header-do .text-content .text-work h1 {
+          width: 113%; } }
+      @media screen and (max-width: 22.5rem) {
+        #we-do .header-do .text-content .text-work h1 {
+          width: 124%; } }
+    #we-do .header-do .text-content .text-work p {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      margin-left: 2rem;
+      width: 24rem; }
+      @media screen and (max-width: 64rem) {
+        #we-do .header-do .text-content .text-work p {
+          margin-top: 1rem;
+          font-size: 1rem;
+          margin-left: 14%;
+          width: 74%; } }
+      @media screen and (max-width: 45rem) {
+        #we-do .header-do .text-content .text-work p {
+          font-size: 0.7rem; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .header-do .text-content .text-work p {
+          margin-top: 1rem;
+          font-size: 1rem;
+          margin-left: -1%;
+          width: 105%; } }
+      @media screen and (max-width: 25rem) {
+        #we-do .header-do .text-content .text-work p {
+          margin-left: -4%;
+          width: 122%; } }
+      @media screen and (max-width: 22.5rem) {
+        #we-do .header-do .text-content .text-work p {
+          font-size: 0.9rem;
+          margin-left: 1%;
+          width: 122%; } }
+  #we-do .header-do .text-content .text-analize {
+    text-align: center;
+    width: 22rem;
+    margin-top: -14rem;
+    margin-left: 40rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .header-do .text-content .text-analize {
+        width: 31%;
+        margin-top: -11rem;
+        margin-left: 61%; } }
+    @media screen and (max-width: 52.5rem) {
+      #we-do .header-do .text-content .text-analize {
+        margin-top: -13rem; } }
+    @media screen and (max-width: 45rem) {
+      #we-do .header-do .text-content .text-analize {
+        margin-top: -8rem; } }
+    @media screen and (max-width: 37.5rem) {
+      #we-do .header-do .text-content .text-analize {
+        margin-top: -10rem; } }
+    @media screen and (max-width: 30rem) {
+      #we-do .header-do .text-content .text-analize {
+        margin-left: 16%;
+        width: 66%;
+        margin-top: -14rem; } }
+    @media screen and (max-width: 25rem) {
+      #we-do .header-do .text-content .text-analize {
+        margin-left: 12%; } }
+    #we-do .header-do .text-content .text-analize h1 {
+      color: #00A1C1;
+      font-size: 4rem; }
+      @media screen and (max-width: 64rem) {
+        #we-do .header-do .text-content .text-analize h1 {
+          font-size: 3rem;
+          width: 104%; } }
+      @media screen and (max-width: 45rem) {
+        #we-do .header-do .text-content .text-analize h1 {
+          font-size: 2rem; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .header-do .text-content .text-analize h1 {
+          font-size: 3rem;
+          width: 104%; } }
+      @media screen and (max-width: 25rem) {
+        #we-do .header-do .text-content .text-analize h1 {
+          width: 113%; } }
+    #we-do .header-do .text-content .text-analize p {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      width: 24rem;
+      margin-left: -1rem; }
+      @media screen and (max-width: 64rem) {
+        #we-do .header-do .text-content .text-analize p {
+          font-size: 1rem;
+          margin-left: 0;
+          width: initial; } }
+      @media screen and (max-width: 45rem) {
+        #we-do .header-do .text-content .text-analize p {
+          font-size: 0.7rem; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .header-do .text-content .text-analize p {
+          font-size: 1rem;
+          margin-left: -1%;
+          width: 105%; } }
+      @media screen and (max-width: 25rem) {
+        #we-do .header-do .text-content .text-analize p {
+          margin-left: -4%;
+          width: 122%; } }
+      @media screen and (max-width: 22.5rem) {
+        #we-do .header-do .text-content .text-analize p {
+          font-size: 0.9rem; } }
+
+#we-do .design-do {
+  background-image: url("../img/we-do/fondo_que_hacemos-01.svg");
+  background-repeat: no-repeat;
+  background-size: 103%;
+  margin-top: -13%; }
+  @media screen and (max-width: 30rem) {
+    #we-do .design-do {
+      margin-top: 10%; } }
+  #we-do .design-do .brush {
+    margin: 0 auto;
+    width: 25rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .design-do .brush {
+        width: inherit; } }
+    #we-do .design-do .brush .brush-icon {
+      margin-top: 37%; }
+      @media screen and (min-width: 100rem) {
+        #we-do .design-do .brush .brush-icon {
+          margin-top: 90%; } }
+      @media screen and (min-width: 90rem) {
+        #we-do .design-do .brush .brush-icon {
+          margin-top: 60%; } }
+      @media screen and (max-width: 64rem) {
+        #we-do .design-do .brush .brush-icon {
+          margin-top: 9%;
+          margin-left: 32%;
+          width: 34%; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .design-do .brush .brush-icon {
+          margin-top: -3%;
+          margin-left: 20%;
+          width: 60%; } }
+  #we-do .design-do .text-design {
+    text-align: center;
+    margin: 0 auto;
+    width: 37%; }
+    @media screen and (max-width: 30rem) {
+      #we-do .design-do .text-design {
+        width: 59%; } }
+    #we-do .design-do .text-design h1 {
+      color: #DED96B;
+      font-size: 4rem; }
+      @media screen and (max-width: 64rem) {
+        #we-do .design-do .text-design h1 {
+          font-size: 3rem; } }
+      @media screen and (max-width: 45rem) {
+        #we-do .design-do .text-design h1 {
+          font-size: 2rem; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .design-do .text-design h1 {
+          font-size: 3rem; } }
+    #we-do .design-do .text-design p {
+      font-size: 1.3rem;
+      margin-top: 1rem; }
+      @media screen and (max-width: 64rem) {
+        #we-do .design-do .text-design p {
+          font-size: 1rem; } }
+      @media screen and (max-width: 45rem) {
+        #we-do .design-do .text-design p {
+          font-size: 0.7rem; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .design-do .text-design p {
+          font-size: 1rem; } }
+      @media screen and (max-width: 25rem) {
+        #we-do .design-do .text-design p {
+          width: 122%;
+          margin-left: -10%; } }
+      @media screen and (max-width: 22.5rem) {
+        #we-do .design-do .text-design p {
+          font-size: 0.9rem; } }
+
+@media screen and (max-width: 45rem) {
+  #we-do .finish-do {
+    margin-top: -4rem; } }
+
+#we-do .finish-do .icon-do {
+  margin-top: 8rem; }
+  #we-do .finish-do .icon-do .develop {
+    margin: 0 auto;
+    width: 64rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .finish-do .icon-do .develop {
+        width: inherit; } }
+    @media screen and (max-width: 30rem) {
+      #we-do .finish-do .icon-do .develop {
+        margin-bottom: 118%; } }
+    #we-do .finish-do .icon-do .develop .icon {
+      margin-top: -9%; }
+      @media screen and (max-width: 64rem) {
+        #we-do .finish-do .icon-do .develop .icon {
+          width: 34%;
+          margin-left: 3rem; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .finish-do .icon-do .develop .icon {
+          width: 60%;
+          margin-left: 19%; } }
+  #we-do .finish-do .icon-do .maintenance {
+    margin: 0 auto;
+    width: 0rem;
+    margin-top: -1rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .finish-do .icon-do .maintenance {
+        width: inherit;
+        margin-top: -2%; } }
+    @media screen and (max-width: 30rem) {
+      #we-do .finish-do .icon-do .maintenance {
+        margin-top: inherit; } }
+    #we-do .finish-do .icon-do .maintenance .icon {
+      margin-top: -29.6rem;
+      margin-left: 6rem; }
+      @media screen and (max-width: 64rem) {
+        #we-do .finish-do .icon-do .maintenance .icon {
+          margin-top: -39%;
+          margin-left: 59%;
+          width: 34%; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .finish-do .icon-do .maintenance .icon {
+          margin-top: -28.6rem;
+          margin-left: 20%;
+          width: 60%; } }
+
+#we-do .finish-do .text-content {
+  margin: 0 auto;
+  width: 65rem; }
+  @media screen and (max-width: 64rem) {
+    #we-do .finish-do .text-content {
+      width: inherit; } }
+  #we-do .finish-do .text-content .text-develop {
+    text-align: center;
+    width: 28rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .finish-do .text-content .text-develop {
+        width: 46%; } }
+    @media screen and (max-width: 30rem) {
+      #we-do .finish-do .text-content .text-develop {
+        width: 66%;
+        margin-top: -125%;
+        margin-left: 16%;
+        margin-bottom: 136%; } }
+    @media screen and (max-width: 25rem) {
+      #we-do .finish-do .text-content .text-develop {
+        margin-left: 12%; } }
+    @media screen and (max-width: 22.5rem) {
+      #we-do .finish-do .text-content .text-develop {
+        margin-bottom: 143%; } }
+    #we-do .finish-do .text-content .text-develop h1 {
+      color: #F25F5C;
+      font-size: 4rem; }
+      @media screen and (max-width: 64rem) {
+        #we-do .finish-do .text-content .text-develop h1 {
+          font-size: 3rem; } }
+      @media screen and (max-width: 45rem) {
+        #we-do .finish-do .text-content .text-develop h1 {
+          font-size: 2rem; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .finish-do .text-content .text-develop h1 {
+          font-size: 3rem; } }
+      @media screen and (max-width: 25rem) {
+        #we-do .finish-do .text-content .text-develop h1 {
+          width: 113%; } }
+    #we-do .finish-do .text-content .text-develop p {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      margin-left: 2rem;
+      width: 24rem; }
+      @media screen and (max-width: 64rem) {
+        #we-do .finish-do .text-content .text-develop p {
+          font-size: 1rem;
+          margin-left: 8%;
+          width: 83%; } }
+      @media screen and (max-width: 45rem) {
+        #we-do .finish-do .text-content .text-develop p {
+          font-size: 0.7rem; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .finish-do .text-content .text-develop p {
+          font-size: 1rem;
+          margin-left: -1%;
+          width: 105%; } }
+      @media screen and (max-width: 25rem) {
+        #we-do .finish-do .text-content .text-develop p {
+          margin-left: -7%;
+          width: 133%; } }
+      @media screen and (max-width: 22.5rem) {
+        #we-do .finish-do .text-content .text-develop p {
+          font-size: 0.9rem; } }
+  #we-do .finish-do .text-content .text-maintenance {
+    text-align: center;
+    width: 32rem;
+    margin-top: -16rem;
+    margin-left: 33rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .finish-do .text-content .text-maintenance {
+        width: 31%;
+        margin-top: -12rem;
+        margin-left: 61%; } }
+    @media screen and (max-width: 52.5rem) {
+      #we-do .finish-do .text-content .text-maintenance {
+        margin-top: -14rem; } }
+    @media screen and (max-width: 45rem) {
+      #we-do .finish-do .text-content .text-maintenance {
+        margin-top: -9rem; } }
+    @media screen and (max-width: 37.5rem) {
+      #we-do .finish-do .text-content .text-maintenance {
+        margin-top: -10rem; } }
+    @media screen and (max-width: 30rem) {
+      #we-do .finish-do .text-content .text-maintenance {
+        margin-top: -16rem;
+        width: 66%;
+        margin-left: 16%; } }
+    @media screen and (max-width: 25rem) {
+      #we-do .finish-do .text-content .text-maintenance {
+        margin-left: 12%; } }
+    #we-do .finish-do .text-content .text-maintenance h1 {
+      color: #1DC0B2;
+      font-size: 4rem;
+      width: 31rem; }
+      @media screen and (max-width: 64rem) {
+        #we-do .finish-do .text-content .text-maintenance h1 {
+          font-size: 3rem;
+          width: 114%; } }
+      @media screen and (max-width: 45rem) {
+        #we-do .finish-do .text-content .text-maintenance h1 {
+          font-size: 2rem; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .finish-do .text-content .text-maintenance h1 {
+          font-size: 3rem; } }
+      @media screen and (max-width: 25rem) {
+        #we-do .finish-do .text-content .text-maintenance h1 {
+          width: 113%; } }
+    #we-do .finish-do .text-content .text-maintenance p {
+      margin-top: 1rem;
+      margin-left: 5rem;
+      font-size: 1.3rem;
+      width: 21rem; }
+      @media screen and (max-width: 64rem) {
+        #we-do .finish-do .text-content .text-maintenance p {
+          margin-top: 1rem;
+          margin-left: 0;
+          font-size: 1rem;
+          width: initial; } }
+      @media screen and (max-width: 45rem) {
+        #we-do .finish-do .text-content .text-maintenance p {
+          font-size: 0.7rem; } }
+      @media screen and (max-width: 30rem) {
+        #we-do .finish-do .text-content .text-maintenance p {
+          margin-top: 1rem;
+          margin-left: -1%;
+          font-size: 1rem;
+          width: 105%; } }
+      @media screen and (max-width: 25rem) {
+        #we-do .finish-do .text-content .text-maintenance p {
+          margin-left: -4%;
+          width: 122%; } }
+      @media screen and (max-width: 22.5rem) {
+        #we-do .finish-do .text-content .text-maintenance p {
+          font-size: 0.9rem; } }
+
+#we-do .finish-do .icon-finish {
+  margin: 0 auto;
+  width: 25rem; }
+  @media screen and (max-width: 64rem) {
+    #we-do .finish-do .icon-finish {
+      width: inherit; } }
+  @media screen and (max-width: 30rem) {
+    #we-do .finish-do .icon-finish {
+      padding-top: 8%; } }
+  @media screen and (max-width: 64rem) {
+    #we-do .finish-do .icon-finish .love {
+      width: 34%;
+      margin-left: 34%; } }
+  @media screen and (max-width: 30rem) {
+    #we-do .finish-do .icon-finish .love {
+      width: 60%;
+      margin-left: 20%; } }
+
+#we-do .finish-do .icon-line {
+  margin: 0 auto;
+  width: 40rem; }
+  @media screen and (max-width: 64rem) {
+    #we-do .finish-do .icon-line {
+      margin: 0 auto;
+      width: 91%; } }
+  @media screen and (max-width: 30rem) {
+    #we-do .finish-do .icon-line {
+      display: none; } }
+  #we-do .finish-do .icon-line .line {
+    margin-top: 6rem;
+    position: absolute;
+    width: 43rem;
+    margin-left: -2rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .finish-do .icon-line .line {
+        margin-top: 8%;
+        position: absolute;
+        width: 57%;
+        margin-left: 18%; } }
+
+#we-do .finish-do .text-finish {
+  text-align: center; }
+  #we-do .finish-do .text-finish h1 {
+    font-size: 4rem; }
+    @media screen and (max-width: 64rem) {
+      #we-do .finish-do .text-finish h1 {
+        font-size: 3rem; } }
+    @media screen and (max-width: 45rem) {
+      #we-do .finish-do .text-finish h1 {
+        font-size: 2rem; } }
+    @media screen and (max-width: 30rem) {
+      #we-do .finish-do .text-finish h1 {
+        font-size: 3rem; } }
+
 * {
   box-sizing: border-box; }
 
