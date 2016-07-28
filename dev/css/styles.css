@@ -1885,7 +1885,7 @@ footer .footer-end {
     text-align: center;
     width: 32rem;
     margin-top: -16rem;
-    margin-left: 33rem; }
+    margin-left: 36rem; }
     @media screen and (max-width: 64rem) {
       #we-do .finish-do .text-content .text-maintenance {
         width: 31%;
@@ -2006,6 +2006,186 @@ footer .footer-end {
     @media screen and (max-width: 30rem) {
       #we-do .finish-do .text-finish h1 {
         font-size: 3rem; } }
+
+#projects .header-projects {
+  background-image: url("../img/projects/fondo_rojo_hero.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -3rem; }
+  #projects .header-projects .content-header {
+    position: relative;
+    margin: 0 auto;
+    width: 94%; }
+    #projects .header-projects .content-header .text-header {
+      position: absolute;
+      top: 36%;
+      left: 9%;
+      z-index: 1; }
+      @media screen and (max-width: 64rem) {
+        #projects .header-projects .content-header .text-header {
+          top: 36%;
+          left: 8%; } }
+      #projects .header-projects .content-header .text-header .title p {
+        font-size: 4rem; }
+        @media screen and (max-width: 90rem) {
+          #projects .header-projects .content-header .text-header .title p {
+            font-size: 3rem; } }
+        @media screen and (max-width: 64rem) {
+          #projects .header-projects .content-header .text-header .title p {
+            font-size: 2.5rem; } }
+      #projects .header-projects .content-header .text-header .subtitle p {
+        font-size: 6rem;
+        font-weight: bold; }
+        @media screen and (max-width: 90rem) {
+          #projects .header-projects .content-header .text-header .subtitle p {
+            font-size: 5rem; } }
+        @media screen and (max-width: 64rem) {
+          #projects .header-projects .content-header .text-header .subtitle p {
+            font-size: 4.5rem; } }
+      #projects .header-projects .content-header .text-header h1 {
+        color: #DED96B;
+        font-size: 10rem; }
+        @media screen and (max-width: 90rem) {
+          #projects .header-projects .content-header .text-header h1 {
+            font-size: 9rem; } }
+        @media screen and (max-width: 64rem) {
+          #projects .header-projects .content-header .text-header h1 {
+            font-size: 8.5rem; } }
+    #projects .header-projects .content-header .frame-text {
+      position: absolute;
+      top: 5rem;
+      left: -4rem;
+      width: 60%; }
+    #projects .header-projects .content-header .icon-header {
+      position: relative;
+      top: 2rem;
+      left: 47%;
+      width: 51%; }
+  #projects .header-projects .desktop-projects {
+    margin: 0 auto;
+    width: 100%; }
+    #projects .header-projects .desktop-projects .back .desktop {
+      width: 95%;
+      margin-left: 3%;
+      margin-top: 8rem; }
+    #projects .header-projects .desktop-projects .icon {
+      margin-top: -17%;
+      margin-left: 67%;
+      z-index: 1; }
+      #projects .header-projects .desktop-projects .icon .icon-movile {
+        width: 19%; }
+      #projects .header-projects .desktop-projects .icon .icon-table {
+        width: 44%; }
+    #projects .header-projects .desktop-projects .text {
+      margin: 0 auto;
+      width: 62%;
+      margin-left: 6%;
+      margin-top: -2rem; }
+      #projects .header-projects .desktop-projects .text .title p {
+        color: #F25F5C;
+        font-size: 2rem;
+        font-weight: bold; }
+        @media screen and (max-width: 64rem) {
+          #projects .header-projects .desktop-projects .text .title p {
+            font-size: 1.5rem; } }
+      #projects .header-projects .desktop-projects .text .text-content p {
+        font-size: 1.7rem; }
+        @media screen and (max-width: 64rem) {
+          #projects .header-projects .desktop-projects .text .text-content p {
+            font-size: 1.3rem; } }
+
+#projects .movile-projects {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 7rem;
+  position: relative; }
+  #projects .movile-projects .logo {
+    position: absolute;
+    padding-top: 4rem;
+    margin-left: 6%; }
+    #projects .movile-projects .logo .movile {
+      width: 68%; }
+    #projects .movile-projects .logo .table {
+      width: 68%; }
+  #projects .movile-projects .back {
+    position: relative; }
+    #projects .movile-projects .back .movile {
+      padding-left: 33%;
+      width: 61%; }
+    #projects .movile-projects .back .table {
+      padding-left: 30%;
+      width: 61%; }
+  #projects .movile-projects .quote {
+    margin: auto 0;
+    width: 22%;
+    text-align: center;
+    position: absolute;
+    margin-top: -42%;
+    margin-left: 69%; }
+    #projects .movile-projects .quote .avatar {
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      width: 5.813rem; }
+    #projects .movile-projects .quote p {
+      margin: 0.5rem 0; }
+    #projects .movile-projects .quote .text {
+      color: #50514F;
+      font-family: "quicksandlight";
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      padding: 0 1rem; }
+      @media screen and (max-width: 64rem) {
+        #projects .movile-projects .quote .text {
+          font-size: 1rem; } }
+    #projects .movile-projects .quote .author, #projects .movile-projects .quote .project-country .project {
+      color: #F25F5C; }
+    #projects .movile-projects .quote .author {
+      font-size: 1.3rem; }
+      @media screen and (max-width: 64rem) {
+        #projects .movile-projects .quote .author {
+          font-size: 0.7rem; } }
+    #projects .movile-projects .quote .position {
+      font-size: 1.4rem; }
+      @media screen and (max-width: 64rem) {
+        #projects .movile-projects .quote .position {
+          font-size: 0.8rem; } }
+    #projects .movile-projects .quote .project-country {
+      font-family: "quicksandbold";
+      font-size: 1.4rem; }
+      @media screen and (max-width: 64rem) {
+        #projects .movile-projects .quote .project-country {
+          font-size: 0.8rem; } }
+      #projects .movile-projects .quote .project-country .project {
+        text-transform: uppercase; }
+  #projects .movile-projects .icon-movile {
+    margin-left: 70%;
+    margin-top: -5rem; }
+    #projects .movile-projects .icon-movile .icon-android {
+      width: 30%; }
+    #projects .movile-projects .icon-movile .icon-ios {
+      width: 41%; }
+  #projects .movile-projects .line {
+    position: relative;
+    z-index: -1;
+    width: 99%; }
+  #projects .movile-projects .text-movile {
+    margin: 0 auto;
+    width: 63%;
+    margin-left: 6%;
+    margin-top: 1rem; }
+    #projects .movile-projects .text-movile .title p {
+      color: #F25F5C;
+      font-size: 2rem;
+      font-weight: bold; }
+      @media screen and (max-width: 64rem) {
+        #projects .movile-projects .text-movile .title p {
+          font-size: 1.5rem; } }
+    #projects .movile-projects .text-movile .text-content p {
+      font-size: 1.7rem; }
+      @media screen and (max-width: 64rem) {
+        #projects .movile-projects .text-movile .text-content p {
+          font-size: 1.3rem; } }
 
 * {
   box-sizing: border-box; }

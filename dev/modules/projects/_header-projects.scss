@@ -1,0 +1,148 @@
+.header-projects {
+  background-image: url("../img/projects/fondo_rojo_hero.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -3rem;
+
+  .content-header{
+    position: relative;
+    margin: 0 auto;
+    width: 94%;
+
+    .text-header {
+      position: absolute;
+      top: 36%;
+      left: 9%;
+      z-index: 1;
+
+      @media screen and (max-width: $laptop-small) {
+        top: 36%;
+        left: 8%;
+      }
+      @media screen and (max-width: $laptop-small) {
+        top: 42%;
+        left: 6%;
+      }
+
+      .title {
+        p {
+          font-size: 4rem;
+
+          @media screen and (max-width: $laptop-medium) {
+            font-size: 3rem;
+          }
+          @media screen and (max-width: $laptop-small) {
+            font-size: 2.5rem;
+          }
+          @media screen and (max-width: $tablet-large) {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      .subtitle {
+        p {
+          font-size: 6rem;
+          font-weight: bold;
+
+          @media screen and (max-width: $laptop-medium) {
+            font-size: 5rem;
+          }
+          @media screen and (max-width: $laptop-small) {
+            font-size: 4.5rem;
+          }
+          @media screen and (max-width: $tablet-large) {
+            font-size: 3.5rem;
+          }
+        }
+      }
+
+      h1 {
+        color: $yellow;
+        font-size: 10rem;
+
+        @media screen and (max-width: $laptop-medium) {
+          font-size: 9rem;
+        }
+        @media screen and (max-width: $laptop-small) {
+          font-size: 8.5rem;
+        }
+        @media screen and (max-width: $tablet-large) {
+          font-size: 6.5rem;
+        }
+      }
+    }
+
+    .frame-text {
+      position: absolute;
+      top: 5rem;
+      left: -4rem;
+      width: 60%;
+    }
+
+    .icon-header {
+      position: relative;
+      top: 2rem;
+      left: 47%;
+      width: 51%;
+    }
+  }
+
+  .desktop-projects{
+    margin: 0 auto;
+    width: 100%;
+
+    .back{
+
+      .desktop{
+        width: 95%;
+        margin-left: 3%;
+        margin-top: 8rem;
+      }
+    }
+
+    .icon{
+      margin-top: -17%;
+      margin-left: 67%;
+      z-index: 1;
+
+      .icon-movile{
+        width: 19%;
+      }
+
+      .icon-table{
+        width: 44%;
+      }
+    }
+
+    .text {
+      margin: 0 auto;
+      width: 62%;
+      margin-left: 6%;
+      margin-top: -2rem;
+
+      .title{
+
+        p{
+          color: $red;
+          font-size: 2rem;
+          font-weight: bold;
+
+          @media screen and (max-width: $laptop-small) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .text-content{
+
+        p{
+          font-size: 1.7rem;
+          @media screen and (max-width: $laptop-small) {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}

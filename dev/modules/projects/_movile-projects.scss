@@ -1,0 +1,160 @@
+.movile-projects{
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 7rem;
+  position: relative;
+
+  .logo{
+    position: absolute;
+    padding-top: 4rem;
+    margin-left: 6%;
+
+    .movile{
+      width: 68%;
+      @media screen and (max-width: $tablet-large) {
+        width: 55%;
+      }
+    }
+
+    .table{
+      width: 68%;
+      @media screen and (max-width: $tablet-large) {
+        width: 55%;
+      }
+    }
+  }
+
+  .back{
+    position: relative;
+
+    .movile{
+      padding-left: 33%;
+      width: 61%;
+    }
+
+    .table{
+      padding-left: 30%;
+      width: 61%;
+    }
+  }
+
+  .quote {
+    margin: auto 0;
+    width: 22%;
+    text-align: center;
+    position: absolute;
+    margin-top: -42%;
+    margin-left: 69%;
+
+    .avatar {
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      width: 5.813rem;
+      @media screen and (max-width: $tablet-large) {
+        width: 3.813rem;
+      }
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    .text {
+      color: $gray;
+      font-family: $quicksand_light;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      padding: 0 1rem;
+
+      @media screen and (max-width: $laptop-small) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: $tablet-large) {
+        font-size: 0.7rem;
+      }
+
+    }
+
+    .author, .project-country .project {
+      color: $red;
+    }
+
+    .author {
+      font-size: 1.3rem;
+
+      @media screen and (max-width: $laptop-small) {
+        font-size: 0.7rem;
+      }
+    }
+
+    .position {
+      font-size: 1.4rem;
+
+      @media screen and (max-width: $laptop-small) {
+        font-size: 0.8rem;
+      }
+    }
+
+    .project-country {
+      font-family: $quicksand_bold;
+      font-size: 1.4rem;
+
+      @media screen and (max-width: $laptop-small) {
+        font-size: 0.8rem;
+      }
+
+      .project {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .icon-movile{
+    margin-left: 70%;
+    margin-top: -5rem;
+
+    .icon-android{
+      width: 30%;
+    }
+
+    .icon-ios{
+      width: 41%;
+    }
+  }
+
+  .line{
+    position: relative;
+    z-index: -1;
+    width: 99%;
+  }
+
+  .text-movile {
+    margin: 0 auto;
+    width: 63%;
+    margin-left: 6%;
+    margin-top: 1rem;
+
+    .title{
+
+      p{
+        color: $red;
+        font-size: 2rem;
+        font-weight: bold;
+        @media screen and (max-width: $laptop-small) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .text-content{
+
+      p{
+        font-size: 1.7rem;
+        @media screen and (max-width: $laptop-small) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
