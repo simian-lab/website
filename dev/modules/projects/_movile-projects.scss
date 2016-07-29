@@ -7,8 +7,11 @@
   .logo{
     position: absolute;
     padding-top: 4rem;
-    margin-left: 11rem;
+    margin-left: 6%;
 
+    @media screen and (min-width: $laptop-medium) {
+      margin-left: 10rem;
+    }
     @media screen and (max-width: $mobile-large) {
       margin-left: 11%;
       margin-top: -4rem;
@@ -26,7 +29,9 @@
       @media screen and (max-width: $mobile-large) {
         width: 60%;
       }
-
+      @media screen and (min-width: $laptop-medium) {
+        width: 85%;
+      }
     }
 
     .table {
@@ -39,6 +44,9 @@
       }
       @media screen and (max-width: $mobile-large) {
         width: 60%;
+      }
+      @media screen and (min-width: $laptop-medium) {
+        width: 85%;
       }
     }
   }

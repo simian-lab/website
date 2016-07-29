@@ -2036,11 +2036,11 @@ footer .footer-end {
           top: 30%; } }
       @media screen and (max-width: 90rem) {
         #projects .header-projects .content-header .text-header {
-          top: 36%;
+          top: 34%;
           left: 8%; } }
       @media screen and (max-width: 64rem) {
         #projects .header-projects .content-header .text-header {
-          top: 42%;
+          top: 37%;
           left: 6%; } }
       @media screen and (max-width: 52.5rem) {
         #projects .header-projects .content-header .text-header {
@@ -2258,7 +2258,10 @@ footer .footer-end {
   #projects .movile-projects .logo {
     position: absolute;
     padding-top: 4rem;
-    margin-left: 11rem; }
+    margin-left: 6%; }
+    @media screen and (min-width: 90rem) {
+      #projects .movile-projects .logo {
+        margin-left: 10rem; } }
     @media screen and (max-width: 30rem) {
       #projects .movile-projects .logo {
         margin-left: 11%;
@@ -2275,6 +2278,9 @@ footer .footer-end {
       @media screen and (max-width: 30rem) {
         #projects .movile-projects .logo .movile {
           width: 60%; } }
+      @media screen and (min-width: 90rem) {
+        #projects .movile-projects .logo .movile {
+          width: 85%; } }
     #projects .movile-projects .logo .table {
       width: 68%; }
       @media screen and (max-width: 52.5rem) {
@@ -2286,6 +2292,9 @@ footer .footer-end {
       @media screen and (max-width: 30rem) {
         #projects .movile-projects .logo .table {
           width: 60%; } }
+      @media screen and (min-width: 90rem) {
+        #projects .movile-projects .logo .table {
+          width: 85%; } }
   #projects .movile-projects .back {
     position: relative; }
     #projects .movile-projects .back .movile {
