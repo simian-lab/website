@@ -7,11 +7,14 @@
   z-index: -2;
   @media screen and (max-width: $mobile-large) {
     background-size: 200%;
-    background-position: center;
-    margin-top: -38rem;
+    background-position-x: center;
+    margin-top: -16rem;
   }
   @media screen and (max-width: $mobile-medium) {
-    margin-top: -29rem;
+    margin-top: -13rem;
+  }
+  @media screen and (max-width: $mobile-small) {
+    margin-top: -11rem;
   }
 
   .text-find {
@@ -22,10 +25,16 @@
       width: 73%;
     }
     @media screen and (max-width: $mobile-large) {
-      padding-top: 164%;
+      padding-top: 25rem;
+      width: 21rem;
     }
     @media screen and (max-width: $mobile-medium) {
-      padding-top: 150%;
+      padding-top: 22rem;
+      width: 17rem;
+    }
+    @media screen and (max-width: $mobile-small) {
+      padding-top: 19rem;
+      width: 17rem;
     }
 
     .title{
@@ -48,7 +57,7 @@
           font-size: 4rem;
         }
         @media screen and (max-width: $mobile-medium) {
-          font-size: 3rem;
+          font-size: 3.5rem;
         }
       }
     }
@@ -64,6 +73,7 @@
       p {
         font-size: 1.5rem;
         font-weight: bold;
+        line-height: 130%;
         @media screen and (max-width: $laptop-small) {
           font-size: 1.3rem;
         }
@@ -80,7 +90,7 @@
           font-size: 1.3rem;
         }
         @media screen and (max-width: $mobile-medium) {
-          font-size: 1rem;
+          font-size: 1.2rem;
         }
       }
     }
@@ -95,6 +105,7 @@
 
       p {
         font-size: 1.5rem;
+        line-height: 130%;
         @media screen and (max-width: $laptop-small) {
           font-size: 1.3rem;
         }
@@ -111,7 +122,7 @@
           font-size: 1.3rem;
         }
         @media screen and (max-width: $mobile-medium) {
-          font-size: 1rem;
+          font-size: 1.2rem;
         }
       }
     }
@@ -135,11 +146,16 @@
       margin-top: -10rem;
     }
     @media screen and (max-width: $mobile-large) {
-      margin-top: -26rem;
-      margin-left: 71%;
+      margin-top: -32rem;
+      margin-left: 67%;
     }
     @media screen and (max-width: $mobile-medium) {
-      margin-top: -21rem;
+      margin-top: -32rem;
+      margin-left: 73%;
+    }
+    @media screen and (max-width: $mobile-small) {
+      margin-top: -32rem;
+      margin-left: 74%;
     }
 
     .icon{
