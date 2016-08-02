@@ -138,7 +138,7 @@
     }
 
     .container-line {
-      margin-top: -26%;
+      margin-top: -28%;
       margin-left: 3rem;
       position: relative;
       z-index: -1;
@@ -160,7 +160,9 @@
   .text-content {
     text-align: center;
     margin: 0 auto;
-    margin-top: -12%;
+    margin-top: -10%;
+    width: 60%;
+    margin-left: 22%;
     @media screen and (max-width: $laptop-small) {
       margin-top: -11%;
       margin-left: 4rem;
