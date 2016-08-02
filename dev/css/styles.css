@@ -68,7 +68,7 @@
       #error-404 .text {
         margin-top: 3rem; } }
     #error-404 .text h2 {
-      color: #F25F5C;
+      color: #FF5E5B;
       font-family: "amatic_scregular";
       font-size: 3.5rem; }
       @media screen and (max-width: 30rem) {
@@ -301,7 +301,7 @@ footer .footer-end {
 .footer-projects .background-section, .footer-we-share .background-section {
   background-image: url("../img/footer/footer-bg-red.svg"); }
   .footer-projects .background-section .footer-content .contact-form input, .footer-projects .background-section .footer-content .contact-form textarea, .footer-we-share .background-section .footer-content .contact-form input, .footer-we-share .background-section .footer-content .contact-form textarea {
-    background-color: #F25F5C; }
+    background-color: #FF5E5B; }
 
 .footer-404 {
   background-color: #DED96B; }
@@ -500,7 +500,7 @@ footer .footer-end {
           margin-bottom: 2rem;
           padding: 0 1rem; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .author, #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .project-country .project {
-          color: #F25F5C; }
+          color: #FF5E5B; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .author {
           font-size: 1.3rem; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .position {
@@ -588,7 +588,7 @@ footer .footer-end {
     margin-bottom: 5%;
     position: relative; }
     #home .we-are .title h1 {
-      color: #F25F5C;
+      color: #FF5E5B;
       font-size: 12rem; }
     #home .we-are .title p {
       font-size: 6rem;
@@ -714,7 +714,7 @@ footer .footer-end {
       color: #00A1C1;
       font-size: 16.2rem; }
     .clients-container .title h2 {
-      color: #F25F5C;
+      color: #FF5E5B;
       font-size: 7rem;
       text-shadow: -1px 0 #3F3832, 0 1px #3F3832, 1px 0 #3F3832, 0 -1px #3F3832; }
     .clients-container .title p {
@@ -859,7 +859,7 @@ footer .footer-end {
           #location .header-find .graph .container-earch .earch {
             width: 80%; } }
     #location .header-find .graph .container-line {
-      margin-top: -26%;
+      margin-top: -28%;
       margin-left: 3rem;
       position: relative;
       z-index: -1; }
@@ -876,7 +876,9 @@ footer .footer-end {
   #location .header-find .text-content {
     text-align: center;
     margin: 0 auto;
-    margin-top: -12%; }
+    margin-top: -10%;
+    width: 60%;
+    margin-left: 22%; }
     @media screen and (max-width: 64rem) {
       #location .header-find .text-content {
         margin-top: -11%;
@@ -932,7 +934,7 @@ footer .footer-end {
   background-image: url("../img/location/fondo_banano_amarillo.svg");
   background-size: 103%;
   background-repeat: no-repeat;
-  margin-top: -29%;
+  margin-top: -37%;
   position: relative;
   z-index: -2; }
   @media screen and (max-width: 30rem) {
@@ -947,7 +949,7 @@ footer .footer-end {
     #location .content-find {
       margin-top: -11rem; } }
   #location .content-find .text-find {
-    padding-top: 44%;
+    padding-top: 51%;
     margin: 0 auto;
     width: 67%; }
     @media screen and (max-width: 64rem) {
@@ -955,18 +957,18 @@ footer .footer-end {
         width: 73%; } }
     @media screen and (max-width: 30rem) {
       #location .content-find .text-find {
-        padding-top: 25rem;
+        padding-top: 28rem;
         width: 21rem; } }
     @media screen and (max-width: 25rem) {
       #location .content-find .text-find {
-        padding-top: 22rem;
+        padding-top: 24rem;
         width: 17rem; } }
     @media screen and (max-width: 22.5rem) {
       #location .content-find .text-find {
-        padding-top: 19rem;
+        padding-top: 22rem;
         width: 17rem; } }
     #location .content-find .text-find .title h1 {
-      color: #F25F5C;
+      color: #FF5E5B;
       font-size: 7.5rem; }
       @media screen and (max-width: 64rem) {
         #location .content-find .text-find .title h1 {
@@ -1097,9 +1099,12 @@ footer .footer-end {
   background-size: 103%;
   margin-top: -3rem;
   margin-bottom: -42rem; }
-  @media screen and (min-width: 90rem) {
+  @media screen and (min-width: 100rem) {
     #we-share .header {
-      margin-bottom: -39rem; } }
+      margin-bottom: -33rem; } }
+  @media screen and (min-width: 90rem) and (max-width: 100rem) {
+    #we-share .header {
+      margin-bottom: -36rem; } }
   @media screen and (max-width: 64rem) {
     #we-share .header {
       margin-bottom: -45rem; } }
@@ -1145,7 +1150,7 @@ footer .footer-end {
         #we-share .header .text p {
           font-size: 2rem; } }
     #we-share .header .text h1 {
-      color: #F25F5C;
+      color: #FF5E5B;
       font-size: 10.5rem; }
       @media screen and (min-width: 90rem) {
         #we-share .header .text h1 {
@@ -1176,7 +1181,7 @@ footer .footer-end {
     padding-left: 9rem; }
     @media screen and (min-width: 90rem) {
       #we-share .content .graph {
-        padding-left: 12rem; } }
+        padding-left: 9rem; } }
     @media screen and (max-width: 64rem) {
       #we-share .content .graph {
         padding-left: 7rem; } }
@@ -1192,7 +1197,7 @@ footer .footer-end {
       max-width: 100%; }
       @media screen and (min-width: 90rem) {
         #we-share .content .graph .monkey {
-          width: 81%; } }
+          width: 60%; } }
       @media screen and (max-width: 64rem) {
         #we-share .content .graph .monkey {
           width: 67%; } }
@@ -1209,8 +1214,9 @@ footer .footer-end {
       #we-share .content .text {
         width: 81%; } }
     #we-share .content .text .title h1 {
-      color: #F25F5C;
-      font-size: 6.5rem; }
+      color: #FF5E5B;
+      font-size: 6.5rem;
+      line-height: 120%; }
       @media screen and (min-width: 90rem) {
         #we-share .content .text .title h1 {
           font-size: 8rem; } }
@@ -1232,40 +1238,36 @@ footer .footer-end {
         #we-share .content .text .subtitle {
           padding-top: 2rem; } }
       #we-share .content .text .subtitle p {
-        font-size: 1.5rem;
-        font-weight: bold; }
-        @media screen and (min-width: 90rem) {
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 120%; }
+        @media screen and (max-width: 90rem) {
           #we-share .content .text .subtitle p {
-            font-size: 2rem; } }
+            font-size: 1.5rem; } }
         @media screen and (max-width: 52.5rem) {
-          #we-share .content .text .subtitle p {
-            font-size: 1.3rem; } }
-        @media screen and (max-width: 45rem) {
           #we-share .content .text .subtitle p {
             font-size: 1rem; } }
         @media screen and (max-width: 30rem) {
           #we-share .content .text .subtitle p {
             font-size: 1.5rem; } }
-        @media screen and (max-width: 25rem) {
+        @media screen and (max-width: 22.5rem) {
           #we-share .content .text .subtitle p {
-            font-size: 1rem; } }
+            font-size: 1.2rem; } }
     #we-share .content .text .text-content p {
-      font-size: 1.5rem; }
-      @media screen and (min-width: 90rem) {
+      font-size: 1.8rem;
+      line-height: 120%; }
+      @media screen and (max-width: 90rem) {
         #we-share .content .text .text-content p {
-          font-size: 2rem; } }
+          font-size: 1.5rem; } }
       @media screen and (max-width: 52.5rem) {
-        #we-share .content .text .text-content p {
-          font-size: 1.3rem; } }
-      @media screen and (max-width: 45rem) {
         #we-share .content .text .text-content p {
           font-size: 1rem; } }
       @media screen and (max-width: 30rem) {
         #we-share .content .text .text-content p {
           font-size: 1.5rem; } }
-      @media screen and (max-width: 25rem) {
+      @media screen and (max-width: 22.5rem) {
         #we-share .content .text .text-content p {
-          font-size: 1rem; } }
+          font-size: 1.2rem; } }
     #we-share .content .text .title-video {
       padding-top: 6rem; }
       @media screen and (max-width: 45rem) {
@@ -1273,7 +1275,8 @@ footer .footer-end {
           padding-top: 3rem; } }
       #we-share .content .text .title-video h1 {
         font-size: 5rem;
-        margin: 0 auto; }
+        margin: 0 auto;
+        line-height: 120%; }
         @media screen and (min-width: 90rem) {
           #we-share .content .text .title-video h1 {
             font-size: 6rem; } }
@@ -1360,7 +1363,7 @@ footer .footer-end {
         #we-share .video .video-content .bottom-video .icon-right {
           left: 1%; } }
     #we-share .video .video-content .bottom-video .icon-pause {
-      width: 7%;
+      width: 9%;
       top: 94%;
       left: 6%; }
       @media screen and (min-width: 117.5em) {
@@ -1370,7 +1373,7 @@ footer .footer-end {
       @media screen and (min-width: 100rem) and (max-width: 117.5em) {
         #we-share .video .video-content .bottom-video .icon-pause {
           left: 17%;
-          width: 8%; } }
+          width: 11%; } }
       @media screen and (min-width: 90rem) and (max-width: 100rem) {
         #we-share .video .video-content .bottom-video .icon-pause {
           left: 14%; } }
@@ -1413,86 +1416,80 @@ footer .footer-end {
         #we-share .video .video-content .bottom-video .icon-volume {
           left: 83%; } }
 
-#we-share .share-content .content {
+#we-share .share-content {
   margin: 0 auto;
-  width: 53%;
-  margin-bottom: -6rem; }
+  width: 45rem; }
+  @media screen and (min-width: 90rem) {
+    #we-share .share-content {
+      width: 46rem; } }
   @media screen and (max-width: 52.5rem) {
-    #we-share .share-content .content {
-      width: 63%;
-      margin-bottom: -6rem; } }
-  @media screen and (max-width: 45rem) {
-    #we-share .share-content .content {
-      margin-bottom: -5rem; } }
-  @media screen and (max-width: 37.5rem) {
-    #we-share .share-content .content {
-      margin-bottom: 3rem; } }
+    #we-share .share-content {
+      width: 31rem; } }
   @media screen and (max-width: 30rem) {
-    #we-share .share-content .content {
-      width: 84%; } }
-  #we-share .share-content .content .title p {
-    color: #F25F5C;
-    font-size: 2rem;
-    width: 93%;
-    font-weight: bold; }
-    @media screen and (min-width: 90rem) {
-      #we-share .share-content .content .title p {
-        font-size: 2.5rem;
-        width: 98%; } }
-    @media screen and (max-width: 52.5rem) {
-      #we-share .share-content .content .title p {
-        font-size: 1.7rem;
-        width: 98%; } }
+    #we-share .share-content {
+      margin: inherit;
+      width: inherit; } }
+  #we-share .share-content .content {
+    margin: 0 auto;
+    margin-bottom: 3rem; }
     @media screen and (max-width: 30rem) {
-      #we-share .share-content .content .title p {
-        font-size: 2rem; } }
-    @media screen and (max-width: 25rem) {
-      #we-share .share-content .content .title p {
-        font-size: 1.7rem; } }
-  #we-share .share-content .content .text-content {
-    position: relative;
-    left: 19rem;
-    top: -10rem;
-    width: 54%; }
-    @media screen and (min-width: 90rem) {
-      #we-share .share-content .content .text-content {
-        left: 19rem;
-        top: -10rem;
-        width: 57%; } }
-    @media screen and (max-width: 52.5rem) {
-      #we-share .share-content .content .text-content {
-        left: 15rem;
-        top: -9rem; } }
-    @media screen and (max-width: 37.5rem) {
-      #we-share .share-content .content .text-content {
-        left: 0rem;
-        top: 0rem;
-        width: 100%; } }
-    #we-share .share-content .content .text-content p {
-      font-size: 1.5rem; }
-      @media screen and (min-width: 90rem) {
-        #we-share .share-content .content .text-content p {
-          font-size: 2rem; } }
+      #we-share .share-content .content {
+        width: 85%; } }
+    #we-share .share-content .content .title {
+      width: 40rem; }
       @media screen and (max-width: 52.5rem) {
-        #we-share .share-content .content .text-content p {
-          font-size: 1.3rem; } }
+        #we-share .share-content .content .title {
+          width: 28rem; } }
       @media screen and (max-width: 30rem) {
-        #we-share .share-content .content .text-content p {
-          font-size: 1.5rem; } }
-      @media screen and (max-width: 25rem) {
-        #we-share .share-content .content .text-content p {
-          font-size: 1.2rem; } }
-  @media screen and (max-width: 52.5rem) {
-    #we-share .share-content .content .figure .icon {
-      width: 46%; } }
-  @media screen and (max-width: 37.5rem) {
-    #we-share .share-content .content .figure .icon {
-      width: 40%;
-      margin-left: 5rem; } }
-  @media screen and (max-width: 30rem) {
-    #we-share .share-content .content .figure .icon {
-      width: 70%;
-      margin-left: 3rem; } }
+        #we-share .share-content .content .title {
+          width: 83%; } }
+      #we-share .share-content .content .title p {
+        color: #FF5E5B;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 120%; }
+        @media screen and (max-width: 52.5rem) {
+          #we-share .share-content .content .title p {
+            font-size: 1.3rem; } }
+        @media screen and (max-width: 30rem) {
+          #we-share .share-content .content .title p {
+            font-size: 2rem; } }
+        @media screen and (max-width: 22.5rem) {
+          #we-share .share-content .content .title p {
+            font-size: 1.5rem; } }
+    #we-share .share-content .content .text-content {
+      display: inline-flex; }
+      @media screen and (max-width: 30rem) {
+        #we-share .share-content .content .text-content {
+          display: inherit; } }
+      #we-share .share-content .content .text-content p {
+        margin-top: 1rem;
+        width: 25rem;
+        font-size: 1.8rem;
+        line-height: 120%; }
+        @media screen and (max-width: 90rem) {
+          #we-share .share-content .content .text-content p {
+            font-size: 1.5rem; } }
+        @media screen and (max-width: 52.5rem) {
+          #we-share .share-content .content .text-content p {
+            font-size: 1rem;
+            margin-top: 2rem;
+            width: 16rem; } }
+        @media screen and (max-width: 30rem) {
+          #we-share .share-content .content .text-content p {
+            font-size: 1.5rem;
+            width: inherit; } }
+        @media screen and (max-width: 22.5rem) {
+          #we-share .share-content .content .text-content p {
+            font-size: 1.2rem; } }
+      @media screen and (max-width: 52.5rem) {
+        #we-share .share-content .content .text-content .logo {
+          width: 14rem; } }
+      @media screen and (max-width: 30rem) {
+        #we-share .share-content .content .text-content .logo {
+          width: 70%;
+          position: relative;
+          left: 2.5rem; } }
 
 #we-do .header-do .text-header {
   text-align: center; }
@@ -1880,7 +1877,7 @@ footer .footer-end {
       #we-do .finish-do .text-content .text-develop {
         margin-bottom: 143%; } }
     #we-do .finish-do .text-content .text-develop h1 {
-      color: #F25F5C;
+      color: #FF5E5B;
       font-size: 4rem; }
       @media screen and (max-width: 64rem) {
         #we-do .finish-do .text-content .text-develop h1 {
@@ -2258,7 +2255,7 @@ footer .footer-end {
           margin-left: 11%;
           margin-top: 1rem; } }
       #projects .header-projects .desktop-projects .text .title p {
-        color: #F25F5C;
+        color: #FF5E5B;
         font-size: 2rem;
         font-weight: bold; }
         @media screen and (max-width: 64rem) {
@@ -2392,7 +2389,7 @@ footer .footer-end {
         #projects .movile-projects .quote .text {
           font-size: 0.7rem; } }
     #projects .movile-projects .quote .author, #projects .movile-projects .quote .project-country .project {
-      color: #F25F5C; }
+      color: #FF5E5B; }
     #projects .movile-projects .quote .author {
       font-size: 1.3rem; }
       @media screen and (max-width: 64rem) {
@@ -2439,7 +2436,7 @@ footer .footer-end {
         width: 83%;
         margin-left: 11%; } }
     #projects .movile-projects .text-movile .title p {
-      color: #F25F5C;
+      color: #FF5E5B;
       font-size: 2rem;
       font-weight: bold; }
       @media screen and (max-width: 64rem) {

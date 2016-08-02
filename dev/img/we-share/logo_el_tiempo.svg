@@ -2,9 +2,15 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="293.985px" height="185.99px" viewBox="0 0 293.985 185.99" enable-background="new 0 0 293.985 185.99"
+	 width="287.487px" height="193.574px" viewBox="0 0 287.487 193.574" style="enable-background:new 0 0 287.487 193.574;"
 	 xml:space="preserve">
-<image overflow="visible" width="185" height="102" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAABmCAYAAACXxTCmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+<style type="text/css">
+<![CDATA[
+	.st0{fill:none;stroke:#3F3832;stroke-miterlimit:10;stroke-dasharray:5.959,5.959;}
+	.st1{fill:none;stroke:#3F3832;stroke-miterlimit:10;}
+]]>
+</style>
+<image style="overflow:visible;" width="185" height="102" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAABmCAYAAACXxTCmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
@@ -67,19 +73,18 @@ SQlY10jMenffCwt66c7BhzINMM6HKCYLUqBLC9tXH/Ql11Ez9D6uz80n41pypw3LS0PhRS0kG3dn
 b0abGx4BLCHDZCYUpr5dDfJ6L391OdQSNnb2/B84ItRoEDN6cbLXz6yIt1kWXAPPI9+tzOOgeHNX
 8u2v1tkfWBRbn225ogqSrb/d/0zDjpvgcIIWqXg4rE8ockIockIockIockIockIockIockKRE0KR
 E0KRE0KRE0KRE0KRE0KRE0KRE4qcEIqcEIqcEIqcEIqcEIqcEIqckABVw8NMu0IockIockJKmf8E
-GACsYHvS2HNoZwAAAABJRU5ErkJggg==" transform="matrix(1 0 0 1 51.2393 41.7041)">
+GACsYHvS2HNoZwAAAABJRU5ErkJggg==" transform="matrix(1 0 0 1 47.2256 38.1924)">
 </image>
 <g>
 	<g>
-		<path fill="none" stroke="#3F3B35" stroke-miterlimit="10" d="M254.142,21.881c0.956,0.486,1.766,1.067,2.453,1.716"/>
-		<path fill="none" stroke="#3F3B35" stroke-miterlimit="10" stroke-dasharray="5.959,5.959" d="M259.665,28.637
-			c0.752,2.268,0.979,4.564,1.229,6.263c0.844,5.73-1.938,11.153-3.617,16.788c-1.185,3.963-0.297,8.1-0.297,12.086
-			c0,12.858-9.166,25.512-6.555,38.367c1.516,7.451,5.709,14.617,6.486,22.134c0.773,7.479-0.771,14.997,0.357,22.366
-			c0.688,4.493,4.079,10.637,2.35,14.929c-2.037,5.059-11.324,4.537-24.816,4.716c-51.676,0.683-104.314-0.451-155.246-1.311
-			c-20.969-0.354-49.336,2.32-52.183-6.887c-1.097-3.545,2.608-7.321,2.608-11.03c0.005-5.813,0.019-11.628,0-17.44
-			c-0.057-18.878-4.36-38.894,1.237-57.71c2.493-8.382-0.481-15.865-3.843-23.913c-2.187-5.238-7.438-17.209-1.337-22.262
-			c9.79-8.107,89.812-3.492,112.224-3.491c38.411,0.003,77.761-1.104,115.766-0.362"/>
-		<path fill="none" stroke="#3F3B35" stroke-miterlimit="10" d="M256.419,23.611c0.624,0.525,1.249,1.174,1.985,2.242"/>
+		<path class="st1" d="M250.128,18.369c0.956,0.486,1.766,1.067,2.453,1.716"/>
+		<path class="st0" d="M255.651,25.125c0.752,2.268,0.979,4.564,1.229,6.263c0.844,5.73-1.938,11.153-3.617,16.788
+			c-1.185,3.963-0.297,8.1-0.297,12.086c0,12.858-9.166,25.512-6.555,38.367c1.516,7.451,5.709,14.617,6.486,22.134
+			c0.773,7.479-0.771,14.997,0.357,22.366c0.688,4.493,4.079,10.637,2.35,14.929c-2.037,5.059-11.324,4.537-24.816,4.716
+			c-51.676,0.683-104.314-0.451-155.246-1.311c-20.969-0.354-49.336,2.32-52.183-6.887c-1.097-3.545,2.608-7.321,2.608-11.03
+			c0.005-5.813,0.019-11.628,0-17.44c-0.057-18.878-4.36-38.894,1.237-57.71c2.493-8.382-0.481-15.865-3.843-23.913
+			c-2.187-5.238-7.438-17.209-1.337-22.262c9.79-8.107,89.812-3.492,112.224-3.491c38.411,0.003,77.761-1.104,115.766-0.362"/>
+		<path class="st1" d="M252.405,20.1c0.624,0.525,1.249,1.174,1.985,2.242"/>
 	</g>
 </g>
 <g>

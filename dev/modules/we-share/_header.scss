@@ -6,8 +6,11 @@
   margin-top: -3rem;
   margin-bottom: -42rem;
 
-  @media screen and (min-width: $laptop-medium) {
-    margin-bottom: -39rem;
+  @media screen and (min-width: $laptop-large) {
+    margin-bottom: -33rem;
+  }
+  @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
+    margin-bottom: -36rem;
   }
   @media screen and (max-width: $laptop-small) {
     margin-bottom: -45rem;

@@ -2,7 +2,7 @@
   background-image: url("../img/location/fondo_banano_amarillo.svg");
   background-size: 103%;
   background-repeat: no-repeat;
-  margin-top: -29%;
+  margin-top: -37%;
   position: relative;
   z-index: -2;
   @media screen and (max-width: $mobile-large) {
@@ -18,22 +18,22 @@
   }
 
   .text-find {
-    padding-top: 44%;
+    padding-top: 51%;
     margin: 0 auto;
     width: 67%;
     @media screen and (max-width: $laptop-small) {
       width: 73%;
     }
     @media screen and (max-width: $mobile-large) {
-      padding-top: 25rem;
+      padding-top: 28rem;
       width: 21rem;
     }
     @media screen and (max-width: $mobile-medium) {
-      padding-top: 22rem;
+      padding-top: 24rem;
       width: 17rem;
     }
     @media screen and (max-width: $mobile-small) {
-      padding-top: 19rem;
+      padding-top: 22rem;
       width: 17rem;
     }
 
