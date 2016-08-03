@@ -90,6 +90,10 @@
     position: absolute;
     margin-top: -42%;
     margin-left: 69%;
+
+    @media screen and (max-width: $tablet-small) {
+      margin-top: -56%;
+    }
     @media screen and (max-width: $mobile-large) {
       display: none;
     }
@@ -160,7 +164,7 @@
 
   .icon-movile {
     margin-left: 70%;
-    margin-top: -5rem;
+    margin-top: -3rem;
 
     @media screen and (max-width: $mobile-large) {
       margin-left: 25%;
@@ -203,6 +207,7 @@
         color: $red;
         font-size: 2rem;
         font-weight: bold;
+        line-height: 130%;
         @media screen and (max-width: $laptop-small) {
           font-size: 1.5rem;
         }
@@ -220,8 +225,9 @@
 
     .text-content{
 
-      p{
+      p {
         font-size: 1.7rem;
+        line-height: 130%;
         @media screen and (max-width: $laptop-small) {
           font-size: 1.3rem;
         }

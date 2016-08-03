@@ -163,10 +163,7 @@
     margin-top: -10%;
     width: 60%;
     margin-left: 22%;
-    @media screen and (max-width: $laptop-small) {
-      margin-top: -11%;
-      margin-left: 4rem;
-    }
+
     @media screen and (max-width: $mobile-large) {
       width: 51%;
       margin-top: 26%;
