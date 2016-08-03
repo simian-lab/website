@@ -2,7 +2,10 @@
   margin: 0 auto;
   width: 45rem;
 
-  @media screen and (min-width: $laptop-medium) {
+  @media screen and (min-width: $laptop-large) {
+    width: 53rem;
+  }
+  @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
     width: 46rem;
   }
   @media screen and (max-width: $tablet-large) {
@@ -61,6 +64,9 @@
         font-size: 1.8rem;
         line-height: 120%;
 
+        @media screen and (min-width: $laptop-large) {
+          width: 35rem;
+        }
         @media screen and (max-width: $laptop-medium) {
           font-size: 1.5rem;
         }

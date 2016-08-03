@@ -16,12 +16,12 @@
     }
 
     .brush-icon {
-      margin-top: 37%;
+      margin-top: 36%;
 
       @media screen and (min-width: $laptop-large) {
         margin-top: 90%;
       }
-      @media screen and (min-width: $laptop-medium) {
+      @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
         margin-top: 60%;
       }
       @media screen and (max-width: $laptop-small) {
@@ -40,9 +40,10 @@
   .text-design {
     text-align: center;
     margin: 0 auto;
-    width: 37%;
+    width: 32rem;
     @media screen and (max-width: $mobile-large) {
       width: 59%;
+      margin-top: 1rem;
     }
 
     h1 {
@@ -62,21 +63,29 @@
     p {
       font-size: 1.3rem;
       margin-top: 1rem;
+      width: 21rem;
+      margin-left: 5rem;
+      line-height: 130%;
+
       @media screen and (max-width: $laptop-small) {
         font-size: 1rem;
       }
       @media screen and (max-width: $tablet-medium) {
         font-size: 0.7rem;
+        width: 15rem;
+        margin-left: 8rem;
       }
       @media screen and (max-width: $mobile-large) {
+        width: 97%;
         font-size: 1rem;
+        margin-left: 1%;
       }
       @media screen and (max-width: $mobile-medium) {
-        width: 122%;
-        margin-left: -10%;
+        width: 119%;
+        margin-left: -9%;
       }
       @media screen and (max-width: $mobile-small) {
-          font-size: 0.9rem;
+        font-size: 0.9rem;
       }
     }
   }

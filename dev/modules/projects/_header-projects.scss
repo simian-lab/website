@@ -31,19 +31,23 @@
         top: 30%;
       }
       @media screen and (max-width: $laptop-medium) {
-        top: 34%;
-        left: 8%;
+        top: 28%;
+        left: 10%;
       }
       @media screen and (max-width: $laptop-small) {
-        top: 37%;
-        left: 6%;
+        top: 26%;
+        left: 10%;
       }
       @media screen and (max-width: $tablet-large) {
-        left: 9%;
-        left: 8%;
+        top: 40%;
+        left: 11%;
+      }
+      @media screen and (max-width: $tablet-medium) {
+        top: 36%;
+        left: 10%;
       }
       @media screen and (max-width: $tablet-small) {
-        top: 56%;
+        top: 47%;
       }
       @media screen and (max-width: $mobile-large) {
         top: 38%;
@@ -147,7 +151,7 @@
           font-size: 5.8rem;
         }
         @media screen and (max-width: $tablet-small) {
-          font-size: 2.5rem;
+          font-size: 4.5rem;
         }
         @media screen and (max-width: $mobile-large) {
           font-size: 6.5rem;
@@ -163,17 +167,34 @@
 
     .frame-text {
       position: absolute;
-      top: 5rem;
-      left: -4rem;
-      width: 60%;
+      top: -6rem;
+      left: -24%;
+      width: 87%;
 
+      @media screen and (max-width: $laptop-medium) {
+        top: -3rem;
+      }
       @media screen and (max-width: $tablet-large) {
-        left: -2rem;
+        top: -1rem;
+        left: -24%;
+      }
+      @media screen and (max-width: $tablet-medium) {
+        top: -1rem;
+      }
+      @media screen and (max-width: $tablet-small) {
+        top: 0rem;
       }
       @media screen and (max-width: $mobile-large) {
-        top: 3rem;
-        left: -2rem;
-        width: 105%;
+        top: 0rem;
+        left: -39%;
+        width: 143%;
+      }
+      @media screen and (max-width: $mobile-medium) {
+        width: 142%;
+        left: -39%;
+      }
+      @media screen and (max-width: $mobile-medium) {
+        left: -7rem;
       }
     }
 
@@ -263,6 +284,7 @@
           color: $red;
           font-size: 2rem;
           font-weight: bold;
+          line-height: 130%;
 
           @media screen and (max-width: $laptop-small) {
             font-size: 1.5rem;
@@ -283,6 +305,7 @@
 
         p {
           font-size: 1.7rem;
+          line-height: 130%;
           @media screen and (max-width: $laptop-small) {
             font-size: 1.3rem;
           }
