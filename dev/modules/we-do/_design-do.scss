@@ -67,11 +67,7 @@
       margin-left: 5rem;
       line-height: 130%;
 
-      @media screen and (max-width: $laptop-small) {
-        font-size: 1rem;
-      }
       @media screen and (max-width: $tablet-medium) {
-        font-size: 0.7rem;
         width: 15rem;
         margin-left: 8rem;
       }
@@ -83,9 +79,6 @@
       @media screen and (max-width: $mobile-medium) {
         width: 119%;
         margin-left: -9%;
-      }
-      @media screen and (max-width: $mobile-small) {
-        font-size: 0.9rem;
       }
     }
   }
