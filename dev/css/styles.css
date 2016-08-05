@@ -884,46 +884,45 @@ footer .footer-end {
         width: 51%;
         margin-top: 26%;
         margin-left: auto; } }
-    #location .header-find .text-content .title p {
+    #location .header-find .text-content h2 {
+      color: #3F3832;
+      font-family: "quicksandregular";
       font-size: 5rem; }
       @media screen and (max-width: 64rem) {
-        #location .header-find .text-content .title p {
+        #location .header-find .text-content h2 {
           font-size: 4rem; } }
       @media screen and (max-width: 52.5rem) {
-        #location .header-find .text-content .title p {
+        #location .header-find .text-content h2 {
           font-size: 3.5rem; } }
       @media screen and (max-width: 45rem) {
-        #location .header-find .text-content .title p {
+        #location .header-find .text-content h2 {
           font-size: 3rem; } }
-      @media screen and (max-width: 37.5rem) {
-        #location .header-find .text-content .title p {
-          font-size: 2.5rem; } }
       @media screen and (max-width: 30rem) {
-        #location .header-find .text-content .title p {
+        #location .header-find .text-content h2 {
           font-size: 3.5rem; } }
       @media screen and (max-width: 25rem) {
-        #location .header-find .text-content .title p {
+        #location .header-find .text-content h2 {
           font-size: 3rem; } }
-    #location .header-find .text-content .content p {
+    #location .header-find .text-content p {
       font-size: 2.5rem;
       line-height: 130%; }
       @media screen and (max-width: 64rem) {
-        #location .header-find .text-content .content p {
+        #location .header-find .text-content p {
           font-size: 2rem; } }
       @media screen and (max-width: 52.5rem) {
-        #location .header-find .text-content .content p {
+        #location .header-find .text-content p {
           font-size: 1.7rem; } }
       @media screen and (max-width: 45rem) {
-        #location .header-find .text-content .content p {
+        #location .header-find .text-content p {
           font-size: 1.5rem; } }
       @media screen and (max-width: 37.5rem) {
-        #location .header-find .text-content .content p {
+        #location .header-find .text-content p {
           font-size: 1rem; } }
       @media screen and (max-width: 30rem) {
-        #location .header-find .text-content .content p {
+        #location .header-find .text-content p {
           font-size: 1.5rem; } }
       @media screen and (max-width: 25rem) {
-        #location .header-find .text-content .content p {
+        #location .header-find .text-content p {
           font-size: 1rem; } }
 
 #location .content-find {
@@ -963,84 +962,55 @@ footer .footer-end {
       #location .content-find .text-find {
         padding-top: 22rem;
         width: 17rem; } }
-    #location .content-find .text-find .title h1 {
+    #location .content-find .text-find h1 {
       color: #FF5E5B;
       font-size: 7.5rem; }
       @media screen and (max-width: 64rem) {
-        #location .content-find .text-find .title h1 {
+        #location .content-find .text-find h1 {
           font-size: 5.5rem; } }
       @media screen and (max-width: 52.5rem) {
-        #location .content-find .text-find .title h1 {
+        #location .content-find .text-find h1 {
           font-size: 4.5rem; } }
-      @media screen and (max-width: 45rem) {
-        #location .content-find .text-find .title h1 {
-          font-size: 3.5rem; } }
-      @media screen and (max-width: 37.5rem) {
-        #location .content-find .text-find .title h1 {
-          font-size: 3rem; } }
       @media screen and (max-width: 30rem) {
-        #location .content-find .text-find .title h1 {
+        #location .content-find .text-find h1 {
           font-size: 4rem; } }
       @media screen and (max-width: 25rem) {
-        #location .content-find .text-find .title h1 {
+        #location .content-find .text-find h1 {
           font-size: 3.5rem; } }
-    #location .content-find .text-find .subtitle {
-      width: 74%;
-      padding-top: 6%; }
+    #location .content-find .text-find h2 {
+      font-family: "quicksandregular";
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 130%;
+      padding-top: 6%;
+      width: 74%; }
+      @media screen and (max-width: 64rem) {
+        #location .content-find .text-find h2 {
+          font-size: 1.3rem; } }
       @media screen and (max-width: 30rem) {
-        #location .content-find .text-find .subtitle {
+        #location .content-find .text-find h2 {
+          font-size: 1.3rem;
           width: 104%;
           padding-top: 16%; } }
-      #location .content-find .text-find .subtitle p {
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 130%; }
-        @media screen and (max-width: 64rem) {
-          #location .content-find .text-find .subtitle p {
-            font-size: 1.3rem; } }
-        @media screen and (max-width: 52.5rem) {
-          #location .content-find .text-find .subtitle p {
-            font-size: 1rem; } }
-        @media screen and (max-width: 45rem) {
-          #location .content-find .text-find .subtitle p {
-            font-size: 0.9rem; } }
-        @media screen and (max-width: 37.5rem) {
-          #location .content-find .text-find .subtitle p {
-            font-size: 0.7rem; } }
-        @media screen and (max-width: 30rem) {
-          #location .content-find .text-find .subtitle p {
-            font-size: 1.3rem; } }
-        @media screen and (max-width: 25rem) {
-          #location .content-find .text-find .subtitle p {
-            font-size: 1.2rem; } }
-    #location .content-find .text-find .text {
-      width: 74%;
-      padding-top: 5%; }
+      @media screen and (max-width: 25rem) {
+        #location .content-find .text-find h2 {
+          font-size: 1.2rem; } }
+    #location .content-find .text-find p {
+      font-size: 1.5rem;
+      line-height: 130%;
+      padding-top: 5%;
+      width: 74%; }
+      @media screen and (max-width: 64rem) {
+        #location .content-find .text-find p {
+          font-size: 1.3rem; } }
       @media screen and (max-width: 30rem) {
-        #location .content-find .text-find .text {
-          width: 104%;
-          padding-top: 5%; } }
-      #location .content-find .text-find .text p {
-        font-size: 1.5rem;
-        line-height: 130%; }
-        @media screen and (max-width: 64rem) {
-          #location .content-find .text-find .text p {
-            font-size: 1.3rem; } }
-        @media screen and (max-width: 52.5rem) {
-          #location .content-find .text-find .text p {
-            font-size: 1rem; } }
-        @media screen and (max-width: 45rem) {
-          #location .content-find .text-find .text p {
-            font-size: 0.9rem; } }
-        @media screen and (max-width: 37.5rem) {
-          #location .content-find .text-find .text p {
-            font-size: 0.7rem; } }
-        @media screen and (max-width: 30rem) {
-          #location .content-find .text-find .text p {
-            font-size: 1.3rem; } }
-        @media screen and (max-width: 25rem) {
-          #location .content-find .text-find .text p {
-            font-size: 1.2rem; } }
+        #location .content-find .text-find p {
+          font-size: 1.3rem;
+          padding-top: 5%;
+          width: 104%; } }
+      @media screen and (max-width: 25rem) {
+        #location .content-find .text-find p {
+          font-size: 1.2rem; } }
   #location .content-find .icon_location {
     margin-left: 75%;
     margin-top: -25rem;
