@@ -2,146 +2,141 @@
   background-image: url("../img/we-share/banano_fondo_video.svg");
   background-repeat: no-repeat;
   background-size: 103%;
-  padding-bottom: 15rem;
-  @media screen and (min-width: $laptop-medium) {
-    padding-bottom: 22rem;
-  }
-  @media screen and (max-width: $laptop-small) {
-    padding-bottom: 7rem;
-  }
-  @media screen and (max-width: $tablet-large) {
-    padding-bottom: 5rem;
-  }
 
   .video-content {
     margin: 0 auto;
     position: relative;
 
-    .border {
+    .video {
       display: block;
       margin: 0 auto;
-      max-width: 88%;
-      padding-top: 2%;
+      max-width: 35rem;
+      position: relative;
+      top: 9rem;
       @media screen and (min-width: $laptop-large) and (max-width: 117.500em){
         padding-top: 7%;
       }
       @media screen and (min-width: 117.500em) {
         padding-top: 9%;
       }
+      @media screen and (max-width: $tablet-large) {
+        top: 5rem;
+      }
+
+      .frame{
+        width: 100%;
+      }
+    }
+  }
+
+
+.share-content{
+  margin: 0 auto;
+  width: 45rem;
+  margin-top: 36%;
+
+  @media screen and (min-width: $laptop-large) {
+    width: 53rem;
+  }
+  @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
+    width: 46rem;
+  }
+  @media screen and (max-width: $tablet-large) {
+    width: 40rem;
+  }
+  @media screen and (max-width: $tablet-medium) {
+    width: 27rem;
+  }
+  @media screen and (max-width: $mobile-large) {
+    width: inherit;
+  }
+
+  .content {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+
+    @media screen and (max-width: $mobile-large) {
+      width: 85%;
     }
 
-    .bottom-video {
+    h2 {
+        color: $red;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: $quicksand_regular;
+        line-height: 120%;
+        width: 40rem;
 
-      img {
-        position: absolute;
-      }
+        @media screen and (max-width: $tablet-large) {
+          width: 28rem;
+        }
 
-      .icon-play {
-        top: 32%;
-        left: 42%;
-        width: 17%;
-        @media screen and (min-width: $laptop-large) and (max-width: 117.500em) {
-          width: 15%;
+        @media screen and (max-width: $mobile-large) {
+          font-size: 2rem;
+          width: 83%;
         }
-        @media screen and (min-width: 117.500em) {
-          top: 40%;
-        }
-      }
 
-      .icon-left {
-        top: 43%;
-        left: 93%;
-        width: 7%;
-        @media screen and (min-width: 117.500em) {
-          left: 79%;
-          top: 51%;
-        }
-        @media screen and (min-width: $laptop-large) and (max-width: 117.500em) {
-          left: 81%;
-          width: 8%;
-        }
-        @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
-          left: 86%;
+        @media screen and (max-width: $mobile-small) {
+          font-size: 1.5rem;
         }
       }
 
-      .icon-right {
-        top: 43%;
-        width: 7%;
-        @media screen and (min-width: 117.500em) {
-          left: 14%;
-          top: 51%;
+    .text-content {
+      display: inline-flex;
+
+      @media screen and (max-width: $mobile-large) {
+        display: inherit;
+      }
+
+      p {
+        margin-top: 1rem;
+        width: 25rem;
+        font-size: 1.8rem;
+        line-height: 120%;
+
+        @media screen and (min-width: $laptop-large) {
+          width: 35rem;
         }
-        @media screen and (min-width: $laptop-large) and (max-width: 117.500em) {
-          left: 10%;
-          width: 8%;
+        @media screen and (max-width: $laptop-medium) {
+          font-size: 1.5rem;
         }
+        @media screen and (max-width: $tablet-medium) {
+          width: 14rem;
+        }
+        @media screen and (max-width: $mobile-large) {
+          font-size: 1.5rem;
+          width: inherit;
+        }
+        @media screen and (max-width: $mobile-small) {
+          font-size: 1.2rem;
+        }
+      }
+
+      .logo{
+
         @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large){
-          left: 8%;
+          margin-top: -3rem;
         }
-        @media screen and (max-width: $laptop-small) {
-          left: 1%;
-        }
-      }
 
-      .icon-pause {
-        width: 9%;
-        top: 94%;
-        left: 6%;
-        @media screen and (min-width: 117.500em) {
-          left: 21%;
-          top: 95%;
+        @media screen and (max-width: $tablet-large) {
+          width: 14rem;
         }
-        @media screen and (min-width: $laptop-large) and (max-width: 117.500em)  {
-          left: 17%;
-          width: 11%;
-        }
-        @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large){
-          left: 14%;
-        }
-        @media screen and (max-width: $laptop-small) {
-          left: 6%;
-        }
-      }
 
-      .icon-play-green {
-        width: 7%;
-        top: 94%;
-        left: 10%;
-        @media screen and (min-width: 117.500em) {
-          left: 26%;
-          top: 95%;
+        @media screen and (max-width: $tablet-medium) {
+          position: relative;
+          top: -5rem;
         }
-        @media screen and (min-width: $laptop-large) and (max-width: 117.500em){
-          left: 22%;
-          width: 8%;
-        }
-        @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large){
-          left: 18%;
-        }
-        @media screen and (max-width: $laptop-small) {
-          left: 10%;
-        }
-      }
 
-      .icon-volume {
-        top: 94%;
-        left: 84%;
-        width: 13%;
-        @media screen and (min-width: 117.500em) {
-          left: 68%;
-        }
-        @media screen and (min-width: $laptop-large) and (max-width: 117.500em){
-          left: 71%;
-          width: 13%;
-        }
-        @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
-          left: 76%;
-        }
-        @media screen and (max-width: $laptop-small) {
-          left: 83%;
+        @media screen and (max-width: $mobile-large) {
+          width: 70%;
+          left: 2.5rem;
+          top: inherit;
         }
       }
     }
   }
+}
+
+
+
 }

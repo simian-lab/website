@@ -298,9 +298,9 @@ footer .footer-end {
   .footer-we-do .background-section .footer-content .contact-form input, .footer-we-do .background-section .footer-content .contact-form textarea, .footer-clients .background-section .footer-content .contact-form input, .footer-clients .background-section .footer-content .contact-form textarea, .footer-location .background-section .footer-content .contact-form input, .footer-location .background-section .footer-content .contact-form textarea {
     background-color: #1DC0B2; }
 
-.footer-projects .background-section, .footer-we-share .background-section {
+.footer-projects .background-section, .footer-we-share .background-section, .footer-project-deployment .background-section {
   background-image: url("../img/footer/footer-bg-red.svg"); }
-  .footer-projects .background-section .footer-content .contact-form input, .footer-projects .background-section .footer-content .contact-form textarea, .footer-we-share .background-section .footer-content .contact-form input, .footer-we-share .background-section .footer-content .contact-form textarea {
+  .footer-projects .background-section .footer-content .contact-form input, .footer-projects .background-section .footer-content .contact-form textarea, .footer-we-share .background-section .footer-content .contact-form input, .footer-we-share .background-section .footer-content .contact-form textarea, .footer-project-deployment .background-section .footer-content .contact-form input, .footer-project-deployment .background-section .footer-content .contact-form textarea {
     background-color: #FF5E5B; }
 
 .footer-404 {
@@ -1209,60 +1209,38 @@ footer .footer-end {
     @media screen and (max-width: 30rem) {
       #we-share .content .text {
         width: 81%; } }
-    #we-share .content .text .title h1 {
+    #we-share .content .text h1 {
       color: #FF5E5B;
       font-size: 6.5rem;
       line-height: 120%; }
       @media screen and (min-width: 90rem) {
-        #we-share .content .text .title h1 {
+        #we-share .content .text h1 {
           font-size: 8rem; } }
-      @media screen and (max-width: 52.5rem) {
-        #we-share .content .text .title h1 {
-          font-size: 6rem; } }
-      @media screen and (max-width: 45rem) {
-        #we-share .content .text .title h1 {
-          font-size: 4rem; } }
       @media screen and (max-width: 30rem) {
-        #we-share .content .text .title h1 {
+        #we-share .content .text h1 {
           font-size: 5rem; } }
       @media screen and (max-width: 25rem) {
-        #we-share .content .text .title h1 {
+        #we-share .content .text h1 {
           font-size: 3.5rem; } }
-    #we-share .content .text .subtitle {
-      padding-top: 3rem; }
-      @media screen and (max-width: 45rem) {
-        #we-share .content .text .subtitle {
-          padding-top: 2rem; } }
-      #we-share .content .text .subtitle p {
-        font-size: 1.8rem;
-        font-weight: bold;
-        line-height: 120%; }
-        @media screen and (max-width: 90rem) {
-          #we-share .content .text .subtitle p {
-            font-size: 1.5rem; } }
-        @media screen and (max-width: 52.5rem) {
-          #we-share .content .text .subtitle p {
-            font-size: 1rem; } }
-        @media screen and (max-width: 30rem) {
-          #we-share .content .text .subtitle p {
-            font-size: 1.5rem; } }
-        @media screen and (max-width: 22.5rem) {
-          #we-share .content .text .subtitle p {
-            font-size: 1.2rem; } }
-    #we-share .content .text .text-content p {
+    #we-share .content .text h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      font-family: "quicksandregular";
+      line-height: 120%; }
+      @media screen and (max-width: 90rem) {
+        #we-share .content .text h2 {
+          font-size: 1.5rem; } }
+      @media screen and (max-width: 22.5rem) {
+        #we-share .content .text h2 {
+          font-size: 1.2rem; } }
+    #we-share .content .text p {
       font-size: 1.8rem;
       line-height: 120%; }
       @media screen and (max-width: 90rem) {
-        #we-share .content .text .text-content p {
-          font-size: 1.5rem; } }
-      @media screen and (max-width: 52.5rem) {
-        #we-share .content .text .text-content p {
-          font-size: 1rem; } }
-      @media screen and (max-width: 30rem) {
-        #we-share .content .text .text-content p {
+        #we-share .content .text p {
           font-size: 1.5rem; } }
       @media screen and (max-width: 22.5rem) {
-        #we-share .content .text .text-content p {
+        #we-share .content .text p {
           font-size: 1.2rem; } }
     #we-share .content .text .title-video {
       padding-top: 6rem; }
@@ -1289,128 +1267,110 @@ footer .footer-end {
 #we-share .video {
   background-image: url("../img/we-share/banano_fondo_video.svg");
   background-repeat: no-repeat;
-  background-size: 103%;
-  padding-bottom: 15rem; }
-  @media screen and (min-width: 90rem) {
-    #we-share .video {
-      padding-bottom: 22rem; } }
-  @media screen and (max-width: 64rem) {
-    #we-share .video {
-      padding-bottom: 7rem; } }
-  @media screen and (max-width: 52.5rem) {
-    #we-share .video {
-      padding-bottom: 5rem; } }
+  background-size: 103%; }
   #we-share .video .video-content {
     margin: 0 auto;
     position: relative; }
-    #we-share .video .video-content .border {
+    #we-share .video .video-content .video {
       display: block;
       margin: 0 auto;
-      max-width: 88%;
-      padding-top: 2%; }
+      max-width: 35rem;
+      position: relative;
+      top: 9rem; }
       @media screen and (min-width: 100rem) and (max-width: 117.5em) {
-        #we-share .video .video-content .border {
+        #we-share .video .video-content .video {
           padding-top: 7%; } }
       @media screen and (min-width: 117.5em) {
-        #we-share .video .video-content .border {
+        #we-share .video .video-content .video {
           padding-top: 9%; } }
-    #we-share .video .video-content .bottom-video img {
-      position: absolute; }
-    #we-share .video .video-content .bottom-video .icon-play {
-      top: 32%;
-      left: 42%;
-      width: 17%; }
-      @media screen and (min-width: 100rem) and (max-width: 117.5em) {
-        #we-share .video .video-content .bottom-video .icon-play {
-          width: 15%; } }
-      @media screen and (min-width: 117.5em) {
-        #we-share .video .video-content .bottom-video .icon-play {
-          top: 40%; } }
-    #we-share .video .video-content .bottom-video .icon-left {
-      top: 43%;
-      left: 93%;
-      width: 7%; }
-      @media screen and (min-width: 117.5em) {
-        #we-share .video .video-content .bottom-video .icon-left {
-          left: 79%;
-          top: 51%; } }
-      @media screen and (min-width: 100rem) and (max-width: 117.5em) {
-        #we-share .video .video-content .bottom-video .icon-left {
-          left: 81%;
-          width: 8%; } }
-      @media screen and (min-width: 90rem) and (max-width: 100rem) {
-        #we-share .video .video-content .bottom-video .icon-left {
-          left: 86%; } }
-    #we-share .video .video-content .bottom-video .icon-right {
-      top: 43%;
-      width: 7%; }
-      @media screen and (min-width: 117.5em) {
-        #we-share .video .video-content .bottom-video .icon-right {
-          left: 14%;
-          top: 51%; } }
-      @media screen and (min-width: 100rem) and (max-width: 117.5em) {
-        #we-share .video .video-content .bottom-video .icon-right {
-          left: 10%;
-          width: 8%; } }
-      @media screen and (min-width: 90rem) and (max-width: 100rem) {
-        #we-share .video .video-content .bottom-video .icon-right {
-          left: 8%; } }
-      @media screen and (max-width: 64rem) {
-        #we-share .video .video-content .bottom-video .icon-right {
-          left: 1%; } }
-    #we-share .video .video-content .bottom-video .icon-pause {
-      width: 9%;
-      top: 94%;
-      left: 6%; }
-      @media screen and (min-width: 117.5em) {
-        #we-share .video .video-content .bottom-video .icon-pause {
-          left: 21%;
-          top: 95%; } }
-      @media screen and (min-width: 100rem) and (max-width: 117.5em) {
-        #we-share .video .video-content .bottom-video .icon-pause {
-          left: 17%;
-          width: 11%; } }
-      @media screen and (min-width: 90rem) and (max-width: 100rem) {
-        #we-share .video .video-content .bottom-video .icon-pause {
-          left: 14%; } }
-      @media screen and (max-width: 64rem) {
-        #we-share .video .video-content .bottom-video .icon-pause {
-          left: 6%; } }
-    #we-share .video .video-content .bottom-video .icon-play-green {
-      width: 7%;
-      top: 94%;
-      left: 10%; }
-      @media screen and (min-width: 117.5em) {
-        #we-share .video .video-content .bottom-video .icon-play-green {
-          left: 26%;
-          top: 95%; } }
-      @media screen and (min-width: 100rem) and (max-width: 117.5em) {
-        #we-share .video .video-content .bottom-video .icon-play-green {
-          left: 22%;
-          width: 8%; } }
-      @media screen and (min-width: 90rem) and (max-width: 100rem) {
-        #we-share .video .video-content .bottom-video .icon-play-green {
-          left: 18%; } }
-      @media screen and (max-width: 64rem) {
-        #we-share .video .video-content .bottom-video .icon-play-green {
-          left: 10%; } }
-    #we-share .video .video-content .bottom-video .icon-volume {
-      top: 94%;
-      left: 84%;
-      width: 13%; }
-      @media screen and (min-width: 117.5em) {
-        #we-share .video .video-content .bottom-video .icon-volume {
-          left: 68%; } }
-      @media screen and (min-width: 100rem) and (max-width: 117.5em) {
-        #we-share .video .video-content .bottom-video .icon-volume {
-          left: 71%;
-          width: 13%; } }
-      @media screen and (min-width: 90rem) and (max-width: 100rem) {
-        #we-share .video .video-content .bottom-video .icon-volume {
-          left: 76%; } }
-      @media screen and (max-width: 64rem) {
-        #we-share .video .video-content .bottom-video .icon-volume {
-          left: 83%; } }
+      @media screen and (max-width: 52.5rem) {
+        #we-share .video .video-content .video {
+          top: 5rem; } }
+      #we-share .video .video-content .video .frame {
+        width: 100%; }
+  #we-share .video .share-content {
+    margin: 0 auto;
+    width: 45rem;
+    margin-top: 36%; }
+    @media screen and (min-width: 100rem) {
+      #we-share .video .share-content {
+        width: 53rem; } }
+    @media screen and (min-width: 90rem) and (max-width: 100rem) {
+      #we-share .video .share-content {
+        width: 46rem; } }
+    @media screen and (max-width: 52.5rem) {
+      #we-share .video .share-content {
+        width: 40rem; } }
+    @media screen and (max-width: 45rem) {
+      #we-share .video .share-content {
+        width: 27rem; } }
+    @media screen and (max-width: 30rem) {
+      #we-share .video .share-content {
+        width: inherit; } }
+    #we-share .video .share-content .content {
+      margin: 0 auto;
+      margin-bottom: 3rem; }
+      @media screen and (max-width: 30rem) {
+        #we-share .video .share-content .content {
+          width: 85%; } }
+      #we-share .video .share-content .content h2 {
+        color: #FF5E5B;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: "quicksandregular";
+        line-height: 120%;
+        width: 40rem; }
+        @media screen and (max-width: 52.5rem) {
+          #we-share .video .share-content .content h2 {
+            width: 28rem; } }
+        @media screen and (max-width: 30rem) {
+          #we-share .video .share-content .content h2 {
+            font-size: 2rem;
+            width: 83%; } }
+        @media screen and (max-width: 22.5rem) {
+          #we-share .video .share-content .content h2 {
+            font-size: 1.5rem; } }
+      #we-share .video .share-content .content .text-content {
+        display: inline-flex; }
+        @media screen and (max-width: 30rem) {
+          #we-share .video .share-content .content .text-content {
+            display: inherit; } }
+        #we-share .video .share-content .content .text-content p {
+          margin-top: 1rem;
+          width: 25rem;
+          font-size: 1.8rem;
+          line-height: 120%; }
+          @media screen and (min-width: 100rem) {
+            #we-share .video .share-content .content .text-content p {
+              width: 35rem; } }
+          @media screen and (max-width: 90rem) {
+            #we-share .video .share-content .content .text-content p {
+              font-size: 1.5rem; } }
+          @media screen and (max-width: 45rem) {
+            #we-share .video .share-content .content .text-content p {
+              width: 14rem; } }
+          @media screen and (max-width: 30rem) {
+            #we-share .video .share-content .content .text-content p {
+              font-size: 1.5rem;
+              width: inherit; } }
+          @media screen and (max-width: 22.5rem) {
+            #we-share .video .share-content .content .text-content p {
+              font-size: 1.2rem; } }
+        @media screen and (min-width: 90rem) and (max-width: 100rem) {
+          #we-share .video .share-content .content .text-content .logo {
+            margin-top: -3rem; } }
+        @media screen and (max-width: 52.5rem) {
+          #we-share .video .share-content .content .text-content .logo {
+            width: 14rem; } }
+        @media screen and (max-width: 45rem) {
+          #we-share .video .share-content .content .text-content .logo {
+            position: relative;
+            top: -5rem; } }
+        @media screen and (max-width: 30rem) {
+          #we-share .video .share-content .content .text-content .logo {
+            width: 70%;
+            left: 2.5rem;
+            top: inherit; } }
 
 #we-share .share-content {
   margin: 0 auto;
@@ -1434,28 +1394,23 @@ footer .footer-end {
     @media screen and (max-width: 30rem) {
       #we-share .share-content .content {
         width: 85%; } }
-    #we-share .share-content .content .title {
+    #we-share .share-content .content h2 {
+      color: #FF5E5B;
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: "quicksandregular";
+      line-height: 120%;
       width: 40rem; }
       @media screen and (max-width: 52.5rem) {
-        #we-share .share-content .content .title {
+        #we-share .share-content .content h2 {
           width: 28rem; } }
       @media screen and (max-width: 30rem) {
-        #we-share .share-content .content .title {
+        #we-share .share-content .content h2 {
+          font-size: 2rem;
           width: 83%; } }
-      #we-share .share-content .content .title p {
-        color: #FF5E5B;
-        font-size: 2rem;
-        font-weight: bold;
-        line-height: 120%; }
-        @media screen and (max-width: 52.5rem) {
-          #we-share .share-content .content .title p {
-            font-size: 1.3rem; } }
-        @media screen and (max-width: 30rem) {
-          #we-share .share-content .content .title p {
-            font-size: 2rem; } }
-        @media screen and (max-width: 22.5rem) {
-          #we-share .share-content .content .title p {
-            font-size: 1.5rem; } }
+      @media screen and (max-width: 22.5rem) {
+        #we-share .share-content .content h2 {
+          font-size: 1.5rem; } }
     #we-share .share-content .content .text-content {
       display: inline-flex; }
       @media screen and (max-width: 30rem) {
@@ -1472,11 +1427,6 @@ footer .footer-end {
         @media screen and (max-width: 90rem) {
           #we-share .share-content .content .text-content p {
             font-size: 1.5rem; } }
-        @media screen and (max-width: 52.5rem) {
-          #we-share .share-content .content .text-content p {
-            font-size: 1rem;
-            margin-top: 2rem;
-            width: 16rem; } }
         @media screen and (max-width: 30rem) {
           #we-share .share-content .content .text-content p {
             font-size: 1.5rem;
@@ -1484,6 +1434,9 @@ footer .footer-end {
         @media screen and (max-width: 22.5rem) {
           #we-share .share-content .content .text-content p {
             font-size: 1.2rem; } }
+      @media screen and (min-width: 90rem) and (max-width: 100rem) {
+        #we-share .share-content .content .text-content .logo {
+          margin-top: -3rem; } }
       @media screen and (max-width: 52.5rem) {
         #we-share .share-content .content .text-content .logo {
           width: 14rem; } }

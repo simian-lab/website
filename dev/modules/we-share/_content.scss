@@ -42,78 +42,49 @@
   .text {
     margin: 0 auto;
     width: 55%;
+
     @media screen and (max-width: $mobile-large) {
       width: 81%;
     }
 
-    .title {
-
-      h1 {
-        color: $red;
-        font-size: 6.5rem;
-        line-height: 120%;
-        @media screen and (min-width: $laptop-medium) {
-          font-size: 8rem;
-        }
-        @media screen and (max-width: $tablet-large) {
-          font-size: 6rem;
-        }
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 4rem;
-        }
-        @media screen and (max-width: $mobile-large) {
-          font-size: 5rem;
-        }
-        @media screen and (max-width: $mobile-medium) {
-          font-size: 3.5rem;
-        }
+    h1 {
+      color: $red;
+      font-size: 6.5rem;
+      line-height: 120%;
+      @media screen and (min-width: $laptop-medium) {
+        font-size: 8rem;
+       }
+      @media screen and (max-width: $mobile-large) {
+        font-size: 5rem;
+      }
+      @media screen and (max-width: $mobile-medium) {
+        font-size: 3.5rem;
       }
     }
 
-    .subtitle {
-      padding-top: 3rem;
-      @media screen and (max-width: $tablet-medium) {
-        padding-top: 2rem;
+    h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      font-family: $quicksand_regular;
+      line-height: 120%;
+
+      @media screen and (max-width: $laptop-medium) {
+        font-size: 1.5rem;
       }
-
-      p {
-        font-size: 1.8rem;
-        font-weight: bold;
-        line-height: 120%;
-
-        @media screen and (max-width: $laptop-medium) {
-          font-size: 1.5rem;
-        }
-        @media screen and (max-width: $tablet-large) {
-          font-size: 1rem;
-        }
-        @media screen and (max-width: $mobile-large) {
-          font-size: 1.5rem;
-        }
-        @media screen and (max-width: $mobile-small) {
-          font-size: 1.2rem;
-        }
+      @media screen and (max-width: $mobile-small) {
+        font-size: 1.2rem;
       }
     }
 
-    .text-content {
+    p {
+      font-size: 1.8rem;
+      line-height: 120%;
 
-      p {
-        font-size: 1.8rem;
-        line-height: 120%;
-
-        @media screen and (max-width: $laptop-medium) {
-          font-size: 1.5rem;
-        }
-        @media screen and (max-width: $tablet-large) {
-          font-size: 1rem;
-        }
-        @media screen and (max-width: $mobile-large) {
-          font-size: 1.5rem;
-        }
-        @media screen and (max-width: $mobile-small) {
-          font-size: 1.2rem;
-        }
+      @media screen and (max-width: $laptop-medium) {
+        font-size: 1.5rem;
+      }
+      @media screen and (max-width: $mobile-small) {
+        font-size: 1.2rem;
       }
     }
 
