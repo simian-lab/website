@@ -23,33 +23,28 @@
     @media screen and (max-width: $mobile-large) {
       width: 85%;
     }
-    .title {
-      width: 40rem;
 
-      @media screen and (max-width: $tablet-large) {
-        width: 28rem;
-      }
-      @media screen and (max-width: $mobile-large) {
-        width: 83%;
-      }
-
-      p {
+    h2 {
         color: $red;
         font-size: 2rem;
         font-weight: bold;
+        font-family: $quicksand_regular;
         line-height: 120%;
+        width: 40rem;
 
         @media screen and (max-width: $tablet-large) {
-          font-size: 1.3rem;
+          width: 28rem;
         }
+
         @media screen and (max-width: $mobile-large) {
           font-size: 2rem;
+          width: 83%;
         }
+
         @media screen and (max-width: $mobile-small) {
           font-size: 1.5rem;
         }
       }
-    }
 
     .text-content {
       display: inline-flex;
@@ -70,11 +65,6 @@
         @media screen and (max-width: $laptop-medium) {
           font-size: 1.5rem;
         }
-        @media screen and (max-width: $tablet-large) {
-          font-size: 1rem;
-          margin-top: 2rem;
-          width: 16rem;
-        }
         @media screen and (max-width: $mobile-large) {
           font-size: 1.5rem;
           width: inherit;
@@ -86,9 +76,14 @@
 
       .logo{
 
+        @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large){
+          margin-top: -3rem;
+        }
+
         @media screen and (max-width: $tablet-large) {
           width: 14rem;
         }
+
         @media screen and (max-width: $mobile-large) {
           width: 70%;
           position: relative;
