@@ -3,8 +3,6 @@
   .text-header {
     text-align: center;
 
-    .title {
-
       p {
         font-size: 5rem;
         @media screen and (max-width: $laptop-small) {
@@ -17,9 +15,6 @@
           font-size: 4rem;
         }
       }
-    }
-
-    .subtitle {
 
       h1 {
         color: $green;
@@ -34,7 +29,6 @@
           font-size: 7rem;
         }
       }
-    }
   }
 
   .graph {
@@ -75,7 +69,7 @@
         margin-bottom: 15rem;
       }
       @media screen and (max-width: $mobile-small) {
-        margin-bottom: 12rem;
+        margin-bottom: 15rem;
       }
 
       .idea-icon {
@@ -161,7 +155,7 @@
         width: 17rem;
         margin-top: -33rem;
         margin-left: 17%;
-        margin-bottom: 26rem;
+        margin-bottom: 44rem;
       }
       @media screen and (max-width: $mobile-medium) {
         margin-left: 8%;
@@ -170,7 +164,7 @@
         margin-left: 7%;
         margin-bottom: 26.5rem;
         width: 14rem;
-        margin-top: -29.5rem;
+        margin-top: -32.5rem;
       }
 
       h1 {
@@ -203,21 +197,20 @@
 
         @media screen and (max-width: $laptop-small) {
           margin-top: 1rem;
-          font-size: 1rem;
-          margin-left: 14%;
-          width: 73%;
+          margin-left: 9%;
+          width: 21rem;
         }
         @media screen and (max-width: $tablet-large) {
-          width: 84%;
-          margin-left: 9%;
+          width: 17rem;
+          margin-left: 13%;
         }
         @media screen and (max-width: $tablet-medium) {
-          font-size: 0.7rem;
-          width: 72%;
+          width: 15rem;
+          margin-left: 12%;
         }
         @media screen and (max-width: $tablet-small) {
-          width: 88%;
-          margin-left: 7%;
+          width: 13rem;
+          margin-left: 11%;
         }
         @media screen and (max-width: $mobile-large) {
           margin-top: 1rem;
@@ -231,7 +224,6 @@
         @media screen and (max-width: $mobile-small) {
           width: 17rem;
           margin-top: 1rem;
-          font-size: 0.9rem;
           margin-left: 1%;
         }
       }
@@ -245,14 +237,17 @@
 
       @media screen and (max-width: $laptop-small) {
         width: 31%;
-        margin-top: -13rem;
+        margin-top: -17.5rem;
         margin-left: 61%;
       }
+      @media screen and (max-width: $tablet-large) {
+        margin-top: -20.5rem;
+      }
       @media screen and (max-width: $tablet-medium) {
-        margin-top: -9rem;
+        margin-top: -24.5rem;
       }
       @media screen and (max-width: $tablet-small) {
-        margin-top: -9rem;
+        margin-top: -26.5rem;
       }
       @media screen and (max-width: $mobile-large) {
         margin-left: 17%;
@@ -293,12 +288,8 @@
         margin-left: -1rem;
         line-height: 130%;
         @media screen and (max-width: $laptop-small) {
-          font-size: 1rem;
           margin-left: 0;
           width: initial;
-        }
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 0.7rem;
         }
         @media screen and (max-width: $mobile-large) {
           font-size: 1rem;
@@ -309,7 +300,6 @@
           margin-left:11%;
         }
         @media screen and (max-width: $mobile-small) {
-          font-size: 0.9rem;
           margin-left: -5%;
           width: 17rem;
         }
