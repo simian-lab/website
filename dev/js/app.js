@@ -11,7 +11,8 @@ angular.module('simian', [
   'simian.we-are',
   'simian.location',
   'simian.we-share',
-  'simian.monkeys'
+  'simian.monkeys',
+  'simian.project-deployment'
 ])
 
 .config([
@@ -56,6 +57,11 @@ angular.module('simian', [
       controller: 'WeShareController',
       templateUrl: '/modules/we-share/we-share.html',
       url: '/we-share'
+    })
+    .state('project-deployment', {
+      controller: 'DeploymentController',
+      templateUrl: '/modules/project-deployment/project-deployment.html',
+      url: '/project-deployment'
     })
     .state('404', {
       templateUrl: '/modules/404/404.html',
