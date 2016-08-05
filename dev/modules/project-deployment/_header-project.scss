@@ -1,0 +1,57 @@
+.header-project{
+  background-image: url("../img/project-deployment/fondo_rojo.svg");
+  background-repeat: no-repeat;
+  background-size: 103%;
+  margin-top: -4rem;
+  .title-content {
+
+    .logo-project{
+      width: 25%;
+      position: relative;
+      top: 8rem;
+      left: 19%;
+
+      @media screen and (max-width: $mobile-large) {
+        top: 6rem;
+        left: 21%;
+      }
+    }
+
+    .icon-project{
+      width: 100%;
+      position: relative;
+      top: 4rem;
+      left: -10%;
+
+      @media screen and (max-width: $mobile-large) {
+        top: 3rem;
+        left: -6%;
+      }
+    }
+
+    .text{
+      margin: 0 auto;
+      width: 52%;
+
+      @media screen and (max-width: $mobile-large) {
+        margin-top: 5rem;
+        width: 84%;
+      }
+
+      h1{
+        font-size: 5rem;
+      }
+
+      h2{
+        font-family: $quicksand_regular;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 120%;
+      }
+
+      p{
+         font-size: 1.5rem;
+      }
+    }
+  }
+}

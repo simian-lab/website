@@ -2583,6 +2583,355 @@ footer .footer-end {
         #projects .movile-projects .text-movile .text-content p {
           font-size: 1.3rem; } }
 
+#project-deployment .header-project {
+  background-image: url("../img/project-deployment/fondo_rojo.svg");
+  background-repeat: no-repeat;
+  background-size: 103%;
+  margin-top: -4rem; }
+  #project-deployment .header-project .title-content .logo-project {
+    width: 25%;
+    position: relative;
+    top: 8rem;
+    left: 19%; }
+    @media screen and (max-width: 30rem) {
+      #project-deployment .header-project .title-content .logo-project {
+        top: 6rem;
+        left: 21%; } }
+  #project-deployment .header-project .title-content .icon-project {
+    width: 100%;
+    position: relative;
+    top: 4rem;
+    left: -10%; }
+    @media screen and (max-width: 30rem) {
+      #project-deployment .header-project .title-content .icon-project {
+        top: 3rem;
+        left: -6%; } }
+  #project-deployment .header-project .title-content .text {
+    margin: 0 auto;
+    width: 52%; }
+    @media screen and (max-width: 30rem) {
+      #project-deployment .header-project .title-content .text {
+        margin-top: 5rem;
+        width: 84%; } }
+    #project-deployment .header-project .title-content .text h1 {
+      font-size: 5rem; }
+    #project-deployment .header-project .title-content .text h2 {
+      font-family: "quicksandregular";
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 120%; }
+    #project-deployment .header-project .title-content .text p {
+      font-size: 1.5rem; }
+
+#project-deployment .content-project {
+  margin-top: 12rem; }
+  @media screen and (max-width: 30rem) {
+    #project-deployment .content-project {
+      margin-top: 10rem; } }
+  #project-deployment .content-project .section1 .icon1 {
+    position: relative;
+    left: 4%;
+    width: 25%; }
+    @media screen and (max-width: 52.5rem) {
+      #project-deployment .content-project .section1 .icon1 {
+        top: -7rem; } }
+    @media screen and (max-width: 52.5rem) {
+      #project-deployment .content-project .section1 .icon1 {
+        top: -8rem; } }
+    @media screen and (max-width: 30rem) {
+      #project-deployment .content-project .section1 .icon1 {
+        left: 21%;
+        top: inherit;
+        width: 44%; } }
+  #project-deployment .content-project .section1 .icon2 {
+    position: relative;
+    left: -6%;
+    top: -16rem;
+    width: 45%; }
+    @media screen and (max-width: 30rem) {
+      #project-deployment .content-project .section1 .icon2 {
+        left: 30%;
+        width: 56%; } }
+  #project-deployment .content-project .section1 .text {
+    margin: 0 auto;
+    width: 52%;
+    position: relative;
+    top: -14rem;
+    left: 12%; }
+    @media screen and (max-width: 30rem) {
+      #project-deployment .content-project .section1 .text {
+        position: inherit;
+        top: -14rem;
+        left: 12%;
+        width: 78%; } }
+    #project-deployment .content-project .section1 .text h2 {
+      font-family: "quicksandregular";
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 120%; }
+      @media screen and (max-width: 30rem) {
+        #project-deployment .content-project .section1 .text h2 {
+          font-size: 1.5rem; } }
+    #project-deployment .content-project .section1 .text p {
+      font-size: 2rem; }
+      @media screen and (max-width: 30rem) {
+        #project-deployment .content-project .section1 .text p {
+          font-size: 1.5rem; } }
+  @media screen and (max-width: 45rem) {
+    #project-deployment .content-project .section2 {
+      margin-top: -9rem; } }
+  @media screen and (max-width: 30rem) {
+    #project-deployment .content-project .section2 {
+      margin-top: 5rem; } }
+  #project-deployment .content-project .section2 .text1 {
+    display: inline-flex;
+    margin: 0 auto;
+    width: 98%;
+    margin-left: 2%; }
+    @media screen and (max-width: 30rem) {
+      #project-deployment .content-project .section2 .text1 {
+        display: inherit;
+        width: inherit;
+        margin-left: inherit; } }
+    #project-deployment .content-project .section2 .text1 h1 {
+      font-size: 5rem;
+      margin: 0 auto;
+      width: 29%; }
+      @media screen and (max-width: 30rem) {
+        #project-deployment .content-project .section2 .text1 h1 {
+          width: 79%; } }
+    #project-deployment .content-project .section2 .text1 .icon1 {
+      position: relative;
+      left: -2%;
+      top: 5rem;
+      z-index: 1;
+      width: 8%; }
+      @media screen and (max-width: 52.5rem) {
+        #project-deployment .content-project .section2 .text1 .icon1 {
+          left: -1%;
+          top: 4rem; } }
+      @media screen and (max-width: 45rem) {
+        #project-deployment .content-project .section2 .text1 .icon1 {
+          left: -1%;
+          top: 11rem; } }
+      @media screen and (max-width: 30rem) {
+        #project-deployment .content-project .section2 .text1 .icon1 {
+          left: 16%;
+          top: 15rem;
+          width: 14%; } }
+    #project-deployment .content-project .section2 .text1 .icon2 {
+      position: relative;
+      left: -19%;
+      width: 44%; }
+      @media screen and (max-width: 45rem) {
+        #project-deployment .content-project .section2 .text1 .icon2 {
+          top: 8rem; } }
+      @media screen and (max-width: 30rem) {
+        #project-deployment .content-project .section2 .text1 .icon2 {
+          left: -6%;
+          top: inherit;
+          width: 95%; } }
+  #project-deployment .content-project .section2 .text2 {
+    margin: 0 auto;
+    width: 80%; }
+    @media screen and (max-width: 45rem) {
+      #project-deployment .content-project .section2 .text2 {
+        margin-top: 2rem; } }
+    #project-deployment .content-project .section2 .text2 h2 {
+      font-family: "quicksandregular";
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 120%; }
+      @media screen and (max-width: 30rem) {
+        #project-deployment .content-project .section2 .text2 h2 {
+          font-size: 1.5rem; } }
+    #project-deployment .content-project .section2 .text2 p {
+      font-size: 2rem; }
+      @media screen and (max-width: 30rem) {
+        #project-deployment .content-project .section2 .text2 p {
+          font-size: 1.5rem; } }
+  #project-deployment .content-project .section3 {
+    display: inline-flex;
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+    left: 10%;
+    top: 7rem; }
+    @media screen and (max-width: 30rem) {
+      #project-deployment .content-project .section3 {
+        display: inherit;
+        left: 5%;
+        width: 90%; } }
+    #project-deployment .content-project .section3 .text1 h2 {
+      font-family: "quicksandregular";
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 120%;
+      width: 56%; }
+    #project-deployment .content-project .section3 .text1 h1 {
+      font-size: 7rem; }
+    #project-deployment .content-project .section3 .text2 {
+      margin: 0 auto;
+      width: 68%;
+      position: relative;
+      left: -11%; }
+      @media screen and (max-width: 52.5rem) {
+        #project-deployment .content-project .section3 .text2 {
+          width: 51%; } }
+      @media screen and (max-width: 37.5rem) {
+        #project-deployment .content-project .section3 .text2 {
+          width: 31%; } }
+      @media screen and (max-width: 30rem) {
+        #project-deployment .content-project .section3 .text2 {
+          margin-top: 2rem;
+          width: 77%; } }
+      #project-deployment .content-project .section3 .text2 p {
+        font-size: 2rem; }
+        @media screen and (max-width: 30rem) {
+          #project-deployment .content-project .section3 .text2 p {
+            font-size: 1.5rem; } }
+  #project-deployment .content-project .section4 {
+    margin-top: 15rem; }
+    @media screen and (max-width: 52.5rem) {
+      #project-deployment .content-project .section4 {
+        margin-bottom: 5rem; } }
+    #project-deployment .content-project .section4 .text {
+      margin: 0 auto;
+      margin-bottom: 4rem;
+      text-align: center; }
+      #project-deployment .content-project .section4 .text h1 {
+        font-size: 5rem; }
+      #project-deployment .content-project .section4 .text h2 {
+        font-family: "quicksandregular";
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 120%; }
+    #project-deployment .content-project .section4 .icon {
+      display: flex; }
+      @media screen and (max-width: 30rem) {
+        #project-deployment .content-project .section4 .icon {
+          display: inherit; } }
+      #project-deployment .content-project .section4 .icon .developer {
+        position: relative;
+        left: 1%; }
+        @media screen and (max-width: 30rem) {
+          #project-deployment .content-project .section4 .icon .developer {
+            left: -6%; } }
+        #project-deployment .content-project .section4 .icon .developer .back1 {
+          width: 120%; }
+          @media screen and (max-width: 30rem) {
+            #project-deployment .content-project .section4 .icon .developer .back1 {
+              width: 100%; } }
+        #project-deployment .content-project .section4 .icon .developer .icon1 {
+          position: absolute;
+          width: 55%;
+          top: -1%;
+          left: 42%; }
+          @media screen and (max-width: 30rem) {
+            #project-deployment .content-project .section4 .icon .developer .icon1 {
+              top: -5%;
+              left: 30%; } }
+        #project-deployment .content-project .section4 .icon .developer h2 {
+          font-size: 3rem;
+          font-weight: bold;
+          line-height: 120%;
+          position: absolute;
+          top: 50%;
+          left: 50%; }
+          @media screen and (max-width: 30rem) {
+            #project-deployment .content-project .section4 .icon .developer h2 {
+              font-size: 2.5rem;
+              top: 49%;
+              left: 47%; } }
+          @media screen and (max-width: 30rem) {
+            #project-deployment .content-project .section4 .icon .developer h2 {
+              top: 52%;
+              left: 41%; } }
+      #project-deployment .content-project .section4 .icon .analysis {
+        position: relative;
+        left: -3%;
+        top: 7rem; }
+        @media screen and (max-width: 30rem) {
+          #project-deployment .content-project .section4 .icon .analysis {
+            left: inherit;
+            top: 4rem; } }
+        #project-deployment .content-project .section4 .icon .analysis .back1 {
+          width: 120%; }
+          @media screen and (max-width: 30rem) {
+            #project-deployment .content-project .section4 .icon .analysis .back1 {
+              width: 100%; } }
+        #project-deployment .content-project .section4 .icon .analysis .icon1 {
+          position: absolute;
+          top: -26%;
+          left: 37%;
+          width: 50%; }
+          @media screen and (max-width: 30rem) {
+            #project-deployment .content-project .section4 .icon .analysis .icon1 {
+              top: -36%;
+              left: 27%; } }
+        #project-deployment .content-project .section4 .icon .analysis h2 {
+          font-size: 3rem;
+          font-weight: bold;
+          line-height: 120%;
+          position: absolute;
+          top: 40%;
+          left: 44%; }
+          @media screen and (max-width: 30rem) {
+            #project-deployment .content-project .section4 .icon .analysis h2 {
+              font-size: 2.5rem;
+              top: 39%;
+              left: 42%; } }
+          @media screen and (max-width: 30rem) {
+            #project-deployment .content-project .section4 .icon .analysis h2 {
+              top: 44%;
+              left: 38%; } }
+      #project-deployment .content-project .section4 .icon .maintenance {
+        position: relative;
+        right: 12%; }
+        @media screen and (max-width: 30rem) {
+          #project-deployment .content-project .section4 .icon .maintenance {
+            top: 4rem;
+            right: 5%; } }
+        #project-deployment .content-project .section4 .icon .maintenance .back1 {
+          width: 120%; }
+          @media screen and (max-width: 30rem) {
+            #project-deployment .content-project .section4 .icon .maintenance .back1 {
+              width: 100%; } }
+        #project-deployment .content-project .section4 .icon .maintenance .icon1 {
+          left: 45%;
+          position: absolute;
+          top: -7%;
+          width: 40%; }
+          @media screen and (max-width: 30rem) {
+            #project-deployment .content-project .section4 .icon .maintenance .icon1 {
+              left: 34%;
+              top: -12%; } }
+        #project-deployment .content-project .section4 .icon .maintenance h2 {
+          font-size: 3rem;
+          font-weight: bold;
+          line-height: 120%;
+          position: absolute;
+          left: 40%;
+          top: 49%; }
+          @media screen and (max-width: 30rem) {
+            #project-deployment .content-project .section4 .icon .maintenance h2 {
+              font-size: 2.5rem;
+              left: 36%;
+              top: 48%; } }
+          @media screen and (max-width: 30rem) {
+            #project-deployment .content-project .section4 .icon .maintenance h2 {
+              left: 36%;
+              top: 49%; } }
+
+#project-deployment .other-projects {
+  background-image: url("../img/project-deployment/fondo_amarillo_otros_proyectos.svg");
+  background-repeat: no-repeat;
+  background-size: 103%;
+  height: 54rem; }
+  @media screen and (max-width: 30rem) {
+    #project-deployment .other-projects {
+      height: 17rem; } }
+
 * {
   box-sizing: border-box; }
 

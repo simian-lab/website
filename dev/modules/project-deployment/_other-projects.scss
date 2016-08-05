@@ -1,0 +1,10 @@
+.other-projects{
+  background-image: url("../img/project-deployment/fondo_amarillo_otros_proyectos.svg");
+  background-repeat: no-repeat;
+  background-size: 103%;
+  height: 54rem;
+
+  @media screen and (max-width: $mobile-large) {
+    height: 17rem;
+  }
+}
