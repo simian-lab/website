@@ -70,7 +70,8 @@
     #error-404 .text h2 {
       color: #FF5E5B;
       font-family: "amatic_scregular";
-      font-size: 3.5rem; }
+      font-size: 3.5rem;
+      font-weight: bolder; }
       @media screen and (max-width: 30rem) {
         #error-404 .text h2 {
           font-size: 3rem; } }
@@ -83,11 +84,15 @@
     background-image: url("../img/404.png");
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 35rem; }
     @media screen and (min-width: 1600px) {
       #error-404 .background {
         height: 45rem; } }
+    @media screen and (max-width: 30rem) {
+      #error-404 .background {
+        background-size: 187%;
+        background-position: center; } }
 
 header {
   background-image: url("../img/header/header-background.svg");

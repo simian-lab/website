@@ -27,6 +27,7 @@
       color: $red;
       font-family: $amatic_regular;
       font-size: 3.5rem;
+      font-weight: bolder;
 
       @media screen and (max-width: $mobile-large) {
         font-size: 3rem;
@@ -46,11 +47,15 @@
     background-image: url('../img/404.png');
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 35rem;
 
     @media screen and (min-width: 1600px) {
       height: 45rem;
+    }
+    @media screen and (max-width: $mobile-large) {
+      background-size: 187%;
+      background-position: center;
     }
   }
 }
