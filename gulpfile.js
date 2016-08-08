@@ -13,7 +13,7 @@ var bourbon = require('node-bourbon'),
     uglify = require('gulp-uglify'),
     usemin = require('gulp-usemin');
 
-gulp.task('build', [ 'usemin', 'html', 'seo', 'images', 'fonts', 'json', 'plato' ]);
+gulp.task('build', [ 'usemin', 'html', 'root', 'images', 'fonts', 'json', 'plato' ]);
 
 gulp.task('clean', function() {
   gulp.src('prod', {
@@ -76,6 +76,11 @@ gulp.task('plato', function() {
   plato.inspect(files, output, options, callback);
 });
 
+gulp.task('root', function() {
+  gulp.src('dev/*.{ico,png,txt,xml}')
+  .pipe(gulp.dest('prod'));
+});
+
 gulp.task('sass', function() {
   gulp.src('dev/sass/styles.scss')
   .pipe(sass({
@@ -83,11 +88,6 @@ gulp.task('sass', function() {
   }).on('error', sass.logError))
   .pipe(gulp.dest('dev/css/'))
   .pipe(browserSync.stream());
-});
-
-gulp.task('seo', function() {
-  gulp.src('dev/*{txt,xml}')
-  .pipe(gulp.dest('prod'));
 });
 
 gulp.task('serve', [ 'sass' ], function() {
