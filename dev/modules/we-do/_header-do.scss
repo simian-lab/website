@@ -68,8 +68,11 @@
       @media screen and (max-width: $mobile-large) {
         margin-bottom: 15rem;
       }
+      @media screen and (max-width: $mobile-medium) {
+        margin-bottom: 21rem;
+      }
       @media screen and (max-width: $mobile-small) {
-        margin-bottom: 15rem;
+        margin-bottom: 21rem;
       }
 
       .idea-icon {
@@ -159,12 +162,14 @@
       }
       @media screen and (max-width: $mobile-medium) {
         margin-left: 8%;
+        margin-bottom: 44.5rem;
+        margin-top: -38.5rem;
       }
       @media screen and (max-width: $mobile-small) {
         margin-left: 7%;
-        margin-bottom: 26.5rem;
+        margin-bottom: 26rem;
         width: 14rem;
-        margin-top: -32.5rem;
+        margin-top: -38.5rem;
       }
 
       h1 {
@@ -214,12 +219,13 @@
         }
         @media screen and (max-width: $mobile-large) {
           margin-top: 1rem;
-          font-size: 1rem;
-          margin-left: 6%;
-          width: 15rem;
+          font-size: 1.3rem;
+          margin-left: -18%;
+          width: 23rem;
         }
         @media screen and (max-width: $mobile-medium) {
-          margin-left: 12%;
+          margin-left: 4%;
+          width: 18rem;
         }
         @media screen and (max-width: $mobile-small) {
           width: 17rem;
@@ -292,12 +298,13 @@
           width: initial;
         }
         @media screen and (max-width: $mobile-large) {
-          font-size: 1rem;
-          margin-left: 7%;
-          width: 15rem;
+          font-size: 1.3rem;
+          margin-left: -21%;
+          width: 24rem;
         }
         @media screen and (max-width: $mobile-medium) {
           margin-left:11%;
+          width: 16rem;
         }
         @media screen and (max-width: $mobile-small) {
           margin-left: -5%;

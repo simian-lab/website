@@ -82,13 +82,16 @@
           font-size: 5rem; } }
   #error-404 .background {
     background-image: url("../img/404.png");
-    background-position: center bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 35rem; }
     @media screen and (min-width: 1600px) {
       #error-404 .background {
         height: 45rem; } }
+    @media screen and (max-width: 64rem) {
+      #error-404 .background {
+        height: 19rem; } }
     @media screen and (max-width: 30rem) {
       #error-404 .background {
         background-size: 187%;
@@ -1489,9 +1492,12 @@ footer .footer-end {
   @media screen and (max-width: 30rem) {
     #we-do .header-do .icon-do .idea {
       margin-bottom: 15rem; } }
+  @media screen and (max-width: 25rem) {
+    #we-do .header-do .icon-do .idea {
+      margin-bottom: 21rem; } }
   @media screen and (max-width: 22.5rem) {
     #we-do .header-do .icon-do .idea {
-      margin-bottom: 15rem; } }
+      margin-bottom: 21rem; } }
   #we-do .header-do .icon-do .idea .idea-icon {
     margin-top: -9%; }
     @media screen and (max-width: 64rem) {
@@ -1568,13 +1574,15 @@ footer .footer-end {
         margin-bottom: 44rem; } }
     @media screen and (max-width: 25rem) {
       #we-do .header-do .text-content .text-work {
-        margin-left: 8%; } }
+        margin-left: 8%;
+        margin-bottom: 44.5rem;
+        margin-top: -38.5rem; } }
     @media screen and (max-width: 22.5rem) {
       #we-do .header-do .text-content .text-work {
         margin-left: 7%;
-        margin-bottom: 26.5rem;
+        margin-bottom: 26rem;
         width: 14rem;
-        margin-top: -32.5rem; } }
+        margin-top: -38.5rem; } }
     #we-do .header-do .text-content .text-work h1 {
       color: #1DC0B2;
       font-size: 4rem; }
@@ -1619,12 +1627,13 @@ footer .footer-end {
       @media screen and (max-width: 30rem) {
         #we-do .header-do .text-content .text-work p {
           margin-top: 1rem;
-          font-size: 1rem;
-          margin-left: 6%;
-          width: 15rem; } }
+          font-size: 1.3rem;
+          margin-left: -18%;
+          width: 23rem; } }
       @media screen and (max-width: 25rem) {
         #we-do .header-do .text-content .text-work p {
-          margin-left: 12%; } }
+          margin-left: 4%;
+          width: 18rem; } }
       @media screen and (max-width: 22.5rem) {
         #we-do .header-do .text-content .text-work p {
           width: 17rem;
@@ -1690,12 +1699,13 @@ footer .footer-end {
           width: initial; } }
       @media screen and (max-width: 30rem) {
         #we-do .header-do .text-content .text-analize p {
-          font-size: 1rem;
-          margin-left: 7%;
-          width: 15rem; } }
+          font-size: 1.3rem;
+          margin-left: -21%;
+          width: 24rem; } }
       @media screen and (max-width: 25rem) {
         #we-do .header-do .text-content .text-analize p {
-          margin-left: 11%; } }
+          margin-left: 11%;
+          width: 16rem; } }
       @media screen and (max-width: 22.5rem) {
         #we-do .header-do .text-content .text-analize p {
           margin-left: -5%;
@@ -1765,9 +1775,9 @@ footer .footer-end {
           margin-left: 8rem; } }
       @media screen and (max-width: 30rem) {
         #we-do .design-do .text-design p {
-          width: 97%;
-          font-size: 1rem;
-          margin-left: 1%; } }
+          width: 128%;
+          font-size: 1.3rem;
+          margin-left: -17%; } }
       @media screen and (max-width: 25rem) {
         #we-do .design-do .text-design p {
           width: 119%;
@@ -1792,9 +1802,12 @@ footer .footer-end {
     @media screen and (max-width: 30rem) {
       #we-do .finish-do .icon-do .develop {
         margin-bottom: 12rem; } }
+    @media screen and (max-width: 25rem) {
+      #we-do .finish-do .icon-do .develop {
+        margin-bottom: 16.5rem; } }
     @media screen and (max-width: 22.5rem) {
       #we-do .finish-do .icon-do .develop {
-        margin-bottom: 10rem; } }
+        margin-bottom: 19.5rem; } }
     #we-do .finish-do .icon-do .develop .icon {
       margin-top: -9%; }
       @media screen and (max-width: 64rem) {
@@ -1865,14 +1878,14 @@ footer .footer-end {
     @media screen and (max-width: 25rem) {
       #we-do .finish-do .text-content .text-develop {
         margin-left: 5%;
-        margin-top: -38rem;
-        margin-bottom: 54rem; } }
+        margin-top: -42rem;
+        margin-bottom: 54.5rem; } }
     @media screen and (max-width: 22.5rem) {
       #we-do .finish-do .text-content .text-develop {
         margin-left: 13%;
         margin-bottom: 27.5rem;
         width: 14rem;
-        margin-top: -36rem; } }
+        margin-top: -45.5rem; } }
     #we-do .finish-do .text-content .text-develop h1 {
       color: #FF5E5B;
       font-size: 4rem; }
@@ -1911,13 +1924,14 @@ footer .footer-end {
           width: 13rem; } }
       @media screen and (max-width: 30rem) {
         #we-do .finish-do .text-content .text-develop p {
-          font-size: 1rem;
+          font-size: 1.3rem;
           margin-top: 1rem;
-          margin-left: 6%;
-          width: 15rem; } }
+          margin-left: -14%;
+          width: 23rem; } }
       @media screen and (max-width: 25rem) {
         #we-do .finish-do .text-content .text-develop p {
-          margin-left: 12%; } }
+          margin-left: 0%;
+          width: 20rem; } }
       @media screen and (max-width: 22.5rem) {
         #we-do .finish-do .text-content .text-develop p {
           width: 17rem;
@@ -1985,12 +1999,13 @@ footer .footer-end {
           width: initial; } }
       @media screen and (max-width: 30rem) {
         #we-do .finish-do .text-content .text-maintenance p {
-          font-size: 1rem;
-          margin-left: 11%;
-          width: 15rem; } }
+          font-size: 1.3rem;
+          margin-left: -11%;
+          width: 23rem; } }
       @media screen and (max-width: 25rem) {
         #we-do .finish-do .text-content .text-maintenance p {
-          margin-left: 11%; } }
+          margin-left: -1%;
+          width: 20rem; } }
       @media screen and (max-width: 22.5rem) {
         #we-do .finish-do .text-content .text-maintenance p {
           margin-left: 1%;
