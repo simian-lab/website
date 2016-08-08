@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+  <url>
+    <loc>http://simian.co/</loc>
+    <lastmod>2016-06-28T21:42:53+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <link rel="alternate" hreflang="en" href="http://simian.co/" />
+    <link rel="alternate" hreflang="es" href="http://simian.co/" />
+  </url>
+
+  <url>
+    <loc>http://simian.co/we-do</loc>
+    <lastmod>2016-07-29T20:34:36+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <link rel="alternate" hreflang="en" href="http://simian.co/we-do" />
+    <link rel="alternate" hreflang="es" href="http://simian.co/we-do" />
+  </url>
+
+  <url>
+    <loc>http://simian.co/projects</loc>
+    <lastmod>2016-07-29T20:34:36+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <link rel="alternate" hreflang="en" href="http://simian.co/projects" />
+    <link rel="alternate" hreflang="es" href="http://simian.co/projects" />
+  </url>
+
+  <url>
+    <loc>http://simian.co/clients</loc>
+    <lastmod>2016-07-29T20:34:36+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <link rel="alternate" hreflang="en" href="http://simian.co/clients" />
+    <link rel="alternate" hreflang="es" href="http://simian.co/clients" />
+  </url>
+
+  <url>
+    <loc>http://simian.co/we-are</loc>
+    <lastmod>2016-07-29T20:34:36+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <link rel="alternate" hreflang="en" href="http://simian.co/we-are" />
+    <link rel="alternate" hreflang="es" href="http://simian.co/we-are" />
+  </url>
+
+  <url>
+    <loc>http://simian.co/location</loc>
+    <lastmod>2016-07-29T20:34:36+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <link rel="alternate" hreflang="en" href="http://simian.co/location" />
+    <link rel="alternate" hreflang="es" href="http://simian.co/location" />
+  </url>
+
+  <url>
+    <loc>http://simian.co/we-share</loc>
+    <lastmod>2016-07-29T20:34:36+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <link rel="alternate" hreflang="en" href="http://simian.co/we-share" />
+    <link rel="alternate" hreflang="es" href="http://simian.co/we-share" />
+  </url>
+</urlset>
