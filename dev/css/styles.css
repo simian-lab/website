@@ -2269,17 +2269,32 @@ footer .footer-end {
     @media screen and (max-width: 30rem) {
       #projects .header-projects .desktop-projects {
         margin-top: 4rem; } }
-    #projects .header-projects .desktop-projects .back .desktop {
-      width: 95%;
-      margin-left: 3%;
-      margin-top: 8rem; }
-      @media screen and (max-width: 30rem) {
-        #projects .header-projects .desktop-projects .back .desktop {
-          margin-top: inherit; } }
+    #projects .header-projects .desktop-projects .back {
+      position: relative; }
+      #projects .header-projects .desktop-projects .back .desktop {
+        width: 95%;
+        margin-left: 3%;
+        margin-top: 8rem; }
+        @media screen and (max-width: 30rem) {
+          #projects .header-projects .desktop-projects .back .desktop {
+            margin-top: inherit; } }
+      #projects .header-projects .desktop-projects .back .logo {
+        position: absolute;
+        margin-left: 12%;
+        margin-top: 10rem;
+        width: 13%;
+        z-index: 1; }
+      #projects .header-projects .desktop-projects .back .pagina {
+        position: absolute;
+        margin-left: -78%;
+        margin-top: 14rem;
+        width: 58%;
+        z-index: -1; }
     #projects .header-projects .desktop-projects .icon {
+      position: relative;
       margin-top: -17%;
       margin-left: 67%;
-      z-index: 1; }
+      z-index: 0; }
       @media screen and (max-width: 30rem) {
         #projects .header-projects .desktop-projects .icon {
           margin-top: -36%;
@@ -2294,6 +2309,9 @@ footer .footer-end {
         @media screen and (max-width: 30rem) {
           #projects .header-projects .desktop-projects .icon .icon-table {
             width: 56%; } }
+      #projects .header-projects .desktop-projects .icon .more {
+        width: 14%;
+        margin-left: -13%; }
     #projects .header-projects .desktop-projects .text {
       margin: 0 auto;
       width: 62%;
@@ -2411,6 +2429,16 @@ footer .footer-end {
         #projects .movile-projects .back .table {
           padding-left: 15%;
           width: 86%; } }
+    #projects .movile-projects .back .content-movile {
+      width: 17%;
+      margin-left: -23%;
+      margin-top: 10%;
+      position: absolute; }
+    #projects .movile-projects .back .content-tablet {
+      width: 17%;
+      margin-left: -24%;
+      margin-top: 6%;
+      position: absolute; }
   #projects .movile-projects .quote {
     margin: auto 0;
     width: 22%;
@@ -2466,9 +2494,15 @@ footer .footer-end {
           font-size: 0.8rem; } }
       #projects .movile-projects .quote .project-country .project {
         text-transform: uppercase; }
+  #projects .movile-projects .more {
+    width: 6%;
+    position: absolute;
+    margin-left: 54%;
+    margin-top: -7%; }
   #projects .movile-projects .icon-movile {
     margin-left: 70%;
-    margin-top: -3rem; }
+    margin-top: -4rem;
+    margin-bottom: -4.5rem; }
     @media screen and (max-width: 30rem) {
       #projects .movile-projects .icon-movile {
         margin-left: 25%;
@@ -2476,7 +2510,9 @@ footer .footer-end {
     #projects .movile-projects .icon-movile .icon-android {
       width: 30%; }
     #projects .movile-projects .icon-movile .icon-ios {
-      width: 41%; }
+      position: relative;
+      margin-top: -12rem;
+      top: -2rem; }
       @media screen and (max-width: 30rem) {
         #projects .movile-projects .icon-movile .icon-ios {
           width: 37%; } }

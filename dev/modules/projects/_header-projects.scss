@@ -225,7 +225,7 @@
     }
 
     .back {
-
+      position: relative;
       .desktop {
         width: 95%;
         margin-left: 3%;
@@ -235,12 +235,29 @@
            margin-top: inherit;
         }
       }
+
+      .logo{
+        position: absolute;
+        margin-left: 12%;
+        margin-top: 10rem;
+        width: 13%;
+        z-index: 1;
+      }
+
+      .pagina{
+        position: absolute;
+        margin-left: -78%;
+        margin-top: 14rem;
+        width: 58%;
+        z-index: -1;
+      }
     }
 
     .icon {
+      position: relative;
       margin-top: -17%;
       margin-left: 67%;
-      z-index: 1;
+      z-index: 0;
 
       @media screen and (max-width: $mobile-large) {
         margin-top: -36%;
@@ -259,6 +276,11 @@
         @media screen and (max-width: $mobile-large) {
           width: 56%;
         }
+      }
+
+      .more {
+        width: 14%;
+        margin-left: -13%;
       }
     }
 
