@@ -182,6 +182,12 @@
     left: 10%;
     top: 7rem;
 
+    @media screen and (max-width: $tablet-medium) {
+      display: inherit;
+      left: 5%;
+      width: 90%;
+    }
+
     @media screen and (max-width: $mobile-large) {
       display: inherit;
       left: 5%;
@@ -191,13 +197,13 @@
     .text1{
       h2{
         font-family: $quicksand_regular;
-        font-size: 2rem;
-        font-weight: bold;
+        font-size: 2.5rem;
         line-height: 120%;
         width: 56%;
       }
 
       h1{
+        color: $yellow;
         font-size: 7rem;
       }
 
@@ -217,6 +223,11 @@
         width: 31%;
       }
 
+      @media screen and (max-width: $tablet-medium) {
+        margin-top: 2rem;
+        width: 77%;
+      }
+
       @media screen and (max-width: $mobile-large) {
         margin-top: 2rem;
         width: 77%;
@@ -224,6 +235,10 @@
 
       p{
         font-size: 2rem;
+
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 1.5rem;
+        }
 
         @media screen and (max-width: $mobile-large) {
           font-size: 1.5rem;
@@ -244,13 +259,13 @@
       margin-bottom: 4rem;
       text-align: center;
       h1{
+        color: $red;
         font-size: 5rem;
       }
 
       h2{
         font-family: $quicksand_regular;
-        font-size: 2rem;
-        font-weight: bold;
+        font-size: 2.5rem;
         line-height: 120%;
       }
     }
@@ -258,7 +273,7 @@
     .icon{
       display: flex;
 
-      @media screen and (max-width: $mobile-large) {
+      @media screen and (max-width: $tablet-medium) {
         display: inherit;
       }
 
@@ -266,14 +281,14 @@
         position: relative;
         left: 1%;
 
-        @media screen and (max-width: $mobile-large) {
+        @media screen and (max-width: $tablet-medium) {
           left: -6%;
         }
 
         .back1{
           width: 120%;
 
-          @media screen and (max-width: $mobile-large) {
+          @media screen and (max-width: $tablet-medium) {
             width: 100%;
           }
         }
@@ -284,7 +299,7 @@
           top: -1%;
           left: 42%;
 
-          @media screen and (max-width: $mobile-large) {
+          @media screen and (max-width: $tablet-medium) {
             top: -5%;
             left: 30%;
           }
@@ -298,14 +313,23 @@
           top: 50%;
           left: 50%;
 
-          @media screen and (max-width: $mobile-large) {
+          @media screen and (max-width: $laptop-small) {
             font-size: 2.5rem;
-            top: 49%;
-            left: 47%;
+          }
+
+          @media screen and (max-width: $tablet-medium) {
+            font-size: 3rem;
+            top: 56%;
+            left: 46%;
           }
 
           @media screen and (max-width: $mobile-large) {
+            font-size: 2.5rem;
             top: 52%;
+            left: 42%;
+          }
+
+          @media screen and (max-width: $mobile-small) {
             left: 41%;
           }
         }
@@ -316,7 +340,7 @@
         left: -3%;
         top: 7rem;
 
-        @media screen and (max-width: $mobile-large) {
+        @media screen and (max-width: $tablet-medium) {
           left: inherit;
           top: 4rem;
         }
@@ -324,7 +348,7 @@
        .back1{
           width: 120%;
 
-          @media screen and (max-width: $mobile-large) {
+          @media screen and (max-width: $tablet-medium) {
             width: 100%;
           }
         }
@@ -335,7 +359,7 @@
           left: 37%;
           width: 50%;
 
-          @media screen and (max-width: $mobile-large) {
+          @media screen and (max-width: $tablet-medium) {
             top: -36%;
             left: 27%;
           }
@@ -349,14 +373,23 @@
           top: 40%;
           left: 44%;
 
-          @media screen and (max-width: $mobile-large) {
+          @media screen and (max-width: $laptop-small) {
             font-size: 2.5rem;
-            top: 39%;
+          }
+
+          @media screen and (max-width: $tablet-medium) {
+            font-size: 3rem;
+            top: 45%;
             left: 42%;
           }
 
           @media screen and (max-width: $mobile-large) {
-            top: 44%;
+            font-size: 2.5rem;
+            left: 37%;
+            top: 43%;
+          }
+
+          @media screen and (max-width: $mobile-small) {
             left: 38%;
           }
         }
@@ -366,7 +399,7 @@
         position: relative;
         right: 12%;
 
-        @media screen and (max-width: $mobile-large) {
+        @media screen and (max-width: $tablet-medium) {
           top: 4rem;
           right: 5%;
         }
@@ -374,7 +407,7 @@
         .back1{
           width: 120%;
 
-          @media screen and (max-width: $mobile-large) {
+          @media screen and (max-width: $tablet-medium) {
             width: 100%;
           }
         }
@@ -385,7 +418,7 @@
           top: -7%;
           width: 40%;
 
-          @media screen and (max-width: $mobile-large) {
+          @media screen and (max-width: $tablet-medium) {
             left: 34%;
             top: -12%;
           }
@@ -399,14 +432,35 @@
           left: 40%;
           top: 49%;
 
-          @media screen and (max-width: $mobile-large) {
+          @media screen and (min-width: 81.250em) {
+            left: 44%;
+          }
+
+          @media screen and (max-width: $laptop-small) {
             font-size: 2.5rem;
-            left: 36%;
-            top: 48%;
+            left: 40%;
+            top: 49%;
+          }
+
+          @media screen and (max-width: $tablet-large) {
+            font-size: 2.3rem;
+            left: 35%;
+          }
+
+          @media screen and (max-width: $tablet-medium) {
+            font-size: 3rem;
+            left: 40%;
+            top: 54%;
           }
 
           @media screen and (max-width: $mobile-large) {
+            font-size: 2.5rem;
             left: 36%;
+            top: 50%;
+          }
+
+          @media screen and (max-width: $mobile-small) {
+            left: 31%;
             top: 49%;
           }
         }

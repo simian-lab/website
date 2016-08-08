@@ -2536,6 +2536,9 @@ footer .footer-end {
     position: relative;
     top: 8rem;
     left: 19%; }
+    @media screen and (max-width: 37.5rem) {
+      #project-deployment .header-project .title-content .logo-project {
+        top: 7rem; } }
     @media screen and (max-width: 30rem) {
       #project-deployment .header-project .title-content .logo-project {
         top: 6rem;
@@ -2544,7 +2547,7 @@ footer .footer-end {
     width: 100%;
     position: relative;
     top: 4rem;
-    left: -10%; }
+    left: -7%; }
     @media screen and (max-width: 30rem) {
       #project-deployment .header-project .title-content .icon-project {
         top: 3rem;
@@ -2560,11 +2563,15 @@ footer .footer-end {
       font-size: 5rem; }
     #project-deployment .header-project .title-content .text h2 {
       font-family: "quicksandregular";
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: bold;
-      line-height: 120%; }
+      line-height: 120%;
+      margin-top: 1rem; }
     #project-deployment .header-project .title-content .text p {
-      font-size: 1.5rem; }
+      font-size: 2rem; }
+      @media screen and (max-width: 52.5rem) {
+        #project-deployment .header-project .title-content .text p {
+          margin-bottom: 5rem; } }
 
 #project-deployment .content-project {
   margin-top: 12rem; }
@@ -2700,6 +2707,11 @@ footer .footer-end {
     position: relative;
     left: 10%;
     top: 7rem; }
+    @media screen and (max-width: 45rem) {
+      #project-deployment .content-project .section3 {
+        display: inherit;
+        left: 5%;
+        width: 90%; } }
     @media screen and (max-width: 30rem) {
       #project-deployment .content-project .section3 {
         display: inherit;
@@ -2707,11 +2719,11 @@ footer .footer-end {
         width: 90%; } }
     #project-deployment .content-project .section3 .text1 h2 {
       font-family: "quicksandregular";
-      font-size: 2rem;
-      font-weight: bold;
+      font-size: 2.5rem;
       line-height: 120%;
       width: 56%; }
     #project-deployment .content-project .section3 .text1 h1 {
+      color: #DED96B;
       font-size: 7rem; }
     #project-deployment .content-project .section3 .text2 {
       margin: 0 auto;
@@ -2724,12 +2736,19 @@ footer .footer-end {
       @media screen and (max-width: 37.5rem) {
         #project-deployment .content-project .section3 .text2 {
           width: 31%; } }
+      @media screen and (max-width: 45rem) {
+        #project-deployment .content-project .section3 .text2 {
+          margin-top: 2rem;
+          width: 77%; } }
       @media screen and (max-width: 30rem) {
         #project-deployment .content-project .section3 .text2 {
           margin-top: 2rem;
           width: 77%; } }
       #project-deployment .content-project .section3 .text2 p {
         font-size: 2rem; }
+        @media screen and (max-width: 45rem) {
+          #project-deployment .content-project .section3 .text2 p {
+            font-size: 1.5rem; } }
         @media screen and (max-width: 30rem) {
           #project-deployment .content-project .section3 .text2 p {
             font-size: 1.5rem; } }
@@ -2743,26 +2762,26 @@ footer .footer-end {
       margin-bottom: 4rem;
       text-align: center; }
       #project-deployment .content-project .section4 .text h1 {
+        color: #FF5E5B;
         font-size: 5rem; }
       #project-deployment .content-project .section4 .text h2 {
         font-family: "quicksandregular";
-        font-size: 2rem;
-        font-weight: bold;
+        font-size: 2.5rem;
         line-height: 120%; }
     #project-deployment .content-project .section4 .icon {
       display: flex; }
-      @media screen and (max-width: 30rem) {
+      @media screen and (max-width: 45rem) {
         #project-deployment .content-project .section4 .icon {
           display: inherit; } }
       #project-deployment .content-project .section4 .icon .developer {
         position: relative;
         left: 1%; }
-        @media screen and (max-width: 30rem) {
+        @media screen and (max-width: 45rem) {
           #project-deployment .content-project .section4 .icon .developer {
             left: -6%; } }
         #project-deployment .content-project .section4 .icon .developer .back1 {
           width: 120%; }
-          @media screen and (max-width: 30rem) {
+          @media screen and (max-width: 45rem) {
             #project-deployment .content-project .section4 .icon .developer .back1 {
               width: 100%; } }
         #project-deployment .content-project .section4 .icon .developer .icon1 {
@@ -2770,7 +2789,7 @@ footer .footer-end {
           width: 55%;
           top: -1%;
           left: 42%; }
-          @media screen and (max-width: 30rem) {
+          @media screen and (max-width: 45rem) {
             #project-deployment .content-project .section4 .icon .developer .icon1 {
               top: -5%;
               left: 30%; } }
@@ -2781,26 +2800,33 @@ footer .footer-end {
           position: absolute;
           top: 50%;
           left: 50%; }
+          @media screen and (max-width: 64rem) {
+            #project-deployment .content-project .section4 .icon .developer h2 {
+              font-size: 2.5rem; } }
+          @media screen and (max-width: 45rem) {
+            #project-deployment .content-project .section4 .icon .developer h2 {
+              font-size: 3rem;
+              top: 56%;
+              left: 46%; } }
           @media screen and (max-width: 30rem) {
             #project-deployment .content-project .section4 .icon .developer h2 {
               font-size: 2.5rem;
-              top: 49%;
-              left: 47%; } }
-          @media screen and (max-width: 30rem) {
-            #project-deployment .content-project .section4 .icon .developer h2 {
               top: 52%;
+              left: 42%; } }
+          @media screen and (max-width: 22.5rem) {
+            #project-deployment .content-project .section4 .icon .developer h2 {
               left: 41%; } }
       #project-deployment .content-project .section4 .icon .analysis {
         position: relative;
         left: -3%;
         top: 7rem; }
-        @media screen and (max-width: 30rem) {
+        @media screen and (max-width: 45rem) {
           #project-deployment .content-project .section4 .icon .analysis {
             left: inherit;
             top: 4rem; } }
         #project-deployment .content-project .section4 .icon .analysis .back1 {
           width: 120%; }
-          @media screen and (max-width: 30rem) {
+          @media screen and (max-width: 45rem) {
             #project-deployment .content-project .section4 .icon .analysis .back1 {
               width: 100%; } }
         #project-deployment .content-project .section4 .icon .analysis .icon1 {
@@ -2808,7 +2834,7 @@ footer .footer-end {
           top: -26%;
           left: 37%;
           width: 50%; }
-          @media screen and (max-width: 30rem) {
+          @media screen and (max-width: 45rem) {
             #project-deployment .content-project .section4 .icon .analysis .icon1 {
               top: -36%;
               left: 27%; } }
@@ -2819,25 +2845,32 @@ footer .footer-end {
           position: absolute;
           top: 40%;
           left: 44%; }
-          @media screen and (max-width: 30rem) {
+          @media screen and (max-width: 64rem) {
             #project-deployment .content-project .section4 .icon .analysis h2 {
-              font-size: 2.5rem;
-              top: 39%;
+              font-size: 2.5rem; } }
+          @media screen and (max-width: 45rem) {
+            #project-deployment .content-project .section4 .icon .analysis h2 {
+              font-size: 3rem;
+              top: 45%;
               left: 42%; } }
           @media screen and (max-width: 30rem) {
             #project-deployment .content-project .section4 .icon .analysis h2 {
-              top: 44%;
+              font-size: 2.5rem;
+              left: 37%;
+              top: 43%; } }
+          @media screen and (max-width: 22.5rem) {
+            #project-deployment .content-project .section4 .icon .analysis h2 {
               left: 38%; } }
       #project-deployment .content-project .section4 .icon .maintenance {
         position: relative;
         right: 12%; }
-        @media screen and (max-width: 30rem) {
+        @media screen and (max-width: 45rem) {
           #project-deployment .content-project .section4 .icon .maintenance {
             top: 4rem;
             right: 5%; } }
         #project-deployment .content-project .section4 .icon .maintenance .back1 {
           width: 120%; }
-          @media screen and (max-width: 30rem) {
+          @media screen and (max-width: 45rem) {
             #project-deployment .content-project .section4 .icon .maintenance .back1 {
               width: 100%; } }
         #project-deployment .content-project .section4 .icon .maintenance .icon1 {
@@ -2845,7 +2878,7 @@ footer .footer-end {
           position: absolute;
           top: -7%;
           width: 40%; }
-          @media screen and (max-width: 30rem) {
+          @media screen and (max-width: 45rem) {
             #project-deployment .content-project .section4 .icon .maintenance .icon1 {
               left: 34%;
               top: -12%; } }
@@ -2856,14 +2889,31 @@ footer .footer-end {
           position: absolute;
           left: 40%;
           top: 49%; }
+          @media screen and (min-width: 81.25em) {
+            #project-deployment .content-project .section4 .icon .maintenance h2 {
+              left: 44%; } }
+          @media screen and (max-width: 64rem) {
+            #project-deployment .content-project .section4 .icon .maintenance h2 {
+              font-size: 2.5rem;
+              left: 40%;
+              top: 49%; } }
+          @media screen and (max-width: 52.5rem) {
+            #project-deployment .content-project .section4 .icon .maintenance h2 {
+              font-size: 2.3rem;
+              left: 35%; } }
+          @media screen and (max-width: 45rem) {
+            #project-deployment .content-project .section4 .icon .maintenance h2 {
+              font-size: 3rem;
+              left: 40%;
+              top: 54%; } }
           @media screen and (max-width: 30rem) {
             #project-deployment .content-project .section4 .icon .maintenance h2 {
               font-size: 2.5rem;
               left: 36%;
-              top: 48%; } }
-          @media screen and (max-width: 30rem) {
+              top: 50%; } }
+          @media screen and (max-width: 22.5rem) {
             #project-deployment .content-project .section4 .icon .maintenance h2 {
-              left: 36%;
+              left: 31%;
               top: 49%; } }
 
 #project-deployment .other-projects {
