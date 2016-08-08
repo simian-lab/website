@@ -72,9 +72,10 @@
         margin-left: 8rem;
       }
       @media screen and (max-width: $mobile-large) {
-        width: 97%;
-        font-size: 1rem;
-        margin-left: 1%;
+        width: 128%;
+        font-size: 1.3rem;
+        margin-left: -17%;
+
       }
       @media screen and (max-width: $mobile-medium) {
         width: 119%;
