@@ -81,6 +81,49 @@
         width: 86%;
       }
     }
+
+    .content-movile{
+      width: 17%;
+      margin-left: -23%;
+      margin-top: 10%;
+      position: absolute;
+
+      @media screen and (max-width: $tablet-small) {
+        margin-left: -24%;
+        margin-top: 13%;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        width: 42%;
+        margin-left: -52%;
+        margin-top: 19%;
+      }
+    }
+
+    .content-tablet{
+      width: 17%;
+      margin-left: -24%;
+      margin-top: 6%;
+      position: absolute;
+
+      @media screen and (max-width: $tablet-large) {
+        width: 20%;
+        margin-left: -29%;
+        margin-top: 8%;
+      }
+
+      @media screen and (max-width: $tablet-small) {
+        width: 23%;
+        margin-left: -34%;
+        margin-top: 10%;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        width: 40%;
+        margin-left: -55%;
+        margin-top: 13%;
+      }
+    }
   }
 
   .quote {
@@ -162,13 +205,58 @@
     }
   }
 
+  .more-movile{
+    width: 6%;
+    position: absolute;
+    margin-left: 54%;
+    margin-top: -7%;
+
+    @media screen and (max-width: $tablet-small) {
+      width: 7%;
+      margin-left: 56%;
+      margin-top: -9%;
+    }
+
+    @media screen and (max-width: $mobile-large) {
+      width: 13%;
+      margin-left: 65%;
+      margin-top: -16%;
+    }
+  }
+
+  .more-tablet{
+    width: 6%;
+    position: absolute;
+    margin-left: 55%;
+    margin-top: -6%;
+
+    @media screen and (max-width: $tablet-large) {
+      margin-left: 61%;
+      margin-top: -7%;
+    }
+
+    @media screen and (max-width: $tablet-small) {
+      width: 7%;
+      margin-left: 60%;
+      margin-top: -8%;
+    }
+
+    @media screen and (max-width: $mobile-large) {
+      width: 13%;
+      margin-left: 71%;
+      margin-top: -15%;
+    }
+  }
+
   .icon-movile {
     margin-left: 70%;
-    margin-top: -3rem;
+    margin-top: -4%;
+    margin-bottom: -5%;
 
     @media screen and (max-width: $mobile-large) {
       margin-left: 25%;
-      margin-top: 1rem;
+      margin-top: 1%;
+      margin-bottom: -14%;
     }
 
     .icon-android{
@@ -176,7 +264,9 @@
     }
 
     .icon-ios{
-      width: 41%;
+      position: relative;
+      top: -1rem;
+      width: 31%;
       @media screen and (max-width: $mobile-large) {
         width: 37%;
       }
@@ -198,12 +288,11 @@
     @media screen and (max-width: $mobile-large) {
       width: 83%;
       margin-left: 11%;
+       margin-top: 3rem;
     }
 
-
-    .title{
-
-      p{
+      h2{
+        font-family: $quicksand_regular;
         color: $red;
         font-size: 2rem;
         font-weight: bold;
@@ -211,19 +300,10 @@
         @media screen and (max-width: $laptop-small) {
           font-size: 1.5rem;
         }
-        @media screen and (max-width: $tablet-large) {
-          font-size: 1.3rem;
-        }
-        @media screen and (max-width: $tablet-small) {
-          font-size: 1rem;
-        }
         @media screen and (max-width: $mobile-large) {
           font-size: 1.5rem;
         }
       }
-    }
-
-    .text-content{
 
       p {
         font-size: 1.7rem;
@@ -231,16 +311,9 @@
         @media screen and (max-width: $laptop-small) {
           font-size: 1.3rem;
         }
-        @media screen and (max-width: $tablet-large) {
-          font-size: 1rem;
-        }
-        @media screen and (max-width: $tablet-small) {
-          font-size: 0.9rem;
-        }
         @media screen and (max-width: $mobile-large) {
           font-size: 1.3rem;
         }
       }
-    }
   }
 }

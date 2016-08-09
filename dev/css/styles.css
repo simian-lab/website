@@ -2241,14 +2241,15 @@ footer .footer-end {
         #projects .header-projects .content-header .frame-text {
           top: 0rem;
           left: -39%;
-          width: 143%; } }
+          width: 142%; } }
       @media screen and (max-width: 25rem) {
         #projects .header-projects .content-header .frame-text {
-          width: 142%;
-          left: -39%; } }
-      @media screen and (max-width: 25rem) {
+          width: 141%;
+          left: -38%; } }
+      @media screen and (max-width: 22.5rem) {
         #projects .header-projects .content-header .frame-text {
-          left: -7rem; } }
+          left: -6.8rem;
+          width: 136%; } }
     #projects .header-projects .content-header .icon-header {
       position: relative;
       top: 2rem;
@@ -2269,17 +2270,39 @@ footer .footer-end {
     @media screen and (max-width: 30rem) {
       #projects .header-projects .desktop-projects {
         margin-top: 4rem; } }
-    #projects .header-projects .desktop-projects .back .desktop {
-      width: 95%;
-      margin-left: 3%;
-      margin-top: 8rem; }
-      @media screen and (max-width: 30rem) {
-        #projects .header-projects .desktop-projects .back .desktop {
-          margin-top: inherit; } }
+    #projects .header-projects .desktop-projects .back {
+      position: relative; }
+      #projects .header-projects .desktop-projects .back .desktop {
+        width: 95%;
+        margin-left: 3%;
+        margin-top: 13%; }
+        @media screen and (max-width: 30rem) {
+          #projects .header-projects .desktop-projects .back .desktop {
+            margin-top: inherit; } }
+      #projects .header-projects .desktop-projects .back .logo {
+        position: absolute;
+        margin-left: 12%;
+        margin-top: 16%;
+        width: 13%;
+        z-index: 1; }
+        @media screen and (max-width: 30rem) {
+          #projects .header-projects .desktop-projects .back .logo {
+            margin-top: 3%; } }
+      #projects .header-projects .desktop-projects .back .pagina {
+        position: absolute;
+        margin-left: -78%;
+        margin-top: 21%;
+        width: 58%;
+        z-index: -1; }
+        @media screen and (max-width: 30rem) {
+          #projects .header-projects .desktop-projects .back .pagina {
+            margin-top: 8%;
+            z-index: -0; } }
     #projects .header-projects .desktop-projects .icon {
+      position: relative;
       margin-top: -17%;
       margin-left: 67%;
-      z-index: 1; }
+      z-index: 0; }
       @media screen and (max-width: 30rem) {
         #projects .header-projects .desktop-projects .icon {
           margin-top: -36%;
@@ -2294,11 +2317,14 @@ footer .footer-end {
         @media screen and (max-width: 30rem) {
           #projects .header-projects .desktop-projects .icon .icon-table {
             width: 56%; } }
+      #projects .header-projects .desktop-projects .icon .more {
+        width: 14%;
+        margin-left: -13%; }
     #projects .header-projects .desktop-projects .text {
       margin: 0 auto;
       width: 62%;
       margin-left: 6%;
-      margin-top: -2rem; }
+      margin-top: -1rem; }
       @media screen and (max-width: 37.5rem) {
         #projects .header-projects .desktop-projects .text {
           margin-top: -1rem; } }
@@ -2307,37 +2333,26 @@ footer .footer-end {
           width: 83%;
           margin-left: 11%;
           margin-top: 1rem; } }
-      #projects .header-projects .desktop-projects .text .title p {
+      #projects .header-projects .desktop-projects .text h2 {
+        font-family: "quicksandregular";
         color: #FF5E5B;
         font-size: 2rem;
         font-weight: bold;
         line-height: 130%; }
         @media screen and (max-width: 64rem) {
-          #projects .header-projects .desktop-projects .text .title p {
+          #projects .header-projects .desktop-projects .text h2 {
             font-size: 1.5rem; } }
-        @media screen and (max-width: 52.5rem) {
-          #projects .header-projects .desktop-projects .text .title p {
-            font-size: 1.3rem; } }
-        @media screen and (max-width: 37.5rem) {
-          #projects .header-projects .desktop-projects .text .title p {
-            font-size: 1rem; } }
         @media screen and (max-width: 30rem) {
-          #projects .header-projects .desktop-projects .text .title p {
+          #projects .header-projects .desktop-projects .text h2 {
             font-size: 1.5rem; } }
-      #projects .header-projects .desktop-projects .text .text-content p {
+      #projects .header-projects .desktop-projects .text p {
         font-size: 1.7rem;
         line-height: 130%; }
         @media screen and (max-width: 64rem) {
-          #projects .header-projects .desktop-projects .text .text-content p {
+          #projects .header-projects .desktop-projects .text p {
             font-size: 1.3rem; } }
-        @media screen and (max-width: 52.5rem) {
-          #projects .header-projects .desktop-projects .text .text-content p {
-            font-size: 1rem; } }
-        @media screen and (max-width: 37.5rem) {
-          #projects .header-projects .desktop-projects .text .text-content p {
-            font-size: 0.8rem; } }
         @media screen and (max-width: 30rem) {
-          #projects .header-projects .desktop-projects .text .text-content p {
+          #projects .header-projects .desktop-projects .text p {
             font-size: 1.3rem; } }
 
 #projects .movile-projects {
@@ -2411,6 +2426,40 @@ footer .footer-end {
         #projects .movile-projects .back .table {
           padding-left: 15%;
           width: 86%; } }
+    #projects .movile-projects .back .content-movile {
+      width: 17%;
+      margin-left: -23%;
+      margin-top: 10%;
+      position: absolute; }
+      @media screen and (max-width: 37.5rem) {
+        #projects .movile-projects .back .content-movile {
+          margin-left: -24%;
+          margin-top: 13%; } }
+      @media screen and (max-width: 30rem) {
+        #projects .movile-projects .back .content-movile {
+          width: 42%;
+          margin-left: -52%;
+          margin-top: 19%; } }
+    #projects .movile-projects .back .content-tablet {
+      width: 17%;
+      margin-left: -24%;
+      margin-top: 6%;
+      position: absolute; }
+      @media screen and (max-width: 52.5rem) {
+        #projects .movile-projects .back .content-tablet {
+          width: 20%;
+          margin-left: -29%;
+          margin-top: 8%; } }
+      @media screen and (max-width: 37.5rem) {
+        #projects .movile-projects .back .content-tablet {
+          width: 23%;
+          margin-left: -34%;
+          margin-top: 10%; } }
+      @media screen and (max-width: 30rem) {
+        #projects .movile-projects .back .content-tablet {
+          width: 40%;
+          margin-left: -55%;
+          margin-top: 13%; } }
   #projects .movile-projects .quote {
     margin: auto 0;
     width: 22%;
@@ -2466,17 +2515,55 @@ footer .footer-end {
           font-size: 0.8rem; } }
       #projects .movile-projects .quote .project-country .project {
         text-transform: uppercase; }
+  #projects .movile-projects .more-movile {
+    width: 6%;
+    position: absolute;
+    margin-left: 54%;
+    margin-top: -7%; }
+    @media screen and (max-width: 37.5rem) {
+      #projects .movile-projects .more-movile {
+        width: 7%;
+        margin-left: 56%;
+        margin-top: -9%; } }
+    @media screen and (max-width: 30rem) {
+      #projects .movile-projects .more-movile {
+        width: 13%;
+        margin-left: 65%;
+        margin-top: -16%; } }
+  #projects .movile-projects .more-tablet {
+    width: 6%;
+    position: absolute;
+    margin-left: 55%;
+    margin-top: -6%; }
+    @media screen and (max-width: 52.5rem) {
+      #projects .movile-projects .more-tablet {
+        margin-left: 61%;
+        margin-top: -7%; } }
+    @media screen and (max-width: 37.5rem) {
+      #projects .movile-projects .more-tablet {
+        width: 7%;
+        margin-left: 60%;
+        margin-top: -8%; } }
+    @media screen and (max-width: 30rem) {
+      #projects .movile-projects .more-tablet {
+        width: 13%;
+        margin-left: 71%;
+        margin-top: -15%; } }
   #projects .movile-projects .icon-movile {
     margin-left: 70%;
-    margin-top: -3rem; }
+    margin-top: -4%;
+    margin-bottom: -5%; }
     @media screen and (max-width: 30rem) {
       #projects .movile-projects .icon-movile {
         margin-left: 25%;
-        margin-top: 1rem; } }
+        margin-top: 1%;
+        margin-bottom: -14%; } }
     #projects .movile-projects .icon-movile .icon-android {
       width: 30%; }
     #projects .movile-projects .icon-movile .icon-ios {
-      width: 41%; }
+      position: relative;
+      top: -1rem;
+      width: 31%; }
       @media screen and (max-width: 30rem) {
         #projects .movile-projects .icon-movile .icon-ios {
           width: 37%; } }
@@ -2492,38 +2579,28 @@ footer .footer-end {
     @media screen and (max-width: 30rem) {
       #projects .movile-projects .text-movile {
         width: 83%;
-        margin-left: 11%; } }
-    #projects .movile-projects .text-movile .title p {
+        margin-left: 11%;
+        margin-top: 3rem; } }
+    #projects .movile-projects .text-movile h2 {
+      font-family: "quicksandregular";
       color: #FF5E5B;
       font-size: 2rem;
       font-weight: bold;
       line-height: 130%; }
       @media screen and (max-width: 64rem) {
-        #projects .movile-projects .text-movile .title p {
+        #projects .movile-projects .text-movile h2 {
           font-size: 1.5rem; } }
-      @media screen and (max-width: 52.5rem) {
-        #projects .movile-projects .text-movile .title p {
-          font-size: 1.3rem; } }
-      @media screen and (max-width: 37.5rem) {
-        #projects .movile-projects .text-movile .title p {
-          font-size: 1rem; } }
       @media screen and (max-width: 30rem) {
-        #projects .movile-projects .text-movile .title p {
+        #projects .movile-projects .text-movile h2 {
           font-size: 1.5rem; } }
-    #projects .movile-projects .text-movile .text-content p {
+    #projects .movile-projects .text-movile p {
       font-size: 1.7rem;
       line-height: 130%; }
       @media screen and (max-width: 64rem) {
-        #projects .movile-projects .text-movile .text-content p {
+        #projects .movile-projects .text-movile p {
           font-size: 1.3rem; } }
-      @media screen and (max-width: 52.5rem) {
-        #projects .movile-projects .text-movile .text-content p {
-          font-size: 1rem; } }
-      @media screen and (max-width: 37.5rem) {
-        #projects .movile-projects .text-movile .text-content p {
-          font-size: 0.9rem; } }
       @media screen and (max-width: 30rem) {
-        #projects .movile-projects .text-movile .text-content p {
+        #projects .movile-projects .text-movile p {
           font-size: 1.3rem; } }
 
 #project-deployment .header-project {
