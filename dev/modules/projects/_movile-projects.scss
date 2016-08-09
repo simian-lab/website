@@ -87,6 +87,12 @@
       margin-left: -23%;
       margin-top: 10%;
       position: absolute;
+
+      @media screen and (max-width: $mobile-large) {
+        width: 42%;
+        margin-left: -52%;
+        margin-top: 19%;
+      }
     }
 
     .content-tablet{
@@ -94,6 +100,12 @@
       margin-left: -24%;
       margin-top: 6%;
       position: absolute;
+
+      @media screen and (max-width: $mobile-large) {
+        width: 40%;
+        margin-left: -55%;
+        margin-top: 13%;
+      }
     }
   }
 
@@ -181,16 +193,23 @@
     position: absolute;
     margin-left: 54%;
     margin-top: -7%;
+
+    @media screen and (max-width: $mobile-large) {
+      width: 13%;
+      margin-left: 65%;
+      margin-top: -16%;
+    }
   }
 
   .icon-movile {
     margin-left: 70%;
-    margin-top: -4rem;
-    margin-bottom: -4.5rem;
+    margin-top: -4%;
+    margin-bottom: -5%;
 
     @media screen and (max-width: $mobile-large) {
       margin-left: 25%;
-      margin-top: 1rem;
+      margin-top: 1%;
+      margin-bottom: -14%;
     }
 
     .icon-android{
@@ -199,8 +218,8 @@
 
     .icon-ios{
       position: relative;
-      margin-top: -12rem;
-      top: -2rem;
+      top: -1rem;
+      width: 31%;
       @media screen and (max-width: $mobile-large) {
         width: 37%;
       }
@@ -222,12 +241,11 @@
     @media screen and (max-width: $mobile-large) {
       width: 83%;
       margin-left: 11%;
+       margin-top: 3rem;
     }
 
-
-    .title{
-
-      p{
+      h2{
+        font-family: $quicksand_regular;
         color: $red;
         font-size: 2rem;
         font-weight: bold;
@@ -238,16 +256,10 @@
         @media screen and (max-width: $tablet-large) {
           font-size: 1.3rem;
         }
-        @media screen and (max-width: $tablet-small) {
-          font-size: 1rem;
-        }
         @media screen and (max-width: $mobile-large) {
           font-size: 1.5rem;
         }
       }
-    }
-
-    .text-content{
 
       p {
         font-size: 1.7rem;
@@ -258,13 +270,9 @@
         @media screen and (max-width: $tablet-large) {
           font-size: 1rem;
         }
-        @media screen and (max-width: $tablet-small) {
-          font-size: 0.9rem;
-        }
         @media screen and (max-width: $mobile-large) {
           font-size: 1.3rem;
         }
       }
-    }
   }
 }

@@ -229,7 +229,7 @@
       .desktop {
         width: 95%;
         margin-left: 3%;
-        margin-top: 8rem;
+        margin-top: 13%;
 
         @media screen and (max-width: $mobile-large) {
            margin-top: inherit;
@@ -239,17 +239,26 @@
       .logo{
         position: absolute;
         margin-left: 12%;
-        margin-top: 10rem;
+        margin-top: 16%;
         width: 13%;
         z-index: 1;
+
+        @media screen and (max-width: $mobile-large) {
+          margin-top: 3%;
+        }
       }
 
       .pagina{
         position: absolute;
         margin-left: -78%;
-        margin-top: 14rem;
+        margin-top: 21%;
         width: 58%;
         z-index: -1;
+
+        @media screen and (max-width: $mobile-large) {
+          margin-top: 8%;
+          z-index: -0;
+        }
       }
     }
 
@@ -288,7 +297,7 @@
       margin: 0 auto;
       width: 62%;
       margin-left: 6%;
-      margin-top: -2rem;
+      margin-top: -1rem;
 
       @media screen and (max-width: $tablet-small) {
         margin-top: -1rem;
@@ -300,9 +309,8 @@
         margin-top: 1rem;
       }
 
-      .title {
-
-        p {
+        h2 {
+          font-family: $quicksand_regular;
           color: $red;
           font-size: 2rem;
           font-weight: bold;
@@ -314,16 +322,10 @@
           @media screen and (max-width: $tablet-large) {
             font-size: 1.3rem;
           }
-          @media screen and (max-width: $tablet-small) {
-            font-size: 1rem;
-          }
           @media screen and (max-width: $mobile-large) {
             font-size: 1.5rem;
           }
         }
-      }
-
-      .text-content {
 
         p {
           font-size: 1.7rem;
@@ -334,14 +336,10 @@
           @media screen and (max-width: $tablet-large) {
             font-size: 1rem;
           }
-          @media screen and (max-width: $tablet-small) {
-            font-size: 0.8rem;
-          }
           @media screen and (max-width: $mobile-large) {
             font-size: 1.3rem;
           }
         }
-      }
     }
   }
 }
