@@ -37,6 +37,10 @@
       margin: 0 auto;
       width: 52%;
 
+      @media screen and (min-width: $laptop-small) {
+         width: 45%;
+      }
+
       @media screen and (max-width: $mobile-large) {
         margin-top: 5rem;
         width: 84%;
@@ -48,14 +52,14 @@
 
       h2{
         font-family: $quicksand_regular;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: bold;
         line-height: 120%;
         margin-top: 1rem;
       }
 
       p{
-         font-size: 2rem;
+         font-size: 1.5rem;
 
          @media screen and (max-width: $tablet-large) {
           margin-bottom: 5rem;

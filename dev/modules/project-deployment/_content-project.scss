@@ -43,6 +43,10 @@
       top: -14rem;
       left: 12%;
 
+      @media screen and (min-width: $laptop-small) {
+         width: 40%;
+      }
+
       @media screen and (max-width: $mobile-large) {
         position: inherit;
         top: -14rem;
@@ -52,17 +56,13 @@
 
       h2 {
         font-family: $quicksand_regular;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: bold;
         line-height: 120%;
-
-        @media screen and (max-width: $mobile-large) {
-          font-size: 1.5rem;
-        }
       }
 
       p {
-        font-size: 2rem;
+        font-size: 1.5rem;
 
         @media screen and (max-width: $mobile-large) {
           font-size: 1.5rem;
@@ -149,13 +149,17 @@
       margin: 0 auto;
       width: 80%;
 
+      @media screen and (min-width: $laptop-small) {
+         width: 46%;
+      }
+
       @media screen and (max-width: $tablet-medium) {
         margin-top: 2rem;
       }
 
       h2 {
         font-family: $quicksand_regular;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: bold;
         line-height: 120%;
 
@@ -165,7 +169,7 @@
       }
 
       p {
-        font-size: 2rem;
+        font-size: 1.5rem;
 
         @media screen and (max-width: $mobile-large) {
           font-size: 1.5rem;
@@ -234,11 +238,7 @@
       }
 
       p{
-        font-size: 2rem;
-
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 1.5rem;
-        }
+        font-size: 1.5rem;
 
         @media screen and (max-width: $mobile-large) {
           font-size: 1.5rem;

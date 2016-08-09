@@ -2632,6 +2632,9 @@ footer .footer-end {
   #project-deployment .header-project .title-content .text {
     margin: 0 auto;
     width: 52%; }
+    @media screen and (min-width: 64rem) {
+      #project-deployment .header-project .title-content .text {
+        width: 45%; } }
     @media screen and (max-width: 30rem) {
       #project-deployment .header-project .title-content .text {
         margin-top: 5rem;
@@ -2640,12 +2643,12 @@ footer .footer-end {
       font-size: 5rem; }
     #project-deployment .header-project .title-content .text h2 {
       font-family: "quicksandregular";
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: bold;
       line-height: 120%;
       margin-top: 1rem; }
     #project-deployment .header-project .title-content .text p {
-      font-size: 2rem; }
+      font-size: 1.5rem; }
       @media screen and (max-width: 52.5rem) {
         #project-deployment .header-project .title-content .text p {
           margin-bottom: 5rem; } }
@@ -2685,6 +2688,9 @@ footer .footer-end {
     position: relative;
     top: -14rem;
     left: 12%; }
+    @media screen and (min-width: 64rem) {
+      #project-deployment .content-project .section1 .text {
+        width: 40%; } }
     @media screen and (max-width: 30rem) {
       #project-deployment .content-project .section1 .text {
         position: inherit;
@@ -2693,14 +2699,11 @@ footer .footer-end {
         width: 78%; } }
     #project-deployment .content-project .section1 .text h2 {
       font-family: "quicksandregular";
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: bold;
       line-height: 120%; }
-      @media screen and (max-width: 30rem) {
-        #project-deployment .content-project .section1 .text h2 {
-          font-size: 1.5rem; } }
     #project-deployment .content-project .section1 .text p {
-      font-size: 2rem; }
+      font-size: 1.5rem; }
       @media screen and (max-width: 30rem) {
         #project-deployment .content-project .section1 .text p {
           font-size: 1.5rem; } }
@@ -2761,19 +2764,22 @@ footer .footer-end {
   #project-deployment .content-project .section2 .text2 {
     margin: 0 auto;
     width: 80%; }
+    @media screen and (min-width: 64rem) {
+      #project-deployment .content-project .section2 .text2 {
+        width: 46%; } }
     @media screen and (max-width: 45rem) {
       #project-deployment .content-project .section2 .text2 {
         margin-top: 2rem; } }
     #project-deployment .content-project .section2 .text2 h2 {
       font-family: "quicksandregular";
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: bold;
       line-height: 120%; }
       @media screen and (max-width: 30rem) {
         #project-deployment .content-project .section2 .text2 h2 {
           font-size: 1.5rem; } }
     #project-deployment .content-project .section2 .text2 p {
-      font-size: 2rem; }
+      font-size: 1.5rem; }
       @media screen and (max-width: 30rem) {
         #project-deployment .content-project .section2 .text2 p {
           font-size: 1.5rem; } }
@@ -2822,10 +2828,7 @@ footer .footer-end {
           margin-top: 2rem;
           width: 77%; } }
       #project-deployment .content-project .section3 .text2 p {
-        font-size: 2rem; }
-        @media screen and (max-width: 45rem) {
-          #project-deployment .content-project .section3 .text2 p {
-            font-size: 1.5rem; } }
+        font-size: 1.5rem; }
         @media screen and (max-width: 30rem) {
           #project-deployment .content-project .section3 .text2 p {
             font-size: 1.5rem; } }
