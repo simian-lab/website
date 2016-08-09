@@ -187,14 +187,15 @@
       @media screen and (max-width: $mobile-large) {
         top: 0rem;
         left: -39%;
-        width: 143%;
-      }
-      @media screen and (max-width: $mobile-medium) {
         width: 142%;
-        left: -39%;
       }
       @media screen and (max-width: $mobile-medium) {
-        left: -7rem;
+        width: 141%;
+        left: -38%;
+      }
+      @media screen and (max-width: $mobile-small) {
+        left: -6.8rem;
+        width: 136%;
       }
     }
 
@@ -319,9 +320,6 @@
           @media screen and (max-width: $laptop-small) {
             font-size: 1.5rem;
           }
-          @media screen and (max-width: $tablet-large) {
-            font-size: 1.3rem;
-          }
           @media screen and (max-width: $mobile-large) {
             font-size: 1.5rem;
           }
@@ -332,9 +330,6 @@
           line-height: 130%;
           @media screen and (max-width: $laptop-small) {
             font-size: 1.3rem;
-          }
-          @media screen and (max-width: $tablet-large) {
-            font-size: 1rem;
           }
           @media screen and (max-width: $mobile-large) {
             font-size: 1.3rem;
