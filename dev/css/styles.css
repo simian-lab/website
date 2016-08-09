@@ -327,11 +327,18 @@ footer .footer-end {
     background-repeat: no-repeat;
     background-size: cover;
     content: '';
-    height: 25rem;
+    height: 33rem;
     position: absolute;
     top: 5%;
-    width: 13%; }
-    @media screen and (max-width: 30rem) {
+    width: 25%; }
+    @media screen and (min-width: 81.25em) {
+      #home .hero .title::before, #home .hero .title::after {
+        height: 37rem;
+        width: 29%; } }
+    @media screen and (max-width: 52.5rem) {
+      #home .hero .title::before, #home .hero .title::after {
+        width: 40%; } }
+    @media screen and (max-width: 37.5rem) {
       #home .hero .title::before, #home .hero .title::after {
         display: none; } }
   #home .hero .title::before {
@@ -340,9 +347,21 @@ footer .footer-end {
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    left: 30%; }
+    left: 16%; }
+    @media screen and (max-width: 52.5rem) {
+      #home .hero .title::before {
+        left: 2%; } }
+    @media screen and (min-width: 81.25em) {
+      #home .hero .title::before {
+        left: 13%; } }
   #home .hero .title::after {
-    left: 57%; }
+    left: 59%; }
+    @media screen and (max-width: 52.5rem) {
+      #home .hero .title::after {
+        left: 59%; } }
+    @media screen and (min-width: 81.25em) {
+      #home .hero .title::after {
+        left: 59%; } }
   #home .hero .title h1 {
     color: #1DC0B2;
     font-size: 12rem; }
@@ -350,16 +369,28 @@ footer .footer-end {
       #home .hero .title h1 {
         font-size: 5rem; } }
   #home .hero .title p {
-    font-size: 5rem; }
+    font-size: 5rem;
+    width: 18%;
+    margin-left: 41%; }
+    @media screen and (max-width: 37.5rem) {
+      #home .hero .title p {
+        font-size: 4rem;
+        width: 80%;
+        margin-left: 10%; } }
     @media screen and (max-width: 30rem) {
       #home .hero .title p {
         font-size: 2rem; } }
 
 #home .hero .simian-tools {
+  background-image: url("../img/home/circulos_mico_hero.svg");
+  background-repeat: no-repeat;
+  background-size: 92%;
+  background-position: -65% 61%;
   margin: 0 auto;
+  margin-left: 23%;
   padding: 10% 0;
   position: relative;
-  width: 60%; }
+  width: 62%; }
   @media screen and (max-width: 30rem) {
     #home .hero .simian-tools {
       width: 90%; } }
@@ -377,8 +408,8 @@ footer .footer-end {
       #home .hero .simian-tools .tools img {
         position: relative; } }
   #home .hero .simian-tools .tools .idea {
-    left: 24%;
-    top: 9%; }
+    left: 25%;
+    top: 6%; }
   #home .hero .simian-tools .tools .development {
     left: -17%;
     top: 34%; }
@@ -400,6 +431,14 @@ footer .footer-end {
   background-image: url("../img/footer/footer-bg-red.svg");
   background-repeat: no-repeat;
   background-size: contain; }
+  @media screen and (max-width: 52.5rem) {
+    #home .our-projects {
+      background-size: 160%;
+      background-position-x: center;
+      margin-top: 13rem; } }
+  @media screen and (max-width: 37.5rem) {
+    #home .our-projects {
+      background-size: 245%; } }
   #home .our-projects .intro {
     padding-top: 5rem; }
     #home .our-projects .intro::after {
@@ -409,22 +448,87 @@ footer .footer-end {
     #home .our-projects .intro .title-container {
       background-image: url("../img/home/our-projects-sign.svg");
       background-repeat: no-repeat;
+      background-position-x: 60%;
       background-size: contain;
       padding: 8% 0;
       width: 55%; }
+      @media screen and (max-width: 64rem) {
+        #home .our-projects .intro .title-container {
+          background-size: 101%;
+          padding: 10% 0;
+          margin-left: -7%;
+          width: 55%;
+          height: 36rem; } }
+      @media screen and (max-width: 52.5rem) {
+        #home .our-projects .intro .title-container {
+          margin-left: 11%;
+          margin-top: -25%;
+          width: 68%;
+          height: inherit; } }
       #home .our-projects .intro .title-container .title {
         text-align: center; }
+        @media screen and (max-width: 64rem) {
+          #home .our-projects .intro .title-container .title {
+            margin-left: 11%;
+            margin-top: -6%; } }
+        @media screen and (max-width: 52.5rem) {
+          #home .our-projects .intro .title-container .title {
+            margin-top: 3%; } }
+        @media screen and (max-width: 45rem) {
+          #home .our-projects .intro .title-container .title {
+            margin-top: -3%; } }
         #home .our-projects .intro .title-container .title p {
           font-size: 4rem; }
+          @media screen and (max-width: 64rem) {
+            #home .our-projects .intro .title-container .title p {
+              font-size: 3rem; } }
+          @media screen and (max-width: 52.5rem) {
+            #home .our-projects .intro .title-container .title p {
+              font-size: 2.5rem; } }
+          @media screen and (max-width: 37.5rem) {
+            #home .our-projects .intro .title-container .title p {
+              font-size: 2rem; } }
           #home .our-projects .intro .title-container .title p:nth-child(2) {
             font-size: 7rem; }
+            @media screen and (max-width: 64rem) {
+              #home .our-projects .intro .title-container .title p:nth-child(2) {
+                font-size: 5rem; } }
+            @media screen and (max-width: 52.5rem) {
+              #home .our-projects .intro .title-container .title p:nth-child(2) {
+                font-size: 4.5rem; } }
+            @media screen and (max-width: 37.5rem) {
+              #home .our-projects .intro .title-container .title p:nth-child(2) {
+                font-size: 3.5rem; } }
         #home .our-projects .intro .title-container .title h1 {
           color: #DED96B;
           font-size: 10.5rem; }
+          @media screen and (max-width: 64rem) {
+            #home .our-projects .intro .title-container .title h1 {
+              font-size: 8.5rem; } }
+          @media screen and (max-width: 52.5rem) {
+            #home .our-projects .intro .title-container .title h1 {
+              font-size: 8rem; } }
+          @media screen and (max-width: 37.5rem) {
+            #home .our-projects .intro .title-container .title h1 {
+              font-size: 6rem; } }
     #home .our-projects .intro .text {
-      padding-right: 5%;
+      padding-right: 3%;
       padding-top: 10%;
       width: 45%; }
+      @media screen and (max-width: 64rem) {
+        #home .our-projects .intro .text {
+          padding-top: 5%;
+          width: 52%; } }
+      @media screen and (max-width: 52.5rem) {
+        #home .our-projects .intro .text {
+          padding-top: 0%;
+          padding-left: 7%;
+          width: 100%; } }
+      #home .our-projects .intro .text h2 {
+        color: #3F3832;
+        font-family: "quicksandregular";
+        font-size: 1.5rem;
+        font-weight: bold; }
       #home .our-projects .intro .text p {
         font-size: 1.5rem; }
     #home .our-projects .intro .title-container, #home .our-projects .intro .text {
