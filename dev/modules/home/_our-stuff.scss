@@ -1,8 +1,31 @@
 .our-stuff {
   background-image: url('../img/home/our-stuff-bg.svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 103%;
+  height: 59rem;
   padding: 2rem 0;
+
+  @media screen and (max-width: $laptop-small) {
+    height: 49rem;
+  }
+
+  @media screen and (max-width: $tablet-large) {
+    height: 42rem;
+  }
+
+  @media screen and (max-width: $tablet-medium) {
+    background-size: 179%;
+    background-position-x: center;
+    height: 76rem;
+  }
+
+  @media screen and (max-width: $tablet-small) {
+    height: 62rem;
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    height: 56rem;
+  }
 
   .title {
     background-image: url('../img/home/our-stuff-title.svg');
@@ -10,19 +33,56 @@
     background-size: contain;
     height: 18rem;
     margin: 0 auto;
-    width: 35rem;
+    width: 33rem;
+
+    @media screen and (max-width: $laptop-small) {
+      width: 64%;
+    }
 
     .container {
       padding: 2.5rem 7rem 1.5rem 9rem;
       width: 20rem;
 
+      @media screen and (max-width: $tablet-medium) {
+        padding: inherit;
+        width: inherit;
+        margin-left: 25%;
+        padding-top: 7%;
+      }
+
       p {
         font-size: 4rem;
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 2.5rem;
+        }
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 2.3rem;
+        }
+
+        @media screen and (max-width: $mobile-small) {
+          font-size: 2rem;
+        }
       }
 
       h1 {
         color: $yellow;
         font-size: 9rem;
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 6.5rem;
+        }
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 5.3rem;
+        }
+
+        @media screen and (max-width: $mobile-medium) {
+          font-size: 4.3rem;
+        }
+
+        @media screen and (max-width: $mobile-small) {
+          font-size: 4rem;
+        }
       }
     }
   }
@@ -31,7 +91,16 @@
     display: flex;
     justify-content: center;
 
+    @media screen and (max-width: $tablet-medium) {
+      margin-top: -12%;
+      display: inherit;
+    }
+
     .project {
+
+      @media screen and (max-width: $tablet-medium) {
+        margin-top: -5rem;
+      }
 
       .phone, .white-sign {
         position: relative;
@@ -42,20 +111,100 @@
         width: 30%;
       }
 
+      .more {
+        z-index: 2;
+        position: absolute;
+        margin-top: 25%;
+
+        @media screen and (min-width: $laptop-large) {
+          margin-top: 20%;
+        }
+        @media screen and (max-width: $tablet-medium) {
+          margin-top: 53%;
+        }
+      }
+
       .white-sign {
-        top: 2rem;
+        top: 1rem;
         width: 67%;
+      }
+
+      .logo {
+        position: absolute;
+        margin-top: 14rem;
+        z-index: 1;
+        width: 15%;
+
+        @media screen and (min-width: $laptop-large) {
+          margin-top: 13rem;
+        }
+
+        @media screen and (max-width: $laptop-medium) {
+          margin-top: 18%;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          margin-top: 35%;
+          width: 30%;
+        }
       }
 
       &:first-child {
         .white-sign {
-          left: -10rem;
+          left: -23%;
+
+          @media screen and (max-width: $tablet-medium) {
+            left: -23%;
+          }
+        }
+
+        .more{
+          margin-left: -5%;
+          @media screen and (max-width: $tablet-medium) {
+            margin-left: -9%;
+          }
+        }
+
+        .logo{
+          margin-left: -28rem;
+
+          @media screen and (min-width: $laptop-large) {
+            margin-left: -29rem;
+          }
+
+          @media screen and (max-width: $laptop-medium) {
+            margin-left: -31%;
+          }
+
+          @media screen and (max-width: $tablet-medium) {
+            margin-left: -67%;
+          }
         }
       }
 
       &:last-child {
         .white-sign {
           left: 4rem;
+        }
+
+        .more{
+          margin-left: -2rem;
+        }
+
+        .logo{
+          margin-left: 13rem;
+
+          @media screen and (min-width: $laptop-large) {
+            margin-left: 12rem;
+          }
+
+          @media screen and (max-width: $laptop-medium) {
+            margin-left: 19%;
+          }
+
+          @media screen and (max-width: $tablet-medium) {
+            margin-left: 38%;
+          }
         }
       }
     }

@@ -2,22 +2,62 @@
   background-image: url('../img/home/we-are-background.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  margin-top: 15rem;
+
+  @media screen and (max-width: $mobile-large) {
+    background-size: 157%;
+    background-position-x: center;
+    margin-top: 15rem;
+    margin-top: inherit;
+  }
 
   .title {
     @include transform(translateX(-50%));
     display: inline-block;
-    left: 50%;
+    left: 40%;
     margin-bottom: 5%;
     position: relative;
+    top: -10rem;
+
+
+    @media screen and (max-width: $mobile-large) {
+      margin-top: -5rem;
+      margin-left: 0rem;
+      top: inherit;
+    }
 
     h1 {
       color: $red;
       font-size: 12rem;
+
+      @media screen and (max-width: $laptop-small) {
+        font-size: 9rem;
+      }
+
+      @media screen and (max-width: $tablet-small) {
+        font-size: 7rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        font-size: 5rem;
+      }
     }
 
     p {
       font-size: 6rem;
       text-align: center;
+
+       @media screen and (max-width: $laptop-small) {
+        font-size: 4rem;
+      }
+
+      @media screen and (max-width: $tablet-small) {
+        font-size: 4rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        font-size: 3rem;
+      }
     }
 
     &::after, &::before {
@@ -30,21 +70,69 @@
       position: absolute;
       top: 0;
       width: 8rem;
+
+      @media screen and (max-width: $tablet-small) {
+        width: 6rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        top: -11rem;
+        width: 4rem;
+      }
     }
 
     &::before {
       @include transform(rotate(155deg));
       left: -7rem;
+
+      @media screen and (max-width: $tablet-small) {
+        left: -6rem;
+        top: -5rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        left: -6rem;
+        top: -11rem;
+      }
     }
 
     &::after {
       right: -7rem;
+
+      @media screen and (max-width: $tablet-small) {
+        right: -5rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        right: -4rem;
+        top: -1rem;
+      }
+    }
+  }
+
+  .icon-idea{
+    margin-left: 36%;
+    width: 19%;
+
+    @media screen and (max-width: $tablet-small) {
+      margin-left: 21%;
+      width: 33%;
+    }
+
+    @media screen and (max-width: $mobile-large) {
+      width: 25%;
+      position: absolute;
+      margin-left: 25%;
     }
   }
 
   .monkeys {
     margin: 0 auto;
     width: 70%;
+
+    @media screen and (max-width: $mobile-large) {
+      margin-top: 3rem;
+    }
 
     .monkey {
       .image-container {

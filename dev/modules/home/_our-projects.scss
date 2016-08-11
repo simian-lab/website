@@ -10,7 +10,12 @@
   }
 
   @media screen and (max-width: $tablet-small) {
-    background-size: 245%
+    background-size: 245%;
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    background-size: 320%;
+    margin-top: 4em;
   }
 
   .intro {
@@ -42,6 +47,7 @@
 
       .title {
         text-align: center;
+        margin-left: 13%;
 
         @media screen and (max-width: $laptop-small) {
           margin-left: 11%;
@@ -59,7 +65,7 @@
         p {
           font-size: 4rem;
 
-           @media screen and (max-width: $laptop-small) {
+           @media screen and (max-width: $laptop-medium) {
             font-size: 3rem;
           }
 
@@ -71,10 +77,18 @@
             font-size: 2rem;
           }
 
+          @media screen and (max-width: $mobile-large) {
+            font-size: 1.5rem;
+          }
+
+          @media screen and (max-width: $mobile-small) {
+            font-size: 1.3rem;
+          }
+
           &:nth-child(2) {
             font-size: 7rem;
 
-            @media screen and (max-width: $laptop-small) {
+            @media screen and (max-width: $laptop-medium) {
               font-size: 5rem;
             }
 
@@ -85,6 +99,18 @@
             @media screen and (max-width: $tablet-small) {
               font-size: 3.5rem;
             }
+
+            @media screen and (max-width: $mobile-large) {
+              font-size: 3rem;
+            }
+
+            @media screen and (max-width: $mobile-medium) {
+              font-size: 2.5rem;
+            }
+
+            @media screen and (max-width: $mobile-small) {
+              font-size: 2.3rem;
+            }
           }
         }
 
@@ -92,7 +118,7 @@
           color: $yellow;
           font-size: 10.5rem;
 
-          @media screen and (max-width: $laptop-small) {
+          @media screen and (max-width: $laptop-medium) {
             font-size: 8.5rem;
           }
 
@@ -103,6 +129,18 @@
           @media screen and (max-width: $tablet-small) {
             font-size: 6rem;
           }
+
+          @media screen and (max-width: $mobile-large) {
+            font-size: 5.5rem;
+          }
+
+          @media screen and (max-width: $mobile-medium) {
+            font-size: 5rem;
+          }
+
+          @media screen and (max-width: $mobile-small) {
+            font-size: 4.3rem;
+          }
         }
       }
     }
@@ -111,6 +149,10 @@
       padding-right: 3%;
       padding-top: 10%;
       width: 45%;
+
+      @media screen and (min-width: $laptop-medium) {
+        width: 40%;
+      }
 
       @media screen and (max-width: $laptop-small) {
         padding-top: 5%;
@@ -128,10 +170,17 @@
         font-family: $quicksand_regular;
         font-size: 1.5rem;
         font-weight: bold;
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 1.3rem;
+        }
       }
 
       p {
         font-size: 1.5rem;
+        @media screen and (max-width: $mobile-large) {
+          font-size: 1.3rem;
+        }
       }
     }
 
@@ -139,9 +188,6 @@
       float: left;
 
       @media screen and (max-width: $mobile-large) {
-        float: none;
-        padding: 0;
-        width: 90%;
       }
     }
   }

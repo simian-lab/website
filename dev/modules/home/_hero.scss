@@ -67,8 +67,11 @@
       width: 18%;
       margin-left: 41%;
 
-      @media screen and (max-width: $tablet-small) {
+      @media screen and (max-width: $laptop-small) {
         font-size: 4rem;
+      }
+
+      @media screen and (max-width: $tablet-small) {
         width: 80%;
         margin-left: 10%;
       }
@@ -91,7 +94,11 @@
     width: 62%;
 
     @media screen and (max-width: $mobile-large) {
+      background: none;
+      margin-left: 10%;
       width: 90%;
+      padding: inherit;
+      padding-top: 2rem;
     }
 
     .simian {
