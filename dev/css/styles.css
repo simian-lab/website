@@ -2797,6 +2797,12 @@ footer .footer-end {
     @media screen and (max-width: 30rem) {
       #projects .header-projects .desktop-projects {
         margin-top: 4rem; } }
+    #projects .header-projects .desktop-projects .logo-project {
+      width: 34%;
+      margin-left: 5%; }
+      @media screen and (min-width: 30rem) {
+        #projects .header-projects .desktop-projects .logo-project {
+          display: none; } }
     #projects .header-projects .desktop-projects .back {
       position: relative; }
       #projects .header-projects .desktop-projects .back .desktop {
@@ -2847,6 +2853,10 @@ footer .footer-end {
       #projects .header-projects .desktop-projects .icon .more {
         width: 14%;
         margin-left: -13%; }
+        @media screen and (max-width: 30rem) {
+          #projects .header-projects .desktop-projects .icon .more {
+            width: 30%;
+            margin-left: -25%; } }
     #projects .header-projects .desktop-projects .text {
       margin: 0 auto;
       width: 62%;
@@ -3054,8 +3064,8 @@ footer .footer-end {
         margin-top: -9%; } }
     @media screen and (max-width: 30rem) {
       #projects .movile-projects .more-movile {
-        width: 13%;
-        margin-left: 65%;
+        width: 20%;
+        margin-left: 66%;
         margin-top: -16%; } }
   #projects .movile-projects .more-tablet {
     width: 6%;
@@ -3073,9 +3083,9 @@ footer .footer-end {
         margin-top: -8%; } }
     @media screen and (max-width: 30rem) {
       #projects .movile-projects .more-tablet {
-        width: 13%;
-        margin-left: 71%;
-        margin-top: -15%; } }
+        width: 20%;
+        margin-left: 72%;
+        margin-top: -16%; } }
   #projects .movile-projects .icon-movile {
     margin-left: 70%;
     margin-top: -4%;

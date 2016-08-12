@@ -225,6 +225,14 @@
       margin-top: 4rem;
     }
 
+    .logo-project{
+      width: 34%;
+      margin-left: 5%;
+      @media screen and (min-width: $mobile-large) {
+         display: none;
+      }
+    }
+
     .back {
       position: relative;
       .desktop {
@@ -291,6 +299,10 @@
       .more {
         width: 14%;
         margin-left: -13%;
+        @media screen and (max-width: $mobile-large) {
+          width: 30%;
+          margin-left: -25%;
+        }
       }
     }
 
