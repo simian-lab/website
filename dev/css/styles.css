@@ -3074,7 +3074,9 @@ footer .footer-end {
       @media screen and (max-width: 52.5rem) {
         #projects .movile-projects .quote .text {
           font-size: 0.7rem; } }
-    #projects .movile-projects .quote .author, #projects .movile-projects .quote .project-country .project {
+      #projects .movile-projects .quote .text .comillas {
+        text-transform: uppercase; }
+    #projects .movile-projects .quote .author, #projects .movile-projects .quote .project-country .project, #projects .movile-projects .quote .text .comillas {
       color: #FF5E5B; }
     #projects .movile-projects .quote .author {
       font-size: 1.3rem; }
