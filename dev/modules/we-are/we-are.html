@@ -1,3 +1,8 @@
 <div id="we-are">
   <h1>Quiénes somos</h1>
+  <div ng-repeat="project in projects" class="header">
+    <img class="botton-left" src="../img/we-are/flecha_verde.svg" alt="">
+    <h1 class="profile">{{project.name}}</h1>
+    <img class="botton-right" src="../img/we-are/flecha_verde.svg" alt="">
+  </div>
 </div>

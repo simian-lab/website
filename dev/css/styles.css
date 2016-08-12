@@ -3542,6 +3542,18 @@ footer .footer-end {
     #project-deployment .other-projects {
       height: 17rem; } }
 
+.header .profile {
+  margin: 0 auto;
+  width: 15%; }
+
+.header .botton-left {
+  position: relative;
+  left: 24%; }
+
+.header .botton-right {
+  position: relative;
+  left: 61%; }
+
 * {
   box-sizing: border-box; }
 
