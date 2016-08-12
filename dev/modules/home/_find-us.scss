@@ -5,8 +5,30 @@
   background-size: cover;
   position: relative;
 
+  @media screen and (max-width: $tablet-medium) {
+    margin-top: 16rem;
+  }
+
+  @media screen and (max-width: $tablet-small) {
+    background-size: 184%;
+    background-position: inherit;
+    background-position-x: center;
+  }
+
   p {
     font-size: 3rem;
+
+    @media screen and (max-width: $laptop-medium) {
+      font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: $laptop-small) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: $tablet-large) {
+      font-size: 1.7rem;
+    }
   }
 
   .sign {
@@ -16,6 +38,14 @@
     margin-top: 6%;
     position: relative;
     width: 35%;
+
+    @media screen and (max-width: $tablet-medium) {
+      margin-left: 20.4%;
+      margin-top: 3%;
+      top: -16rem;
+      width: 53%;
+      z-index: -1;
+    }
 
     img {
       width: 100%;
@@ -27,9 +57,27 @@
       text-align: center;
       top: 15%;
 
+      @media screen and (max-width: $laptop-medium) {
+        left: 20%;
+      }
+      @media screen and (max-width: $laptop-small) {
+        left: 22%;
+      }
+
       h1 {
         color: $yellow;
         font-size: 13rem;
+
+        @media screen and (max-width: $laptop-medium) {
+          font-size: 9rem;
+        }
+
+        @media screen and (max-width: $laptop-small) {
+          font-size: 8rem;
+        }
+        @media screen and (max-width: $tablet-large) {
+          font-size: 7rem;
+        }
       }
     }
   }
@@ -41,9 +89,31 @@
     top: 50%;
     width: 35%;
 
+    @media screen and (max-width: $laptop-small) {
+      top: 47%;
+    }
+
+    @media screen and (max-width: $tablet-small) {
+      top: 70%;
+      width: 93%;
+    }
+
     .button {
       background-image: url('../img/yellow-button.svg');
       margin: 3rem auto;
+    }
+  }
+
+  .back-blue{
+    background-image: url("../img/home/fondo_azul_footer.svg");
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20rem;
+    position: relative;
+    z-index: -1;
+    @media screen and (min-width: $tablet-small) {
+      display: none;
     }
   }
 }

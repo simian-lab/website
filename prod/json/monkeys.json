@@ -29,6 +29,21 @@
       "name": "Natalia Cortés",
       "avatar": "../img/monkeys/natalia.svg",
       "position": "Web Designer"
+    },
+    {
+      "name": "Johnny Chinchajoa",
+      "avatar": "../img/monkeys/johnny.svg",
+      "position": "Developer"
+    },
+    {
+      "name": "David Guzman",
+      "avatar": "../img/monkeys/david.svg",
+      "position": "Developer"
+    },
+    {
+      "name": "Artur Castillo",
+      "avatar": "../img/monkeys/artur.svg",
+      "position": "CFO"
     }
   ]
 }
