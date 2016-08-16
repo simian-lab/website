@@ -39,30 +39,55 @@ angular.module('simian', [
       templateUrl: '/modules/we-do/we-do.html',
       url: '/es/que-hacemos/'
     })
-    /*.state('projects', {
+    .state('projects', {
       controller: 'ProjectsController',
       templateUrl: '/modules/projects/projects.html',
-      url: '/projects'
+      url: '/en/projects/'
+    })
+    .state('proyectos', {
+      controller: 'ProjectsController',
+      templateUrl: '/modules/projects/projects.html',
+      url: '/es/proyectos/'
     })
     .state('clients', {
       controller: 'ClientsController',
       templateUrl: '/modules/clients/clients.html',
-      url: '/clients'
+      url: '/en/clients/'
+    })
+    .state('clientes', {
+      controller: 'ClientsController',
+      templateUrl: '/modules/clients/clients.html',
+      url: '/es/clientes/'
     })
     .state('we-are', {
       controller: 'WeAreController',
       templateUrl: '/modules/we-are/we-are.html',
-      url: '/we-are'
+      url: '/en/we-are/'
+    })
+    .state('quienes-somos', {
+      controller: 'WeAreController',
+      templateUrl: '/modules/we-are/we-are.html',
+      url: '/es/quienes-somos/'
     })
     .state('location', {
       controller: 'LocationController',
       templateUrl: '/modules/location/location.html',
-      url: '/location'
+      url: '/en/location/'
+    })
+    .state('ubicacion', {
+      controller: 'LocationController',
+      templateUrl: '/modules/location/location.html',
+      url: '/es/ubicacion/'
     })
     .state('we-share', {
       controller: 'WeShareController',
       templateUrl: '/modules/we-share/we-share.html',
-      url: '/we-share'
+      url: '/en/we-share/'
+    })
+    .state('compartimos', {
+      controller: 'WeShareController',
+      templateUrl: '/modules/we-share/we-share.html',
+      url: '/es/compartimos/'
     })
     .state('project-deployment', {
       controller: 'DeploymentController',
@@ -71,8 +96,8 @@ angular.module('simian', [
     })
     .state('404', {
       templateUrl: '/modules/404/404.html',
-      url: '/404'
-    })*/
+      url: '/404/'
+    })
     ;
 
     $urlRouterProvider.otherwise('/404');
