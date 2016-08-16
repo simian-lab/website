@@ -3,8 +3,12 @@
 angular.module('simian.home', [])
 
 .controller('HomeController', [
-  '$scope', '$timeout', 'MonkeysService', 'ProjectsService',
-  function($scope, $timeout, MonkeysService, ProjectsService) {
+  '$scope', '$stateParams','$timeout', 'MonkeysService',
+  'ProjectsService', 'TranslateService',
+  function($scope, $stateParams, $timeout, MonkeysService,
+  ProjectsService, TranslateService) {
+
+    TranslateService.setLanguage($stateParams.language);
 
     MonkeysService.getMonkeys().then(function(response) {
       $scope.bosses = [ response.monkeys[0], response.monkeys[1] ];

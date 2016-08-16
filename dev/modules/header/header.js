@@ -3,11 +3,10 @@
 angular.module('simian.header', [])
 
 .controller('HeaderController', [
-  '$scope', '$state', '$timeout', '$translate',
-  function($scope, $state, $timeout, $translate) {
-
+  '$scope', '$state', '$timeout', 'TranslateService',
+  function($scope, $state, $timeout, TranslateService) {
     $scope.changeLanguage = function(language) {
-      $translate.use(language);
+      TranslateService.setLanguage(language);
     }
   }
 ])
