@@ -1,3 +1,41 @@
 <div id="we-are">
-  <h1>Quiénes somos</h1>
+  <div class="header">
+    <div class="slider-container">
+      <div class="swiper-button-prev"></div>
+      <div id="projects-slider" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="monkey in monkeys">
+              <div class="preview-container">
+                <div class="profile">
+                  <img ng-src="{{monkey.avatar}}" alt="{{project.name}}">
+                  <h1 class="name">{{monkey.name}}</h1>
+                  <p>{{monkey.position}}</p>
+                </div>
+                <div class="description">
+                  <h1>{{monkey.simio}}</h1>
+                  <p>{{monkey.description}}</p>
+                  <h2>Habla con el: <br> {{monkey.contacto}}</h2>
+                  <p class="email">{{monkey.email}}</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+    </div>
+<!--
+      <div class="prueba">
+      <div class="elemento1">
+
+      </div>
+      <div class="elemento2">
+
+      </div>
+      <div class="elemento3">
+
+      </div>
+    </div> -->
+
+  </div>
 </div>
+

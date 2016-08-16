@@ -3,47 +3,83 @@
     {
       "name": "Sergio Acosta",
       "avatar": "../img/monkeys/sergio.svg",
-      "position": "CEO & Developer"
+      "position": "CEO & Developer",
+      "simio": "es el simio popular.",
+      "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
+      "contacto": "(+57) 311-5992255",
+      "email": "sergio@simian.co"
     },
     {
       "name": "Iván Vásquez",
       "avatar": "../img/monkeys/ivan.svg",
-      "position": "Developer"
+      "position": "Developer",
+      "simio": "es el simio popular.",
+      "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
+      "contacto": "(+57) 311-5992255",
+      "email": "sergio@simian.co"
     },
     {
       "name": "Nicolás Saiz",
       "avatar": "../img/monkeys/nico.svg",
-      "position": "Developer"
+      "position": "Developer",
+      "simio": "es el simio popular.",
+      "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
+      "contacto": "(+57) 311-5992255",
+      "email": "sergio@simian.co"
     },
     {
       "name": "Pablo García",
       "avatar": "../img/monkeys/pablo.svg",
-      "position": "Developer"
+      "position": "Developer",
+      "simio": "es el simio popular.",
+      "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
+      "contacto": "(+57) 311-5992255",
+      "email": "sergio@simian.co"
     },
     {
       "name": "Sebastián Giraldo",
       "avatar": "../img/monkeys/sebastian.svg",
-      "position": "Developer"
+      "position": "Developer",
+      "simio": "es el simio popular.",
+      "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
+      "contacto": "(+57) 311-5992255",
+      "email": "sergio@simian.co"
     },
     {
       "name": "Natalia Cortés",
       "avatar": "../img/monkeys/natalia.svg",
-      "position": "Web Designer"
+      "position": "Web Designer",
+      "simio": "es el simio popular.",
+      "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
+      "contacto": "(+57) 311-5992255",
+      "email": "sergio@simian.co"
     },
     {
       "name": "Johnny Chinchajoa",
       "avatar": "../img/monkeys/johnny.svg",
-      "position": "Developer"
+      "position": "Developer",
+      "simio": "es el simio del sur.",
+      "description": "El es un pastuso lo mas de alegre, actualmente se encuentra enamorado de la mujer mas hermosa nacida en las lejanas tierras de San Alfonso Cauca... este simio es una persona responsable y muy trabador, dispuesto a prender cosas nuevas, al igual que todos los simios come muchas bananas y hace deporte casi todos los dias... ",
+      "contacto": "(+57) 317-6257286",
+      "email": "johnny@simian.co"
     },
     {
       "name": "David Guzman",
       "avatar": "../img/monkeys/david.svg",
-      "position": "Developer"
+      "position": "Developer",
+      "simio": "es el simio popular.",
+      "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
+      "contacto": "(+57) 311-5992255",
+      "email": "sergio@simian.co"
     },
     {
       "name": "Artur Castillo",
       "avatar": "../img/monkeys/artur.svg",
-      "position": "CFO"
+      "position": "CFO",
+      "simio": "es el simio popular.",
+      "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
+      "contacto": "(+57) 311-5992255",
+      "email": "sergio@simian.co"
     }
   ]
 }
