@@ -4,8 +4,14 @@ angular.module('simian.projects', [])
 
 .controller('ProjectsController', [
   '$scope',
-  function($scope) {
+  "ProjectsService",
+  function($scope, ProjectsService) {
     console.log('ProjectsController');
+    ProjectsService.getProjects().then(function(response){
+      $scope.projects = response.projects;
+      console.log($scope.projects);
+    });
+
   }
 ])
 
