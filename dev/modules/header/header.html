@@ -7,27 +7,33 @@
     <ul>
       <li>
         <a ng-href="{{$root.getLink('we-do', 'que-hacemos')}}"
-        ng-class="{active: activeSection == 'we-do' || activeSection == 'que-hacemos'}">Qué hacemos</a>
+        ng-class="{active: activeSection == 'we-do' || activeSection == 'que-hacemos'}">
+        {{ 'WE-DO' | translate }}</a>
       </li>
       <li>
         <a ng-href="{{$root.getLink('projects', 'proyectos')}}"
-        ng-class="{active: activeSection == 'projects' || activeSection == 'proyectos'}">Nuestros proyectos</a>
+        ng-class="{active: activeSection == 'projects' || activeSection == 'proyectos'}">
+        {{ 'PROJECTS' | translate }}</a>
       </li>
       <li>
         <a ng-href="{{$root.getLink('clients', 'clientes')}}"
-        ng-class="{active: activeSection == 'clients' || activeSection == 'clientes'}">Quiénes han estado con nosotros</a>
+        ng-class="{active: activeSection == 'clients' || activeSection == 'clientes'}">
+        {{ 'CLIENTS' | translate }}</a>
       </li>
       <li>
         <a ng-href="{{$root.getLink('we-are', 'quienes-somos')}}"
-        ng-class="{active: activeSection == 'we-are' || activeSection == 'quienes-somos'}">Quiénes somos</a>
+        ng-class="{active: activeSection == 'we-are' || activeSection == 'quienes-somos'}">
+        {{ 'WE-ARE' | translate }}</a>
       </li>
       <li>
         <a ng-href="{{$root.getLink('location', 'ubicacion')}}"
-        ng-class="{active: activeSection == 'location' || activeSection == 'ubicacion'}">Donde encontrarnos</a>
+        ng-class="{active: activeSection == 'location' || activeSection == 'ubicacion'}">
+        {{ 'LOCATION' | translate }}</a>
       </li>
       <li>
         <a ng-href="{{$root.getLink('we-share', 'compartimos')}}"
-        ng-class="{active: activeSection == 'we-share' || activeSection == 'compartimos'}">Compartimos lo que sabemos</a>
+        ng-class="{active: activeSection == 'we-share' || activeSection == 'compartimos'}">
+        {{ 'WE-SHARE' | translate }}</a>
       </li>
     </ul>
   </nav>
