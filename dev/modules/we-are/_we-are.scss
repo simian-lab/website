@@ -1,0 +1,165 @@
+.header{
+  background-image: url("../img/we-are/fondo_quienes_somos.svg");
+  background-position-y: -10rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 48rem;
+  margin-top: -5rem;
+
+  @media screen and (max-width: 74.875em) {
+    background-position-x: center;
+    background-size: 178%;
+    height: 82rem;
+    margin-top: -5rem;
+  }
+
+  @media screen and (max-width: $tablet-small) {
+    height: 96rem;
+  }
+
+  .slider-container {
+    position: relative;
+    padding-top: 7rem;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      background-image: url('../img/we-are/flecha_verde.svg');
+      background-size: contain;
+      height: 6rem;
+      top: 50%;
+      width: 6rem;
+
+      @media screen and (max-width: 74.875em) {
+        top: 30%
+      }
+
+      @media screen and (max-width: $tablet-small) {
+        top: 22%;
+      }
+    }
+
+    .swiper-button-prev {
+      @include transform(rotate(180deg));
+      left: 5%;
+    }
+
+    .swiper-button-next {
+      right: 5%;
+    }
+
+    #projects-slider {
+      width: 80%;
+
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          justify-content:center;
+          align-content: center;
+
+          .preview-container {
+            display: flex;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            flex-wrap: wrap;
+
+            justify-content:center;
+            align-items: center;
+
+            .profile {
+              width: 30rem;
+              height: 33rem;
+
+              @media screen and (max-width: $tablet-small) {
+                width: 15rem;
+                height: 33rem;
+              }
+
+              img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                }
+
+              .name {
+                display: block;
+                font-size: 4rem;
+                text-align: center;
+                margin: 1rem 0;
+              }
+
+              p{
+                text-align: center;
+                font-size: 2.5rem;
+              }
+            }
+
+            .description {
+              width: 30rem;
+              height: 33rem;
+
+              @media screen and (max-width: $tablet-small) {
+                width: 16rem;
+                height: 45rem;
+              }
+
+              h1 {
+                font-size: 4rem;
+              }
+              p{
+                font-size: 1.5rem;
+              }
+
+              h2{
+                margin-top: 4rem;
+                font-family: $quicksand_regular;
+                font-size: 2rem;
+              }
+
+              .email{
+                color: $blue;
+                font-size: 1.5rem;
+                font-weight: bolder;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+
+  .prueba{
+    width: 20rem;
+    height: 25rem;
+
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+
+    flex-wrap: wrap;
+
+    justify-content:center;
+    align-items: center;
+
+    background-color: aqua;
+
+    .elemento1{
+      background-color: aquamarine;
+      width: 10rem;
+      height: 10rem;
+    }
+    .elemento2{
+      background-color: orange;
+      width: 10rem;
+      height: 10rem;
+    }
+    .elemento3{
+      background-color: red;
+      width: 10rem;
+      height: 10rem;
+    }
+  } */
+}
