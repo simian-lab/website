@@ -7,24 +7,19 @@ angular.module('simian.we-are', [])
   function($scope, $timeout, MonkeysService, ProjectsService) {
     console.log('WeAreController');
 
-  MonkeysService.getMonkeys().then(function(response) {
-      $scope.monkeys = response.monkeys;
-
-      console.log($scope.monkeys);
-    });
-
     MonkeysService.getMonkeys().then(function(response) {
       $scope.monkeys = response.monkeys;
+      $scope.show = true;
 
-      console.log($scope.monkeys);
+      if (true) {}
 
       $timeout(function() {
         /**
         * We are using a slider library called Swiper.
         * This is its API: http://idangero.us/swiper/api/#.V22dh5PhDOT
         */
-        var projectsSlider = new Swiper('#projects-slider', {
-          loop: true,
+        var projectsSlider = new Swiper('#monkeys-slider', {
+          loop: false,
           nextButton: '.swiper-button-next',
           prevButton: '.swiper-button-prev',
           slidesPerView: 1,
