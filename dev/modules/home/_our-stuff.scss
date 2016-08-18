@@ -27,6 +27,15 @@
     height: 56rem;
   }
 
+  @media screen and (max-width: $mobile-medium) {
+    height: 48rem;
+  }
+
+  @media screen and (max-width: $mobile-small) {
+    height: 45rem;
+  }
+
+
   .title {
     background-image: url('../img/home/our-stuff-title.svg');
     background-repeat: no-repeat;
