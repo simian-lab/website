@@ -1,33 +1,51 @@
 .header{
   background-image: url("../img/we-share/fondo.svg");
   height: 63rem;
+  background-position-x: center;
   background-repeat: no-repeat;
-  background-size: 103%;
+  background-size: 116%;
   margin-top: -3rem;
   margin-bottom: -42rem;
 
   @media screen and (min-width: $laptop-large) {
+    height: 56rem;
     margin-bottom: -33rem;
   }
   @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
     margin-bottom: -36rem;
+    background-size: 119%;
   }
+
+  @media screen and (max-width: 75.000em) {
+    background-size: 140%;
+  }
+
+  @media screen and (max-width: 56.250em) {
+    background-size: 150%;
+  }
+
   @media screen and (max-width: $laptop-small) {
     margin-bottom: -45rem;
   }
+
    @media screen and (max-width: $tablet-large) {
     margin-bottom: -49rem;
   }
+
   @media screen and (max-width: $tablet-medium) {
     margin-bottom: -51rem;
   }
+
   @media screen and (max-width: $tablet-small) {
-    background-size: 118%;
+    background-size: 172%;
   }
+
   @media screen and (max-width: $mobile-large) {
-    background-size: 137%;
+    background-size: 215%;
   }
+
   @media screen and (max-width: $mobile-medium) {
+    background-size: 239%;
     margin-bottom: -52rem;
   }
 

@@ -20,7 +20,7 @@ header {
     top: 2.5rem;
     width: 60%;
 
-    @media screen and (max-width: $mobile-large) {
+    @media screen and (max-width: 75.000em) {
       display: none;
     }
 
@@ -52,7 +52,7 @@ header {
     right: 1rem;
     top: 2rem;
 
-    @media screen and (max-width: $mobile-large) {
+    @media screen and (max-width: 75.000em) {
       display: none;
     }
 
