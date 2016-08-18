@@ -1,27 +1,39 @@
 <header>
-  <a href="" ui-sref="home">
+  <a href="" ng-href="/{{$root.language}}/">
     <img src="../img/header/logo-simian.png" alt="">
   </a>
 
   <nav ng-hide="activeSection == '404'">
     <ul>
       <li>
-        <a href="" ui-sref="we-do" ng-class="{active: activeSection == 'we-do'}">Qué hacemos</a>
+        <a ng-href="{{$root.getLink('we-do', 'que-hacemos')}}"
+        ng-class="{active: activeSection == 'we-do' || activeSection == 'que-hacemos'}">
+        {{ 'WE-DO' | translate }}</a>
       </li>
       <li>
-        <a href="" ui-sref="projects" ng-class="{active: activeSection == 'projects'}">Nuestros proyectos</a>
+        <a ng-href="{{$root.getLink('projects', 'proyectos')}}"
+        ng-class="{active: activeSection == 'projects' || activeSection == 'proyectos'}">
+        {{ 'PROJECTS' | translate }}</a>
       </li>
       <li>
-        <a href="" ui-sref="clients" ng-class="{active: activeSection == 'clients'}">Quiénes han estado con nosotros</a>
+        <a ng-href="{{$root.getLink('clients', 'clientes')}}"
+        ng-class="{active: activeSection == 'clients' || activeSection == 'clientes'}">
+        {{ 'CLIENTS' | translate }}</a>
       </li>
       <li>
-        <a href="" ui-sref="we-are" ng-class="{active: activeSection == 'we-are'}">Quiénes somos</a>
+        <a ng-href="{{$root.getLink('we-are', 'quienes-somos')}}"
+        ng-class="{active: activeSection == 'we-are' || activeSection == 'quienes-somos'}">
+        {{ 'WE-ARE' | translate }}</a>
       </li>
       <li>
-        <a href="" ui-sref="location" ng-class="{active: activeSection == 'location'}">Donde encontrarnos</a>
+        <a ng-href="{{$root.getLink('location', 'ubicacion')}}"
+        ng-class="{active: activeSection == 'location' || activeSection == 'ubicacion'}">
+        {{ 'LOCATION' | translate }}</a>
       </li>
       <li>
-        <a href="" ui-sref="we-share" ng-class="{active: activeSection == 'we-share'}">Compartimos lo que sabemos</a>
+        <a ng-href="{{$root.getLink('we-share', 'compartimos')}}"
+        ng-class="{active: activeSection == 'we-share' || activeSection == 'compartimos'}">
+        {{ 'WE-SHARE' | translate }}</a>
       </li>
     </ul>
   </nav>

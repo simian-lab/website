@@ -98,6 +98,11 @@
         background-position: center; } }
 
 header {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
   background-image: url("../img/header/header-background.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
