@@ -267,6 +267,9 @@
         @media screen and (max-width: $mobile-large) {
           margin-top: 8%;
           z-index: -0;
+          margin-left: -92%;
+          width: 90%;
+          height: 80%;
         }
       }
     }

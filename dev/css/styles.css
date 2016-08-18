@@ -2879,7 +2879,10 @@ footer .footer-end {
         @media screen and (max-width: 30rem) {
           #projects .header-projects .desktop-projects .back .pagina {
             margin-top: 8%;
-            z-index: -0; } }
+            z-index: -0;
+            margin-left: -92%;
+            width: 90%;
+            height: 80%; } }
     #projects .header-projects .desktop-projects .icon {
       position: relative;
       margin-top: -17%;
