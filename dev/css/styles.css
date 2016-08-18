@@ -685,6 +685,12 @@ footer .footer-end {
   @media screen and (max-width: 30rem) {
     #home .our-stuff {
       height: 56rem; } }
+  @media screen and (max-width: 25rem) {
+    #home .our-stuff {
+      height: 48rem; } }
+  @media screen and (max-width: 22.5rem) {
+    #home .our-stuff {
+      height: 45rem; } }
   #home .our-stuff .title {
     background-image: url("../img/home/our-stuff-title.svg");
     background-repeat: no-repeat;
@@ -992,8 +998,7 @@ footer .footer-end {
     #home .we-are {
       background-size: 157%;
       background-position-x: center;
-      margin-top: 15rem;
-      margin-top: inherit; } }
+      margin-top: 10rem; } }
   #home .we-are .title {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -1167,6 +1172,21 @@ footer .footer-end {
     @media screen and (max-width: 52.5rem) {
       #home .find-us p {
         font-size: 1.7rem; } }
+    @media screen and (max-width: 45rem) {
+      #home .find-us p {
+        font-size: 2rem; } }
+    @media screen and (max-width: 37.5rem) {
+      #home .find-us p {
+        font-size: 1.7rem; } }
+    @media screen and (max-width: 30rem) {
+      #home .find-us p {
+        font-size: 1.4rem; } }
+    @media screen and (max-width: 25rem) {
+      #home .find-us p {
+        font-size: 1.3rem; } }
+    @media screen and (max-width: 22.5rem) {
+      #home .find-us p {
+        font-size: 1.1rem; } }
   #home .find-us .sign {
     display: inline-block;
     margin-bottom: 3%;
@@ -1181,6 +1201,12 @@ footer .footer-end {
         top: -16rem;
         width: 53%;
         z-index: -1; } }
+    @media screen and (max-width: 30rem) {
+      #home .find-us .sign {
+        margin-top: 5rem; } }
+    @media screen and (max-width: 25rem) {
+      #home .find-us .sign {
+        margin-top: 7rem; } }
     #home .find-us .sign img {
       width: 100%; }
     #home .find-us .sign .sign-text {
@@ -1206,6 +1232,21 @@ footer .footer-end {
         @media screen and (max-width: 52.5rem) {
           #home .find-us .sign .sign-text h1 {
             font-size: 7rem; } }
+        @media screen and (max-width: 45rem) {
+          #home .find-us .sign .sign-text h1 {
+            font-size: 8rem; } }
+        @media screen and (max-width: 37.5rem) {
+          #home .find-us .sign .sign-text h1 {
+            font-size: 7rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .find-us .sign .sign-text h1 {
+            font-size: 5.5rem; } }
+        @media screen and (max-width: 25rem) {
+          #home .find-us .sign .sign-text h1 {
+            font-size: 5rem; } }
+        @media screen and (max-width: 22.5rem) {
+          #home .find-us .sign .sign-text h1 {
+            font-size: 4.5rem; } }
   #home .find-us .see-more {
     position: absolute;
     right: 3%;
@@ -1227,9 +1268,17 @@ footer .footer-end {
     background-size: 104%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 20rem;
+    height: 30rem;
     position: relative;
-    z-index: -1; }
+    z-index: -1;
+    margin-top: -4rem; }
+    @media screen and (max-width: 30rem) {
+      #home .find-us .back-blue {
+        height: 20rem; } }
+    @media screen and (max-width: 22.5rem) {
+      #home .find-us .back-blue {
+        margin-top: -7rem;
+        background-size: 113%; } }
     @media screen and (min-width: 37.5rem) {
       #home .find-us .back-blue {
         display: none; } }

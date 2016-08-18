@@ -17,8 +17,27 @@ angular.module('simian.home', [])
       });
     });
 
+    $scope.numClientes = function() {
+      if (screen.width < 480) {
+        $scope.clients = 4;
+        return $scope.clients;
+      }
+      else {
+        $scope.clients = 12;
+        return $scope.clients;
+      }
+    };
+
     ProjectsService.getProjects().then(function(response) {
       $scope.projects = response.projects;
+
+      if (screen.width <= 720) {
+        $scope.numslider = 1;
+      }
+
+      else {
+        $scope.numslider = 3;
+      }
 
       $timeout(function() {
         /**
@@ -29,11 +48,11 @@ angular.module('simian.home', [])
           loop: true,
           nextButton: '.swiper-button-next',
           prevButton: '.swiper-button-prev',
-          slidesPerView: 3,
+          slidesPerView: $scope.numslider,
           spaceBetween: 10
         });
-      })
-    })
+      });
+    });
   }
 ])
 ;
