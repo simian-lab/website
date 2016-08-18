@@ -114,7 +114,7 @@ header {
     position: absolute;
     top: 2.5rem;
     width: 60%; }
-    @media screen and (max-width: 30rem) {
+    @media screen and (max-width: 75em) {
       header nav {
         display: none; } }
     header nav ul {
@@ -135,7 +135,7 @@ header {
     position: absolute;
     right: 1rem;
     top: 2rem; }
-    @media screen and (max-width: 30rem) {
+    @media screen and (max-width: 75em) {
       header .header-buttons {
         display: none; } }
     header .header-buttons a {
@@ -1645,16 +1645,25 @@ footer .footer-end {
 #we-share .header {
   background-image: url("../img/we-share/fondo.svg");
   height: 63rem;
+  background-position-x: center;
   background-repeat: no-repeat;
-  background-size: 103%;
+  background-size: 116%;
   margin-top: -3rem;
   margin-bottom: -42rem; }
   @media screen and (min-width: 100rem) {
     #we-share .header {
+      height: 56rem;
       margin-bottom: -33rem; } }
   @media screen and (min-width: 90rem) and (max-width: 100rem) {
     #we-share .header {
-      margin-bottom: -36rem; } }
+      margin-bottom: -36rem;
+      background-size: 119%; } }
+  @media screen and (max-width: 75em) {
+    #we-share .header {
+      background-size: 140%; } }
+  @media screen and (max-width: 56.25em) {
+    #we-share .header {
+      background-size: 150%; } }
   @media screen and (max-width: 64rem) {
     #we-share .header {
       margin-bottom: -45rem; } }
@@ -1666,12 +1675,13 @@ footer .footer-end {
       margin-bottom: -51rem; } }
   @media screen and (max-width: 37.5rem) {
     #we-share .header {
-      background-size: 118%; } }
+      background-size: 172%; } }
   @media screen and (max-width: 30rem) {
     #we-share .header {
-      background-size: 137%; } }
+      background-size: 215%; } }
   @media screen and (max-width: 25rem) {
     #we-share .header {
+      background-size: 239%;
       margin-bottom: -52rem; } }
   #we-share .header .text {
     text-align: center;
