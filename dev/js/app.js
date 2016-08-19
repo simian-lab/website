@@ -62,12 +62,12 @@ angular.module('simian', [
     .state('we-are', {
       controller: 'WeAreController',
       templateUrl: '/modules/we-are/we-are.html',
-      url: '/en/we-are/'
+      url: '/en/we-are/:monkey/'
     })
     .state('quienes-somos', {
       controller: 'WeAreController',
       templateUrl: '/modules/we-are/we-are.html',
-      url: '/es/quienes-somos/'
+      url: '/es/quienes-somos/:monkey/'
     })
     .state('location', {
       controller: 'LocationController',
@@ -100,23 +100,28 @@ angular.module('simian', [
     })
     ;
 
-    $urlRouterProvider.otherwise('/404');
+    //$urlRouterProvider.otherwise('/404');
   }
 ])
 
 .controller('AppController', [
-  '$anchorScroll', '$location', '$rootScope', '$scope', 'TranslateService',
-  function($anchorScroll, $location, $rootScope, $scope, TranslateService) {
-    var loadedLanguage;
+  '$anchorScroll', '$location', '$rootScope', '$scope','$state', '$translate', 'TranslateService',
+  function($anchorScroll, $location, $rootScope, $scope, $state, $translate, TranslateService) {
+    var loadedPath;
 
-    loadedLanguage = $location.path().split('/')[1];
-    if (loadedLanguage != 'en' && loadedLanguage != 'es') {
-      loadedLanguage = 'es';
+    $translate.preferredLanguage('es');
+
+    loadedPath = $location.path();
+
+    if (loadedPath == '/') {
+      loadedPath = '/es/';
+      $location.path(loadedPath);
     }
-    TranslateService.setLanguage(loadedLanguage);
 
-    $rootScope.getLink = function(englishState, spanishState) {
-      return TranslateService.getLink(englishState, spanishState);
+    TranslateService.setLanguage(loadedPath);
+
+    $rootScope.getLink = function(englishState, spanishState, stateParams) {
+      return TranslateService.getLink(englishState, spanishState, stateParams);
     }
 
     $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {

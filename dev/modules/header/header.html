@@ -21,7 +21,7 @@
         {{ 'CLIENTS' | translate }}</a>
       </li>
       <li>
-        <a ng-href="{{$root.getLink('we-are', 'quienes-somos')}}"
+        <a ng-href="{{$root.getLink('we-are', 'quienes-somos', { monkey: 'sergio-acosta' })}}"
         ng-class="{active: activeSection == 'we-are' || activeSection == 'quienes-somos'}">
         {{ 'WE-ARE' | translate }}</a>
       </li>
