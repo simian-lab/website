@@ -9,21 +9,8 @@ angular.module('simian.projects', [])
     console.log('ProjectsController');
     ProjectsService.getProjects().then(function(response){
       $scope.projects = response.projects;
-      console.log($scope.projects);
     });
 
-  }
-])
-
-.config([
-  '$translateProvider',
-  function($translateProvider) {
-    $translateProvider.translations('es', {
-      PROJECTS_TITLE: 'Nuestros proyectos'
-    });
-    $translateProvider.translations('en', {
-      PROJECTS_TITLE: 'Our projects'
-    });
   }
 ])
 

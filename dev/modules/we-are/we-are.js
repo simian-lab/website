@@ -3,15 +3,11 @@
 angular.module('simian.we-are', [])
 
 .controller('WeAreController', [
-  '$scope','$timeout','MonkeysService','ProjectsService',
-  function($scope, $timeout, MonkeysService, ProjectsService) {
-    console.log('WeAreController');
-
+  '$scope','$state', '$timeout','MonkeysService','ProjectsService',
+  function($scope, $state, $timeout, MonkeysService, ProjectsService) {
     MonkeysService.getMonkeys().then(function(response) {
       $scope.monkeys = response.monkeys;
       $scope.show = true;
-
-      if (true) {}
 
       $timeout(function() {
         /**
