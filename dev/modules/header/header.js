@@ -2,7 +2,7 @@
 
 angular.module('simian.header', [])
 
-.config(['$translateProvider', function($translateProvider) {
+.config([ '$translateProvider', function($translateProvider) {
   $translateProvider.translations('en', {
     'WE-DO': 'We do',
     'PROJECTS': 'Our projects',
@@ -20,13 +20,13 @@ angular.module('simian.header', [])
     'LOCATION': 'Dónde encontrarnos',
     'WE-SHARE': 'Compartimos lo que sabemos'
   });
-}])
+} ])
 
 .controller('HeaderController', [
   '$scope', '$state', '$timeout', 'TranslateService',
   function($scope, $state, $timeout, TranslateService) {
     $scope.changeLanguage = function(language) {
-      TranslateService.setLanguage(language);
+      TranslateService.translateUrl(language);
     }
   }
 ])
