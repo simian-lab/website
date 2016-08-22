@@ -17,7 +17,9 @@
       "simio": "es el simio popular.",
       "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
       "contacto": "(+57) 311-5992255",
-      "email": "sergio@simian.co"
+      "email": "sergio@simian.co",
+      "slug": "ivan-vasquez"
+
     },
     {
       "name": "Nicolás Saiz",
@@ -26,7 +28,8 @@
       "simio": "es el simio popular.",
       "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
       "contacto": "(+57) 311-5992255",
-      "email": "sergio@simian.co"
+      "email": "sergio@simian.co",
+      "slug": "nicolas-saiz"
     },
     {
       "name": "Pablo García",
@@ -35,7 +38,8 @@
       "simio": "es el simio popular.",
       "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
       "contacto": "(+57) 311-5992255",
-      "email": "sergio@simian.co"
+      "email": "sergio@simian.co",
+      "slug": "pablo-garcia"
     },
     {
       "name": "Sebastián Giraldo",
@@ -44,7 +48,8 @@
       "simio": "es el simio popular.",
       "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
       "contacto": "(+57) 311-5992255",
-      "email": "sergio@simian.co"
+      "email": "sergio@simian.co",
+      "slug": "sebastian-giraldo"
     },
     {
       "name": "Natalia Cortés",
@@ -53,7 +58,9 @@
       "simio": "es el simio popular.",
       "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
       "contacto": "(+57) 311-5992255",
-      "email": "sergio@simian.co"
+      "email": "sergio@simian.co",
+      "slug": "natalia-cortes"
+
     },
     {
       "name": "Johnny Chinchajoa",
@@ -62,7 +69,8 @@
       "simio": "es el simio del sur.",
       "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
       "contacto": "(+57) 317-6257286",
-      "email": "johnny@simian.co"
+      "email": "johnny@simian.co",
+      "slug": "johnny-chinchajoa"
     },
     {
       "name": "David Guzman",
@@ -71,7 +79,8 @@
       "simio": "es el simio popular.",
       "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
       "contacto": "(+57) 311-5992255",
-      "email": "sergio@simian.co"
+      "email": "sergio@simian.co",
+      "slug": "david-guzman"
     },
     {
       "name": "Artur Castillo",
@@ -80,7 +89,8 @@
       "simio": "es el simio popular.",
       "description": "Es el más asequible del equipo, su teléfono celular esta en todas nuestras comunicaciones, tal vez por ser como es, es el comercial. Diriamos que conoce a todos los bogotanos y más. A este Simio lo podrás conocer hoy mismo si así lo quieres. ¿su apodo?: Jorge Barón, él seguro te dará la palmadita de la buena suerte",
       "contacto": "(+57) 311-5992255",
-      "email": "sergio@simian.co"
+      "email": "sergio@simian.co",
+      "slug": "artur-castillo"
     }
   ]
 }
