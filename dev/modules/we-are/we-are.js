@@ -6,19 +6,8 @@ angular.module('simian.we-are', [])
   '$scope','$state', '$timeout','MonkeysService','ProjectsService',
   function($scope, $state, $timeout, MonkeysService, ProjectsService) {
 
-    console.log($state.params.monkey);
-
-    if ($state.params.monkey == 'sergio-acosta') {
-      $scope.position = 1;
-    }
-    else {
-      $scope.position = 3;
-    }
-
     MonkeysService.getMonkeys().then(function(response) {
       $scope.monkeys = response.monkeys;
-      $scope.show = true;
-
 
       for ($scope.i = 0; $scope.i<$scope.monkeys.length; $scope.i++) {
 

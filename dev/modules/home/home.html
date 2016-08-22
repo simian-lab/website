@@ -126,7 +126,7 @@
         <div class="monkey item" ng-repeat="simian in simians">
           <div class="image-container">
             <img ng-src="{{simian.avatar}}" alt="{{simian.name}}">
-            <a href="es/quienes-somos/{{simian.slug}}/" class="more-link"></a>
+            <a ng-href="{{$root.getLink('we-are', 'quienes-somos', { monkey: simian.slug })}}" class="more-link"></a>
           </div>
           <h1>{{simian.name}}</h1>
           <p>{{simian.position}}</p>

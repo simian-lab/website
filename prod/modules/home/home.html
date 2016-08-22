@@ -115,7 +115,7 @@
         <div class="monkey" ng-repeat="boss in bosses">
           <div class="image-container">
             <img ng-src="{{boss.avatar}}" alt="{{boss.name}}">
-            <a href="" class="more-link"></a>
+            <a ng-href="{{$root.getLink('we-are', 'quienes-somos', { monkey: boss.slug })}}" class="more-link"></a>
           </div>
           <h1>{{boss.name}}</h1>
           <p>{{boss.position}}</p>
@@ -126,7 +126,7 @@
         <div class="monkey item" ng-repeat="simian in simians">
           <div class="image-container">
             <img ng-src="{{simian.avatar}}" alt="{{simian.name}}">
-            <a href="" class="more-link"></a>
+            <a ng-href="{{$root.getLink('we-are', 'quienes-somos', { monkey: simian.slug })}}" class="more-link"></a>
           </div>
           <h1>{{simian.name}}</h1>
           <p>{{simian.position}}</p>
