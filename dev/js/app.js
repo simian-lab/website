@@ -92,13 +92,13 @@ angular.module('simian', [
     .state('project-deployment', {
       controller: 'DeploymentController',
       templateUrl: '/modules/project-deployment/project-deployment.html',
-      url: '/en/project-deployment/:project'
+      url: '/en/projects/:project'
     })
 
     .state('despliegue-proyecto', {
       controller: 'DeploymentController',
       templateUrl: '/modules/project-deployment/project-deployment.html',
-      url: '/es/despliegue-proyecto/:project/'
+      url: '/es/proyectos/:project/'
     })
 
     .state('404', {
