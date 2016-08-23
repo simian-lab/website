@@ -306,14 +306,14 @@ footer .footer-end {
     .footer-home .background-section .footer-content .contact-form input, .footer-home .background-section .footer-content .contact-form textarea {
       background-color: #00A1C1; }
 
-.footer-we-do .background-section, .footer-clients .background-section, .footer-location .background-section {
+.footer-we-do .background-section, .footer-que-hacemos .background-section, .footer-clients .background-section, .footer-clientes .background-section, .footer-location .background-section, .footer-ubicacion .background-section {
   background-image: url("../img/footer/footer-bg-green.svg"); }
-  .footer-we-do .background-section .footer-content .contact-form input, .footer-we-do .background-section .footer-content .contact-form textarea, .footer-clients .background-section .footer-content .contact-form input, .footer-clients .background-section .footer-content .contact-form textarea, .footer-location .background-section .footer-content .contact-form input, .footer-location .background-section .footer-content .contact-form textarea {
+  .footer-we-do .background-section .footer-content .contact-form input, .footer-we-do .background-section .footer-content .contact-form textarea, .footer-que-hacemos .background-section .footer-content .contact-form input, .footer-que-hacemos .background-section .footer-content .contact-form textarea, .footer-clients .background-section .footer-content .contact-form input, .footer-clients .background-section .footer-content .contact-form textarea, .footer-clientes .background-section .footer-content .contact-form input, .footer-clientes .background-section .footer-content .contact-form textarea, .footer-location .background-section .footer-content .contact-form input, .footer-location .background-section .footer-content .contact-form textarea, .footer-ubicacion .background-section .footer-content .contact-form input, .footer-ubicacion .background-section .footer-content .contact-form textarea {
     background-color: #1DC0B2; }
 
-.footer-projects .background-section, .footer-we-share .background-section, .footer-project-deployment .background-section {
+.footer-projects .background-section, .footer-proyectos .background-section, .footer-we-share .background-section, .footer-compartimos .background-section, .footer-project-deployment .background-section {
   background-image: url("../img/footer/footer-bg-red.svg"); }
-  .footer-projects .background-section .footer-content .contact-form input, .footer-projects .background-section .footer-content .contact-form textarea, .footer-we-share .background-section .footer-content .contact-form input, .footer-we-share .background-section .footer-content .contact-form textarea, .footer-project-deployment .background-section .footer-content .contact-form input, .footer-project-deployment .background-section .footer-content .contact-form textarea {
+  .footer-projects .background-section .footer-content .contact-form input, .footer-projects .background-section .footer-content .contact-form textarea, .footer-proyectos .background-section .footer-content .contact-form input, .footer-proyectos .background-section .footer-content .contact-form textarea, .footer-we-share .background-section .footer-content .contact-form input, .footer-we-share .background-section .footer-content .contact-form textarea, .footer-compartimos .background-section .footer-content .contact-form input, .footer-compartimos .background-section .footer-content .contact-form textarea, .footer-project-deployment .background-section .footer-content .contact-form input, .footer-project-deployment .background-section .footer-content .contact-form textarea {
     background-color: #FF5E5B; }
 
 .footer-404 {
