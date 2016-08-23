@@ -1,66 +1,13 @@
 <div id="project-deployment">
 
-  <div class="header-project">
+  <div class="header-project"  ng-bind-html="renderHtml(post.content.header)">
+  </div>
 
-    <div class="title-content">
-
-      <img class="logo-project" src="../img/project-deployment/bancoldex_sitio.png" alt="">
-      <img class="icon-project" src="../img/project-deployment/cuadro_fondo_amarillo.svg" alt="">
-
-      <div class="text">
-        <h1>La Historia</h1>
-        <h2>lorem imsum es simplemente el texto de relleno de las imprentas</h2>
-        <p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p>
-      </div>
-
-   </div>
+  <div class="content-project" ng-bind-html="renderHtml(post.content.project)">
 
   </div>
 
   <div class="content-project">
-
-    <div class="section1">
-
-      <img class="icon1" src="../img/project-deployment/iphone_grande.svg" alt="">
-      <img class="icon2" src="../img/project-deployment/circulo_linea.svg" alt="">
-
-      <div class="text">
-        <h2>lorem imsum es simplemente el texto de relleno de las imprentas</h2>
-        <p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p>
-      </div>
-
-    </div>
-
-    <div class="section2">
-
-      <div class="text1">
-
-        <h1>Algun comentario destacable del cliente</h1>
-        <img class="icon1" src="../img/project-deployment/icono_ver_ojo.svg" alt="">
-        <img class="icon2" src="../img/project-deployment/cuadro_fondo_amarillo.svg" alt="">
-
-      </div>
-
-      <div class="text2">
-        <h2>lorem imsum es simplemente el texto de relleno de las imprentas</h2>
-        <p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p>
-      </div>
-
-    </div>
-
-    <div class="section3">
-
-      <div class="text1">
-        <h2>caracteristicas especificas</h2>
-        <h1 class="bold-border">proyecto</h1>
-      </div>
-
-      <div class="text2">
-        <p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p>
-      </div>
-
-    </div>
-
     <div class="section4">
 
       <div class="text">
@@ -70,30 +17,17 @@
 
       <div class="icon">
 
-        <div class="developer">
-          <img class="back1" src="../img/project-deployment/cuadro_fondo_amarillo.svg" alt="">
-          <img class="icon1" src="../img/project-deployment/lego.svg" alt="">
-          <h2>Desarrollo</h2>
+        <div class="developer" ng-bind-html="renderHtml(post.content.doproject.process1)" >
         </div>
 
-        <div class="analysis">
-          <img class="back1" src="../img/project-deployment/cuadro_fondo_rojo.svg" alt="">
-          <img class="icon1" src="../img/project-deployment/banano.svg" alt="">
-          <h2>Analisis</h2>
+        <div class="analysis" ng-bind-html="renderHtml(post.content.doproject.process2)">
         </div>
 
-        <div class="maintenance">
-          <img class="back1" src="../img/project-deployment/cuadro_fondo_amarillo.svg" alt="">
-          <img class="icon1" src="../img/project-deployment/herramienta.svg" alt="">
-          <h2>Mantenimiento</h2>
+        <div class="maintenance" ng-bind-html="renderHtml(post.content.doproject.process3)">
         </div>
-
       </div>
-
     </div>
-
   </div>
-
   <div class="other-projects"></div>
 
 </div>

@@ -9,6 +9,7 @@ angular.module('simian.projects', [])
     console.log('ProjectsController');
     ProjectsService.getProjects().then(function(response){
       $scope.projects = response.projects;
+      $scope.project = response.projects[0];
     });
 
   }

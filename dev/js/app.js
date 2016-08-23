@@ -92,8 +92,15 @@ angular.module('simian', [
     .state('project-deployment', {
       controller: 'DeploymentController',
       templateUrl: '/modules/project-deployment/project-deployment.html',
-      url: '/project-deployment'
+      url: '/en/project-deployment/:project'
     })
+
+    .state('despliegue-proyecto', {
+      controller: 'DeploymentController',
+      templateUrl: '/modules/project-deployment/project-deployment.html',
+      url: '/es/despliegue-proyecto/:project/'
+    })
+
     .state('404', {
       templateUrl: '/modules/404/404.html',
       url: '/404/'
