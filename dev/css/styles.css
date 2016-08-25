@@ -2668,7 +2668,8 @@ footer .footer-end {
 #projects .header-projects {
   background-image: url("../img/projects/fondo_rojo_hero.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 103%;
+  height: 44rem;
   margin-top: -3rem; }
   @media screen and (max-width: 30rem) {
     #projects .header-projects {
@@ -2855,113 +2856,6 @@ footer .footer-end {
           top: 19rem;
           left: 8%;
           width: 81%; } }
-  #projects .header-projects .desktop-projects {
-    margin: 0 auto;
-    width: 100%; }
-    @media screen and (max-width: 30rem) {
-      #projects .header-projects .desktop-projects {
-        margin-top: 4rem; } }
-    #projects .header-projects .desktop-projects .logo-project {
-      width: 34%;
-      margin-left: 5%; }
-      @media screen and (min-width: 30rem) {
-        #projects .header-projects .desktop-projects .logo-project {
-          display: none; } }
-    #projects .header-projects .desktop-projects .back {
-      position: relative; }
-      #projects .header-projects .desktop-projects .back .desktop {
-        width: 95%;
-        margin-left: 3%;
-        margin-top: 13%; }
-        @media screen and (max-width: 30rem) {
-          #projects .header-projects .desktop-projects .back .desktop {
-            margin-top: inherit; } }
-      #projects .header-projects .desktop-projects .back .logo {
-        position: absolute;
-        margin-left: 12%;
-        margin-top: 16%;
-        width: 13%;
-        z-index: 1; }
-        @media screen and (max-width: 30rem) {
-          #projects .header-projects .desktop-projects .back .logo {
-            margin-top: 3%; } }
-      #projects .header-projects .desktop-projects .back .pagina {
-        position: absolute;
-        margin-left: -78%;
-        margin-top: 21%;
-        width: 58%;
-        z-index: -1; }
-        @media screen and (max-width: 30rem) {
-          #projects .header-projects .desktop-projects .back .pagina {
-            margin-top: 8%;
-            z-index: -0;
-            margin-left: -92%;
-            width: 90%;
-            height: 80%; } }
-    #projects .header-projects .desktop-projects .icon {
-      position: relative;
-      margin-top: -17%;
-      margin-left: 67%;
-      z-index: 0; }
-      @media screen and (max-width: 30rem) {
-        #projects .header-projects .desktop-projects .icon {
-          margin-top: -36%;
-          margin-left: 46%; } }
-      #projects .header-projects .desktop-projects .icon .icon-movile {
-        width: 19%; }
-        @media screen and (max-width: 30rem) {
-          #projects .header-projects .desktop-projects .icon .icon-movile {
-            width: 25%; } }
-      #projects .header-projects .desktop-projects .icon .icon-table {
-        width: 44%; }
-        @media screen and (max-width: 30rem) {
-          #projects .header-projects .desktop-projects .icon .icon-table {
-            width: 56%; } }
-      #projects .header-projects .desktop-projects .icon .more {
-        width: 14%;
-        margin-left: -13%; }
-        @media screen and (max-width: 45rem) {
-          #projects .header-projects .desktop-projects .icon .more {
-            width: 18%;
-            margin-left: -15%; } }
-        @media screen and (max-width: 30rem) {
-          #projects .header-projects .desktop-projects .icon .more {
-            width: 30%;
-            margin-left: -25%; } }
-    #projects .header-projects .desktop-projects .text {
-      margin: 0 auto;
-      width: 62%;
-      margin-left: 6%;
-      margin-top: -1rem; }
-      @media screen and (max-width: 37.5rem) {
-        #projects .header-projects .desktop-projects .text {
-          margin-top: -1rem; } }
-      @media screen and (max-width: 30rem) {
-        #projects .header-projects .desktop-projects .text {
-          width: 83%;
-          margin-left: 11%;
-          margin-top: 1rem; } }
-      #projects .header-projects .desktop-projects .text h2 {
-        font-family: "quicksandregular";
-        color: #FF5E5B;
-        font-size: 2rem;
-        font-weight: bold;
-        line-height: 130%; }
-        @media screen and (max-width: 64rem) {
-          #projects .header-projects .desktop-projects .text h2 {
-            font-size: 1.5rem; } }
-        @media screen and (max-width: 30rem) {
-          #projects .header-projects .desktop-projects .text h2 {
-            font-size: 1.5rem; } }
-      #projects .header-projects .desktop-projects .text p {
-        font-size: 1.7rem;
-        line-height: 130%; }
-        @media screen and (max-width: 64rem) {
-          #projects .header-projects .desktop-projects .text p {
-            font-size: 1.3rem; } }
-        @media screen and (max-width: 30rem) {
-          #projects .header-projects .desktop-projects .text p {
-            font-size: 1.3rem; } }
 
 #projects .movile-projects {
   margin: 0 auto;
@@ -3257,6 +3151,114 @@ footer .footer-end {
           font-size: 1.3rem; } }
       @media screen and (max-width: 30rem) {
         #projects .movile-projects .text-movile p {
+          font-size: 1.3rem; } }
+
+#projects .projects-desktop {
+  margin: 0 auto;
+  width: 100%; }
+  @media screen and (max-width: 30rem) {
+    #projects .projects-desktop {
+      margin-top: 4rem; } }
+  #projects .projects-desktop .logo-project {
+    width: 34%;
+    margin-left: 5%; }
+    @media screen and (min-width: 30rem) {
+      #projects .projects-desktop .logo-project {
+        display: none; } }
+  #projects .projects-desktop .back {
+    position: relative; }
+    #projects .projects-desktop .back .desktop {
+      width: 95%;
+      margin-left: 3%;
+      margin-top: 13%; }
+      @media screen and (max-width: 30rem) {
+        #projects .projects-desktop .back .desktop {
+          margin-top: inherit; } }
+    #projects .projects-desktop .back .logo {
+      position: absolute;
+      margin-left: 12%;
+      margin-top: 16%;
+      width: 13%;
+      z-index: 1; }
+      @media screen and (max-width: 30rem) {
+        #projects .projects-desktop .back .logo {
+          margin-top: 3%; } }
+    #projects .projects-desktop .back .pagina {
+      position: absolute;
+      margin-left: -78%;
+      margin-top: 21%;
+      width: 58%;
+      z-index: -1; }
+      @media screen and (max-width: 30rem) {
+        #projects .projects-desktop .back .pagina {
+          margin-top: 8%;
+          z-index: -0;
+          margin-left: -92%;
+          width: 90%;
+          height: 80%; } }
+  #projects .projects-desktop .icon {
+    position: relative;
+    margin-top: -17%;
+    margin-left: 67%;
+    z-index: 0; }
+    @media screen and (max-width: 30rem) {
+      #projects .projects-desktop .icon {
+        margin-top: -36%;
+        margin-left: 46%; } }
+    #projects .projects-desktop .icon .icon-movile {
+      width: 19%; }
+      @media screen and (max-width: 30rem) {
+        #projects .projects-desktop .icon .icon-movile {
+          width: 25%; } }
+    #projects .projects-desktop .icon .icon-table {
+      width: 44%; }
+      @media screen and (max-width: 30rem) {
+        #projects .projects-desktop .icon .icon-table {
+          width: 56%; } }
+    #projects .projects-desktop .icon .more {
+      width: 14%;
+      margin-left: -13%; }
+      @media screen and (max-width: 45rem) {
+        #projects .projects-desktop .icon .more {
+          width: 18%;
+          margin-left: -15%; } }
+      @media screen and (max-width: 30rem) {
+        #projects .projects-desktop .icon .more {
+          width: 30%;
+          margin-left: -25%; } }
+  #projects .projects-desktop .text {
+    margin: 0 auto;
+    width: 62%;
+    margin-left: 6%;
+    margin-top: -1rem; }
+    @media screen and (max-width: 37.5rem) {
+      #projects .projects-desktop .text {
+        margin-top: -1rem; } }
+    @media screen and (max-width: 30rem) {
+      #projects .projects-desktop .text {
+        width: 83%;
+        margin-left: 11%;
+        margin-top: 1rem; } }
+    #projects .projects-desktop .text h2 {
+      font-family: "quicksandregular";
+      color: #FF5E5B;
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 130%; }
+      @media screen and (max-width: 64rem) {
+        #projects .projects-desktop .text h2 {
+          font-size: 1.5rem; } }
+      @media screen and (max-width: 30rem) {
+        #projects .projects-desktop .text h2 {
+          font-size: 1.5rem; } }
+    #projects .projects-desktop .text p {
+      font-size: 1.7rem;
+      line-height: 130%; }
+      @media screen and (max-width: 64rem) {
+        #projects .projects-desktop .text p {
+          font-size: 1.3rem; } }
+      @media screen and (max-width: 30rem) {
+        #projects .projects-desktop .text p {
           font-size: 1.3rem; } }
 
 #project-deployment .header-project {

@@ -1,0 +1,141 @@
+.projects-desktop {
+    margin: 0 auto;
+    width: 100%;
+
+    @media screen and (max-width: $mobile-large) {
+      margin-top: 4rem;
+    }
+
+    .logo-project{
+      width: 34%;
+      margin-left: 5%;
+      @media screen and (min-width: $mobile-large) {
+         display: none;
+      }
+    }
+
+    .back {
+      position: relative;
+      .desktop {
+        width: 95%;
+        margin-left: 3%;
+        margin-top: 13%;
+
+        @media screen and (max-width: $mobile-large) {
+           margin-top: inherit;
+        }
+      }
+
+      .logo{
+        position: absolute;
+        margin-left: 12%;
+        margin-top: 16%;
+        width: 13%;
+        z-index: 1;
+
+        @media screen and (max-width: $mobile-large) {
+          margin-top: 3%;
+        }
+      }
+
+      .pagina{
+        position: absolute;
+        margin-left: -78%;
+        margin-top: 21%;
+        width: 58%;
+        z-index: -1;
+
+        @media screen and (max-width: $mobile-large) {
+          margin-top: 8%;
+          z-index: -0;
+          margin-left: -92%;
+          width: 90%;
+          height: 80%;
+        }
+      }
+    }
+
+    .icon {
+      position: relative;
+      margin-top: -17%;
+      margin-left: 67%;
+      z-index: 0;
+
+      @media screen and (max-width: $mobile-large) {
+        margin-top: -36%;
+        margin-left: 46%;
+      }
+
+      .icon-movile {
+        width: 19%;
+        @media screen and (max-width: $mobile-large) {
+          width: 25%;
+        }
+      }
+
+      .icon-table {
+        width: 44%;
+        @media screen and (max-width: $mobile-large) {
+          width: 56%;
+        }
+      }
+
+      .more {
+        width: 14%;
+        margin-left: -13%;
+
+        @media screen and (max-width: $tablet-medium) {
+          width: 18%;
+          margin-left: -15%;
+        }
+
+        @media screen and (max-width: $mobile-large) {
+          width: 30%;
+          margin-left: -25%;
+        }
+      }
+    }
+
+    .text {
+      margin: 0 auto;
+      width: 62%;
+      margin-left: 6%;
+      margin-top: -1rem;
+
+      @media screen and (max-width: $tablet-small) {
+        margin-top: -1rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        width: 83%;
+        margin-left: 11%;
+        margin-top: 1rem;
+      }
+
+        h2 {
+          font-family: $quicksand_regular;
+          color: $red;
+          font-size: 2rem;
+          font-weight: bold;
+          line-height: 130%;
+
+          @media screen and (max-width: $laptop-small) {
+            font-size: 1.5rem;
+          }
+          @media screen and (max-width: $mobile-large) {
+            font-size: 1.5rem;
+          }
+        }
+
+        p {
+          font-size: 1.7rem;
+          line-height: 130%;
+          @media screen and (max-width: $laptop-small) {
+            font-size: 1.3rem;
+          }
+          @media screen and (max-width: $mobile-large) {
+            font-size: 1.3rem;
+          }
+        }
+    }
+  }

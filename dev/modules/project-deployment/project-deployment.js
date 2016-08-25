@@ -7,10 +7,6 @@ angular.module('simian.project-deployment', [])
   function($scope, ProjectsService, $http, $templateCache, $sce, $state) {
     console.log('DeploymentController');
 
-    console.log($state);
-
-    //var count = 0;
-
     $scope.renderHtml = function (htmlCode) {
         return $sce.trustAsHtml(htmlCode);
       };
