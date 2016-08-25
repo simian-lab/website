@@ -14,12 +14,12 @@
         "country": "Colombia"
       },
 
-      "content-resume" : {
-        "title": "Lorem Ipsum es simplemente el texto de relleno de las imprentas"
+      "contentResume" : {
+        "title" : "Enter Ipsum es simplemente el texto de relleno de las imprentas"
       },
 
       "content" : {
-        "header" : "<div class='title-content'><img class='logo-project' src='../img/project-deployment/bancoldex_sitio.png' alt=''><img class='icon-project' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''><div class='text'><h1>La Historia</h1><h2>lorem imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div>",
+        "header" : "<div class='title-content'><img class='logo-project' src='../img/project-deployment/bancoldex_sitio.png' alt=''><img class='icon-project' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''><div class='text'><h1>La Historia</h1><h2>Enter imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div>",
         "project" : "<div class='section1'><img class='icon1' src='../img/project-deployment/iphone_grande.svg' alt=''><img class='icon2' src='../img/project-deployment/circulo_linea.svg' alt=''><div class='text'><h2>lorem imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div><div class='section2'><div class='text1'><h1>Algun comentario destacable del cliente</h1><img class='icon1' src='../img/project-deployment/icono_ver_ojo.svg' alt=''><img class='icon2' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''></div><div class='text2'><h2>lorem imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div><div class='section3'><div class='text1'><h2>caracteristicas especificas</h2><h1 class='bold-border'>proyecto</h1></div><div class='text2'><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div>",
         "doproject" : {
           "process1" : "<img class='back1' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''><img class='icon1' src='../img/project-deployment/lego.svg' alt=''><h2>Desarrollo</h2>",
@@ -32,6 +32,7 @@
       "name": "KienYKe",
       "preview": "/img/preview/enter.jpg",
       "previewType": "desktop",
+      "slug": "kienyke",
       "type" : "mobile",
       "quote": {
         "avatar": "/img/avatar.jpg",
@@ -39,12 +40,27 @@
         "author": "Pablo García",
         "position": "Gerente General",
         "country": "Colombia"
+      },
+
+      "contentResume" : {
+        "title" : " kienyke Ipsum es simplemente el texto de relleno de las imprentas"
+      },
+
+      "content" : {
+        "header" : "<div class='title-content'><img class='logo-project' src='../img/project-deployment/bancoldex_sitio.png' alt=''><img class='icon-project' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''><div class='text'><h1>La Historia</h1><h2>Kienyke imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div>",
+        "project" : "<div class='section1'><img class='icon1' src='../img/project-deployment/iphone_grande.svg' alt=''><img class='icon2' src='../img/project-deployment/circulo_linea.svg' alt=''><div class='text'><h2>lorem imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div><div class='section2'><div class='text1'><h1>Algun comentario destacable del cliente</h1><img class='icon1' src='../img/project-deployment/icono_ver_ojo.svg' alt=''><img class='icon2' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''></div><div class='text2'><h2>lorem imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div><div class='section3'><div class='text1'><h2>caracteristicas especificas</h2><h1 class='bold-border'>proyecto</h1></div><div class='text2'><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div>",
+        "doproject" : {
+          "process1" : "<img class='back1' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''><img class='icon1' src='../img/project-deployment/lego.svg' alt=''><h2>Desarrollo</h2>",
+          "process2" : "<img class='back1' src='../img/project-deployment/cuadro_fondo_rojo.svg' alt=''><img class='icon1' src='../img/project-deployment/banano.svg' alt=''><h2>Analisis</h2>",
+          "process3" : "<img class='back1' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''><img class='icon1' src='../img/project-deployment/herramienta.svg' alt=''><h2>Mantenimiento</h2>"
+        }
       }
     },
     {
       "name": "Bancóldex",
       "preview": "/img/preview/enter.jpg",
       "previewType": "phone",
+      "slug": "bancoldex",
       "type" : "ipad",
       "quote": {
         "avatar": "/img/avatar.jpg",
@@ -52,12 +68,27 @@
         "author": "Natalia Cortés",
         "position": "Gerente General",
         "country": "Colombia"
+      },
+
+      "contentResume" : {
+        "title" : "Bancóldex Ipsum es simplemente el texto de relleno de las imprentas"
+      },
+
+      "content" : {
+        "header" : "<div class='title-content'><img class='logo-project' src='../img/project-deployment/bancoldex_sitio.png' alt=''><img class='icon-project' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''><div class='text'><h1>La Historia</h1><h2>Bancoldex imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div>",
+        "project" : "<div class='section1'><img class='icon1' src='../img/project-deployment/iphone_grande.svg' alt=''><img class='icon2' src='../img/project-deployment/circulo_linea.svg' alt=''><div class='text'><h2>lorem imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div><div class='section2'><div class='text1'><h1>Algun comentario destacable del cliente</h1><img class='icon1' src='../img/project-deployment/icono_ver_ojo.svg' alt=''><img class='icon2' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''></div><div class='text2'><h2>lorem imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div><div class='section3'><div class='text1'><h2>caracteristicas especificas</h2><h1 class='bold-border'>proyecto</h1></div><div class='text2'><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div>",
+        "doproject" : {
+          "process1" : "<img class='back1' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''><img class='icon1' src='../img/project-deployment/lego.svg' alt=''><h2>Desarrollo</h2>",
+          "process2" : "<img class='back1' src='../img/project-deployment/cuadro_fondo_rojo.svg' alt=''><img class='icon1' src='../img/project-deployment/banano.svg' alt=''><h2>Analisis</h2>",
+          "process3" : "<img class='back1' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''><img class='icon1' src='../img/project-deployment/herramienta.svg' alt=''><h2>Mantenimiento</h2>"
+        }
       }
     },
     {
       "name": "Cyberlunes",
       "preview": "/img/preview/enter.jpg",
       "previewType": "tablet",
+      "slug": "cyberlunes",
       "type" : "mobile",
       "quote": {
         "avatar": "/img/avatar.jpg",
@@ -65,6 +96,20 @@
         "author": "Nicolás Saiz",
         "position": "Gerente General",
         "country": "Colombia"
+      },
+
+      "contentResume" : {
+        "title" : "Cyberlunes Ipsum es simplemente el texto de relleno de las imprentas"
+      },
+
+      "content" : {
+        "header" : "<div class='title-content'><img class='logo-project' src='../img/project-deployment/bancoldex_sitio.png' alt=''><img class='icon-project' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''><div class='text'><h1>La Historia</h1><h2>Cyberlunes imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div>",
+        "project" : "<div class='section1'><img class='icon1' src='../img/project-deployment/iphone_grande.svg' alt=''><img class='icon2' src='../img/project-deployment/circulo_linea.svg' alt=''><div class='text'><h2>lorem imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div><div class='section2'><div class='text1'><h1>Algun comentario destacable del cliente</h1><img class='icon1' src='../img/project-deployment/icono_ver_ojo.svg' alt=''><img class='icon2' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''></div><div class='text2'><h2>lorem imsum es simplemente el texto de relleno de las imprentas</h2><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div><div class='section3'><div class='text1'><h2>caracteristicas especificas</h2><h1 class='bold-border'>proyecto</h1></div><div class='text2'><p>También es texto una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p></div></div>",
+        "doproject" : {
+          "process1" : "<img class='back1' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''><img class='icon1' src='../img/project-deployment/lego.svg' alt=''><h2>Desarrollo</h2>",
+          "process2" : "<img class='back1' src='../img/project-deployment/cuadro_fondo_rojo.svg' alt=''><img class='icon1' src='../img/project-deployment/banano.svg' alt=''><h2>Analisis</h2>",
+          "process3" : "<img class='back1' src='../img/project-deployment/cuadro_fondo_amarillo.svg' alt=''><img class='icon1' src='../img/project-deployment/herramienta.svg' alt=''><h2>Mantenimiento</h2>"
+        }
       }
     }
   ]
