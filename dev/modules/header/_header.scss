@@ -1,63 +1,179 @@
+
 header {
-  @include transform(translateZ(0));
-  background-image: url('../img/header/header-background.svg');
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: $header-height;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 15;
+  .desktop{
+    @include transform(translateZ(0));
+    background-image: url('../img/header/header-background.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $header-height;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 15;
 
-  a {
-    display: inline-block;
-  }
+    .menu{
+      @media screen and (min-width: 75.000em) {
+        display: none;
+      }
+      left: 1rem;
+      display: inline-block;
+      position: relative;
+      top: -5rem;
 
-  nav {
-    left: 23%;
-    position: absolute;
-    top: 2.5rem;
-    width: 60%;
+      span{
+        transition: all 250ms ease-in-out;
+        background-color: white;
+        display: block;
+        height: 3px;
+        margin: 5px;
+        opacity: 1;
+        position: relative;
+        width: 20px;
+      }
 
-    @media screen and (max-width: 75.000em) {
-      display: none;
     }
 
-    ul {
-      display: flex;
+    .simian{
+      @media screen and (max-width: 75.000em) {
+        margin: 0 auto;
+        width: 32%;
+      }
+      a {
+      display: inline-block;
+      }
+    }
+    nav {
+      left: 23%;
+      position: absolute;
+      top: 2.5rem;
+      width: 60%;
 
-      li {
-        margin: 0 1rem;
+      @media screen and (max-width: 75.000em) {
+        display: none;
+      }
 
-        a {
-          color: $white;
-          font-family: $quicksand_light;
-          font-size: 0.75rem;
-          line-height: 1.2rem;
-          text-decoration: none;
-          text-align: center;
-          text-transform: uppercase;
+      ul {
+        display: flex;
+
+        li {
+          margin: 0 1rem;
+
+          a {
+            color: $white;
+            font-family: $quicksand_light;
+            font-size: 0.75rem;
+            line-height: 1.2rem;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+          }
+
+          .active {
+            color: $yellow;
+          }
         }
+      }
+    }
 
-        .active {
-          color: $yellow;
-        }
+    .header-buttons {
+      position: absolute;
+      right: 1rem;
+      top: 2rem;
+
+      @media screen and (max-width: 75.000em) {
+        display: none;
+      }
+
+      a {
+        margin: 0 0.5rem;
       }
     }
   }
 
-  .header-buttons {
-    position: absolute;
-    right: 1rem;
-    top: 2rem;
+  .movile {
 
-    @media screen and (max-width: 75.000em) {
-      display: none;
+    .header{
+      background-image: url('../img/header/footer-bg-red.svg');
+      height: 11rem;
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+
+      margin-top: -9rem;
+
+      position: fixed;
+      //justify-content:center;
+      //align-content: center;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+
+      width: 100%;
+      z-index: 11;
+
+      .menu{
+        position: relative;
+        position: relative;
+        top: 4rem;
+        left: 2rem;
+        p{
+          color: white;
+          font-size: 3rem;
+          font-weight: bolder;
+        }
+      }
+
+      .header-buttons {
+        position: absolute;
+        right: 2rem;
+        top: 4rem;
+
+        a {
+          margin: 0 0.5rem;
+        }
+      }
     }
 
-    a {
-      margin: 0 0.5rem;
+    nav {
+      background-image: url('../img/header/header-background.svg');
+      background-repeat: no-repeat;
+      background-size: 453rem;
+      position: fixed;
+      height: 100%;
+      width: 103%;
+      margin-left: -1rem;
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      justify-content:center;
+      align-content: center;
+      z-index: 11;
+      ul {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+
+        flex-direction: column;
+        margin-top: 5rem;
+
+        li {
+          margin: 1rem 1rem;
+
+          a {
+            color: $white;
+            font-family: $quicksand_light;
+            font-size: 0.75rem;
+            line-height: 1.2rem;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+          }
+
+          .active {
+            color: $yellow;
+          }
+        }
+      }
     }
   }
 }

@@ -28,6 +28,13 @@ angular.module('simian.header', [])
     $scope.changeLanguage = function(language) {
       TranslateService.translateUrl(language);
     }
+
+    $scope.myVar = true;
+    $scope.youVar = false;
+    $scope.toggle = function() {
+      $scope.myVar = !$scope.myVar;
+      $scope.youVar = !$scope.youVar;
+    };
   }
 ])
 
