@@ -133,8 +133,26 @@ header .desktop {
     header .desktop .simian {
       margin: 0 auto;
       width: 32%; } }
+  @media screen and (max-width: 45rem) {
+    header .desktop .simian {
+      margin-left: 30%; } }
+  @media screen and (max-width: 37.5rem) {
+    header .desktop .simian {
+      margin-left: 25%; } }
+  @media screen and (max-width: 30rem) {
+    header .desktop .simian {
+      margin-left: 21%; } }
+  @media screen and (max-width: 25rem) {
+    header .desktop .simian {
+      margin-left: 16%; } }
+  @media screen and (max-width: 22.5rem) {
+    header .desktop .simian {
+      margin-left: 22%; } }
   header .desktop .simian a {
     display: inline-block; }
+    @media screen and (max-width: 22.5rem) {
+      header .desktop .simian a img {
+        width: 170%; } }
   header .desktop nav {
     left: 23%;
     position: absolute;
@@ -168,8 +186,8 @@ header .desktop {
       margin: 0 0.5rem; }
 
 header .movile .header {
-  background-image: url("../img/header/footer-bg-red.svg");
-  height: 11rem;
+  background-image: url("../img/header/barra_menu_roja.svg");
+  height: 7rem;
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -178,11 +196,11 @@ header .movile .header {
   flex-direction: row;
   flex-wrap: no-wrap;
   width: 100%;
-  z-index: 11; }
+  z-index: 12; }
   header .movile .header .menu {
     position: relative;
     position: relative;
-    top: 4rem;
+    top: 2rem;
     left: 2rem; }
     header .movile .header .menu p {
       color: white;
@@ -191,23 +209,22 @@ header .movile .header {
   header .movile .header .header-buttons {
     position: absolute;
     right: 2rem;
-    top: 4rem; }
+    top: 2rem; }
     header .movile .header .header-buttons a {
       margin: 0 0.5rem; }
 
 header .movile nav {
-  background-image: url("../img/header/header-background.svg");
-  background-repeat: no-repeat;
-  background-size: 453rem;
+  background: #3F3832;
   position: fixed;
   height: 100%;
-  width: 103%;
+  width: 110%;
   margin-left: -1rem;
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
   justify-content: center;
   align-content: center;
+  margin-top: -2rem;
   z-index: 11; }
   header .movile nav ul {
     display: flex;
@@ -1407,19 +1424,20 @@ footer .footer-end {
   background-size: 103%;
   background-repeat: no-repeat;
   margin-left: -2rem;
-  margin-top: -4rem; }
+  position: relative;
+  top: -3rem; }
   @media screen and (max-width: 37.5rem) {
     #location .header-find {
-      margin-top: -3rem; } }
+      top: -2rem; } }
   @media screen and (max-width: 30rem) {
     #location .header-find {
       background-size: 204%;
       background-position: center 0rem;
       margin-left: 0rem;
-      margin-top: -5rem; } }
+      top: -4rem; } }
   @media screen and (max-width: 37.5rem) {
     #location .header-find {
-      margin-top: -3rem; } }
+      top: -2rem; } }
   #location .header-find .text-header {
     text-align: center;
     padding-top: 4%; }
@@ -1729,93 +1747,94 @@ footer .footer-end {
         #location .content-find .icon_location .icon {
           width: 43%; } }
 
-#we-share .header {
+#we-share .header-share {
   background-image: url("../img/we-share/fondo.svg");
   height: 63rem;
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: 116%;
-  margin-top: -3rem;
+  position: relative;
+  top: -3rem;
   margin-bottom: -42rem; }
   @media screen and (min-width: 100rem) {
-    #we-share .header {
+    #we-share .header-share {
       height: 56rem;
       margin-bottom: -33rem; } }
   @media screen and (min-width: 90rem) and (max-width: 100rem) {
-    #we-share .header {
+    #we-share .header-share {
       margin-bottom: -36rem;
       background-size: 119%; } }
   @media screen and (max-width: 75em) {
-    #we-share .header {
+    #we-share .header-share {
       background-size: 140%; } }
   @media screen and (max-width: 56.25em) {
-    #we-share .header {
+    #we-share .header-share {
       background-size: 150%; } }
   @media screen and (max-width: 64rem) {
-    #we-share .header {
+    #we-share .header-share {
       margin-bottom: -45rem; } }
   @media screen and (max-width: 52.5rem) {
-    #we-share .header {
+    #we-share .header-share {
       margin-bottom: -49rem; } }
   @media screen and (max-width: 45rem) {
-    #we-share .header {
+    #we-share .header-share {
       margin-bottom: -51rem; } }
   @media screen and (max-width: 37.5rem) {
-    #we-share .header {
+    #we-share .header-share {
       background-size: 172%; } }
   @media screen and (max-width: 30rem) {
-    #we-share .header {
+    #we-share .header-share {
       background-size: 215%; } }
   @media screen and (max-width: 25rem) {
-    #we-share .header {
+    #we-share .header-share {
       background-size: 239%;
       margin-bottom: -52rem; } }
-  #we-share .header .text {
+  #we-share .header-share .text {
     text-align: center;
     padding-top: 5rem; }
     @media screen and (max-width: 52.5rem) {
-      #we-share .header .text {
+      #we-share .header-share .text {
         padding-top: 3rem; } }
-    #we-share .header .text p {
+    #we-share .header-share .text p {
       font-size: 5rem; }
       @media screen and (min-width: 90rem) {
-        #we-share .header .text p {
+        #we-share .header-share .text p {
           font-size: 6rem; } }
       @media screen and (max-width: 64rem) {
-        #we-share .header .text p {
+        #we-share .header-share .text p {
           font-size: 4.5rem; } }
       @media screen and (max-width: 52.5rem) {
-        #we-share .header .text p {
+        #we-share .header-share .text p {
           font-size: 3.5rem; } }
       @media screen and (max-width: 45rem) {
-        #we-share .header .text p {
+        #we-share .header-share .text p {
           font-size: 3rem; } }
       @media screen and (max-width: 30rem) {
-        #we-share .header .text p {
+        #we-share .header-share .text p {
           font-size: 2.5rem; } }
       @media screen and (max-width: 25rem) {
-        #we-share .header .text p {
+        #we-share .header-share .text p {
           font-size: 2rem; } }
-    #we-share .header .text h1 {
+    #we-share .header-share .text h1 {
       color: #FF5E5B;
       font-size: 10.5rem; }
       @media screen and (min-width: 90rem) {
-        #we-share .header .text h1 {
+        #we-share .header-share .text h1 {
           font-size: 12.5rem; } }
       @media screen and (max-width: 64rem) {
-        #we-share .header .text h1 {
+        #we-share .header-share .text h1 {
           font-size: 9.5rem; } }
       @media screen and (max-width: 52.5rem) {
-        #we-share .header .text h1 {
+        #we-share .header-share .text h1 {
           font-size: 7.5rem; } }
       @media screen and (max-width: 45rem) {
-        #we-share .header .text h1 {
+        #we-share .header-share .text h1 {
           font-size: 6.5rem; } }
       @media screen and (max-width: 30rem) {
-        #we-share .header .text h1 {
+        #we-share .header-share .text h1 {
           font-size: 5.5rem; } }
       @media screen and (max-width: 25rem) {
-        #we-share .header .text h1 {
+        #we-share .header-share .text h1 {
           font-size: 5rem; } }
 
 #we-share .content {
@@ -2752,7 +2771,8 @@ footer .footer-end {
   background-repeat: no-repeat;
   background-size: 103%;
   height: 44rem;
-  margin-top: -3rem; }
+  position: relative;
+  top: -3rem; }
   @media screen and (max-width: 30rem) {
     #projects .header-projects {
       background-size: 370%;

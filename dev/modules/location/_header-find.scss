@@ -3,18 +3,19 @@
   background-size: 103%;
   background-repeat: no-repeat;
   margin-left: -2rem;
-  margin-top: -4rem;
+  position: relative;
+  top: -3rem;
   @media screen and (max-width: $tablet-small) {
-    margin-top: -3rem;
+    top: -2rem;
   }
   @media screen and (max-width: $mobile-large) {
     background-size: 204%;
     background-position: center 0rem;
     margin-left: 0rem;
-    margin-top: -5rem;
+    top: -4rem;
   }
   @media screen and (max-width: $tablet-small) {
-    margin-top: -3rem;
+    top: -2rem;
   }
 
   .text-header {
