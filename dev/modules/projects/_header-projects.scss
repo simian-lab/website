@@ -3,7 +3,8 @@
   background-repeat: no-repeat;
   background-size: 103%;
   height: 44rem;
-  margin-top: -3rem;
+  position: relative;
+  top: -3rem;
 
   @media screen and (max-width: $mobile-large) {
     background-size: 370%;
