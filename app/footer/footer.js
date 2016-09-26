@@ -71,7 +71,7 @@ angular.module('simian.footer', ['simian.configuration'])
       'captcha': $scope.hidden
     };
     //Send Form
-    $http.post('https://formspree.io/dev@simian.co', data)
+    $http.post('https://formspree.io/info@simian.co', data)
     .success(function (data, status, headers, config) {
       setTimeout(function() {
         $scope.formStatus = 'Message sent'; // TODO: Translate this!
