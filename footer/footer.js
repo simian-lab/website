@@ -63,19 +63,23 @@ angular.module('simian.footer', ['simian.configuration'])
     $scope.formClass += ' packaged';
     $scope.headline = 'SENDING_LABEL';
 
-    $http.post(CONTACT_ROUTE, {
-      Name: $scope.name,
-      Email: $scope.email,
-      Message: $scope.message,
-      captcha: $scope.hidden
-    }).success(function () {
+    //serialize data
+    var data = {
+      'Name': $scope.name,
+      'Email': $scope.email,
+      'Message': $scope.message,
+      'captcha': $scope.hidden
+    };
+    //Send Form
+    $http.post('https://formspree.io/dev@simian.co', data)
+    .success(function (data, status, headers, config) {
       setTimeout(function() {
         $scope.formStatus = 'Message sent'; // TODO: Translate this!
         $scope.formClass += ' sent';
         $scope.$apply();
       }, 800);
-
-    }).error(function () {
+    })
+    .error(function (data, status, header, config) {
       $scope.formClass += ' error';
       $scope.formStatus = 'Couldn\'t send message'; // TODO: Translate this!
 
