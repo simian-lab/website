@@ -11,13 +11,12 @@
   }
 
   .title {
-    @include transform(translateX(-50%));
-    display: inline-block;
-    left: 40%;
-    margin-bottom: 5%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    left: -7rem;
     position: relative;
-    top: -10rem;
-
+    top: -14rem;
 
     @media screen and (max-width: $mobile-large) {
       margin-top: -5rem;
@@ -25,38 +24,38 @@
       top: inherit;
     }
 
-    h1 {
-      color: $red;
-      font-size: 12rem;
-
-      @media screen and (max-width: $laptop-small) {
+    .box-flex {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      h1 {
+        color: $red;
         font-size: 9rem;
+        @media screen and (max-width: $tablet-small) {
+          font-size: 7rem;
+        }
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 5rem;
+        }
       }
 
-      @media screen and (max-width: $tablet-small) {
-        font-size: 7rem;
-      }
-
-      @media screen and (max-width: $mobile-large) {
+      p {
         font-size: 5rem;
+        text-align: center;
+
+        @media screen and (max-width: $tablet-small) {
+          font-size: 4rem;
+        }
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 3rem;
+        }
       }
     }
 
-    p {
-      font-size: 6rem;
-      text-align: center;
-
-       @media screen and (max-width: $laptop-small) {
-        font-size: 4rem;
-      }
-
-      @media screen and (max-width: $tablet-small) {
-        font-size: 4rem;
-      }
-
-      @media screen and (max-width: $mobile-large) {
-        font-size: 3rem;
-      }
+    img {
+      margin-left: 7rem;
     }
 
     &::after, &::before {
@@ -64,10 +63,7 @@
       background-repeat: no-repeat;
       background-size: contain;
       content: '';
-      display: block;
       height: 23rem;
-      position: absolute;
-      top: 0;
       width: 8rem;
 
       @media screen and (max-width: $tablet-small) {
@@ -82,7 +78,6 @@
 
     &::before {
       @include transform(rotate(155deg));
-      left: -7rem;
 
       @media screen and (max-width: $tablet-small) {
         left: -6rem;
@@ -96,8 +91,7 @@
     }
 
     &::after {
-      right: -7rem;
-
+      margin-left: -29rem;
       @media screen and (max-width: $tablet-small) {
         right: -5rem;
       }
@@ -109,24 +103,9 @@
     }
   }
 
-  .icon-idea{
-    margin-left: 36%;
-    width: 19%;
-
-    @media screen and (max-width: $tablet-small) {
-      margin-left: 21%;
-      width: 33%;
-    }
-
-    @media screen and (max-width: $mobile-large) {
-      width: 25%;
-      position: absolute;
-      margin-left: 25%;
-    }
-  }
-
   .monkeys {
     margin: 0 auto;
+    margin-top: -11rem;
     width: 70%;
 
     @media screen and (max-width: $mobile-large) {
@@ -163,6 +142,12 @@
 
     .item {
       @include flex-basis(26%);
+    }
+
+    .grid {
+      .monkey {
+        margin-top: 3rem;
+      }
     }
 
     .bosses {

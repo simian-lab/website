@@ -1004,54 +1004,47 @@ footer .footer-end {
       background-position-x: center;
       margin-top: 10rem; } }
   #home .we-are .title {
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    display: inline-block;
-    left: 40%;
-    margin-bottom: 5%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    left: -7rem;
     position: relative;
-    top: -10rem; }
+    top: -14rem; }
     @media screen and (max-width: 30rem) {
       #home .we-are .title {
         margin-top: -5rem;
         margin-left: 0rem;
         top: inherit; } }
-    #home .we-are .title h1 {
-      color: #FF5E5B;
-      font-size: 12rem; }
-      @media screen and (max-width: 64rem) {
-        #home .we-are .title h1 {
-          font-size: 9rem; } }
-      @media screen and (max-width: 37.5rem) {
-        #home .we-are .title h1 {
-          font-size: 7rem; } }
-      @media screen and (max-width: 30rem) {
-        #home .we-are .title h1 {
-          font-size: 5rem; } }
-    #home .we-are .title p {
-      font-size: 6rem;
-      text-align: center; }
-      @media screen and (max-width: 64rem) {
-        #home .we-are .title p {
-          font-size: 4rem; } }
-      @media screen and (max-width: 37.5rem) {
-        #home .we-are .title p {
-          font-size: 4rem; } }
-      @media screen and (max-width: 30rem) {
-        #home .we-are .title p {
-          font-size: 3rem; } }
+    #home .we-are .title .box-flex {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+      #home .we-are .title .box-flex h1 {
+        color: #FF5E5B;
+        font-size: 9rem; }
+        @media screen and (max-width: 37.5rem) {
+          #home .we-are .title .box-flex h1 {
+            font-size: 7rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .we-are .title .box-flex h1 {
+            font-size: 5rem; } }
+      #home .we-are .title .box-flex p {
+        font-size: 5rem;
+        text-align: center; }
+        @media screen and (max-width: 37.5rem) {
+          #home .we-are .title .box-flex p {
+            font-size: 4rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .we-are .title .box-flex p {
+            font-size: 3rem; } }
+    #home .we-are .title img {
+      margin-left: 7rem; }
     #home .we-are .title::after, #home .we-are .title::before {
       background-image: url("../img/home/question-mark.svg");
       background-repeat: no-repeat;
       background-size: contain;
       content: '';
-      display: block;
       height: 23rem;
-      position: absolute;
-      top: 0;
       width: 8rem; }
       @media screen and (max-width: 37.5rem) {
         #home .we-are .title::after, #home .we-are .title::before {
@@ -1065,8 +1058,7 @@ footer .footer-end {
       -moz-transform: rotate(155deg);
       -ms-transform: rotate(155deg);
       -o-transform: rotate(155deg);
-      transform: rotate(155deg);
-      left: -7rem; }
+      transform: rotate(155deg); }
       @media screen and (max-width: 37.5rem) {
         #home .we-are .title::before {
           left: -6rem;
@@ -1076,7 +1068,7 @@ footer .footer-end {
           left: -6rem;
           top: -11rem; } }
     #home .we-are .title::after {
-      right: -7rem; }
+      margin-left: -29rem; }
       @media screen and (max-width: 37.5rem) {
         #home .we-are .title::after {
           right: -5rem; } }
@@ -1084,20 +1076,9 @@ footer .footer-end {
         #home .we-are .title::after {
           right: -4rem;
           top: -1rem; } }
-  #home .we-are .icon-idea {
-    margin-left: 36%;
-    width: 19%; }
-    @media screen and (max-width: 37.5rem) {
-      #home .we-are .icon-idea {
-        margin-left: 21%;
-        width: 33%; } }
-    @media screen and (max-width: 30rem) {
-      #home .we-are .icon-idea {
-        width: 25%;
-        position: absolute;
-        margin-left: 25%; } }
   #home .we-are .monkeys {
     margin: 0 auto;
+    margin-top: -11rem;
     width: 70%; }
     @media screen and (max-width: 30rem) {
       #home .we-are .monkeys {
@@ -1121,6 +1102,8 @@ footer .footer-end {
       -moz-flex-basis: 26%;
       flex-basis: 26%;
       -ms-flex-preferred-size: 26%; }
+    #home .we-are .monkeys .grid .monkey {
+      margin-top: 3rem; }
     #home .we-are .monkeys .bosses {
       display: -webkit-box;
       display: -moz-box;
