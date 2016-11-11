@@ -1,7 +1,8 @@
 .our-projects {
   background-image: url('../img/footer/footer-bg-red.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 103%;
+  background-position-x: -1rem;
 
   @media screen and (max-width: $tablet-large) {
     background-size: 160%;
@@ -19,24 +20,19 @@
   }
 
   .intro {
-    @include clearfix();
-    padding-top: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 3rem 2.5rem 0 0;
 
     .title-container {
       background-image: url('../img/home/our-projects-sign.svg');
       background-repeat: no-repeat;
-      background-position-x: 60%;
-      background-size: contain;
-      padding: 8% 0;
-      width: 55%;
-
-      @media screen and (max-width: $laptop-small) {
-        background-size: 101%;
-        padding: 10% 0;
-        margin-left: -7%;
-        width: 55%;
-        height: 36rem;
-      }
+      background-position: -5rem;
+      background-size: 37rem;
+      padding: 5rem;
+      width: 33rem;
 
       @media screen and (max-width: $tablet-large) {
           margin-left: 11%;
@@ -45,29 +41,14 @@
           height: inherit;
       }
 
-      .title {
+      h1, p {
         text-align: center;
-        margin-left: 13%;
+      }
 
-        @media screen and (max-width: $laptop-small) {
-          margin-left: 11%;
-          margin-top: -6%;
-        }
 
-        @media screen and (max-width: $tablet-large) {
-          margin-top: 3%;
-        }
-
-        @media screen and (max-width: $tablet-medium) {
-          margin-top: -3%;
-        }
 
         p {
-          font-size: 4rem;
-
-           @media screen and (max-width: $laptop-medium) {
-            font-size: 3rem;
-          }
+          font-size: 3rem;
 
           @media screen and (max-width: $tablet-large) {
             font-size: 2.5rem;
@@ -86,11 +67,7 @@
           }
 
           &:nth-child(2) {
-            font-size: 7rem;
-
-            @media screen and (max-width: $laptop-medium) {
-              font-size: 5rem;
-            }
+            font-size: 5rem;
 
             @media screen and (max-width: $tablet-large) {
               font-size: 4.5rem;
@@ -116,11 +93,7 @@
 
         h1 {
           color: $yellow;
-          font-size: 10.5rem;
-
-          @media screen and (max-width: $laptop-medium) {
-            font-size: 8.5rem;
-          }
+          font-size: 9rem;
 
           @media screen and (max-width: $tablet-large) {
             font-size: 8rem;
@@ -142,22 +115,11 @@
             font-size: 4.3rem;
           }
         }
-      }
+
     }
 
     .text {
-      padding-right: 3%;
-      padding-top: 10%;
-      width: 45%;
-
-      @media screen and (min-width: $laptop-medium) {
-        width: 40%;
-      }
-
-      @media screen and (max-width: $laptop-small) {
-        padding-top: 5%;
-        width: 52%;
-      }
+      width: 30rem;
 
       @media screen and (max-width: $tablet-large) {
         padding-top: 0%;
@@ -165,29 +127,21 @@
         width: 100%;
       }
 
+      h2, p {
+        font-size: 1.3rem;
+        font-family: $quicksand_regular;
+      }
+
       h2{
         color: $brown;
-        font-family: $quicksand_regular;
-        font-size: 1.5rem;
         font-weight: bold;
-
         @media screen and (max-width: $mobile-large) {
-          font-size: 1.3rem;
         }
       }
 
       p {
-        font-size: 1.5rem;
         @media screen and (max-width: $mobile-large) {
-          font-size: 1.3rem;
         }
-      }
-    }
-
-    .title-container, .text {
-      float: left;
-
-      @media screen and (max-width: $mobile-large) {
       }
     }
   }

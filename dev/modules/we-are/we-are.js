@@ -36,8 +36,6 @@ angular.module('simian.we-are', [])
         $rootScope.$apply();
       };
 
-
-
       $timeout(function() {
         /**
         * We are using a slider library called Swiper.

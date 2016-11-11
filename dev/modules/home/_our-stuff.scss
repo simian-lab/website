@@ -2,16 +2,7 @@
   background-image: url('../img/home/our-stuff-bg.svg');
   background-repeat: no-repeat;
   background-size: 103%;
-  height: 59rem;
   padding: 2rem 0;
-
-  @media screen and (max-width: $laptop-small) {
-    height: 49rem;
-  }
-
-  @media screen and (max-width: $tablet-large) {
-    height: 42rem;
-  }
 
   @media screen and (max-width: $tablet-medium) {
     background-size: 179%;
@@ -106,6 +97,7 @@
     }
 
     .project {
+      position: relative;
 
       @media screen and (max-width: $tablet-medium) {
         margin-top: -5rem;
@@ -117,13 +109,13 @@
 
       .phone {
         z-index: 1;
-        width: 30%;
+        width: 9rem;
       }
 
       .more {
         z-index: 2;
         position: absolute;
-        margin-top: 25%;
+        margin-top: 16rem;
 
         @media screen and (min-width: $laptop-large) {
           margin-top: 20%;
@@ -135,22 +127,12 @@
 
       .white-sign {
         top: 1rem;
-        width: 67%;
+        width: 20rem;
       }
 
       .logo {
         position: absolute;
-        margin-top: 14rem;
-        z-index: 1;
-        width: 15%;
-
-        @media screen and (min-width: $laptop-large) {
-          margin-top: 13rem;
-        }
-
-        @media screen and (max-width: $laptop-medium) {
-          margin-top: 18%;
-        }
+        width: 11rem;
 
         @media screen and (max-width: $tablet-medium) {
           margin-top: 35%;
@@ -168,22 +150,14 @@
         }
 
         .more{
-          margin-left: -5%;
+          margin-left: -3rem;
           @media screen and (max-width: $tablet-medium) {
             margin-left: -9%;
           }
         }
 
         .logo{
-          margin-left: -28rem;
-
-          @media screen and (min-width: $laptop-large) {
-            margin-left: -29rem;
-          }
-
-          @media screen and (max-width: $laptop-medium) {
-            margin-left: -31%;
-          }
+          margin: -9rem 0 0 9rem;
 
           @media screen and (max-width: $tablet-medium) {
             margin-left: -67%;
@@ -193,24 +167,16 @@
 
       &:last-child {
         .white-sign {
-          left: 4rem;
+          left: 3rem;
         }
 
         .more{
-          margin-left: -2rem;
+          margin-left: -3rem;
         }
 
         .logo{
-          margin-left: 13rem;
-
-          @media screen and (min-width: $laptop-large) {
-            margin-left: 12rem;
-          }
-
-          @media screen and (max-width: $laptop-medium) {
-            margin-left: 19%;
-          }
-
+          margin: 11rem 0 0 9rem;
+          z-index: 1;
           @media screen and (max-width: $tablet-medium) {
             margin-left: 38%;
           }

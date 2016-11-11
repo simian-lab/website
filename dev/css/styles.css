@@ -540,7 +540,8 @@ footer .footer-end {
 #home .our-projects {
   background-image: url("../img/footer/footer-bg-red.svg");
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: 103%;
+  background-position-x: -1rem; }
   @media screen and (max-width: 52.5rem) {
     #home .our-projects {
       background-size: 160%;
@@ -554,133 +555,88 @@ footer .footer-end {
       background-size: 320%;
       margin-top: 4em; } }
   #home .our-projects .intro {
-    padding-top: 5rem; }
-    #home .our-projects .intro::after {
-      clear: both;
-      content: "";
-      display: table; }
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 3rem 2.5rem 0 0; }
     #home .our-projects .intro .title-container {
       background-image: url("../img/home/our-projects-sign.svg");
       background-repeat: no-repeat;
-      background-position-x: 60%;
-      background-size: contain;
-      padding: 8% 0;
-      width: 55%; }
-      @media screen and (max-width: 64rem) {
-        #home .our-projects .intro .title-container {
-          background-size: 101%;
-          padding: 10% 0;
-          margin-left: -7%;
-          width: 55%;
-          height: 36rem; } }
+      background-position: -5rem;
+      background-size: 37rem;
+      padding: 5rem;
+      width: 33rem; }
       @media screen and (max-width: 52.5rem) {
         #home .our-projects .intro .title-container {
           margin-left: 11%;
           margin-top: -25%;
           width: 68%;
           height: inherit; } }
-      #home .our-projects .intro .title-container .title {
-        text-align: center;
-        margin-left: 13%; }
-        @media screen and (max-width: 64rem) {
-          #home .our-projects .intro .title-container .title {
-            margin-left: 11%;
-            margin-top: -6%; } }
+      #home .our-projects .intro .title-container h1, #home .our-projects .intro .title-container p {
+        text-align: center; }
+      #home .our-projects .intro .title-container p {
+        font-size: 3rem; }
         @media screen and (max-width: 52.5rem) {
-          #home .our-projects .intro .title-container .title {
-            margin-top: 3%; } }
-        @media screen and (max-width: 45rem) {
-          #home .our-projects .intro .title-container .title {
-            margin-top: -3%; } }
-        #home .our-projects .intro .title-container .title p {
-          font-size: 4rem; }
-          @media screen and (max-width: 90rem) {
-            #home .our-projects .intro .title-container .title p {
+          #home .our-projects .intro .title-container p {
+            font-size: 2.5rem; } }
+        @media screen and (max-width: 37.5rem) {
+          #home .our-projects .intro .title-container p {
+            font-size: 2rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .our-projects .intro .title-container p {
+            font-size: 1.5rem; } }
+        @media screen and (max-width: 22.5rem) {
+          #home .our-projects .intro .title-container p {
+            font-size: 1.3rem; } }
+        #home .our-projects .intro .title-container p:nth-child(2) {
+          font-size: 5rem; }
+          @media screen and (max-width: 52.5rem) {
+            #home .our-projects .intro .title-container p:nth-child(2) {
+              font-size: 4.5rem; } }
+          @media screen and (max-width: 37.5rem) {
+            #home .our-projects .intro .title-container p:nth-child(2) {
+              font-size: 3.5rem; } }
+          @media screen and (max-width: 30rem) {
+            #home .our-projects .intro .title-container p:nth-child(2) {
               font-size: 3rem; } }
-          @media screen and (max-width: 52.5rem) {
-            #home .our-projects .intro .title-container .title p {
-              font-size: 2.5rem; } }
-          @media screen and (max-width: 37.5rem) {
-            #home .our-projects .intro .title-container .title p {
-              font-size: 2rem; } }
-          @media screen and (max-width: 30rem) {
-            #home .our-projects .intro .title-container .title p {
-              font-size: 1.5rem; } }
-          @media screen and (max-width: 22.5rem) {
-            #home .our-projects .intro .title-container .title p {
-              font-size: 1.3rem; } }
-          #home .our-projects .intro .title-container .title p:nth-child(2) {
-            font-size: 7rem; }
-            @media screen and (max-width: 90rem) {
-              #home .our-projects .intro .title-container .title p:nth-child(2) {
-                font-size: 5rem; } }
-            @media screen and (max-width: 52.5rem) {
-              #home .our-projects .intro .title-container .title p:nth-child(2) {
-                font-size: 4.5rem; } }
-            @media screen and (max-width: 37.5rem) {
-              #home .our-projects .intro .title-container .title p:nth-child(2) {
-                font-size: 3.5rem; } }
-            @media screen and (max-width: 30rem) {
-              #home .our-projects .intro .title-container .title p:nth-child(2) {
-                font-size: 3rem; } }
-            @media screen and (max-width: 25rem) {
-              #home .our-projects .intro .title-container .title p:nth-child(2) {
-                font-size: 2.5rem; } }
-            @media screen and (max-width: 22.5rem) {
-              #home .our-projects .intro .title-container .title p:nth-child(2) {
-                font-size: 2.3rem; } }
-        #home .our-projects .intro .title-container .title h1 {
-          color: #DED96B;
-          font-size: 10.5rem; }
-          @media screen and (max-width: 90rem) {
-            #home .our-projects .intro .title-container .title h1 {
-              font-size: 8.5rem; } }
-          @media screen and (max-width: 52.5rem) {
-            #home .our-projects .intro .title-container .title h1 {
-              font-size: 8rem; } }
-          @media screen and (max-width: 37.5rem) {
-            #home .our-projects .intro .title-container .title h1 {
-              font-size: 6rem; } }
-          @media screen and (max-width: 30rem) {
-            #home .our-projects .intro .title-container .title h1 {
-              font-size: 5.5rem; } }
           @media screen and (max-width: 25rem) {
-            #home .our-projects .intro .title-container .title h1 {
-              font-size: 5rem; } }
+            #home .our-projects .intro .title-container p:nth-child(2) {
+              font-size: 2.5rem; } }
           @media screen and (max-width: 22.5rem) {
-            #home .our-projects .intro .title-container .title h1 {
-              font-size: 4.3rem; } }
+            #home .our-projects .intro .title-container p:nth-child(2) {
+              font-size: 2.3rem; } }
+      #home .our-projects .intro .title-container h1 {
+        color: #DED96B;
+        font-size: 9rem; }
+        @media screen and (max-width: 52.5rem) {
+          #home .our-projects .intro .title-container h1 {
+            font-size: 8rem; } }
+        @media screen and (max-width: 37.5rem) {
+          #home .our-projects .intro .title-container h1 {
+            font-size: 6rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .our-projects .intro .title-container h1 {
+            font-size: 5.5rem; } }
+        @media screen and (max-width: 25rem) {
+          #home .our-projects .intro .title-container h1 {
+            font-size: 5rem; } }
+        @media screen and (max-width: 22.5rem) {
+          #home .our-projects .intro .title-container h1 {
+            font-size: 4.3rem; } }
     #home .our-projects .intro .text {
-      padding-right: 3%;
-      padding-top: 10%;
-      width: 45%; }
-      @media screen and (min-width: 90rem) {
-        #home .our-projects .intro .text {
-          width: 40%; } }
-      @media screen and (max-width: 64rem) {
-        #home .our-projects .intro .text {
-          padding-top: 5%;
-          width: 52%; } }
+      width: 30rem; }
       @media screen and (max-width: 52.5rem) {
         #home .our-projects .intro .text {
           padding-top: 0%;
           padding-left: 7%;
           width: 100%; } }
+      #home .our-projects .intro .text h2, #home .our-projects .intro .text p {
+        font-size: 1.3rem;
+        font-family: "quicksandregular"; }
       #home .our-projects .intro .text h2 {
         color: #3F3832;
-        font-family: "quicksandregular";
-        font-size: 1.5rem;
         font-weight: bold; }
-        @media screen and (max-width: 30rem) {
-          #home .our-projects .intro .text h2 {
-            font-size: 1.3rem; } }
-      #home .our-projects .intro .text p {
-        font-size: 1.5rem; }
-        @media screen and (max-width: 30rem) {
-          #home .our-projects .intro .text p {
-            font-size: 1.3rem; } }
-    #home .our-projects .intro .title-container, #home .our-projects .intro .text {
-      float: left; }
   #home .our-projects .slider-container {
     position: relative; }
     #home .our-projects .slider-container .swiper-button-prev,
@@ -770,14 +726,7 @@ footer .footer-end {
   background-image: url("../img/home/our-stuff-bg.svg");
   background-repeat: no-repeat;
   background-size: 103%;
-  height: 59rem;
   padding: 2rem 0; }
-  @media screen and (max-width: 64rem) {
-    #home .our-stuff {
-      height: 49rem; } }
-  @media screen and (max-width: 52.5rem) {
-    #home .our-stuff {
-      height: 42rem; } }
   @media screen and (max-width: 45rem) {
     #home .our-stuff {
       background-size: 179%;
@@ -847,251 +796,202 @@ footer .footer-end {
       #home .our-stuff .projects {
         margin-top: -12%;
         display: inherit; } }
-    @media screen and (max-width: 45rem) {
-      #home .our-stuff .projects .project {
-        margin-top: -5rem; } }
-    #home .our-stuff .projects .project .phone, #home .our-stuff .projects .project .white-sign {
+    #home .our-stuff .projects .project {
       position: relative; }
-    #home .our-stuff .projects .project .phone {
-      z-index: 1;
-      width: 30%; }
-    #home .our-stuff .projects .project .more {
-      z-index: 2;
-      position: absolute;
-      margin-top: 25%; }
-      @media screen and (min-width: 100rem) {
-        #home .our-stuff .projects .project .more {
-          margin-top: 20%; } }
       @media screen and (max-width: 45rem) {
-        #home .our-stuff .projects .project .more {
-          margin-top: 53%; } }
-    #home .our-stuff .projects .project .white-sign {
-      top: 1rem;
-      width: 67%; }
-    #home .our-stuff .projects .project .logo {
-      position: absolute;
-      margin-top: 14rem;
-      z-index: 1;
-      width: 15%; }
-      @media screen and (min-width: 100rem) {
-        #home .our-stuff .projects .project .logo {
-          margin-top: 13rem; } }
-      @media screen and (max-width: 90rem) {
-        #home .our-stuff .projects .project .logo {
-          margin-top: 18%; } }
-      @media screen and (max-width: 45rem) {
-        #home .our-stuff .projects .project .logo {
-          margin-top: 35%;
-          width: 30%; } }
-    #home .our-stuff .projects .project:first-child .white-sign {
-      left: -23%; }
-      @media screen and (max-width: 45rem) {
-        #home .our-stuff .projects .project:first-child .white-sign {
-          left: -23%; } }
-    #home .our-stuff .projects .project:first-child .more {
-      margin-left: -5%; }
-      @media screen and (max-width: 45rem) {
-        #home .our-stuff .projects .project:first-child .more {
-          margin-left: -9%; } }
-    #home .our-stuff .projects .project:first-child .logo {
-      margin-left: -28rem; }
-      @media screen and (min-width: 100rem) {
-        #home .our-stuff .projects .project:first-child .logo {
-          margin-left: -29rem; } }
-      @media screen and (max-width: 90rem) {
-        #home .our-stuff .projects .project:first-child .logo {
-          margin-left: -31%; } }
-      @media screen and (max-width: 45rem) {
-        #home .our-stuff .projects .project:first-child .logo {
-          margin-left: -67%; } }
-    #home .our-stuff .projects .project:last-child .white-sign {
-      left: 4rem; }
-    #home .our-stuff .projects .project:last-child .more {
-      margin-left: -2rem; }
-    #home .our-stuff .projects .project:last-child .logo {
-      margin-left: 13rem; }
-      @media screen and (min-width: 100rem) {
-        #home .our-stuff .projects .project:last-child .logo {
-          margin-left: 12rem; } }
-      @media screen and (max-width: 90rem) {
-        #home .our-stuff .projects .project:last-child .logo {
-          margin-left: 19%; } }
-      @media screen and (max-width: 45rem) {
-        #home .our-stuff .projects .project:last-child .logo {
-          margin-left: 38%; } }
+        #home .our-stuff .projects .project {
+          margin-top: -5rem; } }
+      #home .our-stuff .projects .project .phone, #home .our-stuff .projects .project .white-sign {
+        position: relative; }
+      #home .our-stuff .projects .project .phone {
+        z-index: 1;
+        width: 9rem; }
+      #home .our-stuff .projects .project .more {
+        z-index: 2;
+        position: absolute;
+        margin-top: 16rem; }
+        @media screen and (min-width: 100rem) {
+          #home .our-stuff .projects .project .more {
+            margin-top: 20%; } }
+        @media screen and (max-width: 45rem) {
+          #home .our-stuff .projects .project .more {
+            margin-top: 53%; } }
+      #home .our-stuff .projects .project .white-sign {
+        top: 1rem;
+        width: 20rem; }
+      #home .our-stuff .projects .project .logo {
+        position: absolute;
+        width: 11rem; }
+        @media screen and (max-width: 45rem) {
+          #home .our-stuff .projects .project .logo {
+            margin-top: 35%;
+            width: 30%; } }
+      #home .our-stuff .projects .project:first-child .white-sign {
+        left: -23%; }
+        @media screen and (max-width: 45rem) {
+          #home .our-stuff .projects .project:first-child .white-sign {
+            left: -23%; } }
+      #home .our-stuff .projects .project:first-child .more {
+        margin-left: -3rem; }
+        @media screen and (max-width: 45rem) {
+          #home .our-stuff .projects .project:first-child .more {
+            margin-left: -9%; } }
+      #home .our-stuff .projects .project:first-child .logo {
+        margin: -9rem 0 0 9rem; }
+        @media screen and (max-width: 45rem) {
+          #home .our-stuff .projects .project:first-child .logo {
+            margin-left: -67%; } }
+      #home .our-stuff .projects .project:last-child .white-sign {
+        left: 3rem; }
+      #home .our-stuff .projects .project:last-child .more {
+        margin-left: -3rem; }
+      #home .our-stuff .projects .project:last-child .logo {
+        margin: 11rem 0 0 9rem;
+        z-index: 1; }
+        @media screen and (max-width: 45rem) {
+          #home .our-stuff .projects .project:last-child .logo {
+            margin-left: 38%; } }
 
-#home .clients-container .line-left {
-  position: relative;
-  top: 0.5rem;
-  left: 6%;
-  width: 18%; }
-  @media screen and (max-width: 45rem) {
-    #home .clients-container .line-left {
-      top: -0.5rem; } }
-  @media screen and (max-width: 30rem) {
-    #home .clients-container .line-left {
-      left: 8%; } }
-  @media screen and (max-width: 25rem) {
-    #home .clients-container .line-left {
-      left: 5%; } }
-  @media screen and (max-width: 22.5rem) {
-    #home .clients-container .line-left {
-      left: 2%; } }
-
-#home .clients-container .title {
-  left: 20%; }
-  @media screen and (max-width: 37.5rem) {
-    #home .clients-container .title {
-      left: 18%; } }
-  @media screen and (max-width: 30rem) {
-    #home .clients-container .title {
-      left: 21%; } }
-  @media screen and (max-width: 22.5rem) {
-    #home .clients-container .title {
-      left: 18%; } }
-  #home .clients-container .title h1 {
-    color: #00A1C1;
-    font-size: 16.2rem; }
-    @media screen and (max-width: 64rem) {
-      #home .clients-container .title h1 {
-        font-size: 12.2rem; } }
-    @media screen and (max-width: 45rem) {
-      #home .clients-container .title h1 {
-        font-size: 7.2rem; } }
+#home .clients-container {
+  margin-top: 8rem; }
+  #home .clients-container .header-clients-container {
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    #home .clients-container .header-clients-container .line-left {
+      margin: 6rem 0 0 0rem; }
+      @media screen and (max-width: 45rem) {
+        #home .clients-container .header-clients-container .line-left {
+          top: -0.5rem; } }
+      @media screen and (max-width: 30rem) {
+        #home .clients-container .header-clients-container .line-left {
+          left: 8%; } }
+      @media screen and (max-width: 25rem) {
+        #home .clients-container .header-clients-container .line-left {
+          left: 5%; } }
+      @media screen and (max-width: 22.5rem) {
+        #home .clients-container .header-clients-container .line-left {
+          left: 2%; } }
+    @media screen and (max-width: 37.5rem) {
+      #home .clients-container .header-clients-container .title-clients {
+        left: 18%; } }
     @media screen and (max-width: 30rem) {
-      #home .clients-container .title h1 {
-        font-size: 5.5rem; } }
-  #home .clients-container .title h2 {
-    color: #FF5E5B;
-    font-size: 7rem;
-    margin-left: 21%; }
-    @media screen and (max-width: 64rem) {
-      #home .clients-container .title h2 {
-        font-size: 5rem; } }
-    @media screen and (max-width: 45rem) {
-      #home .clients-container .title h2 {
-        font-size: 4rem; } }
-    @media screen and (max-width: 30rem) {
-      #home .clients-container .title h2 {
-        font-size: 2.5rem;
-        margin-left: 12%; } }
-  #home .clients-container .title p {
-    font-size: 3rem;
-    margin-left: 85%;
-    margin-top: -11%;
-    width: 60%; }
-    @media screen and (max-width: 64rem) {
-      #home .clients-container .title p {
-        font-size: 2rem; } }
-    @media screen and (max-width: 45rem) {
-      #home .clients-container .title p {
-        font-size: 1.5rem;
-        margin-left: 102%;
-        width: 69%; } }
-    @media screen and (max-width: 30rem) {
-      #home .clients-container .title p {
-        font-size: 1.3rem;
-        margin-left: 78%;
-        width: 77%; } }
-
-#home .clients-container .heart {
-  width: 24%;
-  position: relative;
-  left: -1%;
-  top: -9rem; }
-  @media screen and (min-width: 90rem) {
-    #home .clients-container .heart {
-      left: 6%;
-      top: -9rem; } }
-  @media screen and (max-width: 64rem) {
-    #home .clients-container .heart {
-      left: 0%;
-      top: -8rem; } }
-  @media screen and (max-width: 45rem) {
-    #home .clients-container .heart {
-      left: 8%;
-      top: -5rem; } }
-  @media screen and (max-width: 30rem) {
-    #home .clients-container .heart {
-      left: 0%;
-      top: -4rem;
-      width: 24%; } }
-  @media screen and (max-width: 25rem) {
-    #home .clients-container .heart {
-      left: 5%;
-      width: 20%; } }
-  @media screen and (max-width: 22.5rem) {
-    #home .clients-container .heart {
+      #home .clients-container .header-clients-container .title-clients {
+        left: 21%; } }
+    @media screen and (max-width: 22.5rem) {
+      #home .clients-container .header-clients-container .title-clients {
+        left: 18%; } }
+    #home .clients-container .header-clients-container .title-clients h1 {
+      color: #00A1C1;
+      font-size: 14rem;
+      margin: 0 0 0 -6.5rem; }
+      @media screen and (max-width: 45rem) {
+        #home .clients-container .header-clients-container .title-clients h1 {
+          font-size: 7.2rem; } }
+      @media screen and (max-width: 30rem) {
+        #home .clients-container .header-clients-container .title-clients h1 {
+          font-size: 5.5rem; } }
+    #home .clients-container .header-clients-container .title-clients .container {
+      display: flex; }
+      #home .clients-container .header-clients-container .title-clients .container h2 {
+        color: #FF5E5B;
+        font-size: 6rem;
+        margin: 0 0 0 -1.5rem;
+        width: 17rem; }
+        @media screen and (max-width: 45rem) {
+          #home .clients-container .header-clients-container .title-clients .container h2 {
+            font-size: 4rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .clients-container .header-clients-container .title-clients .container h2 {
+            font-size: 2.5rem;
+            margin-left: 12%; } }
+      #home .clients-container .header-clients-container .title-clients .container p {
+        font-size: 3.5rem;
+        margin-top: 2rem;
+        width: 23rem; }
+        @media screen and (max-width: 45rem) {
+          #home .clients-container .header-clients-container .title-clients .container p {
+            font-size: 1.5rem;
+            margin-left: 102%;
+            width: 69%; } }
+        @media screen and (max-width: 30rem) {
+          #home .clients-container .header-clients-container .title-clients .container p {
+            font-size: 1.3rem;
+            margin-left: 78%;
+            width: 77%; } }
+    #home .clients-container .header-clients-container .heart {
+      margin: -11rem 0 0 -16rem; }
+      @media screen and (max-width: 45rem) {
+        #home .clients-container .header-clients-container .heart {
+          left: 8%;
+          top: -5rem; } }
+      @media screen and (max-width: 30rem) {
+        #home .clients-container .header-clients-container .heart {
+          left: 0%;
+          top: -4rem;
+          width: 24%; } }
+      @media screen and (max-width: 25rem) {
+        #home .clients-container .header-clients-container .heart {
+          left: 5%;
+          width: 20%; } }
+      @media screen and (max-width: 22.5rem) {
+        #home .clients-container .header-clients-container .heart {
+          position: absolute;
+          top: -1rem;
+          left: 62%;
+          width: 33%; } }
+    #home .clients-container .header-clients-container .line {
+      margin: 4rem 0 0 -4.2rem; }
+      @media screen and (max-width: 49.063em) {
+        #home .clients-container .header-clients-container .line {
+          top: -1rem;
+          left: 40rem;
+          margin-top: -38%; } }
+      @media screen and (max-width: 45rem) {
+        #home .clients-container .header-clients-container .line {
+          top: 0rem;
+          left: 2rem; } }
+      @media screen and (max-width: 37.5rem) {
+        #home .clients-container .header-clients-container .line {
+          left: 0rem; } }
+      @media screen and (max-width: 30rem) {
+        #home .clients-container .header-clients-container .line {
+          left: -1rem;
+          top: 0rem;
+          width: 8%; } }
+      @media screen and (max-width: 25rem) {
+        #home .clients-container .header-clients-container .line {
+          left: 0rem; } }
+      @media screen and (max-width: 22.5rem) {
+        #home .clients-container .header-clients-container .line {
+          left: 3.5rem; } }
+  #home .clients-container .see-more {
+    position: relative; }
+    #home .clients-container .see-more::before, #home .clients-container .see-more::after {
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background-image: url("../img/home/see-more-line.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      height: 2rem;
       position: absolute;
-      top: -1rem;
-      left: 62%;
-      width: 33%; } }
-
-#home .clients-container .line {
-  position: relative;
-  top: 0rem;
-  left: -5rem;
-  width: 7%; }
-  @media screen and (min-width: 90rem) {
-    #home .clients-container .line {
-      top: 0rem;
-      left: 0rem; } }
-  @media screen and (max-width: 64rem) {
-    #home .clients-container .line {
-      width: 8%;
-      top: 0.5rem;
-      left: -7%; } }
-  @media screen and (max-width: 49.063em) {
-    #home .clients-container .line {
-      top: -1rem;
-      left: 40rem;
-      margin-top: -38%; } }
-  @media screen and (max-width: 45rem) {
-    #home .clients-container .line {
-      top: 0rem;
-      left: 2rem; } }
-  @media screen and (max-width: 37.5rem) {
-    #home .clients-container .line {
-      left: 0rem; } }
-  @media screen and (max-width: 30rem) {
-    #home .clients-container .line {
-      left: -1rem;
-      top: 0rem;
-      width: 8%; } }
-  @media screen and (max-width: 25rem) {
-    #home .clients-container .line {
-      left: 0rem; } }
-  @media screen and (max-width: 22.5rem) {
-    #home .clients-container .line {
-      left: 3.5rem; } }
-
-#home .clients-container .see-more {
-  position: relative; }
-  #home .clients-container .see-more::before, #home .clients-container .see-more::after {
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    background-image: url("../img/home/see-more-line.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: '';
-    display: block;
-    height: 2rem;
-    position: absolute;
-    width: 40%;
-    top: 50%; }
-  #home .clients-container .see-more::before {
-    left: 3%;
-    z-index: -1; }
-  #home .clients-container .see-more::after {
-    right: 3%;
-    z-index: -1; }
-  #home .clients-container .see-more .button {
-    background-image: url("../img/red-button.svg");
-    margin: 3rem auto; }
+      width: 40%;
+      top: 50%; }
+    #home .clients-container .see-more::before {
+      left: 3%;
+      z-index: -1; }
+    #home .clients-container .see-more::after {
+      right: 3%;
+      z-index: -1; }
+    #home .clients-container .see-more .button {
+      background-image: url("../img/red-button.svg");
+      margin: 3rem auto; }
 
 #home .we-are {
   background-image: url("../img/home/we-are-background.svg");
