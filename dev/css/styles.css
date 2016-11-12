@@ -423,22 +423,17 @@ footer .footer-end {
     background-image: url("../img/red-button.svg"); }
 
 #home .hero .title {
-  margin: 0 auto;
-  position: relative;
-  text-align: center; }
+  display: flex;
+  justify-content: center; }
   #home .hero .title::before, #home .hero .title::after {
     background-image: url("../img/home/hero-title-border.svg");
     background-repeat: no-repeat;
     background-size: cover;
     content: '';
-    height: 33rem;
-    position: absolute;
-    top: 5%;
-    width: 25%; }
-    @media screen and (min-width: 81.25em) {
-      #home .hero .title::before, #home .hero .title::after {
-        height: 37rem;
-        width: 29%; } }
+    height: 30em;
+    position: relative;
+    width: 16rem;
+    top: 1rem; }
     @media screen and (max-width: 52.5rem) {
       #home .hero .title::before, #home .hero .title::after {
         width: 40%; } }
@@ -451,21 +446,17 @@ footer .footer-end {
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    left: 16%; }
+    left: 7rem; }
     @media screen and (max-width: 52.5rem) {
       #home .hero .title::before {
         left: 2%; } }
-    @media screen and (min-width: 81.25em) {
-      #home .hero .title::before {
-        left: 13%; } }
   #home .hero .title::after {
-    left: 59%; }
+    right: 7rem; }
     @media screen and (max-width: 52.5rem) {
       #home .hero .title::after {
         left: 59%; } }
-    @media screen and (min-width: 81.25em) {
-      #home .hero .title::after {
-        left: 59%; } }
+  #home .hero .title h1, #home .hero .title p {
+    text-align: center; }
   #home .hero .title h1 {
     color: #1DC0B2;
     font-size: 12rem; }
@@ -474,11 +465,7 @@ footer .footer-end {
         font-size: 5rem; } }
   #home .hero .title p {
     font-size: 5rem;
-    width: 18%;
-    margin-left: 41%; }
-    @media screen and (max-width: 64rem) {
-      #home .hero .title p {
-        font-size: 4rem; } }
+    width: 25rem; }
     @media screen and (max-width: 37.5rem) {
       #home .hero .title p {
         width: 80%;
@@ -490,13 +477,11 @@ footer .footer-end {
 #home .hero .simian-tools {
   background-image: url("../img/home/circulos_mico_hero.svg");
   background-repeat: no-repeat;
-  background-size: 92%;
-  background-position: -65% 61%;
+  background-position: center;
   margin: 0 auto;
-  margin-left: 23%;
-  padding: 10% 0;
+  padding: 8rem 0;
   position: relative;
-  width: 62%; }
+  width: 60rem; }
   @media screen and (max-width: 30rem) {
     #home .hero .simian-tools {
       background: none;
@@ -505,32 +490,31 @@ footer .footer-end {
       padding: inherit;
       padding-top: 2rem; } }
   #home .hero .simian-tools .simian {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%; }
+    margin: -12rem 0 0 11rem; }
     @media screen and (max-width: 30rem) {
       #home .hero .simian-tools .simian {
         display: none; } }
   #home .hero .simian-tools .tools img {
     position: absolute;
-    width: 27%; }
+    width: 14rem; }
     @media screen and (max-width: 30rem) {
       #home .hero .simian-tools .tools img {
         position: relative; } }
   #home .hero .simian-tools .tools .idea {
-    left: 25%;
-    top: 6%; }
+    left: 21rem;
+    top: -8rem; }
   #home .hero .simian-tools .tools .development {
-    left: -17%;
-    top: 34%; }
+    left: 0rem;
+    top: 5rem; }
   #home .hero .simian-tools .tools .design {
-    left: 75%;
-    top: 50%; }
+    top: 16rem;
+    right: -2rem; }
   #home .hero .simian-tools .tools .banano {
-    bottom: 7%; }
+    bottom: 0rem;
+    left: 6rem; }
   #home .hero .simian-tools .tools .support {
-    left: 45%;
-    top: 78%; }
+    right: 12rem;
+    bottom: -4rem; }
   @media screen and (max-width: 30rem) {
     #home .hero .simian-tools .tools .idea, #home .hero .simian-tools .tools .development, #home .hero .simian-tools .tools .design, #home .hero .simian-tools .tools .banano, #home .hero .simian-tools .tools .support {
       bottom: 0;
@@ -1136,9 +1120,13 @@ footer .footer-end {
 
 #home .find-us {
   background-image: url("../img/home/find-us-background.svg");
+  background-position-y: 1rem;
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 103%;
+  display: flex;
+  height: 41rem;
+  justify-content: space-between;
   position: relative; }
   @media screen and (max-width: 45rem) {
     #home .find-us {
@@ -1149,13 +1137,7 @@ footer .footer-end {
       background-position: inherit;
       background-position-x: center; } }
   #home .find-us p {
-    font-size: 3rem; }
-    @media screen and (max-width: 90rem) {
-      #home .find-us p {
-        font-size: 2.5rem; } }
-    @media screen and (max-width: 64rem) {
-      #home .find-us p {
-        font-size: 2rem; } }
+    font-size: 2rem; }
     @media screen and (max-width: 52.5rem) {
       #home .find-us p {
         font-size: 1.7rem; } }
@@ -1175,12 +1157,12 @@ footer .footer-end {
       #home .find-us p {
         font-size: 1.1rem; } }
   #home .find-us .sign {
-    display: inline-block;
-    margin-bottom: 3%;
-    margin-left: 1.4%;
-    margin-top: 6%;
-    position: relative;
-    width: 35%; }
+    background-image: url("../img/home/find-us-sign.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30rem;
+    padding: 4rem 0 0 5rem;
+    width: 20rem; }
     @media screen and (max-width: 45rem) {
       #home .find-us .sign {
         margin-left: 20.4%;
@@ -1194,55 +1176,32 @@ footer .footer-end {
     @media screen and (max-width: 25rem) {
       #home .find-us .sign {
         margin-top: 7rem; } }
-    #home .find-us .sign img {
-      width: 100%; }
-    #home .find-us .sign .sign-text {
-      left: 25%;
-      position: absolute;
-      text-align: center;
-      top: 15%; }
-      @media screen and (max-width: 90rem) {
-        #home .find-us .sign .sign-text {
-          left: 20%; } }
-      @media screen and (max-width: 64rem) {
-        #home .find-us .sign .sign-text {
-          left: 22%; } }
-      #home .find-us .sign .sign-text h1 {
-        color: #DED96B;
-        font-size: 13rem; }
-        @media screen and (max-width: 90rem) {
-          #home .find-us .sign .sign-text h1 {
-            font-size: 9rem; } }
-        @media screen and (max-width: 64rem) {
-          #home .find-us .sign .sign-text h1 {
-            font-size: 8rem; } }
-        @media screen and (max-width: 52.5rem) {
-          #home .find-us .sign .sign-text h1 {
-            font-size: 7rem; } }
-        @media screen and (max-width: 45rem) {
-          #home .find-us .sign .sign-text h1 {
-            font-size: 8rem; } }
-        @media screen and (max-width: 37.5rem) {
-          #home .find-us .sign .sign-text h1 {
-            font-size: 7rem; } }
-        @media screen and (max-width: 30rem) {
-          #home .find-us .sign .sign-text h1 {
-            font-size: 5.5rem; } }
-        @media screen and (max-width: 25rem) {
-          #home .find-us .sign .sign-text h1 {
-            font-size: 5rem; } }
-        @media screen and (max-width: 22.5rem) {
-          #home .find-us .sign .sign-text h1 {
-            font-size: 4.5rem; } }
+    #home .find-us .sign h1 {
+      color: #DED96B;
+      font-size: 8rem; }
+      @media screen and (max-width: 52.5rem) {
+        #home .find-us .sign h1 {
+          font-size: 7rem; } }
+      @media screen and (max-width: 45rem) {
+        #home .find-us .sign h1 {
+          font-size: 8rem; } }
+      @media screen and (max-width: 37.5rem) {
+        #home .find-us .sign h1 {
+          font-size: 7rem; } }
+      @media screen and (max-width: 30rem) {
+        #home .find-us .sign h1 {
+          font-size: 5.5rem; } }
+      @media screen and (max-width: 25rem) {
+        #home .find-us .sign h1 {
+          font-size: 5rem; } }
+      @media screen and (max-width: 22.5rem) {
+        #home .find-us .sign h1 {
+          font-size: 4.5rem; } }
   #home .find-us .see-more {
-    position: absolute;
-    right: 3%;
-    text-align: center;
-    top: 50%;
-    width: 35%; }
-    @media screen and (max-width: 64rem) {
-      #home .find-us .see-more {
-        top: 47%; } }
+    margin-top: 18rem;
+    width: 21rem; }
+    #home .find-us .see-more p {
+      text-align: center; }
     @media screen and (max-width: 37.5rem) {
       #home .find-us .see-more {
         top: 70%;

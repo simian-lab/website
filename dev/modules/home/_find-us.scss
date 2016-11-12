@@ -1,8 +1,12 @@
 .find-us {
   background-image: url('../img/home/find-us-background.svg');
+  background-position-y: 1rem;
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 103%;
+  display: flex;
+  height: 41rem;
+  justify-content: space-between;
   position: relative;
 
   @media screen and (max-width: $tablet-medium) {
@@ -16,15 +20,7 @@
   }
 
   p {
-    font-size: 3rem;
-
-    @media screen and (max-width: $laptop-medium) {
-      font-size: 2.5rem;
-    }
-
-    @media screen and (max-width: $laptop-small) {
-      font-size: 2rem;
-    }
+    font-size: 2rem;
 
     @media screen and (max-width: $tablet-large) {
       font-size: 1.7rem;
@@ -52,12 +48,12 @@
   }
 
   .sign {
-    display: inline-block;
-    margin-bottom: 3%;
-    margin-left: 1.4%;
-    margin-top: 6%;
-    position: relative;
-    width: 35%;
+    background-image: url('../img/home/find-us-sign.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30rem;
+    padding: 4rem 0 0 5rem;
+    width: 20rem;
 
     @media screen and (max-width: $tablet-medium) {
       margin-left: 20.4%;
@@ -75,71 +71,42 @@
       margin-top: 7rem;
     }
 
-    img {
-      width: 100%;
-    }
+    h1 {
+      color: $yellow;
+      font-size: 8rem;
 
-    .sign-text {
-      left: 25%;
-      position: absolute;
-      text-align: center;
-      top: 15%;
-
-      @media screen and (max-width: $laptop-medium) {
-        left: 20%;
-      }
-      @media screen and (max-width: $laptop-small) {
-        left: 22%;
+      @media screen and (max-width: $tablet-large) {
+        font-size: 7rem;
       }
 
-      h1 {
-        color: $yellow;
-        font-size: 13rem;
+      @media screen and (max-width: $tablet-medium) {
+        font-size: 8rem;
+      }
 
-        @media screen and (max-width: $laptop-medium) {
-          font-size: 9rem;
-        }
+      @media screen and (max-width: $tablet-small) {
+        font-size: 7rem;
+      }
 
-        @media screen and (max-width: $laptop-small) {
-          font-size: 8rem;
-        }
+      @media screen and (max-width: $mobile-large) {
+        font-size: 5.5rem;
+      }
 
-        @media screen and (max-width: $tablet-large) {
-          font-size: 7rem;
-        }
+      @media screen and (max-width: $mobile-medium) {
+        font-size: 5rem;
+      }
 
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 8rem;
-        }
-
-        @media screen and (max-width: $tablet-small) {
-          font-size: 7rem;
-        }
-
-        @media screen and (max-width: $mobile-large) {
-          font-size: 5.5rem;
-        }
-
-        @media screen and (max-width: $mobile-medium) {
-          font-size: 5rem;
-        }
-
-        @media screen and (max-width: $mobile-small) {
-          font-size: 4.5rem;
-        }
+      @media screen and (max-width: $mobile-small) {
+        font-size: 4.5rem;
       }
     }
   }
 
   .see-more {
-    position: absolute;
-    right: 3%;
-    text-align: center;
-    top: 50%;
-    width: 35%;
+    margin-top: 18rem;
+    width: 21rem;
 
-    @media screen and (max-width: $laptop-small) {
-      top: 47%;
+    p {
+      text-align: center;
     }
 
     @media screen and (max-width: $tablet-small) {
