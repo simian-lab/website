@@ -61,6 +61,7 @@
 
       @media screen and (max-width: $mobile-large) {
         font-size: 2rem;
+        width: 15rem;
       }
     }
   }
@@ -89,10 +90,7 @@
 
     @media screen and (max-width: $mobile-large) {
       background: none;
-      margin-left: 10%;
-      width: 90%;
-      padding: inherit;
-      padding-top: 2rem;
+      width: 100%;
     }
 
     .simian {

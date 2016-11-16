@@ -24,10 +24,6 @@
     @media screen and (max-width: $tablet-medium) {
       font-size: 1.3rem;
     }
-
-    @media screen and (max-width: $mobile-large) {
-      font-size: 1.4rem;
-    }
   }
 
   .sign {
@@ -47,10 +43,7 @@
       width: 17rem;
       margin: auto;
       padding: 3rem 0 0 4.5rem;
-    }
-
-    @media screen and (max-width: $mobile-large) {
-      margin-top: 5rem;
+      z-index: -1;
     }
 
     h1 {
@@ -63,10 +56,6 @@
 
       @media screen and (max-width: $tablet-medium) {
          font-size: 5rem;
-      }
-
-      @media screen and (max-width: $mobile-large) {
-        font-size: 5.5rem;
       }
     }
   }
