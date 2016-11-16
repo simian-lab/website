@@ -1,120 +1,115 @@
 .clients-container {
+  margin-top: 8rem;
 
-  .line-left{
-    position: relative;
-    top: 0.5rem;
-    left: 6%;
-    width: 18%;
-
-    @media screen and (max-width: $tablet-medium) {
-      top: -0.5rem;
-    }
-
-    @media screen and (max-width: $mobile-large) {
-      left: 8%;
-    }
-
-    @media screen and (max-width: $mobile-medium) {
-      left: 5%;
-    }
-
-    @media screen and (max-width: $mobile-small) {
-      left: 2%;
-    }
+  @media screen and (max-width: $tablet-medium) {
+    margin-top: 0rem;
   }
 
-  .title{
-    left: 20%;
+  .header-clients-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
-    @media screen and (max-width: $tablet-small) {
-      left: 18%;
-    }
-    @media screen and (max-width: $mobile-large) {
-      left: 21%;
-    }
-    @media screen and (max-width: $mobile-small) {
-      left: 18%;
-    }
-
-    h1 {
-      color: $blue;
-      font-size: 16.2rem;
+    .line-left{
+      margin: 6rem 0 0 0rem;
 
       @media screen and (max-width: $laptop-small) {
-        font-size: 12.2rem;
+        width: 8rem;
       }
 
       @media screen and (max-width: $tablet-medium) {
-        font-size: 7.2rem;
+        margin: 3rem 0 0 0rem;
+        width: 7rem;
       }
 
       @media screen and (max-width: $mobile-large) {
-        font-size: 5.5rem;
+        left: 8%;
       }
     }
 
-    h2 {
-      color: $red;
-      font-size: 7rem;
-      margin-left: 21%;
+    .title-clients{
+      h1 {
+        color: $blue;
+        font-size: 14rem;
+        margin: 0 0 0 -6.5rem;
 
-      @media screen and (max-width: $laptop-small) {
-        font-size: 5rem;
+        @media screen and (max-width: $laptop-small) {
+          font-size: 10rem;
+          margin: 0 0 0 -4.5rem;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 7rem;
+          margin: 0 0 0 -3.5rem;
+        }
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 5.5rem;
+        }
       }
 
-      @media screen and (max-width: $tablet-medium) {
-        font-size: 4rem;
-      }
+      .container {
+        display: flex;
+        h2 {
+          color: $red;
+          font-size: 6rem;
+          margin: 0 0 0 -1.5rem;
+          width: 17rem;
 
-      @media screen and (max-width: $mobile-large) {
-        font-size: 2.5rem;
-        margin-left: 12%;
+          @media screen and (max-width: $laptop-small) {
+            font-size: 4rem;
+            margin: 1rem 0 0 -1rem;
+            width: 11rem;
+          }
+
+          @media screen and (max-width: $tablet-medium) {
+            font-size: 3rem;
+            width: 9rem;
+          }
+
+          @media screen and (max-width: $mobile-large) {
+            font-size: 2.5rem;
+            margin-left: 12%;
+          }
+        }
+
+        p {
+          font-size: 3.5rem;
+          margin-top: 2rem;
+          width: 23rem;
+
+          @media screen and (max-width: $laptop-small) {
+            font-size: 2rem;
+            margin: 3rem 0 0 0;
+            width: 16rem;
+          }
+
+          @media screen and (max-width: $tablet-medium) {
+            font-size: 1.5rem;
+            margin: 2.5rem 0 0 -0.5rem;
+            width: 10rem;
+          }
+
+          @media screen and (max-width: $mobile-large) {
+            font-size: 1.3rem;
+            margin-left: 78%;
+            width: 77%;
+          }
+        }
       }
     }
-
-    p {
-      font-size: 3rem;
-      margin-left: 85%;
-      margin-top: -11%;
-      width: 60%;
-
-      @media screen and (max-width: $laptop-small) {
-        font-size: 2rem;
-      }
-
-      @media screen and (max-width: $tablet-medium) {
-        font-size: 1.5rem;
-        margin-left: 102%;
-        width: 69%;
-      }
-
-      @media screen and (max-width: $mobile-large) {
-        font-size: 1.3rem;
-        margin-left: 78%;
-        width: 77%;
-      }
-    }
-  }
 
     .heart{
-      width: 24%;
-      position: relative;
-      left: -1%;
-      top: -9rem;
-
-      @media screen and (min-width: $laptop-medium) {
-        left: 6%;
-        top: -9rem;
-      }
+      margin: -11rem 0 0 -16rem;
 
       @media screen and (max-width: $laptop-small) {
-        left: 0%;
-        top: -8rem;
+        margin: -8rem 0 0 -9.5rem;
+        width: 10rem;
       }
 
       @media screen and (max-width: $tablet-medium) {
-        left: 8%;
-        top: -5rem;
+        width: 8rem;
+        margin: -8rem 0 0 -6rem;
       }
 
       @media screen and (max-width: $mobile-large) {
@@ -122,48 +117,19 @@
         top: -4rem;
         width: 24%;
       }
-      @media screen and (max-width: $mobile-medium) {
-        left: 5%;
-        width: 20%;
-      }
-      @media screen and (max-width: $mobile-small) {
-        position: absolute;
-        top: -1rem;
-        left: 62%;
-        width: 33%;
-      }
     }
 
-    .line{
-      position: relative;
-      top: 0rem;
-      left: -5rem;
-      width: 7%;
-
-      @media screen and (min-width: $laptop-medium) {
-        top: 0rem;
-        left: 0rem;
-      }
+    .line {
+      margin: 4rem 0 0 -4.2rem;
 
       @media screen and (max-width: $laptop-small) {
-        width: 8%;
-        top: 0.5rem;
-        left: -7%;
-      }
-
-      @media screen and (max-width: 49.063em) {
-        top: -1rem;
-        left: 40rem;
-        margin-top: -38%;
+        margin: 5rem 0 0 -3.7rem;
+        width: 3.5rem;
       }
 
       @media screen and (max-width: $tablet-medium) {
-        top: 0rem;
-        left: 2rem;
-      }
-
-      @media screen and (max-width: $tablet-small) {
-        left: 0rem;
+        margin: 2rem 0 0 -2.7rem;
+        width: 3rem;
       }
 
       @media screen and (max-width: $mobile-large) {
@@ -171,15 +137,14 @@
         top: 0rem;
         width: 8%;
       }
+    }
 
-      @media screen and (max-width: $mobile-medium) {
-        left: 0rem;
-      }
+    .line, .line-left {
+      @media screen and (max-width: $laptop-small) {
 
-      @media screen and (max-width: $mobile-small) {
-        left: 3.5rem;
       }
     }
+  }
 
   .see-more {
     position: relative;

@@ -1,155 +1,96 @@
 .find-us {
   background-image: url('../img/home/find-us-background.svg');
-  background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 103%;
+  display: flex;
+  height: 41rem;
+  justify-content: space-between;
   position: relative;
 
   @media screen and (max-width: $tablet-medium) {
-    margin-top: 16rem;
-  }
-
-  @media screen and (max-width: $tablet-small) {
-    background-size: 184%;
-    background-position: inherit;
-    background-position-x: center;
+    background-position-y: 16rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   p {
-    font-size: 3rem;
-
-    @media screen and (max-width: $laptop-medium) {
-      font-size: 2.5rem;
-    }
+    font-size: 2rem;
 
     @media screen and (max-width: $laptop-small) {
-      font-size: 2rem;
-    }
-
-    @media screen and (max-width: $tablet-large) {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     }
 
     @media screen and (max-width: $tablet-medium) {
-      font-size: 2rem;
-    }
-
-    @media screen and (max-width: $tablet-small) {
-      font-size: 1.7rem;
+      font-size: 1.3rem;
     }
 
     @media screen and (max-width: $mobile-large) {
       font-size: 1.4rem;
     }
-
-    @media screen and (max-width: $mobile-medium) {
-      font-size: 1.3rem;
-    }
-
-    @media screen and (max-width: $mobile-small) {
-      font-size: 1.1rem;
-    }
   }
 
   .sign {
-    display: inline-block;
-    margin-bottom: 3%;
-    margin-left: 1.4%;
-    margin-top: 6%;
-    position: relative;
-    width: 35%;
+    background-image: url('../img/home/find-us-sign.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30rem;
+    padding: 4rem 0 0 5rem;
+    width: 20rem;
+
+    @media screen and (max-width: $laptop-small) {
+      height: 24rem;
+      margin: 0rem 0 0 -2rem;
+    }
 
     @media screen and (max-width: $tablet-medium) {
-      margin-left: 20.4%;
-      margin-top: 3%;
-      top: -16rem;
-      width: 53%;
-      z-index: -1;
+      width: 17rem;
+      margin: auto;
+      padding: 3rem 0 0 4.5rem;
     }
 
     @media screen and (max-width: $mobile-large) {
       margin-top: 5rem;
     }
 
-    @media screen and (max-width: $mobile-medium) {
-      margin-top: 7rem;
-    }
+    h1 {
+      color: $yellow;
+      font-size: 8rem;
 
-    img {
-      width: 100%;
-    }
-
-    .sign-text {
-      left: 25%;
-      position: absolute;
-      text-align: center;
-      top: 15%;
-
-      @media screen and (max-width: $laptop-medium) {
-        left: 20%;
-      }
       @media screen and (max-width: $laptop-small) {
-        left: 22%;
+        font-size: 6rem;
       }
 
-      h1 {
-        color: $yellow;
-        font-size: 13rem;
+      @media screen and (max-width: $tablet-medium) {
+         font-size: 5rem;
+      }
 
-        @media screen and (max-width: $laptop-medium) {
-          font-size: 9rem;
-        }
-
-        @media screen and (max-width: $laptop-small) {
-          font-size: 8rem;
-        }
-
-        @media screen and (max-width: $tablet-large) {
-          font-size: 7rem;
-        }
-
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 8rem;
-        }
-
-        @media screen and (max-width: $tablet-small) {
-          font-size: 7rem;
-        }
-
-        @media screen and (max-width: $mobile-large) {
-          font-size: 5.5rem;
-        }
-
-        @media screen and (max-width: $mobile-medium) {
-          font-size: 5rem;
-        }
-
-        @media screen and (max-width: $mobile-small) {
-          font-size: 4.5rem;
-        }
+      @media screen and (max-width: $mobile-large) {
+        font-size: 5.5rem;
       }
     }
   }
 
   .see-more {
-    position: absolute;
-    right: 3%;
-    text-align: center;
-    top: 50%;
-    width: 35%;
+    margin-top: 18rem;
+    width: 21rem;
 
     @media screen and (max-width: $laptop-small) {
-      top: 47%;
+      margin-top: 13rem;
+      width: 18rem;
     }
 
-    @media screen and (max-width: $tablet-small) {
-      top: 70%;
-      width: 93%;
+    p {
+      text-align: center;
     }
 
     .button {
       background-image: url('../img/yellow-button.svg');
       margin: 3rem auto;
+
+      @media screen and (max-width: $laptop-small) {
+        margin: 1rem auto;
+      }
     }
   }
 
@@ -162,18 +103,5 @@
     position: relative;
     z-index: -1;
     margin-top: -4rem;
-
-    @media screen and (max-width: $mobile-large) {
-      height: 20rem;
-    }
-
-    @media screen and (max-width: $mobile-small) {
-      margin-top: -7rem;
-      background-size: 113%;
-    }
-
-    @media screen and (min-width: $tablet-small) {
-      display: none;
-    }
   }
 }

@@ -1,62 +1,47 @@
 .hero {
   .title {
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 
     &::before, &::after {
       background-image: url('../img/home/hero-title-border.svg');
       background-repeat: no-repeat;
       background-size: cover;
       content: '';
-      height: 33rem;
-      position: absolute;
-      top: 5%;
-      width: 25%;
+      height: 30em;
+      position: relative;
+      width: 16rem;
+      top: 1rem;
 
-      @media screen and (min-width: 81.250em) {
-        height: 37rem;
-        width: 29%;
+      @media screen and (max-width: $laptop-small) {
+        height: 25em;
       }
 
-      @media screen and (max-width: $tablet-large) {
-        width: 40%;
-      }
-
-      @media screen and (max-width: $tablet-small) {
+      @media screen and (max-width: $tablet-medium) {
         display: none;
       }
     }
 
     &::before {
       @include transform(rotateY(180deg));
-      left: 16%;
-
-       @media screen and (max-width: $tablet-large) {
-        left: 2%;
-      }
-
-      @media screen and (min-width: 81.250em) {
-        left: 13%;
-      }
+      left: 7rem;
     }
 
     &::after {
-      left: 59%;
+      right: 7rem;
+    }
 
-      @media screen and (max-width: $tablet-large) {
-        left: 59%;
-      }
-
-      @media screen and (min-width: 81.250em) {
-        left: 59%;
-      }
+    h1, p {
+      text-align: center;
     }
 
     h1 {
       color: $green;
       font-size: 12rem;
 
+      @media screen and (max-width: $laptop-small) {
+        font-size: 10rem;
+      }
       @media screen and (max-width: $mobile-large) {
         font-size: 5rem;
       }
@@ -64,16 +49,14 @@
 
     p {
       font-size: 5rem;
-      width: 18%;
-      margin-left: 41%;
-
+      width: 25rem;
       @media screen and (max-width: $laptop-small) {
         font-size: 4rem;
+        width: 23rem;
       }
 
-      @media screen and (max-width: $tablet-small) {
-        width: 80%;
-        margin-left: 10%;
+      @media screen and (max-width: $tablet-medium) {
+        width: 30rem;
       }
 
       @media screen and (max-width: $mobile-large) {
@@ -85,13 +68,24 @@
   .simian-tools {
     background-image: url('../img/home/circulos_mico_hero.svg');
     background-repeat: no-repeat;
-    background-size: 92%;
-    background-position: -65% 61%;
+    background-position-x: center;
     margin: 0 auto;
-    margin-left: 23%;
-    padding: 10% 0;
+    margin-top: -6.5rem;
+    padding: 8rem 0;
     position: relative;
-    width: 62%;
+    width: 60rem;
+
+    @media screen and (max-width: $laptop-small) {
+      background-size: 30rem;
+      margin-top: -4.5rem;
+      width: 45rem;
+    }
+
+    @media screen and (max-width: $tablet-medium) {
+      background-size: 25rem;
+      margin-top: 2rem;
+      width: 30rem;
+    }
 
     @media screen and (max-width: $mobile-large) {
       background: none;
@@ -102,9 +96,17 @@
     }
 
     .simian {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
+      margin: -7rem 0 0 11rem;
+
+      @media screen and (max-width: $laptop-small) {
+        margin: -9rem 0 0 11rem;
+        width: 30rem;
+      }
+
+      @media screen and (max-width: $tablet-medium) {
+        margin: -5rem 0 0 7rem;
+        width: 20rem;
+      }
 
       @media screen and (max-width: $mobile-large) {
         display: none;
@@ -114,7 +116,15 @@
     .tools {
       img {
         position: absolute;
-        width: 27%;
+        width: 14rem;
+
+        @media screen and (max-width: $laptop-small) {
+          width: 8rem ;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          width: 7rem;
+        }
 
         @media screen and (max-width: $mobile-large) {
           position: relative;
@@ -122,27 +132,77 @@
       }
 
       .idea {
-        left: 25%;
-        top: 6%;
+        left: 21.5rem;
+        top: -2rem;
+
+        @media screen and (max-width: $laptop-small) {
+          left: 18rem;
+          top: -2rem;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          left: 11rem;
+          top: -1rem;
+        }
       }
 
       .development {
-        left: -17%;
-        top: 34%;
+        left: 2rem;
+        top: 11rem;
+
+        @media screen and (max-width: $laptop-small) {
+          left: 6rem;
+          top: 5rem;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          left: 3rem;
+        }
       }
 
       .design {
-        left: 75%;
-        top: 50%;
+        top: 20rem;
+        right: -1rem;
+
+        @media screen and (max-width: $laptop-small) {
+          top: 11rem;
+          right: 3rem;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          left: 22rem;
+          top: 11rem;
+        }
       }
 
       .banano {
-        bottom: 7%;
+        bottom: 2rem;
+        left: 8rem;
+
+        @media screen and (max-width: $laptop-small) {
+          bottom: 4rem;
+          left: 11rem;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          bottom: 5rem;
+          left: 5rem;
+        }
       }
 
       .support {
-        left: 45%;
-        top: 78%;
+        right: 13rem;
+        bottom: -2rem;
+
+        @media screen and (max-width: $laptop-small) {
+          right: 12rem;
+          bottom: 2rem;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          right: 7rem;
+          bottom: 3rem;
+        }
       }
 
       .idea, .development, .design, .banano, .support {

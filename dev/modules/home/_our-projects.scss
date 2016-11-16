@@ -1,13 +1,8 @@
 .our-projects {
   background-image: url('../img/footer/footer-bg-red.svg');
   background-repeat: no-repeat;
-  background-size: contain;
-
-  @media screen and (max-width: $tablet-large) {
-    background-size: 160%;
-    background-position-x: center;
-    margin-top: 13rem;
-  }
+  background-size: 103%;
+  background-position-x: -1rem;
 
   @media screen and (max-width: $tablet-small) {
     background-size: 245%;
@@ -19,61 +14,49 @@
   }
 
   .intro {
-    @include clearfix();
-    padding-top: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 3rem 2.5rem 0 0;
+
+    @media screen and (max-width: $tablet-medium) {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 3rem 0rem 0 0;
+    }
 
     .title-container {
       background-image: url('../img/home/our-projects-sign.svg');
       background-repeat: no-repeat;
-      background-position-x: 60%;
-      background-size: contain;
-      padding: 8% 0;
-      width: 55%;
+      background-position: -5rem;
+      background-size: 37rem;
+      padding: 5rem;
+      width: 33rem;
 
       @media screen and (max-width: $laptop-small) {
-        background-size: 101%;
-        padding: 10% 0;
-        margin-left: -7%;
-        width: 55%;
-        height: 36rem;
+        background-size: 28rem;
+        padding: 3rem;
+        width: 22.5rem;
+        height: 18rem;
       }
 
-      @media screen and (max-width: $tablet-large) {
-          margin-left: 11%;
-          margin-top: -25%;
-          width: 68%;
-          height: inherit;
+       @media screen and (max-width: $tablet-medium) {
+        background-position: -1rem;
+        padding: 5rem 0 0 0.5rem;
+        height: 21rem;
+        width: 30rem;
       }
 
-      .title {
+      h1, p {
         text-align: center;
-        margin-left: 13%;
-
-        @media screen and (max-width: $laptop-small) {
-          margin-left: 11%;
-          margin-top: -6%;
-        }
-
-        @media screen and (max-width: $tablet-large) {
-          margin-top: 3%;
-        }
-
-        @media screen and (max-width: $tablet-medium) {
-          margin-top: -3%;
-        }
+      }
 
         p {
-          font-size: 4rem;
+          font-size: 3rem;
 
-           @media screen and (max-width: $laptop-medium) {
-            font-size: 3rem;
-          }
-
-          @media screen and (max-width: $tablet-large) {
-            font-size: 2.5rem;
-          }
-
-          @media screen and (max-width: $tablet-small) {
+          @media screen and (max-width: $laptop-small) {
             font-size: 2rem;
           }
 
@@ -86,17 +69,9 @@
           }
 
           &:nth-child(2) {
-            font-size: 7rem;
+            font-size: 5rem;
 
-            @media screen and (max-width: $laptop-medium) {
-              font-size: 5rem;
-            }
-
-            @media screen and (max-width: $tablet-large) {
-              font-size: 4.5rem;
-            }
-
-            @media screen and (max-width: $tablet-small) {
+            @media screen and (max-width: $laptop-small) {
               font-size: 3.5rem;
             }
 
@@ -116,17 +91,9 @@
 
         h1 {
           color: $yellow;
-          font-size: 10.5rem;
+          font-size: 9rem;
 
-          @media screen and (max-width: $laptop-medium) {
-            font-size: 8.5rem;
-          }
-
-          @media screen and (max-width: $tablet-large) {
-            font-size: 8rem;
-          }
-
-          @media screen and (max-width: $tablet-small) {
+          @media screen and (max-width: $laptop-small) {
             font-size: 6rem;
           }
 
@@ -142,52 +109,41 @@
             font-size: 4.3rem;
           }
         }
-      }
+
     }
 
     .text {
-      padding-right: 3%;
-      padding-top: 10%;
-      width: 45%;
-
-      @media screen and (min-width: $laptop-medium) {
-        width: 40%;
-      }
+      width: 30rem;
 
       @media screen and (max-width: $laptop-small) {
-        padding-top: 5%;
-        width: 52%;
+        width: 20rem;
       }
 
-      @media screen and (max-width: $tablet-large) {
-        padding-top: 0%;
-        padding-left: 7%;
-        width: 100%;
+      @media screen and (max-width: $tablet-medium) {
+        margin: 0 auto;
+        text-align: center;
+        width: 20rem;
+      }
+
+      h2, p {
+        font-size: 1.3rem;
+        font-family: $quicksand_regular;
+
+        @media screen and (max-width: $laptop-small) {
+          font-size: 1rem;
+        }
       }
 
       h2{
         color: $brown;
-        font-family: $quicksand_regular;
-        font-size: 1.5rem;
         font-weight: bold;
-
         @media screen and (max-width: $mobile-large) {
-          font-size: 1.3rem;
         }
       }
 
       p {
-        font-size: 1.5rem;
         @media screen and (max-width: $mobile-large) {
-          font-size: 1.3rem;
         }
-      }
-    }
-
-    .title-container, .text {
-      float: left;
-
-      @media screen and (max-width: $mobile-large) {
       }
     }
   }
