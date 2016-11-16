@@ -1,6 +1,10 @@
 .clients-container {
   margin-top: 8rem;
 
+  @media screen and (max-width: $tablet-medium) {
+    margin-top: 0rem;
+  }
+
   .header-clients-container {
     align-items: center;
     display: flex;
@@ -9,42 +13,34 @@
     .line-left{
       margin: 6rem 0 0 0rem;
 
+      @media screen and (max-width: $laptop-small) {
+        width: 8rem;
+      }
+
       @media screen and (max-width: $tablet-medium) {
-        top: -0.5rem;
+        margin: 3rem 0 0 0rem;
+        width: 7rem;
       }
 
       @media screen and (max-width: $mobile-large) {
         left: 8%;
       }
-
-      @media screen and (max-width: $mobile-medium) {
-        left: 5%;
-      }
-
-      @media screen and (max-width: $mobile-small) {
-        left: 2%;
-      }
     }
 
     .title-clients{
-
-      @media screen and (max-width: $tablet-small) {
-        left: 18%;
-      }
-      @media screen and (max-width: $mobile-large) {
-        left: 21%;
-      }
-      @media screen and (max-width: $mobile-small) {
-        left: 18%;
-      }
-
       h1 {
         color: $blue;
         font-size: 14rem;
         margin: 0 0 0 -6.5rem;
 
+        @media screen and (max-width: $laptop-small) {
+          font-size: 10rem;
+          margin: 0 0 0 -4.5rem;
+        }
+
         @media screen and (max-width: $tablet-medium) {
-          font-size: 7.2rem;
+          font-size: 7rem;
+          margin: 0 0 0 -3.5rem;
         }
 
         @media screen and (max-width: $mobile-large) {
@@ -60,8 +56,15 @@
           margin: 0 0 0 -1.5rem;
           width: 17rem;
 
-          @media screen and (max-width: $tablet-medium) {
+          @media screen and (max-width: $laptop-small) {
             font-size: 4rem;
+            margin: 1rem 0 0 -1rem;
+            width: 11rem;
+          }
+
+          @media screen and (max-width: $tablet-medium) {
+            font-size: 3rem;
+            width: 9rem;
           }
 
           @media screen and (max-width: $mobile-large) {
@@ -74,10 +77,17 @@
           font-size: 3.5rem;
           margin-top: 2rem;
           width: 23rem;
+
+          @media screen and (max-width: $laptop-small) {
+            font-size: 2rem;
+            margin: 3rem 0 0 0;
+            width: 16rem;
+          }
+
           @media screen and (max-width: $tablet-medium) {
             font-size: 1.5rem;
-            margin-left: 102%;
-            width: 69%;
+            margin: 2.5rem 0 0 -0.5rem;
+            width: 10rem;
           }
 
           @media screen and (max-width: $mobile-large) {
@@ -92,9 +102,14 @@
     .heart{
       margin: -11rem 0 0 -16rem;
 
+      @media screen and (max-width: $laptop-small) {
+        margin: -8rem 0 0 -9.5rem;
+        width: 10rem;
+      }
+
       @media screen and (max-width: $tablet-medium) {
-        left: 8%;
-        top: -5rem;
+        width: 8rem;
+        margin: -8rem 0 0 -6rem;
       }
 
       @media screen and (max-width: $mobile-large) {
@@ -102,34 +117,19 @@
         top: -4rem;
         width: 24%;
       }
-      @media screen and (max-width: $mobile-medium) {
-        left: 5%;
-        width: 20%;
-      }
-      @media screen and (max-width: $mobile-small) {
-        position: absolute;
-        top: -1rem;
-        left: 62%;
-        width: 33%;
-      }
     }
 
-    .line{
+    .line {
       margin: 4rem 0 0 -4.2rem;
 
-      @media screen and (max-width: 49.063em) {
-        top: -1rem;
-        left: 40rem;
-        margin-top: -38%;
+      @media screen and (max-width: $laptop-small) {
+        margin: 5rem 0 0 -3.7rem;
+        width: 3.5rem;
       }
 
       @media screen and (max-width: $tablet-medium) {
-        top: 0rem;
-        left: 2rem;
-      }
-
-      @media screen and (max-width: $tablet-small) {
-        left: 0rem;
+        margin: 2rem 0 0 -2.7rem;
+        width: 3rem;
       }
 
       @media screen and (max-width: $mobile-large) {
@@ -137,13 +137,11 @@
         top: 0rem;
         width: 8%;
       }
+    }
 
-      @media screen and (max-width: $mobile-medium) {
-        left: 0rem;
-      }
+    .line, .line-left {
+      @media screen and (max-width: $laptop-small) {
 
-      @media screen and (max-width: $mobile-small) {
-        left: 3.5rem;
       }
     }
   }

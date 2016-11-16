@@ -4,12 +4,6 @@
   background-size: 103%;
   background-position-x: -1rem;
 
-  @media screen and (max-width: $tablet-large) {
-    background-size: 160%;
-    background-position-x: center;
-    margin-top: 13rem;
-  }
-
   @media screen and (max-width: $tablet-small) {
     background-size: 245%;
   }
@@ -26,6 +20,13 @@
     margin-top: 4rem;
     padding: 3rem 2.5rem 0 0;
 
+    @media screen and (max-width: $tablet-medium) {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 3rem 0rem 0 0;
+    }
+
     .title-container {
       background-image: url('../img/home/our-projects-sign.svg');
       background-repeat: no-repeat;
@@ -34,27 +35,28 @@
       padding: 5rem;
       width: 33rem;
 
-      @media screen and (max-width: $tablet-large) {
-          margin-left: 11%;
-          margin-top: -25%;
-          width: 68%;
-          height: inherit;
+      @media screen and (max-width: $laptop-small) {
+        background-size: 28rem;
+        padding: 3rem;
+        width: 22.5rem;
+        height: 18rem;
+      }
+
+       @media screen and (max-width: $tablet-medium) {
+        background-position: -1rem;
+        padding: 5rem 0 0 0.5rem;
+        height: 21rem;
+        width: 30rem;
       }
 
       h1, p {
         text-align: center;
       }
 
-
-
         p {
           font-size: 3rem;
 
-          @media screen and (max-width: $tablet-large) {
-            font-size: 2.5rem;
-          }
-
-          @media screen and (max-width: $tablet-small) {
+          @media screen and (max-width: $laptop-small) {
             font-size: 2rem;
           }
 
@@ -69,11 +71,7 @@
           &:nth-child(2) {
             font-size: 5rem;
 
-            @media screen and (max-width: $tablet-large) {
-              font-size: 4.5rem;
-            }
-
-            @media screen and (max-width: $tablet-small) {
+            @media screen and (max-width: $laptop-small) {
               font-size: 3.5rem;
             }
 
@@ -95,11 +93,7 @@
           color: $yellow;
           font-size: 9rem;
 
-          @media screen and (max-width: $tablet-large) {
-            font-size: 8rem;
-          }
-
-          @media screen and (max-width: $tablet-small) {
+          @media screen and (max-width: $laptop-small) {
             font-size: 6rem;
           }
 
@@ -121,15 +115,23 @@
     .text {
       width: 30rem;
 
-      @media screen and (max-width: $tablet-large) {
-        padding-top: 0%;
-        padding-left: 7%;
-        width: 100%;
+      @media screen and (max-width: $laptop-small) {
+        width: 20rem;
+      }
+
+      @media screen and (max-width: $tablet-medium) {
+        margin: 0 auto;
+        text-align: center;
+        width: 20rem;
       }
 
       h2, p {
         font-size: 1.3rem;
         font-family: $quicksand_regular;
+
+        @media screen and (max-width: $laptop-small) {
+          font-size: 1rem;
+        }
       }
 
       h2{

@@ -4,16 +4,6 @@
   background-size: 103%;
   padding: 2rem 0;
 
-  @media screen and (max-width: $tablet-medium) {
-    background-size: 179%;
-    background-position-x: center;
-    height: 76rem;
-  }
-
-  @media screen and (max-width: $tablet-small) {
-    height: 62rem;
-  }
-
   @media screen and (max-width: $mobile-large) {
     height: 56rem;
   }
@@ -34,151 +24,171 @@
     height: 18rem;
     margin: 0 auto;
     width: 33rem;
+    padding: 3rem 0 0 9rem;
 
-    @media screen and (max-width: $laptop-small) {
-      width: 64%;
+    @media screen and (max-width: $tablet-medium) {
+      width: 24rem;
+      padding: 2rem 0 0 7rem;
     }
 
-    .container {
-      padding: 2.5rem 7rem 1.5rem 9rem;
-      width: 20rem;
+    p {
+      font-size: 4rem;
 
       @media screen and (max-width: $tablet-medium) {
-        padding: inherit;
-        width: inherit;
-        margin-left: 25%;
-        padding-top: 7%;
+        font-size: 3rem;
       }
 
-      p {
-        font-size: 4rem;
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 2.5rem;
-        }
-
-        @media screen and (max-width: $mobile-large) {
-          font-size: 2.3rem;
-        }
-
-        @media screen and (max-width: $mobile-small) {
-          font-size: 2rem;
-        }
+      @media screen and (max-width: $mobile-large) {
+        font-size: 2.3rem;
       }
 
-      h1 {
-        color: $yellow;
-        font-size: 9rem;
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 6.5rem;
-        }
-
-        @media screen and (max-width: $mobile-large) {
-          font-size: 5.3rem;
-        }
-
-        @media screen and (max-width: $mobile-medium) {
-          font-size: 4.3rem;
-        }
-
-        @media screen and (max-width: $mobile-small) {
-          font-size: 4rem;
-        }
+      @media screen and (max-width: $mobile-small) {
+        font-size: 2rem;
       }
     }
+
+    h1 {
+      color: $yellow;
+      font-size: 9rem;
+
+      @media screen and (max-width: $tablet-medium) {
+        font-size: 7rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        font-size: 5.3rem;
+      }
+
+      @media screen and (max-width: $mobile-medium) {
+        font-size: 4.3rem;
+      }
+
+      @media screen and (max-width: $mobile-small) {
+        font-size: 4rem;
+      }
+    }
+
   }
 
   .projects {
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width: $tablet-medium) {
-      margin-top: -12%;
-      display: inherit;
+    @media screen and (max-width: $laptop-small) {
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
 
     .project {
       position: relative;
+      width: 25rem;
 
-      @media screen and (max-width: $tablet-medium) {
-        margin-top: -5rem;
+      @media screen and (max-width: $mobile-small) {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        display: flex;
       }
 
-      .phone, .white-sign {
-        position: relative;
+      .white-sign, .more, .logo {
+        position: absolute;
       }
 
       .phone {
+        position: relative;
         z-index: 1;
-        width: 9rem;
+        width: 15rem;
+        @media screen and (max-width: $tablet-medium) {
+          width: 10rem;
+        }
       }
 
       .more {
         z-index: 2;
-        position: absolute;
-        margin-top: 16rem;
-
-        @media screen and (min-width: $laptop-large) {
-          margin-top: 20%;
-        }
-        @media screen and (max-width: $tablet-medium) {
-          margin-top: 53%;
-        }
       }
 
       .white-sign {
-        top: 1rem;
         width: 20rem;
       }
 
       .logo {
-        position: absolute;
-        width: 11rem;
-
-        @media screen and (max-width: $tablet-medium) {
-          margin-top: 35%;
-          width: 30%;
-        }
+        width: 8rem;
+        height: 4rem;
+        z-index: 1;
       }
 
       &:first-child {
         .white-sign {
-          left: -23%;
-
+          left: 4rem;
+          top: 17rem;
           @media screen and (max-width: $tablet-medium) {
-            left: -23%;
+            left: 3rem;
+            top: 5rem;
+          }
+        }
+
+        .phone {
+          left: -4rem;
+          @media screen and (max-width: $tablet-medium) {
+            left: 0rem;
           }
         }
 
         .more{
-          margin-left: -3rem;
+          left: 8rem;
+          top: 25rem;
+
           @media screen and (max-width: $tablet-medium) {
-            margin-left: -9%;
+            top: 13rem;
           }
         }
 
         .logo{
-          margin: -9rem 0 0 9rem;
+          top: 21rem;
+          left: 12rem;
 
           @media screen and (max-width: $tablet-medium) {
-            margin-left: -67%;
+            top: 9rem;
+            left: 11rem;
           }
         }
       }
 
       &:last-child {
         .white-sign {
-          left: 3rem;
+          top: 17rem;
+          left: -3rem;
+          @media screen and (max-width: $tablet-medium) {
+            top: 1rem;
+            left: -2rem;
+          }
         }
 
         .more{
-          margin-left: -3rem;
+          top: 25rem;
+          left: 12rem;
+          @media screen and (max-width: $tablet-medium) {
+            top: 9rem;
+            left: 12rem;
+          }
         }
 
         .logo{
-          margin: 11rem 0 0 9rem;
-          z-index: 1;
+          top: 21rem;
+          left: 5rem;
           @media screen and (max-width: $tablet-medium) {
-            margin-left: 38%;
+            top: 5rem;
+            left: 5rem;
+          }
+        }
+
+        .phone {
+          left: 14rem;
+          @media screen and (max-width: $tablet-medium) {
+            left: 15rem;
+            top: -4rem;
           }
         }
       }
