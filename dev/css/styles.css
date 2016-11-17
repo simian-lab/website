@@ -157,7 +157,8 @@ header .desktop {
     left: 23%;
     position: absolute;
     top: 2.5rem;
-    width: 60%; }
+    width: 60%;
+    text-align: center; }
     @media screen and (max-width: 75em) {
       header .desktop nav {
         display: none; } }
@@ -169,6 +170,7 @@ header .desktop {
           color: #FFFFFF;
           font-family: "quicksandlight";
           font-size: 0.75rem;
+          font-weight: 700;
           line-height: 1.2rem;
           text-decoration: none;
           text-align: center;
@@ -225,6 +227,7 @@ header .movile nav {
   justify-content: center;
   align-content: center;
   margin-top: -2rem;
+  text-align: center;
   z-index: 11; }
   header .movile nav ul {
     display: flex;
@@ -238,6 +241,7 @@ header .movile nav {
         color: #FFFFFF;
         font-family: "quicksandlight";
         font-size: 0.75rem;
+        font-weight: 700;
         line-height: 1.2rem;
         text-decoration: none;
         text-align: center;
