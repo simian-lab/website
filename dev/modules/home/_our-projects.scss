@@ -49,6 +49,15 @@
         width: 30rem;
       }
 
+      @media screen and (max-width: $mobile-large) {
+        background-size: 20rem;
+        background-position: -1rem -1rem;
+        padding: 3rem 0 0 0.5rem;
+        height: 21rem;
+        width: 21rem;
+        margin-top: -8rem;
+      }
+
       h1, p {
         text-align: center;
       }
@@ -61,10 +70,6 @@
           }
 
           @media screen and (max-width: $mobile-large) {
-            font-size: 1.5rem;
-          }
-
-          @media screen and (max-width: $mobile-small) {
             font-size: 1.3rem;
           }
 
@@ -76,14 +81,6 @@
             }
 
             @media screen and (max-width: $mobile-large) {
-              font-size: 3rem;
-            }
-
-            @media screen and (max-width: $mobile-medium) {
-              font-size: 2.5rem;
-            }
-
-            @media screen and (max-width: $mobile-small) {
               font-size: 2.3rem;
             }
           }
@@ -98,14 +95,6 @@
           }
 
           @media screen and (max-width: $mobile-large) {
-            font-size: 5.5rem;
-          }
-
-          @media screen and (max-width: $mobile-medium) {
-            font-size: 5rem;
-          }
-
-          @media screen and (max-width: $mobile-small) {
             font-size: 4.3rem;
           }
         }
@@ -123,6 +112,11 @@
         margin: 0 auto;
         text-align: center;
         width: 20rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        width: 18rem;
+        margin-top: -6rem;
       }
 
       h2, p {
@@ -150,6 +144,10 @@
 
   .slider-container {
     position: relative;
+
+    @media screen and (max-width: $tablet-medium) {
+      margin-top: 2rem;
+    }
 
     .swiper-button-prev,
     .swiper-button-next {
@@ -241,6 +239,21 @@
               width: 5.813rem;
             }
 
+
+              .after {
+                position: absolute;
+                font-size: 2rem;
+                bottom: 19.2rem;
+                left: 12rem;
+              }
+
+              .before {
+                position: absolute;
+                left: -13rem;
+                top: 31.8rem;
+                font-size: 2rem;
+              }
+
             p {
               margin: 0.5rem 0;
             }
@@ -249,8 +262,8 @@
               color: $gray;
               font-family: $quicksand_light;
               font-size: 1.5rem;
-              margin-bottom: 2rem;
-              padding: 0 1rem;
+              margin-bottom: 1rem;
+              padding: 1rem 1rem;
             }
 
             .author, .project-country .project {

@@ -472,7 +472,8 @@ footer .footer-end {
         width: 30rem; } }
     @media screen and (max-width: 30rem) {
       #home .hero .title p {
-        font-size: 2rem; } }
+        font-size: 2rem;
+        width: 15rem; } }
 
 #home .hero .simian-tools {
   background-image: url("../img/home/circulos_mico_hero.svg");
@@ -496,10 +497,9 @@ footer .footer-end {
   @media screen and (max-width: 30rem) {
     #home .hero .simian-tools {
       background: none;
-      margin-left: 10%;
-      width: 90%;
-      padding: inherit;
-      padding-top: 2rem; } }
+      height: 17rem;
+      width: 21rem;
+      padding: 0; } }
   #home .hero .simian-tools .simian {
     margin: -7rem 0 0 11rem; }
     @media screen and (max-width: 64rem) {
@@ -536,6 +536,10 @@ footer .footer-end {
       #home .hero .simian-tools .tools .idea {
         left: 11rem;
         top: -1rem; } }
+    @media screen and (max-width: 30rem) {
+      #home .hero .simian-tools .tools .idea {
+        left: 1rem;
+        top: 0rem; } }
   #home .hero .simian-tools .tools .development {
     left: 2rem;
     top: 11rem; }
@@ -546,6 +550,10 @@ footer .footer-end {
     @media screen and (max-width: 45rem) {
       #home .hero .simian-tools .tools .development {
         left: 3rem; } }
+    @media screen and (max-width: 30rem) {
+      #home .hero .simian-tools .tools .development {
+        top: 6rem;
+        left: -4rem; } }
   #home .hero .simian-tools .tools .design {
     top: 20rem;
     right: -1rem; }
@@ -557,6 +565,10 @@ footer .footer-end {
       #home .hero .simian-tools .tools .design {
         left: 22rem;
         top: 11rem; } }
+    @media screen and (max-width: 30rem) {
+      #home .hero .simian-tools .tools .design {
+        left: 12rem;
+        top: -7rem; } }
   #home .hero .simian-tools .tools .banano {
     bottom: 2rem;
     left: 8rem; }
@@ -568,6 +580,10 @@ footer .footer-end {
       #home .hero .simian-tools .tools .banano {
         bottom: 5rem;
         left: 5rem; } }
+    @media screen and (max-width: 30rem) {
+      #home .hero .simian-tools .tools .banano {
+        top: -7rem;
+        left: -1rem; } }
   #home .hero .simian-tools .tools .support {
     right: 13rem;
     bottom: -2rem; }
@@ -579,11 +595,10 @@ footer .footer-end {
       #home .hero .simian-tools .tools .support {
         right: 7rem;
         bottom: 3rem; } }
-  @media screen and (max-width: 30rem) {
-    #home .hero .simian-tools .tools .idea, #home .hero .simian-tools .tools .development, #home .hero .simian-tools .tools .design, #home .hero .simian-tools .tools .banano, #home .hero .simian-tools .tools .support {
-      bottom: 0;
-      left: 0;
-      top: 0; } }
+    @media screen and (max-width: 30rem) {
+      #home .hero .simian-tools .tools .support {
+        left: 10rem;
+        top: -8rem; } }
 
 #home .our-projects {
   background-image: url("../img/footer/footer-bg-red.svg");
@@ -628,6 +643,14 @@ footer .footer-end {
           padding: 5rem 0 0 0.5rem;
           height: 21rem;
           width: 30rem; } }
+      @media screen and (max-width: 30rem) {
+        #home .our-projects .intro .title-container {
+          background-size: 20rem;
+          background-position: -1rem -1rem;
+          padding: 3rem 0 0 0.5rem;
+          height: 21rem;
+          width: 21rem;
+          margin-top: -8rem; } }
       #home .our-projects .intro .title-container h1, #home .our-projects .intro .title-container p {
         text-align: center; }
       #home .our-projects .intro .title-container p {
@@ -637,9 +660,6 @@ footer .footer-end {
             font-size: 2rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-projects .intro .title-container p {
-            font-size: 1.5rem; } }
-        @media screen and (max-width: 22.5rem) {
-          #home .our-projects .intro .title-container p {
             font-size: 1.3rem; } }
         #home .our-projects .intro .title-container p:nth-child(2) {
           font-size: 5rem; }
@@ -647,12 +667,6 @@ footer .footer-end {
             #home .our-projects .intro .title-container p:nth-child(2) {
               font-size: 3.5rem; } }
           @media screen and (max-width: 30rem) {
-            #home .our-projects .intro .title-container p:nth-child(2) {
-              font-size: 3rem; } }
-          @media screen and (max-width: 25rem) {
-            #home .our-projects .intro .title-container p:nth-child(2) {
-              font-size: 2.5rem; } }
-          @media screen and (max-width: 22.5rem) {
             #home .our-projects .intro .title-container p:nth-child(2) {
               font-size: 2.3rem; } }
       #home .our-projects .intro .title-container h1 {
@@ -662,12 +676,6 @@ footer .footer-end {
           #home .our-projects .intro .title-container h1 {
             font-size: 6rem; } }
         @media screen and (max-width: 30rem) {
-          #home .our-projects .intro .title-container h1 {
-            font-size: 5.5rem; } }
-        @media screen and (max-width: 25rem) {
-          #home .our-projects .intro .title-container h1 {
-            font-size: 5rem; } }
-        @media screen and (max-width: 22.5rem) {
           #home .our-projects .intro .title-container h1 {
             font-size: 4.3rem; } }
     #home .our-projects .intro .text {
@@ -680,6 +688,10 @@ footer .footer-end {
           margin: 0 auto;
           text-align: center;
           width: 20rem; } }
+      @media screen and (max-width: 30rem) {
+        #home .our-projects .intro .text {
+          width: 18rem;
+          margin-top: -6rem; } }
       #home .our-projects .intro .text h2, #home .our-projects .intro .text p {
         font-size: 1.3rem;
         font-family: "quicksandregular"; }
@@ -691,6 +703,9 @@ footer .footer-end {
         font-weight: bold; }
   #home .our-projects .slider-container {
     position: relative; }
+    @media screen and (max-width: 45rem) {
+      #home .our-projects .slider-container {
+        margin-top: 2rem; } }
     #home .our-projects .slider-container .swiper-button-prev,
     #home .our-projects .slider-container .swiper-button-next {
       background-image: url("../img/home/yellow-arrow.svg");
@@ -754,14 +769,24 @@ footer .footer-end {
           display: block;
           margin: 0 auto;
           width: 5.813rem; }
+        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .after {
+          position: absolute;
+          font-size: 2rem;
+          bottom: 19.2rem;
+          left: 12rem; }
+        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .before {
+          position: absolute;
+          left: -13rem;
+          top: 31.8rem;
+          font-size: 2rem; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote p {
           margin: 0.5rem 0; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .text {
           color: #50514F;
           font-family: "quicksandlight";
           font-size: 1.5rem;
-          margin-bottom: 2rem;
-          padding: 0 1rem; }
+          margin-bottom: 1rem;
+          padding: 1rem 1rem; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .author, #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .project-country .project {
           color: #FF5E5B; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .author {
@@ -779,15 +804,6 @@ footer .footer-end {
   background-repeat: no-repeat;
   background-size: 103%;
   padding: 2rem 0; }
-  @media screen and (max-width: 30rem) {
-    #home .our-stuff {
-      height: 56rem; } }
-  @media screen and (max-width: 25rem) {
-    #home .our-stuff {
-      height: 48rem; } }
-  @media screen and (max-width: 22.5rem) {
-    #home .our-stuff {
-      height: 45rem; } }
   #home .our-stuff .title {
     background-image: url("../img/home/our-stuff-title.svg");
     background-repeat: no-repeat;
@@ -800,15 +816,17 @@ footer .footer-end {
       #home .our-stuff .title {
         width: 24rem;
         padding: 2rem 0 0 7rem; } }
+    @media screen and (max-width: 30rem) {
+      #home .our-stuff .title {
+        width: 14rem;
+        padding: 1rem 0 0 4rem;
+        margin-top: -3rem; } }
     #home .our-stuff .title p {
       font-size: 4rem; }
       @media screen and (max-width: 45rem) {
         #home .our-stuff .title p {
           font-size: 3rem; } }
       @media screen and (max-width: 30rem) {
-        #home .our-stuff .title p {
-          font-size: 2.3rem; } }
-      @media screen and (max-width: 22.5rem) {
         #home .our-stuff .title p {
           font-size: 2rem; } }
     #home .our-stuff .title h1 {
@@ -819,12 +837,6 @@ footer .footer-end {
           font-size: 7rem; } }
       @media screen and (max-width: 30rem) {
         #home .our-stuff .title h1 {
-          font-size: 5.3rem; } }
-      @media screen and (max-width: 25rem) {
-        #home .our-stuff .title h1 {
-          font-size: 4.3rem; } }
-      @media screen and (max-width: 22.5rem) {
-        #home .our-stuff .title h1 {
           font-size: 4rem; } }
   #home .our-stuff .projects {
     display: flex;
@@ -834,16 +846,15 @@ footer .footer-end {
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap; } }
+    @media screen and (max-width: 30rem) {
+      #home .our-stuff .projects {
+        margin-top: -8rem; } }
     #home .our-stuff .projects .project {
       position: relative;
       width: 25rem; }
-      @media screen and (max-width: 22.5rem) {
+      @media screen and (max-width: 30rem) {
         #home .our-stuff .projects .project {
-          align-items: center;
-          flex-direction: column;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          display: flex; } }
+          width: 21rem; } }
       #home .our-stuff .projects .project .white-sign, #home .our-stuff .projects .project .more, #home .our-stuff .projects .project .logo {
         position: absolute; }
       #home .our-stuff .projects .project .phone {
@@ -853,14 +864,27 @@ footer .footer-end {
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project .phone {
             width: 10rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .our-stuff .projects .project .phone {
+            width: 8rem; } }
       #home .our-stuff .projects .project .more {
         z-index: 2; }
+        @media screen and (max-width: 30rem) {
+          #home .our-stuff .projects .project .more {
+            width: 4rem; } }
       #home .our-stuff .projects .project .white-sign {
         width: 20rem; }
+        @media screen and (max-width: 30rem) {
+          #home .our-stuff .projects .project .white-sign {
+            width: 16rem; } }
       #home .our-stuff .projects .project .logo {
         width: 8rem;
         height: 4rem;
         z-index: 1; }
+        @media screen and (max-width: 30rem) {
+          #home .our-stuff .projects .project .logo {
+            width: 7rem;
+            height: 3rem; } }
       #home .our-stuff .projects .project:first-child .white-sign {
         left: 4rem;
         top: 17rem; }
@@ -868,17 +892,28 @@ footer .footer-end {
           #home .our-stuff .projects .project:first-child .white-sign {
             left: 3rem;
             top: 5rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .our-stuff .projects .project:first-child .white-sign {
+            left: 5rem;
+            top: 4rem; } }
       #home .our-stuff .projects .project:first-child .phone {
         left: -4rem; }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:first-child .phone {
             left: 0rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .our-stuff .projects .project:first-child .phone {
+            left: 3rem; } }
       #home .our-stuff .projects .project:first-child .more {
         left: 8rem;
         top: 25rem; }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:first-child .more {
             top: 13rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .our-stuff .projects .project:first-child .more {
+            top: 10rem;
+            left: 9rem; } }
       #home .our-stuff .projects .project:first-child .logo {
         top: 21rem;
         left: 12rem; }
@@ -886,6 +921,10 @@ footer .footer-end {
           #home .our-stuff .projects .project:first-child .logo {
             top: 9rem;
             left: 11rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .our-stuff .projects .project:first-child .logo {
+            top: 7.5rem;
+            left: 12rem; } }
       #home .our-stuff .projects .project:last-child .white-sign {
         top: 17rem;
         left: -3rem; }
@@ -893,6 +932,10 @@ footer .footer-end {
           #home .our-stuff .projects .project:last-child .white-sign {
             top: 1rem;
             left: -2rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .our-stuff .projects .project:last-child .white-sign {
+            top: 2rem;
+            left: -1rem; } }
       #home .our-stuff .projects .project:last-child .more {
         top: 25rem;
         left: 12rem; }
@@ -900,6 +943,10 @@ footer .footer-end {
           #home .our-stuff .projects .project:last-child .more {
             top: 9rem;
             left: 12rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .our-stuff .projects .project:last-child .more {
+            top: 8rem;
+            left: 11rem; } }
       #home .our-stuff .projects .project:last-child .logo {
         top: 21rem;
         left: 5rem; }
@@ -907,12 +954,20 @@ footer .footer-end {
           #home .our-stuff .projects .project:last-child .logo {
             top: 5rem;
             left: 5rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .our-stuff .projects .project:last-child .logo {
+            top: 5.5rem;
+            left: 5rem; } }
       #home .our-stuff .projects .project:last-child .phone {
         left: 14rem; }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:last-child .phone {
             left: 15rem;
             top: -4rem; } }
+        @media screen and (max-width: 30rem) {
+          #home .our-stuff .projects .project:last-child .phone {
+            left: 13rem;
+            top: -2rem; } }
 
 #home .clients-container {
   margin-top: 8rem; }
@@ -934,7 +989,8 @@ footer .footer-end {
           width: 7rem; } }
       @media screen and (max-width: 30rem) {
         #home .clients-container .header-clients-container .line-left {
-          left: 8%; } }
+          margin: 3rem 0 0 0rem;
+          width: 5rem; } }
     #home .clients-container .header-clients-container .title-clients h1 {
       color: #00A1C1;
       font-size: 14rem;
@@ -949,7 +1005,8 @@ footer .footer-end {
           margin: 0 0 0 -3.5rem; } }
       @media screen and (max-width: 30rem) {
         #home .clients-container .header-clients-container .title-clients h1 {
-          font-size: 5.5rem; } }
+          font-size: 5.5rem;
+          margin: 0 0 0 -3rem; } }
     #home .clients-container .header-clients-container .title-clients .container {
       display: flex; }
       #home .clients-container .header-clients-container .title-clients .container h2 {
@@ -968,8 +1025,8 @@ footer .footer-end {
             width: 9rem; } }
         @media screen and (max-width: 30rem) {
           #home .clients-container .header-clients-container .title-clients .container h2 {
-            font-size: 2.5rem;
-            margin-left: 12%; } }
+            font-size: 2.3rem;
+            width: 7rem; } }
       #home .clients-container .header-clients-container .title-clients .container p {
         font-size: 3.5rem;
         margin-top: 2rem;
@@ -986,9 +1043,9 @@ footer .footer-end {
             width: 10rem; } }
         @media screen and (max-width: 30rem) {
           #home .clients-container .header-clients-container .title-clients .container p {
-            font-size: 1.3rem;
-            margin-left: 78%;
-            width: 77%; } }
+            font-size: 1.2rem;
+            margin: 2rem 0 0 -0.5rem;
+            width: 8rem; } }
     #home .clients-container .header-clients-container .heart {
       margin: -11rem 0 0 -16rem; }
       @media screen and (max-width: 64rem) {
@@ -1001,9 +1058,8 @@ footer .footer-end {
           margin: -8rem 0 0 -6rem; } }
       @media screen and (max-width: 30rem) {
         #home .clients-container .header-clients-container .heart {
-          left: 0%;
-          top: -4rem;
-          width: 24%; } }
+          width: 6rem;
+          margin: -6rem 0 0 -5rem; } }
     #home .clients-container .header-clients-container .line {
       margin: 4rem 0 0 -4.2rem; }
       @media screen and (max-width: 64rem) {
@@ -1016,9 +1072,8 @@ footer .footer-end {
           width: 3rem; } }
       @media screen and (max-width: 30rem) {
         #home .clients-container .header-clients-container .line {
-          left: -1rem;
-          top: 0rem;
-          width: 8%; } }
+          margin: 1rem 0 0 -1.7rem;
+          width: 2.5rem; } }
   #home .clients-container .see-more {
     position: relative; }
     #home .clients-container .see-more::before, #home .clients-container .see-more::after {
@@ -1057,16 +1112,14 @@ footer .footer-end {
       margin-top: 12rem; } }
   @media screen and (max-width: 30rem) {
     #home .we-are {
-      background-size: 157%;
-      background-position-x: center;
-      margin-top: 10rem; } }
+      margin-top: 8rem; } }
   #home .we-are .title {
     align-items: center;
     display: flex;
     justify-content: center;
     left: -7rem;
     position: relative;
-    top: -14rem; }
+    top: -16rem; }
     @media screen and (max-width: 64rem) {
       #home .we-are .title {
         left: -5rem;
@@ -1076,9 +1129,7 @@ footer .footer-end {
         top: -19rem; } }
     @media screen and (max-width: 30rem) {
       #home .we-are .title {
-        margin-top: -5rem;
-        margin-left: 0rem;
-        top: inherit; } }
+        top: -20rem; } }
     #home .we-are .title .box-flex {
       display: flex;
       flex-wrap: wrap;
@@ -1094,7 +1145,7 @@ footer .footer-end {
             font-size: 6rem; } }
         @media screen and (max-width: 30rem) {
           #home .we-are .title .box-flex h1 {
-            font-size: 5rem; } }
+            font-size: 4rem; } }
       #home .we-are .title .box-flex p {
         font-size: 5rem;
         text-align: center; }
@@ -1106,13 +1157,18 @@ footer .footer-end {
             font-size: 3rem; } }
         @media screen and (max-width: 30rem) {
           #home .we-are .title .box-flex p {
-            font-size: 3rem; } }
+            font-size: 2rem; } }
     #home .we-are .title img {
-      margin: 2rem 0 0 8rem; }
+      margin: 7rem 0 0 2rem;
+      width: 19rem; }
       @media screen and (max-width: 64rem) {
         #home .we-are .title img {
           margin: 7rem 0 0 1rem;
           width: 12rem; } }
+      @media screen and (max-width: 30rem) {
+        #home .we-are .title img {
+          margin: 4rem 0 0 1rem;
+          width: 7rem; } }
     #home .we-are .title::after, #home .we-are .title::before {
       background-image: url("../img/home/question-mark.svg");
       background-repeat: no-repeat;
@@ -1128,23 +1184,22 @@ footer .footer-end {
           width: 5rem; } }
       @media screen and (max-width: 30rem) {
         #home .we-are .title::after, #home .we-are .title::before {
-          top: -11rem;
           width: 4rem; } }
     #home .we-are .title::before {
       -webkit-transform: rotate(155deg);
       -moz-transform: rotate(155deg);
       -ms-transform: rotate(155deg);
       -o-transform: rotate(155deg);
-      transform: rotate(155deg); }
+      transform: rotate(155deg);
+      margin: 4rem -1rem 0 0rem; }
       @media screen and (max-width: 45rem) {
         #home .we-are .title::before {
           margin: -5rem 0 0 0; } }
       @media screen and (max-width: 30rem) {
         #home .we-are .title::before {
-          left: -6rem;
-          top: -11rem; } }
+          margin: -10rem 2rem 0 3rem; } }
     #home .we-are .title::after {
-      margin-left: -29rem; }
+      margin-left: -22rem; }
       @media screen and (max-width: 64rem) {
         #home .we-are .title::after {
           margin: 6rem 0 0 -15rem; } }
@@ -1153,8 +1208,7 @@ footer .footer-end {
           margin: 9rem 0 0 -14rem; } }
       @media screen and (max-width: 30rem) {
         #home .we-are .title::after {
-          right: -4rem;
-          top: -1rem; } }
+          margin: 13rem 0 0 -9rem; } }
   #home .we-are .monkeys {
     margin: 0 auto;
     margin-top: -11rem;
@@ -1167,7 +1221,7 @@ footer .footer-end {
         margin-top: -26rem; } }
     @media screen and (max-width: 30rem) {
       #home .we-are .monkeys {
-        margin-top: 3rem; } }
+        margin-top: -31rem; } }
     #home .we-are .monkeys .monkey .image-container {
       position: relative; }
       #home .we-are .monkeys .monkey .image-container img {
@@ -1227,12 +1281,16 @@ footer .footer-end {
   height: 41rem;
   justify-content: space-between;
   position: relative; }
+  @media screen and (max-width: 64rem) {
+    #home .find-us {
+      height: 28rem; } }
   @media screen and (max-width: 45rem) {
     #home .find-us {
       background-position-y: 16rem;
       align-items: center;
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      height: 41rem; } }
   #home .find-us p {
     font-size: 2rem; }
     @media screen and (max-width: 64rem) {
@@ -1241,9 +1299,6 @@ footer .footer-end {
     @media screen and (max-width: 45rem) {
       #home .find-us p {
         font-size: 1.3rem; } }
-    @media screen and (max-width: 30rem) {
-      #home .find-us p {
-        font-size: 1.4rem; } }
   #home .find-us .sign {
     background-image: url("../img/home/find-us-sign.svg");
     background-repeat: no-repeat;
@@ -1259,10 +1314,8 @@ footer .footer-end {
       #home .find-us .sign {
         width: 17rem;
         margin: auto;
-        padding: 3rem 0 0 4.5rem; } }
-    @media screen and (max-width: 30rem) {
-      #home .find-us .sign {
-        margin-top: 5rem; } }
+        padding: 3rem 0 0 4.5rem;
+        z-index: -1; } }
     #home .find-us .sign h1 {
       color: #DED96B;
       font-size: 8rem; }
@@ -1272,9 +1325,6 @@ footer .footer-end {
       @media screen and (max-width: 45rem) {
         #home .find-us .sign h1 {
           font-size: 5rem; } }
-      @media screen and (max-width: 30rem) {
-        #home .find-us .sign h1 {
-          font-size: 5.5rem; } }
   #home .find-us .see-more {
     margin-top: 18rem;
     width: 21rem; }
@@ -1282,6 +1332,19 @@ footer .footer-end {
       #home .find-us .see-more {
         margin-top: 13rem;
         width: 18rem; } }
+    @media screen and (max-width: 45rem) {
+      #home .find-us .see-more {
+        position: relative;
+        top: 9rem; } }
+    @media screen and (max-width: 37.5rem) {
+      #home .find-us .see-more {
+        top: 5rem; } }
+    @media screen and (max-width: 30rem) {
+      #home .find-us .see-more {
+        top: 0rem; } }
+    @media screen and (max-width: 22.5rem) {
+      #home .find-us .see-more {
+        top: -3rem; } }
     #home .find-us .see-more p {
       text-align: center; }
     #home .find-us .see-more .button {
@@ -3946,3 +4009,19 @@ h1, p {
   height: 3.5rem;
   position: absolute;
   width: 3.5rem; }
+
+.bloque {
+  background-color: #00A1C1;
+  height: 14rem; }
+  @media screen and (min-width: 45.0625rem) {
+    .bloque {
+      display: none; } }
+  @media screen and (max-width: 45rem) {
+    .bloque {
+      margin-top: -6rem; } }
+  @media screen and (max-width: 37.5rem) {
+    .bloque {
+      margin-top: -10rem; } }
+  @media screen and (max-width: 30rem) {
+    .bloque {
+      margin-top: -15rem; } }

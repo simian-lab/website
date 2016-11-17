@@ -9,9 +9,7 @@
   }
 
   @media screen and (max-width: $mobile-large) {
-    background-size: 157%;
-    background-position-x: center;
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
 
   .title {
@@ -20,7 +18,7 @@
     justify-content: center;
     left: -7rem;
     position: relative;
-    top: -14rem;
+    top: -16rem;
 
     @media screen and (max-width: $laptop-small) {
       left: -5rem;
@@ -32,9 +30,7 @@
     }
 
     @media screen and (max-width: $mobile-large) {
-      margin-top: -5rem;
-      margin-left: 0rem;
-      top: inherit;
+       top: -20rem;
     }
 
     .box-flex {
@@ -54,7 +50,7 @@
         }
 
         @media screen and (max-width: $mobile-large) {
-          font-size: 5rem;
+          font-size: 4rem;
         }
       }
 
@@ -71,17 +67,23 @@
         }
 
         @media screen and (max-width: $mobile-large) {
-          font-size: 3rem;
+          font-size: 2rem;
         }
       }
     }
 
     img {
-      margin: 2rem 0 0 8rem;
+      margin: 7rem 0 0 2rem;
+      width: 19rem;
 
       @media screen and (max-width: $laptop-small) {
         margin: 7rem 0 0 1rem;
         width: 12rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        margin: 4rem 0 0 1rem;
+        width: 7rem;
       }
     }
 
@@ -102,26 +104,25 @@
       }
 
       @media screen and (max-width: $mobile-large) {
-        top: -11rem;
-        width: 4rem;
+         width: 4rem;
       }
     }
 
     &::before {
       @include transform(rotate(155deg));
+      margin: 4rem -1rem 0 0rem;
 
       @media screen and (max-width: $tablet-medium) {
         margin: -5rem 0 0 0;
       }
 
       @media screen and (max-width: $mobile-large) {
-        left: -6rem;
-        top: -11rem;
+        margin: -10rem 2rem 0 3rem;
       }
     }
 
     &::after {
-      margin-left: -29rem;
+      margin-left: -22rem;
 
       @media screen and (max-width: $laptop-small) {
         margin: 6rem 0 0 -15rem;
@@ -132,8 +133,7 @@
       }
 
       @media screen and (max-width: $mobile-large) {
-        right: -4rem;
-        top: -1rem;
+        margin: 13rem 0 0 -9rem;
       }
     }
   }
@@ -152,7 +152,7 @@
     }
 
     @media screen and (max-width: $mobile-large) {
-      margin-top: 3rem;
+      margin-top: -31rem;
     }
 
     .monkey {
