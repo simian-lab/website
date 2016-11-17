@@ -18,7 +18,7 @@
     justify-content: center;
     left: -7rem;
     position: relative;
-    top: -14rem;
+    top: -16rem;
 
     @media screen and (max-width: $laptop-small) {
       left: -5rem;
@@ -73,7 +73,8 @@
     }
 
     img {
-      margin: 2rem 0 0 8rem;
+      margin: 7rem 0 0 2rem;
+      width: 19rem;
 
       @media screen and (max-width: $laptop-small) {
         margin: 7rem 0 0 1rem;
@@ -109,6 +110,7 @@
 
     &::before {
       @include transform(rotate(155deg));
+      margin: 4rem -1rem 0 0rem;
 
       @media screen and (max-width: $tablet-medium) {
         margin: -5rem 0 0 0;
@@ -120,7 +122,7 @@
     }
 
     &::after {
-      margin-left: -29rem;
+      margin-left: -22rem;
 
       @media screen and (max-width: $laptop-small) {
         margin: 6rem 0 0 -15rem;

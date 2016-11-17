@@ -769,14 +769,24 @@ footer .footer-end {
           display: block;
           margin: 0 auto;
           width: 5.813rem; }
+        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .after {
+          position: absolute;
+          font-size: 2rem;
+          bottom: 19.2rem;
+          left: 12rem; }
+        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .before {
+          position: absolute;
+          left: -13rem;
+          top: 31.8rem;
+          font-size: 2rem; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote p {
           margin: 0.5rem 0; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .text {
           color: #50514F;
           font-family: "quicksandlight";
           font-size: 1.5rem;
-          margin-bottom: 2rem;
-          padding: 0 1rem; }
+          margin-bottom: 1rem;
+          padding: 1rem 1rem; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .author, #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .project-country .project {
           color: #FF5E5B; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .author {
@@ -1109,7 +1119,7 @@ footer .footer-end {
     justify-content: center;
     left: -7rem;
     position: relative;
-    top: -14rem; }
+    top: -16rem; }
     @media screen and (max-width: 64rem) {
       #home .we-are .title {
         left: -5rem;
@@ -1149,7 +1159,8 @@ footer .footer-end {
           #home .we-are .title .box-flex p {
             font-size: 2rem; } }
     #home .we-are .title img {
-      margin: 2rem 0 0 8rem; }
+      margin: 7rem 0 0 2rem;
+      width: 19rem; }
       @media screen and (max-width: 64rem) {
         #home .we-are .title img {
           margin: 7rem 0 0 1rem;
@@ -1179,7 +1190,8 @@ footer .footer-end {
       -moz-transform: rotate(155deg);
       -ms-transform: rotate(155deg);
       -o-transform: rotate(155deg);
-      transform: rotate(155deg); }
+      transform: rotate(155deg);
+      margin: 4rem -1rem 0 0rem; }
       @media screen and (max-width: 45rem) {
         #home .we-are .title::before {
           margin: -5rem 0 0 0; } }
@@ -1187,7 +1199,7 @@ footer .footer-end {
         #home .we-are .title::before {
           margin: -10rem 2rem 0 3rem; } }
     #home .we-are .title::after {
-      margin-left: -29rem; }
+      margin-left: -22rem; }
       @media screen and (max-width: 64rem) {
         #home .we-are .title::after {
           margin: 6rem 0 0 -15rem; } }

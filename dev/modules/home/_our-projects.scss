@@ -239,6 +239,21 @@
               width: 5.813rem;
             }
 
+
+              .after {
+                position: absolute;
+                font-size: 2rem;
+                bottom: 19.2rem;
+                left: 12rem;
+              }
+
+              .before {
+                position: absolute;
+                left: -13rem;
+                top: 31.8rem;
+                font-size: 2rem;
+              }
+
             p {
               margin: 0.5rem 0;
             }
@@ -247,8 +262,8 @@
               color: $gray;
               font-family: $quicksand_light;
               font-size: 1.5rem;
-              margin-bottom: 2rem;
-              padding: 0 1rem;
+              margin-bottom: 1rem;
+              padding: 1rem 1rem;
             }
 
             .author, .project-country .project {
