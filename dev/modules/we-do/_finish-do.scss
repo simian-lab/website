@@ -6,249 +6,43 @@
     margin-top: -6rem;
   }
 
-  .icon-do {
-    margin-top: 8rem;
+  .develop-maintenance {
+    display: flex;
+    justify-content: center;
+
+    h1, p {
+      text-align: center;
+    }
+
+    h1 {
+      color: $green;
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 130%;
+      margin-top: 1rem;
+    }
+
+    .develop, .maintenance {
+      width: 28rem;
+    }
     .develop {
-      margin: 0 auto;
-      width: 64rem;
-
-      @media screen and (max-width: $laptop-small) {
-        width: inherit;
-      }
-      @media screen and (max-width: $mobile-large) {
-        margin-bottom: 12rem;
-      }
-      @media screen and (max-width: $mobile-medium) {
-        margin-bottom: 16.5rem;
-      }
-      @media screen and (max-width: $mobile-small) {
-        margin-bottom: 19.5rem;
-      }
-
+      position: relative;
+      top: 2rem;
+      left: -5.5rem;
       .icon {
-        margin-top: -9%;
 
-        @media screen and (max-width: $laptop-small) {
-          width: 34%;
-          margin-left: 3rem;
-        }
-        @media screen and (max-width: $mobile-large) {
-          width: 16rem;
-          margin-left: 20%;
-          margin-top: inherit;
-        }
-        @media screen and (max-width: $mobile-medium) {
-          margin-left: 14%;
-        }
-        @media screen and (max-width: $mobile-small) {
-          margin-left: 12%;
-        }
       }
     }
 
     .maintenance {
-      margin: 0 auto;
-      width: 0rem;
-      @media screen and (max-width: $laptop-small) {
-        width: inherit;
-        margin-top: 0%;
-      }
-      @media screen and (max-width: $mobile-large) {
-        margin-top: inherit;
-      }
+      position: relative;
+      left: 6rem;
+      top: 1.5rem;
+      .idea {
 
-      .icon {
-        margin-top: -29.6rem;
-        margin-left: 6rem;
-
-        @media screen and (max-width: $laptop-small) {
-          margin-top: -39%;
-          margin-left: 59%;
-          width: 34%;
-        }
-        @media screen and (max-width: $mobile-large) {
-          margin-top: inherit;
-          margin-left: 20%;
-          width: 16rem;
-        }
-        @media screen and (max-width: $mobile-medium) {
-          margin-left: 12%;
-        }
-        @media screen and (max-width: $mobile-small) {
-          margin-left: 12%;
-        }
-      }
-    }
-  }
-
-  .text-content {
-    margin: 0 auto;
-    width: 64rem;
-
-    @media screen and (max-width: $laptop-small) {
-      width: inherit;
-    }
-
-    .text-develop {
-      text-align: center;
-      width: 28rem;
-      margin-left: -2rem;
-
-      @media screen and (max-width: $laptop-small) {
-        width: 46%;
-        margin-left: 0;
-      }
-      @media screen and (max-width: $mobile-large) {
-        width: 17rem;
-        margin-top: -38rem;
-        margin-left: 17%;
-        margin-bottom: 54rem;
-      }
-      @media screen and (max-width: $mobile-medium) {
-        margin-left: 5%;
-        margin-top: -42rem;
-        margin-bottom: 54.5rem;
-      }
-      @media screen and (max-width: $mobile-small) {
-        margin-left: 13%;
-        margin-bottom: 27.5rem;
-        width: 14rem;
-        margin-top: -45.5rem;
-      }
-
-      h1 {
-        color: $red;
-        font-size: 4rem;
-        @media screen and (max-width: $laptop-small) {
-          font-size: 3rem;
-        }
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 2rem;
-        }
-        @media screen and (max-width: $mobile-large) {
-          font-size: 3rem;
-        }
-        @media screen and (max-width: $mobile-medium) {
-          width: 113%;
-        }
-      }
-
-      p {
-        margin-top: 1rem;
-        font-size: 1.3rem;
-        margin-left: 2rem;
-        width: 24rem;
-        line-height: 130%;
-        @media screen and (max-width: $laptop-small) {
-          margin-left: 12%;
-          width: 21rem;
-        }
-        @media screen and (max-width: $tablet-large) {
-          margin-left: 7%;
-          width: 19rem;
-        }
-        @media screen and (max-width: $tablet-medium) {
-          margin-left: 13%;
-          width: 15rem;
-        }
-        @media screen and (max-width: $tablet-small) {
-          width: 13rem;
-        }
-        @media screen and (max-width: $mobile-large) {
-          font-size: 1.3rem;
-          margin-top: 1rem;
-          margin-left: -14%;
-          width: 23rem;
-        }
-        @media screen and (max-width: $mobile-medium) {
-          margin-left: 0%;
-          width: 20rem;
-        }
-        @media screen and (max-width: $mobile-small) {
-          width: 17rem;
-          margin-top: 1rem;
-          margin-left: -5%;
-        }
-      }
-    }
-
-    .text-maintenance {
-      text-align: center;
-      width: 30rem;
-      margin-top: -20rem;
-      margin-left: 34rem;
-
-      @media screen and (max-width: $laptop-small) {
-        width: 31%;
-        margin-top: -21rem;
-        margin-left: 59%;
-      }
-      @media screen and (max-width: $tablet-large) {
-        margin-top: -26rem;
-      }
-      @media screen and (max-width: $tablet-medium) {
-        margin-top: -30rem;
-      }
-      @media screen and (max-width: $tablet-small) {
-        margin-top: -35rem;
-      }
-      @media screen and (max-width: $mobile-large) {
-        margin-left: 15%;
-        width: 17rem;
-      }
-      @media screen and (max-width: $mobile-medium) {
-        margin-left: 5%;
-      }
-      @media screen and (max-width: $mobile-small) {
-        width: 17rem;
-        margin-top: -8rem;
-        margin-left: 7%;
-      }
-
-      h1 {
-        color: $green;
-        font-size: 4rem;
-        width: 30rem;
-        @media screen and (max-width: $laptop-small) {
-          font-size: 3rem;
-          width: 114%;
-        }
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 2rem;
-        }
-        @media screen and (max-width: $mobile-large) {
-          font-size: 3rem;
-        }
-        @media screen and (max-width: $mobile-small) {
-          width: 113%;
-          margin-left: -1rem;
-        }
-      }
-
-      p {
-        margin-top: 1rem;
-        margin-left: 5rem;
-        font-size: 1.3rem;
-        width: 21rem;
-        line-height: 130%;
-        @media screen and (max-width: $laptop-small) {
-          margin-top: 1rem;
-          margin-left: 9%;
-          width: initial;
-        }
-        @media screen and (max-width: $mobile-large) {
-          font-size: 1.3rem;
-          margin-left: -11%;
-          width: 23rem;
-        }
-        @media screen and (max-width: $mobile-medium) {
-          margin-left:-1%;
-          width: 20rem;
-        }
-        @media screen and (max-width: $mobile-small) {
-          margin-left: 1%;
-          width: 17rem;
-        }
       }
     }
   }
@@ -312,6 +106,7 @@
 
   .text-finish {
     text-align: center;
+    margin-bottom: 4rem;
 
     h1{
       font-size: 4rem;
