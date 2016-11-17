@@ -2101,355 +2101,65 @@ footer .footer-end {
           position: relative;
           left: 2.5rem; } }
 
-#we-do .header-do .text-header {
-  text-align: center; }
-  #we-do .header-do .text-header p {
-    font-size: 5rem; }
-    @media screen and (max-width: 64rem) {
-      #we-do .header-do .text-header p {
-        font-size: 4rem; } }
-    @media screen and (max-width: 45rem) {
-      #we-do .header-do .text-header p {
-        font-size: 3rem; } }
-    @media screen and (max-width: 30rem) {
-      #we-do .header-do .text-header p {
-        font-size: 4rem; } }
-  #we-do .header-do .text-header h1 {
-    color: #1DC0B2;
-    font-size: 10rem; }
-    @media screen and (max-width: 64rem) {
-      #we-do .header-do .text-header h1 {
-        font-size: 7rem; } }
-    @media screen and (max-width: 45rem) {
-      #we-do .header-do .text-header h1 {
-        font-size: 5rem; } }
-    @media screen and (max-width: 30rem) {
-      #we-do .header-do .text-header h1 {
-        font-size: 7rem; } }
-
-#we-do .header-do .graph {
-  margin: 0 auto;
-  width: 42rem; }
-  @media screen and (max-width: 64rem) {
-    #we-do .header-do .graph {
-      width: 100%; } }
-  @media screen and (max-width: 30rem) {
-    #we-do .header-do .graph {
-      display: none; } }
-  #we-do .header-do .graph .line {
-    margin-top: -13rem; }
-    @media screen and (max-width: 64rem) {
-      #we-do .header-do .graph .line {
-        margin-top: -9.5rem;
-        margin-left: 20%;
-        width: 61%; } }
-    @media screen and (max-width: 45rem) {
-      #we-do .header-do .graph .line {
-        margin-top: -6.5rem; } }
-
-@media screen and (max-width: 30rem) {
-  #we-do .header-do .icon-do {
-    padding-top: 1rem; } }
-
-#we-do .header-do .icon-do .idea {
-  margin: 0 auto;
-  width: 64rem; }
-  @media screen and (max-width: 64rem) {
-    #we-do .header-do .icon-do .idea {
-      width: inherit; } }
-  @media screen and (max-width: 30rem) {
-    #we-do .header-do .icon-do .idea {
-      margin-bottom: 15rem; } }
-  @media screen and (max-width: 25rem) {
-    #we-do .header-do .icon-do .idea {
-      margin-bottom: 21rem; } }
-  @media screen and (max-width: 22.5rem) {
-    #we-do .header-do .icon-do .idea {
-      margin-bottom: 21rem; } }
-  #we-do .header-do .icon-do .idea .idea-icon {
-    margin-top: -9%; }
-    @media screen and (max-width: 64rem) {
-      #we-do .header-do .icon-do .idea .idea-icon {
-        margin-top: -7.5%;
-        width: 34%;
-        margin-left: 3rem; } }
-    @media screen and (max-width: 30rem) {
-      #we-do .header-do .icon-do .idea .idea-icon {
-        width: 16rem;
-        margin-left: 20%;
-        margin-top: inherit; } }
-    @media screen and (max-width: 25rem) {
-      #we-do .header-do .icon-do .idea .idea-icon {
-        margin-left: 17%; } }
-    @media screen and (max-width: 22.5rem) {
-      #we-do .header-do .icon-do .idea .idea-icon {
-        margin-left: 12%; } }
-
-#we-do .header-do .icon-do .banana {
-  margin: 0 auto;
-  width: 0rem;
-  margin-top: -2.2rem; }
-  @media screen and (max-width: 64rem) {
-    #we-do .header-do .icon-do .banana {
-      width: inherit;
-      margin-top: -1.8rem; } }
-  @media screen and (max-width: 45rem) {
-    #we-do .header-do .icon-do .banana {
-      margin-top: -4.2%; } }
-  @media screen and (max-width: 37.5rem) {
-    #we-do .header-do .icon-do .banana {
-      margin-top: -4.5%; } }
-  @media screen and (max-width: 30rem) {
-    #we-do .header-do .icon-do .banana {
-      margin-top: inherit; } }
-  #we-do .header-do .icon-do .banana .banana-icon {
-    margin-top: -28.6rem;
-    margin-left: 6rem; }
-    @media screen and (max-width: 64rem) {
-      #we-do .header-do .icon-do .banana .banana-icon {
-        margin-top: -38%;
-        margin-left: 61%;
-        width: 31.5%; } }
-    @media screen and (max-width: 30rem) {
-      #we-do .header-do .icon-do .banana .banana-icon {
-        margin-top: inherit;
-        margin-left: 20%;
-        width: 16rem; } }
-    @media screen and (max-width: 25rem) {
-      #we-do .header-do .icon-do .banana .banana-icon {
-        margin-left: 17%; } }
-    @media screen and (max-width: 22.5rem) {
-      #we-do .header-do .icon-do .banana .banana-icon {
-        margin-left: 12%; } }
-
-#we-do .header-do .text-content {
-  margin: 0 auto;
-  width: 65rem; }
-  @media screen and (max-width: 64rem) {
-    #we-do .header-do .text-content {
-      width: inherit; } }
-  #we-do .header-do .text-content .text-work {
-    text-align: center;
-    width: 28rem; }
-    @media screen and (max-width: 64rem) {
-      #we-do .header-do .text-content .text-work {
-        width: 46%; } }
-    @media screen and (max-width: 30rem) {
-      #we-do .header-do .text-content .text-work {
-        width: 17rem;
-        margin-top: -33rem;
-        margin-left: 17%;
-        margin-bottom: 44rem; } }
-    @media screen and (max-width: 25rem) {
-      #we-do .header-do .text-content .text-work {
-        margin-left: 8%;
-        margin-bottom: 44.5rem;
-        margin-top: -38.5rem; } }
-    @media screen and (max-width: 22.5rem) {
-      #we-do .header-do .text-content .text-work {
-        margin-left: 7%;
-        margin-bottom: 26rem;
-        width: 14rem;
-        margin-top: -38.5rem; } }
-    #we-do .header-do .text-content .text-work h1 {
-      color: #1DC0B2;
-      font-size: 4rem; }
-      @media screen and (max-width: 64rem) {
-        #we-do .header-do .text-content .text-work h1 {
-          font-size: 3rem; } }
-      @media screen and (max-width: 45rem) {
-        #we-do .header-do .text-content .text-work h1 {
-          font-size: 2rem; } }
-      @media screen and (max-width: 30rem) {
-        #we-do .header-do .text-content .text-work h1 {
-          font-size: 3rem; } }
-      @media screen and (max-width: 25rem) {
-        #we-do .header-do .text-content .text-work h1 {
-          width: 113%; } }
-      @media screen and (max-width: 22.5rem) {
-        #we-do .header-do .text-content .text-work h1 {
-          width: 124%; } }
-    #we-do .header-do .text-content .text-work p {
-      margin-top: 1rem;
-      font-size: 1.3rem;
-      margin-left: 2rem;
-      width: 24rem;
-      line-height: 130%; }
-      @media screen and (max-width: 64rem) {
-        #we-do .header-do .text-content .text-work p {
-          margin-top: 1rem;
-          margin-left: 9%;
-          width: 21rem; } }
-      @media screen and (max-width: 52.5rem) {
-        #we-do .header-do .text-content .text-work p {
-          width: 17rem;
-          margin-left: 13%; } }
-      @media screen and (max-width: 45rem) {
-        #we-do .header-do .text-content .text-work p {
-          width: 15rem;
-          margin-left: 12%; } }
-      @media screen and (max-width: 37.5rem) {
-        #we-do .header-do .text-content .text-work p {
-          width: 13rem;
-          margin-left: 11%; } }
-      @media screen and (max-width: 30rem) {
-        #we-do .header-do .text-content .text-work p {
-          margin-top: 1rem;
-          font-size: 1.3rem;
-          margin-left: -18%;
-          width: 23rem; } }
-      @media screen and (max-width: 25rem) {
-        #we-do .header-do .text-content .text-work p {
-          margin-left: 4%;
-          width: 18rem; } }
-      @media screen and (max-width: 22.5rem) {
-        #we-do .header-do .text-content .text-work p {
-          width: 17rem;
-          margin-top: 1rem;
-          margin-left: 1%; } }
-  #we-do .header-do .text-content .text-analize {
-    text-align: center;
-    width: 22rem;
-    margin-top: -17rem;
-    margin-left: 40rem; }
-    @media screen and (max-width: 64rem) {
-      #we-do .header-do .text-content .text-analize {
-        width: 31%;
-        margin-top: -17.5rem;
-        margin-left: 61%; } }
-    @media screen and (max-width: 52.5rem) {
-      #we-do .header-do .text-content .text-analize {
-        margin-top: -20.5rem; } }
-    @media screen and (max-width: 45rem) {
-      #we-do .header-do .text-content .text-analize {
-        margin-top: -24.5rem; } }
-    @media screen and (max-width: 37.5rem) {
-      #we-do .header-do .text-content .text-analize {
-        margin-top: -26.5rem; } }
-    @media screen and (max-width: 30rem) {
-      #we-do .header-do .text-content .text-analize {
-        margin-left: 17%;
-        width: 17rem; } }
-    @media screen and (max-width: 25rem) {
-      #we-do .header-do .text-content .text-analize {
-        margin-left: 9%; } }
-    @media screen and (max-width: 22.5rem) {
-      #we-do .header-do .text-content .text-analize {
-        width: 14rem;
-        margin-top: -8rem;
-        margin-left: 11%; } }
-    #we-do .header-do .text-content .text-analize h1 {
-      color: #00A1C1;
-      font-size: 4rem; }
-      @media screen and (max-width: 64rem) {
-        #we-do .header-do .text-content .text-analize h1 {
-          font-size: 3rem;
-          width: 104%; } }
-      @media screen and (max-width: 45rem) {
-        #we-do .header-do .text-content .text-analize h1 {
-          font-size: 2rem; } }
-      @media screen and (max-width: 30rem) {
-        #we-do .header-do .text-content .text-analize h1 {
-          font-size: 3rem;
-          width: 104%; } }
-      @media screen and (max-width: 25rem) {
-        #we-do .header-do .text-content .text-analize h1 {
-          width: 113%; } }
-    #we-do .header-do .text-content .text-analize p {
-      margin-top: 1rem;
-      font-size: 1.3rem;
-      width: 24rem;
-      margin-left: -1rem;
-      line-height: 130%; }
-      @media screen and (max-width: 64rem) {
-        #we-do .header-do .text-content .text-analize p {
-          margin-left: 0;
-          width: initial; } }
-      @media screen and (max-width: 30rem) {
-        #we-do .header-do .text-content .text-analize p {
-          font-size: 1.3rem;
-          margin-left: -21%;
-          width: 24rem; } }
-      @media screen and (max-width: 25rem) {
-        #we-do .header-do .text-content .text-analize p {
-          margin-left: 11%;
-          width: 16rem; } }
-      @media screen and (max-width: 22.5rem) {
-        #we-do .header-do .text-content .text-analize p {
-          margin-left: -5%;
-          width: 17rem; } }
-
-#we-do .design-do {
+#we-do .header-do {
   background-image: url("../img/we-do/fondo_que_hacemos-01.svg");
   background-repeat: no-repeat;
-  background-size: 103%;
-  margin-top: -13%; }
-  @media screen and (max-width: 30rem) {
-    #we-do .design-do {
-      margin-top: 10%; } }
-  #we-do .design-do .brush {
-    margin: 0 auto;
-    width: 25rem; }
-    @media screen and (max-width: 64rem) {
-      #we-do .design-do .brush {
-        width: inherit; } }
-    #we-do .design-do .brush .brush-icon {
-      margin-top: 36%; }
-      @media screen and (min-width: 100rem) {
-        #we-do .design-do .brush .brush-icon {
-          margin-top: 90%; } }
-      @media screen and (min-width: 90rem) and (max-width: 100rem) {
-        #we-do .design-do .brush .brush-icon {
-          margin-top: 60%; } }
+  background-position: 0rem 55rem;
+  background-size: contain; }
+  #we-do .header-do .text-header {
+    background-image: url("../img/we-do/lineas_texto_que_hacemos-01.svg");
+    background-position: center 2rem;
+    background-repeat: no-repeat;
+    height: 18rem;
+    text-align: center; }
+    #we-do .header-do .text-header p {
+      font-size: 5rem; }
       @media screen and (max-width: 64rem) {
-        #we-do .design-do .brush .brush-icon {
-          margin-top: 9%;
-          margin-left: 32%;
-          width: 34%; } }
+        #we-do .header-do .text-header p {
+          font-size: 4rem; } }
+      @media screen and (max-width: 45rem) {
+        #we-do .header-do .text-header p {
+          font-size: 3rem; } }
       @media screen and (max-width: 30rem) {
-        #we-do .design-do .brush .brush-icon {
-          margin-top: -3%;
-          margin-left: 20%;
-          width: 60%; } }
-  #we-do .design-do .text-design {
-    text-align: center;
-    margin: 0 auto;
-    width: 32rem; }
-    @media screen and (max-width: 30rem) {
-      #we-do .design-do .text-design {
-        width: 59%;
-        margin-top: 1rem; } }
-    #we-do .design-do .text-design h1 {
-      color: #DED96B;
-      font-size: 4rem; }
+        #we-do .header-do .text-header p {
+          font-size: 4rem; } }
+    #we-do .header-do .text-header h1 {
+      color: #1DC0B2;
+      font-size: 10rem; }
       @media screen and (max-width: 64rem) {
-        #we-do .design-do .text-design h1 {
-          font-size: 3rem; } }
+        #we-do .header-do .text-header h1 {
+          font-size: 7rem; } }
       @media screen and (max-width: 45rem) {
-        #we-do .design-do .text-design h1 {
-          font-size: 2rem; } }
+        #we-do .header-do .text-header h1 {
+          font-size: 5rem; } }
       @media screen and (max-width: 30rem) {
-        #we-do .design-do .text-design h1 {
-          font-size: 3rem; } }
-    #we-do .design-do .text-design p {
-      font-size: 1.3rem;
-      margin-top: 1rem;
-      width: 21rem;
-      margin-left: 5rem;
-      line-height: 130%; }
-      @media screen and (max-width: 45rem) {
-        #we-do .design-do .text-design p {
-          width: 15rem;
-          margin-left: 8rem; } }
-      @media screen and (max-width: 30rem) {
-        #we-do .design-do .text-design p {
-          width: 128%;
-          font-size: 1.3rem;
-          margin-left: -17%; } }
-      @media screen and (max-width: 25rem) {
-        #we-do .design-do .text-design p {
-          width: 119%;
-          margin-left: -9%; } }
+        #we-do .header-do .text-header h1 {
+          font-size: 7rem; } }
+  #we-do .header-do .work-analize {
+    display: flex;
+    justify-content: center; }
+    #we-do .header-do .work-analize .work, #we-do .header-do .work-analize .analize {
+      width: 28rem; }
+    #we-do .header-do .work-analize .work {
+      position: relative;
+      top: -3.5rem;
+      left: -5.5rem; }
+    #we-do .header-do .work-analize .analize {
+      position: relative;
+      left: 6rem;
+      top: -1rem; }
+  #we-do .header-do .work-analize h1, #we-do .header-do .work-analize p, #we-do .header-do .desing h1, #we-do .header-do .desing p {
+    text-align: center; }
+  #we-do .header-do .work-analize h1, #we-do .header-do .desing h1 {
+    color: #1DC0B2;
+    font-size: 4rem; }
+  #we-do .header-do .work-analize p, #we-do .header-do .desing p {
+    font-size: 1.3rem;
+    line-height: 130%;
+    margin-top: 1rem; }
+  #we-do .header-do .desing {
+    margin: 0 auto;
+    width: 24rem; }
 
 @media screen and (max-width: 45rem) {
   #we-do .finish-do {
@@ -2459,225 +2169,28 @@ footer .footer-end {
   #we-do .finish-do {
     margin-top: -6rem; } }
 
-#we-do .finish-do .icon-do {
-  margin-top: 8rem; }
-  #we-do .finish-do .icon-do .develop {
-    margin: 0 auto;
-    width: 64rem; }
-    @media screen and (max-width: 64rem) {
-      #we-do .finish-do .icon-do .develop {
-        width: inherit; } }
-    @media screen and (max-width: 30rem) {
-      #we-do .finish-do .icon-do .develop {
-        margin-bottom: 12rem; } }
-    @media screen and (max-width: 25rem) {
-      #we-do .finish-do .icon-do .develop {
-        margin-bottom: 16.5rem; } }
-    @media screen and (max-width: 22.5rem) {
-      #we-do .finish-do .icon-do .develop {
-        margin-bottom: 19.5rem; } }
-    #we-do .finish-do .icon-do .develop .icon {
-      margin-top: -9%; }
-      @media screen and (max-width: 64rem) {
-        #we-do .finish-do .icon-do .develop .icon {
-          width: 34%;
-          margin-left: 3rem; } }
-      @media screen and (max-width: 30rem) {
-        #we-do .finish-do .icon-do .develop .icon {
-          width: 16rem;
-          margin-left: 20%;
-          margin-top: inherit; } }
-      @media screen and (max-width: 25rem) {
-        #we-do .finish-do .icon-do .develop .icon {
-          margin-left: 14%; } }
-      @media screen and (max-width: 22.5rem) {
-        #we-do .finish-do .icon-do .develop .icon {
-          margin-left: 12%; } }
-  #we-do .finish-do .icon-do .maintenance {
-    margin: 0 auto;
-    width: 0rem; }
-    @media screen and (max-width: 64rem) {
-      #we-do .finish-do .icon-do .maintenance {
-        width: inherit;
-        margin-top: 0%; } }
-    @media screen and (max-width: 30rem) {
-      #we-do .finish-do .icon-do .maintenance {
-        margin-top: inherit; } }
-    #we-do .finish-do .icon-do .maintenance .icon {
-      margin-top: -29.6rem;
-      margin-left: 6rem; }
-      @media screen and (max-width: 64rem) {
-        #we-do .finish-do .icon-do .maintenance .icon {
-          margin-top: -39%;
-          margin-left: 59%;
-          width: 34%; } }
-      @media screen and (max-width: 30rem) {
-        #we-do .finish-do .icon-do .maintenance .icon {
-          margin-top: inherit;
-          margin-left: 20%;
-          width: 16rem; } }
-      @media screen and (max-width: 25rem) {
-        #we-do .finish-do .icon-do .maintenance .icon {
-          margin-left: 12%; } }
-      @media screen and (max-width: 22.5rem) {
-        #we-do .finish-do .icon-do .maintenance .icon {
-          margin-left: 12%; } }
-
-#we-do .finish-do .text-content {
-  margin: 0 auto;
-  width: 64rem; }
-  @media screen and (max-width: 64rem) {
-    #we-do .finish-do .text-content {
-      width: inherit; } }
-  #we-do .finish-do .text-content .text-develop {
-    text-align: center;
-    width: 28rem;
-    margin-left: -2rem; }
-    @media screen and (max-width: 64rem) {
-      #we-do .finish-do .text-content .text-develop {
-        width: 46%;
-        margin-left: 0; } }
-    @media screen and (max-width: 30rem) {
-      #we-do .finish-do .text-content .text-develop {
-        width: 17rem;
-        margin-top: -38rem;
-        margin-left: 17%;
-        margin-bottom: 54rem; } }
-    @media screen and (max-width: 25rem) {
-      #we-do .finish-do .text-content .text-develop {
-        margin-left: 5%;
-        margin-top: -42rem;
-        margin-bottom: 54.5rem; } }
-    @media screen and (max-width: 22.5rem) {
-      #we-do .finish-do .text-content .text-develop {
-        margin-left: 13%;
-        margin-bottom: 27.5rem;
-        width: 14rem;
-        margin-top: -45.5rem; } }
-    #we-do .finish-do .text-content .text-develop h1 {
-      color: #FF5E5B;
-      font-size: 4rem; }
-      @media screen and (max-width: 64rem) {
-        #we-do .finish-do .text-content .text-develop h1 {
-          font-size: 3rem; } }
-      @media screen and (max-width: 45rem) {
-        #we-do .finish-do .text-content .text-develop h1 {
-          font-size: 2rem; } }
-      @media screen and (max-width: 30rem) {
-        #we-do .finish-do .text-content .text-develop h1 {
-          font-size: 3rem; } }
-      @media screen and (max-width: 25rem) {
-        #we-do .finish-do .text-content .text-develop h1 {
-          width: 113%; } }
-    #we-do .finish-do .text-content .text-develop p {
-      margin-top: 1rem;
-      font-size: 1.3rem;
-      margin-left: 2rem;
-      width: 24rem;
-      line-height: 130%; }
-      @media screen and (max-width: 64rem) {
-        #we-do .finish-do .text-content .text-develop p {
-          margin-left: 12%;
-          width: 21rem; } }
-      @media screen and (max-width: 52.5rem) {
-        #we-do .finish-do .text-content .text-develop p {
-          margin-left: 7%;
-          width: 19rem; } }
-      @media screen and (max-width: 45rem) {
-        #we-do .finish-do .text-content .text-develop p {
-          margin-left: 13%;
-          width: 15rem; } }
-      @media screen and (max-width: 37.5rem) {
-        #we-do .finish-do .text-content .text-develop p {
-          width: 13rem; } }
-      @media screen and (max-width: 30rem) {
-        #we-do .finish-do .text-content .text-develop p {
-          font-size: 1.3rem;
-          margin-top: 1rem;
-          margin-left: -14%;
-          width: 23rem; } }
-      @media screen and (max-width: 25rem) {
-        #we-do .finish-do .text-content .text-develop p {
-          margin-left: 0%;
-          width: 20rem; } }
-      @media screen and (max-width: 22.5rem) {
-        #we-do .finish-do .text-content .text-develop p {
-          width: 17rem;
-          margin-top: 1rem;
-          margin-left: -5%; } }
-  #we-do .finish-do .text-content .text-maintenance {
-    text-align: center;
-    width: 30rem;
-    margin-top: -20rem;
-    margin-left: 34rem; }
-    @media screen and (max-width: 64rem) {
-      #we-do .finish-do .text-content .text-maintenance {
-        width: 31%;
-        margin-top: -21rem;
-        margin-left: 59%; } }
-    @media screen and (max-width: 52.5rem) {
-      #we-do .finish-do .text-content .text-maintenance {
-        margin-top: -26rem; } }
-    @media screen and (max-width: 45rem) {
-      #we-do .finish-do .text-content .text-maintenance {
-        margin-top: -30rem; } }
-    @media screen and (max-width: 37.5rem) {
-      #we-do .finish-do .text-content .text-maintenance {
-        margin-top: -35rem; } }
-    @media screen and (max-width: 30rem) {
-      #we-do .finish-do .text-content .text-maintenance {
-        margin-left: 15%;
-        width: 17rem; } }
-    @media screen and (max-width: 25rem) {
-      #we-do .finish-do .text-content .text-maintenance {
-        margin-left: 5%; } }
-    @media screen and (max-width: 22.5rem) {
-      #we-do .finish-do .text-content .text-maintenance {
-        width: 17rem;
-        margin-top: -8rem;
-        margin-left: 7%; } }
-    #we-do .finish-do .text-content .text-maintenance h1 {
-      color: #1DC0B2;
-      font-size: 4rem;
-      width: 30rem; }
-      @media screen and (max-width: 64rem) {
-        #we-do .finish-do .text-content .text-maintenance h1 {
-          font-size: 3rem;
-          width: 114%; } }
-      @media screen and (max-width: 45rem) {
-        #we-do .finish-do .text-content .text-maintenance h1 {
-          font-size: 2rem; } }
-      @media screen and (max-width: 30rem) {
-        #we-do .finish-do .text-content .text-maintenance h1 {
-          font-size: 3rem; } }
-      @media screen and (max-width: 22.5rem) {
-        #we-do .finish-do .text-content .text-maintenance h1 {
-          width: 113%;
-          margin-left: -1rem; } }
-    #we-do .finish-do .text-content .text-maintenance p {
-      margin-top: 1rem;
-      margin-left: 5rem;
-      font-size: 1.3rem;
-      width: 21rem;
-      line-height: 130%; }
-      @media screen and (max-width: 64rem) {
-        #we-do .finish-do .text-content .text-maintenance p {
-          margin-top: 1rem;
-          margin-left: 9%;
-          width: initial; } }
-      @media screen and (max-width: 30rem) {
-        #we-do .finish-do .text-content .text-maintenance p {
-          font-size: 1.3rem;
-          margin-left: -11%;
-          width: 23rem; } }
-      @media screen and (max-width: 25rem) {
-        #we-do .finish-do .text-content .text-maintenance p {
-          margin-left: -1%;
-          width: 20rem; } }
-      @media screen and (max-width: 22.5rem) {
-        #we-do .finish-do .text-content .text-maintenance p {
-          margin-left: 1%;
-          width: 17rem; } }
+#we-do .finish-do .develop-maintenance {
+  display: flex;
+  justify-content: center; }
+  #we-do .finish-do .develop-maintenance h1, #we-do .finish-do .develop-maintenance p {
+    text-align: center; }
+  #we-do .finish-do .develop-maintenance h1 {
+    color: #1DC0B2;
+    font-size: 4rem; }
+  #we-do .finish-do .develop-maintenance p {
+    font-size: 1.3rem;
+    line-height: 130%;
+    margin-top: 1rem; }
+  #we-do .finish-do .develop-maintenance .develop, #we-do .finish-do .develop-maintenance .maintenance {
+    width: 28rem; }
+  #we-do .finish-do .develop-maintenance .develop {
+    position: relative;
+    top: 2rem;
+    left: -5.5rem; }
+  #we-do .finish-do .develop-maintenance .maintenance {
+    position: relative;
+    left: 6rem;
+    top: 1.5rem; }
 
 #we-do .finish-do .icon-finish {
   margin: 0 auto;
@@ -2729,7 +2242,8 @@ footer .footer-end {
         margin-left: 18%; } }
 
 #we-do .finish-do .text-finish {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 4rem; }
   #we-do .finish-do .text-finish h1 {
     font-size: 4rem; }
     @media screen and (max-width: 64rem) {
