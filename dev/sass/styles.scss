@@ -81,3 +81,24 @@ h1, p {
   position: absolute;
   width: 3.5rem;
 }
+
+.bloque {
+  background-color: $blue;
+  height: 14rem;
+
+  @media screen and (min-width: rem(721px)) {
+    display: none;
+  }
+
+  @media screen and (max-width: $tablet-medium) {
+    margin-top: -6rem;
+  }
+
+  @media screen and (max-width: $tablet-small) {
+    margin-top: -10rem;
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    margin-top: -15rem;
+  }
+}
