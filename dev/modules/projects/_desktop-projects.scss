@@ -1,9 +1,40 @@
 .projects-desktop {
-    margin: 0 auto;
-    width: 100%;
+
 
     @media screen and (max-width: $mobile-large) {
       margin-top: 4rem;
+    }
+
+    .desktop {
+      background-image: url("../img/projects/desktop.svg");
+      .logo-mobile {
+        @media screen and (min-width: $mobile-large) {
+          display: none;
+        }
+      }
+
+      .logo {
+
+      }
+
+      .pagina {
+        width: 53rem;
+        height: 39rem;
+      }
+
+      .icon {
+        .icon-movile {
+
+        }
+
+        .icon-tablet {
+
+        }
+
+        .more {
+
+        }
+      }
     }
 
     .logo-project{
@@ -40,9 +71,9 @@
 
       .pagina{
         position: absolute;
-        margin-left: -78%;
-        margin-top: 21%;
-        width: 58%;
+        margin-left: -79%;
+        margin-top: 20%;
+        width: 62%;
         z-index: -1;
 
         @media screen and (max-width: $mobile-large) {

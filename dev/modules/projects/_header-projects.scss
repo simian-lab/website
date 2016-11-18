@@ -5,6 +5,8 @@
   height: 44rem;
   position: relative;
   top: -3rem;
+  display: flex;
+  justify-content: center;
 
   @media screen and (max-width: $mobile-large) {
     background-size: 370%;
@@ -12,210 +14,29 @@
   }
 
   .content-header {
-    position: relative;
-    margin: 0 auto;
-    width: 94%;
+    background-image: url("../img/projects/cuadro_texto_hero.svg");
+    background-position: center 0rem;
+    background-repeat: no-repeat;
+    background-size: 48rem 40rem;
+    width: 40rem;
+    height: 32rem;
+    padding: 12rem 0 0 14rem;
+    p {
+      font-size: 3rem;
 
-    @media screen and (max-width: $mobile-large) {
-      margin-bottom: 23rem;
-    }
-
-    .text-header {
-      position: absolute;
-      top: 36%;
-      left: 9%;
-      z-index: 1;
-
-      @media screen and (min-width: $laptop-large) {
-        top: 26%;
-      }
-      @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
-        top: 30%;
-      }
-      @media screen and (max-width: $laptop-medium) {
-        top: 28%;
-        left: 10%;
-      }
-      @media screen and (max-width: $laptop-small) {
-        top: 26%;
-        left: 10%;
-      }
-      @media screen and (max-width: $tablet-large) {
-        top: 40%;
-        left: 11%;
-      }
-      @media screen and (max-width: $tablet-medium) {
-        top: 36%;
-        left: 10%;
-      }
-      @media screen and (max-width: $tablet-small) {
-        top: 47%;
-      }
-      @media screen and (max-width: $mobile-large) {
-        top: 38%;
-        left: 16%;
-      }
-
-      .title {
-
-        p {
-          font-size: 4rem;
-
-          @media screen and (min-width: $laptop-large) {
-            font-size: 5.5rem;
-          }
-          @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
-            font-size: 4.5rem;
-          }
-          @media screen and (max-width: $laptop-medium) {
-            font-size: 3.5rem;
-          }
-          @media screen and (max-width: $laptop-small) {
-            font-size: 2.5rem;
-          }
-          @media screen and (max-width: $tablet-large) {
-            font-size: 2rem;
-          }
-          @media screen and (max-width: $tablet-small) {
-            font-size: 1.5rem;
-          }
-          @media screen and (max-width: $mobile-large) {
-            font-size: 2.3rem;
-          }
-          @media screen and (max-width: $mobile-medium) {
-            font-size: 2rem;
-          }
-          @media screen and (max-width: $mobile-small) {
-            font-size: 1.8rem;
-          }
-        }
-      }
-
-      .subtitle {
-
-        p {
-          font-size: 6rem;
-          font-weight: bold;
-
-          @media screen and (min-width: $laptop-large) {
-            font-size: 9rem;
-          }
-          @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
-            font-size: 7.5rem;
-          }
-          @media screen and (max-width: $laptop-medium) {
-            font-size: 5.5rem;
-          }
-          @media screen and (max-width: $laptop-small) {
-            font-size: 4.5rem;
-          }
-          @media screen and (max-width: $tablet-large) {
-            font-size: 3.5rem;
-          }
-          @media screen and (max-width: $tablet-medium) {
-            font-size: 3.3rem;
-          }
-          @media screen and (max-width: $tablet-small) {
-            font-size: 2.5rem;
-          }
-          @media screen and (max-width: $mobile-large) {
-            font-size: 3.8rem;
-          }
-          @media screen and (max-width: $mobile-medium) {
-            font-size: 3.1rem;
-          }
-          @media screen and (max-width: $mobile-small) {
-            font-size: 3rem;
-          }
-        }
-      }
-
-      h1 {
-        color: $yellow;
-        font-size: 10rem;
-
-        @media screen and (min-width: $laptop-large) {
-          font-size: 15.5rem;
-        }
-        @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
-          font-size: 13.5rem;
-        }
-        @media screen and (max-width: $laptop-medium) {
-          font-size: 9.5rem;
-        }
-        @media screen and (max-width: $laptop-small) {
-          font-size: 8.5rem;
-        }
-        @media screen and (max-width: $tablet-large) {
-          font-size: 6.5rem;
-        }
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 5.8rem;
-        }
-        @media screen and (max-width: $tablet-small) {
-          font-size: 4.5rem;
-        }
-        @media screen and (max-width: $mobile-large) {
-          font-size: 6.5rem;
-        }
-        @media screen and (max-width: $mobile-large) {
-          font-size: 6.3rem;
-        }
-        @media screen and (max-width: $mobile-small) {
-         font-size: 5.5rem;
-        }
+      &:nth-child(2) {
+        font-size: 5rem;
       }
     }
 
-    .frame-text {
-      position: absolute;
-      top: -6rem;
-      left: -24%;
-      width: 87%;
-
-      @media screen and (max-width: $laptop-medium) {
-        top: -3rem;
-      }
-      @media screen and (max-width: $tablet-large) {
-        top: -1rem;
-        left: -24%;
-      }
-      @media screen and (max-width: $tablet-medium) {
-        top: -1rem;
-      }
-      @media screen and (max-width: $tablet-small) {
-        top: 0rem;
-      }
-      @media screen and (max-width: $mobile-large) {
-        top: 0rem;
-        left: -39%;
-        width: 142%;
-      }
-      @media screen and (max-width: $mobile-medium) {
-        width: 141%;
-        left: -38%;
-      }
-      @media screen and (max-width: $mobile-small) {
-        left: -6.8rem;
-        width: 136%;
-      }
+    h1 {
+      color: $yellow;
+      font-size: 9rem;
     }
 
-    .icon-header {
-      position: relative;
-      top: 2rem;
-      left: 47%;
-      width: 51%;
-
-      @media screen and (max-width: $tablet-large) {
-        top: 3rem;
-        left: 46%;
-      }
-      @media screen and (max-width: $mobile-large) {
-        top: 19rem;
-        left: 8%;
-        width: 81%;
-      }
-    }
+  }
+  .icon-header {
+    width: 36rem;
+    margin: -9rem 0 0 -6rem;
   }
 }
