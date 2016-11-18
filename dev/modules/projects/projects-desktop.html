@@ -1,28 +1,19 @@
 <div class="projects-desktop">
-  <div class="desktop-projects">
-
-      <img class="logo-project" src="../img/projects/semana.svg" alt="">
-
-      <div class="back">
-        <img class="logo" src="../img/projects/bancoldex_sitio.png" alt="">
-        <img class="desktop" src="../img/projects/desktop.svg" alt="">
-        <img class="pagina" src="../img/projects/enter.png" alt="">
-      </div>
-
-      <div class="icon">
-        <img class="icon-movile" src="../img/projects/iphone.svg" alt="">
-        <img class="icon-table" src="../img/projects/ipad.svg" alt="">
-
-        <a ng-href="{{$root.getLink('project-deployment', 'despliegue-proyecto', { project: project.slug })}}"><img class="more" src="../img/projects/icono_mas.svg" alt=""></a>
-      </div>
-
-      <div class="text">
-        <h2>{{project.contentResume.title}}</h2>
-        <p>Y archivos de texto. Lorem ipsum ha sido el texto de relleno
-          estandar de las industrisas desde el año 1500, cuando un impresor
-          (N. del T. persona que se dedica a la imprenta desconocido usó)
-        </p>
-      </div>
-
-      </div>
+  <div class="desktop">
+    <img class="logo-mobile" src="../img/projects/semana.svg" alt="">
+    <img class="logo" src="../img/projects/bancoldex_sitio.png" alt="">
+    <img class="pagina" src="../img/projects/enter.png" alt="">
+    <div class="icon">
+      <img class="icon-movile" src="../img/projects/iphone.svg" alt="">
+      <img class="icon-tablet" src="../img/projects/ipad.svg" alt="">
+      <a ng-href="{{$root.getLink('project-deployment', 'despliegue-proyecto', { project: project.slug })}}"><img class="more" src="../img/projects/icono_mas.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="text">
+    <h2>{{project.contentResume.title}}</h2>
+    <p>Y archivos de texto. Lorem ipsum ha sido el texto de relleno
+      estandar de las industrisas desde el año 1500, cuando un impresor
+      (N. del T. persona que se dedica a la imprenta desconocido usó)
+    </p>
+  </div>
 </div>
