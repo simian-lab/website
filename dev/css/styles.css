@@ -973,114 +973,129 @@ footer .footer-end {
             left: 13rem;
             top: -2rem; } }
 
-#home .clients-container {
+#home .clients-container-home {
   margin-top: 8rem; }
   @media screen and (max-width: 45rem) {
-    #home .clients-container {
+    #home .clients-container-home {
       margin-top: 0rem; } }
-  #home .clients-container .header-clients-container {
+  #home .clients-container-home .header-clients-container {
     align-items: center;
     display: flex;
     justify-content: center; }
-    #home .clients-container .header-clients-container .line-left {
+    #home .clients-container-home .header-clients-container .line-left {
       margin: 6rem 0 0 0rem; }
       @media screen and (max-width: 64rem) {
-        #home .clients-container .header-clients-container .line-left {
+        #home .clients-container-home .header-clients-container .line-left {
           width: 8rem; } }
       @media screen and (max-width: 45rem) {
-        #home .clients-container .header-clients-container .line-left {
+        #home .clients-container-home .header-clients-container .line-left {
           margin: 3rem 0 0 0rem;
           width: 7rem; } }
       @media screen and (max-width: 30rem) {
-        #home .clients-container .header-clients-container .line-left {
+        #home .clients-container-home .header-clients-container .line-left {
           margin: 3rem 0 0 0rem;
           width: 5rem; } }
-    #home .clients-container .header-clients-container .title-clients h1 {
+    #home .clients-container-home .header-clients-container .title-clients h1 {
       color: #00A1C1;
       font-size: 14rem;
       margin: 0 0 0 -6.5rem; }
       @media screen and (max-width: 64rem) {
-        #home .clients-container .header-clients-container .title-clients h1 {
+        #home .clients-container-home .header-clients-container .title-clients h1 {
           font-size: 10rem;
           margin: 0 0 0 -4.5rem; } }
       @media screen and (max-width: 45rem) {
-        #home .clients-container .header-clients-container .title-clients h1 {
+        #home .clients-container-home .header-clients-container .title-clients h1 {
           font-size: 7rem;
           margin: 0 0 0 -3.5rem; } }
       @media screen and (max-width: 30rem) {
-        #home .clients-container .header-clients-container .title-clients h1 {
+        #home .clients-container-home .header-clients-container .title-clients h1 {
           font-size: 5.5rem;
           margin: 0 0 0 -3rem; } }
-    #home .clients-container .header-clients-container .title-clients .container {
+    #home .clients-container-home .header-clients-container .title-clients .container {
       display: flex; }
-      #home .clients-container .header-clients-container .title-clients .container h2 {
+      #home .clients-container-home .header-clients-container .title-clients .container h2 {
         color: #FF5E5B;
         font-size: 6rem;
+        text-shadow: -1px 0 #3F3832, 0 1px #3F3832, 1px 0 #3F3832, 0 -1px #3F3832;
         margin: 0 0 0 -1.5rem;
         width: 17rem; }
         @media screen and (max-width: 64rem) {
-          #home .clients-container .header-clients-container .title-clients .container h2 {
+          #home .clients-container-home .header-clients-container .title-clients .container h2 {
             font-size: 4rem;
             margin: 1rem 0 0 -1rem;
             width: 11rem; } }
         @media screen and (max-width: 45rem) {
-          #home .clients-container .header-clients-container .title-clients .container h2 {
+          #home .clients-container-home .header-clients-container .title-clients .container h2 {
             font-size: 3rem;
             width: 9rem; } }
         @media screen and (max-width: 30rem) {
-          #home .clients-container .header-clients-container .title-clients .container h2 {
+          #home .clients-container-home .header-clients-container .title-clients .container h2 {
             font-size: 2.3rem;
             width: 7rem; } }
-      #home .clients-container .header-clients-container .title-clients .container p {
+      #home .clients-container-home .header-clients-container .title-clients .container p {
         font-size: 3.5rem;
         margin-top: 2rem;
         width: 23rem; }
         @media screen and (max-width: 64rem) {
-          #home .clients-container .header-clients-container .title-clients .container p {
+          #home .clients-container-home .header-clients-container .title-clients .container p {
             font-size: 2rem;
             margin: 3rem 0 0 0;
             width: 16rem; } }
         @media screen and (max-width: 45rem) {
-          #home .clients-container .header-clients-container .title-clients .container p {
+          #home .clients-container-home .header-clients-container .title-clients .container p {
             font-size: 1.5rem;
             margin: 2.5rem 0 0 -0.5rem;
             width: 10rem; } }
         @media screen and (max-width: 30rem) {
-          #home .clients-container .header-clients-container .title-clients .container p {
+          #home .clients-container-home .header-clients-container .title-clients .container p {
             font-size: 1.2rem;
             margin: 2rem 0 0 -0.5rem;
             width: 8rem; } }
-    #home .clients-container .header-clients-container .heart {
+    #home .clients-container-home .header-clients-container .heart {
       margin: -11rem 0 0 -16rem; }
       @media screen and (max-width: 64rem) {
-        #home .clients-container .header-clients-container .heart {
+        #home .clients-container-home .header-clients-container .heart {
           margin: -8rem 0 0 -9.5rem;
           width: 10rem; } }
       @media screen and (max-width: 45rem) {
-        #home .clients-container .header-clients-container .heart {
+        #home .clients-container-home .header-clients-container .heart {
           width: 8rem;
           margin: -8rem 0 0 -6rem; } }
       @media screen and (max-width: 30rem) {
-        #home .clients-container .header-clients-container .heart {
+        #home .clients-container-home .header-clients-container .heart {
           width: 6rem;
           margin: -6rem 0 0 -5rem; } }
-    #home .clients-container .header-clients-container .line {
+    #home .clients-container-home .header-clients-container .line {
       margin: 4rem 0 0 -4.2rem; }
       @media screen and (max-width: 64rem) {
-        #home .clients-container .header-clients-container .line {
+        #home .clients-container-home .header-clients-container .line {
           margin: 5rem 0 0 -3.7rem;
           width: 3.5rem; } }
       @media screen and (max-width: 45rem) {
-        #home .clients-container .header-clients-container .line {
+        #home .clients-container-home .header-clients-container .line {
           margin: 2rem 0 0 -2.7rem;
           width: 3rem; } }
       @media screen and (max-width: 30rem) {
-        #home .clients-container .header-clients-container .line {
+        #home .clients-container-home .header-clients-container .line {
           margin: 1rem 0 0 -1.7rem;
           width: 2.5rem; } }
-  #home .clients-container .see-more {
+  #home .clients-container-home .clients-grid {
+    margin-top: 2rem; }
+    #home .clients-container-home .clients-grid .grid {
+      margin: 0 auto;
+      width: 80%; }
+      #home .clients-container-home .clients-grid .grid .item {
+        -webkit-flex-basis: 33%;
+        -moz-flex-basis: 33%;
+        flex-basis: 33%;
+        -ms-flex-preferred-size: 33%; }
+        #home .clients-container-home .clients-grid .grid .item img {
+          display: block;
+          margin: 0 auto;
+          margin-top: 3rem; }
+  #home .clients-container-home .see-more {
     position: relative; }
-    #home .clients-container .see-more::before, #home .clients-container .see-more::after {
+    #home .clients-container-home .see-more::before, #home .clients-container-home .see-more::after {
       -webkit-transform: translateY(-50%);
       -moz-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -1096,13 +1111,13 @@ footer .footer-end {
       position: absolute;
       width: 40%;
       top: 50%; }
-    #home .clients-container .see-more::before {
+    #home .clients-container-home .see-more::before {
       left: 3%;
       z-index: -1; }
-    #home .clients-container .see-more::after {
+    #home .clients-container-home .see-more::after {
       right: 3%;
       z-index: -1; }
-    #home .clients-container .see-more .button {
+    #home .clients-container-home .see-more .button {
       background-image: url("../img/red-button.svg");
       margin: 3rem auto; }
 

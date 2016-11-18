@@ -1,4 +1,4 @@
-.clients-container {
+.clients-container-home {
   margin-top: 8rem;
 
   @media screen and (max-width: $tablet-medium) {
@@ -55,6 +55,7 @@
         h2 {
           color: $red;
           font-size: 6rem;
+          text-shadow: -1px 0 $brown, 0 1px $brown, 1px 0 $brown, 0 -1px $brown;
           margin: 0 0 0 -1.5rem;
           width: 17rem;
 
@@ -136,6 +137,24 @@
       @media screen and (max-width: $mobile-large) {
         margin: 1rem 0 0 -1.7rem;
         width: 2.5rem;
+      }
+    }
+  }
+
+  .clients-grid {
+    margin-top: 2rem;
+    .grid {
+      margin: 0 auto;
+      width: 80%;
+
+      .item {
+        @include flex-basis(33%);
+
+        img {
+          display: block;
+          margin: 0 auto;
+          margin-top: 3rem;
+        }
       }
     }
   }
