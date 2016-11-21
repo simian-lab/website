@@ -1,104 +1,98 @@
 .header-share{
   background-image: url("../img/we-share/fondo.svg");
-  height: 63rem;
   background-position-x: center;
   background-repeat: no-repeat;
-  background-size: 116%;
+  background-size: 103%;
   position: relative;
   top: -3rem;
-  margin-bottom: -42rem;
-
-  @media screen and (min-width: $laptop-large) {
-    height: 56rem;
-    margin-bottom: -33rem;
-  }
-  @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
-    margin-bottom: -36rem;
-    background-size: 119%;
-  }
-
-  @media screen and (max-width: 75.000em) {
-    background-size: 140%;
-  }
-
-  @media screen and (max-width: 56.250em) {
-    background-size: 150%;
-  }
+  text-align: center;
+  padding-top: 4rem;
 
   @media screen and (max-width: $laptop-small) {
     margin-bottom: -45rem;
   }
 
-   @media screen and (max-width: $tablet-large) {
+  @media screen and (max-width: $tablet-large) {
     margin-bottom: -49rem;
-  }
-
-  @media screen and (max-width: $tablet-medium) {
-    margin-bottom: -51rem;
-  }
-
-  @media screen and (max-width: $tablet-small) {
-    background-size: 172%;
   }
 
   @media screen and (max-width: $mobile-large) {
     background-size: 215%;
   }
 
-  @media screen and (max-width: $mobile-medium) {
-    background-size: 239%;
-    margin-bottom: -52rem;
+  p {
+    font-size: 5rem;
+    @media screen and (max-width: $laptop-small) {
+      font-size: 4.5rem;
+    }
+    @media screen and (max-width: $tablet-large) {
+      font-size: 3.5rem;
+    }
+    @media screen and (max-width: $mobile-large) {
+      font-size: 2.5rem;
+    }
   }
 
-  .text {
-    text-align: center;
-    padding-top: 5rem;
+  h1 {
+    color: $red;
+    font-size: 10.5rem;
+    @media screen and (max-width: $laptop-small) {
+      font-size: 9.5rem;
+    }
     @media screen and (max-width: $tablet-large) {
-      padding-top: 3rem;
+      font-size: 7.5rem;
+    }
+    @media screen and (max-width: $mobile-large) {
+      font-size: 5.5rem;
+    }
+  }
+
+  .graph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .monkey {
+
     }
 
-    p {
-      font-size: 5rem;
-      @media screen and (min-width: $laptop-medium) {
-        font-size: 6rem;
-      }
-      @media screen and (max-width: $laptop-small) {
-        font-size: 4.5rem;
-      }
-      @media screen and (max-width: $tablet-large) {
-        font-size: 3.5rem;
-      }
-      @media screen and (max-width: $tablet-medium) {
-        font-size: 3rem;
-      }
-      @media screen and (max-width: $mobile-large) {
-        font-size: 2.5rem;
-      }
-      @media screen and (max-width: $mobile-medium) {
-        font-size: 2rem;
-      }
-    }
-
-    h1 {
-      color: $red;
-      font-size: 10.5rem;
-      @media screen and (min-width: $laptop-medium) {
-        font-size: 12.5rem;
-      }
-      @media screen and (max-width: $laptop-small) {
-        font-size: 9.5rem;
-      }
-      @media screen and (max-width: $tablet-large) {
-        font-size: 7.5rem;
-      }
-      @media screen and (max-width: $tablet-medium) {
+    .text {
+      width: 45rem;
+      text-align: left;
+      h1 {
+        color: $red;
         font-size: 6.5rem;
+        line-height: 120%;
+        @media screen and (min-width: $laptop-medium) {
+          font-size: 8rem;
+        }
+        @media screen and (max-width: $mobile-large) {
+          font-size: 5rem;
+        }
+        @media screen and (max-width: $mobile-medium) {
+          font-size: 3.5rem;
+        }
       }
-      @media screen and (max-width: $mobile-large) {
-        font-size: 5.5rem;
+
+      h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-family: $quicksand_regular;
+        line-height: 120%;
+        margin-top: 2rem;
+
+        @media screen and (max-width: $mobile-small) {
+          font-size: 1.2rem;
+        }
       }
-      @media screen and (max-width: $mobile-medium) {
-        font-size: 5rem;
+
+      p {
+        font-size: 1.8rem;
+        line-height: 120%;
+
+        @media screen and (max-width: $mobile-small) {
+          font-size: 1.2rem;
+        }
       }
     }
   }

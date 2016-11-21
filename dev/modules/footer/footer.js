@@ -14,6 +14,6 @@ angular.module('simian.footer', [])
     replace: true,
     restrict: 'E',
     templateUrl: '/modules/footer/footer.html'
-  }
+  };
 })
 ;

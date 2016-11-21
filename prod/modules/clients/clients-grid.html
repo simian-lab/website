@@ -1,7 +1,9 @@
 <div class="clients-grid">
+
   <div class="logos grid">
     <a ng-href="{{client.url}}" class="item" target="_blank" ng-repeat="client in clients | limitTo: limit">
       <img ng-src="{{client.logo}}" alt="{{client.name}}">
     </a>
   </div>
+
 </div>

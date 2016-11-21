@@ -93,24 +93,6 @@
       @media screen and (max-width: $tablet-medium) {
         padding-top: 3rem;
       }
-
-      h1 {
-        font-size: 5rem;
-        margin: 0 auto;
-        line-height: 120%;
-        @media screen and (min-width: $laptop-medium) {
-          font-size: 6rem;
-        }
-        @media screen and (max-width: $tablet-large) {
-          font-size: 4rem;
-        }
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 3rem;
-        }
-        @media screen and (max-width: $mobile-medium) {
-          font-size: 2.5rem;
-        }
-      }
     }
   }
 }

@@ -1,10 +1,14 @@
 .content-find{
   background-image: url("../img/location/fondo_banano_amarillo.svg");
-  background-size: 103%;
   background-repeat: no-repeat;
-  margin-top: -37%;
+  background-size: 103%;
+  display: flex;
+  justify-content: center;
+  margin:-30rem 0 4rem 0;
+  padding-top: 40rem;
   position: relative;
   z-index: -2;
+
   @media screen and (max-width: $mobile-large) {
     background-size: 200%;
     background-position-x: center;
@@ -18,9 +22,7 @@
   }
 
   .text-find {
-    padding-top: 51%;
-    margin: 0 auto;
-    width: 67%;
+    width: 40rem;
     @media screen and (max-width: $laptop-small) {
       width: 73%;
     }
@@ -59,8 +61,7 @@
         font-size: 1.5rem;
         font-weight: bold;
         line-height: 130%;
-        padding-top: 6%;
-        width: 74%;
+        margin-top: 3rem;
 
         @media screen and (max-width: $laptop-small) {
           font-size: 1.3rem;
@@ -80,8 +81,7 @@
     p {
         font-size: 1.5rem;
         line-height: 130%;
-        padding-top: 5%;
-        width: 74%;
+        margin-top: 1rem;
 
         @media screen and (max-width: $laptop-small) {
           font-size: 1.3rem;
@@ -98,53 +98,15 @@
       }
   }
 
-  .icon_location {
-    margin-left: 75%;
-    margin-top: -25rem;
-    position: absolute;
+  .icon{
     @media screen and (max-width: $laptop-small) {
-      margin-left: 71%;
-      margin-top: -22rem;
+      width: 79%;
     }
     @media screen and (max-width: $tablet-large) {
-      margin-top: -16rem;
-    }
-    @media screen and (max-width: $tablet-medium) {
-      margin-top: -13rem;
-    }
-    @media screen and (max-width: $tablet-small) {
-      margin-top: -10rem;
+      width: 63%;
     }
     @media screen and (max-width: $mobile-large) {
-      margin-top: -32rem;
-      margin-left: 67%;
-    }
-    @media screen and (max-width: $mobile-medium) {
-      margin-top: -32rem;
-      margin-left: 73%;
-    }
-    @media screen and (max-width: $mobile-small) {
-      margin-top: -32rem;
-      margin-left: 74%;
-    }
-
-    .icon{
-      width: 90%;
-      @media screen and (max-width: $laptop-small) {
-        width: 79%;
-      }
-      @media screen and (max-width: $tablet-large) {
-        width: 63%;
-      }
-      @media screen and (max-width: $tablet-medium) {
-        width: 55%;
-      }
-      @media screen and (max-width: $tablet-small) {
-        width: 52%;
-      }
-      @media screen and (max-width: $mobile-large) {
-        width: 43%;
-      }
+      width: 43%;
     }
   }
 }
