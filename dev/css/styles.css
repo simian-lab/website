@@ -261,7 +261,9 @@ footer .background-section {
     padding-bottom: 5%;
     text-align: center; }
   footer .background-section .footer-content {
-    padding-top: 3%; }
+    padding-top: 3%;
+    display: flex;
+    justify-content: center; }
     footer .background-section .footer-content::after {
       clear: both;
       content: "";
@@ -279,7 +281,8 @@ footer .background-section {
     footer .background-section .footer-content .contact-form {
       background-image: url(../img/footer/footer-line-vertical.svg);
       background-position: right top;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      width: 50%; }
       @media screen and (max-width: 30rem) {
         footer .background-section .footer-content .contact-form {
           background: none; } }
