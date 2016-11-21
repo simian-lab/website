@@ -32,6 +32,7 @@
     h1 {
       color: $yellow;
       font-size: 9rem;
+      text-shadow: -1px 0 $brown, 0 1px $brown, 1px 0 $brown, 0 -1px $brown;
     }
 
   }
