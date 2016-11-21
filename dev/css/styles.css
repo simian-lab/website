@@ -383,9 +383,10 @@ footer .background-section {
 
 footer:not(.footer-home) .background-section {
   background-position: center top;
-  background-size: cover;
+  background-size: 103%;
+  margin-top: 4rem;
   padding-bottom: 4%;
-  padding-top: 8%; }
+  padding-top: 12rem; }
   footer:not(.footer-home) .background-section .footer-title {
     background-size: 89%; }
 
@@ -410,13 +411,11 @@ footer .footer-end {
       background-color: #00A1C1; }
 
 .footer-we-do .background-section, .footer-que-hacemos .background-section, .footer-clients .background-section, .footer-clientes .background-section, .footer-location .background-section, .footer-ubicacion .background-section {
-  background-image: url("../img/footer/footer-bg-green.svg");
-  margin-top: 4rem; }
+  background-image: url("../img/footer/footer-bg-green.svg"); }
   .footer-we-do .background-section .footer-content .contact-form input, .footer-we-do .background-section .footer-content .contact-form textarea, .footer-que-hacemos .background-section .footer-content .contact-form input, .footer-que-hacemos .background-section .footer-content .contact-form textarea, .footer-clients .background-section .footer-content .contact-form input, .footer-clients .background-section .footer-content .contact-form textarea, .footer-clientes .background-section .footer-content .contact-form input, .footer-clientes .background-section .footer-content .contact-form textarea, .footer-location .background-section .footer-content .contact-form input, .footer-location .background-section .footer-content .contact-form textarea, .footer-ubicacion .background-section .footer-content .contact-form input, .footer-ubicacion .background-section .footer-content .contact-form textarea {
     background-color: #1DC0B2; }
 
 .footer-projects .background-section, .footer-proyectos .background-section, .footer-we-share .background-section, .footer-compartimos .background-section, .footer-project-deployment .background-section {
-  margin-top: 4rem;
   background-image: url("../img/footer/footer-bg-red.svg"); }
   .footer-projects .background-section .footer-content .contact-form input, .footer-projects .background-section .footer-content .contact-form textarea, .footer-proyectos .background-section .footer-content .contact-form input, .footer-proyectos .background-section .footer-content .contact-form textarea, .footer-we-share .background-section .footer-content .contact-form input, .footer-we-share .background-section .footer-content .contact-form textarea, .footer-compartimos .background-section .footer-content .contact-form input, .footer-compartimos .background-section .footer-content .contact-form textarea, .footer-project-deployment .background-section .footer-content .contact-form input, .footer-project-deployment .background-section .footer-content .contact-form textarea {
     background-color: #FF5E5B; }
@@ -610,7 +609,8 @@ footer .footer-end {
   background-image: url("../img/footer/footer-bg-red.svg");
   background-repeat: no-repeat;
   background-size: 103%;
-  background-position-x: -1rem; }
+  background-position-x: -1rem;
+  padding-top: 5rem; }
   @media screen and (max-width: 37.5rem) {
     #home .our-projects {
       background-size: 245%; } }
@@ -1295,6 +1295,7 @@ footer .footer-end {
       -ms-flex-align: baseline; }
 
 #home .find-us {
+  align-items: center;
   background-image: url("../img/home/find-us-background.svg");
   background-repeat: no-repeat;
   background-size: 103%;
@@ -1313,7 +1314,7 @@ footer .footer-end {
       flex-direction: column;
       height: 41rem; } }
   #home .find-us p {
-    font-size: 2rem; }
+    font-size: 2.5rem; }
     @media screen and (max-width: 64rem) {
       #home .find-us p {
         font-size: 1.5rem; } }
@@ -1323,10 +1324,13 @@ footer .footer-end {
   #home .find-us .sign {
     background-image: url("../img/home/find-us-sign.svg");
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 30rem;
-    padding: 4rem 0 0 5rem;
-    width: 20rem; }
+    background-size: 27rem;
+    height: 42rem;
+    padding: 6rem 1rem 0 0rem;
+    position: relative;
+    text-align: center;
+    top: 4rem;
+    width: 32rem; }
     @media screen and (max-width: 64rem) {
       #home .find-us .sign {
         height: 24rem;
@@ -1339,7 +1343,7 @@ footer .footer-end {
         z-index: -1; } }
     #home .find-us .sign h1 {
       color: #DED96B;
-      font-size: 8rem; }
+      font-size: 11rem; }
       @media screen and (max-width: 64rem) {
         #home .find-us .sign h1 {
           font-size: 6rem; } }
@@ -1347,7 +1351,9 @@ footer .footer-end {
         #home .find-us .sign h1 {
           font-size: 5rem; } }
   #home .find-us .see-more {
-    margin-top: 18rem;
+    position: relative;
+    right: 5rem;
+    top: 9rem;
     width: 21rem; }
     @media screen and (max-width: 64rem) {
       #home .find-us .see-more {
@@ -2183,7 +2189,8 @@ footer .footer-end {
         font-size: 5rem; }
     #projects .header-projects .content-header h1 {
       color: #DED96B;
-      font-size: 9rem; }
+      font-size: 9rem;
+      text-shadow: -1px 0 #3F3832, 0 1px #3F3832, 1px 0 #3F3832, 0 -1px #3F3832; }
   #projects .header-projects .icon-header {
     width: 36rem;
     margin: -9rem 0 0 -6rem; }
