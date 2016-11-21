@@ -770,21 +770,24 @@ footer .footer-end {
       #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote {
         margin: 2rem 0;
         text-align: center; }
-        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .avatar {
-          border-radius: 50%;
-          display: block;
-          margin: 0 auto;
-          width: 5.813rem; }
-        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .after {
-          position: absolute;
-          font-size: 2rem;
-          bottom: 19.2rem;
-          left: 12rem; }
-        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .before {
-          position: absolute;
-          left: -13rem;
-          top: 31.8rem;
-          font-size: 2rem; }
+        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .content-avatar {
+          display: flex;
+          justify-content: center; }
+          #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .content-avatar .line-after, #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .content-avatar .line-before {
+            position: relative;
+            top: 3rem; }
+          #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .content-avatar .line-before {
+            right: 1rem; }
+          #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .content-avatar .line-after {
+            left: 1rem; }
+          #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .content-avatar .avatar {
+            -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.7);
+            -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.7);
+            display: block;
+            height: 6.5rem;
+            width: 6rem; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote p {
           margin: 0.5rem 0; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .text {
@@ -793,7 +796,9 @@ footer .footer-end {
           font-size: 1.5rem;
           margin-bottom: 1rem;
           padding: 1rem 1rem; }
-        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .author, #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .project-country .project {
+          #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .text .comillas {
+            text-transform: uppercase; }
+        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .author, #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .project-country .project, #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .comillas {
           color: #FF5E5B; }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .author {
           font-size: 1.3rem; }
@@ -1301,7 +1306,7 @@ footer .footer-end {
   background-size: 103%;
   display: flex;
   height: 41rem;
-  justify-content: space-between;
+  justify-content: space-around;
   position: relative; }
   @media screen and (max-width: 64rem) {
     #home .find-us {
@@ -1318,9 +1323,6 @@ footer .footer-end {
     @media screen and (max-width: 64rem) {
       #home .find-us p {
         font-size: 1.5rem; } }
-    @media screen and (max-width: 45rem) {
-      #home .find-us p {
-        font-size: 1.3rem; } }
   #home .find-us .sign {
     background-image: url("../img/home/find-us-sign.svg");
     background-repeat: no-repeat;
@@ -1329,43 +1331,47 @@ footer .footer-end {
     padding: 6rem 1rem 0 0rem;
     position: relative;
     text-align: center;
-    top: 4rem;
+    top: -1rem;
+    left: -6rem;
     width: 32rem; }
     @media screen and (max-width: 64rem) {
       #home .find-us .sign {
+        background-size: 19rem;
         height: 24rem;
-        margin: 0rem 0 0 -2rem; } }
+        left: -2rem;
+        margin: 0rem 0 0 -2rem;
+        top: -2rem;
+        width: 22rem; } }
     @media screen and (max-width: 45rem) {
       #home .find-us .sign {
-        width: 17rem;
-        margin: auto;
-        padding: 3rem 0 0 4.5rem;
-        z-index: -1; } }
+        width: 18rem;
+        padding: 5rem 0 0 3.5rem;
+        z-index: -1;
+        left: 0rem; } }
     #home .find-us .sign h1 {
       color: #DED96B;
       font-size: 11rem; }
       @media screen and (max-width: 64rem) {
         #home .find-us .sign h1 {
           font-size: 6rem; } }
-      @media screen and (max-width: 45rem) {
-        #home .find-us .sign h1 {
-          font-size: 5rem; } }
   #home .find-us .see-more {
     position: relative;
-    right: 5rem;
-    top: 9rem;
+    right: -1rem;
+    top: 6rem;
     width: 21rem; }
     @media screen and (max-width: 64rem) {
       #home .find-us .see-more {
-        margin-top: 13rem;
+        right: -1.5rem;
+        top: 4rem;
         width: 18rem; } }
     @media screen and (max-width: 45rem) {
       #home .find-us .see-more {
         position: relative;
-        top: 9rem; } }
+        right: 0rem;
+        top: 12rem; } }
     @media screen and (max-width: 37.5rem) {
       #home .find-us .see-more {
-        top: 5rem; } }
+        top: 7rem; } }
     @media screen and (max-width: 30rem) {
       #home .find-us .see-more {
         top: 0rem; } }
