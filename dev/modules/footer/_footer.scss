@@ -220,6 +220,7 @@ footer {
 .footer-we-do, .footer-que-hacemos, .footer-clients, .footer-clientes, .footer-location, .footer-ubicacion {
   .background-section {
     background-image: url('../img/footer/footer-bg-green.svg');
+    margin-top: 4rem;
 
     .footer-content {
       .contact-form {
@@ -233,6 +234,7 @@ footer {
 
 .footer-projects, .footer-proyectos, .footer-we-share, .footer-compartimos, .footer-project-deployment {
   .background-section {
+    margin-top: 4rem;
     background-image: url('../img/footer/footer-bg-red.svg');
 
     .footer-content {
