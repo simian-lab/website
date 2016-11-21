@@ -27,7 +27,7 @@ angular.module('simian.header', [])
   function($scope, $state, $timeout, TranslateService) {
     $scope.changeLanguage = function(language) {
       TranslateService.translateUrl(language);
-    }
+    };
 
     $scope.myVar = true;
     $scope.youVar = false;
@@ -44,6 +44,6 @@ angular.module('simian.header', [])
     replace: true,
     restrict: 'E',
     templateUrl: '/modules/header/header.html'
-  }
+  };
 })
 ;

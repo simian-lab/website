@@ -7,8 +7,8 @@
 
   .section1 {
     .icon1 {
-      position: relative;
       left: 4%;
+      position: relative;
       width: 25%;
 
       @media screen and (max-width: $tablet-large) {
@@ -26,8 +26,8 @@
       }
     }
     .icon2 {
-      position: relative;
       left: -6%;
+      position: relative;
       top: -16rem;
       width: 45%;
 
@@ -37,20 +37,20 @@
       }
     }
     .text{
+      left: 12%;
       margin: 0 auto;
-      width: 52%;
       position: relative;
       top: -14rem;
-      left: 12%;
+      width: 52%;
 
       @media screen and (min-width: $laptop-small) {
          width: 40%;
       }
 
       @media screen and (max-width: $mobile-large) {
+        left: 12%;
         position: inherit;
         top: -14rem;
-        left: 12%;
         width: 78%;
       }
 
@@ -82,10 +82,10 @@
     }
 
     .text1{
-      display: inline-flex;
       margin: 0 auto;
-      width: 98%;
+      display: inline-flex;
       margin-left: 2%;
+      width: 98%;
 
       @media screen and (max-width: $mobile-large) {
         display: inherit;

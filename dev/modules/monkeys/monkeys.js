@@ -17,7 +17,7 @@ angular.module('simian.monkeys', [])
 
         return deferred.promise;
       }
-    }
+    };
   }
 ])
 ;

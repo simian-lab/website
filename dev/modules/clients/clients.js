@@ -22,7 +22,7 @@ angular.module('simian.clients', [])
 
         return deferred.promise;
       }
-    }
+    };
   }
 ])
 
@@ -41,7 +41,7 @@ angular.module('simian.clients', [])
           $scope.clients = response.clients;
         });
       }
-    }
+    };
   }
 ])
 ;
