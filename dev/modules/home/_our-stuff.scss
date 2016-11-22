@@ -3,6 +3,10 @@
   background-repeat: no-repeat;
   background-size: 103%;
   padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .title {
     background-image: url('../img/home/our-stuff-title.svg');
@@ -54,6 +58,20 @@
   .projects {
     display: flex;
     justify-content: center;
+    background-image: url('../img/home/verde_footer.svg');
+    background-size: 37rem 22rem;
+    background-repeat-y: no-repeat;
+    background-position: bottom;
+    height: 40rem;
+    width: 100%;
+
+    @media screen and (min-width: $laptop-large) {
+      background-size: 4rem 10rem;
+    }
+
+    @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
+      background-size: 21rem 13rem;
+    }
 
     @media screen and (max-width: $laptop-small) {
       align-items: center;

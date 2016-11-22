@@ -205,11 +205,12 @@ footer {
 }
 
 .footer-home {
-  margin-top: -10%;
-
+  position: relative;
+  z-index: -1;
+  top: -20rem;
   .background-section {
     background-color: $blue;
-    padding-top: 10%;
+    padding-top: 19%;
 
     .footer-content {
       .contact-form {
