@@ -49,8 +49,12 @@
                 <a href="" class="more-link"></a>
               </div>
               <div class=quote>
-                <img ng-src="{{project.quote.avatar}}" alt="" class="avatar">
-                <p class="text">{{project.quote.text}}</p>
+                <div class="content-avatar">
+                  <img class="line-after" src="../img/home/linea_avatar.svg" alt="">
+                  <img ng-src="{{project.quote.avatar}}" alt="" class="avatar">
+                  <img class="line-before" src="../img/home/linea_avatar.svg" alt="">
+                </div>
+                <p class="text"><span class="comillas">"</span>{{project.quote.text}}<span class="comillas">"</span></p>
                 <p class="author">{{project.quote.author}}</p>
                 <p class="position">{{project.quote.position}}</p>
                 <p class="project-country"><span class="project">{{project.name}},</span> {{project.quote.country}}</p>
