@@ -26,14 +26,14 @@
     }
 
     .develop, .maintenance {
-      width: 28rem;
+      width: 24rem;
     }
     .develop {
       position: relative;
       top: 2rem;
       left: -5.5rem;
       .icon {
-
+        width: 25rem;
       }
     }
 
@@ -42,7 +42,7 @@
       left: 6rem;
       top: 1.5rem;
       .idea {
-
+        width: 25rem;
       }
     }
   }

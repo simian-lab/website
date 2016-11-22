@@ -1,12 +1,22 @@
 .header-projects {
+  align-items: center;
   background-image: url("../img/projects/fondo_rojo_hero.svg");
   background-repeat: no-repeat;
   background-size: 103%;
-  height: 44rem;
+  display: flex;
+  height: 48rem;
+  justify-content: center;
+  margin-bottom: -10rem;
   position: relative;
   top: -3rem;
-  display: flex;
-  justify-content: center;
+
+  @media screen and (min-width: $laptop-large) {
+    height: 66rem;
+  }
+
+  @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
+    height: 53rem;
+  }
 
   @media screen and (max-width: $mobile-large) {
     background-size: 370%;
@@ -15,12 +25,12 @@
 
   .content-header {
     background-image: url("../img/projects/cuadro_texto_hero.svg");
-    background-position: center 0rem;
+    background-position: -9rem 0rem;
     background-repeat: no-repeat;
     background-size: 48rem 40rem;
     width: 40rem;
     height: 32rem;
-    padding: 12rem 0 0 14rem;
+    padding: 12rem 0 0 10rem;
     p {
       font-size: 3rem;
 
@@ -37,7 +47,7 @@
 
   }
   .icon-header {
-    width: 36rem;
-    margin: -9rem 0 0 -6rem;
+    width: 35rem;
+    margin: 5rem 0 0 -10rem;
   }
 }
