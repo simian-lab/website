@@ -8,7 +8,46 @@
       left: 2rem;
       position: relative;
       top: 4rem;
-      width: 21rem;
+      width: 19rem;
+
+      img {
+        width: 16rem
+      }
+      .logo-mobile {
+
+      }
+      .line-logo {
+        @media screen and (min-width: $mobile-large) {
+          display: none;
+        }
+      }
+
+      .line-desktop {
+
+      }
+    }
+
+    .logo {
+      width: 19rem;
+
+      img {
+        width: 16rem
+      }
+    }
+
+    .logo-tablet {
+       width: 13rem;
+
+       img {
+        width: 12rem
+      }
+    }
+
+    .logo, .logo-tablet {
+      left: 2rem;
+      top: 4rem;
+      position: relative;
+
       .logo-mobile {
 
       }
@@ -70,7 +109,6 @@
     }
 
     .quote {
-      left: 1rem;
       position: relative;
       text-align: center;
       top: 11rem;
@@ -159,7 +197,7 @@
       float: right;
       position: relative;
       width: 8rem;
-      left: -7rem;
+      left: -4rem;
     }
 
     .icon-android {

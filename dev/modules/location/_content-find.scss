@@ -4,19 +4,30 @@
   background-size: 103%;
   display: flex;
   justify-content: center;
-  margin:-30rem 0 4rem 0;
-  padding-top: 40rem;
+  margin:-29rem 0 4rem 0;
+  padding-top: 44rem;
   position: relative;
   z-index: -2;
+
+  @media screen and (min-width: $laptop-large) {
+    margin: -37rem 0 4rem 0;
+    padding-top: 60rem;
+  }
+
+  @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
+    padding-top: 50rem;
+  }
 
   @media screen and (max-width: $mobile-large) {
     background-size: 200%;
     background-position-x: center;
     margin-top: -20rem;
   }
+
   @media screen and (max-width: $mobile-medium) {
     margin-top: -17rem;
   }
+
   @media screen and (max-width: $mobile-small) {
     margin-top: -15rem;
   }

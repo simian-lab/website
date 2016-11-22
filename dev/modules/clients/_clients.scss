@@ -3,15 +3,22 @@
   background-repeat: no-repeat;
   background-size: 103%;
   background-position: 0rem -6.5rem;
+  padding-top: 10rem;
   position: relative;
   top: -3rem;
+
+  @media screen and (min-width: $laptop-large) {
+    padding-top: 22rem;
+  }
+
+  @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
+    padding-top: 15rem;
+  }
 
   .header-clients-container {
     align-items: center;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 7rem;
 
     .line-left{
       margin: 6rem 0 0 0rem;
@@ -167,7 +174,7 @@
   }
 
   .clients-grid {
-    margin-top: 17rem;
+    margin-top: 5rem;
     .grid {
       margin: 0 auto;
       width: 80%;

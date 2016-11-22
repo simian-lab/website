@@ -43,14 +43,15 @@
     justify-content: center;
 
     .work, .analize {
-      width: 28rem;
+      width: 24rem;
     }
+
     .work {
       position: relative;
-      top: -3.5rem;
-      left: -5.5rem;
+      top: -3.2rem;
+      left: -7.5rem;
       .idea-icon {
-
+        width: 25rem;
       }
     }
 
@@ -58,8 +59,8 @@
       position: relative;
       left: 6rem;
       top: -1rem;
-      .idea-icon {
-
+      .banana-icon {
+        width: 25rem;
       }
 
     }
@@ -85,5 +86,13 @@
   .desing {
     margin: 0 auto;
     width: 24rem;
+
+    @media screen and (min-width: $laptop-large) {
+      margin-top: 8rem;
+    }
+
+    @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
+      margin-top: 5rem;
+    }
   }
 }
