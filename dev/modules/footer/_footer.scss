@@ -1,17 +1,22 @@
 footer {
 
   .background-section {
-    padding-bottom: 2%;
+    padding-bottom: 3%;
 
     .footer-title {
-      background-image: url(../img/footer/footer-line-horizontal.svg);
-      background-position: center bottom;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      color: $white;
-      font-size: 6rem;
-      padding-bottom: 5%;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        color: $white;
+        font-size: 6rem;
+        padding-bottom: 1%;
+        text-align: center;
+      }
+
+      img {
+        width: 90%;
+      }
     }
 
     .footer-content {
@@ -179,10 +184,6 @@ footer {
       margin-top: 4rem;
       padding-bottom: 4%;
       padding-top: 12rem;
-
-      .footer-title {
-        background-size: 89%;
-      }
     }
   }
 
@@ -209,7 +210,9 @@ footer {
   z-index: -1;
   top: -20rem;
   .background-section {
-    background-color: $blue;
+    background-image: url('../img/footer/azul_footer.svg');
+    background-repeat-y: no-repeat;
+    background-size: cover;
     padding-top: 19%;
 
     .footer-content {
@@ -224,9 +227,23 @@ footer {
 
 .footer-we-do, .footer-que-hacemos, .footer-clients, .footer-clientes, .footer-location, .footer-ubicacion {
   .background-section {
-    background-image: url('../img/footer/footer-bg-green.svg');
+    .footer-title {
+      background-image: url('../img/footer/footer-bg-green.svg');
+      background-position-y: -5rem;
+      background-repeat: no-repeat;
+      background-size: 103%;
+      padding-top: 11rem;
 
+      @media screen and (min-width: $laptop-large) {
+        padding-top: 16rem;
+      }
+    }
     .footer-content {
+      background-image: url('../img/footer/verde_footer.svg');
+      background-repeat-y: no-repeat;
+      background-size: 92rem 53rem;
+      background-position-y: -1rem;
+      padding-bottom: 2rem;
       .contact-form {
         input, textarea {
           background-color: $green;
@@ -238,9 +255,23 @@ footer {
 
 .footer-projects, .footer-proyectos, .footer-we-share, .footer-compartimos, .footer-project-deployment {
   .background-section {
-    background-image: url('../img/footer/footer-bg-red.svg');
+    .footer-title {
+      background-image: url('../img/footer/footer-bg-red.svg');
+      background-position-y: -5rem;
+      background-repeat: no-repeat;
+      background-size: 103%;
+      padding-top: 11rem;
 
+      @media screen and (min-width: $laptop-large) {
+        padding-top: 16rem;
+      }
+    }
     .footer-content {
+      background-image: url('../img/footer/rojo_footer.svg');
+      background-repeat-y: no-repeat;
+      background-size: 92rem 53rem;
+      background-position-y: -1rem;
+      padding-bottom: 2rem;
       .contact-form {
         input, textarea {
           background-color: $red;
