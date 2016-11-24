@@ -1,7 +1,7 @@
 .clients-container-home {
   margin-top: 8rem;
 
-  @media screen and (max-width: $tablet-medium) {
+  @media screen and (max-width: $laptop-small) {
     margin-top: 0rem;
   }
 
@@ -23,7 +23,7 @@
       }
 
       @media screen and (max-width: $mobile-large) {
-        margin: 3rem 0 0 0rem;
+        margin: 3rem 0 0 -0.3rem;
         width: 5rem;
       }
     }

@@ -16,6 +16,10 @@ footer {
 
       img {
         width: 90%;
+
+        @media screen and (max-width: $laptop-small) {
+          width: 100%;
+        }
       }
     }
 
@@ -25,6 +29,11 @@ footer {
       padding-top: 3%;
       display: flex;
       justify-content: center;
+
+      @media screen and (max-width: $laptop-small) {
+        flex-direction: column;
+        align-items: center;
+      }
 
       .contact-form, .contact-info {
         float: left;
@@ -44,6 +53,10 @@ footer {
         background-position: right top;
         background-repeat: no-repeat;
         width: 50%;
+
+        @media screen and (max-width: $laptop-small) {
+          width: 80%;
+        }
 
         @media screen and (max-width: $mobile-large) {
           background: none;
@@ -93,7 +106,21 @@ footer {
         }
       }
 
+      .line {
+        display: none;
+        @media screen and (max-width: $laptop-small) {
+          display: inherit;
+          margin-top: 2rem;
+          width: 100%;
+        }
+      }
+
       .contact-info {
+
+        @media screen and (max-width: $laptop-small) {
+          width: 80%;
+        }
+
         .info-title {
           font-size: 4.5rem;
           margin-bottom: 3.125rem;
@@ -209,11 +236,25 @@ footer {
   position: relative;
   z-index: -1;
   top: -20rem;
+
+  @media screen and (max-width: $tablet-medium) {
+    top: -10rem;
+  }
+
   .background-section {
     background-image: url('../img/footer/azul_footer.svg');
     background-repeat-y: no-repeat;
     background-size: cover;
     padding-top: 19%;
+
+    @media screen and (max-width: $laptop-small) {
+      padding-top: 42%;
+      padding-bottom: 28%;
+    }
+
+    @media screen and (max-width: $tablet-medium) {
+      padding-top: 55%;
+    }
 
     .footer-content {
       .contact-form {

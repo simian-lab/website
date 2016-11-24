@@ -16,15 +16,19 @@
   }
 
   @media screen and (max-width: $laptop-small) {
-    height: 28rem;
+    height: 37rem;
   }
 
   @media screen and (max-width: $tablet-medium) {
     background-position-y: 16rem;
     align-items: center;
-    display: flex;
     flex-direction: column;
     height: 41rem;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    height: 36rem;
   }
 
   p {
@@ -52,7 +56,7 @@
       height: 24rem;
       left: -2rem;
       margin: 0rem 0 0 -2rem;
-      top: -2rem;
+      top: -6rem;
       width: 22rem;
     }
 
@@ -61,6 +65,10 @@
       padding: 5rem 0 0 3.5rem;
       z-index: -1;
       left: 0rem;
+    }
+
+    @media screen and (max-width: $mobile-large) {
+      top: -3rem;
     }
 
     h1 {
@@ -81,26 +89,30 @@
 
     @media screen and (max-width: $laptop-small) {
       right: -1.5rem;
-      top: 4rem;
+      top: 2rem;
       width: 18rem;
     }
 
     @media screen and (max-width: $tablet-medium) {
       position: relative;
       right: 0rem;
-      top: 12rem;
+      top: 13.5rem;
     }
 
     @media screen and (max-width: $tablet-small) {
-      top: 7rem;
+      top: 10rem;
     }
 
     @media screen and (max-width: $mobile-large) {
-      top: 0rem;
+      top: 7rem;
+    }
+
+    @media screen and (max-width: $mobile-medium) {
+      top: 5rem;
     }
 
     @media screen and (max-width: $mobile-small) {
-      top: -3rem;
+      top: 4rem;
     }
 
     p {
@@ -115,16 +127,5 @@
         margin: 1rem auto;
       }
     }
-  }
-
-  .back-blue{
-    background-image: url("../img/home/fondo_azul_footer.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 104%;
-    height: 30rem;
-    margin-top: -4rem;
-    position: relative;
-    z-index: -1;
   }
 }

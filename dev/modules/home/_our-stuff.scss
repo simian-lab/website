@@ -9,8 +9,27 @@
   margin-top: 3rem;
   padding: 2rem 0;
 
+  @media screen and (max-width: $laptop-small) {
+    background-size: 164rem 113rem;
+    height: 107rem;
+  }
+
+  @media screen and (max-width: $tablet-medium) {
+    background-size: 99rem 76rem;
+    height: 70rem;
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    background-size: 75rem 58rem;
+    height: 54rem;
+    margin-top: 0rem;
+  }
+
   .banano {
     width: 64rem;
+    @media screen and (max-width: $laptop-small) {
+      width: 100%;
+    }
   }
 
   .title {
@@ -22,13 +41,20 @@
     padding: 3rem 0 0 9rem;
     width: 33rem;
 
+    @media screen and (max-width: $laptop-small) {
+      height: 22rem;
+      margin-top: -27rem;
+      padding: 2rem 0 0 8rem;
+    }
+
     @media screen and (max-width: $tablet-medium) {
-      padding: 2rem 0 0 7rem;
-      width: 24rem;
+      margin-top: -19rem;
+      padding: 1.5rem 0 0 5rem;
+      width: 19rem;
     }
 
     @media screen and (max-width: $mobile-large) {
-      margin-top: -3rem;
+      margin-top: -12rem;
       padding: 1rem 0 0 4rem;
       width: 14rem;
     }
@@ -37,7 +63,7 @@
       font-size: 4rem;
 
       @media screen and (max-width: $tablet-medium) {
-        font-size: 3rem;
+        font-size: 2rem;
       }
 
       @media screen and (max-width: $mobile-large) {
@@ -50,7 +76,7 @@
       font-size: 9rem;
 
       @media screen and (max-width: $tablet-medium) {
-        font-size: 7rem;
+        font-size: 6rem;
       }
 
       @media screen and (max-width: $mobile-large) {
@@ -69,7 +95,8 @@
     @media screen and (max-width: $laptop-small) {
       align-items: center;
       flex-direction: column;
-      flex-wrap: wrap;
+      height: inherit;
+      justify-content: flex-start;
     }
 
     @media screen and (max-width: $mobile-large) {
@@ -80,8 +107,12 @@
       position: relative;
       width: 30rem;
 
+      @media screen and (max-width: $tablet-medium) {
+        width: 24rem;
+      }
+
       @media screen and (max-width: $mobile-large) {
-        width: 21rem;
+        width: 20rem;
       }
 
       .white-sign, .more, .logo {
@@ -147,12 +178,12 @@
           }
 
           @media screen and (max-width: $tablet-medium) {
-            left: 3rem;
+            left: -1rem;
             top: 5rem;
           }
 
           @media screen and (max-width: $mobile-large) {
-            left: 5rem;
+            left: 2rem;
             top: 4rem;
           }
         }
@@ -161,10 +192,6 @@
           left: -1rem;
           @media screen and (max-width: $tablet-medium) {
             left: 0rem;
-          }
-
-          @media screen and (max-width: $mobile-large) {
-            left: 3rem;
           }
         }
 
@@ -178,11 +205,12 @@
           }
 
           @media screen and (max-width: $tablet-medium) {
-            top: 13rem;
+            left: 7rem;
+            top: 15rem;
           }
 
           @media screen and (max-width: $mobile-large) {
-            left: 9rem;
+            left: 6rem;
             top: 10rem;
           }
         }
@@ -197,12 +225,12 @@
           }
 
           @media screen and (max-width: $tablet-medium) {
-            left: 11rem;
-            top: 9rem;
+            left: 12rem;
+            top: 10rem;
           }
 
           @media screen and (max-width: $mobile-large) {
-            left: 12rem;
+            left: 9rem;
             top: 7.5rem;
           }
         }
@@ -219,7 +247,7 @@
           }
 
           @media screen and (max-width: $tablet-medium) {
-            left: -2rem;
+            left: -4rem;
             top: 1rem;
           }
 
@@ -240,11 +268,11 @@
 
           @media screen and (max-width: $tablet-medium) {
             left: 12rem;
-            top: 9rem;
+            top: 11rem;
           }
 
           @media screen and (max-width: $mobile-large) {
-            left: 11rem;
+            left: 10rem;
             top: 8rem;
           }
         }
@@ -259,8 +287,8 @@
           }
 
           @media screen and (max-width: $tablet-medium) {
-            left: 5rem;
-            top: 5rem;
+            left: 6rem;
+            top: 6rem;
           }
 
           @media screen and (max-width: $mobile-large) {
@@ -277,7 +305,7 @@
           }
 
           @media screen and (max-width: $mobile-large) {
-            left: 13rem;
+            left: 12rem;
             top: -2rem;
           }
         }

@@ -262,6 +262,9 @@ footer .background-section {
       text-align: center; }
     footer .background-section .footer-title img {
       width: 90%; }
+      @media screen and (max-width: 64rem) {
+        footer .background-section .footer-title img {
+          width: 100%; } }
   footer .background-section .footer-content {
     padding-top: 3%;
     display: flex;
@@ -270,6 +273,10 @@ footer .background-section {
       clear: both;
       content: "";
       display: table; }
+    @media screen and (max-width: 64rem) {
+      footer .background-section .footer-content {
+        flex-direction: column;
+        align-items: center; } }
     footer .background-section .footer-content .contact-form, footer .background-section .footer-content .contact-info {
       float: left;
       padding: 0 4%;
@@ -285,6 +292,9 @@ footer .background-section {
       background-position: right top;
       background-repeat: no-repeat;
       width: 50%; }
+      @media screen and (max-width: 64rem) {
+        footer .background-section .footer-content .contact-form {
+          width: 80%; } }
       @media screen and (max-width: 30rem) {
         footer .background-section .footer-content .contact-form {
           background: none; } }
@@ -327,6 +337,16 @@ footer .background-section {
         margin-top: 2.813rem;
         padding-left: 2.1rem;
         text-align: left; }
+    footer .background-section .footer-content .line {
+      display: none; }
+      @media screen and (max-width: 64rem) {
+        footer .background-section .footer-content .line {
+          display: inherit;
+          margin-top: 2rem;
+          width: 100%; } }
+    @media screen and (max-width: 64rem) {
+      footer .background-section .footer-content .contact-info {
+        width: 80%; } }
     footer .background-section .footer-content .contact-info .info-title {
       font-size: 4.5rem;
       margin-bottom: 3.125rem; }
@@ -409,11 +429,21 @@ footer .footer-end {
   position: relative;
   z-index: -1;
   top: -20rem; }
+  @media screen and (max-width: 45rem) {
+    .footer-home {
+      top: -10rem; } }
   .footer-home .background-section {
     background-image: url("../img/footer/azul_footer.svg");
     background-repeat-y: no-repeat;
     background-size: cover;
     padding-top: 19%; }
+    @media screen and (max-width: 64rem) {
+      .footer-home .background-section {
+        padding-top: 42%;
+        padding-bottom: 28%; } }
+    @media screen and (max-width: 45rem) {
+      .footer-home .background-section {
+        padding-top: 55%; } }
     .footer-home .background-section .footer-content .contact-form input, .footer-home .background-section .footer-content .contact-form textarea {
       background-color: #00A1C1; }
 
@@ -538,7 +568,7 @@ footer .footer-end {
     #home .hero .simian-tools {
       background: none;
       height: 17rem;
-      width: 21rem;
+      width: 20rem;
       padding: 0; } }
   #home .hero .simian-tools .simian {
     margin: -7rem 0 0 11rem; }
@@ -650,12 +680,20 @@ footer .footer-end {
   justify-content: center;
   margin-top: 4rem;
   padding: 13rem 2.5rem 0 0; }
+  @media screen and (max-width: 64rem) {
+    #home .our-projects .intro {
+      background-size: 125%;
+      background-position-x: center; } }
   @media screen and (max-width: 45rem) {
     #home .our-projects .intro {
+      background-size: 177%;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-around;
       padding: 3rem 0rem 0 0; } }
+  @media screen and (max-width: 30rem) {
+    #home .our-projects .intro {
+      background-size: 189%; } }
   #home .our-projects .intro .title-container {
     background-image: url("../img/home/our-projects-sign.svg");
     background-repeat: no-repeat;
@@ -682,7 +720,7 @@ footer .footer-end {
         height: 21rem;
         margin-top: -8rem;
         padding: 3rem 0 0 0.5rem;
-        width: 21rem; } }
+        width: 20rem; } }
     #home .our-projects .intro .title-container h1, #home .our-projects .intro .title-container p {
       text-align: center; }
     #home .our-projects .intro .title-container p {
@@ -740,9 +778,6 @@ footer .footer-end {
   background-size: 34rem 20rem;
   background-position-y: -2rem;
   position: relative; }
-  @media screen and (max-width: 45rem) {
-    #home .our-projects .slider-container {
-      margin-top: 2rem; } }
   #home .our-projects .slider-container .swiper-button-prev,
   #home .our-projects .slider-container .swiper-button-next {
     background-image: url("../img/home/yellow-arrow.svg");
@@ -861,8 +896,24 @@ footer .footer-end {
   justify-content: center;
   margin-top: 3rem;
   padding: 2rem 0; }
+  @media screen and (max-width: 64rem) {
+    #home .our-stuff {
+      background-size: 164rem 113rem;
+      height: 107rem; } }
+  @media screen and (max-width: 45rem) {
+    #home .our-stuff {
+      background-size: 99rem 76rem;
+      height: 70rem; } }
+  @media screen and (max-width: 30rem) {
+    #home .our-stuff {
+      background-size: 75rem 58rem;
+      height: 54rem;
+      margin-top: 0rem; } }
   #home .our-stuff .banano {
     width: 64rem; }
+    @media screen and (max-width: 64rem) {
+      #home .our-stuff .banano {
+        width: 100%; } }
   #home .our-stuff .title {
     background-image: url("../img/home/our-stuff-title.svg");
     background-repeat: no-repeat;
@@ -871,20 +922,26 @@ footer .footer-end {
     margin-top: -37rem;
     padding: 3rem 0 0 9rem;
     width: 33rem; }
+    @media screen and (max-width: 64rem) {
+      #home .our-stuff .title {
+        height: 22rem;
+        margin-top: -27rem;
+        padding: 2rem 0 0 8rem; } }
     @media screen and (max-width: 45rem) {
       #home .our-stuff .title {
-        padding: 2rem 0 0 7rem;
-        width: 24rem; } }
+        margin-top: -19rem;
+        padding: 1.5rem 0 0 5rem;
+        width: 19rem; } }
     @media screen and (max-width: 30rem) {
       #home .our-stuff .title {
-        margin-top: -3rem;
+        margin-top: -12rem;
         padding: 1rem 0 0 4rem;
         width: 14rem; } }
     #home .our-stuff .title p {
       font-size: 4rem; }
       @media screen and (max-width: 45rem) {
         #home .our-stuff .title p {
-          font-size: 3rem; } }
+          font-size: 2rem; } }
       @media screen and (max-width: 30rem) {
         #home .our-stuff .title p {
           font-size: 2rem; } }
@@ -893,7 +950,7 @@ footer .footer-end {
       font-size: 9rem; }
       @media screen and (max-width: 45rem) {
         #home .our-stuff .title h1 {
-          font-size: 7rem; } }
+          font-size: 6rem; } }
       @media screen and (max-width: 30rem) {
         #home .our-stuff .title h1 {
           font-size: 4rem; } }
@@ -906,16 +963,20 @@ footer .footer-end {
       #home .our-stuff .projects {
         align-items: center;
         flex-direction: column;
-        flex-wrap: wrap; } }
+        height: inherit;
+        justify-content: flex-start; } }
     @media screen and (max-width: 30rem) {
       #home .our-stuff .projects {
         margin-top: -8rem; } }
     #home .our-stuff .projects .project {
       position: relative;
       width: 30rem; }
+      @media screen and (max-width: 45rem) {
+        #home .our-stuff .projects .project {
+          width: 24rem; } }
       @media screen and (max-width: 30rem) {
         #home .our-stuff .projects .project {
-          width: 21rem; } }
+          width: 20rem; } }
       #home .our-stuff .projects .project .white-sign, #home .our-stuff .projects .project .more, #home .our-stuff .projects .project .logo {
         position: absolute; }
       #home .our-stuff .projects .project .phone {
@@ -962,20 +1023,17 @@ footer .footer-end {
             top: 12rem; } }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:first-child .white-sign {
-            left: 3rem;
+            left: -1rem;
             top: 5rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project:first-child .white-sign {
-            left: 5rem;
+            left: 2rem;
             top: 4rem; } }
       #home .our-stuff .projects .project:first-child .phone {
         left: -1rem; }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:first-child .phone {
             left: 0rem; } }
-        @media screen and (max-width: 30rem) {
-          #home .our-stuff .projects .project:first-child .phone {
-            left: 3rem; } }
       #home .our-stuff .projects .project:first-child .more {
         left: 13rem;
         top: 25rem; }
@@ -985,10 +1043,11 @@ footer .footer-end {
             top: 28rem; } }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:first-child .more {
-            top: 13rem; } }
+            left: 7rem;
+            top: 15rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project:first-child .more {
-            left: 9rem;
+            left: 6rem;
             top: 10rem; } }
       #home .our-stuff .projects .project:first-child .logo {
         left: 17rem;
@@ -999,11 +1058,11 @@ footer .footer-end {
             top: 20rem; } }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:first-child .logo {
-            left: 11rem;
-            top: 9rem; } }
+            left: 12rem;
+            top: 10rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project:first-child .logo {
-            left: 12rem;
+            left: 9rem;
             top: 7.5rem; } }
       #home .our-stuff .projects .project:last-child .white-sign {
         left: -6rem;
@@ -1014,7 +1073,7 @@ footer .footer-end {
             top: 12rem; } }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:last-child .white-sign {
-            left: -2rem;
+            left: -4rem;
             top: 1rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project:last-child .white-sign {
@@ -1030,10 +1089,10 @@ footer .footer-end {
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:last-child .more {
             left: 12rem;
-            top: 9rem; } }
+            top: 11rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project:last-child .more {
-            left: 11rem;
+            left: 10rem;
             top: 8rem; } }
       #home .our-stuff .projects .project:last-child .logo {
         left: 5rem;
@@ -1044,8 +1103,8 @@ footer .footer-end {
             top: 20rem; } }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:last-child .logo {
-            left: 5rem;
-            top: 5rem; } }
+            left: 6rem;
+            top: 6rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project:last-child .logo {
             left: 5rem;
@@ -1058,12 +1117,12 @@ footer .footer-end {
             top: -4rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project:last-child .phone {
-            left: 13rem;
+            left: 12rem;
             top: -2rem; } }
 
 #home .clients-container-home {
   margin-top: 8rem; }
-  @media screen and (max-width: 45rem) {
+  @media screen and (max-width: 64rem) {
     #home .clients-container-home {
       margin-top: 0rem; } }
   #home .clients-container-home .header-clients-container {
@@ -1081,7 +1140,7 @@ footer .footer-end {
           width: 7rem; } }
       @media screen and (max-width: 30rem) {
         #home .clients-container-home .header-clients-container .line-left {
-          margin: 3rem 0 0 0rem;
+          margin: 3rem 0 0 -0.3rem;
           width: 5rem; } }
     #home .clients-container-home .header-clients-container .title-clients h1 {
       color: #00A1C1;
@@ -1298,7 +1357,7 @@ footer .footer-end {
       -ms-transform: rotate(155deg);
       -o-transform: rotate(155deg);
       transform: rotate(155deg);
-      margin: 4rem -1rem 0 0rem; }
+      margin: 1rem -1rem 0 0rem; }
       @media screen and (max-width: 45rem) {
         #home .we-are .title::before {
           margin: -5rem 0 0 0; } }
@@ -1396,14 +1455,17 @@ footer .footer-end {
       height: 59rem; } }
   @media screen and (max-width: 64rem) {
     #home .find-us {
-      height: 28rem; } }
+      height: 37rem; } }
   @media screen and (max-width: 45rem) {
     #home .find-us {
       background-position-y: 16rem;
       align-items: center;
-      display: flex;
       flex-direction: column;
-      height: 41rem; } }
+      height: 41rem;
+      justify-content: center; } }
+  @media screen and (max-width: 30rem) {
+    #home .find-us {
+      height: 36rem; } }
   #home .find-us p {
     font-size: 2.5rem; }
     @media screen and (max-width: 64rem) {
@@ -1426,7 +1488,7 @@ footer .footer-end {
         height: 24rem;
         left: -2rem;
         margin: 0rem 0 0 -2rem;
-        top: -2rem;
+        top: -6rem;
         width: 22rem; } }
     @media screen and (max-width: 45rem) {
       #home .find-us .sign {
@@ -1434,6 +1496,9 @@ footer .footer-end {
         padding: 5rem 0 0 3.5rem;
         z-index: -1;
         left: 0rem; } }
+    @media screen and (max-width: 30rem) {
+      #home .find-us .sign {
+        top: -3rem; } }
     #home .find-us .sign h1 {
       color: #DED96B;
       font-size: 11rem; }
@@ -1448,22 +1513,25 @@ footer .footer-end {
     @media screen and (max-width: 64rem) {
       #home .find-us .see-more {
         right: -1.5rem;
-        top: 4rem;
+        top: 2rem;
         width: 18rem; } }
     @media screen and (max-width: 45rem) {
       #home .find-us .see-more {
         position: relative;
         right: 0rem;
-        top: 12rem; } }
+        top: 13.5rem; } }
     @media screen and (max-width: 37.5rem) {
       #home .find-us .see-more {
-        top: 7rem; } }
+        top: 10rem; } }
     @media screen and (max-width: 30rem) {
       #home .find-us .see-more {
-        top: 0rem; } }
+        top: 7rem; } }
+    @media screen and (max-width: 25rem) {
+      #home .find-us .see-more {
+        top: 5rem; } }
     @media screen and (max-width: 22.5rem) {
       #home .find-us .see-more {
-        top: -3rem; } }
+        top: 4rem; } }
     #home .find-us .see-more p {
       text-align: center; }
     #home .find-us .see-more .button {
@@ -1472,15 +1540,6 @@ footer .footer-end {
       @media screen and (max-width: 64rem) {
         #home .find-us .see-more .button {
           margin: 1rem auto; } }
-  #home .find-us .back-blue {
-    background-image: url("../img/home/fondo_azul_footer.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 104%;
-    height: 30rem;
-    margin-top: -4rem;
-    position: relative;
-    z-index: -1; }
 
 .clients-container {
   background-image: url("../img/clients/hero_fondo_banano-01.svg");
@@ -2872,40 +2931,7 @@ footer .footer-end {
   background-repeat: no-repeat;
   background-size: 108%;
   height: 57rem;
-  margin-top: -5rem;
-  /*
-
-  .prueba{
-    width: 20rem;
-    height: 25rem;
-
-    display: flex;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-
-    flex-wrap: wrap;
-
-    justify-content:center;
-    align-items: center;
-
-    background-color: aqua;
-
-    .elemento1{
-      background-color: aquamarine;
-      width: 10rem;
-      height: 10rem;
-    }
-    .elemento2{
-      background-color: orange;
-      width: 10rem;
-      height: 10rem;
-    }
-    .elemento3{
-      background-color: red;
-      width: 10rem;
-      height: 10rem;
-    }
-  } */ }
+  margin-top: -5rem; }
   @media screen and (min-width: 100rem) {
     .header {
       height: 72rem;
