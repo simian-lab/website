@@ -16,6 +16,11 @@
       flex-direction: column;
       align-items: center;
 
+      @media screen and (min-width: $laptop-medium) {
+        background-size: 89rem;
+        height: 64rem;
+      }
+
       .logo, .pagina, .icon {
         position: relative;
       }
@@ -28,8 +33,14 @@
       .logo {
         height: 2.5rem;
         left: -21.5rem;
-        top: 7.6rem;
+        top: 8rem;
         width: 9rem;
+
+        @media screen and (min-width: $laptop-medium) {
+          height: 3.5rem;
+          left: -30rem;
+          width: 12rem;
+        }
       }
 
       .pagina {
@@ -37,11 +48,25 @@
         left: 0.3rem;
         top: 8rem;
         width: 60rem;
+
+        @media screen and (min-width: $laptop-medium) {
+          height: 45rem;
+          left: 0.3rem;
+          top: 8rem;
+          width: 80rem;
+        }
       }
 
       .icon {
         display: flex;
         left: 19rem;
+        top: -1.5rem;
+        width: 19rem;
+
+        @media screen and (min-width: $laptop-medium) {
+          left: 31rem;
+        }
+
         .icon-movile {
           left: 2rem;
           position: relative;
@@ -64,8 +89,12 @@
       left: -7rem;
       margin: 0 auto;
       position: relative;
-      top: -3rem;
+      top: -5rem;
       width: 45rem;
+
+      @media screen and (min-width: $laptop-medium) {
+        width: 62rem;
+      }
 
       @media screen and (max-width: $tablet-small) {
         margin-top: -1rem;

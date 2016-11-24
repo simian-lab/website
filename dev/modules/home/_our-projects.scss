@@ -194,6 +194,9 @@
               .more-link {
                 bottom: 20%;
                 right: 2%;
+                @media screen and (min-width: $laptop-large) {
+                  right: 10%;
+                }
               }
             }
 
@@ -204,8 +207,11 @@
               }
 
               .more-link {
-                bottom: 6%;
+                bottom: 15%;
                 right: 28%;
+                @media screen and (min-width: $laptop-large) {
+                  bottom: 3%;
+                }
               }
             }
 
@@ -216,8 +222,12 @@
               }
 
               .more-link {
-                bottom: 0%;
+                bottom: 7%;
                 right: 18%;
+                @media screen and (min-width: $laptop-large) {
+                  bottom: -3%;
+                  right: 23%;
+                }
               }
             }
           }
