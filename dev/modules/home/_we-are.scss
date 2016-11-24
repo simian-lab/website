@@ -110,7 +110,7 @@
 
     &::before {
       @include transform(rotate(155deg));
-      margin: 4rem -1rem 0 0rem;
+      margin: 1rem -1rem 0 0rem;
 
       @media screen and (max-width: $tablet-medium) {
         margin: -5rem 0 0 0;
