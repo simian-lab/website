@@ -222,6 +222,10 @@
     top: -3rem;
     width: 45rem;
 
+    @media screen and (min-width: $laptop-medium) {
+      width: 62rem;
+    }
+
     @media screen and (max-width: $mobile-large) {
       width: 83%;
       margin-left: 11%;

@@ -15,12 +15,23 @@
 
   p {
     font-size: 4.5rem;
+
+    @media screen and (min-width: $laptop-large) {
+      font-size: 5.5rem;
+    }
+
+    @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
+      font-size: 5.5rem;
+    }
+
     @media screen and (max-width: $laptop-small) {
       font-size: 3.5rem;
     }
+
     @media screen and (max-width: $tablet-large) {
       font-size: 2.5rem;
     }
+
     @media screen and (max-width: $mobile-large) {
       font-size: 2.3rem;
     }
@@ -29,12 +40,23 @@
   h1 {
     color: $yellow;
     font-size: 8.5rem;
+
+    @media screen and (min-width: $laptop-large) {
+      font-size: 10.5rem;
+    }
+
+    @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
+      font-size: 9.5rem;
+    }
+
     @media screen and (max-width: $laptop-small) {
       font-size: 5.5rem;
     }
+
     @media screen and (max-width: $tablet-large) {
       font-size: 4.5rem;
     }
+
     @media screen and (max-width: $mobile-large) {
       font-size: 5.3rem;
     }
@@ -44,14 +66,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 7%;
+    margin-top: 3%;
 
-    @media screen and (min-width: $laptop-large) {
-      margin-top: 12%;
+    @media screen and (min-width: $laptop-medium) {
+      margin-top: 9%;
     }
 
-    @media screen and (min-width: $laptop-medium) and (max-width: $laptop-large) {
-      margin-top: 9%;
+    @media screen and (min-width: 75rem) and (max-width: $laptop-medium) {
+      margin-top: 7%;
     }
 
     .earch {

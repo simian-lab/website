@@ -758,16 +758,26 @@ footer .footer-end {
       #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .preview-container.desktop .more-link {
         bottom: 20%;
         right: 2%; }
+        @media screen and (min-width: 100rem) {
+          #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .preview-container.desktop .more-link {
+            right: 10%; } }
       #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .preview-container.phone img {
         width: 35%; }
       #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .preview-container.phone .more-link {
-        bottom: 6%;
+        bottom: 15%;
         right: 28%; }
+        @media screen and (min-width: 100rem) {
+          #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .preview-container.phone .more-link {
+            bottom: 3%; } }
       #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .preview-container.tablet img {
         width: 52%; }
       #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .preview-container.tablet .more-link {
-        bottom: 0%;
+        bottom: 7%;
         right: 18%; }
+        @media screen and (min-width: 100rem) {
+          #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .preview-container.tablet .more-link {
+            bottom: -3%;
+            right: 23%; } }
     #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote {
       margin: 2rem 0;
       text-align: center; }
@@ -812,20 +822,23 @@ footer .footer-end {
           text-transform: uppercase; }
 
 #home .our-stuff {
-  background-image: url("../img/home/our-stuff-bg.svg");
-  background-repeat: no-repeat;
-  background-size: 103%;
-  padding: 2rem 0;
+  align-items: center;
+  background-image: url("../img/home/verde_footer.svg");
+  background-repeat-y: no-repeat;
+  background-size: 76rem 76rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  margin-top: 3rem;
+  padding: 2rem 0; }
+  #home .our-stuff .banano {
+    width: 64rem; }
   #home .our-stuff .title {
     background-image: url("../img/home/our-stuff-title.svg");
     background-repeat: no-repeat;
     background-size: contain;
     height: 18rem;
-    margin: 0 auto;
+    margin-top: -37rem;
     padding: 3rem 0 0 9rem;
     width: 33rem; }
     @media screen and (max-width: 45rem) {
@@ -856,19 +869,9 @@ footer .footer-end {
           font-size: 4rem; } }
   #home .our-stuff .projects {
     display: flex;
-    justify-content: center;
-    background-image: url("../img/home/verde_footer.svg");
-    background-size: 37rem 22rem;
-    background-repeat-y: no-repeat;
-    background-position: bottom;
+    justify-content: space-around;
     height: 40rem;
     width: 100%; }
-    @media screen and (min-width: 100rem) {
-      #home .our-stuff .projects {
-        background-size: 4rem 10rem; } }
-    @media screen and (min-width: 90rem) and (max-width: 100rem) {
-      #home .our-stuff .projects {
-        background-size: 21rem 13rem; } }
     @media screen and (max-width: 64rem) {
       #home .our-stuff .projects {
         align-items: center;
@@ -879,7 +882,7 @@ footer .footer-end {
         margin-top: -8rem; } }
     #home .our-stuff .projects .project {
       position: relative;
-      width: 25rem; }
+      width: 30rem; }
       @media screen and (max-width: 30rem) {
         #home .our-stuff .projects .project {
           width: 21rem; } }
@@ -888,7 +891,7 @@ footer .footer-end {
       #home .our-stuff .projects .project .phone {
         position: relative;
         z-index: 1;
-        width: 15rem; }
+        width: 17rem; }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project .phone {
             width: 10rem; } }
@@ -901,7 +904,10 @@ footer .footer-end {
           #home .our-stuff .projects .project .more {
             width: 4rem; } }
       #home .our-stuff .projects .project .white-sign {
-        width: 20rem; }
+        width: 25rem; }
+        @media screen and (min-width: 90rem) {
+          #home .our-stuff .projects .project .white-sign {
+            width: 35rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project .white-sign {
             width: 16rem; } }
@@ -909,13 +915,21 @@ footer .footer-end {
         height: 4rem;
         width: 8rem;
         z-index: 1; }
+        @media screen and (min-width: 90rem) {
+          #home .our-stuff .projects .project .logo {
+            height: 5rem;
+            width: 12rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project .logo {
             height: 3rem;
             width: 7rem; } }
       #home .our-stuff .projects .project:first-child .white-sign {
-        left: 4rem;
-        top: 17rem; }
+        left: 5rem;
+        top: 15rem; }
+        @media screen and (min-width: 90rem) {
+          #home .our-stuff .projects .project:first-child .white-sign {
+            left: 1rem;
+            top: 12rem; } }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:first-child .white-sign {
             left: 3rem;
@@ -925,7 +939,7 @@ footer .footer-end {
             left: 5rem;
             top: 4rem; } }
       #home .our-stuff .projects .project:first-child .phone {
-        left: -4rem; }
+        left: -1rem; }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:first-child .phone {
             left: 0rem; } }
@@ -933,8 +947,12 @@ footer .footer-end {
           #home .our-stuff .projects .project:first-child .phone {
             left: 3rem; } }
       #home .our-stuff .projects .project:first-child .more {
-        left: 8rem;
+        left: 13rem;
         top: 25rem; }
+        @media screen and (min-width: 90rem) {
+          #home .our-stuff .projects .project:first-child .more {
+            left: 12rem;
+            top: 28rem; } }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:first-child .more {
             top: 13rem; } }
@@ -943,8 +961,12 @@ footer .footer-end {
             left: 9rem;
             top: 10rem; } }
       #home .our-stuff .projects .project:first-child .logo {
-        left: 12rem;
+        left: 17rem;
         top: 21rem; }
+        @media screen and (min-width: 90rem) {
+          #home .our-stuff .projects .project:first-child .logo {
+            left: 18rem;
+            top: 20rem; } }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:first-child .logo {
             left: 11rem;
@@ -954,8 +976,12 @@ footer .footer-end {
             left: 12rem;
             top: 7.5rem; } }
       #home .our-stuff .projects .project:last-child .white-sign {
-        left: -3rem;
-        top: 17rem; }
+        left: -6rem;
+        top: 15rem; }
+        @media screen and (min-width: 90rem) {
+          #home .our-stuff .projects .project:last-child .white-sign {
+            left: -15rem;
+            top: 12rem; } }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:last-child .white-sign {
             left: -2rem;
@@ -967,6 +993,10 @@ footer .footer-end {
       #home .our-stuff .projects .project:last-child .more {
         left: 12rem;
         top: 25rem; }
+        @media screen and (min-width: 90rem) {
+          #home .our-stuff .projects .project:last-child .more {
+            left: 12rem;
+            top: 28rem; } }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:last-child .more {
             left: 12rem;
@@ -978,6 +1008,10 @@ footer .footer-end {
       #home .our-stuff .projects .project:last-child .logo {
         left: 5rem;
         top: 21rem; }
+        @media screen and (min-width: 90rem) {
+          #home .our-stuff .projects .project:last-child .logo {
+            left: -1rem;
+            top: 20rem; } }
         @media screen and (max-width: 45rem) {
           #home .our-stuff .projects .project:last-child .logo {
             left: 5rem;
@@ -1422,7 +1456,7 @@ footer .footer-end {
   background-image: url("../img/clients/hero_fondo_banano-01.svg");
   background-repeat: no-repeat;
   background-size: 103%;
-  background-position: 0rem -6.5rem;
+  background-position: 0rem -1.5rem;
   padding-top: 10rem;
   position: relative;
   top: -3rem; }
@@ -1435,7 +1469,11 @@ footer .footer-end {
   .clients-container .header-clients-container {
     align-items: center;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: -3rem; }
+    @media screen and (min-width: 75rem) {
+      .clients-container .header-clients-container {
+        margin-top: 0rem; } }
     .clients-container .header-clients-container .line-left {
       margin: 6rem 0 0 0rem; }
       @media screen and (max-width: 64rem) {
@@ -1582,6 +1620,12 @@ footer .footer-end {
       top: -4rem; } }
   #location .header-find p {
     font-size: 4.5rem; }
+    @media screen and (min-width: 100rem) {
+      #location .header-find p {
+        font-size: 5.5rem; } }
+    @media screen and (min-width: 90rem) and (max-width: 100rem) {
+      #location .header-find p {
+        font-size: 5.5rem; } }
     @media screen and (max-width: 64rem) {
       #location .header-find p {
         font-size: 3.5rem; } }
@@ -1594,6 +1638,12 @@ footer .footer-end {
   #location .header-find h1 {
     color: #DED96B;
     font-size: 8.5rem; }
+    @media screen and (min-width: 100rem) {
+      #location .header-find h1 {
+        font-size: 10.5rem; } }
+    @media screen and (min-width: 90rem) and (max-width: 100rem) {
+      #location .header-find h1 {
+        font-size: 9.5rem; } }
     @media screen and (max-width: 64rem) {
       #location .header-find h1 {
         font-size: 5.5rem; } }
@@ -1607,13 +1657,13 @@ footer .footer-end {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 7%; }
-    @media screen and (min-width: 100rem) {
-      #location .header-find .graph {
-        margin-top: 12%; } }
-    @media screen and (min-width: 90rem) and (max-width: 100rem) {
+    margin-top: 3%; }
+    @media screen and (min-width: 90rem) {
       #location .header-find .graph {
         margin-top: 9%; } }
+    @media screen and (min-width: 75rem) and (max-width: 90rem) {
+      #location .header-find .graph {
+        margin-top: 7%; } }
     #location .header-find .graph .earch {
       z-index: -1; }
     #location .header-find .graph .line {
@@ -1940,16 +1990,19 @@ footer .footer-end {
       left: -7.5rem; }
       #we-do .header-do .work-analize .work .idea-icon {
         width: 25rem; }
+      #we-do .header-do .work-analize .work h1 {
+        color: #1DC0B2; }
     #we-do .header-do .work-analize .analize {
       position: relative;
       left: 6rem;
       top: -1rem; }
       #we-do .header-do .work-analize .analize .banana-icon {
         width: 25rem; }
+      #we-do .header-do .work-analize .analize h1 {
+        color: #00A1C1; }
   #we-do .header-do .work-analize h1, #we-do .header-do .work-analize p, #we-do .header-do .desing h1, #we-do .header-do .desing p {
     text-align: center; }
   #we-do .header-do .work-analize h1, #we-do .header-do .desing h1 {
-    color: #1DC0B2;
     font-size: 4rem; }
   #we-do .header-do .work-analize p, #we-do .header-do .desing p {
     font-size: 1.3rem;
@@ -1958,6 +2011,8 @@ footer .footer-end {
   #we-do .header-do .desing {
     margin: 0 auto;
     width: 24rem; }
+    #we-do .header-do .desing h1 {
+      color: #DED96B; }
     @media screen and (min-width: 100rem) {
       #we-do .header-do .desing {
         margin-top: 8rem; } }
@@ -1979,7 +2034,6 @@ footer .footer-end {
   #we-do .finish-do .develop-maintenance h1, #we-do .finish-do .develop-maintenance p {
     text-align: center; }
   #we-do .finish-do .develop-maintenance h1 {
-    color: #1DC0B2;
     font-size: 4rem; }
   #we-do .finish-do .develop-maintenance p {
     font-size: 1.3rem;
@@ -1993,12 +2047,16 @@ footer .footer-end {
     left: -5.5rem; }
     #we-do .finish-do .develop-maintenance .develop .icon {
       width: 25rem; }
+    #we-do .finish-do .develop-maintenance .develop h1 {
+      color: #FF5E5B; }
   #we-do .finish-do .develop-maintenance .maintenance {
     position: relative;
     left: 6rem;
     top: 1.5rem; }
     #we-do .finish-do .develop-maintenance .maintenance .idea {
       width: 25rem; }
+    #we-do .finish-do .develop-maintenance .maintenance h1 {
+      color: #1DC0B2; }
 
 #we-do .finish-do .icon-finish {
   margin: 0 auto;
@@ -2072,15 +2130,24 @@ footer .footer-end {
   display: flex;
   height: 48rem;
   justify-content: center;
-  margin-bottom: -10rem;
+  margin-bottom: -21rem;
   position: relative;
-  top: -3rem; }
+  top: -12rem; }
   @media screen and (min-width: 100rem) {
     #projects .header-projects {
-      height: 66rem; } }
+      height: 66rem;
+      margin-bottom: -28rem;
+      top: -21rem; } }
   @media screen and (min-width: 90rem) and (max-width: 100rem) {
     #projects .header-projects {
-      height: 53rem; } }
+      height: 53rem;
+      margin-bottom: -22rem;
+      top: -15rem; } }
+  @media screen and (min-width: 75rem) and (max-width: 90rem) {
+    #projects .header-projects {
+      margin-bottom: -19rem;
+      position: relative;
+      top: -12rem; } }
   @media screen and (max-width: 30rem) {
     #projects .header-projects {
       background-size: 370%;
@@ -2091,7 +2158,7 @@ footer .footer-end {
     background-repeat: no-repeat;
     background-size: 48rem 40rem;
     width: 40rem;
-    height: 32rem;
+    height: 34rem;
     padding: 12rem 0 0 10rem; }
     #projects .header-projects .content-header p {
       font-size: 3rem; }
@@ -2237,6 +2304,9 @@ footer .footer-end {
   position: relative;
   top: -3rem;
   width: 45rem; }
+  @media screen and (min-width: 90rem) {
+    #projects .projects .text-movile {
+      width: 62rem; } }
   @media screen and (max-width: 30rem) {
     #projects .projects .text-movile {
       width: 83%;
@@ -2278,6 +2348,10 @@ footer .footer-end {
   justify-content: center;
   flex-direction: column;
   align-items: center; }
+  @media screen and (min-width: 90rem) {
+    #projects .projects-desktop .desktop {
+      background-size: 89rem;
+      height: 64rem; } }
   #projects .projects-desktop .desktop .logo, #projects .projects-desktop .desktop .pagina, #projects .projects-desktop .desktop .icon {
     position: relative; }
   @media screen and (min-width: 30rem) {
@@ -2286,16 +2360,32 @@ footer .footer-end {
   #projects .projects-desktop .desktop .logo {
     height: 2.5rem;
     left: -21.5rem;
-    top: 7.6rem;
+    top: 8rem;
     width: 9rem; }
+    @media screen and (min-width: 90rem) {
+      #projects .projects-desktop .desktop .logo {
+        height: 3.5rem;
+        left: -30rem;
+        width: 12rem; } }
   #projects .projects-desktop .desktop .pagina {
     height: 32rem;
     left: 0.3rem;
     top: 8rem;
     width: 60rem; }
+    @media screen and (min-width: 90rem) {
+      #projects .projects-desktop .desktop .pagina {
+        height: 45rem;
+        left: 0.3rem;
+        top: 8rem;
+        width: 80rem; } }
   #projects .projects-desktop .desktop .icon {
     display: flex;
-    left: 19rem; }
+    left: 19rem;
+    top: -1.5rem;
+    width: 19rem; }
+    @media screen and (min-width: 90rem) {
+      #projects .projects-desktop .desktop .icon {
+        left: 31rem; } }
     #projects .projects-desktop .desktop .icon .icon-movile {
       left: 2rem;
       position: relative;
@@ -2309,8 +2399,11 @@ footer .footer-end {
   left: -7rem;
   margin: 0 auto;
   position: relative;
-  top: -3rem;
+  top: -5rem;
   width: 45rem; }
+  @media screen and (min-width: 90rem) {
+    #projects .projects-desktop .text {
+      width: 62rem; } }
   @media screen and (max-width: 37.5rem) {
     #projects .projects-desktop .text {
       margin-top: -1rem; } }
