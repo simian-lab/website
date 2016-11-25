@@ -2381,18 +2381,27 @@ footer .footer-end {
       margin-bottom: -19rem;
       position: relative;
       top: -12rem; } }
-  @media screen and (max-width: 30rem) {
+  @media screen and (max-width: 64rem) {
     #projects .header-projects {
-      background-size: 370%;
-      background-position-x: center; } }
+      background-size: 280%;
+      background-position: center 0;
+      justify-content: flex-start;
+      flex-direction: column;
+      height: 65rem;
+      top: -4rem; } }
   #projects .header-projects .content-header {
     background-image: url("../img/projects/cuadro_texto_hero.svg");
     background-position: -9rem 0rem;
     background-repeat: no-repeat;
     background-size: 48rem 40rem;
     width: 40rem;
-    height: 34rem;
-    padding: 12rem 0 0 10rem; }
+    height: 34rem; }
+    @media screen and (max-width: 64rem) {
+      #projects .header-projects .content-header {
+        background-position: -11rem -4rem;
+        height: 30rem;
+        padding: 8rem 0 0 8rem;
+        width: 36rem; } }
     #projects .header-projects .content-header p {
       font-size: 3rem; }
       #projects .header-projects .content-header p:nth-child(2) {
@@ -2404,24 +2413,25 @@ footer .footer-end {
   #projects .header-projects .icon-header {
     width: 35rem;
     margin: 5rem 0 0 -10rem; }
+    @media screen and (max-width: 64rem) {
+      #projects .header-projects .icon-header {
+        margin: -6rem 0 0 0; } }
 
 #projects .projects .content-mobile {
   display: flex;
   justify-content: center; }
+  @media screen and (max-width: 64rem) {
+    #projects .projects .content-mobile {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3rem; } }
   #projects .projects .content-mobile .logo {
-    left: 2rem;
-    position: relative;
-    top: 4rem;
     width: 19rem; }
     #projects .projects .content-mobile .logo img {
       width: 16rem; }
     @media screen and (min-width: 30rem) {
       #projects .projects .content-mobile .logo .line-logo {
         display: none; } }
-  #projects .projects .content-mobile .logo {
-    width: 19rem; }
-    #projects .projects .content-mobile .logo img {
-      width: 16rem; }
   #projects .projects .content-mobile .logo-tablet {
     width: 13rem; }
     #projects .projects .content-mobile .logo-tablet img {
@@ -2430,9 +2440,23 @@ footer .footer-end {
     left: 2rem;
     top: 4rem;
     position: relative; }
-    @media screen and (min-width: 30rem) {
-      #projects .projects .content-mobile .logo .line-logo, #projects .projects .content-mobile .logo-tablet .line-logo {
-        display: none; } }
+    @media screen and (max-width: 64rem) {
+      #projects .projects .content-mobile .logo, #projects .projects .content-mobile .logo-tablet {
+        display: flex;
+        top: 0rem;
+        left: 0rem;
+        width: 70%; } }
+    #projects .projects .content-mobile .logo .line-logo, #projects .projects .content-mobile .logo-tablet .line-logo {
+      display: none; }
+      @media screen and (max-width: 64rem) {
+        #projects .projects .content-mobile .logo .line-logo, #projects .projects .content-mobile .logo-tablet .line-logo {
+          display: inherit;
+          width: 64%; } }
+    #projects .projects .content-mobile .logo .line-desktop, #projects .projects .content-mobile .logo-tablet .line-desktop {
+      display: inherit; }
+      @media screen and (max-width: 64rem) {
+        #projects .projects .content-mobile .logo .line-desktop, #projects .projects .content-mobile .logo-tablet .line-desktop {
+          display: none; } }
   #projects .projects .content-mobile .mobile {
     background-image: url("../img/projects/iphone_grande.svg");
     width: 26rem; }
@@ -2467,10 +2491,7 @@ footer .footer-end {
     text-align: center;
     top: 11rem;
     width: 20rem; }
-    @media screen and (max-width: 37.5rem) {
-      #projects .projects .content-mobile .quote {
-        margin-top: -56%; } }
-    @media screen and (max-width: 30rem) {
+    @media screen and (max-width: 64rem) {
       #projects .projects .content-mobile .quote {
         display: none; } }
     #projects .projects .content-mobile .quote .avatar {
@@ -2478,9 +2499,6 @@ footer .footer-end {
       display: block;
       margin: 0 auto;
       width: 5.813rem; }
-      @media screen and (max-width: 52.5rem) {
-        #projects .projects .content-mobile .quote .avatar {
-          width: 2.813rem; } }
     #projects .projects .content-mobile .quote p {
       margin: 0.5rem 0; }
     #projects .projects .content-mobile .quote .text {
@@ -2489,37 +2507,25 @@ footer .footer-end {
       font-size: 1.5rem;
       margin-bottom: 2rem;
       padding: 0 1rem; }
-      @media screen and (max-width: 64rem) {
-        #projects .projects .content-mobile .quote .text {
-          font-size: 1rem; } }
-      @media screen and (max-width: 52.5rem) {
-        #projects .projects .content-mobile .quote .text {
-          font-size: 0.7rem; } }
       #projects .projects .content-mobile .quote .text .comillas {
         text-transform: uppercase; }
     #projects .projects .content-mobile .quote .author, #projects .projects .content-mobile .quote .project-country .project, #projects .projects .content-mobile .quote .text .comillas {
       color: #FF5E5B; }
     #projects .projects .content-mobile .quote .author {
       font-size: 1.3rem; }
-      @media screen and (max-width: 64rem) {
-        #projects .projects .content-mobile .quote .author {
-          font-size: 0.7rem; } }
     #projects .projects .content-mobile .quote .position {
       font-size: 1.4rem; }
-      @media screen and (max-width: 64rem) {
-        #projects .projects .content-mobile .quote .position {
-          font-size: 0.8rem; } }
     #projects .projects .content-mobile .quote .project-country {
       font-family: "quicksandbold";
       font-size: 1.4rem; }
-      @media screen and (max-width: 64rem) {
-        #projects .projects .content-mobile .quote .project-country {
-          font-size: 0.8rem; } }
       #projects .projects .content-mobile .quote .project-country .project {
         text-transform: uppercase; }
 
 #projects .projects .icon-movile {
   margin-top: -5rem; }
+  @media screen and (max-width: 64rem) {
+    #projects .projects .icon-movile {
+      margin-top: 0rem; } }
   #projects .projects .icon-movile .icon-android, #projects .projects .icon-movile .icon-ios {
     float: right;
     position: relative;
@@ -2540,6 +2546,11 @@ footer .footer-end {
   @media screen and (min-width: 90rem) {
     #projects .projects .text-movile {
       width: 62rem; } }
+  @media screen and (max-width: 64rem) {
+    #projects .projects .text-movile {
+      left: 0;
+      top: 0;
+      width: 82%; } }
   @media screen and (max-width: 30rem) {
     #projects .projects .text-movile {
       width: 83%;
@@ -2585,6 +2596,10 @@ footer .footer-end {
     #projects .projects-desktop .desktop {
       background-size: 89rem;
       height: 64rem; } }
+  @media screen and (max-width: 64rem) {
+    #projects .projects-desktop .desktop {
+      background-size: 46rem;
+      height: 60rem; } }
   #projects .projects-desktop .desktop .logo, #projects .projects-desktop .desktop .pagina, #projects .projects-desktop .desktop .icon {
     position: relative; }
   @media screen and (min-width: 30rem) {
@@ -2600,6 +2615,12 @@ footer .footer-end {
         height: 3.5rem;
         left: -30rem;
         width: 12rem; } }
+    @media screen and (max-width: 64rem) {
+      #projects .projects-desktop .desktop .logo {
+        height: 2rem;
+        left: -15.5rem;
+        top: 7.7rem;
+        width: 6rem; } }
   #projects .projects-desktop .desktop .pagina {
     height: 32rem;
     left: 0.3rem;
@@ -2611,6 +2632,10 @@ footer .footer-end {
         left: 0.3rem;
         top: 8rem;
         width: 80rem; } }
+    @media screen and (max-width: 64rem) {
+      #projects .projects-desktop .desktop .pagina {
+        height: 22rem;
+        width: 43rem; } }
   #projects .projects-desktop .desktop .icon {
     display: flex;
     left: 19rem;
@@ -2619,6 +2644,11 @@ footer .footer-end {
     @media screen and (min-width: 90rem) {
       #projects .projects-desktop .desktop .icon {
         left: 31rem; } }
+    @media screen and (max-width: 64rem) {
+      #projects .projects-desktop .desktop .icon {
+        left: 12rem;
+        top: -1.5rem;
+        width: 19rem; } }
     #projects .projects-desktop .desktop .icon .icon-movile {
       left: 2rem;
       position: relative;
@@ -2637,9 +2667,11 @@ footer .footer-end {
   @media screen and (min-width: 90rem) {
     #projects .projects-desktop .text {
       width: 62rem; } }
-  @media screen and (max-width: 37.5rem) {
+  @media screen and (max-width: 64rem) {
     #projects .projects-desktop .text {
-      margin-top: -1rem; } }
+      margin-top: -16rem;
+      top: 0;
+      width: 25rem; } }
   @media screen and (max-width: 30rem) {
     #projects .projects-desktop .text {
       width: 83%;
@@ -2653,7 +2685,7 @@ footer .footer-end {
     line-height: 130%; }
     @media screen and (max-width: 64rem) {
       #projects .projects-desktop .text h2 {
-        font-size: 1.5rem; } }
+        font-size: 1.3rem; } }
     @media screen and (max-width: 30rem) {
       #projects .projects-desktop .text h2 {
         font-size: 1.5rem; } }
@@ -2662,7 +2694,7 @@ footer .footer-end {
     line-height: 130%; }
     @media screen and (max-width: 64rem) {
       #projects .projects-desktop .text p {
-        font-size: 1.3rem; } }
+        font-size: 1.1rem; } }
     @media screen and (max-width: 30rem) {
       #projects .projects-desktop .text p {
         font-size: 1.3rem; } }

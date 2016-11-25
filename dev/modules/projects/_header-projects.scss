@@ -28,9 +28,13 @@
     top: -12rem;
   }
 
-  @media screen and (max-width: $mobile-large) {
-    background-size: 370%;
-    background-position-x: center;
+  @media screen and (max-width: $laptop-small) {
+    background-size: 280%;
+    background-position: center 0;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 65rem;
+    top: -4rem;
   }
 
   .content-header {
@@ -40,7 +44,14 @@
     background-size: 48rem 40rem;
     width: 40rem;
     height: 34rem;
-    padding: 12rem 0 0 10rem;
+
+    @media screen and (max-width: $laptop-small) {
+      background-position: -11rem -4rem;
+      height: 30rem;
+      padding: 8rem 0 0 8rem;
+      width: 36rem;
+    }
+
     p {
       font-size: 3rem;
 
@@ -59,5 +70,9 @@
   .icon-header {
     width: 35rem;
     margin: 5rem 0 0 -10rem;
+
+    @media screen and (max-width: $laptop-small) {
+      margin: -6rem 0 0 0;
+    }
   }
 }
