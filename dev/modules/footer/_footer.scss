@@ -211,6 +211,40 @@ footer {
       margin-top: 4rem;
       padding-bottom: 4%;
       padding-top: 12rem;
+
+      @media screen and (max-width: $laptop-small) {
+        margin-top: 1rem;
+        padding-top: 4rem;
+      }
+
+      .footer-title {
+        background-position-y: -5rem;
+        background-repeat: no-repeat;
+        background-size: 103%;
+        padding-top: 11rem;
+        @media screen and (max-width: $laptop-small) {
+          background-position-y: -3rem;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          background-position-y: -2rem;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          background-size: 158%;
+          background-position: center 2rem;
+        }
+      }
+
+      .footer-content {
+        background-repeat-y: no-repeat;
+        background-size: 92rem 53rem;
+        background-position-y: -1rem;
+        padding-bottom: 2rem;
+        @media screen and (max-width: $laptop-small) {
+          background-size: 176rem 100rem;
+        }
+      }
     }
   }
 
@@ -270,21 +304,12 @@ footer {
   .background-section {
     .footer-title {
       background-image: url('../img/footer/footer-bg-green.svg');
-      background-position-y: -5rem;
-      background-repeat: no-repeat;
-      background-size: 103%;
-      padding-top: 11rem;
-
       @media screen and (min-width: $laptop-large) {
         padding-top: 16rem;
       }
     }
     .footer-content {
       background-image: url('../img/footer/verde_footer.svg');
-      background-repeat-y: no-repeat;
-      background-size: 92rem 53rem;
-      background-position-y: -1rem;
-      padding-bottom: 2rem;
       .contact-form {
         input, textarea {
           background-color: $green;
@@ -298,21 +323,12 @@ footer {
   .background-section {
     .footer-title {
       background-image: url('../img/footer/footer-bg-red.svg');
-      background-position-y: -5rem;
-      background-repeat: no-repeat;
-      background-size: 103%;
-      padding-top: 11rem;
-
       @media screen and (min-width: $laptop-large) {
         padding-top: 16rem;
       }
     }
     .footer-content {
       background-image: url('../img/footer/rojo_footer.svg');
-      background-repeat-y: no-repeat;
-      background-size: 92rem 53rem;
-      background-position-y: -1rem;
-      padding-bottom: 2rem;
       .contact-form {
         input, textarea {
           background-color: $red;

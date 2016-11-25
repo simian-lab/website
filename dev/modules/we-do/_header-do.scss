@@ -3,12 +3,39 @@
   background-repeat: no-repeat;
   background-position: 0rem 55rem;
   background-size: contain;
+
+  @media screen and (max-width: $laptop-small) {
+    background-position: 0rem 43rem;
+  }
+
+  @media screen and (max-width: $tablet-medium) {
+    background-position: 0rem 43rem;
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    background-position: 0rem 82rem;
+  }
+
   .text-header {
     background-image: url("../img/we-do/lineas_texto_que_hacemos-01.svg");
     background-position: center 2rem;
     background-repeat: no-repeat;
     height: 18rem;
     text-align: center;
+
+    @media screen and (max-width: $laptop-small) {
+      background-size: 30rem;
+    }
+
+    @media screen and (max-width: $tablet-medium) {
+      background-size: 20rem;
+    }
+
+    @media screen and (max-width: $mobile-large) {
+      background: none;
+      height: 12rem;
+    }
 
       p {
         font-size: 5rem;
@@ -42,16 +69,68 @@
     display: flex;
     justify-content: center;
 
+    @media screen and (max-width: $tablet-medium) {
+      margin-bottom: -5rem;
+    }
+
+    @media screen and (max-width: $mobile-large) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+
     .work, .analize {
       width: 24rem;
+
+      @media screen and (max-width: $laptop-small) {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 16rem;
+      }
+
+      @media screen and (max-width: $tablet-medium) {
+        width: 11rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        width: 17rem;
+      }
+
+      .icon {
+        width: 25rem;
+        @media screen and (max-width: $laptop-small) {
+          width: 15rem;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          width: 10rem;
+        }
+
+        @media screen and (max-width: $mobile-large) {
+          width: 16rem;
+        }
+      }
     }
 
     .work {
       position: relative;
       top: -3.2rem;
       left: -7.5rem;
-      .idea-icon {
-        width: 25rem;
+
+      @media screen and (max-width: $laptop-small) {
+        top: -7rem;
+        left: -5rem;
+      }
+
+      @media screen and (max-width: $tablet-medium) {
+        left: -3rem;
+        top: -10rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        top: 0;
+        left: 0;
       }
 
       h1 {
@@ -63,9 +142,22 @@
       position: relative;
       left: 6rem;
       top: -1rem;
-      .banana-icon {
-        width: 25rem;
+
+      @media screen and (max-width: $laptop-small) {
+        left: 4rem;
+        top: -6rem;
       }
+
+      @media screen and (max-width: $tablet-medium) {
+        left: 3rem;
+        top: -9.1rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        top: 2rem;
+        left: 0;
+      }
+
       h1 {
         color: $blue;
       }
@@ -79,18 +171,51 @@
 
     h1 {
       font-size: 4rem;
+      @media screen and (max-width: $laptop-small) {
+        font-size: 3rem;
+      }
     }
 
     p {
       font-size: 1.3rem;
       line-height: 130%;
       margin-top: 1rem;
+      @media screen and (max-width: $laptop-small) {
+        font-size: 1.1rem;
+      }
     }
   }
 
   .desing {
     margin: 0 auto;
     width: 24rem;
+
+    @media screen and (max-width: $laptop-small) {
+      width: 15rem;
+    }
+
+    @media screen and (max-width: $tablet-medium) {
+      width: 11rem;
+    }
+
+    @media screen and (max-width: $mobile-large) {
+      width: 17rem;
+    }
+
+    .icon {
+      width: 25rem;
+      @media screen and (max-width: $laptop-small) {
+        width: 15rem;
+      }
+
+      @media screen and (max-width: $tablet-medium) {
+        width: 10rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        width: 16rem;
+      }
+    }
 
     h1 {
       color: $yellow;
