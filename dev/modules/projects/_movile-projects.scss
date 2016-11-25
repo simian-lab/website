@@ -51,6 +51,10 @@
         width: 70%;
       }
 
+      @media screen and (max-width: $tablet-medium) {
+        width: 95%;
+      }
+
       .logo-mobile {
 
       }
@@ -60,6 +64,10 @@
         @media screen and (max-width: $laptop-small) {
           display: inherit;
           width: 64%;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          width: 42%;
         }
       }
 
@@ -92,11 +100,25 @@
       background-image: url("../img/projects/ipad_grande.svg");
       width: 32rem;
 
+      @media screen and (max-width: $tablet-medium) {
+        background-size: 26rem;
+        background-position-x: center;
+        height: 40rem !important;
+        width: 30rem !important;
+      }
+
       .content {
-        height: 554px;
-        left: 89px;
-        top: 82px;
-        width: 360px;
+        height: rem(554px);
+        left: rem(89px);
+        top: rem(82px);
+        width: rem(360px);
+
+        @media screen and (max-width: $tablet-medium) {
+          height: rem(433px);
+          left: rem(102px);
+          top: rem(64px);
+          width: rem(281px);
+        }
       }
 
       .more {

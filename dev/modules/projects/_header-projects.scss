@@ -37,6 +37,11 @@
     top: -4rem;
   }
 
+  @media screen and (max-width: $tablet-medium) {
+    height: 45rem;
+    margin-bottom: -9rem;
+  }
+
   .content-header {
     background-image: url("../img/projects/cuadro_texto_hero.svg");
     background-position: -9rem 0rem;
@@ -52,11 +57,25 @@
       width: 36rem;
     }
 
+    @media screen and (max-width: $tablet-medium) {
+      background-size: 40rem 37rem;
+      background-position: -9rem -4rem;
+      height: 27rem;
+      padding: 8rem 0 0 7rem;
+      width: 30rem;
+    }
+
     p {
       font-size: 3rem;
+      @media screen and (max-width: $tablet-medium) {
+        font-size: 2.5rem;
+      }
 
       &:nth-child(2) {
         font-size: 5rem;
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 4rem;
+        }
       }
     }
 
@@ -64,6 +83,9 @@
       color: $yellow;
       font-size: 9rem;
       text-shadow: -1px 0 $brown, 0 1px $brown, 1px 0 $brown, 0 -1px $brown;
+      @media screen and (max-width: $tablet-medium) {
+        font-size: 7rem;
+      }
     }
 
   }
@@ -73,6 +95,10 @@
 
     @media screen and (max-width: $laptop-small) {
       margin: -6rem 0 0 0;
+    }
+
+    @media screen and (max-width: $tablet-medium) {
+      width: 25rem;
     }
   }
 }

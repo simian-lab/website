@@ -26,6 +26,11 @@
         height: 60rem;
       }
 
+      @media screen and (max-width: $tablet-medium) {
+        background-size: 30rem;
+        height: 30rem;
+      }
+
       .logo, .pagina, .icon {
         position: relative;
       }
@@ -53,6 +58,13 @@
           top: 7.7rem;
           width: 6rem;
         }
+
+        @media screen and (max-width: $tablet-medium) {
+          height: 1.5rem;
+          left: -10rem;
+          top: 6.9rem;
+          width: 4.3rem;
+        }
       }
 
       .pagina {
@@ -72,6 +84,13 @@
           height: 22rem;
           width: 43rem;
         }
+
+        @media screen and (max-width: $tablet-medium) {
+          height: 14.5rem;
+          width: 28rem;
+          left: 0.2rem;
+          top: 7rem;
+        }
       }
 
       .icon {
@@ -90,20 +109,41 @@
           width: 19rem;
         }
 
+        @media screen and (max-width: $tablet-medium) {
+          left: 8rem;
+          top: -1.5rem;
+          width: 12rem;
+        }
+
         .icon-movile {
           left: 2rem;
           position: relative;
           top: 2.5rem;
+
+          @media screen and (max-width: $tablet-medium) {
+            left: 0rem;
+            top: 1.5rem;
+            width: 5rem;
+          }
         }
 
         .icon-tablet {
-
+          @media screen and (max-width: $tablet-medium) {
+            left: -1rem;
+            position: relative;
+            width: 8rem;
+          }
         }
 
         .more {
           left: -5rem;
           position: relative;
           top: 11rem;
+
+          @media screen and (max-width: $tablet-medium) {
+            left: -6rem;
+            top: 9rem;
+          }
         }
       }
     }
@@ -123,6 +163,12 @@
         margin-top: -16rem;
         top: 0;
         width: 25rem;
+      }
+
+      @media screen and (max-width: $tablet-medium) {
+        margin-top: 0rem;
+        left: 0rem;
+        width: 80%;
       }
 
       @media screen and (max-width: $mobile-large) {
