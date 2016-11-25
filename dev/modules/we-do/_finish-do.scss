@@ -1,14 +1,13 @@
 .finish-do {
-  @media screen and (max-width: $tablet-medium) {
-    margin-top: -4rem;
-  }
-  @media screen and (max-width: $mobile-large) {
-    margin-top: -6rem;
-  }
 
   .develop-maintenance {
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: $mobile-large) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     h1, p {
       text-align: center;
@@ -16,23 +15,64 @@
 
     h1 {
       font-size: 4rem;
+      @media screen and (max-width: $laptop-small) {
+        font-size: 3rem;
+      }
     }
 
     p {
       font-size: 1.3rem;
       line-height: 130%;
       margin-top: 1rem;
+      @media screen and (max-width: $laptop-small) {
+        font-size: 1.1rem;
+      }
     }
 
     .develop, .maintenance {
       width: 24rem;
+      @media screen and (max-width: $laptop-small) {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 16rem;
+      }
+
+      @media screen and (max-width: $tablet-medium) {
+        width: 11rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        width: 17rem;
+      }
+
+      .icon {
+        width: 25rem;
+        @media screen and (max-width: $laptop-small) {
+          width: 15rem;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          width: 10rem;
+        }
+
+        @media screen and (max-width: $mobile-large) {
+          width: 16rem;
+        }
+      }
     }
     .develop {
       position: relative;
       top: 2rem;
       left: -5.5rem;
-      .icon {
-        width: 25rem;
+
+      @media screen and (max-width: $tablet-medium) {
+        left: -3rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        top: 0;
+        left: 0;
       }
 
       h1 {
@@ -41,11 +81,18 @@
     }
 
     .maintenance {
-      position: relative;
       left: 6rem;
+      position: relative;
       top: 1.5rem;
-      .idea {
-        width: 25rem;
+
+      @media screen and (max-width: $tablet-medium) {
+        left: 3rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        left: 0;
+        margin-top: 2rem;
+        top: 0;
       }
 
       h1 {
