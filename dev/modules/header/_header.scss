@@ -12,14 +12,15 @@ header {
     width: 100%;
     z-index: 15;
 
-    .menu{
-      @media screen and (min-width: 75.000em) {
-        display: none;
+    .menu {
+      display: none;
+      @media screen and (max-width: 75.000em) {
+        display: inline-block;
+        left: 1rem;
+        position: relative;
+        top: -7rem;
       }
-      left: 1rem;
-      display: inline-block;
-      position: relative;
-      top: -5rem;
+
 
       span{
         transition: all 250ms ease-in-out;
@@ -37,34 +38,18 @@ header {
     .simian{
       @media screen and (max-width: 75.000em) {
         margin: 0 auto;
-        width: 32%;
-      }
-
-      @media screen and (max-width: $tablet-medium) {
-        margin-left: 30%;
-      }
-
-      @media screen and (max-width: $tablet-small) {
-        margin-left: 25%;
+        width: 18rem;
       }
 
       @media screen and (max-width: $mobile-large) {
-        margin-left: 21%;
-      }
-
-      @media screen and (max-width: $mobile-medium) {
-        margin-left: 16%;
-      }
-
-      @media screen and (max-width: $mobile-small) {
-        margin-left: 22%;
+        width: 13rem;
       }
 
       a {
         display: inline-block;
         img{
-          @media screen and (max-width: $mobile-small) {
-            width: 170%;
+          @media screen and (max-width: $mobile-large) {
+            width: 100%;
           }
         }
       }
@@ -123,69 +108,63 @@ header {
 
     .header{
       background-image: url('../img/header/barra_menu_roja.svg');
-      height: 7rem;
+      background-size: 393%;
       display: flex;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-
-      margin-top: -9rem;
-
+      justify-content: space-between;
+      height: 8rem;
       position: fixed;
-      //justify-content:center;
-      //align-content: center;
-      flex-direction: row;
-      flex-wrap: no-wrap;
-
-      width: 100%;
+      top: 5rem;
+      width: 101%;
       z-index: 12;
 
-      .menu{
-        position: relative;
-        position: relative;
-        top: 2rem;
-        left: 2rem;
-        p{
-          color: white;
-          font-size: 3rem;
-          font-weight: bolder;
-        }
+      p{
+        color: white;
+        font-size: 3rem;
+        font-weight: bolder;
+        left: 1rem;
       }
 
       .header-buttons {
-        position: absolute;
         right: 2rem;
-        top: 2rem;
+      }
 
-        a {
-          margin: 0 0.5rem;
-        }
+      p, .header-buttons {
+        position: relative;
+        top: 1rem;
       }
     }
 
     nav {
-      align-content: center;
-      background: $brown;
-      display: -ms-flexbox;
-      display: -webkit-flex;
       display: flex;
+      background: $brown;
+      align-items: flex-start;
       height: 100%;
-      justify-content:center;
-      margin-left: -1rem;
-      margin-top: -2rem;
+      justify-content: center;
+      padding-top: 14%;
       position: fixed;
       text-align: center;
-      width: 110%;
+      top: 11%;
+      width: 100%;
       z-index: 11;
       ul {
         display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-
         flex-direction: column;
-        margin-top: 5rem;
+        margin-top: -5%;
+        width: 70%;
 
-        li {
+        .hide-inicio {
+          display: none;
+          @media screen and (max-width: 75.000em) {
+            display: block;
+          }
+        }
+
+        li, .hide-inicio {
+          border: dashed;
+          border-color: $white;
           margin: 1rem 1rem;
+          padding: 1rem;
+          width: 100%;
 
           a {
             color: $white;
