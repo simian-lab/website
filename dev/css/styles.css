@@ -113,13 +113,13 @@ header .desktop {
   width: 100%;
   z-index: 15; }
   header .desktop .menu {
-    left: 1rem;
-    display: inline-block;
-    position: relative;
-    top: -5rem; }
-    @media screen and (min-width: 75em) {
+    display: none; }
+    @media screen and (max-width: 75em) {
       header .desktop .menu {
-        display: none; } }
+        display: inline-block;
+        left: 1rem;
+        position: relative;
+        top: -7rem; } }
     header .desktop .menu span {
       transition: all 250ms ease-in-out;
       background-color: white;
@@ -132,27 +132,15 @@ header .desktop {
   @media screen and (max-width: 75em) {
     header .desktop .simian {
       margin: 0 auto;
-      width: 32%; } }
-  @media screen and (max-width: 45rem) {
-    header .desktop .simian {
-      margin-left: 30%; } }
-  @media screen and (max-width: 37.5rem) {
-    header .desktop .simian {
-      margin-left: 25%; } }
+      width: 18rem; } }
   @media screen and (max-width: 30rem) {
     header .desktop .simian {
-      margin-left: 21%; } }
-  @media screen and (max-width: 25rem) {
-    header .desktop .simian {
-      margin-left: 16%; } }
-  @media screen and (max-width: 22.5rem) {
-    header .desktop .simian {
-      margin-left: 22%; } }
+      width: 13rem; } }
   header .desktop .simian a {
     display: inline-block; }
-    @media screen and (max-width: 22.5rem) {
+    @media screen and (max-width: 30rem) {
       header .desktop .simian a img {
-        width: 170%; } }
+        width: 100%; } }
   header .desktop nav {
     left: 23%;
     position: absolute;
@@ -189,55 +177,54 @@ header .desktop {
 
 header .movile .header {
   background-image: url("../img/header/barra_menu_roja.svg");
-  height: 7rem;
+  background-size: 393%;
   display: flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  margin-top: -9rem;
+  justify-content: space-between;
+  height: 8rem;
   position: fixed;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  width: 100%;
+  top: 5rem;
+  width: 101%;
   z-index: 12; }
-  header .movile .header .menu {
-    position: relative;
-    position: relative;
-    top: 2rem;
-    left: 2rem; }
-    header .movile .header .menu p {
-      color: white;
-      font-size: 3rem;
-      font-weight: bolder; }
+  header .movile .header p {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    left: 1rem; }
   header .movile .header .header-buttons {
-    position: absolute;
-    right: 2rem;
-    top: 2rem; }
-    header .movile .header .header-buttons a {
-      margin: 0 0.5rem; }
+    right: 2rem; }
+  header .movile .header p, header .movile .header .header-buttons {
+    position: relative;
+    top: 1rem; }
 
 header .movile nav {
-  align-content: center;
-  background: #3F3832;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  background: #3F3832;
+  align-items: flex-start;
   height: 100%;
   justify-content: center;
-  margin-left: -1rem;
-  margin-top: -2rem;
+  padding-top: 14%;
   position: fixed;
   text-align: center;
-  width: 110%;
+  top: 11%;
+  width: 100%;
   z-index: 11; }
   header .movile nav ul {
     display: flex;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     flex-direction: column;
-    margin-top: 5rem; }
-    header .movile nav ul li {
-      margin: 1rem 1rem; }
-      header .movile nav ul li a {
+    margin-top: -5%;
+    width: 70%; }
+    header .movile nav ul .hide-inicio {
+      display: none; }
+      @media screen and (max-width: 75em) {
+        header .movile nav ul .hide-inicio {
+          display: block; } }
+    header .movile nav ul li, header .movile nav ul .hide-inicio {
+      border: dashed;
+      border-color: #FFFFFF;
+      margin: 1rem 1rem;
+      padding: 1rem;
+      width: 100%; }
+      header .movile nav ul li a, header .movile nav ul .hide-inicio a {
         color: #FFFFFF;
         font-family: "quicksandlight";
         font-size: 0.75rem;
@@ -246,7 +233,7 @@ header .movile nav {
         text-decoration: none;
         text-align: center;
         text-transform: uppercase; }
-      header .movile nav ul li .active {
+      header .movile nav ul li .active, header .movile nav ul .hide-inicio .active {
         color: #DED96B; }
 
 footer .background-section {

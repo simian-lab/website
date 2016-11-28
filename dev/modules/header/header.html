@@ -64,9 +64,7 @@
 
     <div class="header">
 
-      <div class="menu">
-        <p ng-click="toggle()">X</p>
-      </div>
+      <p ng-click="toggle()">X</p>
 
       <div class="header-buttons" ng-hide="activeSection == '404'">
         <a href="http://blog.simian.co/" target="_blank">
@@ -84,6 +82,10 @@
 
     <nav ng-hide="activeSection == '404'" ng-show="true">
       <ul>
+        <li class="hide-inicio">
+          <a href="" ng-href="/{{$root.language}}/" ng-click="toggle()">INICIO
+          </a>
+        </li>
         <li>
           <a ng-href="{{$root.getLink('we-do', 'que-hacemos')}}" ng-click="toggle()"
           ng-class="{active: activeSection == 'we-do' || activeSection == 'que-hacemos'}">
