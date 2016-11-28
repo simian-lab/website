@@ -17,9 +17,7 @@
       img {
         width: 16rem
       }
-      .logo-mobile {
 
-      }
       .line-logo {
         @media screen and (min-width: $mobile-large) {
           display: none;
@@ -52,11 +50,13 @@
       }
 
       @media screen and (max-width: $tablet-medium) {
-        width: 95%;
+        width: 83%;
       }
 
       .logo-mobile {
-
+        @media screen and (max-width: $mobile-large) {
+          width: 10rem;
+        }
       }
 
       .line-logo {
@@ -81,30 +81,55 @@
 
     .mobile {
       background-image: url("../img/projects/iphone_grande.svg");
+      height: 50rem;
       width: 26rem;
 
+      @media screen and (max-width: $mobile-large) {
+        background-size: 18rem;
+        height: 34rem;
+        width: 19rem;
+      }
+
       .content {
-        height: 549px;
-        left: 50px;
-        top: 117px;
-        width: 328px;
+        height: rem(549px);
+        left: rem(50px);
+        top: rem(117px);
+        width: rem(328px);
+
+        @media screen and (max-width: $mobile-large) {
+          height: 358px;
+          width: 212px;
+          left: 36px;
+          top: 79px;
+        }
       }
 
       .more {
         top: 9rem;
         left: 21rem;
+
+        @media screen and (max-width: $mobile-large) {
+          left: -1rem;
+        }
       }
     }
 
     .tablet {
       background-image: url("../img/projects/ipad_grande.svg");
       width: 32rem;
+      height: 50rem;
 
       @media screen and (max-width: $tablet-medium) {
         background-size: 26rem;
         background-position-x: center;
-        height: 40rem !important;
-        width: 30rem !important;
+        height: 40rem;
+        width: 30rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        background-size: 17rem;
+        height: 24rem;
+        width: 19rem;
       }
 
       .content {
@@ -119,17 +144,28 @@
           top: rem(64px);
           width: rem(281px);
         }
+
+        @media screen and (max-width: $mobile-large) {
+          width: 180px;
+          height: 283px;
+          top: 42px;
+          left: 64px;
+        }
       }
 
       .more {
         top: 11rem;
         left: 5rem;
+
+        @media screen and (max-width: $mobile-large) {
+          left: 2rem;
+          top: 7rem;
+        }
       }
     }
 
     .mobile, .tablet {
       background-repeat: no-repeat;
-      height: 50rem;
       .content {
         position: relative;
       }
