@@ -396,13 +396,7 @@ footer .background-section {
 footer:not(.footer-home) .background-section {
   background-position: center top;
   background-size: cover;
-  margin-top: 4rem;
-  padding-bottom: 4%;
-  padding-top: 12rem; }
-  @media screen and (max-width: 64rem) {
-    footer:not(.footer-home) .background-section {
-      margin-top: 1rem;
-      padding-top: 4rem; } }
+  padding-bottom: 4%; }
   footer:not(.footer-home) .background-section .footer-title {
     background-position-y: -5rem;
     background-repeat: no-repeat;
@@ -417,7 +411,8 @@ footer:not(.footer-home) .background-section {
     @media screen and (max-width: 45rem) {
       footer:not(.footer-home) .background-section .footer-title {
         background-size: 158%;
-        background-position: center 2rem; } }
+        background-position: center -2rem;
+        padding-top: 8rem; } }
   footer:not(.footer-home) .background-section .footer-content {
     background-repeat-y: no-repeat;
     background-size: 92rem 53rem;
@@ -442,10 +437,10 @@ footer .footer-end {
 .footer-home {
   position: relative;
   z-index: -1;
-  top: -20rem; }
+  margin-top: -20rem; }
   @media screen and (max-width: 45rem) {
     .footer-home {
-      top: -10rem; } }
+      margin-top: -10rem; } }
   .footer-home .background-section {
     background-image: url("../img/footer/azul_footer.svg");
     background-repeat-y: no-repeat;

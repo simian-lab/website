@@ -208,13 +208,9 @@ footer {
     .background-section {
       background-position: center top;
       background-size: cover;
-      margin-top: 4rem;
       padding-bottom: 4%;
-      padding-top: 12rem;
 
       @media screen and (max-width: $laptop-small) {
-        margin-top: 1rem;
-        padding-top: 4rem;
       }
 
       .footer-title {
@@ -232,7 +228,8 @@ footer {
 
         @media screen and (max-width: $tablet-medium) {
           background-size: 158%;
-          background-position: center 2rem;
+          background-position: center -2rem;
+          padding-top: 8rem;
         }
       }
 
@@ -269,10 +266,10 @@ footer {
 .footer-home {
   position: relative;
   z-index: -1;
-  top: -20rem;
+  margin-top: -20rem;
 
   @media screen and (max-width: $tablet-medium) {
-    top: -10rem;
+    margin-top: -10rem;
   }
 
   .background-section {
