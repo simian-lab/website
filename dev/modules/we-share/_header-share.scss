@@ -9,15 +9,15 @@
   padding-top: 4rem;
 
   @media screen and (max-width: $laptop-small) {
-    margin-bottom: -45rem;
+    background-size: 60rem 30rem;
   }
 
-  @media screen and (max-width: $tablet-large) {
-    margin-bottom: -49rem;
+  @media screen and (max-width: $tablet-medium) {
+    background-size: 60rem 26rem;
   }
 
   @media screen and (max-width: $mobile-large) {
-    background-size: 215%;
+    background-size: 37rem 19rem;
   }
 
   p {
@@ -25,11 +25,11 @@
     @media screen and (max-width: $laptop-small) {
       font-size: 4.5rem;
     }
-    @media screen and (max-width: $tablet-large) {
+    @media screen and (max-width: $tablet-medium) {
       font-size: 3.5rem;
     }
     @media screen and (max-width: $mobile-large) {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 
@@ -39,11 +39,11 @@
     @media screen and (max-width: $laptop-small) {
       font-size: 9.5rem;
     }
-    @media screen and (max-width: $tablet-large) {
+    @media screen and (max-width: $tablet-medium) {
       font-size: 7.5rem;
     }
     @media screen and (max-width: $mobile-large) {
-      font-size: 5.5rem;
+      font-size: 5rem;
     }
   }
 
@@ -53,23 +53,42 @@
     justify-content: center;
     align-items: center;
     .monkey {
+      @media screen and (max-width: $laptop-small) {
+        width: 40rem;
+      }
 
+      @media screen and (max-width: $tablet-medium) {
+        width: 30rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        width: 20rem;
+      }
     }
 
     .text {
       width: 45rem;
       text-align: left;
+
+      @media screen and (max-width: $laptop-small) {
+        width: 40rem;
+      }
+
+      @media screen and (max-width: $tablet-medium) {
+        width: 80%;
+      }
+
       h1 {
         color: $red;
         font-size: 6.5rem;
         line-height: 120%;
-        @media screen and (min-width: $laptop-medium) {
+        @media screen and (min-width: $laptop-small) {
           font-size: 8rem;
         }
-        @media screen and (max-width: $mobile-large) {
+        @media screen and (max-width: $tablet-medium) {
           font-size: 5rem;
         }
-        @media screen and (max-width: $mobile-medium) {
+        @media screen and (max-width: $mobile-large) {
           font-size: 3.5rem;
         }
       }
@@ -81,7 +100,7 @@
         line-height: 120%;
         margin-top: 2rem;
 
-        @media screen and (max-width: $mobile-small) {
+        @media screen and (max-width: $mobile-large) {
           font-size: 1.2rem;
         }
       }
@@ -90,7 +109,7 @@
         font-size: 1.8rem;
         line-height: 120%;
 
-        @media screen and (max-width: $mobile-small) {
+        @media screen and (max-width: $mobile-large) {
           font-size: 1.2rem;
         }
       }
