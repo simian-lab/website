@@ -1566,12 +1566,19 @@ footer .footer-end {
   @media screen and (min-width: 90rem) and (max-width: 100rem) {
     .clients-container {
       padding-top: 15rem; } }
+  @media screen and (max-width: 64rem) {
+    .clients-container {
+      background-image: none;
+      padding-top: 8rem; } }
   .clients-container .header-clients-container {
     align-items: center;
     display: flex;
     justify-content: center;
     margin-top: -3rem; }
-    @media screen and (min-width: 75rem) {
+    @media screen and (min-width: 87.5rem) {
+      .clients-container .header-clients-container {
+        margin-top: 3rem; } }
+    @media screen and (min-width: 75rem) and (max-width: 87.5rem) {
       .clients-container .header-clients-container {
         margin-top: 0rem; } }
     .clients-container .header-clients-container .line-left {
@@ -1691,6 +1698,12 @@ footer .footer-end {
       font-size: 3rem; }
   .clients-container .clients-grid {
     margin-top: 5rem; }
+    @media screen and (min-width: 87.5rem) {
+      .clients-container .clients-grid {
+        margin-top: 18rem; } }
+    @media screen and (max-width: 64rem) {
+      .clients-container .clients-grid {
+        margin-top: 1rem; } }
     .clients-container .clients-grid .grid {
       margin: 0 auto;
       width: 80%; }
@@ -1712,12 +1725,31 @@ footer .footer-end {
   position: relative;
   text-align: center;
   top: -3rem; }
+  @media screen and (max-width: 64rem) {
+    #location .header-find {
+      background-position-x: center;
+      background-size: 112%;
+      padding-top: 6%; } }
+  @media screen and (max-width: 45rem) {
+    #location .header-find {
+      background-size: 139%;
+      background-position-x: center;
+      padding-top: 8%; } }
+  @media screen and (max-width: 37.5rem) {
+    #location .header-find {
+      background-size: 172%;
+      padding-top: 10%; } }
   @media screen and (max-width: 30rem) {
     #location .header-find {
+      background-size: 210%;
+      padding-top: 12%; } }
+  @media screen and (max-width: 25rem) {
+    #location .header-find {
+      background-size: 229%; } }
+  @media screen and (max-width: 22.5rem) {
+    #location .header-find {
       background-size: 204%;
-      background-position: center 0rem;
-      margin-left: 0rem;
-      top: -4rem; } }
+      padding-top: 12%; } }
   #location .header-find p {
     font-size: 4.5rem; }
     @media screen and (min-width: 100rem) {
@@ -1728,13 +1760,13 @@ footer .footer-end {
         font-size: 5.5rem; } }
     @media screen and (max-width: 64rem) {
       #location .header-find p {
-        font-size: 3.5rem; } }
-    @media screen and (max-width: 52.5rem) {
-      #location .header-find p {
         font-size: 2.5rem; } }
     @media screen and (max-width: 30rem) {
       #location .header-find p {
         font-size: 2.3rem; } }
+    @media screen and (max-width: 22.5rem) {
+      #location .header-find p {
+        font-size: 2rem; } }
   #location .header-find h1 {
     color: #DED96B;
     font-size: 8.5rem; }
@@ -1752,7 +1784,10 @@ footer .footer-end {
         font-size: 4.5rem; } }
     @media screen and (max-width: 30rem) {
       #location .header-find h1 {
-        font-size: 5.3rem; } }
+        font-size: 4.3rem; } }
+    @media screen and (max-width: 22.5rem) {
+      #location .header-find h1 {
+        font-size: 4rem; } }
   #location .header-find .graph {
     display: flex;
     flex-direction: column;
@@ -1764,10 +1799,25 @@ footer .footer-end {
     @media screen and (min-width: 75rem) and (max-width: 90rem) {
       #location .header-find .graph {
         margin-top: 7%; } }
+    @media screen and (max-width: 37.5rem) {
+      #location .header-find .graph {
+        margin-top: 6%; } }
+    @media screen and (max-width: 30rem) {
+      #location .header-find .graph {
+        margin-top: -5%; } }
+    @media screen and (max-width: 25rem) {
+      #location .header-find .graph {
+        margin-top: -15%; } }
+    @media screen and (max-width: 22.5rem) {
+      #location .header-find .graph {
+        margin-top: -33%; } }
     #location .header-find .graph .earch {
       z-index: -1; }
     #location .header-find .graph .line {
       margin: -23rem 0 0 0; }
+      @media screen and (max-width: 45rem) {
+        #location .header-find .graph .line {
+          display: none; } }
     #location .header-find .graph h2 {
       color: #3F3832;
       font-family: "quicksandregular";
@@ -1779,9 +1829,22 @@ footer .footer-end {
       @media screen and (max-width: 52.5rem) {
         #location .header-find .graph h2 {
           font-size: 3.5rem; } }
+      @media screen and (max-width: 45rem) {
+        #location .header-find .graph h2 {
+          font-size: 2.5rem;
+          margin: 0rem 0 0 0; } }
+      @media screen and (max-width: 37.5rem) {
+        #location .header-find .graph h2 {
+          margin: -2rem 0 0 0; } }
       @media screen and (max-width: 30rem) {
         #location .header-find .graph h2 {
-          font-size: 3.5rem; } }
+          margin: -19% 0 0 0; } }
+      @media screen and (max-width: 25rem) {
+        #location .header-find .graph h2 {
+          margin: -30% 0 0 0; } }
+      @media screen and (max-width: 22.5rem) {
+        #location .header-find .graph h2 {
+          margin: -44% 0 0 0; } }
     #location .header-find .graph p {
       font-size: 2.5rem;
       line-height: 130%; }
@@ -1791,6 +1854,9 @@ footer .footer-end {
       @media screen and (max-width: 52.5rem) {
         #location .header-find .graph p {
           font-size: 1.7rem; } }
+      @media screen and (max-width: 45rem) {
+        #location .header-find .graph p {
+          font-size: 1.5rem; } }
       @media screen and (max-width: 30rem) {
         #location .header-find .graph p {
           font-size: 1.5rem; } }
@@ -1812,34 +1878,40 @@ footer .footer-end {
   @media screen and (min-width: 90rem) and (max-width: 100rem) {
     #location .content-find {
       padding-top: 50rem; } }
+  @media screen and (max-width: 64rem) {
+    #location .content-find {
+      background-size: 150%;
+      background-position-x: center;
+      margin: -30rem 0 0rem 0;
+      padding-top: 74%; } }
+  @media screen and (max-width: 45rem) {
+    #location .content-find {
+      background-size: 185%;
+      padding-top: 87%; } }
+  @media screen and (max-width: 37.5rem) {
+    #location .content-find {
+      background-size: 240%;
+      padding-top: 116%; } }
   @media screen and (max-width: 30rem) {
     #location .content-find {
-      background-size: 200%;
-      background-position-x: center;
-      margin-top: -20rem; } }
+      align-items: flex-start;
+      background-size: 257%;
+      margin: -29rem 0 0rem 0;
+      padding-top: 120%; } }
   @media screen and (max-width: 25rem) {
     #location .content-find {
-      margin-top: -17rem; } }
-  @media screen and (max-width: 22.5rem) {
-    #location .content-find {
-      margin-top: -15rem; } }
+      margin: -21rem 0 0rem 0; } }
   #location .content-find .text-find {
     width: 40rem; }
     @media screen and (max-width: 64rem) {
       #location .content-find .text-find {
-        width: 73%; } }
+        width: 53%; } }
+    @media screen and (max-width: 37.5rem) {
+      #location .content-find .text-find {
+        width: 65%; } }
     @media screen and (max-width: 30rem) {
       #location .content-find .text-find {
-        padding-top: 28rem;
-        width: 21rem; } }
-    @media screen and (max-width: 25rem) {
-      #location .content-find .text-find {
-        padding-top: 24rem;
-        width: 17rem; } }
-    @media screen and (max-width: 22.5rem) {
-      #location .content-find .text-find {
-        padding-top: 22rem;
-        width: 17rem; } }
+        width: 83%; } }
     #location .content-find .text-find h1 {
       color: #FF5E5B;
       font-size: 7.5rem; }
@@ -1866,9 +1938,7 @@ footer .footer-end {
           font-size: 1.3rem; } }
       @media screen and (max-width: 30rem) {
         #location .content-find .text-find h2 {
-          font-size: 1.3rem;
-          width: 104%;
-          padding-top: 16%; } }
+          font-size: 1.3rem; } }
       @media screen and (max-width: 25rem) {
         #location .content-find .text-find h2 {
           font-size: 1.2rem; } }
@@ -1881,21 +1951,20 @@ footer .footer-end {
           font-size: 1.3rem; } }
       @media screen and (max-width: 30rem) {
         #location .content-find .text-find p {
-          font-size: 1.3rem;
-          padding-top: 5%;
-          width: 104%; } }
+          font-size: 1.3rem; } }
       @media screen and (max-width: 25rem) {
         #location .content-find .text-find p {
           font-size: 1.2rem; } }
   @media screen and (max-width: 64rem) {
     #location .content-find .icon {
-      width: 79%; } }
-  @media screen and (max-width: 52.5rem) {
+      width: 16rem; } }
+  @media screen and (max-width: 37.5rem) {
     #location .content-find .icon {
-      width: 63%; } }
+      width: 7rem; } }
   @media screen and (max-width: 30rem) {
     #location .content-find .icon {
-      width: 43%; } }
+      width: 3rem;
+      margin-left: -14%; } }
 
 #we-share .header-share {
   background-image: url("../img/we-share/fondo.svg");
@@ -1908,55 +1977,70 @@ footer .footer-end {
   padding-top: 4rem; }
   @media screen and (max-width: 64rem) {
     #we-share .header-share {
-      margin-bottom: -45rem; } }
-  @media screen and (max-width: 52.5rem) {
+      background-size: 60rem 30rem; } }
+  @media screen and (max-width: 45rem) {
     #we-share .header-share {
-      margin-bottom: -49rem; } }
+      background-size: 60rem 26rem; } }
   @media screen and (max-width: 30rem) {
     #we-share .header-share {
-      background-size: 215%; } }
+      background-size: 37rem 19rem; } }
   #we-share .header-share p {
     font-size: 5rem; }
     @media screen and (max-width: 64rem) {
       #we-share .header-share p {
         font-size: 4.5rem; } }
-    @media screen and (max-width: 52.5rem) {
+    @media screen and (max-width: 45rem) {
       #we-share .header-share p {
         font-size: 3.5rem; } }
     @media screen and (max-width: 30rem) {
       #we-share .header-share p {
-        font-size: 2.5rem; } }
+        font-size: 2rem; } }
   #we-share .header-share h1 {
     color: #FF5E5B;
     font-size: 10.5rem; }
     @media screen and (max-width: 64rem) {
       #we-share .header-share h1 {
         font-size: 9.5rem; } }
-    @media screen and (max-width: 52.5rem) {
+    @media screen and (max-width: 45rem) {
       #we-share .header-share h1 {
         font-size: 7.5rem; } }
     @media screen and (max-width: 30rem) {
       #we-share .header-share h1 {
-        font-size: 5.5rem; } }
+        font-size: 5rem; } }
   #we-share .header-share .graph {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media screen and (max-width: 64rem) {
+      #we-share .header-share .graph .monkey {
+        width: 40rem; } }
+    @media screen and (max-width: 45rem) {
+      #we-share .header-share .graph .monkey {
+        width: 30rem; } }
+    @media screen and (max-width: 30rem) {
+      #we-share .header-share .graph .monkey {
+        width: 20rem; } }
     #we-share .header-share .graph .text {
       width: 45rem;
       text-align: left; }
+      @media screen and (max-width: 64rem) {
+        #we-share .header-share .graph .text {
+          width: 40rem; } }
+      @media screen and (max-width: 45rem) {
+        #we-share .header-share .graph .text {
+          width: 80%; } }
       #we-share .header-share .graph .text h1 {
         color: #FF5E5B;
         font-size: 6.5rem;
         line-height: 120%; }
-        @media screen and (min-width: 90rem) {
+        @media screen and (min-width: 64rem) {
           #we-share .header-share .graph .text h1 {
             font-size: 8rem; } }
-        @media screen and (max-width: 30rem) {
+        @media screen and (max-width: 45rem) {
           #we-share .header-share .graph .text h1 {
             font-size: 5rem; } }
-        @media screen and (max-width: 25rem) {
+        @media screen and (max-width: 30rem) {
           #we-share .header-share .graph .text h1 {
             font-size: 3.5rem; } }
       #we-share .header-share .graph .text h2 {
@@ -1965,13 +2049,13 @@ footer .footer-end {
         font-family: "quicksandregular";
         line-height: 120%;
         margin-top: 2rem; }
-        @media screen and (max-width: 22.5rem) {
+        @media screen and (max-width: 30rem) {
           #we-share .header-share .graph .text h2 {
             font-size: 1.2rem; } }
       #we-share .header-share .graph .text p {
         font-size: 1.8rem;
         line-height: 120%; }
-        @media screen and (max-width: 22.5rem) {
+        @media screen and (max-width: 30rem) {
           #we-share .header-share .graph .text p {
             font-size: 1.2rem; } }
 
@@ -1983,11 +2067,14 @@ footer .footer-end {
   #we-share .content-video h1 {
     font-size: 5rem;
     line-height: 120%; }
-    @media screen and (max-width: 52.5rem) {
+    @media screen and (max-width: 45rem) {
       #we-share .content-video h1 {
         font-size: 4rem; } }
   #we-share .content-video .video {
     margin-top: 2rem; }
+    @media screen and (max-width: 52.5rem) {
+      #we-share .content-video .video .frame {
+        width: 95%; } }
   #we-share .content-video .projects {
     display: flex;
     flex-direction: column;
@@ -1999,22 +2086,17 @@ footer .footer-end {
       font-weight: bold;
       font-family: "quicksandregular";
       line-height: 120%; }
-      @media screen and (max-width: 52.5rem) {
-        #we-share .content-video .projects h2 {
-          width: 28rem; } }
-      @media screen and (max-width: 30rem) {
-        #we-share .content-video .projects h2 {
-          font-size: 2rem;
-          width: 83%; } }
-      @media screen and (max-width: 22.5rem) {
-        #we-share .content-video .projects h2 {
-          font-size: 1.5rem; } }
     #we-share .content-video .projects .text-content {
       display: flex;
       width: 42rem; }
+      @media screen and (max-width: 45rem) {
+        #we-share .content-video .projects .text-content {
+          align-items: center;
+          flex-direction: column;
+          width: 28rem; } }
       @media screen and (max-width: 30rem) {
         #we-share .content-video .projects .text-content {
-          display: inherit; } }
+          width: 18rem; } }
       #we-share .content-video .projects .text-content p {
         font-size: 1.7rem;
         line-height: 120%;
@@ -2022,28 +2104,19 @@ footer .footer-end {
         margin: 2rem 0 0 1rem; }
         @media screen and (max-width: 45rem) {
           #we-share .content-video .projects .text-content p {
-            width: 14rem; } }
+            width: 95%;
+            margin: 0 0 0 0; } }
         @media screen and (max-width: 30rem) {
           #we-share .content-video .projects .text-content p {
-            font-size: 1.5rem;
-            width: inherit; } }
-        @media screen and (max-width: 22.5rem) {
+            font-size: 1.5rem; } }
+        @media screen and (max-width: 30rem) {
           #we-share .content-video .projects .text-content p {
             font-size: 1.2rem; } }
       #we-share .content-video .projects .text-content .logo {
         margin-top: -4rem; }
-        @media screen and (max-width: 52.5rem) {
-          #we-share .content-video .projects .text-content .logo {
-            width: 14rem; } }
         @media screen and (max-width: 45rem) {
           #we-share .content-video .projects .text-content .logo {
-            position: relative;
-            top: -5rem; } }
-        @media screen and (max-width: 30rem) {
-          #we-share .content-video .projects .text-content .logo {
-            width: 70%;
-            left: 2.5rem;
-            top: inherit; } }
+            margin-top: 1rem; } }
 
 #we-do .header-do {
   background-image: url("../img/we-do/fondo_que_hacemos-01.svg");
@@ -2381,47 +2454,104 @@ footer .footer-end {
       margin-bottom: -19rem;
       position: relative;
       top: -12rem; } }
+  @media screen and (max-width: 64rem) {
+    #projects .header-projects {
+      background-size: 280%;
+      background-position: center 0;
+      justify-content: flex-start;
+      flex-direction: column;
+      height: 65rem;
+      top: -4rem; } }
+  @media screen and (max-width: 45rem) {
+    #projects .header-projects {
+      height: 45rem;
+      margin-bottom: -9rem; } }
   @media screen and (max-width: 30rem) {
     #projects .header-projects {
-      background-size: 370%;
-      background-position-x: center; } }
+      height: 37rem; } }
   #projects .header-projects .content-header {
     background-image: url("../img/projects/cuadro_texto_hero.svg");
     background-position: -9rem 0rem;
     background-repeat: no-repeat;
     background-size: 48rem 40rem;
-    width: 40rem;
     height: 34rem;
-    padding: 12rem 0 0 10rem; }
+    padding: 12rem 0 0 9.5rem;
+    width: 40rem; }
+    @media screen and (max-width: 64rem) {
+      #projects .header-projects .content-header {
+        background-position: -11rem -4rem;
+        height: 30rem;
+        padding: 8rem 0 0 8rem;
+        width: 36rem; } }
+    @media screen and (max-width: 45rem) {
+      #projects .header-projects .content-header {
+        background-size: 40rem 37rem;
+        background-position: -9rem -4rem;
+        height: 27rem;
+        padding: 8rem 0 0 7rem;
+        width: 30rem; } }
+    @media screen and (max-width: 30rem) {
+      #projects .header-projects .content-header {
+        background-size: 24rem 29rem;
+        background-position: -6rem -4rem;
+        height: 20rem;
+        padding: 6.5rem 0 0 3rem;
+        width: 17rem; } }
     #projects .header-projects .content-header p {
       font-size: 3rem; }
+      @media screen and (max-width: 45rem) {
+        #projects .header-projects .content-header p {
+          font-size: 2.5rem; } }
+      @media screen and (max-width: 30rem) {
+        #projects .header-projects .content-header p {
+          font-size: 1.6rem; } }
       #projects .header-projects .content-header p:nth-child(2) {
         font-size: 5rem; }
+        @media screen and (max-width: 45rem) {
+          #projects .header-projects .content-header p:nth-child(2) {
+            font-size: 4rem; } }
+        @media screen and (max-width: 30rem) {
+          #projects .header-projects .content-header p:nth-child(2) {
+            font-size: 2.6rem; } }
     #projects .header-projects .content-header h1 {
       color: #DED96B;
       font-size: 9rem;
       text-shadow: -1px 0 #3F3832, 0 1px #3F3832, 1px 0 #3F3832, 0 -1px #3F3832; }
+      @media screen and (max-width: 45rem) {
+        #projects .header-projects .content-header h1 {
+          font-size: 7rem; } }
+      @media screen and (max-width: 30rem) {
+        #projects .header-projects .content-header h1 {
+          font-size: 4.6rem; } }
   #projects .header-projects .icon-header {
     width: 35rem;
     margin: 5rem 0 0 -10rem; }
+    @media screen and (max-width: 64rem) {
+      #projects .header-projects .icon-header {
+        margin: -6rem 0 0 0; } }
+    @media screen and (max-width: 45rem) {
+      #projects .header-projects .icon-header {
+        width: 25rem; } }
+    @media screen and (max-width: 30rem) {
+      #projects .header-projects .icon-header {
+        margin: -5rem 0 0 0;
+        width: 19rem; } }
 
 #projects .projects .content-mobile {
   display: flex;
   justify-content: center; }
+  @media screen and (max-width: 64rem) {
+    #projects .projects .content-mobile {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3rem; } }
   #projects .projects .content-mobile .logo {
-    left: 2rem;
-    position: relative;
-    top: 4rem;
     width: 19rem; }
     #projects .projects .content-mobile .logo img {
       width: 16rem; }
     @media screen and (min-width: 30rem) {
       #projects .projects .content-mobile .logo .line-logo {
         display: none; } }
-  #projects .projects .content-mobile .logo {
-    width: 19rem; }
-    #projects .projects .content-mobile .logo img {
-      width: 16rem; }
   #projects .projects .content-mobile .logo-tablet {
     width: 13rem; }
     #projects .projects .content-mobile .logo-tablet img {
@@ -2430,34 +2560,99 @@ footer .footer-end {
     left: 2rem;
     top: 4rem;
     position: relative; }
-    @media screen and (min-width: 30rem) {
-      #projects .projects .content-mobile .logo .line-logo, #projects .projects .content-mobile .logo-tablet .line-logo {
-        display: none; } }
+    @media screen and (max-width: 64rem) {
+      #projects .projects .content-mobile .logo, #projects .projects .content-mobile .logo-tablet {
+        display: flex;
+        top: 0rem;
+        left: 0rem;
+        width: 70%; } }
+    @media screen and (max-width: 45rem) {
+      #projects .projects .content-mobile .logo, #projects .projects .content-mobile .logo-tablet {
+        width: 83%; } }
+    @media screen and (max-width: 30rem) {
+      #projects .projects .content-mobile .logo .logo-mobile, #projects .projects .content-mobile .logo-tablet .logo-mobile {
+        width: 10rem; } }
+    #projects .projects .content-mobile .logo .line-logo, #projects .projects .content-mobile .logo-tablet .line-logo {
+      display: none; }
+      @media screen and (max-width: 64rem) {
+        #projects .projects .content-mobile .logo .line-logo, #projects .projects .content-mobile .logo-tablet .line-logo {
+          display: inherit;
+          width: 64%; } }
+      @media screen and (max-width: 45rem) {
+        #projects .projects .content-mobile .logo .line-logo, #projects .projects .content-mobile .logo-tablet .line-logo {
+          width: 42%; } }
+    #projects .projects .content-mobile .logo .line-desktop, #projects .projects .content-mobile .logo-tablet .line-desktop {
+      display: inherit; }
+      @media screen and (max-width: 64rem) {
+        #projects .projects .content-mobile .logo .line-desktop, #projects .projects .content-mobile .logo-tablet .line-desktop {
+          display: none; } }
   #projects .projects .content-mobile .mobile {
     background-image: url("../img/projects/iphone_grande.svg");
+    height: 50rem;
     width: 26rem; }
+    @media screen and (max-width: 30rem) {
+      #projects .projects .content-mobile .mobile {
+        background-size: 18rem;
+        height: 34rem;
+        width: 19rem; } }
     #projects .projects .content-mobile .mobile .content {
-      height: 549px;
-      left: 50px;
-      top: 117px;
-      width: 328px; }
+      height: 34.3125rem;
+      left: 3.125rem;
+      top: 7.3125rem;
+      width: 20.5rem; }
+      @media screen and (max-width: 30rem) {
+        #projects .projects .content-mobile .mobile .content {
+          height: 358px;
+          width: 212px;
+          left: 36px;
+          top: 79px; } }
     #projects .projects .content-mobile .mobile .more {
       top: 9rem;
       left: 21rem; }
+      @media screen and (max-width: 30rem) {
+        #projects .projects .content-mobile .mobile .more {
+          left: -1rem; } }
   #projects .projects .content-mobile .tablet {
     background-image: url("../img/projects/ipad_grande.svg");
-    width: 32rem; }
+    width: 32rem;
+    height: 50rem; }
+    @media screen and (max-width: 45rem) {
+      #projects .projects .content-mobile .tablet {
+        background-size: 26rem;
+        background-position-x: center;
+        height: 40rem;
+        width: 30rem; } }
+    @media screen and (max-width: 30rem) {
+      #projects .projects .content-mobile .tablet {
+        background-size: 17rem;
+        height: 24rem;
+        width: 19rem; } }
     #projects .projects .content-mobile .tablet .content {
-      height: 554px;
-      left: 89px;
-      top: 82px;
-      width: 360px; }
+      height: 34.625rem;
+      left: 5.5625rem;
+      top: 5.125rem;
+      width: 22.5rem; }
+      @media screen and (max-width: 45rem) {
+        #projects .projects .content-mobile .tablet .content {
+          height: 27.0625rem;
+          left: 6.375rem;
+          top: 4rem;
+          width: 17.5625rem; } }
+      @media screen and (max-width: 30rem) {
+        #projects .projects .content-mobile .tablet .content {
+          width: 180px;
+          height: 283px;
+          top: 42px;
+          left: 64px; } }
     #projects .projects .content-mobile .tablet .more {
       top: 11rem;
       left: 5rem; }
+      @media screen and (max-width: 30rem) {
+        #projects .projects .content-mobile .tablet .more {
+          left: 2rem;
+          top: 7rem; } }
   #projects .projects .content-mobile .mobile, #projects .projects .content-mobile .tablet {
-    background-repeat: no-repeat;
-    height: 50rem; }
+    background-repeat: no-repeat; }
     #projects .projects .content-mobile .mobile .content, #projects .projects .content-mobile .tablet .content {
       position: relative; }
     #projects .projects .content-mobile .mobile .more, #projects .projects .content-mobile .tablet .more {
@@ -2467,10 +2662,7 @@ footer .footer-end {
     text-align: center;
     top: 11rem;
     width: 20rem; }
-    @media screen and (max-width: 37.5rem) {
-      #projects .projects .content-mobile .quote {
-        margin-top: -56%; } }
-    @media screen and (max-width: 30rem) {
+    @media screen and (max-width: 64rem) {
       #projects .projects .content-mobile .quote {
         display: none; } }
     #projects .projects .content-mobile .quote .avatar {
@@ -2478,9 +2670,6 @@ footer .footer-end {
       display: block;
       margin: 0 auto;
       width: 5.813rem; }
-      @media screen and (max-width: 52.5rem) {
-        #projects .projects .content-mobile .quote .avatar {
-          width: 2.813rem; } }
     #projects .projects .content-mobile .quote p {
       margin: 0.5rem 0; }
     #projects .projects .content-mobile .quote .text {
@@ -2489,37 +2678,25 @@ footer .footer-end {
       font-size: 1.5rem;
       margin-bottom: 2rem;
       padding: 0 1rem; }
-      @media screen and (max-width: 64rem) {
-        #projects .projects .content-mobile .quote .text {
-          font-size: 1rem; } }
-      @media screen and (max-width: 52.5rem) {
-        #projects .projects .content-mobile .quote .text {
-          font-size: 0.7rem; } }
       #projects .projects .content-mobile .quote .text .comillas {
         text-transform: uppercase; }
     #projects .projects .content-mobile .quote .author, #projects .projects .content-mobile .quote .project-country .project, #projects .projects .content-mobile .quote .text .comillas {
       color: #FF5E5B; }
     #projects .projects .content-mobile .quote .author {
       font-size: 1.3rem; }
-      @media screen and (max-width: 64rem) {
-        #projects .projects .content-mobile .quote .author {
-          font-size: 0.7rem; } }
     #projects .projects .content-mobile .quote .position {
       font-size: 1.4rem; }
-      @media screen and (max-width: 64rem) {
-        #projects .projects .content-mobile .quote .position {
-          font-size: 0.8rem; } }
     #projects .projects .content-mobile .quote .project-country {
       font-family: "quicksandbold";
       font-size: 1.4rem; }
-      @media screen and (max-width: 64rem) {
-        #projects .projects .content-mobile .quote .project-country {
-          font-size: 0.8rem; } }
       #projects .projects .content-mobile .quote .project-country .project {
         text-transform: uppercase; }
 
 #projects .projects .icon-movile {
   margin-top: -5rem; }
+  @media screen and (max-width: 64rem) {
+    #projects .projects .icon-movile {
+      margin-top: 0rem; } }
   #projects .projects .icon-movile .icon-android, #projects .projects .icon-movile .icon-ios {
     float: right;
     position: relative;
@@ -2540,6 +2717,11 @@ footer .footer-end {
   @media screen and (min-width: 90rem) {
     #projects .projects .text-movile {
       width: 62rem; } }
+  @media screen and (max-width: 64rem) {
+    #projects .projects .text-movile {
+      left: 0;
+      top: 0;
+      width: 82%; } }
   @media screen and (max-width: 30rem) {
     #projects .projects .text-movile {
       width: 83%;
@@ -2585,11 +2767,26 @@ footer .footer-end {
     #projects .projects-desktop .desktop {
       background-size: 89rem;
       height: 64rem; } }
+  @media screen and (max-width: 64rem) {
+    #projects .projects-desktop .desktop {
+      background-size: 46rem;
+      height: 60rem; } }
+  @media screen and (max-width: 45rem) {
+    #projects .projects-desktop .desktop {
+      background-size: 30rem;
+      height: 30rem; } }
+  @media screen and (max-width: 30rem) {
+    #projects .projects-desktop .desktop {
+      background-size: 19rem;
+      height: 18rem; } }
   #projects .projects-desktop .desktop .logo, #projects .projects-desktop .desktop .pagina, #projects .projects-desktop .desktop .icon {
     position: relative; }
-  @media screen and (min-width: 30rem) {
-    #projects .projects-desktop .desktop .logo-mobile {
-      display: none; } }
+  #projects .projects-desktop .desktop .logo-mobile {
+    display: none; }
+    @media screen and (max-width: 30rem) {
+      #projects .projects-desktop .desktop .logo-mobile {
+        display: inherit;
+        width: 11rem; } }
   #projects .projects-desktop .desktop .logo {
     height: 2.5rem;
     left: -21.5rem;
@@ -2600,6 +2797,24 @@ footer .footer-end {
         height: 3.5rem;
         left: -30rem;
         width: 12rem; } }
+    @media screen and (max-width: 64rem) {
+      #projects .projects-desktop .desktop .logo {
+        height: 2rem;
+        left: -15.5rem;
+        top: 7.7rem;
+        width: 6rem; } }
+    @media screen and (max-width: 45rem) {
+      #projects .projects-desktop .desktop .logo {
+        height: 1.5rem;
+        left: -10rem;
+        top: 6.9rem;
+        width: 4.3rem; } }
+    @media screen and (max-width: 30rem) {
+      #projects .projects-desktop .desktop .logo {
+        height: 0.9rem;
+        left: -6.3rem;
+        top: 1.4rem;
+        width: 2.5rem; } }
   #projects .projects-desktop .desktop .pagina {
     height: 32rem;
     left: 0.3rem;
@@ -2611,6 +2826,22 @@ footer .footer-end {
         left: 0.3rem;
         top: 8rem;
         width: 80rem; } }
+    @media screen and (max-width: 64rem) {
+      #projects .projects-desktop .desktop .pagina {
+        height: 22rem;
+        width: 43rem; } }
+    @media screen and (max-width: 45rem) {
+      #projects .projects-desktop .desktop .pagina {
+        height: 14.5rem;
+        width: 28rem;
+        left: 0.2rem;
+        top: 7rem; } }
+    @media screen and (max-width: 30rem) {
+      #projects .projects-desktop .desktop .pagina {
+        height: 9rem;
+        width: 18rem;
+        left: 0.2rem;
+        top: 1.5rem; } }
   #projects .projects-desktop .desktop .icon {
     display: flex;
     left: 19rem;
@@ -2619,14 +2850,53 @@ footer .footer-end {
     @media screen and (min-width: 90rem) {
       #projects .projects-desktop .desktop .icon {
         left: 31rem; } }
+    @media screen and (max-width: 64rem) {
+      #projects .projects-desktop .desktop .icon {
+        left: 12rem;
+        top: -1.5rem;
+        width: 19rem; } }
+    @media screen and (max-width: 45rem) {
+      #projects .projects-desktop .desktop .icon {
+        left: 8rem;
+        top: -1.5rem;
+        width: 12rem; } }
+    @media screen and (max-width: 30rem) {
+      #projects .projects-desktop .desktop .icon {
+        left: 5rem;
+        top: -1.5rem;
+        width: 7rem; } }
     #projects .projects-desktop .desktop .icon .icon-movile {
       left: 2rem;
       position: relative;
       top: 2.5rem; }
+      @media screen and (max-width: 45rem) {
+        #projects .projects-desktop .desktop .icon .icon-movile {
+          left: 0rem;
+          top: 1.5rem;
+          width: 5rem; } }
+      @media screen and (max-width: 30rem) {
+        #projects .projects-desktop .desktop .icon .icon-movile {
+          top: 0.7rem;
+          width: 3rem; } }
+    @media screen and (max-width: 45rem) {
+      #projects .projects-desktop .desktop .icon .icon-tablet {
+        left: -1rem;
+        position: relative;
+        width: 8rem; } }
+    @media screen and (max-width: 30rem) {
+      #projects .projects-desktop .desktop .icon .icon-tablet {
+        width: 5.6rem; } }
     #projects .projects-desktop .desktop .icon .more {
       left: -5rem;
       position: relative;
       top: 11rem; }
+      @media screen and (max-width: 45rem) {
+        #projects .projects-desktop .desktop .icon .more {
+          left: -6rem;
+          top: 9rem; } }
+      @media screen and (max-width: 30rem) {
+        #projects .projects-desktop .desktop .icon .more {
+          top: 4rem; } }
 
 #projects .projects-desktop .text {
   left: -7rem;
@@ -2637,9 +2907,16 @@ footer .footer-end {
   @media screen and (min-width: 90rem) {
     #projects .projects-desktop .text {
       width: 62rem; } }
-  @media screen and (max-width: 37.5rem) {
+  @media screen and (max-width: 64rem) {
     #projects .projects-desktop .text {
-      margin-top: -1rem; } }
+      margin-top: -16rem;
+      top: 0;
+      width: 25rem; } }
+  @media screen and (max-width: 45rem) {
+    #projects .projects-desktop .text {
+      margin-top: 0rem;
+      left: 0rem;
+      width: 80%; } }
   @media screen and (max-width: 30rem) {
     #projects .projects-desktop .text {
       width: 83%;
@@ -2653,7 +2930,7 @@ footer .footer-end {
     line-height: 130%; }
     @media screen and (max-width: 64rem) {
       #projects .projects-desktop .text h2 {
-        font-size: 1.5rem; } }
+        font-size: 1.3rem; } }
     @media screen and (max-width: 30rem) {
       #projects .projects-desktop .text h2 {
         font-size: 1.5rem; } }
@@ -2662,7 +2939,7 @@ footer .footer-end {
     line-height: 130%; }
     @media screen and (max-width: 64rem) {
       #projects .projects-desktop .text p {
-        font-size: 1.3rem; } }
+        font-size: 1.1rem; } }
     @media screen and (max-width: 30rem) {
       #projects .projects-desktop .text p {
         font-size: 1.3rem; } }

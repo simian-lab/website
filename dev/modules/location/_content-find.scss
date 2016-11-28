@@ -18,36 +18,56 @@
     padding-top: 50rem;
   }
 
-  @media screen and (max-width: $mobile-large) {
-    background-size: 200%;
+  @media screen and (max-width: $laptop-small) {
+    background-size: 150%;
     background-position-x: center;
-    margin-top: -20rem;
+    margin: -30rem 0 0rem 0;
+    padding-top: 74%;
+  }
+
+  @media screen and (max-width: $tablet-medium) {
+    background-size: 185%;
+    padding-top: 87%;
+  }
+
+  @media screen and (max-width: $tablet-small) {
+    background-size: 240%;
+    padding-top: 116%;
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    align-items: flex-start;
+    background-size: 257%;
+    margin: -29rem 0 0rem 0;
+    padding-top: 120%;
   }
 
   @media screen and (max-width: $mobile-medium) {
-    margin-top: -17rem;
+    margin: -21rem 0 0rem 0;
   }
 
   @media screen and (max-width: $mobile-small) {
-    margin-top: -15rem;
+
   }
 
   .text-find {
     width: 40rem;
     @media screen and (max-width: $laptop-small) {
-      width: 73%;
+      width: 53%;
     }
+
+    @media screen and (max-width: $tablet-small) {
+      width: 65%;
+    }
+
     @media screen and (max-width: $mobile-large) {
-      padding-top: 28rem;
-      width: 21rem;
+      width: 83%;
     }
     @media screen and (max-width: $mobile-medium) {
-      padding-top: 24rem;
-      width: 17rem;
+
     }
     @media screen and (max-width: $mobile-small) {
-      padding-top: 22rem;
-      width: 17rem;
+
     }
 
       h1 {
@@ -80,8 +100,6 @@
 
         @media screen and (max-width: $mobile-large) {
           font-size: 1.3rem;
-          width: 104%;
-          padding-top: 16%;
         }
 
         @media screen and (max-width: $mobile-medium) {
@@ -100,8 +118,6 @@
 
         @media screen and (max-width: $mobile-large) {
           font-size: 1.3rem;
-          padding-top: 5%;
-          width: 104%;
         }
         @media screen and (max-width: $mobile-medium) {
           font-size: 1.2rem;
@@ -111,13 +127,16 @@
 
   .icon{
     @media screen and (max-width: $laptop-small) {
-      width: 79%;
+      width: 16rem;
     }
-    @media screen and (max-width: $tablet-large) {
-      width: 63%;
+
+    @media screen and (max-width: $tablet-small) {
+      width: 7rem;
     }
+
     @media screen and (max-width: $mobile-large) {
-      width: 43%;
+      width: 3rem;
+      margin-left: -14%;
     }
   }
 }

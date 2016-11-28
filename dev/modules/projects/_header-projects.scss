@@ -28,9 +28,22 @@
     top: -12rem;
   }
 
+  @media screen and (max-width: $laptop-small) {
+    background-size: 280%;
+    background-position: center 0;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 65rem;
+    top: -4rem;
+  }
+
+  @media screen and (max-width: $tablet-medium) {
+    height: 45rem;
+    margin-bottom: -9rem;
+  }
+
   @media screen and (max-width: $mobile-large) {
-    background-size: 370%;
-    background-position-x: center;
+    height: 37rem;
   }
 
   .content-header {
@@ -38,14 +51,52 @@
     background-position: -9rem 0rem;
     background-repeat: no-repeat;
     background-size: 48rem 40rem;
-    width: 40rem;
     height: 34rem;
-    padding: 12rem 0 0 10rem;
+    padding: 12rem 0 0 9.5rem;
+    width: 40rem;
+
+    @media screen and (max-width: $laptop-small) {
+      background-position: -11rem -4rem;
+      height: 30rem;
+      padding: 8rem 0 0 8rem;
+      width: 36rem;
+    }
+
+    @media screen and (max-width: $tablet-medium) {
+      background-size: 40rem 37rem;
+      background-position: -9rem -4rem;
+      height: 27rem;
+      padding: 8rem 0 0 7rem;
+      width: 30rem;
+    }
+
+     @media screen and (max-width: $mobile-large) {
+      background-size: 24rem 29rem;
+      background-position: -6rem -4rem;
+      height: 20rem;
+      padding: 6.5rem 0 0 3rem;
+      width: 17rem;
+    }
+
     p {
       font-size: 3rem;
+      @media screen and (max-width: $tablet-medium) {
+        font-size: 2.5rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        font-size: 1.6rem;
+      }
 
       &:nth-child(2) {
         font-size: 5rem;
+        @media screen and (max-width: $tablet-medium) {
+          font-size: 4rem;
+        }
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 2.6rem;
+        }
       }
     }
 
@@ -53,11 +104,31 @@
       color: $yellow;
       font-size: 9rem;
       text-shadow: -1px 0 $brown, 0 1px $brown, 1px 0 $brown, 0 -1px $brown;
+      @media screen and (max-width: $tablet-medium) {
+        font-size: 7rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        font-size: 4.6rem;
+      }
     }
 
   }
   .icon-header {
     width: 35rem;
     margin: 5rem 0 0 -10rem;
+
+    @media screen and (max-width: $laptop-small) {
+      margin: -6rem 0 0 0;
+    }
+
+    @media screen and (max-width: $tablet-medium) {
+      width: 25rem;
+    }
+
+    @media screen and (max-width: $mobile-large) {
+      margin: -5rem 0 0 0;
+      width: 19rem;
+    }
   }
 }

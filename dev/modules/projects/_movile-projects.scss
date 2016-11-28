@@ -4,18 +4,20 @@
   .content-mobile {
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: $laptop-small) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3rem;
+    }
+
     .logo {
-      left: 2rem;
-      position: relative;
-      top: 4rem;
       width: 19rem;
 
       img {
         width: 16rem
       }
-      .logo-mobile {
 
-      }
       .line-logo {
         @media screen and (min-width: $mobile-large) {
           display: none;
@@ -24,14 +26,6 @@
 
       .line-desktop {
 
-      }
-    }
-
-    .logo {
-      width: 19rem;
-
-      img {
-        width: 16rem
       }
     }
 
@@ -48,57 +42,130 @@
       top: 4rem;
       position: relative;
 
-      .logo-mobile {
-
+      @media screen and (max-width: $laptop-small) {
+        display: flex;
+        top: 0rem;
+        left: 0rem;
+        width: 70%;
       }
+
+      @media screen and (max-width: $tablet-medium) {
+        width: 83%;
+      }
+
+      .logo-mobile {
+        @media screen and (max-width: $mobile-large) {
+          width: 10rem;
+        }
+      }
+
       .line-logo {
-        @media screen and (min-width: $mobile-large) {
-          display: none;
+        display: none;
+        @media screen and (max-width: $laptop-small) {
+          display: inherit;
+          width: 64%;
+        }
+
+        @media screen and (max-width: $tablet-medium) {
+          width: 42%;
         }
       }
 
       .line-desktop {
-
+        display: inherit;
+        @media screen and (max-width: $laptop-small) {
+          display: none;
+        }
       }
     }
 
     .mobile {
       background-image: url("../img/projects/iphone_grande.svg");
+      height: 50rem;
       width: 26rem;
 
+      @media screen and (max-width: $mobile-large) {
+        background-size: 18rem;
+        height: 34rem;
+        width: 19rem;
+      }
+
       .content {
-        height: 549px;
-        left: 50px;
-        top: 117px;
-        width: 328px;
+        height: rem(549px);
+        left: rem(50px);
+        top: rem(117px);
+        width: rem(328px);
+
+        @media screen and (max-width: $mobile-large) {
+          height: 358px;
+          width: 212px;
+          left: 36px;
+          top: 79px;
+        }
       }
 
       .more {
         top: 9rem;
         left: 21rem;
+
+        @media screen and (max-width: $mobile-large) {
+          left: -1rem;
+        }
       }
     }
 
     .tablet {
       background-image: url("../img/projects/ipad_grande.svg");
       width: 32rem;
+      height: 50rem;
+
+      @media screen and (max-width: $tablet-medium) {
+        background-size: 26rem;
+        background-position-x: center;
+        height: 40rem;
+        width: 30rem;
+      }
+
+      @media screen and (max-width: $mobile-large) {
+        background-size: 17rem;
+        height: 24rem;
+        width: 19rem;
+      }
 
       .content {
-        height: 554px;
-        left: 89px;
-        top: 82px;
-        width: 360px;
+        height: rem(554px);
+        left: rem(89px);
+        top: rem(82px);
+        width: rem(360px);
+
+        @media screen and (max-width: $tablet-medium) {
+          height: rem(433px);
+          left: rem(102px);
+          top: rem(64px);
+          width: rem(281px);
+        }
+
+        @media screen and (max-width: $mobile-large) {
+          width: 180px;
+          height: 283px;
+          top: 42px;
+          left: 64px;
+        }
       }
 
       .more {
         top: 11rem;
         left: 5rem;
+
+        @media screen and (max-width: $mobile-large) {
+          left: 2rem;
+          top: 7rem;
+        }
       }
     }
 
     .mobile, .tablet {
       background-repeat: no-repeat;
-      height: 50rem;
       .content {
         position: relative;
       }
@@ -114,10 +181,7 @@
       top: 11rem;
       width: 20rem;
 
-      @media screen and (max-width: $tablet-small) {
-        margin-top: -56%;
-      }
-      @media screen and (max-width: $mobile-large) {
+      @media screen and (max-width: $laptop-small) {
         display: none;
       }
 
@@ -126,9 +190,6 @@
         display: block;
         margin: 0 auto;
         width: 5.813rem;
-        @media screen and (max-width: $tablet-large) {
-          width: 2.813rem;
-        }
       }
 
       p {
@@ -142,13 +203,6 @@
         margin-bottom: 2rem;
         padding: 0 1rem;
 
-        @media screen and (max-width: $laptop-small) {
-          font-size: 1rem;
-        }
-        @media screen and (max-width: $tablet-large) {
-          font-size: 0.7rem;
-        }
-
         .comillas{
           text-transform: uppercase;
         }
@@ -160,27 +214,15 @@
 
       .author {
         font-size: 1.3rem;
-
-        @media screen and (max-width: $laptop-small) {
-          font-size: 0.7rem;
-        }
       }
 
       .position {
         font-size: 1.4rem;
-
-        @media screen and (max-width: $laptop-small) {
-          font-size: 0.8rem;
-        }
       }
 
       .project-country {
         font-family: $quicksand_bold;
         font-size: 1.4rem;
-
-        @media screen and (max-width: $laptop-small) {
-          font-size: 0.8rem;
-        }
 
         .project {
           text-transform: uppercase;
@@ -193,6 +235,11 @@
 
   .icon-movile {
     margin-top: -5rem;
+
+    @media screen and (max-width: $laptop-small) {
+      margin-top: 0rem;
+    }
+
     .icon-android, .icon-ios {
       float: right;
       position: relative;
@@ -224,6 +271,12 @@
 
     @media screen and (min-width: $laptop-medium) {
       width: 62rem;
+    }
+
+    @media screen and (max-width: $laptop-small) {
+      left: 0;
+      top: 0;
+      width: 82%;
     }
 
     @media screen and (max-width: $mobile-large) {
