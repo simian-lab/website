@@ -10,53 +10,70 @@
   padding: 2rem 0;
 
   @media screen and (max-width: $laptop-small) {
-    background-size: 164rem 113rem;
+    background-size: 142rem 118rem;
     height: 107rem;
   }
 
   @media screen and (max-width: $tablet-medium) {
-    background-size: 99rem 76rem;
-    height: 70rem;
+    background-size: 78rem 70rem;
+    height: 62rem;
   }
 
   @media screen and (max-width: $mobile-large) {
-    background-size: 75rem 58rem;
-    height: 54rem;
-    margin-top: 0rem;
+    background-size: 68rem 65rem;
+    height: 55rem;
   }
 
   .banano {
-    width: 64rem;
+    background-image: url('../img/home/banano_lo_nuestro.svg');
+    background-position-x: center;
+    background-size: 65rem 36rem;
+    background-repeat: no-repeat;
+    height: 34rem;
+    width: 100%;
+
     @media screen and (max-width: $laptop-small) {
-      width: 100%;
+      background-size: 65rem 36rem;
+      height: 46rem;
+    }
+
+    @media screen and (max-width: $tablet-medium) {
+      background-size: 57rem 24rem;
+    }
+
+    @media screen and (max-width: $mobile-large) {
+
     }
   }
 
   .title {
     background-image: url('../img/home/our-stuff-title.svg');
+    background-position: initial;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 18rem;
-    margin-top: -37rem;
-    padding: 3rem 0 0 9rem;
-    width: 33rem;
+    background-size: 36rem;
+    height: 21rem;
+    margin: -37rem 0 0 -7rem;
+    padding: 4rem 0 0 11rem;
+    width: 32rem;
 
     @media screen and (max-width: $laptop-small) {
-      height: 22rem;
-      margin-top: -27rem;
-      padding: 2rem 0 0 8rem;
+      height: 25rem;
     }
 
     @media screen and (max-width: $tablet-medium) {
-      margin-top: -19rem;
-      padding: 1.5rem 0 0 5rem;
-      width: 19rem;
+      background-size: 27rem;
+      height: 19rem;
+      margin: -37rem 0 0 -7rem;
+      padding: 4rem 0 0 9rem;
+      width: 24rem;
     }
 
     @media screen and (max-width: $mobile-large) {
-      margin-top: -12rem;
-      padding: 1rem 0 0 4rem;
-      width: 14rem;
+      background-size: 22rem;
+      height: 16rem;
+      margin: -33rem 0 0 -4rem;
+      padding: 3rem 0 0 7rem;
+      width: 20rem;
     }
 
     p {
@@ -80,7 +97,7 @@
       }
 
       @media screen and (max-width: $mobile-large) {
-        font-size: 4rem;
+        font-size: 5rem;
       }
     }
 
@@ -100,7 +117,7 @@
     }
 
     @media screen and (max-width: $mobile-large) {
-      margin-top: -8rem;
+
     }
 
     .project {
@@ -112,7 +129,7 @@
       }
 
       @media screen and (max-width: $mobile-large) {
-        width: 20rem;
+        width: 17.5rem;
       }
 
       .white-sign, .more, .logo {
@@ -252,7 +269,7 @@
           }
 
           @media screen and (max-width: $mobile-large) {
-            left: -1rem;
+            left: -3.5rem;
             top: 2rem;
           }
         }
@@ -272,7 +289,7 @@
           }
 
           @media screen and (max-width: $mobile-large) {
-            left: 10rem;
+            left: 7.5rem;
             top: 8rem;
           }
         }
@@ -292,7 +309,7 @@
           }
 
           @media screen and (max-width: $mobile-large) {
-            left: 5rem;
+            left: 2rem;
             top: 5.5rem;
           }
         }
@@ -305,7 +322,7 @@
           }
 
           @media screen and (max-width: $mobile-large) {
-            left: 12rem;
+            left: 9.5rem;
             top: -2rem;
           }
         }
