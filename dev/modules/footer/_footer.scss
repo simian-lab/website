@@ -12,13 +12,19 @@ footer {
         font-size: 6rem;
         padding-bottom: 1%;
         text-align: center;
+
+        @media screen and (max-width: $mobile-large) {
+          font-size: 4rem;
+        }
       }
 
-      img {
-        width: 90%;
-
-        @media screen and (max-width: $laptop-small) {
-          width: 100%;
+      .linea {
+        background-image: url(../img/footer/footer-line-horizontal.svg);
+        height: 3rem;
+        left: -1rem;
+        position: relative;
+        width: 100%;
+        @media screen and (max-width: $mobile-large) {
         }
       }
     }
@@ -58,7 +64,7 @@ footer {
           width: 80%;
         }
 
-        @media screen and (max-width: $mobile-large) {
+        @media screen and (max-width: $laptop-small) {
           background: none;
         }
 
@@ -67,6 +73,10 @@ footer {
           color: $white;
           margin: 0.4375rem 0;
           padding: 0 0.5rem;
+
+          @media screen and (max-width: $mobile-large) {
+            font-size: 1.2rem !important;
+          }
 
           &:focus {
             outline: none;
@@ -83,11 +93,17 @@ footer {
 
         input {
           height: 3.125rem;
+          @media screen and (max-width: $mobile-large) {
+            height: 2.5rem !important;
+          }
         }
 
         textarea {
           height: 26.25rem;
           padding-top: 0.5rem;
+          @media screen and (max-width: $mobile-large) {
+            height: 20rem !important;
+          }
         }
 
         label {
@@ -109,9 +125,14 @@ footer {
       .line {
         display: none;
         @media screen and (max-width: $laptop-small) {
+          background-image: url(../img/footer/footer-line-horizontal.svg);
           display: inherit;
-          margin-top: 2rem;
+          height: 3rem;
+          left: -1rem;
+          position: relative;
           width: 100%;
+          @media screen and (max-width: $mobile-large) {
+          }
         }
       }
 
@@ -124,6 +145,10 @@ footer {
         .info-title {
           font-size: 4.5rem;
           margin-bottom: 3.125rem;
+
+          @media screen and (max-width: $mobile-large) {
+            font-size: 3rem;
+          }
         }
 
         .info {
@@ -131,6 +156,10 @@ footer {
             height: 5rem;
             margin-bottom: 4.063rem;
             position: relative;
+
+            @media screen and (max-width: $mobile-large) {
+              height: 3rem;
+            }
 
             .field-content {
               @include transform(translateY(-50%));
@@ -148,22 +177,44 @@ footer {
                 color: $white;
                 text-decoration: none;
               }
+
+              p {
+                @media screen and (max-width: $mobile-large) {
+                  font-size: 1.2rem;
+                }
+              }
             }
 
             .social {
+
               p, .social-icons {
                 float: left;
               }
 
               p {
                 margin-top: 0.5rem;
+                @media screen and (max-width: $mobile-large) {
+                  font-size: 1.2rem;
+                }
               }
 
               .social-icons {
                 margin: 0 1rem;
 
+                @media screen and (max-width: $tablet-medium) {
+                  width: 100%;
+                  margin: 1rem 0;
+                  display: flex;
+                  justify-content: center;
+                }
+
                 li {
                   display: inline-block;
+                  margin-right: -0.3rem;
+
+                  @media screen and (max-width: $tablet-medium) {
+                    margin-right: 0.2rem;
+                  }
 
                   a {
                     background-image: url('../img/footer/icon-background.svg');
@@ -184,6 +235,12 @@ footer {
                   }
                 }
               }
+            }
+          }
+
+          .sociales {
+            @media screen and (max-width: $tablet-medium) {
+              height: 7.5rem !important;
             }
           }
         }
@@ -250,15 +307,25 @@ footer {
 
     img {
       position: absolute;
-    top: -13rem;
-    left: 50%;
-    transform: translateX(-50%);
+      top: -13rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @media screen and (max-width: $mobile-large) {
+        top: -9rem;
+        left: 50%;
+        width: 10rem;
+      }
     }
 
     p {
       font-size: 1.5rem;
       margin: 5rem 0 2rem;
       text-align: center;
+      @media screen and (max-width: $mobile-large) {
+        font-size: 1.2rem;
+        margin: 2rem 0 2rem;
+      }
     }
   }
 }
@@ -279,12 +346,16 @@ footer {
     padding-top: 19%;
 
     @media screen and (max-width: $laptop-small) {
-      padding-top: 42%;
+      padding-top: 33%;
       padding-bottom: 28%;
     }
 
     @media screen and (max-width: $tablet-medium) {
-      padding-top: 55%;
+      padding-top: 50%;
+    }
+
+    @media screen and (max-width: $mobile-large) {
+      padding-top: 80%;
     }
 
     .footer-content {
