@@ -64,17 +64,17 @@
 
     <div class="header">
 
-      <p ng-click="toggle()">X</p>
+      <img class="close" src="../img/header/x_cerrar.svg" ng-click="toggle()" alt="">
 
       <div class="header-buttons" ng-hide="activeSection == '404'">
         <a href="http://blog.simian.co/" target="_blank">
-          <img src="../img/header/our-blog.svg" alt="">
+          <img class="blog" src="../img/header/our-blog.svg" alt="">
         </a>
         <a href="" ng-click="changeLanguage('es')">
-          <img src="../img/header/es-button.svg" alt="">
+          <img class="idioma" src="../img/header/es-button.svg" alt="">
         </a>
         <a href="" ng-click="changeLanguage('en')">
-          <img src="../img/header/en-button.svg" alt="">
+          <img class="idioma" src="../img/header/en-button.svg" alt="">
         </a>
     </div>
 
@@ -83,7 +83,8 @@
     <nav ng-hide="activeSection == '404'" ng-show="true">
       <ul>
         <li class="hide-inicio">
-          <a href="" ng-href="/{{$root.language}}/" ng-click="toggle()">INICIO
+          <a ng-href="{{$root.language}}/" ng-click="toggle()">
+          {{ 'HOME' | translate }}
           </a>
         </li>
         <li>

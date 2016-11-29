@@ -23,12 +23,26 @@
     background-position-y: 16rem;
     align-items: center;
     flex-direction: column;
-    height: 41rem;
+    height: 43rem;
     justify-content: center;
   }
 
+  @media screen and (max-width: $tablet-small) {
+    height: 41rem;
+  }
+
   @media screen and (max-width: $mobile-large) {
-    height: 36rem;
+    background-position-x: center;
+    background-size: 190%;
+    height: 47rem;
+  }
+
+  @media screen and (max-width: $mobile-medium) {
+    margin-top: 5rem;
+  }
+
+  @media screen and (max-width: $mobile-small) {
+    height: 45rem;
   }
 
   p {
@@ -68,7 +82,7 @@
     }
 
     @media screen and (max-width: $mobile-large) {
-      top: -3rem;
+      top: -9rem;
     }
 
     h1 {
@@ -96,23 +110,25 @@
     @media screen and (max-width: $tablet-medium) {
       position: relative;
       right: 0rem;
-      top: 13.5rem;
+      top: 32%;
     }
 
     @media screen and (max-width: $tablet-small) {
-      top: 10rem;
+      top: 26%;
     }
 
     @media screen and (max-width: $mobile-large) {
-      top: 7rem;
+      top: 35%;
+      width: 65%;
     }
 
     @media screen and (max-width: $mobile-medium) {
-      top: 5rem;
+      top: 25%;
     }
 
     @media screen and (max-width: $mobile-small) {
-      top: 4rem;
+      top: 25%;
+      width: 85%;
     }
 
     p {

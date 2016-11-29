@@ -4,6 +4,7 @@ angular.module('simian.header', [])
 
 .config([ '$translateProvider', function($translateProvider) {
   $translateProvider.translations('en', {
+    'HOME' : 'Home',
     'WE-DO': 'We do',
     'PROJECTS': 'Our projects',
     'CLIENTS': 'Who has been with us',
@@ -13,6 +14,7 @@ angular.module('simian.header', [])
   });
 
   $translateProvider.translations('es', {
+    'HOME':'Inicio',
     'WE-DO': 'Qué hacemos',
     'PROJECTS': 'Nuestros proyectos',
     'CLIENTS': 'Quiénes han estado con nosotros',

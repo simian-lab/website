@@ -120,15 +120,18 @@ header .desktop {
         left: 1rem;
         position: relative;
         top: -7rem; } }
+    @media screen and (max-width: 30rem) {
+      header .desktop .menu {
+        top: -5rem; } }
     header .desktop .menu span {
       transition: all 250ms ease-in-out;
       background-color: white;
       display: block;
-      height: 3px;
-      margin: 5px;
+      height: 0.1875rem;
+      margin: 0.3125rem;
       opacity: 1;
       position: relative;
-      width: 20px; }
+      width: 1.8125rem; }
   @media screen and (max-width: 75em) {
     header .desktop .simian {
       margin: 0 auto;
@@ -177,22 +180,29 @@ header .desktop {
 
 header .movile .header {
   background-image: url("../img/header/barra_menu_roja.svg");
-  background-size: 393%;
+  background-size: 70rem 22rem;
   display: flex;
   justify-content: space-between;
-  height: 8rem;
+  height: 9rem;
   position: fixed;
   top: 5rem;
   width: 101%;
   z-index: 12; }
-  header .movile .header p {
-    color: white;
-    font-size: 3rem;
-    font-weight: bolder;
-    left: 1rem; }
+  @media screen and (max-width: 30rem) {
+    header .movile .header {
+      background-size: 31rem 25rem; } }
+  header .movile .header .close {
+    height: 2.3rem;
+    left: 1.5rem; }
   header .movile .header .header-buttons {
     right: 2rem; }
-  header .movile .header p, header .movile .header .header-buttons {
+    @media screen and (max-width: 30rem) {
+      header .movile .header .header-buttons a .blog {
+        width: 3rem; } }
+    @media screen and (max-width: 30rem) {
+      header .movile .header .header-buttons a .idioma {
+        width: 2.5rem; } }
+  header .movile .header .close, header .movile .header .header-buttons {
     position: relative;
     top: 1rem; }
 
@@ -202,27 +212,36 @@ header .movile nav {
   align-items: flex-start;
   height: 100%;
   justify-content: center;
-  padding-top: 14%;
+  padding-top: 13%;
   position: fixed;
   text-align: center;
-  top: 11%;
+  top: 6rem;
   width: 100%;
   z-index: 11; }
+  @media screen and (max-width: 30rem) {
+    header .movile nav {
+      top: 4rem; } }
   header .movile nav ul {
     display: flex;
     flex-direction: column;
-    margin-top: -5%;
+    height: 77%;
+    justify-content: space-between;
     width: 70%; }
+    @media screen and (max-width: 30rem) {
+      header .movile nav ul {
+        height: 80%;
+        width: 85%; } }
     header .movile nav ul .hide-inicio {
       display: none; }
       @media screen and (max-width: 75em) {
         header .movile nav ul .hide-inicio {
-          display: block; } }
+          display: flex; } }
     header .movile nav ul li, header .movile nav ul .hide-inicio {
-      border: dashed;
+      align-items: center;
+      border: dashed 1.9px;
       border-color: #FFFFFF;
-      margin: 1rem 1rem;
-      padding: 1rem;
+      display: flex;
+      height: 8%;
       width: 100%; }
       header .movile nav ul li a, header .movile nav ul .hide-inicio a {
         color: #FFFFFF;
@@ -230,8 +249,9 @@ header .movile nav {
         font-size: 0.75rem;
         font-weight: 700;
         line-height: 1.2rem;
+        margin-left: 1rem;
         text-decoration: none;
-        text-align: center;
+        text-align: start;
         text-transform: uppercase; }
       header .movile nav ul li .active, header .movile nav ul .hide-inicio .active {
         color: #DED96B; }
@@ -247,11 +267,15 @@ footer .background-section {
       font-size: 6rem;
       padding-bottom: 1%;
       text-align: center; }
-    footer .background-section .footer-title img {
-      width: 90%; }
-      @media screen and (max-width: 64rem) {
-        footer .background-section .footer-title img {
-          width: 100%; } }
+      @media screen and (max-width: 30rem) {
+        footer .background-section .footer-title h1 {
+          font-size: 4rem; } }
+    footer .background-section .footer-title .linea {
+      background-image: url(../img/footer/footer-line-horizontal.svg);
+      height: 3rem;
+      left: -1rem;
+      position: relative;
+      width: 100%; }
   footer .background-section .footer-content {
     padding-top: 3%;
     display: flex;
@@ -282,7 +306,7 @@ footer .background-section {
       @media screen and (max-width: 64rem) {
         footer .background-section .footer-content .contact-form {
           width: 80%; } }
-      @media screen and (max-width: 30rem) {
+      @media screen and (max-width: 64rem) {
         footer .background-section .footer-content .contact-form {
           background: none; } }
       footer .background-section .footer-content .contact-form input, footer .background-section .footer-content .contact-form textarea {
@@ -290,6 +314,9 @@ footer .background-section {
         color: #FFFFFF;
         margin: 0.4375rem 0;
         padding: 0 0.5rem; }
+        @media screen and (max-width: 30rem) {
+          footer .background-section .footer-content .contact-form input, footer .background-section .footer-content .contact-form textarea {
+            font-size: 1.2rem !important; } }
         footer .background-section .footer-content .contact-form input:focus, footer .background-section .footer-content .contact-form textarea:focus {
           outline: none; }
           footer .background-section .footer-content .contact-form input:focus::-webkit-input-placeholder, footer .background-section .footer-content .contact-form textarea:focus::-webkit-input-placeholder {
@@ -310,9 +337,15 @@ footer .background-section {
           color: #FFFFFF; }
       footer .background-section .footer-content .contact-form input {
         height: 3.125rem; }
+        @media screen and (max-width: 30rem) {
+          footer .background-section .footer-content .contact-form input {
+            height: 2.5rem !important; } }
       footer .background-section .footer-content .contact-form textarea {
         height: 26.25rem;
         padding-top: 0.5rem; }
+        @media screen and (max-width: 30rem) {
+          footer .background-section .footer-content .contact-form textarea {
+            height: 20rem !important; } }
       footer .background-section .footer-content .contact-form label {
         color: #FFFFFF;
         font-size: 1.2rem;
@@ -328,8 +361,11 @@ footer .background-section {
       display: none; }
       @media screen and (max-width: 64rem) {
         footer .background-section .footer-content .line {
+          background-image: url(../img/footer/footer-line-horizontal.svg);
           display: inherit;
-          margin-top: 2rem;
+          height: 3rem;
+          left: -1rem;
+          position: relative;
           width: 100%; } }
     @media screen and (max-width: 64rem) {
       footer .background-section .footer-content .contact-info {
@@ -337,10 +373,16 @@ footer .background-section {
     footer .background-section .footer-content .contact-info .info-title {
       font-size: 4.5rem;
       margin-bottom: 3.125rem; }
+      @media screen and (max-width: 30rem) {
+        footer .background-section .footer-content .contact-info .info-title {
+          font-size: 3rem; } }
     footer .background-section .footer-content .contact-info .info .field {
       height: 5rem;
       margin-bottom: 4.063rem;
       position: relative; }
+      @media screen and (max-width: 30rem) {
+        footer .background-section .footer-content .contact-info .info .field {
+          height: 3rem; } }
       footer .background-section .footer-content .contact-info .info .field .field-content {
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
@@ -356,14 +398,30 @@ footer .background-section {
         footer .background-section .footer-content .contact-info .info .field .field-content a {
           color: #FFFFFF;
           text-decoration: none; }
+        @media screen and (max-width: 30rem) {
+          footer .background-section .footer-content .contact-info .info .field .field-content p {
+            font-size: 1.2rem; } }
       footer .background-section .footer-content .contact-info .info .field .social p, footer .background-section .footer-content .contact-info .info .field .social .social-icons {
         float: left; }
       footer .background-section .footer-content .contact-info .info .field .social p {
         margin-top: 0.5rem; }
+        @media screen and (max-width: 30rem) {
+          footer .background-section .footer-content .contact-info .info .field .social p {
+            font-size: 1.2rem; } }
       footer .background-section .footer-content .contact-info .info .field .social .social-icons {
         margin: 0 1rem; }
+        @media screen and (max-width: 45rem) {
+          footer .background-section .footer-content .contact-info .info .field .social .social-icons {
+            width: 100%;
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center; } }
         footer .background-section .footer-content .contact-info .info .field .social .social-icons li {
-          display: inline-block; }
+          display: inline-block;
+          margin-right: -0.3rem; }
+          @media screen and (max-width: 45rem) {
+            footer .background-section .footer-content .contact-info .info .field .social .social-icons li {
+              margin-right: 0.2rem; } }
           footer .background-section .footer-content .contact-info .info .field .social .social-icons li a {
             background-image: url("../img/footer/icon-background.svg");
             background-repeat: no-repeat;
@@ -382,6 +440,9 @@ footer .background-section {
               left: 50%;
               position: absolute;
               top: 50%; }
+    @media screen and (max-width: 45rem) {
+      footer .background-section .footer-content .contact-info .info .sociales {
+        height: 7.5rem !important; } }
     footer .background-section .footer-content input:not(.button), footer .background-section .footer-content .field, footer .background-section .footer-content textarea {
       background-image: linear-gradient(to right, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to bottom, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to bottom, #333 55%, rgba(255, 255, 255, 0) 0%);
       background-position: top, bottom, left, right;
@@ -396,13 +457,7 @@ footer .background-section {
 footer:not(.footer-home) .background-section {
   background-position: center top;
   background-size: cover;
-  margin-top: 4rem;
-  padding-bottom: 4%;
-  padding-top: 12rem; }
-  @media screen and (max-width: 64rem) {
-    footer:not(.footer-home) .background-section {
-      margin-top: 1rem;
-      padding-top: 4rem; } }
+  padding-bottom: 4%; }
   footer:not(.footer-home) .background-section .footer-title {
     background-position-y: -5rem;
     background-repeat: no-repeat;
@@ -417,7 +472,8 @@ footer:not(.footer-home) .background-section {
     @media screen and (max-width: 45rem) {
       footer:not(.footer-home) .background-section .footer-title {
         background-size: 158%;
-        background-position: center 2rem; } }
+        background-position: center -2rem;
+        padding-top: 8rem; } }
   footer:not(.footer-home) .background-section .footer-content {
     background-repeat-y: no-repeat;
     background-size: 92rem 53rem;
@@ -434,18 +490,27 @@ footer .footer-end {
     top: -13rem;
     left: 50%;
     transform: translateX(-50%); }
+    @media screen and (max-width: 30rem) {
+      footer .footer-end img {
+        top: -9rem;
+        left: 50%;
+        width: 10rem; } }
   footer .footer-end p {
     font-size: 1.5rem;
     margin: 5rem 0 2rem;
     text-align: center; }
+    @media screen and (max-width: 30rem) {
+      footer .footer-end p {
+        font-size: 1.2rem;
+        margin: 2rem 0 2rem; } }
 
 .footer-home {
   position: relative;
   z-index: -1;
-  top: -20rem; }
+  margin-top: -20rem; }
   @media screen and (max-width: 45rem) {
     .footer-home {
-      top: -10rem; } }
+      margin-top: -10rem; } }
   .footer-home .background-section {
     background-image: url("../img/footer/azul_footer.svg");
     background-repeat-y: no-repeat;
@@ -453,11 +518,14 @@ footer .footer-end {
     padding-top: 19%; }
     @media screen and (max-width: 64rem) {
       .footer-home .background-section {
-        padding-top: 42%;
+        padding-top: 33%;
         padding-bottom: 28%; } }
     @media screen and (max-width: 45rem) {
       .footer-home .background-section {
-        padding-top: 55%; } }
+        padding-top: 50%; } }
+    @media screen and (max-width: 30rem) {
+      .footer-home .background-section {
+        padding-top: 80%; } }
     .footer-home .background-section .footer-content .contact-form input, .footer-home .background-section .footer-content .contact-form textarea {
       background-color: #00A1C1; }
 
@@ -783,6 +851,11 @@ footer .footer-end {
     height: 6rem;
     top: 30%;
     width: 6rem; }
+    @media screen and (max-width: 30rem) {
+      #home .our-projects .slider-container .swiper-button-prev,
+      #home .our-projects .slider-container .swiper-button-next {
+        top: 23%;
+        width: 15%; } }
   #home .our-projects .slider-container .swiper-button-prev {
     left: 5%; }
   #home .our-projects .slider-container .swiper-button-next {
@@ -798,6 +871,15 @@ footer .footer-end {
       font-size: 4rem;
       text-align: center;
       margin: 1rem 0; }
+      @media screen and (max-width: 30rem) {
+        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .name {
+          margin: 2rem 0 -16px 0; } }
+      @media screen and (max-width: 25rem) {
+        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .name {
+          margin: 2rem 0 -30px 0; } }
+      @media screen and (max-width: 25rem) {
+        #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .name {
+          margin: 2rem 0 -47px 0; } }
     #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .preview-container {
       display: -webkit-box;
       display: -moz-box;
@@ -896,45 +978,56 @@ footer .footer-end {
   padding: 2rem 0; }
   @media screen and (max-width: 64rem) {
     #home .our-stuff {
-      background-size: 164rem 113rem;
+      background-size: 142rem 118rem;
       height: 107rem; } }
   @media screen and (max-width: 45rem) {
     #home .our-stuff {
-      background-size: 99rem 76rem;
-      height: 70rem; } }
+      background-size: 78rem 70rem;
+      height: 62rem; } }
   @media screen and (max-width: 30rem) {
     #home .our-stuff {
-      background-size: 75rem 58rem;
-      height: 54rem;
-      margin-top: 0rem; } }
+      background-size: 68rem 65rem;
+      height: 55rem; } }
   #home .our-stuff .banano {
-    width: 64rem; }
+    background-image: url("../img/home/banano_lo_nuestro.svg");
+    background-position-x: center;
+    background-size: 65rem 36rem;
+    background-repeat: no-repeat;
+    height: 34rem;
+    width: 100%; }
     @media screen and (max-width: 64rem) {
       #home .our-stuff .banano {
-        width: 100%; } }
+        background-size: 65rem 36rem;
+        height: 46rem; } }
+    @media screen and (max-width: 45rem) {
+      #home .our-stuff .banano {
+        background-size: 57rem 24rem; } }
   #home .our-stuff .title {
     background-image: url("../img/home/our-stuff-title.svg");
+    background-position: initial;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 18rem;
-    margin-top: -37rem;
-    padding: 3rem 0 0 9rem;
-    width: 33rem; }
+    background-size: 36rem;
+    height: 21rem;
+    margin: -37rem 0 0 -7rem;
+    padding: 4rem 0 0 11rem;
+    width: 32rem; }
     @media screen and (max-width: 64rem) {
       #home .our-stuff .title {
-        height: 22rem;
-        margin-top: -27rem;
-        padding: 2rem 0 0 8rem; } }
+        height: 25rem; } }
     @media screen and (max-width: 45rem) {
       #home .our-stuff .title {
-        margin-top: -19rem;
-        padding: 1.5rem 0 0 5rem;
-        width: 19rem; } }
+        background-size: 27rem;
+        height: 19rem;
+        margin: -37rem 0 0 -7rem;
+        padding: 4rem 0 0 9rem;
+        width: 24rem; } }
     @media screen and (max-width: 30rem) {
       #home .our-stuff .title {
-        margin-top: -12rem;
-        padding: 1rem 0 0 4rem;
-        width: 14rem; } }
+        background-size: 22rem;
+        height: 16rem;
+        margin: -33rem 0 0 -4rem;
+        padding: 3rem 0 0 7rem;
+        width: 20rem; } }
     #home .our-stuff .title p {
       font-size: 4rem; }
       @media screen and (max-width: 45rem) {
@@ -951,7 +1044,7 @@ footer .footer-end {
           font-size: 6rem; } }
       @media screen and (max-width: 30rem) {
         #home .our-stuff .title h1 {
-          font-size: 4rem; } }
+          font-size: 5rem; } }
   #home .our-stuff .projects {
     display: flex;
     justify-content: space-around;
@@ -963,9 +1056,6 @@ footer .footer-end {
         flex-direction: column;
         height: inherit;
         justify-content: flex-start; } }
-    @media screen and (max-width: 30rem) {
-      #home .our-stuff .projects {
-        margin-top: -8rem; } }
     #home .our-stuff .projects .project {
       position: relative;
       width: 30rem; }
@@ -974,7 +1064,7 @@ footer .footer-end {
           width: 24rem; } }
       @media screen and (max-width: 30rem) {
         #home .our-stuff .projects .project {
-          width: 20rem; } }
+          width: 17.5rem; } }
       #home .our-stuff .projects .project .white-sign, #home .our-stuff .projects .project .more, #home .our-stuff .projects .project .logo {
         position: absolute; }
       #home .our-stuff .projects .project .phone {
@@ -1075,7 +1165,7 @@ footer .footer-end {
             top: 1rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project:last-child .white-sign {
-            left: -1rem;
+            left: -3.5rem;
             top: 2rem; } }
       #home .our-stuff .projects .project:last-child .more {
         left: 12rem;
@@ -1090,7 +1180,7 @@ footer .footer-end {
             top: 11rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project:last-child .more {
-            left: 10rem;
+            left: 7.5rem;
             top: 8rem; } }
       #home .our-stuff .projects .project:last-child .logo {
         left: 5rem;
@@ -1105,7 +1195,7 @@ footer .footer-end {
             top: 6rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project:last-child .logo {
-            left: 5rem;
+            left: 2rem;
             top: 5.5rem; } }
       #home .our-stuff .projects .project:last-child .phone {
         left: 14rem; }
@@ -1115,7 +1205,7 @@ footer .footer-end {
             top: -4rem; } }
         @media screen and (max-width: 30rem) {
           #home .our-stuff .projects .project:last-child .phone {
-            left: 12rem;
+            left: 9.5rem;
             top: -2rem; } }
 
 #home .clients-container-home {
@@ -1459,11 +1549,22 @@ footer .footer-end {
       background-position-y: 16rem;
       align-items: center;
       flex-direction: column;
-      height: 41rem;
+      height: 43rem;
       justify-content: center; } }
+  @media screen and (max-width: 37.5rem) {
+    #home .find-us {
+      height: 41rem; } }
   @media screen and (max-width: 30rem) {
     #home .find-us {
-      height: 36rem; } }
+      background-position-x: center;
+      background-size: 190%;
+      height: 47rem; } }
+  @media screen and (max-width: 25rem) {
+    #home .find-us {
+      margin-top: 5rem; } }
+  @media screen and (max-width: 22.5rem) {
+    #home .find-us {
+      height: 45rem; } }
   #home .find-us p {
     font-size: 2.5rem; }
     @media screen and (max-width: 64rem) {
@@ -1496,7 +1597,7 @@ footer .footer-end {
         left: 0rem; } }
     @media screen and (max-width: 30rem) {
       #home .find-us .sign {
-        top: -3rem; } }
+        top: -9rem; } }
     #home .find-us .sign h1 {
       color: #DED96B;
       font-size: 11rem; }
@@ -1517,19 +1618,21 @@ footer .footer-end {
       #home .find-us .see-more {
         position: relative;
         right: 0rem;
-        top: 13.5rem; } }
+        top: 32%; } }
     @media screen and (max-width: 37.5rem) {
       #home .find-us .see-more {
-        top: 10rem; } }
+        top: 26%; } }
     @media screen and (max-width: 30rem) {
       #home .find-us .see-more {
-        top: 7rem; } }
+        top: 35%;
+        width: 65%; } }
     @media screen and (max-width: 25rem) {
       #home .find-us .see-more {
-        top: 5rem; } }
+        top: 25%; } }
     @media screen and (max-width: 22.5rem) {
       #home .find-us .see-more {
-        top: 4rem; } }
+        top: 25%;
+        width: 85%; } }
     #home .find-us .see-more p {
       text-align: center; }
     #home .find-us .see-more .button {
