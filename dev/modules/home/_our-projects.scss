@@ -267,6 +267,18 @@
               display: flex;
               justify-content: center;
 
+              @media screen and (max-width: $mobile-large) {
+                margin-top: -7rem;
+              }
+
+              @media screen and (min-width: $mobile-medium) {
+                margin-top: -17rem;
+              }
+
+              @media screen and (min-width: $mobile-small) {
+                margin-top: -20rem;
+              }
+
               .line-after, .line-before {
                 position: relative;
                 top: 3rem;
