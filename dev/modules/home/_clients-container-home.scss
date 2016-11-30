@@ -189,6 +189,18 @@
     .button {
       background-image: url('../img/red-button.svg');
       margin: 3rem auto;
+
+       @media screen and (max-width: $mobile-large) {
+        background-position-y: 0.5rem;
+      }
+    }
+
+    a {
+      @media screen and (max-width: $mobile-large) {
+        font-size: 1rem;
+        height: 4.438rem;
+        width: 5.688rem;
+      }
     }
   }
 }

@@ -22,6 +22,7 @@
   @media screen and (max-width: $mobile-large) {
     background-size: 68rem 65rem;
     height: 55rem;
+    margin-top: -2rem;
   }
 
   .banano {
@@ -164,7 +165,7 @@
         }
 
         @media screen and (max-width: $mobile-large) {
-          width: 16rem;
+          width: 17.5rem;
         }
       }
 
@@ -200,7 +201,7 @@
           }
 
           @media screen and (max-width: $mobile-large) {
-            left: 2rem;
+            left: 1rem;
             top: 4rem;
           }
         }
@@ -269,7 +270,7 @@
           }
 
           @media screen and (max-width: $mobile-large) {
-            left: -3.5rem;
+            left: -5rem;
             top: 2rem;
           }
         }
