@@ -19,35 +19,17 @@
   }
 
   @media screen and (max-width: $laptop-small) {
-    background-size: 150%;
+    background-size: 98rem;
     background-position-x: center;
-    margin: -30rem 0 0rem 0;
-    padding-top: 74%;
-  }
-
-  @media screen and (max-width: $tablet-medium) {
-    background-size: 185%;
-    padding-top: 87%;
-  }
-
-  @media screen and (max-width: $tablet-small) {
-    background-size: 240%;
-    padding-top: 116%;
+    margin: -36rem 0 0rem 0;
+    padding-top: 50rem;
   }
 
   @media screen and (max-width: $mobile-large) {
     align-items: flex-start;
-    background-size: 257%;
-    margin: -29rem 0 0rem 0;
-    padding-top: 120%;
-  }
-
-  @media screen and (max-width: $mobile-medium) {
-    margin: -21rem 0 0rem 0;
-  }
-
-  @media screen and (max-width: $mobile-small) {
-
+    background-size: 59rem;
+    margin: -23rem 0 0rem 0;
+    padding-top: 29rem;
   }
 
   .text-find {
@@ -62,12 +44,6 @@
 
     @media screen and (max-width: $mobile-large) {
       width: 83%;
-    }
-    @media screen and (max-width: $mobile-medium) {
-
-    }
-    @media screen and (max-width: $mobile-small) {
-
     }
 
       h1 {
