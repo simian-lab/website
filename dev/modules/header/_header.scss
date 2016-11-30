@@ -11,6 +11,9 @@ header {
     top: 0;
     width: 100%;
     z-index: 15;
+    @media screen and (max-width: $mobile-large) {
+      background-position: center -2rem;
+    }
 
     .menu {
       display: none;
