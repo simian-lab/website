@@ -2963,8 +2963,13 @@ footer .footer-end {
       height: 30rem; } }
   @media screen and (max-width: 30rem) {
     #projects .projects-desktop .desktop {
-      background-size: 19rem;
+      background-position: center 1rem;
+      background-size: 26rem;
       height: 18rem; } }
+  @media screen and (max-width: 25rem) {
+    #projects .projects-desktop .desktop {
+      background-size: 21rem;
+      height: 17rem; } }
   #projects .projects-desktop .desktop .logo, #projects .projects-desktop .desktop .pagina, #projects .projects-desktop .desktop .icon {
     position: relative; }
   #projects .projects-desktop .desktop .logo-mobile {
@@ -2972,7 +2977,14 @@ footer .footer-end {
     @media screen and (max-width: 30rem) {
       #projects .projects-desktop .desktop .logo-mobile {
         display: inherit;
-        width: 11rem; } }
+        left: -7rem;
+        position: relative;
+        top: -1rem;
+        width: 8rem; } }
+    @media screen and (max-width: 25rem) {
+      #projects .projects-desktop .desktop .logo-mobile {
+        left: -5rem;
+        top: -1.5rem; } }
   #projects .projects-desktop .desktop .logo {
     height: 2.5rem;
     left: -21.5rem;
@@ -2997,10 +3009,16 @@ footer .footer-end {
         width: 4.3rem; } }
     @media screen and (max-width: 30rem) {
       #projects .projects-desktop .desktop .logo {
+        height: 1rem;
+        left: -8.8rem;
+        top: 0rem;
+        width: 3.5rem; } }
+    @media screen and (max-width: 25rem) {
+      #projects .projects-desktop .desktop .logo {
         height: 0.9rem;
-        left: -6.3rem;
-        top: 1.4rem;
-        width: 2.5rem; } }
+        left: -7rem;
+        top: -0.2rem;
+        width: 3rem; } }
   #projects .projects-desktop .desktop .pagina {
     height: 32rem;
     left: 0.3rem;
@@ -3019,15 +3037,21 @@ footer .footer-end {
     @media screen and (max-width: 45rem) {
       #projects .projects-desktop .desktop .pagina {
         height: 14.5rem;
-        width: 28rem;
         left: 0.2rem;
-        top: 7rem; } }
+        top: 7rem;
+        width: 28rem; } }
     @media screen and (max-width: 30rem) {
       #projects .projects-desktop .desktop .pagina {
-        height: 9rem;
-        width: 18rem;
-        left: 0.2rem;
-        top: 1.5rem; } }
+        height: 12.5rem;
+        left: 0rem;
+        top: 0.2rem;
+        width: 24rem; } }
+    @media screen and (max-width: 25rem) {
+      #projects .projects-desktop .desktop .pagina {
+        height: 10.3rem;
+        left: 0rem;
+        top: -0.2rem;
+        width: 19.5rem; } }
   #projects .projects-desktop .desktop .icon {
     display: flex;
     left: 19rem;
@@ -3048,9 +3072,14 @@ footer .footer-end {
         width: 12rem; } }
     @media screen and (max-width: 30rem) {
       #projects .projects-desktop .desktop .icon {
-        left: 5rem;
-        top: -1.5rem;
-        width: 7rem; } }
+        left: 4rem;
+        top: -6.5rem;
+        width: 14rem; } }
+    @media screen and (max-width: 25rem) {
+      #projects .projects-desktop .desktop .icon {
+        left: 2rem;
+        top: -5.5rem;
+        width: 14rem; } }
     #projects .projects-desktop .desktop .icon .icon-movile {
       left: 2rem;
       position: relative;
@@ -3062,8 +3091,16 @@ footer .footer-end {
           width: 5rem; } }
       @media screen and (max-width: 30rem) {
         #projects .projects-desktop .desktop .icon .icon-movile {
-          top: 0.7rem;
-          width: 3rem; } }
+          left: 3.7rem;
+          top: 3.3rem;
+          width: 5rem;
+          height: 6rem; } }
+      @media screen and (max-width: 25rem) {
+        #projects .projects-desktop .desktop .icon .icon-movile {
+          left: 3.7rem;
+          top: 3.3rem;
+          width: 5rem;
+          height: 6rem; } }
     @media screen and (max-width: 45rem) {
       #projects .projects-desktop .desktop .icon .icon-tablet {
         left: -1rem;
@@ -3071,7 +3108,14 @@ footer .footer-end {
         width: 8rem; } }
     @media screen and (max-width: 30rem) {
       #projects .projects-desktop .desktop .icon .icon-tablet {
-        width: 5.6rem; } }
+        left: 1rem;
+        width: 9rem;
+        height: 9rem; } }
+    @media screen and (max-width: 25rem) {
+      #projects .projects-desktop .desktop .icon .icon-tablet {
+        left: 1rem;
+        width: 9rem;
+        height: 9rem; } }
     #projects .projects-desktop .desktop .icon .more {
       left: -5rem;
       position: relative;
@@ -3082,7 +3126,15 @@ footer .footer-end {
           top: 9rem; } }
       @media screen and (max-width: 30rem) {
         #projects .projects-desktop .desktop .icon .more {
-          top: 4rem; } }
+          left: -3rem;
+          top: 7rem; } }
+      @media screen and (max-width: 25rem) {
+        #projects .projects-desktop .desktop .icon .more {
+          left: -3rem;
+          top: 7rem; } }
+      @media screen and (max-width: 30rem) {
+        #projects .projects-desktop .desktop .icon .more img {
+          width: 3rem; } }
 
 #projects .projects-desktop .text {
   left: -7rem;

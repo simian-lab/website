@@ -32,8 +32,14 @@
       }
 
       @media screen and (max-width: $mobile-large) {
-        background-size: 19rem;
+        background-position: center 1rem;
+        background-size: 26rem;
         height: 18rem;
+      }
+
+      @media screen and (max-width: $mobile-medium) {
+        background-size: 21rem;
+        height: 17rem;
       }
 
       .logo, .pagina, .icon {
@@ -43,7 +49,15 @@
         display: none;
         @media screen and (max-width: $mobile-large) {
           display: inherit;
-          width: 11rem;
+          left: -7rem;
+          position: relative;
+          top: -1rem;
+          width: 8rem;
+        }
+
+        @media screen and (max-width: $mobile-medium) {
+          left: -5rem;
+          top: -1.5rem;
         }
       }
 
@@ -74,10 +88,17 @@
         }
 
         @media screen and (max-width: $mobile-large) {
+          height: 1rem;
+          left: -8.8rem;
+          top: 0rem;
+          width: 3.5rem;
+        }
+
+        @media screen and (max-width: $mobile-medium) {
           height: 0.9rem;
-          left: -6.3rem;
-          top: 1.4rem;
-          width: 2.5rem;
+          left: -7rem;
+          top: -0.2rem;
+          width: 3rem;
         }
       }
 
@@ -101,16 +122,23 @@
 
         @media screen and (max-width: $tablet-medium) {
           height: 14.5rem;
-          width: 28rem;
           left: 0.2rem;
           top: 7rem;
+          width: 28rem;
         }
 
         @media screen and (max-width: $mobile-large) {
-          height: 9rem;
-          width: 18rem;
-          left: 0.2rem;
-          top: 1.5rem;
+          height: 12.5rem;
+          left: 0rem;
+          top: 0.2rem;
+          width: 24rem;
+        }
+
+        @media screen and (max-width: $mobile-medium) {
+          height: 10.3rem;
+          left: 0rem;
+          top: -0.2rem;
+          width: 19.5rem;
         }
       }
 
@@ -137,9 +165,15 @@
         }
 
         @media screen and (max-width: $mobile-large) {
-          left: 5rem;
-          top: -1.5rem;
-          width: 7rem;
+          left: 4rem;
+          top: -6.5rem;
+          width: 14rem;
+        }
+
+        @media screen and (max-width: $mobile-medium) {
+          left: 2rem;
+          top: -5.5rem;
+          width: 14rem;
         }
 
         .icon-movile {
@@ -154,8 +188,17 @@
           }
 
           @media screen and (max-width: $mobile-large) {
-            top: 0.7rem;
-            width: 3rem;
+            left: 3.7rem;
+            top: 3.3rem;
+            width: 5rem;
+            height: 6rem;
+          }
+
+          @media screen and (max-width: $mobile-medium) {
+            left: 3.7rem;
+            top: 3.3rem;
+            width: 5rem;
+            height: 6rem;
           }
         }
 
@@ -167,7 +210,15 @@
           }
 
           @media screen and (max-width: $mobile-large) {
-            width: 5.6rem;
+            left: 1rem;
+            width: 9rem;
+            height: 9rem;
+          }
+
+          @media screen and (max-width: $mobile-medium) {
+            left: 1rem;
+            width: 9rem;
+            height: 9rem;
           }
         }
 
@@ -182,7 +233,19 @@
           }
 
           @media screen and (max-width: $mobile-large) {
-            top: 4rem;
+            left: -3rem;
+            top: 7rem;
+          }
+
+          @media screen and (max-width: $mobile-medium) {
+            left: -3rem;
+            top: 7rem;
+          }
+
+          img {
+            @media screen and (max-width: $mobile-large) {
+              width: 3rem;
+            }
           }
         }
       }
