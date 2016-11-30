@@ -112,6 +112,9 @@ header .desktop {
   top: 0;
   width: 100%;
   z-index: 15; }
+  @media screen and (max-width: 30rem) {
+    header .desktop {
+      background-position: center -2rem; } }
   header .desktop .menu {
     display: none; }
     @media screen and (max-width: 75em) {
@@ -482,6 +485,9 @@ footer:not(.footer-home) .background-section {
     @media screen and (max-width: 64rem) {
       footer:not(.footer-home) .background-section .footer-content {
         background-size: 176rem 100rem; } }
+    @media screen and (max-width: 30rem) {
+      footer:not(.footer-home) .background-section .footer-content {
+        background-size: 147rem 85rem; } }
 
 footer .footer-end {
   position: relative; }
@@ -773,7 +779,8 @@ footer .footer-end {
           position: absolute;
           left: 4rem;
           top: 4rem;
-          width: 3rem; } }
+          width: 3rem;
+          z-index: 1; } }
     #home .hero .simian-tools .tools .idea .circulo, #home .hero .simian-tools .tools .development .circulo, #home .hero .simian-tools .tools .design .circulo, #home .hero .simian-tools .tools .banano .circulo, #home .hero .simian-tools .tools .support .circulo {
       display: none; }
       @media screen and (max-width: 30rem) {
@@ -977,13 +984,13 @@ footer .footer-end {
         justify-content: center; }
         @media screen and (max-width: 30rem) {
           #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .content-avatar {
-            margin-top: -7rem; } }
-        @media screen and (min-width: 25rem) {
+            margin-top: -3rem; } }
+        @media screen and (max-width: 25rem) {
           #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .content-avatar {
-            margin-top: -17rem; } }
-        @media screen and (min-width: 22.5rem) {
+            margin-top: -4rem; } }
+        @media screen and (max-width: 22.5rem) {
           #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .content-avatar {
-            margin-top: -20rem; } }
+            margin-top: -5rem; } }
         #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .content-avatar .line-after, #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .quote .content-avatar .line-before {
           position: relative;
           top: 3rem; }

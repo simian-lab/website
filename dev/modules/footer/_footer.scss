@@ -298,6 +298,10 @@ footer {
         @media screen and (max-width: $laptop-small) {
           background-size: 176rem 100rem;
         }
+
+        @media screen and (max-width: $mobile-large) {
+          background-size: 147rem 85rem;
+        }
       }
     }
   }

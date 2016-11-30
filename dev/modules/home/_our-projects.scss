@@ -268,15 +268,15 @@
               justify-content: center;
 
               @media screen and (max-width: $mobile-large) {
-                margin-top: -7rem;
+                margin-top: -3rem;
               }
 
-              @media screen and (min-width: $mobile-medium) {
-                margin-top: -17rem;
+              @media screen and (max-width: $mobile-medium) {
+                margin-top: -4rem;
               }
 
-              @media screen and (min-width: $mobile-small) {
-                margin-top: -20rem;
+              @media screen and (max-width: $mobile-small) {
+                margin-top: -5rem;
               }
 
               .line-after, .line-before {
