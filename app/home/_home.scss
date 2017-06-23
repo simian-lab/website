@@ -428,13 +428,15 @@ h1 {
   padding-top: 1rem;
 
   .clients {
-    figure {
-      float: left;
-      width: 33%;
+    text-align: center;
 
-      @media screen and (max-width: $tablet) {
-        width: 50%;
-      }
+    figure {
+      // float: left;
+      // width: 33%;
+      //
+      // @media screen and (max-width: $tablet) {
+      //   width: 50%;
+      // }
 
       figcaption {
         font-style: normal;
@@ -447,63 +449,30 @@ h1 {
         float: right;
       }
     }
-    //Special adjustments for some pieces
-    .loe{
-      img{
-        margin-top: 2em;
-        @media screen and (max-width: $tablet) {
-          margin-bottom: 0em;
-        }
-      }
+    a {
+      font-size: 16px;
+      display: inline-block;
+      margin-bottom: 8px;
+      width: calc(48% - 4px);
+      margin-right: 8px;
     }
-    .cyberlunes{
-      @media screen and (max-width: $tablet) {
-        margin-bottom: -0.5em;
-      }
-      img{
-        @media screen and (max-width: $tablet) {
-          margin-bottom: 0;
-        }
-      }
+
+    a:nth-of-type(2n) {
+      margin-right: 0;
     }
-    .fedesoft{
-      img{
-        margin-top: 2em;
-        @media screen and (max-width: $tablet) {
-          margin-bottom: 2.5em;
-        }
-      }
-    }
-    .semana {
-        margin-top: -24%;
-        float: right;
-      @media screen and (max-width: 75rem) {
-        margin-top: -27%;
-      }
-      @media screen and (max-width: $tablet) {
-        margin-top: -40%;
-      }
-    }
-    .osos{
-        @media screen and (max-width: $tablet) {
-          margin-right: 1em;
-        }
-    }
-    .rblu{
-      margin-left: 1em;
-      margin-top: 1em;
-      @media screen and (min-width: $pc) {
-        margin-left: -30%;
-      }
-      @media screen and (max-width: $tablet) {
-        margin-top: 2em;
-        margin-left: -0em;
-        img{
-          margin-top: -1em;
-          margin-bottom: 2em;
-        }
+
+    @media screen and (min-width: 50em) {
+      a {
+        width: calc(30% - 4px);
       }
 
+      a:nth-of-type(2n) {
+        margin-right: 8px;
+      }
+
+      a:nth-of-type(4n) {
+        margin-right: 0;
+      }
     }
   }
 }
