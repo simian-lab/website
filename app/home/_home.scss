@@ -423,7 +423,7 @@ h1 {
 }
 
 #portfolio {
-  background-color: #e8e8e8;
+  background-color: #ffffff;
   padding: 0 5%;
   padding-top: 1rem;
 
@@ -493,41 +493,26 @@ h1 {
   p {
     text-align: center;
   }
+  .team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    div{
 
-  .left, .right {
-    padding: 0 1rem;
-    width: 50%;
+      padding: 0 1rem;
+      width: 50%;
 
-    @media screen and (min-width: 35rem) {
-      padding: 0 2rem;
-    }
+      @media screen and (min-width: 35rem) {
+        padding: 0 2rem;
+      }
 
-    @media screen and (min-width: 37rem) {
-      padding: 0 3rem;
-    }
+      @media screen and (min-width: 37rem) {
+        padding: 0 3rem;
+      }
 
-    @media screen and (min-width: 48rem) {
-      width: 25%;
-    }
-  }
-
-  .left {
-    float: left;
-  }
-
-  .right {
-    float: right;
-  }
-  .sebastian{
-    margin-left: 0;
-  }
-  .natalia{
-    margin-right: 0;
-  }
-  .checho, .ivan{
-    p{
-      @media screen and (min-width: 48rem){
-        margin-bottom: 0;
+      @media screen and (min-width: 48rem) {
+        width: 25%;
       }
     }
   }
