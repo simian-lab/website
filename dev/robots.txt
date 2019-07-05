@@ -55,4 +55,4 @@ Disallow: /
 User-agent: Download Ninja
 Disallow: /
 
-Sitemap: http://simian.co/sitemap.xml
+Sitemap: https://simian.co/sitemap.xml
