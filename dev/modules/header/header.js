@@ -6,8 +6,8 @@ angular.module('simian.header', [])
   $translateProvider.translations('en', {
     'HOME' : 'Home',
     'WE-DO': 'We do',
-    'PROJECTS': 'Our projects',
-    'CLIENTS': 'Who has been with us',
+    'PROJECTS': 'Portfolio',
+    'CLIENTS': 'Clients',
     'WE-ARE': 'Who are we',
     'LOCATION': 'Find us',
     'WE-SHARE': 'We share our knowledge'
@@ -16,8 +16,8 @@ angular.module('simian.header', [])
   $translateProvider.translations('es', {
     'HOME':'Inicio',
     'WE-DO': 'Qué hacemos',
-    'PROJECTS': 'Nuestros proyectos',
-    'CLIENTS': 'Quiénes han estado con nosotros',
+    'PROJECTS': 'Portafolio',
+    'CLIENTS': 'Clientes',
     'WE-ARE': 'Quiénes somos',
     'LOCATION': 'Dónde encontrarnos',
     'WE-SHARE': 'Compartimos lo que sabemos'

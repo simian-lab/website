@@ -1,6 +1,6 @@
 
 header {
-  .desktop{
+  .desktop {
     @include transform(translateZ(0));
     background-image: url('../img/header/header-background.svg');
     background-position: center bottom;
@@ -21,7 +21,7 @@ header {
         display: inline-block;
         left: 1rem;
         position: relative;
-        top: -7rem;
+        top: -6rem;
       }
 
       @media screen and (max-width: $mobile-large) {
@@ -41,7 +41,7 @@ header {
 
     }
 
-    .simian{
+    .simian {
       @media screen and (max-width: 75.000em) {
         margin: 0 auto;
         width: 18rem;
@@ -53,9 +53,32 @@ header {
 
       a {
         display: inline-block;
-        img{
-          @media screen and (max-width: $mobile-large) {
+        margin: 0 0 0 2.125rem;
+        position: relative;
+
+        &:hover {
+          &:before {
+            content: '';
+            display: block;
+            background-image: url('../img/header/logo-simian-hover.png');
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            height: 100%;
             width: 100%;
+          }
+
+          img {
+            visibility: hidden;
+          }
+        }
+
+        img {
+          width: 220px;
+
+          @media screen and (max-width: $mobile-large) {
+            //width: 100%;
           }
         }
       }
@@ -73,19 +96,37 @@ header {
 
       ul {
         display: flex;
+        justify-content: center;
+        margin-top: 5px;
 
         li {
-          margin: 0 1rem;
+          margin: 0 2rem;
 
           a {
             color: $white;
             font-family: $quicksand_light;
-            font-size: 0.75rem;
+            font-size: 1.25rem;
             font-weight: 700;
             line-height: 1.2rem;
+            position: relative;
             text-decoration: none;
             text-align: center;
-            text-transform: uppercase;
+
+            &:hover {
+              color: $yellow;
+
+              span {
+                background-image: url('../img/header/line-hover-desktop.svg');
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                //background-size: cover;
+                height: 30px;
+                position: absolute;
+                width: 100%;
+                top: 70%;
+                left: 0;
+              }
+            }
           }
 
           .active {
@@ -106,6 +147,7 @@ header {
 
       a {
         margin: 0 0.5rem;
+        text-decoration: none;
       }
     }
   }

@@ -122,7 +122,7 @@ header .desktop {
         display: inline-block;
         left: 1rem;
         position: relative;
-        top: -7rem; } }
+        top: -6rem; } }
     @media screen and (max-width: 30rem) {
       header .desktop .menu {
         top: -5rem; } }
@@ -143,10 +143,23 @@ header .desktop {
     header .desktop .simian {
       width: 13rem; } }
   header .desktop .simian a {
-    display: inline-block; }
-    @media screen and (max-width: 30rem) {
-      header .desktop .simian a img {
-        width: 100%; } }
+    display: inline-block;
+    margin: 0 0 0 2.125rem;
+    position: relative; }
+    header .desktop .simian a:hover:before {
+      content: '';
+      display: block;
+      background-image: url("../img/header/logo-simian-hover.png");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      height: 100%;
+      width: 100%; }
+    header .desktop .simian a:hover img {
+      visibility: hidden; }
+    header .desktop .simian a img {
+      width: 220px; }
   header .desktop nav {
     left: 23%;
     position: absolute;
@@ -157,18 +170,31 @@ header .desktop {
       header .desktop nav {
         display: none; } }
     header .desktop nav ul {
-      display: flex; }
+      display: flex;
+      justify-content: center;
+      margin-top: 5px; }
       header .desktop nav ul li {
-        margin: 0 1rem; }
+        margin: 0 2rem; }
         header .desktop nav ul li a {
           color: #FFFFFF;
           font-family: "quicksandlight";
-          font-size: 0.75rem;
+          font-size: 1.25rem;
           font-weight: 700;
           line-height: 1.2rem;
+          position: relative;
           text-decoration: none;
-          text-align: center;
-          text-transform: uppercase; }
+          text-align: center; }
+          header .desktop nav ul li a:hover {
+            color: #DED96B; }
+            header .desktop nav ul li a:hover span {
+              background-image: url("../img/header/line-hover-desktop.svg");
+              background-position: center bottom;
+              background-repeat: no-repeat;
+              height: 30px;
+              position: absolute;
+              width: 100%;
+              top: 70%;
+              left: 0; }
         header .desktop nav ul li .active {
           color: #DED96B; }
   header .desktop .header-buttons {
@@ -179,7 +205,8 @@ header .desktop {
       header .desktop .header-buttons {
         display: none; } }
     header .desktop .header-buttons a {
-      margin: 0 0.5rem; }
+      margin: 0 0.5rem;
+      text-decoration: none; }
 
 header .movile .header {
   background-image: url("../img/header/barra_menu_roja.svg");
