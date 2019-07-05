@@ -1901,7 +1901,9 @@ footer .footer-end {
         .clients-container .clients-grid .grid .item img {
           display: block;
           margin: 0 auto;
-          margin-top: 3rem; }
+          margin-top: 3rem;
+          max-width: 200px;
+          max-height: 100px; }
 
 #location .header-find {
   background-image: url("../img/location/fondo_header.svg");
