@@ -26,7 +26,6 @@ app.use(function(req, res, next) {
 });
 
 app.post('/contact', function(req, res) {
-  console.log(req.body);
   if(req.body.captcha !=  (process.env.KEY_EMAIL || 'bananas')){
     return res.status(403).send({ error : 'Your no are a monkey' });
   }
@@ -54,4 +53,6 @@ app.use(modRewrite([
 ]));
 
 app.use('/', express.static(__dirname + '/prod/'));
-app.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 5000, function () {
+  console.log('Give bananas http://localhost:' + (process.env.PORT || 5000) + '/' );
+});
