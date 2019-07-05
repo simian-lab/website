@@ -68,10 +68,22 @@ footer {
           background: none;
         }
 
+        .form-group {
+          position: relative;
+          > label {
+            position: absolute;
+            left: 0.5rem;
+            top: 2rem;
+            margin: 0;
+            padding: 0;
+            transition: 0.5s all;
+          }
+        }
+
         input, textarea {
           border: none;
           color: $white;
-          margin: 0.4375rem 0;
+          margin: 1rem 0;
           padding: 0 0.5rem;
 
           @media screen and (max-width: $mobile-large) {
@@ -89,6 +101,21 @@ footer {
           @include placeholder {
             color: $white;
           }
+
+          &.ng-touch,
+          &.ng-valid:not(.ng-empty),
+          &.ng-dirty:not(.ng-empty) {
+            ~ label {
+              transform : scale(0.75) translateY(-110%);
+              transform-origin: center left;
+              top: 0.5rem;
+            }
+          }
+
+          &.ng-invalid,
+          &:invalid {
+
+          }
         }
 
         input {
@@ -99,7 +126,7 @@ footer {
         }
 
         textarea {
-          height: 26.25rem;
+          height: 21.25rem;
           padding-top: 0.5rem;
           @media screen and (max-width: $mobile-large) {
             height: 20rem !important;
@@ -247,7 +274,11 @@ footer {
       }
 
       input:not(.button), .field, textarea {
-        background-image: linear-gradient(to right, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to bottom, #333 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to bottom, #333 55%, rgba(255, 255, 255, 0) 0%);
+        background-image:
+          linear-gradient(to right, #333 55%, rgba(255, 255, 255, 0) 0%),
+          linear-gradient(to right, #333 55%, rgba(255, 255, 255, 0) 0%),
+          linear-gradient(to bottom, #333 55%, rgba(255, 255, 255, 0) 0%),
+          linear-gradient(to bottom, #333 55%, rgba(255, 255, 255, 0) 0%);
         background-position: top, bottom, left, right;
         background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
         background-size: 11px 1px, 11px 1px, 1px 11px, 1px 11px;
@@ -256,6 +287,15 @@ footer {
 
         @media screen and (max-width: $mobile-large) {
           width: 100%;
+        }
+
+        &.ng-invalid {
+          box-shadow: none;
+          background-image:
+            linear-gradient(to right, $red 55%, rgba(255, 255, 255, 0) 0%),
+            linear-gradient(to right, $red 55%, rgba(255, 255, 255, 0) 0%),
+            linear-gradient(to bottom, $red 55%, rgba(255, 255, 255, 0) 0%),
+            linear-gradient(to bottom, $red 55%, rgba(255, 255, 255, 0) 0%);
         }
       }
     }
