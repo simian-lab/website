@@ -16,6 +16,10 @@ angular.module('simian.monkeys', [])
         });
 
         return deferred.promise;
+      },
+      contactMonkeys: function(data) {
+        data.captcha = 'bananas';
+        return $http.post('contact', data);
       }
     };
   }

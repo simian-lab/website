@@ -1,18 +1,18 @@
-<footer class="footer-{{activeSection}}">
-  <div class="background-section" ng-show="activeSection != 'we-are' &&  activeSection !='quienes-somos'" >
+<footer class="footer-{{$root.activeSection}}">
+  <div class="background-section" ng-show="$root.activeSection != 'we-are' &&  $root.activeSection !='quienes-somos'" >
     <div class="footer-title">
       <h1>Podemos hablar</h1>
       <div class="linea"></div>
     </div>
 
-    <div class="footer-content">
-      <form class="contact-form">
-        <input type="text" placeholder="*Nombre">
-        <input type="email" placeholder="*Correo electrónico">
-        <input type="number" placeholder="Número de contacto">
-        <textarea cols="30" rows="10" placeholder="*Mensaje"></textarea>
+    <div class="footer-content" >
+      <form class="contact-form" name="contact" ng-submit="submit()">
+        <input ng-disabled="contact.isSend" type="text" ng-model="contact.value.Name" placeholder="*Nombre">
+        <input ng-disabled="contact.isSend" type="email" ng-model="contact.value.Email" placeholder="*Correo electrónico">
+        <input ng-disabled="contact.isSend" type="number" ng-model="contact.value.Number" placeholder="Número de contacto">
+        <textarea ng-disabled="contact.isSend" cols="30" rows="10" ng-model="contact.value.Message" placeholder="*Mensaje"></textarea>
         <label>*Campo obligatorio</label><br>
-        <input type="submit" class="button" value="Enviar">
+        <input ng-disabled="contact.isSend" type="submit" class="button" value="Enviar">
       </form>
 
       <div class="line"></div>
@@ -46,11 +46,6 @@
                 <li>
                   <a href="https://twitter.com/simianlab" target="_blank">
                     <img src="../img/footer/icon-twitter.svg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://plus.google.com/+SimianCo" target="_blank">
-                    <img src="../img/footer/icon-google-plus.svg" alt="">
                   </a>
                 </li>
                 <li>
