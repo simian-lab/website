@@ -2,7 +2,7 @@
   "clients": [
     {
       "name": "Canal 1",
-      "logo": "../img/clients/##"
+      "logo": "../img/clients/canal1.png"
     },
     {
       "name": "El Tiempo",
@@ -14,7 +14,7 @@
     },
     {
       "name": "Productora Semana",
-      "logo": "../img/clients/##"
+      "logo": "../img/clients/productorasemana.png"
     },
     {
       "name": "Caracol",
