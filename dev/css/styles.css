@@ -918,8 +918,11 @@ footer .footer-end {
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
     right: 5%; }
-  #home .our-projects .slider-container #projects-slider {
-    width: 80%; }
+  #home .our-projects .slider-container #projects-slider .swiper-wrapper {
+    display: flex; }
+    @media screen and (max-width: 45rem) {
+      #home .our-projects .slider-container #projects-slider .swiper-wrapper {
+        flex-wrap: wrap; } }
     #home .our-projects .slider-container #projects-slider .swiper-wrapper .swiper-slide .name {
       font-size: 4rem;
       text-align: center;
