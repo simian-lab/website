@@ -35,38 +35,6 @@ angular.module('simian.we-are', [])
         $location.replace();
         $rootScope.$apply();
       };
-
-      $timeout(function() {
-        /**
-        * We are using a slider library called Swiper.
-        * This is its API: http://idangero.us/swiper/api/#.V22dh5PhDOT
-        */
-
-        var projectsSlider = new Swiper('#monkeys-slider', {
-
-          loop: false,
-          nextButton: '.swiper-button-next',
-          prevButton: '.swiper-button-prev',
-          slidesPerView: 1,
-          spaceBetween: 10,
-          initialSlide: $scope.position,
-          runCallbacksOnInit : true,
-
-          onSlideNextStart : function () {
-
-            start = start + 1;
-            if (start > 1  || $scope.position == 0) {
-              $scope.position = $scope.position + 1;
-              cambio($scope.position);
-            }
-          },
-
-          onSlidePrevStart : function () {
-            $scope.position = $scope.position - 1;
-            cambio($scope.position);
-          },
-        });
-      });
     });
   }
 ])

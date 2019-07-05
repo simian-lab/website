@@ -42,20 +42,6 @@ angular.module('simian.home', [])
       else {
         $scope.numslider = 3;
       }
-
-      $timeout(function() {
-        /**
-        * We are using a slider library called Swiper.
-        * This is its API: http://idangero.us/swiper/api/#.V22dh5PhDOT
-        */
-        var projectsSlider = new Swiper('#projects-slider', {
-          loop: true,
-          nextButton: '.swiper-button-next',
-          prevButton: '.swiper-button-prev',
-          slidesPerView: $scope.numslider,
-          spaceBetween: 10
-        });
-      });
     });
   }
 ])
