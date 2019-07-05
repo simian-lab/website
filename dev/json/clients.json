@@ -1,66 +1,24 @@
 {
   "clients": [
     {
-      "name": "4 Direcciones",
-      "logo": "../img/clients/4-direcciones.png"
-    },
-    {
-      "name": "AIJ",
-      "logo": "../img/clients/aij.png",
-      "url": "http://aij.org.co/"
-    },
-    {
-      "name": "Bancóldex",
-      "logo": "../img/clients/bancoldex.png"
-    },
-    {
-      "name": "Blu Radio",
-      "logo": "../img/clients/blu-radio.png"
-    },
-    {
-      "name": "Bogotá CSS",
-      "logo": "../img/clients/bogota-css.png",
-      "url": "http://www.meetup.com/es/BogotaCSS/"
-    },
-    {
-      "name": "Cámara de Comercio de Bogotá",
-      "logo": "../img/clients/camara-de-comercio.png"
-    },
-    {
-      "name": "Caracol",
-      "logo": "../img/clients/caracol.png"
-    },
-    {
-      "name": "Carro Ya",
-      "logo": "../img/clients/carro-ya.png"
-    },
-    {
-      "name": "Compartamos Colombia",
-      "logo": "../img/clients/compartamos-colombia.png"
-    },
-    {
-      "name": "Cyberlunes",
-      "logo": "../img/clients/cyberlunes.png"
+      "name": "Canal 1",
+      "logo": "../img/clients/##"
     },
     {
       "name": "El Tiempo",
       "logo": "../img/clients/el-tiempo.png"
     },
     {
-      "name": "Éxito",
-      "logo": "../img/clients/exito.png"
+      "name": "Semana",
+      "logo": "../img/clients/semana.svg"
     },
     {
-      "name": "Fedesoft",
-      "logo": "../img/clients/fedesoft.png"
+      "name": "Productora Semana",
+      "logo": "../img/clients/##"
     },
     {
-      "name": "Gerente",
-      "logo": "../img/clients/gerente.png"
-    },
-    {
-      "name": "Interfaz",
-      "logo": "../img/clients/interfaz.jpeg"
+      "name": "Caracol",
+      "logo": "../img/clients/caracol.png"
     },
     {
       "name": "KienyKe",
@@ -68,40 +26,100 @@
       "url": "http://www.kienyke.com/"
     },
     {
-      "name": "Kika Vargas",
-      "logo": "../img/clients/kika-vargas.png"
+      "name": "Flats 101",
+      "logo": "../img/clients/flats101.svg"
     },
     {
-      "name": "LOE",
-      "logo": "../img/clients/loe.png"
+      "name": "Universidad Externado de Colombia",
+      "logo": "../img/clients/uexternado.svg"
     },
     {
-      "name": "Riding Unicorns",
-      "logo": "../img/clients/riding-unicorns.png"
+      "name": "Cámara de Comercio de Bogotá",
+      "logo": "../img/clients/camara-de-comercio.png"
+    },
+    {
+      "name": "Minminas",
+      "logo": "../img/clients/minminas.png"
+    },
+    {
+      "name": "Enter.co",
+      "logo": "../img/clients/enterco.png"
+    },
+    {
+      "name": "Univision",
+      "logo": "../img/clients/univision.png"
+    },
+    {
+      "name": "Andesco",
+      "logo": "../img/clients/andesco.png"
+    },
+    {
+      "name": "Fedesoft",
+      "logo": "../img/clients/fedesoft.png"
+    },
+    {
+      "name": "Cenisoft",
+      "logo": "../img/clients/cenisoft.png"
+    },
+    {
+      "name": "Compartamos Colombia",
+      "logo": "../img/clients/compartamos-colombia.png"
     },
     {
       "name": "Samsung",
       "logo": "../img/clients/samsung.png"
     },
     {
-      "name": "Samsung Club",
-      "logo": "../img/clients/samsung-club.png"
+      "name": "Seguro Canguro",
+      "logo": "../img/clients/segurocanguro.png"
     },
     {
-      "name": "Semana",
-      "logo": "../img/clients/semana.svg"
+      "name": "Bancóldex",
+      "logo": "../img/clients/bancoldex.png"
     },
     {
-      "name": "Social Atom",
-      "logo": "../img/clients/social-atom.png"
+      "name": "Ventures",
+      "logo": "../img/clients/ventures.png"
     },
     {
-      "name": "Usted ya sabe quién soy yo",
-      "logo": "../img/clients/ud-ya-sabe.png"
+      "name": "Cyberlunes",
+      "logo": "../img/clients/cyberlunes.png"
     },
     {
-      "name": "Univision",
-      "logo": "../img/clients/univision.png"
+      "name": "Lo Encontraste",
+      "logo": "../img/clients/loencontraste.png"
+    },
+    {
+      "name": "Cibergenius",
+      "logo": "../img/clients/cibergenius.png"
+    },
+    {
+      "name": "Cívico",
+      "logo": "../img/clients/civico.png"
+    },
+    {
+      "name": "Carro Ya",
+      "logo": "../img/clients/carro-ya.png"
+    },
+    {
+      "name": "Blu Radio",
+      "logo": "../img/clients/blu-radio.png"
+    },
+    {
+      "name": "La Kalle",
+      "logo": "../img/clients/lakalle.png"
+    },
+    {
+      "name": "COINK",
+      "logo": "../img/clients/coink.png"
+    },
+    {
+      "name": "Lacteos Campesino",
+      "logo": "../img/clients/lacteoscampesino.svg"
+    },
+    {
+      "name": "Universidad Autónoma de Occidente",
+      "logo": "../img/clients/uao.png"
     }
   ]
 }
