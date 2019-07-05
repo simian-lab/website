@@ -8,58 +8,27 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
   <url>
-    <loc>https://simian.co/</loc>
+    <loc>https://simian.co/es</loc>
     <lastmod>2016-06-28T21:42:53+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <link rel="alternate" hreflang="en" href="https://simian.co/en" />
-    <link rel="alternate" hreflang="es" href="https://simian.co/es" />
   </url>
-
   <url>
-    <loc>https://simian.co/we-do</loc>
+    <loc>https://simian.co/es/que-hacemos</loc>
     <lastmod>2016-07-29T20:34:36+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <link rel="alternate" hreflang="en" href="https://simian.co/we-do" />
-    <link rel="alternate" hreflang="es" href="https://simian.co/we-do" />
   </url>
-
   <url>
-    <loc>https://simian.co/projects</loc>
+    <loc>https://simian.co/es/proyectos</loc>
     <lastmod>2016-07-29T20:34:36+00:00</lastmod>
     <changefreq>yearly</changefreq>
-    <link rel="alternate" hreflang="en" href="https://simian.co/projects" />
-    <link rel="alternate" hreflang="es" href="https://simian.co/projects" />
+    <link rel="alternate" hreflang="en" href="https://simian.co/en/projects" />
   </url>
-
   <url>
-    <loc>https://simian.co/clients</loc>
+    <loc>https://simian.co/es/clientes</loc>
     <lastmod>2016-07-29T20:34:36+00:00</lastmod>
     <changefreq>yearly</changefreq>
-    <link rel="alternate" hreflang="en" href="https://simian.co/clients" />
-    <link rel="alternate" hreflang="es" href="https://simian.co/clients" />
-  </url>
-
-  <url>
-    <loc>https://simian.co/we-are</loc>
-    <lastmod>2016-07-29T20:34:36+00:00</lastmod>
-    <changefreq>yearly</changefreq>
-    <link rel="alternate" hreflang="en" href="https://simian.co/we-are" />
-    <link rel="alternate" hreflang="es" href="https://simian.co/we-are" />
-  </url>
-
-  <url>
-    <loc>https://simian.co/location</loc>
-    <lastmod>2016-07-29T20:34:36+00:00</lastmod>
-    <changefreq>yearly</changefreq>
-    <link rel="alternate" hreflang="en" href="https://simian.co/location" />
-    <link rel="alternate" hreflang="es" href="https://simian.co/location" />
-  </url>
-
-  <url>
-    <loc>https://simian.co/we-share</loc>
-    <lastmod>2016-07-29T20:34:36+00:00</lastmod>
-    <changefreq>yearly</changefreq>
-    <link rel="alternate" hreflang="en" href="https://simian.co/we-share" />
-    <link rel="alternate" hreflang="es" href="https://simian.co/we-share" />
+    <link rel="alternate" hreflang="en" href="https://simian.co/en/clients" />
   </url>
 </urlset>
