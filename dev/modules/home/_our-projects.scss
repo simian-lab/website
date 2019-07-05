@@ -177,9 +177,13 @@
     }
 
     #projects-slider {
-      width: 80%;
 
       .swiper-wrapper {
+        display: flex;
+        @media screen and (max-width: $tablet-medium) {
+          flex-wrap: wrap;
+        }
+
         .swiper-slide {
 
           .name {
