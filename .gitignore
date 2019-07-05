@@ -2,3 +2,4 @@ node_modules
 dev/bower_components
 *.log
 .idea
+.DS_Store
