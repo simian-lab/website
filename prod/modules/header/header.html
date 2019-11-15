@@ -17,45 +17,57 @@
         <li>
           <a ng-href="{{$root.getLink('we-do', 'que-hacemos')}}"
           ng-class="{active: activeSection == 'we-do' || activeSection == 'que-hacemos'}">
-          {{ 'WE-DO' | translate }}</a>
+            {{ 'WE-DO' | translate }}
+            <span></span>
+          </a>
         </li>
         <li>
           <a ng-href="{{$root.getLink('projects', 'proyectos')}}"
           ng-class="{active: activeSection == 'projects' || activeSection == 'proyectos'}">
-          {{ 'PROJECTS' | translate }}</a>
+            {{ 'PROJECTS' | translate }}
+            <span></span>
+          </a>
         </li>
         <li>
           <a ng-href="{{$root.getLink('clients', 'clientes')}}"
           ng-class="{active: activeSection == 'clients' || activeSection == 'clientes'}">
-          {{ 'CLIENTS' | translate }}</a>
+            {{ 'CLIENTS' | translate }}
+            <span></span>
+          </a>
         </li>
-        <li>
+        <!--<li>
           <a ng-href="{{$root.getLink('we-are', 'quienes-somos', { monkey: 'sergio-acosta' })}}"
           ng-class="{active: activeSection == 'we-are' || activeSection == 'quienes-somos'}">
-          {{ 'WE-ARE' | translate }}</a>
+            {{ 'WE-ARE' | translate }}
+            <span></span>
+          </a>
         </li>
         <li>
           <a ng-href="{{$root.getLink('location', 'ubicacion')}}"
           ng-class="{active: activeSection == 'location' || activeSection == 'ubicacion'}">
-          {{ 'LOCATION' | translate }}</a>
+            {{ 'LOCATION' | translate }}
+            <span></span>
+          </a>
         </li>
         <li>
           <a ng-href="{{$root.getLink('we-share', 'compartimos')}}"
           ng-class="{active: activeSection == 'we-share' || activeSection == 'compartimos'}">
-          {{ 'WE-SHARE' | translate }}</a>
-        </li>
+            {{ 'WE-SHARE' | translate }}
+            <span></span>
+          </a>
+        </li>-->
       </ul>
     </nav>
 
     <div class="header-buttons" ng-hide="activeSection == '404'">
-      <a href="http://blog.simian.co/" target="_blank">
+      <!--<a href="http://blog.simian.co/" target="_blank">
         <img src="../img/header/our-blog.svg" alt="">
-      </a>
+      </a>-->
       <a href="" ng-click="changeLanguage('es')">
-        <img src="../img/header/es-button.svg" alt="">
+        Español
       </a>
       <a href="" ng-click="changeLanguage('en')">
-        <img src="../img/header/en-button.svg" alt="">
+        English
       </a>
     </div>
   </div>

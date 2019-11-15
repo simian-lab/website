@@ -339,10 +339,19 @@ footer .background-section {
       @media screen and (max-width: 64rem) {
         footer .background-section .footer-content .contact-form {
           background: none; } }
+      footer .background-section .footer-content .contact-form .form-group {
+        position: relative; }
+        footer .background-section .footer-content .contact-form .form-group > label {
+          position: absolute;
+          left: 0.5rem;
+          top: 2rem;
+          margin: 0;
+          padding: 0;
+          transition: 0.5s all; }
       footer .background-section .footer-content .contact-form input, footer .background-section .footer-content .contact-form textarea {
         border: none;
         color: #FFFFFF;
-        margin: 0.4375rem 0;
+        margin: 1rem 0;
         padding: 0 0.5rem; }
         @media screen and (max-width: 30rem) {
           footer .background-section .footer-content .contact-form input, footer .background-section .footer-content .contact-form textarea {
@@ -365,13 +374,17 @@ footer .background-section {
           color: #FFFFFF; }
         footer .background-section .footer-content .contact-form input:-ms-input-placeholder, footer .background-section .footer-content .contact-form textarea:-ms-input-placeholder {
           color: #FFFFFF; }
+        footer .background-section .footer-content .contact-form input.ng-touch ~ label, footer .background-section .footer-content .contact-form input.ng-valid:not(.ng-empty) ~ label, footer .background-section .footer-content .contact-form input.ng-dirty:not(.ng-empty) ~ label, footer .background-section .footer-content .contact-form textarea.ng-touch ~ label, footer .background-section .footer-content .contact-form textarea.ng-valid:not(.ng-empty) ~ label, footer .background-section .footer-content .contact-form textarea.ng-dirty:not(.ng-empty) ~ label {
+          transform: scale(0.75) translateY(-110%);
+          transform-origin: center left;
+          top: 0.5rem; }
       footer .background-section .footer-content .contact-form input {
         height: 3.125rem; }
         @media screen and (max-width: 30rem) {
           footer .background-section .footer-content .contact-form input {
             height: 2.5rem !important; } }
       footer .background-section .footer-content .contact-form textarea {
-        height: 26.25rem;
+        height: 21.25rem;
         padding-top: 0.5rem; }
         @media screen and (max-width: 30rem) {
           footer .background-section .footer-content .contact-form textarea {
@@ -483,6 +496,9 @@ footer .background-section {
       @media screen and (max-width: 30rem) {
         footer .background-section .footer-content input:not(.button), footer .background-section .footer-content .field, footer .background-section .footer-content textarea {
           width: 100%; } }
+      footer .background-section .footer-content input:not(.button).ng-invalid, footer .background-section .footer-content .field.ng-invalid, footer .background-section .footer-content textarea.ng-invalid {
+        box-shadow: none;
+        background-image: linear-gradient(to right, #FF5E5B 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, #FF5E5B 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to bottom, #FF5E5B 55%, rgba(255, 255, 255, 0) 0%), linear-gradient(to bottom, #FF5E5B 55%, rgba(255, 255, 255, 0) 0%); }
 
 footer:not(.footer-home) .background-section {
   background-position: center top;
