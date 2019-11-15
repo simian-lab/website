@@ -5,17 +5,18 @@ angular.module('simian.footer', [])
 .controller('FooterController', [
   '$scope', 'MonkeysService',
   function($scope, monkeys) {
-    $scope.contact = { value : {}, isSend : false };
-    console.log('monkeys', monkeys);
+    $scope.year = (new Date()).getFullYear();
+    console.log('monkeys', monkeys, $scope);
     $scope.submit = function () {
       if($scope.contact.$valid){
-        $scope.contact.isSend = true;
+        $scope.contact.$send = true;
         monkeys.contactMonkeys($scope.contact.value)
           .then(function (data) {
-            $scope.contact = { value : {}, isSend : false };
+            $scope.contact.value = {};
+            $scope.contact.$send = false;
           })
           .catch(function (err) {
-            $scope.contact.isSend = false;
+            $scope.contact.$send = false;
           });
       }
     };

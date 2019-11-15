@@ -6,26 +6,26 @@
     </div>
 
     <div class="footer-content" >
-      <form class="contact-form" name="contact">
+      <form class="contact-form" name="contact" ng-submit="submit()">
         <div class="form-group">
-          <input id="name" ng-disabled="contact.isSend" type="text" ng-model="contact.value.Name">
+          <input id="name" ng-disabled="contact.$send" type="text" ng-model="contact.value.Name">
           <label for="name">*Nombre</label>
         </div>
         <div class="form-group">
-          <input id="email" ng-disabled="contact.isSend" type="email" ng-model="contact.value.Email" >
+          <input id="email" ng-disabled="contact.$send" type="email" ng-model="contact.value.Email" >
           <label for="email">*Correo electrónico</label>
         </div>
         <div class="form-group">
-          <input id="number" ng-disabled="contact.isSend" type="number" ng-model="contact.value.Number">
+          <input id="number" ng-disabled="contact.$send" type="number" ng-model="contact.value.Number">
           <label for="number">Número de contacto</label>
         </div>
         <div class="form-group">
-          <textarea id="mesg" ng-disabled="contact.isSend" cols="30" rows="10" ng-model="contact.value.Message"></textarea>
+          <textarea id="mesg" ng-disabled="contact.$send" cols="30" rows="10" ng-model="contact.value.Message"></textarea>
           <label for="mesg">*Mensaje</label>
         </div>
 
         <label>*Campo obligatorio</label><br>
-        <input ng-disabled="contact.isSend" type="submit" class="button" value="Enviar">
+        <input ng-disabled="contact.$send" type="submit" class="button" value="Enviar">
       </form>
 
       <div class="line"></div>
@@ -88,6 +88,6 @@
 
   <div class="footer-end">
     <img src="../img/footer/banano-footer.svg" alt="">
-    <p>© 2016 Simian</p>
+    <p>© {{year}} Simian</p>
   </div>
 </footer>

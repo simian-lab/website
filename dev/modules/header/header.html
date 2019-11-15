@@ -1,14 +1,14 @@
 <header>
-  <div class="desktop" ng-show="myVar">
+  <div class="desktop" ng-show="toggles">
 
   <div class="simian">
-    <a href="" ng-href="/{{$root.language}}/">
+    <a ng-href="/{{$root.language}}/">
       <img src="../img/header/logo-simian.png" alt="">
     </a>
   </div>
 
     <div class="menu" ng-click="toggle()">
-      <span ></span>
+      <span></span>
       <span></span>
       <span></span>
     </div>
@@ -72,7 +72,7 @@
     </div>
   </div>
 
-  <div class="movile" ng-show='youVar'>
+  <div class="movile" ng-show='!toggles'>
 
     <div class="header">
 

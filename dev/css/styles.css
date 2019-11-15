@@ -114,7 +114,7 @@ header .desktop {
   z-index: 15; }
   @media screen and (max-width: 30rem) {
     header .desktop {
-      background-position: center -2rem; } }
+      background-position: center -1.25rem; } }
   header .desktop .menu {
     display: none; }
     @media screen and (max-width: 75em) {
@@ -125,7 +125,7 @@ header .desktop {
         top: -6rem; } }
     @media screen and (max-width: 30rem) {
       header .desktop .menu {
-        top: -5rem; } }
+        top: calc(-5rem + 10px); } }
     header .desktop .menu span {
       transition: all 250ms ease-in-out;
       background-color: white;
@@ -146,6 +146,9 @@ header .desktop {
     display: inline-block;
     margin: 0 0 0 2.125rem;
     position: relative; }
+    @media screen and (max-width: 30rem) {
+      header .desktop .simian a {
+        margin: -10px 0 0 0; } }
     header .desktop .simian a:hover:before {
       content: '';
       display: block;
@@ -235,6 +238,9 @@ header .movile .header {
   header .movile .header .close, header .movile .header .header-buttons {
     position: relative;
     top: 1rem; }
+    @media screen and (max-width: 30rem) {
+      header .movile .header .close, header .movile .header .header-buttons {
+        top: calc(1rem + 10px); } }
 
 header .movile nav {
   display: flex;
@@ -348,6 +354,9 @@ footer .background-section {
           margin: 0;
           padding: 0;
           transition: 0.5s all; }
+          @media screen and (max-width: 30rem) {
+            footer .background-section .footer-content .contact-form .form-group > label {
+              top: 1.75rem; } }
       footer .background-section .footer-content .contact-form input, footer .background-section .footer-content .contact-form textarea {
         border: none;
         color: #FFFFFF;
@@ -555,7 +564,6 @@ footer .footer-end {
 
 .footer-home {
   position: relative;
-  z-index: -1;
   margin-top: -20rem; }
   @media screen and (max-width: 45rem) {
     .footer-home {

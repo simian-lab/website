@@ -31,11 +31,9 @@ angular.module('simian.header', [])
       TranslateService.translateUrl(language);
     };
 
-    $scope.myVar = true;
-    $scope.youVar = false;
+    $scope.toggles = true;
     $scope.toggle = function() {
-      $scope.myVar = !$scope.myVar;
-      $scope.youVar = !$scope.youVar;
+      $scope.toggles = !$scope.toggles;
     };
   }
 ])
