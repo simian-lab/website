@@ -530,7 +530,7 @@ footer:not(.footer-home) .background-section {
         background-position: center -2rem;
         padding-top: 8rem; } }
   footer:not(.footer-home) .background-section .footer-content {
-    background-repeat-y: no-repeat;
+    background-repeat: repeat-x;
     background-size: 92rem 53rem;
     background-position-y: -1rem;
     padding-bottom: 2rem; }
@@ -570,7 +570,7 @@ footer .footer-end {
       margin-top: -10rem; } }
   .footer-home .background-section {
     background-image: url("../img/footer/azul_footer.svg");
-    background-repeat-y: no-repeat;
+    background-repeat: repeat-x;
     background-size: cover;
     padding-top: 19%; }
     @media screen and (max-width: 64rem) {
@@ -615,230 +615,65 @@ footer .footer-end {
   .footer-404 .background-section .footer-content .contact-form .button {
     background-image: url("../img/red-button.svg"); }
 
-@media screen and (max-width: 64rem) {
-  #home .hero {
-    margin-bottom: -9rem; } }
-
-@media screen and (max-width: 30rem) {
-  #home .hero {
-    margin-bottom: 0rem; } }
-
-#home .hero .title {
-  display: flex;
-  justify-content: center; }
-  #home .hero .title::before, #home .hero .title::after {
-    background-image: url("../img/home/hero-title-border.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: '';
-    height: 30em;
+#home .hero {
+  height: calc(100vh - 6.3rem);
+  margin-top: -2.3rem;
+  background-image: url("../img/home/fondo_hero.svg");
+  background-position: center bottom; }
+  #home .hero-wrapper {
+    margin: 0 auto;
+    max-width: 52.5rem; }
+  #home .hero-text {
+    font-family: "quicksandregular";
+    font-size: 3rem;
+    color: #FFFFFF; }
+    #home .hero-text span {
+      font-family: "amaticbold";
+      color: #DED96B;
+      font-size: 5.5rem; }
+  #home .hero-box {
     position: relative;
-    top: 1rem;
-    width: 16rem; }
-    @media screen and (max-width: 64rem) {
-      #home .hero .title::before, #home .hero .title::after {
-        height: 25em; } }
-    @media screen and (max-width: 45rem) {
-      #home .hero .title::before, #home .hero .title::after {
-        display: none; } }
-  #home .hero .title::before {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    left: 7rem; }
-  #home .hero .title::after {
-    right: 7rem; }
-  #home .hero .title h1, #home .hero .title p {
-    text-align: center; }
-  #home .hero .title h1 {
-    color: #1DC0B2;
-    font-size: 12rem; }
-    @media screen and (max-width: 64rem) {
-      #home .hero .title h1 {
-        font-size: 10rem; } }
-    @media screen and (max-width: 30rem) {
-      #home .hero .title h1 {
-        font-size: 5rem; } }
-  #home .hero .title p {
-    font-size: 5rem;
-    width: 25rem; }
-    @media screen and (max-width: 64rem) {
-      #home .hero .title p {
-        font-size: 4rem;
-        width: 23rem; } }
-    @media screen and (max-width: 45rem) {
-      #home .hero .title p {
-        width: 30rem; } }
-    @media screen and (max-width: 30rem) {
-      #home .hero .title p {
-        font-size: 2rem;
-        width: 15rem; } }
-
-#home .hero .simian-tools {
-  background-image: url("../img/home/circulos_mico_hero.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  margin: 0 auto;
-  margin-top: -6.5rem;
-  padding: 8rem 0;
-  position: relative;
-  width: 60rem; }
-  @media screen and (max-width: 64rem) {
-    #home .hero .simian-tools {
-      background-size: 30rem;
-      margin-top: -4.5rem;
-      width: 45rem; } }
-  @media screen and (max-width: 45rem) {
-    #home .hero .simian-tools {
-      background-size: 25rem;
-      margin-top: 2rem;
-      width: 30rem; } }
-  @media screen and (max-width: 30rem) {
-    #home .hero .simian-tools {
-      background: none;
-      height: 17rem;
-      width: 20rem;
-      padding: 0; } }
-  #home .hero .simian-tools .simian {
-    margin: -7rem 0 0 11rem; }
-    @media screen and (max-width: 64rem) {
-      #home .hero .simian-tools .simian {
-        margin: -9rem 0 0 11rem;
-        width: 30rem; } }
-    @media screen and (max-width: 45rem) {
-      #home .hero .simian-tools .simian {
-        margin: -5rem 0 0 7rem;
-        width: 20rem; } }
-    @media screen and (max-width: 30rem) {
-      #home .hero .simian-tools .simian {
-        display: none; } }
-  @media screen and (max-width: 30rem) {
-    #home .hero .simian-tools .tools {
-      display: flex;
-      width: 100%;
-      height: 100%; } }
-  #home .hero .simian-tools .tools .idea {
-    left: 21.5rem;
-    top: -2rem; }
-    @media screen and (max-width: 64rem) {
-      #home .hero .simian-tools .tools .idea {
-        left: 18rem;
-        top: -2rem; } }
-    @media screen and (max-width: 45rem) {
-      #home .hero .simian-tools .tools .idea {
-        left: 11rem;
-        top: -1rem; } }
-    @media screen and (max-width: 30rem) {
-      #home .hero .simian-tools .tools .idea {
-        left: 0rem;
-        top: 0rem; } }
-    @media screen and (max-width: 30rem) {
-      #home .hero .simian-tools .tools .idea .icono {
-        width: 9rem !important;
-        left: -0.5rem !important;
-        top: -1rem !important; } }
-  #home .hero .simian-tools .tools .development {
-    left: 2rem;
-    top: 11rem; }
-    @media screen and (max-width: 64rem) {
-      #home .hero .simian-tools .tools .development {
-        left: 6rem;
-        top: 5rem; } }
-    @media screen and (max-width: 45rem) {
-      #home .hero .simian-tools .tools .development {
-        left: 3rem; } }
-    @media screen and (max-width: 30rem) {
-      #home .hero .simian-tools .tools .development {
-        top: 7rem;
-        left: -1rem; } }
-  #home .hero .simian-tools .tools .design {
-    top: 20rem;
-    right: -1rem; }
-    @media screen and (max-width: 64rem) {
-      #home .hero .simian-tools .tools .design {
-        top: 11rem;
-        right: 3rem; } }
-    @media screen and (max-width: 45rem) {
-      #home .hero .simian-tools .tools .design {
-        left: 22rem;
-        top: 11rem; } }
-    @media screen and (max-width: 30rem) {
-      #home .hero .simian-tools .tools .design {
-        left: 5rem;
-        right: 0;
-        top: 0; } }
-  #home .hero .simian-tools .tools .banano {
-    bottom: 2rem;
-    left: 8rem; }
-    @media screen and (max-width: 64rem) {
-      #home .hero .simian-tools .tools .banano {
-        bottom: 4rem;
-        left: 11rem; } }
-    @media screen and (max-width: 45rem) {
-      #home .hero .simian-tools .tools .banano {
-        bottom: 5rem;
-        left: 5rem; } }
-    @media screen and (max-width: 30rem) {
-      #home .hero .simian-tools .tools .banano {
-        bottom: 0;
-        left: -5.5rem;
-        top: 0; } }
-  #home .hero .simian-tools .tools .support {
-    right: 13rem;
-    bottom: -2rem; }
-    @media screen and (max-width: 64rem) {
-      #home .hero .simian-tools .tools .support {
-        right: 12rem;
-        bottom: 2rem; } }
-    @media screen and (max-width: 45rem) {
-      #home .hero .simian-tools .tools .support {
-        right: 7rem;
-        bottom: 3rem; } }
-    @media screen and (max-width: 30rem) {
-      #home .hero .simian-tools .tools .support {
-        top: 7rem;
-        left: -5.5rem; } }
-  #home .hero .simian-tools .tools .idea, #home .hero .simian-tools .tools .development, #home .hero .simian-tools .tools .design, #home .hero .simian-tools .tools .banano, #home .hero .simian-tools .tools .support {
-    position: absolute; }
-    @media screen and (max-width: 30rem) {
-      #home .hero .simian-tools .tools .idea, #home .hero .simian-tools .tools .development, #home .hero .simian-tools .tools .design, #home .hero .simian-tools .tools .banano, #home .hero .simian-tools .tools .support {
-        position: relative;
-        width: 7rem;
-        height: 7rem; } }
-    #home .hero .simian-tools .tools .idea .icono, #home .hero .simian-tools .tools .development .icono, #home .hero .simian-tools .tools .design .icono, #home .hero .simian-tools .tools .banano .icono, #home .hero .simian-tools .tools .support .icono {
-      width: 14rem; }
-      @media screen and (max-width: 64rem) {
-        #home .hero .simian-tools .tools .idea .icono, #home .hero .simian-tools .tools .development .icono, #home .hero .simian-tools .tools .design .icono, #home .hero .simian-tools .tools .banano .icono, #home .hero .simian-tools .tools .support .icono {
-          width: 8rem; } }
-      @media screen and (max-width: 45rem) {
-        #home .hero .simian-tools .tools .idea .icono, #home .hero .simian-tools .tools .development .icono, #home .hero .simian-tools .tools .design .icono, #home .hero .simian-tools .tools .banano .icono, #home .hero .simian-tools .tools .support .icono {
-          width: 7rem; } }
-      @media screen and (max-width: 30rem) {
-        #home .hero .simian-tools .tools .idea .icono, #home .hero .simian-tools .tools .development .icono, #home .hero .simian-tools .tools .design .icono, #home .hero .simian-tools .tools .banano .icono, #home .hero .simian-tools .tools .support .icono {
-          display: inherit;
-          position: absolute;
-          left: -1rem;
-          top: -1rem;
-          width: 8rem; } }
-    #home .hero .simian-tools .tools .idea .more, #home .hero .simian-tools .tools .development .more, #home .hero .simian-tools .tools .design .more, #home .hero .simian-tools .tools .banano .more, #home .hero .simian-tools .tools .support .more {
-      display: none; }
-      @media screen and (max-width: 30rem) {
-        #home .hero .simian-tools .tools .idea .more, #home .hero .simian-tools .tools .development .more, #home .hero .simian-tools .tools .design .more, #home .hero .simian-tools .tools .banano .more, #home .hero .simian-tools .tools .support .more {
-          display: inherit;
-          position: absolute;
-          left: 4rem;
-          top: 4rem;
-          width: 3rem;
-          z-index: 1; } }
-    #home .hero .simian-tools .tools .idea .circulo, #home .hero .simian-tools .tools .development .circulo, #home .hero .simian-tools .tools .design .circulo, #home .hero .simian-tools .tools .banano .circulo, #home .hero .simian-tools .tools .support .circulo {
-      display: none; }
-      @media screen and (max-width: 30rem) {
-        #home .hero .simian-tools .tools .idea .circulo, #home .hero .simian-tools .tools .development .circulo, #home .hero .simian-tools .tools .design .circulo, #home .hero .simian-tools .tools .banano .circulo, #home .hero .simian-tools .tools .support .circulo {
-          display: inherit;
-          position: absolute;
-          width: inherit; } }
+    max-width: 37.5rem;
+    margin: 0 auto; }
+    #home .hero-box:before, #home .hero-box:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 5%;
+      background-repeat: no-repeat;
+      background-size: auto 100%; }
+    #home .hero-box:before {
+      background-image: url("../img/home/fondo_izq.svg");
+      left: -5%;
+      background-position: center right; }
+    #home .hero-box:after {
+      background-image: url("../img/home/fondo_der.svg");
+      right: -5%;
+      background-position: center left; }
+    #home .hero-box p {
+      height: 100%;
+      background-color: #DED96B;
+      border-top: 2px solid #3F3832;
+      border-bottom: 2px solid #3F3832;
+      padding: 3rem 2rem 2.5rem;
+      font-family: "quicksandregular";
+      color: #3F3832;
+      font-size: 1.25rem;
+      letter-spacing: 1px;
+      line-height: 125%; }
+      #home .hero-box p span {
+        font-weight: bold; }
+  #home .hero-title {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between; }
+    #home .hero-title img {
+      width: 50%;
+      margin-left: -5rem;
+      margin-bottom: -4rem;
+      z-index: 2; }
 
 #home .our-projects .intro {
   align-items: center;
@@ -944,7 +779,7 @@ footer .footer-end {
 
 #home .our-projects .slider-container {
   background-image: url("../img/home/rojo_footer.svg");
-  background-repeat-y: no-repeat;
+  background-repeat: repeat-x;
   background-size: 34rem 20rem;
   background-position-y: -2rem;
   position: relative; }
@@ -1085,7 +920,7 @@ footer .footer-end {
 #home .our-stuff {
   align-items: center;
   background-image: url("../img/home/verde_footer.svg");
-  background-repeat-y: no-repeat;
+  background-repeat: repeat-x;
   background-size: 76rem 76rem;
   display: flex;
   flex-direction: column;
@@ -2165,7 +2000,7 @@ footer .footer-end {
 #we-share .header-share {
   background-image: url("../img/we-share/fondo.svg");
   background-position-x: center;
-  background-repeat-y: no-repeat;
+  background-repeat: repeat-x;
   background-size: 78rem 38rem;
   position: relative;
   top: -5rem;

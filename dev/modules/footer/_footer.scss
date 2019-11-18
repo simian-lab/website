@@ -334,7 +334,7 @@ footer {
       }
 
       .footer-content {
-        background-repeat-y: no-repeat;
+        background-repeat: repeat-x;
         background-size: 92rem 53rem;
         background-position-y: -1rem;
         padding-bottom: 2rem;
@@ -388,7 +388,7 @@ footer {
 
   .background-section {
     background-image: url('../img/footer/azul_footer.svg');
-    background-repeat-y: no-repeat;
+    background-repeat: repeat-x;
     background-size: cover;
     padding-top: 19%;
 
