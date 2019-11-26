@@ -380,10 +380,10 @@ footer {
 .footer-home {
   position: relative;
   //z-index: -1;
-  margin-top: 1rem;
+  margin-top: .5rem;
 
   @media screen and (min-width: $mobile-medium) {
-    margin-top: 5rem;
+    margin-top: 4.5rem;
   }
 
   @media screen and (min-width: $mobile-large) {
@@ -395,12 +395,28 @@ footer {
   }
 
   @media screen and (min-width: $tablet-medium) {
-    margin-top: -5rem;
-  }
-
-  @media screen and (min-width: $tablet-large) {
     margin-top: 0rem;
   }
+
+  @media screen and (min-width: $laptop-small) and ( max-width: $laptop-small + ( $mobile-small / 3 ) ) {
+    margin-top: -10rem;
+  }
+
+  @media screen and (min-width: $laptop-small + ( $mobile-small / 3 ) ) and ( max-width: $laptop-small + ($mobile-small / 2) ) {
+    margin-top: -7rem;
+  }
+
+  @media screen and (min-width: $laptop-small + ( $mobile-small / 2 ) ) and ( max-width: $laptop-small + $mobile-small ) {
+    margin-top: -3.5rem;
+  }
+
+//  @media screen and (min-width: $laptop-small) {
+//    margin-top: -7rem;
+//  }
+//
+//    @media screen and (min-width: $laptop-medium) {
+//    margin-top: 0rem;
+//  }
 
   .background-section {
     background-image: url('../img/footer/azul_footer.svg');
@@ -417,7 +433,7 @@ footer {
       background-color: $blue;
       z-index: -1;
       height: 19%;
-      top: -19%;
+      top: calc(-19% - -1px );
     }
 
     .footer-content {

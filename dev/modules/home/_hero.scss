@@ -6,6 +6,7 @@
   background-image: url('../img/home/fondo_hero.svg');
   background-position: center bottom;
   background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
 
   @media screen and (max-width: $tablet-medium) {
