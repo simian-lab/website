@@ -52,13 +52,13 @@
 
     &:before {
       background-image: url('../img/home/fondo_izq.svg');
-      left: $por * -1;
+      left: calc( #{$por * -1} - -2px);
       background-position: center right;
     }
 
     &:after {
       background-image: url('../img/home/fondo_der.svg');
-      right: $por * -1;
+      right: calc( #{$por * -1} - -2px);
       background-position: center left;
     }
 
