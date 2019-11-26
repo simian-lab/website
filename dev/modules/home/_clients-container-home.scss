@@ -148,12 +148,14 @@
       width: 80%;
 
       .item {
-        @include flex-basis(33%);
+        @include flex-basis( calc(33% - 3rem) );
+        margin: 1rem;
 
         img {
           display: block;
           margin: 0 auto;
           margin-top: 3rem;
+          max-width: 30vw;
         }
       }
     }
