@@ -380,29 +380,44 @@ footer {
 .footer-home {
   position: relative;
   //z-index: -1;
-  margin-top: -20rem;
+  margin-top: 1rem;
 
-  @media screen and (max-width: $tablet-medium) {
-    margin-top: -10rem;
+  @media screen and (min-width: $mobile-medium) {
+    margin-top: 5rem;
+  }
+
+  @media screen and (min-width: $mobile-large) {
+    margin-top: 2rem;
+  }
+
+  @media screen and (min-width: $tablet-small) {
+    margin-top: 4rem;
+  }
+
+  @media screen and (min-width: $tablet-medium) {
+    margin-top: -5rem;
+  }
+
+  @media screen and (min-width: $tablet-large) {
+    margin-top: 0rem;
   }
 
   .background-section {
     background-image: url('../img/footer/azul_footer.svg');
     background-repeat: repeat-x;
     background-size: cover;
-    padding-top: 19%;
+    padding-top: 1rem;
+    position: relative;
 
-    @media screen and (max-width: $laptop-small) {
-      padding-top: 33%;
-      padding-bottom: 28%;
-    }
-
-    @media screen and (max-width: $tablet-medium) {
-      padding-top: 50%;
-    }
-
-    @media screen and (max-width: $mobile-large) {
-      padding-top: 80%;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      background-color: $blue;
+      z-index: -1;
+      height: 19%;
+      top: -19%;
     }
 
     .footer-content {
@@ -417,6 +432,9 @@ footer {
 
 .footer-we-do, .footer-que-hacemos, .footer-clients, .footer-clientes, .footer-location, .footer-ubicacion {
   .background-section {
+    &:before {
+      background-color: $green;
+    }
     .footer-title {
       background-image: url('../img/footer/footer-bg-green.svg');
       @media screen and (min-width: $laptop-large) {
@@ -436,6 +454,9 @@ footer {
 
 .footer-projects, .footer-proyectos, .footer-we-share, .footer-compartimos, .footer-project-deployment {
   .background-section {
+    &:before {
+      background-color: $red;
+    }
     .footer-title {
       background-image: url('../img/footer/footer-bg-red.svg');
       @media screen and (min-width: $laptop-large) {
