@@ -1,4 +1,3 @@
-
 header {
   .desktop {
     @include transform(translateZ(0));
@@ -144,15 +143,46 @@ header {
     .header-buttons {
       position: absolute;
       right: 1rem;
-      top: 2rem;
+      top: 2.9rem;
 
       @media screen and (max-width: 75.000em) {
         display: none;
       }
 
       a {
-        margin: 0 0.5rem;
+        margin: 0 1rem;
         text-decoration: none;
+        color : $white;
+        cursor: pointer;
+        position: relative;
+
+        &:before, &:after {
+          position: absolute;
+          content: '';
+        }
+
+        &:after {
+          margin-left: 1rem;
+          content: '|';
+          position: absolute;
+        }
+
+        &:last-child:after {
+          content: none;
+        }
+
+        &.active {
+          font-weight: bold;
+
+          &:before {
+            background:$blue;
+            width: calc(100% + 1rem);
+            height: calc(100% + 1rem);
+            top: -0.5rem;
+            left: -0.5rem;
+            z-index: -1;
+          }
+        }
       }
     }
   }

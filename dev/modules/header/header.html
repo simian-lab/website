@@ -63,10 +63,10 @@
       <!--<a href="http://blog.simian.co/" target="_blank">
         <img src="../img/header/our-blog.svg" alt="">
       </a>-->
-      <a ng-click="changeLanguage('es')">
+      <a ng-class="{ active : $root.language == 'es' }" ng-click="changeLanguage('es')">
         Español
       </a>
-      <a ng-click="changeLanguage('en')">
+      <a ng-class="{ active : $root.language == 'en' }" ng-click="changeLanguage('en')">
         English
       </a>
     </div>

@@ -13,6 +13,7 @@ $border: 4px;
 
 .what-we-do {
   margin: 0 auto;
+  padding-top: 3rem;
   max-width: $laptop-small;
   width: 100%;
 
@@ -23,7 +24,8 @@ $border: 4px;
 
     span {
       font-family: "amaticbold";
-      font-size: 5rem;
+      font-size: 6.5rem;
+      color : $red;
     }
   }
 
@@ -52,6 +54,11 @@ $border: 4px;
       min-width: 15rem;
       margin: 1rem;
       text-align: center;
+
+      > h3 {
+        font-size: 1.28rem;
+        padding-top: .5rem;
+      }
 
       > span{
         margin-bottom: 2rem;
