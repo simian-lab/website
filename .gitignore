@@ -4,3 +4,4 @@ dev/bower_components
 .idea
 .DS_Store
 .firebase
+prod
