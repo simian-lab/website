@@ -43,11 +43,13 @@
   }
 
   .we-are-content {
-    background-color: $yellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/home/banando_fondo.svg);
+    background-size: cover;
+    padding: 5rem 0;
 
     p {
       margin: 2rem 0;
