@@ -1,145 +1,65 @@
 .we-are {
-  background-image: url('../img/home/we-are-background.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 15rem;
-
-  @media screen and (max-width: $laptop-small) {
-    margin-top: 12rem;
-  }
-
-  @media screen and (max-width: $mobile-large) {
-    background-position-x: center;
-    background-size: 37rem;
-    margin-top: 8rem;
-  }
+  margin: 2rem 0;
 
   .title {
-    align-items: center;
     display: flex;
     justify-content: center;
-    left: -7rem;
-    position: relative;
-    top: -16rem;
 
-    @media screen and (max-width: $laptop-small) {
-      left: -5rem;
-      top: -17rem;
-    }
-
-    @media screen and (max-width: $tablet-medium) {
-      top: -19rem;
-    }
-
-    @media screen and (max-width: $mobile-large) {
-       top: -20rem;
-    }
-
-    .box-flex {
+    h2 {
+      color: $red;
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
-      h1 {
-        color: $red;
-        font-size: 9rem;
+      font-size: 9rem;
+      position: relative;
 
-        @media screen and (max-width: $laptop-small) {
-          font-size: 7rem;
-        }
-
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 6rem;
-        }
-
-        @media screen and (max-width: $mobile-large) {
-          font-size: 4rem;
-        }
-      }
-
-      p {
+      span {
+        color: $brown;
+        display: block;
+        font-family: $quicksand_regular;
         font-size: 5rem;
-        text-align: center;
-
-        @media screen and (max-width: $laptop-small) {
-          font-size: 3.5rem;
-        }
-
-        @media screen and (max-width: $tablet-medium) {
-          font-size: 3rem;
-        }
-
-        @media screen and (max-width: $mobile-large) {
-          font-size: 2rem;
-        }
-      }
-    }
-
-    img {
-      margin: 7rem 0 0 2rem;
-      width: 19rem;
-
-      @media screen and (max-width: $laptop-small) {
-        margin: 7rem 0 0 1rem;
-        width: 12rem;
+        text-shadow: none;
       }
 
-      @media screen and (max-width: $mobile-large) {
-        margin: 4rem 0 0 1rem;
-        width: 7rem;
-      }
-    }
-
-    &::after, &::before {
-      background-image: url('../img/home/question-mark.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      content: '';
-      height: 23rem;
-      width: 8rem;
-
-      @media screen and (max-width: $laptop-small) {
-        width: 6rem;
+      &::after, &::before {
+        background-image: url('../img/home/question-mark.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        height: 23rem;
+        position: absolute;
+        top: -20px;
+        width: 8rem;
       }
 
-      @media screen and (max-width: $tablet-medium) {
-        width: 5rem;
+      &::before {
+        @include transform(rotate(155deg));
+        left: -95px;
       }
 
-      @media screen and (max-width: $mobile-large) {
-         width: 4rem;
-      }
-    }
-
-    &::before {
-      @include transform(rotate(155deg));
-      margin: 1rem -1rem 0 0rem;
-
-      @media screen and (max-width: $tablet-medium) {
-        margin: -5rem 0 0 0;
-      }
-
-      @media screen and (max-width: $mobile-large) {
-        margin: -10rem 2rem 0 3rem;
-      }
-    }
-
-    &::after {
-      margin-left: -22rem;
-
-      @media screen and (max-width: $laptop-small) {
-        margin: 6rem 0 0 -15rem;
-      }
-
-      @media screen and (max-width: $tablet-medium) {
-        margin: 9rem 0 0 -14rem;
-      }
-
-      @media screen and (max-width: $mobile-large) {
-        margin: 13rem 0 0 -9rem;
+      &::after {
+        right: -95px;
       }
     }
   }
 
+  .we-are-content {
+    background-color: $yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin: 2rem 0;
+      max-width: 500px;
+    }
+
+    .button {
+      background-image: url(../img/red-button.svg);
+    }
+  }
+
+  /*
   .monkeys {
     margin: 0 auto;
     margin-top: -11rem;
@@ -225,5 +145,5 @@
     .bosses, .simians {
       @include align-items(baseline);
     }
-  }
+  }*/
 }
