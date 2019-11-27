@@ -143,18 +143,20 @@ header {
     .header-buttons {
       position: absolute;
       right: 1rem;
-      top: 2.9rem;
+      top: 2.5rem;
 
       @media screen and (max-width: 75.000em) {
         display: none;
       }
 
       a {
-        margin: 0 1rem;
         text-decoration: none;
         color : $white;
         cursor: pointer;
         position: relative;
+        padding: .5rem 0rem;
+        min-width: 6rem;
+        display: inline-block;
 
         &:before, &:after {
           position: absolute;
@@ -175,12 +177,14 @@ header {
           font-weight: bold;
 
           &:before {
-            background:$blue;
-            width: calc(100% + 1rem);
-            height: calc(100% + 1rem);
-            top: -0.5rem;
-            left: -0.5rem;
+            background-image: url('../img/header/fondo_idioma.svg');
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
             z-index: -1;
+            left: -.9rem;
+            top: 0.1rem;
           }
         }
       }
