@@ -1,4 +1,9 @@
 .our-projects {
+
+  @media screen and (min-width: $laptop-small) {
+    padding-top: 5rem;
+  }
+
   .intro {
     align-items: center;
     background-image: url('../img/footer/footer-bg-red.svg');
@@ -34,12 +39,14 @@
       background-size: 37rem;
       padding: 5rem;
       width: 33rem;
+      margin-top: -20rem;
 
       @media screen and (max-width: $laptop-small) {
         background-size: 28rem;
         height: 18rem;
         padding: 3rem;
         width: 22.5rem;
+        margin-top: -15rem;
       }
 
        @media screen and (max-width: $tablet-medium) {
@@ -47,6 +54,7 @@
         height: 21rem;
         padding: 5rem 0 0 0.5rem;
         width: 30rem;
+        margin-top: -6rem;
       }
 
       @media screen and (max-width: $mobile-large) {
