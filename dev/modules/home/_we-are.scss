@@ -1,5 +1,19 @@
 .we-are {
-  margin: 2rem 0;
+  margin: 5rem 0;
+  position: relative;
+
+  &:before {
+    background-image: url(../img/home/bananos_volando.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 125% auto;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 
   .title {
     display: flex;
@@ -45,19 +59,63 @@
   .we-are-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-image: url(../img/home/banando_fondo.svg);
-    background-size: cover;
-    padding: 5rem 0;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    padding: 5rem 0 0;
+    min-height: 25rem;
+
+    > * {
+      z-index: 10;
+    }
 
     p {
       margin: 2rem 0;
       max-width: 500px;
     }
 
-    .button {
-      background-image: url(../img/red-button.svg);
+    .see-more {
+      position: relative;
+      width: 100%;
+
+      &::before, &::after {
+        @include transform(translateY(-50%));
+        background-image: url('../img/home/see-more-line.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        display: block;
+        height: 2rem;
+        position: absolute;
+        width: 40%;
+        top: 50%;
+      }
+      &::before {
+        left: 3%;
+        z-index: -1;
+      }
+      &::after {
+        right: 3%;
+        z-index: -1;
+      }
+      .button {
+        background-image: url('../img/red-button.svg');
+        margin: 0rem auto;
+        @media screen and (max-width: $mobile-large) {
+          background-position-y: 0.5rem;
+        }
+      }
+
+      a {
+        @media screen and (max-width: $mobile-large) {
+          font-size: 1rem;
+          height: 4.438rem;
+          width: 5.688rem;
+        }
+      }
     }
   }
 
