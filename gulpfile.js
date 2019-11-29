@@ -29,7 +29,17 @@ gulp.task('images', function() {
   .pipe(imagemin({
     optimizationLevel:  3,
     progressive:        true,
-    interlaced:         true
+    interlaced:         true,
+    // https://www.npmjs.com/package/svgo
+    svgoPlugins: [
+      {
+        removeViewBox: true,
+        minifyStyles : true,
+        removeMetadata : true,
+        removeComments : true,
+        inlineStyles : true
+      }
+    ]
   }))
   .pipe(gulp.dest('prod/img'));
 });
