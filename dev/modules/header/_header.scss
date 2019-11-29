@@ -143,7 +143,9 @@ header {
     .header-buttons {
       position: absolute;
       right: 1rem;
-      top: 2.5rem;
+      top: 2.25rem;
+      color: white;
+
 
       @media screen and (max-width: 75.000em) {
         display: none;
@@ -154,37 +156,41 @@ header {
         color : $white;
         cursor: pointer;
         position: relative;
-        padding: .5rem 0rem;
-        min-width: 6rem;
+        padding: .75rem 1rem;
         display: inline-block;
 
-        &:before, &:after {
+        &:before {
           position: absolute;
           content: '';
-        }
-
-        &:after {
-          margin-left: 1rem;
-          content: '|';
-          position: absolute;
-        }
-
-        &:last-child:after {
-          content: none;
         }
 
         &.active {
           font-weight: bold;
 
           &:before {
-            background-image: url('../img/header/fondo_idioma.svg');
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-            height: 100%;
+            background-image: url("../img/header/fondo_idioma.svg");
+            background-position: center left;
+            background-size: 110% 110%;
             z-index: -1;
-            left: -.9rem;
-            top: 0.1rem;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+          }
+        }
+
+        &:hover {
+          color: $yellow;
+          span {
+            background-image: url('../img/header/line-hover-desktop.svg');
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            //background-size: cover;
+            height: 30px;
+            position: absolute;
+            width: 100%;
+            top: 70%;
+            left: 0;
           }
         }
       }

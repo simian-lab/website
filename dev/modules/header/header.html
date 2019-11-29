@@ -65,9 +65,12 @@
       </a>-->
       <a ng-class="{ active : $root.language == 'es' }" ng-click="changeLanguage('es')">
         Español
+        <span></span>
       </a>
+      |
       <a ng-class="{ active : $root.language == 'en' }" ng-click="changeLanguage('en')">
         English
+        <span></span>
       </a>
     </div>
   </div>
@@ -79,9 +82,9 @@
       <img class="close" src="../img/header/x_cerrar.svg" ng-click="toggle()" alt="">
 
       <div class="header-buttons" ng-hide="activeSection == '404'">
-        <a href="http://blog.simian.co/" target="_blank">
+        <!-- <a href="http://blog.simian.co/" target="_blank">
           <img class="blog" src="../img/header/our-blog.svg" alt="">
-        </a>
+        </a> -->
         <a href="" ng-click="changeLanguage('es')">
           <img class="idioma" src="../img/header/es-button.svg" alt="">
         </a>
@@ -114,7 +117,7 @@
           ng-class="{active: activeSection == 'clients' || activeSection == 'clientes'}">
           {{ 'CLIENTS' | translate }}</a>
         </li>
-        <li>
+        <!-- <li>
           <a ng-href="{{$root.getLink('we-are', 'quienes-somos', { monkey: 'sergio-acosta' })}}" ng-click="toggle()"
           ng-class="{active: activeSection == 'we-are' || activeSection == 'quienes-somos'}">
           {{ 'WE-ARE' | translate }}</a>
@@ -128,7 +131,7 @@
           <a ng-href="{{$root.getLink('we-share', 'compartimos')}}" ng-click="toggle()"
           ng-class="{active: activeSection == 'we-share' || activeSection == 'compartimos'}">
           {{ 'WE-SHARE' | translate }}</a>
-        </li>
+        </li> -->
       </ul>
     </nav>
   </div>

@@ -143,12 +143,15 @@ footer {
         }
 
         .button {
-          background-image: url('../img/yellow-button.svg');
+          background-image: url('../img/red-button.svg');
           cursor: pointer;
           font-size: 1.5rem;
           margin-top: 2.813rem;
           padding-left: 2.1rem;
           text-align: left;
+          &:hover {
+            background-image: url('../img/yellow-button.svg');
+          }
         }
       }
 

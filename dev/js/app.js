@@ -64,11 +64,11 @@ angular.module('simian', [
       templateUrl: '/modules/we-are/we-are.html',
       url: '/en/we-are/:monkey/'
     })
-    .state('quienes-somos', {
-      controller: 'WeAreController',
-      templateUrl: '/modules/we-are/we-are.html',
-      url: '/es/quienes-somos/:monkey/'
-    })
+//    .state('quienes-somos', {
+//      controller: 'WeAreController',
+//      templateUrl: '/modules/we-are/we-are.html',
+//      url: '/es/quienes-somos/:monkey/'
+//    })
     .state('location', {
       controller: 'LocationController',
       templateUrl: '/modules/location/location.html',
@@ -79,16 +79,16 @@ angular.module('simian', [
       templateUrl: '/modules/location/location.html',
       url: '/es/ubicacion/'
     })
-    .state('we-share', {
-      controller: 'WeShareController',
-      templateUrl: '/modules/we-share/we-share.html',
-      url: '/en/we-share/'
-    })
-    .state('compartimos', {
-      controller: 'WeShareController',
-      templateUrl: '/modules/we-share/we-share.html',
-      url: '/es/compartimos/'
-    })
+//    .state('we-share', {
+//      controller: 'WeShareController',
+//      templateUrl: '/modules/we-share/we-share.html',
+//      url: '/en/we-share/'
+//    })
+//    .state('compartimos', {
+//      controller: 'WeShareController',
+//      templateUrl: '/modules/we-share/we-share.html',
+//      url: '/es/compartimos/'
+//    })
     .state('project-deployment', {
       controller: 'DeploymentController',
       templateUrl: '/modules/project-deployment/project-deployment.html',

@@ -136,11 +136,15 @@
     }
 
     .button {
-      background-image: url('../img/yellow-button.svg');
+      background-image: url('../img/red-button.svg');
       margin: 3rem auto;
 
       @media screen and (max-width: $laptop-small) {
         margin: 1rem auto;
+      }
+
+      &:hover {
+        background-image: url('../img/yellow-button.svg');
       }
     }
   }

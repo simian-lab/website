@@ -7,6 +7,7 @@ angular.module('simian.home', [])
   'ProjectsService', 'TranslateService',
   function($scope, $stateParams, $timeout, MonkeysService,
   ProjectsService, TranslateService) {
+    $scope.numslider = 3;
 
     TranslateService.setLanguage($stateParams.language);
 
@@ -33,15 +34,13 @@ angular.module('simian.home', [])
     };
 
     ProjectsService.getProjects().then(function(response) {
-      $scope.projects = response.projects;
-
-      if (screen.width <= 720) {
+      if (screen.width <= 320) {
         $scope.numslider = 1;
       }
 
-      else {
-        $scope.numslider = 3;
-      }
+      $scope.projects = response.projects.filter(function (e, i) {
+        return i < $scope.numslider;
+      });
     });
   }
 ])

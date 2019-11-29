@@ -198,6 +198,10 @@
        @media screen and (max-width: $mobile-large) {
         background-position-y: 0.5rem;
       }
+
+      &:hover {
+        background-image: url('../img/yellow-button.svg');
+      }
     }
 
     a {
