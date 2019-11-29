@@ -156,6 +156,9 @@
           margin: 0 auto;
           margin-top: 3rem;
           max-width: 30vw;
+          @media screen and (max-width: $tablet-small) {
+            max-width: 45vw;
+          }
         }
       }
     }

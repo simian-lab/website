@@ -13,6 +13,10 @@
     background-position: center top;
   }
 
+  @media screen and (max-width: $mobile-large) {
+    margin-top: $size * -1.5;
+  }
+
   &-wrapper {
     margin: 0 auto;
     max-width: $tablet-large;
