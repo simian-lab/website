@@ -11,9 +11,11 @@ var bourbon = require('node-bourbon'),
     rev = require('gulp-rev'),
     sass = require('gulp-sass'),
     uglify = require('gulp-uglify'),
-    usemin = require('gulp-usemin');
+    usemin = require('gulp-usemin'),
+    cssnano = require('cssnano'),
+    postcss = require('gulp-postcss')
 
-gulp.task('build', [ 'usemin', 'html', 'root', 'images', 'fonts', 'json', 'plato' ]);
+gulp.task('build', [ 'sass', 'usemin', 'html', 'root', 'images', 'fonts', 'json', 'plato' ]);
 
 gulp.task('clean', function() {
   gulp.src('prod', {
@@ -96,6 +98,7 @@ gulp.task('sass', function() {
   .pipe(sass({
     includePaths: require('node-bourbon').includePaths
   }).on('error', sass.logError))
+  .pipe(postcss([cssnano()]))
   .pipe(gulp.dest('dev/css/'))
   .pipe(browserSync.stream());
 });

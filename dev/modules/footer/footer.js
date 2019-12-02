@@ -6,7 +6,6 @@ angular.module('simian.footer', [])
   '$scope', 'MonkeysService',
   function($scope, monkeys) {
     $scope.year = (new Date()).getFullYear();
-    console.log('monkeys', monkeys, $scope);
     $scope.submit = function () {
       if($scope.contact.$valid){
         $scope.contact.$send = true;

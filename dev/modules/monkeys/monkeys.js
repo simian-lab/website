@@ -2,6 +2,13 @@
 
 angular.module('simian.monkeys', [])
 
+.config(['$httpProvider', function ($httpProvider) {
+  //Reset headers to avoid OPTIONS request (aka preflight)
+  $httpProvider.defaults.headers.common = {};
+  $httpProvider.defaults.headers.post = {};
+  $httpProvider.defaults.headers.put = {};
+  $httpProvider.defaults.headers.patch = {};
+}])
 .factory('MonkeysService', [
   '$http', '$q',
   function($http, $q) {
@@ -19,7 +26,7 @@ angular.module('simian.monkeys', [])
       },
       contactMonkeys: function(data) {
         data.captcha = 'bananas';
-        return $http.post('contact', data);
+        return $http.post('https://script.google.com/macros/s/AKfycbyGKh6Gj-e1vKT01zEiSLtBuPthZEARhI8AycoVHQ15oWdFnQQ/exec', data);
       }
     };
   }
