@@ -18,20 +18,20 @@ $border: 4px;
   width: 100%;
 
   h2 {
-    font-family: "quicksandregular";
+    font-family: $quicksand_regular;
     font-size: 3rem;
     text-align: center;
     padding-bottom: 3rem;
 
     span {
-      font-family: "amaticbold";
+      font-family: $amatic_bold;
       font-size: 6.5rem;
       color : $red;
     }
   }
 
   h3 {
-    font-family: "quicksandregular";
+    font-family: $quicksand_regular;
     span {
       font-weight: bolder;
     }

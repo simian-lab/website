@@ -6,7 +6,7 @@
     </div>
 
     <div class="footer-content" >
-      <form class="contact-form" name="contact" ng-submit="submit()">
+      <form class="contact-form" name="contact" ng-submit="submit()" ng-class="{ sending : contact.$send }">
         <div class="form-group">
           <input id="name" ng-disabled="contact.$send" type="text" ng-model="contact.value.Name">
           <label for="name">*Nombre</label>
@@ -24,8 +24,12 @@
           <label for="mesg">*Mensaje</label>
         </div>
 
-        <label>*Campo obligatorio</label><br>
+        <label class="more">*Campo obligatorio</label><br>
         <input ng-disabled="contact.$send" type="submit" class="button" value="Enviar">
+
+        <dialog class="dialog" open>
+          <div>Gracias las del mico!</div>
+        </dialog>
       </form>
 
       <div class="line"></div>
