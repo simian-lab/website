@@ -66,7 +66,7 @@
         width: 20rem;
       }
 
-      h1, p {
+      h2, p, h3 {
         text-align: center;
       }
 
@@ -94,7 +94,7 @@
           }
         }
 
-        h1 {
+        h2 {
           color: $yellow;
           font-size: 9rem;
 
@@ -273,10 +273,6 @@
 
               @media screen and (max-width: $mobile-medium) {
                 margin-top: -1rem;
-              }
-
-              @media screen and (max-width: $mobile-small) {
-                margin-top: -3rem;
               }
 
               .line-after, .line-before {

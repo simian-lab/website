@@ -85,9 +85,10 @@
       top: -9rem;
     }
 
-    h1 {
+    .h2 {
       color: $yellow;
       font-size: 11rem;
+      font-family: $amatic_bold;
 
       @media screen and (max-width: $laptop-small) {
         font-size: 6rem;

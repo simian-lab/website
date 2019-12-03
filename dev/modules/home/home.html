@@ -1,5 +1,5 @@
 <div id="home">
-
+  <h1 class="hidden">Simian</h1>
   <div class="hero">
     <div class="hero-wrapper">
       <div class="hero-title">
@@ -57,7 +57,7 @@
       <div class="title-container">
           <p>Estos han sido</p>
           <p>nuestros</p>
-          <h1 class="bold-border">Proyectos</h1>
+          <h2 class="bold-border">Proyectos</h2>
       </div>
     </div>
 
@@ -66,7 +66,7 @@
       <div id="projects-slider" class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide" ng-repeat="project in projects">
-              <h1 class="name">{{project.name}}</h1>
+              <h3 class="name">{{project.name}}</h3>
               <div class="preview-container {{project.previewType}}">
                 <img ng-src="/img/{{project.previewType}}.svg" alt="{{project.name}}">
                 <a href="" class="more-link"></a>
@@ -116,13 +116,13 @@
 
     <div class="header-clients-container">
       <img class="line-left" src="../img/home/linea_izquierda.svg" alt="">
-    <div class="title-clients">
-      <h1 class="bold-border">Quiénes</h1>
+    <h2 class="title-clients">
+      <div class="h2 bold-border">Quiénes</div>
       <div class="container">
-        <h2>Han estado</h2>
+        <div class="h3">Han estado</div>
         <p>con nosotros</p>
       </div>
-    </div>
+    </h2>
     <img class="heart" src="../img/home/corazon.svg" alt="">
     <img class="line" src="../img/home/linea_derecha.svg" alt="">
     </div>
@@ -177,10 +177,10 @@
   </div>
 
   <div class="find-us">
-    <div class="sign">
-      <h1 class="bold-border">Donde</h1>
+    <h2 class="sign">
+      <div class="h2 bold-border">Donde</div>
       <p>encontrarnos</p>
-    </div>
+    </h2>
     <div class="see-more">
       <p>Nuestra filosofía es el trabajo en forma remota.</p>
       <a ui-sref="location" class="button">Ver más</a>

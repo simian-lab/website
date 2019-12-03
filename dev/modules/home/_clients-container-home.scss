@@ -29,10 +29,11 @@
     }
 
     .title-clients{
-      h1 {
+      .h2 {
         color: $blue;
         font-size: 14rem;
         margin: 0 0 0 -6.5rem;
+        font-family: $amatic_bold;
 
         @media screen and (max-width: $laptop-small) {
           font-size: 10rem;
@@ -52,12 +53,13 @@
 
       .container {
         display: flex;
-        h2 {
+        .h3 {
           color: $red;
           font-size: 6rem;
           text-shadow: -1px 0 $brown, 0 1px $brown, 1px 0 $brown, 0 -1px $brown;
           margin: 0 0 0 -1.5rem;
           width: 17rem;
+          font-family: $amatic_bold;
 
           @media screen and (max-width: $laptop-small) {
             font-size: 4rem;
