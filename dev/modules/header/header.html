@@ -1,58 +1,69 @@
 <header>
-  <div class="desktop" ng-show="toggles">
+  <div class="desktop"
+    ng-show="toggles">
 
   <div class="simian">
-    <a ng-href="/{{$root.language}}/">
+    <a
+      ng-href="/{{$root.language}}/">
       <img src="../img/header/logo-simian.png" alt="">
       <span></span>
     </a>
   </div>
 
-    <div class="menu" ng-click="toggle()">
+    <div class="menu"
+      ng-click="toggle()">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <nav ng-hide="activeSection == '404'" ng-show="true">
+    <nav
+      ng-hide="activeSection == '404'"
+      ng-show="true">
       <ul>
         <li>
-          <a ng-href="{{$root.getLink('we-do', 'que-hacemos')}}"
-          ng-class="{active: activeSection == 'we-do' || activeSection == 'que-hacemos'}">
+          <a
+            ng-href="{{$root.getLink('we-do', 'que-hacemos')}}"
+            ng-class="{active: activeSection == 'we-do' || activeSection == 'que-hacemos'}">
             {{ 'WE-DO' | translate }}
             <span></span>
           </a>
         </li>
         <li>
-          <a ng-href="{{$root.getLink('projects', 'proyectos')}}"
-          ng-class="{active: activeSection == 'projects' || activeSection == 'proyectos'}">
+          <a
+            ng-href="{{$root.getLink('projects', 'proyectos')}}"
+            ng-class="{active: activeSection == 'projects' || activeSection == 'proyectos'}">
             {{ 'PROJECTS' | translate }}
             <span></span>
           </a>
         </li>
         <li>
-          <a ng-href="{{$root.getLink('clients', 'clientes')}}"
-          ng-class="{active: activeSection == 'clients' || activeSection == 'clientes'}">
+          <a
+            ng-href="{{$root.getLink('clients', 'clientes')}}"
+            ng-class="{active: activeSection == 'clients' || activeSection == 'clientes'}">
             {{ 'CLIENTS' | translate }}
             <span></span>
           </a>
         </li>
         <!--<li>
-          <a ng-href="{{$root.getLink('we-are', 'quienes-somos', { monkey: 'sergio-acosta' })}}"
-          ng-class="{active: activeSection == 'we-are' || activeSection == 'quienes-somos'}">
+          <a
+            ng-href="{{$root.getLink('we-are', 'quienes-somos', { monkey: 'sergio-acosta' })}}"
+            ng-class="{active: activeSection == 'we-are' || activeSection == 'quienes-somos'}">
             {{ 'WE-ARE' | translate }}
             <span></span>
           </a>
         </li>
         <li>
-          <a ng-href="{{$root.getLink('location', 'ubicacion')}}"
-          ng-class="{active: activeSection == 'location' || activeSection == 'ubicacion'}">
+          <a
+            ng-href="{{$root.getLink('location', 'ubicacion')}}"
+            ng-class="{active: activeSection == 'location' || activeSection == 'ubicacion'}">
             {{ 'LOCATION' | translate }}
             <span></span>
           </a>
         </li>
         <li>
-          <a ng-href="{{$root.getLink('we-share', 'compartimos')}}"
-          ng-class="{active: activeSection == 'we-share' || activeSection == 'compartimos'}">
+          <a
+            ng-href="{{$root.getLink('we-share', 'compartimos')}}"
+            ng-class="{active: activeSection == 'we-share' || activeSection == 'compartimos'}">
             {{ 'WE-SHARE' | translate }}
             <span></span>
           </a>
@@ -64,12 +75,16 @@
       <!--<a href="http://blog.simian.co/" target="_blank">
         <img src="../img/header/our-blog.svg" alt="">
       </a>-->
-      <a ng-class="{ active : $root.language == 'es' }" ng-click="changeLanguage('es')">
+      <a
+        ng-class="{ active : $root.language == 'es' }"
+        ng-click="changeLanguage('es')">
         Español
         <span></span>
       </a>
       |
-      <a ng-class="{ active : $root.language == 'en' }" ng-click="changeLanguage('en')">
+      <a
+        ng-class="{ active : $root.language == 'en' }"
+        ng-click="changeLanguage('en')">
         English
         <span></span>
       </a>
@@ -80,16 +95,20 @@
 
     <div class="header">
 
-      <img class="close" src="../img/header/x_cerrar.svg" ng-click="toggle()" alt="">
+      <img class="close" src="../img/header/x_cerrar.svg" alt=""
+        ng-click="toggle()" >
 
-      <div class="header-buttons" ng-hide="activeSection == '404'">
+      <div class="header-buttons"
+        ng-hide="activeSection == '404'">
         <!-- <a href="http://blog.simian.co/" target="_blank">
           <img class="blog" src="../img/header/our-blog.svg" alt="">
         </a> -->
-        <a href="" ng-click="changeLanguage('es')">
+        <a href=""
+          ng-click="changeLanguage('es')">
           <img class="idioma" src="../img/header/es-button.svg" alt="">
         </a>
-        <a href="" ng-click="changeLanguage('en')">
+        <a href=""
+          ng-click="changeLanguage('en')">
           <img class="idioma" src="../img/header/en-button.svg" alt="">
         </a>
     </div>
@@ -99,42 +118,64 @@
     <nav ng-hide="activeSection == '404'" ng-show="true">
       <ul>
         <li class="hide-inicio">
-          <a ng-href="{{$root.language}}/" ng-click="toggle()">
+          <a
+            ng-href="{{$root.language}}/"
+            ng-click="toggle()">
           {{ 'HOME' | translate }}
           </a>
         </li>
         <li>
-          <a ng-href="{{$root.getLink('we-do', 'que-hacemos')}}" ng-click="toggle()"
-          ng-class="{active: activeSection == 'we-do' || activeSection == 'que-hacemos'}">
-          {{ 'WE-DO' | translate }}</a>
+          <a
+            ng-href="{{$root.getLink('we-do', 'que-hacemos')}}"
+            ng-click="toggle()"
+            ng-class="{active: activeSection == 'we-do' || activeSection == 'que-hacemos'}">
+            {{ 'WE-DO' | translate }}
+            <span></span>
+          </a>
         </li>
         <li>
-          <a ng-href="{{$root.getLink('projects', 'proyectos')}}" ng-click="toggle()"
-          ng-class="{active: activeSection == 'projects' || activeSection == 'proyectos'}">
-          {{ 'PROJECTS' | translate }}</a>
+          <a
+            ng-href="{{$root.getLink('projects', 'proyectos')}}"
+            ng-click="toggle()"
+            ng-class="{active: activeSection == 'projects' || activeSection == 'proyectos'}">
+            {{ 'PROJECTS' | translate }}
+            <span></span>
+          </a>
         </li>
         <li>
-          <a ng-href="{{$root.getLink('clients', 'clientes')}}" ng-click="toggle()"
-          ng-class="{active: activeSection == 'clients' || activeSection == 'clientes'}">
-          {{ 'CLIENTS' | translate }}</a>
+          <a
+            ng-href="{{$root.getLink('clients', 'clientes')}}"
+            ng-click="toggle()"
+            ng-class="{active: activeSection == 'clients' || activeSection == 'clientes'}">
+            {{ 'CLIENTS' | translate }}
+            <span></span>
+          </a>
         </li>
-        <!-- <li>
-          <a ng-href="{{$root.getLink('we-are', 'quienes-somos', { monkey: 'sergio-acosta' })}}" ng-click="toggle()"
-          ng-class="{active: activeSection == 'we-are' || activeSection == 'quienes-somos'}">
-          {{ 'WE-ARE' | translate }}</a>
+        <!--<li>
+          <a
+            ng-href="{{$root.getLink('we-are', 'quienes-somos', { monkey: 'sergio-acosta' })}}"
+            ng-class="{active: activeSection == 'we-are' || activeSection == 'quienes-somos'}">
+            {{ 'WE-ARE' | translate }}
+            <span></span>
+          </a>
         </li>
         <li>
-          <a ng-href="{{$root.getLink('location', 'ubicacion')}}" ng-click="toggle()"
-          ng-class="{active: activeSection == 'location' || activeSection == 'ubicacion'}">
-          {{ 'LOCATION' | translate }}</a>
+          <a
+            ng-href="{{$root.getLink('location', 'ubicacion')}}"
+            ng-class="{active: activeSection == 'location' || activeSection == 'ubicacion'}">
+            {{ 'LOCATION' | translate }}
+            <span></span>
+          </a>
         </li>
         <li>
-          <a ng-href="{{$root.getLink('we-share', 'compartimos')}}" ng-click="toggle()"
-          ng-class="{active: activeSection == 'we-share' || activeSection == 'compartimos'}">
-          {{ 'WE-SHARE' | translate }}</a>
-        </li> -->
+          <a
+            ng-href="{{$root.getLink('we-share', 'compartimos')}}"
+            ng-class="{active: activeSection == 'we-share' || activeSection == 'compartimos'}">
+            {{ 'WE-SHARE' | translate }}
+            <span></span>
+          </a>
+        </li>-->
       </ul>
     </nav>
   </div>
 </header>
-

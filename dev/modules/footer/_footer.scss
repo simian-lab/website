@@ -319,7 +319,7 @@ footer {
           width: 100%;
         }
 
-        &.ng-invalid {
+        &:not(.ng-untouched).ng-invalid {
           box-shadow: none;
           background-image:
             linear-gradient(to right, $red 55%, rgba(255, 255, 255, 0) 0%),

@@ -200,15 +200,7 @@
             margin: 1rem 0;
 
             @media screen and (max-width: $mobile-large) {
-              margin: 2rem 0 -16px 0;
-            }
-
-            @media screen and (max-width: $mobile-medium) {
-              margin: 2rem 0 -30px 0;
-            }
-
-            @media screen and (max-width: $mobile-medium) {
-              margin: 2rem 0 -47px 0;
+              margin: 2rem 0 0;
             }
           }
 
@@ -279,16 +271,12 @@
               display: flex;
               justify-content: center;
 
-              @media screen and (max-width: $mobile-large) {
-                margin-top: -3rem;
-              }
-
               @media screen and (max-width: $mobile-medium) {
-                margin-top: -4rem;
+                margin-top: -1rem;
               }
 
               @media screen and (max-width: $mobile-small) {
-                margin-top: -5rem;
+                margin-top: -3rem;
               }
 
               .line-after, .line-before {

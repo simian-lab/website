@@ -1,31 +1,43 @@
 <footer class="footer-{{$root.activeSection}}">
-  <div class="background-section" ng-show="$root.activeSection != 'we-are' &&  $root.activeSection !='quienes-somos'" >
+  <div class="background-section"
+    ng-show="$root.activeSection != 'we-are' &&  $root.activeSection !='quienes-somos'" >
     <div class="footer-title">
       <h1>Podemos hablar</h1>
       <div class="linea"></div>
     </div>
 
     <div class="footer-content" >
-      <form class="contact-form" name="contact" ng-submit="submit()" ng-class="{ sending : contact.$send }">
+      <form class="contact-form" name="contact"
+        ng-submit="submit()"
+        ng-class="{ sending : contact.$send }">
         <div class="form-group">
-          <input id="name" ng-disabled="contact.$send" type="text" ng-model="contact.value.Name">
+          <input id="name" type="text" required
+            ng-disabled="contact.$send"
+            ng-model="contact.value.Name">
           <label for="name">*Nombre</label>
         </div>
         <div class="form-group">
-          <input id="email" ng-disabled="contact.$send" type="email" ng-model="contact.value.Email" >
+          <input id="email" type="email" required
+            ng-disabled="contact.$send"
+            ng-model="contact.value.Email" >
           <label for="email">*Correo electrónico</label>
         </div>
         <div class="form-group">
-          <input id="number" ng-disabled="contact.$send" type="number" ng-model="contact.value.Number">
+          <input id="number" type="number"
+            ng-disabled="contact.$send"
+            ng-model="contact.value.Number">
           <label for="number">Número de contacto</label>
         </div>
         <div class="form-group">
-          <textarea id="mesg" ng-disabled="contact.$send" cols="30" rows="10" ng-model="contact.value.Message"></textarea>
+          <textarea id="mesg" cols="30" rows="10" required
+            ng-disabled="contact.$send"
+            ng-model="contact.value.Message"></textarea>
           <label for="mesg">*Mensaje</label>
         </div>
 
         <label class="more">*Campo obligatorio</label><br>
-        <input ng-disabled="contact.$send" type="submit" class="button" value="Enviar">
+        <input type="submit" class="button" value="Enviar"
+          ng-disabled="contact.$send" >
 
         <dialog class="dialog" open>
           <div>Gracias las del mico!</div>

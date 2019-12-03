@@ -271,7 +271,7 @@ header {
         display: flex;
         flex-direction: column;
         height: 77%;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 70%;
 
         @media screen and (max-width: $mobile-large) {
