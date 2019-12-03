@@ -3,6 +3,10 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (max-width: $mobile-large) {
+    margin-top: 0;
+  }
+
   &:before {
     background-image: url(../img/home/bananos_volando.svg);
     background-repeat: no-repeat;
@@ -22,6 +26,10 @@
     @media screen and (max-width: $tablet-medium) {
       width: 45rem;
       max-width: 100%;
+    }
+
+    @media screen and (max-width: $tablet-small) {
+      background: none;
     }
   }
 
@@ -164,6 +172,7 @@
       margin: 2rem 1rem;
       max-width: 500px;
       font-size: 1.5rem;
+      line-height: 1.2;
     }
 
     .see-more {
@@ -206,9 +215,10 @@
 
       a {
         @media screen and (max-width: $mobile-large) {
-          font-size: 1rem;
+          font-size: 1.5rem;
           height: 4.438rem;
-          width: 5.688rem;
+          width: 9.5rem;
+          padding: 0.4rem;
         }
       }
     }

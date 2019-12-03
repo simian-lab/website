@@ -158,6 +158,11 @@
           max-width: 30vw;
           @media screen and (max-width: $tablet-small) {
             max-width: 45vw;
+            margin-top: 1.5rem;
+          }
+
+          @media screen and (max-width: $mobile-small) {
+            margin-top: 0rem;
           }
         }
       }
@@ -197,6 +202,7 @@
 
        @media screen and (max-width: $mobile-large) {
         background-position-y: 0.5rem;
+        margin-bottom: 0;
       }
 
       &:hover {
@@ -206,9 +212,10 @@
 
     a {
       @media screen and (max-width: $mobile-large) {
-        font-size: 1rem;
+        font-size: 1.5rem;
         height: 4.438rem;
-        width: 5.688rem;
+        width: 9.5rem;
+        padding: 0.4rem;
       }
     }
   }

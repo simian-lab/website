@@ -17,11 +17,36 @@ $border: 4px;
   max-width: $laptop-small;
   width: 100%;
 
+  @media screen and (max-width: $tablet-medium) {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  @media screen and (max-width: $tablet-small) {
+    padding-top: 1.5rem;
+  }
+
+  @media screen and (max-width: $mobile-medium) {
+    padding-top: 0rem;
+  }
+
   h2 {
     font-family: $quicksand_regular;
     font-size: 3rem;
     text-align: center;
     padding-bottom: 3rem;
+
+    @media screen and (max-width: $tablet-medium) {
+      padding-bottom: 2rem;
+    }
+
+    @media screen and (max-width: $tablet-small) {
+      padding-bottom: 1.5rem;
+    }
+
+    @media screen and (max-width: $mobile-medium) {
+      padding-bottom: 0rem;
+    }
 
     span {
       font-family: $amatic_bold;

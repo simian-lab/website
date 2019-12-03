@@ -36,8 +36,11 @@
         </div>
 
         <label class="more">*Campo obligatorio</label><br>
-        <input type="submit" class="button" value="Enviar"
-          ng-disabled="contact.$send" >
+        <div class="wrapper-btn">
+          <button class="button" type="submit"
+            ng-disabled="contact.$send">Enviar</button>
+        </div>
+
 
         <dialog class="dialog" open>
           <div>Gracias las del mico!</div>
