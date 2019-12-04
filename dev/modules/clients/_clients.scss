@@ -53,7 +53,7 @@
     }
 
     .title-clients{
-      h1 {
+      .bold-border {
         color: $blue;
         font-size: 14rem;
         margin: 0 0 0 -6.5rem;
@@ -76,12 +76,13 @@
 
       .container {
         display: flex;
-        h2 {
+        > div {
           color: $red;
           font-size: 6rem;
           margin: 0 0 0 -1.5rem;
           width: 17rem;
           text-shadow: -1px 0 $brown, 0 1px $brown, 1px 0 $brown, 0 -1px $brown;
+          font-family: $amatic_bold;
 
           @media screen and (max-width: $laptop-small) {
             font-size: 4rem;

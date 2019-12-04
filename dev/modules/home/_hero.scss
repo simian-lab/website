@@ -93,6 +93,11 @@
     align-items: center;
     justify-content: space-between;
 
+    > span {
+      color : transparent;
+      font-size: 1px;
+    }
+
     img {
       width: 50%;
       margin-left: -5rem;

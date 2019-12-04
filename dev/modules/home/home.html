@@ -1,9 +1,8 @@
 <div id="home">
-  <h1 class="hidden">Simian</h1>
   <div class="hero">
     <div class="hero-wrapper">
-      <div class="hero-title">
-
+      <h1 class="hero-title">
+        <span>Simian</span>
         <div class="hero-text">
           Construimos<br>
           <span class="bold-border">Experiencias digitales</span><br>
@@ -11,7 +10,7 @@
         </div>
 
         <img src="img/home/imagen_hero.png">
-      </div>
+      </h1>
 
       <div class="hero-box">
         <p><span>Diseñamos y desarrollamos productos digitales</span> trabajando en todo el ciclo de vida del proyecto desde la definición de la estrategia, diseño centrado en el usuario, desarrollo e implementación hasta el acompañamiento y soporte.</p>
@@ -55,9 +54,9 @@
   <div class="our-projects">
     <div class="intro">
       <div class="title-container">
-          <p>Estos han sido</p>
-          <p>nuestros</p>
-          <h2 class="bold-border">Proyectos</h2>
+        <p>Estos han sido</p>
+        <p>nuestros</p>
+        <h2 class="bold-border">Proyectos</h2>
       </div>
     </div>
 
@@ -65,24 +64,24 @@
 
       <div id="projects-slider" class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" ng-repeat="project in projects">
-              <h3 class="name">{{project.name}}</h3>
-              <div class="preview-container {{project.previewType}}">
-                <img ng-src="/img/{{project.previewType}}.svg" alt="{{project.name}}">
-                <a href="" class="more-link"></a>
-              </div>
-              <div class=quote>
-                <div class="content-avatar">
-                  <img class="line-after" src="../img/home/linea_avatar.svg" alt="">
-                  <img ng-src="{{project.quote.avatar}}" alt="" class="avatar">
-                  <img class="line-before" src="../img/home/linea_avatar.svg" alt="">
-                </div>
-                <p class="text"><span class="comillas">"</span>{{project.quote.text}}<span class="comillas">"</span></p>
-                <p class="author">{{project.quote.author}}</p>
-                <p class="position">{{project.quote.position}}</p>
-                <p class="project-country"><span class="project">{{project.name}},</span> {{project.quote.country}}</p>
-              </div>
+          <div class="swiper-slide" ng-repeat="project in projects">
+            <h3 class="name">{{project.name}}</h3>
+            <div class="preview-container {{project.previewType}}">
+              <img ng-src="/img/{{project.previewType}}.svg" alt="{{project.name}}">
+              <a href="" class="more-link"></a>
             </div>
+            <div class=quote>
+              <div class="content-avatar">
+                <img class="line-after" src="../img/home/linea_avatar.svg" alt="">
+                <img ng-src="{{project.quote.avatar}}" alt="" class="avatar">
+                <img class="line-before" src="../img/home/linea_avatar.svg" alt="">
+              </div>
+              <p class="text"><span class="comillas">"</span>{{project.quote.text}}<span class="comillas">"</span></p>
+              <p class="author">{{project.quote.author}}</p>
+              <p class="position">{{project.quote.position}}</p>
+              <p class="project-country"><span class="project">{{project.name}},</span> {{project.quote.country}}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -116,13 +115,14 @@
 
     <div class="header-clients-container">
       <img class="line-left" src="../img/home/linea_izquierda.svg" alt="">
-    <h2 class="title-clients">
+    <div class="title-clients">
+      <h2 class="hidden">Clientes</h2>
       <div class="h2 bold-border">Quiénes</div>
       <div class="container">
         <div class="h3">Han estado</div>
         <p>con nosotros</p>
       </div>
-    </h2>
+    </div>
     <img class="heart" src="../img/home/corazon.svg" alt="">
     <img class="line" src="../img/home/linea_derecha.svg" alt="">
     </div>

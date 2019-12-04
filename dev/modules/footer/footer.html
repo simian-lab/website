@@ -2,7 +2,7 @@
   <div class="background-section"
     ng-show="$root.activeSection != 'we-are' &&  $root.activeSection !='quienes-somos'" >
     <div class="footer-title">
-      <h2>Podemos hablar</h2>
+      <div class="h2">Podemos hablar</div>
       <div class="linea"></div>
     </div>
 
@@ -51,7 +51,8 @@
 
       <div class="contact-info">
 
-        <h2 class="info-title">Contacto</h2>
+        <h2 class="info-title" ng-if="$root.activeSection == 'home'">Contacto</h2>
+        <div class="info-title" ng-if="$root.activeSection != 'home'">Contacto</div>
 
         <div class="info">
           <div class="field">

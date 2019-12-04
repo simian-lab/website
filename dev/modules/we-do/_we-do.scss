@@ -1,4 +1,17 @@
 #we-do {
+
+  h2, p {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    @media screen and (max-width: $laptop-small) {
+      font-size: 3rem;
+    }
+  }
+
   @import '../modules/we-do/header-do';
   @import '../modules/we-do/finish-do';
 }
