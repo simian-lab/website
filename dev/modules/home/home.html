@@ -9,7 +9,7 @@
           para seres humanos<br>
         </div>
 
-        <img src="img/home/imagen_hero.png">
+        <img src="img/home/imagen_hero.png" alt="Simian hace">
       </h1>
 
       <div class="hero-box">
@@ -23,28 +23,28 @@
 
     <ul>
       <li class="blue">
-        <img src="img/home/estrategia_consultoria.svg">
+        <img src="img/home/estrategia_consultoria.svg" alt="Estrategia y consultorías">
         <h3>Definicion de <br> <span>estrategia y consultorías</span></h3>
       </li>
 
       <li class="yellow">
-        <img src="img/home/diseno.svg">
+        <img src="img/home/diseno.svg" alt="Diseño">
         <h3><span>Diseño</span> centrado <br> en el usuario</h3>
       </li>
 
       <li class="red">
-        <img src="img/home/desarrollo.svg">
+        <img src="img/home/desarrollo.svg" alt="Desarrollo">
         <h3><span>Desarrollo</span> tecnológico</h3>
       </li>
 
 
       <li class="green">
-        <img src="img/home/mantenimiento.svg">
+        <img src="img/home/mantenimiento.svg" alt="Soporte">
         <h3><span>Acompañamiento y soporte</span></h3>
       </li>
 
       <li class="blue">
-        <img src="img/home/capacitaciones.svg">
+        <img src="img/home/capacitaciones.svg" alt="Capacitaciones">
         <h3><span>Capacitaciones</span></h3>
       </li>
     </ul>
@@ -66,14 +66,14 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide" ng-repeat="project in projects">
             <h3 class="name">{{project.name}}</h3>
-            <div class="preview-container {{project.previewType}}">
+            <div class="preview-container {{project.previewType}}" alt="{{project.quote.author}}">
               <img ng-src="/img/{{project.previewType}}.svg" alt="{{project.name}}">
               <a href="" class="more-link"></a>
             </div>
             <div class=quote>
               <div class="content-avatar">
                 <img class="line-after" src="../img/home/linea_avatar.svg" alt="">
-                <img ng-src="{{project.quote.avatar}}" alt="" class="avatar">
+                <img ng-src="{{project.quote.avatar}}" alt="{{project.quote.author}}" class="avatar">
                 <img class="line-before" src="../img/home/linea_avatar.svg" alt="">
               </div>
               <p class="text"><span class="comillas">"</span>{{project.quote.text}}<span class="comillas">"</span></p>
@@ -115,16 +115,16 @@
 
     <div class="header-clients-container">
       <img class="line-left" src="../img/home/linea_izquierda.svg" alt="">
-    <div class="title-clients">
-      <h2 class="hidden">Clientes</h2>
-      <div class="h2 bold-border">Quiénes</div>
-      <div class="container">
-        <div class="h3">Han estado</div>
-        <p>con nosotros</p>
+      <div class="title-clients">
+        <h2 class="hidden">Clientes</h2>
+        <div class="h2 bold-border">Quiénes</div>
+        <div class="container">
+          <div class="h3">Han estado</div>
+          <p>con nosotros</p>
+        </div>
       </div>
-    </div>
-    <img class="heart" src="../img/home/corazon.svg" alt="">
-    <img class="line" src="../img/home/linea_derecha.svg" alt="">
+      <img class="heart" src="../img/home/corazon.svg" alt="Corazon">
+      <img class="line" src="../img/home/linea_derecha.svg" alt="">
     </div>
 
     <simian-clients limit="numClientes()"></simian-clients>
@@ -136,14 +136,14 @@
   <div class="we-are">
     <div class="title">
       <h2 class="bold-border">Quiénes <span>somos</span></h2>
-      <img src="img/home/cara_mico_banano.svg">
+      <img src="img/home/cara_mico_banano.svg" alt="Cara de Simian">
     </div>
 
     <div class="we-are-content">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada metus arcu, vel posuere eros tincidunt sit amet. Cras blandit malesuada nisi id bibendum. Etiam vel augue et magna aliquam vestibulum eget ac enim. Vestibulum iaculis ligula elementum, lacinia urna id, varius mi. Nam nisi nisi, consectetur eget felis vel, mattis placerat tellus.</p>
 
       <div class="see-more">
-        <a ui-sref="clients" class="button">Ver más</a>
+        <a ui-sref="location" class="button">Ver más</a>
       </div>
     </div>
 
