@@ -9,7 +9,7 @@
           para seres humanos<br>
         </div>
 
-        <img src="img/home/imagen_hero.png" alt="Simian hace">
+        <img lazy="img/home/imagen_hero.png" alt="Simian hace">
       </h1>
 
       <div class="hero-box">
@@ -23,28 +23,28 @@
 
     <ul>
       <li class="blue">
-        <img src="img/home/estrategia_consultoria.svg" alt="Estrategia y consultorías">
+        <img lazy="img/home/estrategia_consultoria.svg" alt="Estrategia y consultorías">
         <h3>Definicion de <br> <span>estrategia y consultorías</span></h3>
       </li>
 
       <li class="yellow">
-        <img src="img/home/diseno.svg" alt="Diseño">
+        <img lazy="img/home/diseno.svg" alt="Diseño">
         <h3><span>Diseño</span> centrado <br> en el usuario</h3>
       </li>
 
       <li class="red">
-        <img src="img/home/desarrollo.svg" alt="Desarrollo">
+        <img lazy="img/home/desarrollo.svg" alt="Desarrollo">
         <h3><span>Desarrollo</span> tecnológico</h3>
       </li>
 
 
       <li class="green">
-        <img src="img/home/mantenimiento.svg" alt="Soporte">
+        <img lazy="img/home/mantenimiento.svg" alt="Soporte">
         <h3><span>Acompañamiento y soporte</span></h3>
       </li>
 
       <li class="blue">
-        <img src="img/home/capacitaciones.svg" alt="Capacitaciones">
+        <img lazy="img/home/capacitaciones.svg" alt="Capacitaciones">
         <h3><span>Capacitaciones</span></h3>
       </li>
     </ul>
@@ -64,17 +64,18 @@
 
       <div id="projects-slider" class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" ng-repeat="project in projects">
+          <div class="swiper-slide"
+            ng-repeat="project in projects">
             <h3 class="name">{{project.name}}</h3>
             <div class="preview-container {{project.previewType}}" alt="{{project.quote.author}}">
-              <img ng-src="/img/{{project.previewType}}.svg" alt="{{project.name}}">
+              <img lazy="/img/{{project.previewType}}.svg" alt="{{project.name}}">
               <a href="" class="more-link"></a>
             </div>
             <div class=quote>
               <div class="content-avatar">
-                <img class="line-after" src="../img/home/linea_avatar.svg" alt="">
-                <img ng-src="{{project.quote.avatar}}" alt="{{project.quote.author}}" class="avatar">
-                <img class="line-before" src="../img/home/linea_avatar.svg" alt="">
+                <img class="line-after" lazy="../img/home/linea_avatar.svg" alt="">
+                <img lazy="{{project.quote.avatar}}" alt="{{project.quote.author}}" class="avatar">
+                <img class="line-before" lazy="../img/home/linea_avatar.svg" alt="">
               </div>
               <p class="text"><span class="comillas">"</span>{{project.quote.text}}<span class="comillas">"</span></p>
               <p class="author">{{project.quote.author}}</p>
@@ -114,7 +115,7 @@
   <div class="clients-container-home">
 
     <div class="header-clients-container">
-      <img class="line-left" src="../img/home/linea_izquierda.svg" alt="">
+      <img class="line-left" lazy="../img/home/linea_izquierda.svg" alt="">
       <div class="title-clients">
         <h2 class="hidden">Clientes</h2>
         <div class="h2 bold-border">Quiénes</div>
@@ -123,8 +124,8 @@
           <p>con nosotros</p>
         </div>
       </div>
-      <img class="heart" src="../img/home/corazon.svg" alt="Corazon">
-      <img class="line" src="../img/home/linea_derecha.svg" alt="">
+      <img class="heart" lazy="../img/home/corazon.svg" alt="Corazon">
+      <img class="line" lazy="../img/home/linea_derecha.svg" alt="">
     </div>
 
     <simian-clients limit="numClientes()"></simian-clients>
@@ -136,7 +137,7 @@
   <div class="we-are">
     <div class="title">
       <h2 class="bold-border">Quiénes <span>somos</span></h2>
-      <img src="img/home/cara_mico_banano.svg" alt="Cara de Simian">
+      <img lazy="img/home/cara_mico_banano.svg" alt="Cara de Simian">
     </div>
 
     <div class="we-are-content">

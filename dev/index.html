@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="simian">
+<html ng-app="simian" lang="{{$root.language}}">
   <head>
     <base href="/">
     <title>Diseño y Desarrollo Páginas Web en Colombia - Simian</title>
@@ -70,7 +70,7 @@
 
     <!--Structured Data -->
     <script type="application/ld+json">
-      {
+    {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Simian",
@@ -89,7 +89,8 @@
        "https://www.facebook.com/simianlab/",
        "https://twitter.com/simianlab?",
        "https://co.linkedin.com/company/simian-s-a-s-"
-      ]}
+      ]
+    }
     </script>
 
 
@@ -124,6 +125,7 @@
     <script src="/modules/location/location.js"></script>
     <script src="/modules/we-share/we-share.js"></script>
     <script src="/modules/monkeys/monkeys.js"></script>
+    <script src="/modules/lazy/lazy.js"></script>
     <script src="/modules/project-deployment/project-deployment.js"></script>
     <!-- endbuild -->
   </body>

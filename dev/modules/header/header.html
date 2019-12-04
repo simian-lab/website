@@ -5,7 +5,7 @@
   <div class="simian">
     <a
       ng-href="/{{$root.language}}/">
-      <img src="../img/header/logo-simian.png" alt="Simian">
+      <img lazy="../img/header/logo-simian.png" alt="Simian">
       <span></span>
     </a>
   </div>
@@ -73,7 +73,7 @@
 
     <div class="header-buttons" ng-hide="activeSection == '404'">
       <!--<a href="http://blog.simian.co/" target="_blank">
-        <img src="../img/header/our-blog.svg" alt="">
+        <img lazy="../img/header/our-blog.svg" alt="">
       </a>-->
       <a
         ng-class="{ active : $root.language == 'es' }"
@@ -95,21 +95,21 @@
 
     <div class="header">
 
-      <img class="close" src="../img/header/x_cerrar.svg" alt="Cerrar"
+      <img class="close" lazy="../img/header/x_cerrar.svg" alt="Cerrar"
         ng-click="toggle()" >
 
       <div class="header-buttons"
         ng-hide="activeSection == '404'">
         <!-- <a href="http://blog.simian.co/" target="_blank">
-          <img class="blog" src="../img/header/our-blog.svg" alt="">
+          <img class="blog" lazy="../img/header/our-blog.svg" alt="">
         </a> -->
         <a href=""
           ng-click="changeLanguage('es')">
-          <img class="idioma" src="../img/header/es-button.svg" alt="Español">
+          <img class="idioma" lazy="../img/header/es-button.svg" alt="Español">
         </a>
         <a href=""
           ng-click="changeLanguage('en')">
-          <img class="idioma" src="../img/header/en-button.svg" alt="English">
+          <img class="idioma" lazy="../img/header/en-button.svg" alt="English">
         </a>
     </div>
 

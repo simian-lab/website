@@ -14,6 +14,7 @@ angular.module('simian', [
   'simian.location',
   'simian.we-share',
   'simian.monkeys',
+  'simian.lazy',
   'simian.project-deployment'
 ])
 

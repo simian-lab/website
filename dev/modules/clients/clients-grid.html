@@ -5,7 +5,7 @@
       ng-repeat="client in clients | limitTo: limit"
       ng-href="{{client.url}}" >
       <img
-        ng-src="{{client.logo}}"
+        lazy="{{client.logo}}"
         alt="{{client.name}}" >
       <h2 class="hidden"
         ng-if="!limit">{{client.name}}</h2>
