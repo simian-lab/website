@@ -4,7 +4,7 @@
   "homepage": "http://simian.co",
   "dependencies": {
     "bower": "latest",
-    "browser-sync": "^2.10.1",
+    "browser-sync": "^2.27.10",
     "dotenv": "~0.2.4",
     "express": "^3.4.8",
     "forever": "~0.10.11",
