@@ -6,7 +6,7 @@
     "bower": "latest",
     "browser-sync": "^2.10.1",
     "dotenv": "~0.2.4",
-    "express": "^3.4.8",
+    "express": "^4.17.3",
     "forever": "~0.10.11",
     "gulp": "^3.9.0",
     "gulp-sass": "^2.1.1",
