@@ -1,0 +1,109 @@
+/* Variables CSS personalizadas para el proyecto */
+
+:root {
+  /* Colores del sistema de diseño */
+	--Primary-Green-forest: #0B785D;
+	--Primary-Banana-light: #F4DF97;
+	--Gray-scale-0: #FFFFFF;
+	--Gray-scale-900-black: #1B1918;
+	--Gray-scale-800: #363330;
+	--Gray-scale-600: #6B6561;
+	--Primary-Dark-trunk: #462B0D;
+	--Shadows-300-dark-trunk: #E2BC8D;
+	--Shadows-500-dark-trunk: #C0823F;
+	--Shadows-100-dark-trunk: #FCF5EE;
+	--Shadows-300-banana-light: #F4DF97;
+
+  /* Colores neutrales */
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+  --color-neutral-950: #0a0a0a;
+
+  /* Colores de estado */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* Espaciado */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* Tipografía */
+  --font-family-sans: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-heading: 'Vollkorn', Georgia, serif;
+  --font-family-mono: 'Fira Code', 'Monaco', 'Consolas', monospace;
+
+  /* Variables de tipografía de Figma */
+  --H1-max-500: 'Vollkorn', Medium, 58px, 500, 100%;
+  --H2-max-500: 'Vollkorn', Medium, 40px, 500, 100%;
+  --H3-max-600: 'Source Sans Pro', SemiBold, 30px, 600, 100%;
+  --H3-min-600: 'Source Sans Pro', SemiBold, 24px, 600, 100%;
+  --Body-max-600: 'Source Sans Pro', SemiBold, 22px, 600, 34px;
+  --Body-max-400: 'Source Sans Pro', Regular, 22px, 400, 34px;
+  --Body-min-600: 'Source Sans Pro', SemiBold, 18px, 600, 28px;
+  --Body-min-400: 'Source Sans Pro', Regular, 18px, 400, 28px;
+  --Label-max-700: 'Source Sans Pro', Bold, 15.4px, 700, 25px;
+  --Label-max-400: 'Source Sans Pro', Regular, 15.4px, 400, 25px;
+
+  /* Tamaños de fuente */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+
+  /* Line heights */
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Bordes */
+  --border-radius-sm: 0.125rem;
+  --border-radius-md: 0.375rem;
+  --border-radius-lg: 0.5rem;
+  --border-radius-xl: 0.75rem;
+  --border-radius-2xl: 1rem;
+  --border-radius-full: 9999px;
+
+  /* Sombras */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Transiciones */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
+

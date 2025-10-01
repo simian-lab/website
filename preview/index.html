@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Simian</title>
+  
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@400;600;700&family=Vollkorn:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Meta tags para SEO -->
+  <meta name="description" content="Website desarrollado con Vite y Tailwind CSS">
+  <meta name="keywords" content="web, desarrollo, tailwind, vite">
+  <meta name="author" content="Simian">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Website Simian">
+  <meta property="og:description" content="Website desarrollado con Vite y Tailwind CSS">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+</head>
+<body class="min-h-screen">
+  
+  <!-- Header/Navigation -->
+  <header class="header-figma bg-[var(--Shadows-100-dark-trunk)]">
+    <div class="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-4">
+      <nav class="flex items-center justify-between h-[100px]">
+        <!-- Logo -->
+        <div class="logo-container">
+          <a href="#" class="group">
+            <img 
+              src="images/logo-simian.svg" 
+              alt="Simian Logo" 
+              class="h-12 w-auto group-hover:scale-105 transition-transform duration-300"
+            />
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center gap-10">
+          <!-- Menu Item 01 - Portafolio (Active) -->
+          <a href="#portafolio" class="flex flex-col gap-0.5 items-center px-2.5 py-1 menu-item-active hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300">
+            <div class="menu-item">
+              Portafolio
+            </div>
+          </a>
+          
+          <!-- Menu Item 02 - Servicios -->
+          <a href="#servicios" class="flex flex-col gap-0.5 items-start px-2.5 py-1 rounded-md hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300">
+            <div class="menu-item">
+              Servicios
+            </div>
+          </a>
+          
+          <!-- Menu Item 03 - Conócenos -->
+          <a href="#conocenos" class="flex flex-col gap-0.5 items-start px-2.5 py-1 rounded-md hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300">
+            <div class="menu-item">
+              Conócenos
+            </div>
+          </a>
+          
+          <!-- Menu Item 04 - Contacto -->
+          <a href="#contacto" class="flex flex-col gap-0.5 items-start px-2.5 py-1 rounded-md hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300">
+            <div class="menu-item">
+              Contacto
+            </div>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-[var(--Primary-Dark-trunk)] hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[var(--Primary-Dark-trunk)] focus:ring-offset-2">
+          <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="lg:hidden hidden">
+        <div class="py-4 border-t border-gray-200/50">
+          <div class="flex flex-col space-y-4">
+            <a href="#portafolio" class="text-[var(--Primary-Dark-trunk)] font-semibold text-lg py-2 px-4 rounded-[30px] border border-[var(--Primary-Dark-trunk)]">
+              Portafolio
+            </a>
+            <a href="#servicios" class="text-[var(--Primary-Dark-trunk)] font-semibold text-lg py-2 px-4 rounded-md">
+              Servicios
+            </a>
+            <a href="#conocenos" class="text-[var(--Primary-Dark-trunk)] font-semibold text-lg py-2 px-4 rounded-md">
+              Conócenos
+            </a>
+            <a href="#contacto" class="text-[var(--Primary-Dark-trunk)] font-semibold text-lg py-2 px-4 rounded-md">
+              Contacto
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="bg-[#fcf5ee] relative">
+    <!-- Hero Section with Two Column Layout -->
+    <section class="relative pt-1 lg:pt-[90px] pb-16 lg:pb-20">
+      <div class="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-[80px] items-start lg:items-center justify-start">
+          <!-- Left Column - Title -->
+          <div class="lg:w-[478px] flex-shrink-0">
+            <h1 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[36px] sm:text-[40px] lg:text-[58px] leading-[normal] mb-1 lg:mb-0">
+              Technology for human beings
+            </h1>
+          </div>
+          
+          <!-- Right Column - Description -->
+          <div class="flex-1 min-w-0">
+            <p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] sm:text-[20px] lg:text-[24px] leading-[normal] mb-4">
+              En Simian creamos portales digitales, PWAs y aplicaciones móviles centradas en el humano.
+            </p>
+            <p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] sm:text-[20px] lg:text-[24px] leading-[normal]">
+              Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Width Image Section -->
+    <section class="relative w-full pb-40 lg:pb-60">
+      <picture>
+        <!-- Desktop version (lg and up) -->
+        <source 
+          media="(min-width: 1024px)" 
+          srcset="images/cover-desk.jpg"
+        />
+        <!-- Mobile version (default) -->
+        <img 
+          src="images/cover.jpg" 
+          alt="Cover Image" 
+          class="w-full h-auto object-cover"
+        />
+      </picture>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="bg-stone-200 relative py-20">
+      <div class="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <!-- Projects Cards Container with negative margin for overlap -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-6 mt-[-200px] lg:-mt-60 mb-16">
+          <!-- Project Card 1 -->
+          <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+            <div class="aspect-[1/0.8] w-full bg-cover bg-center bg-no-repeat" 
+                 style="background-image: url('images/proy-1.jpg');">
+            </div>
+            <div class="p-8">
+              <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[30px] leading-[normal] mb-2.5">
+                PWA Universidad Externado de Colombia
+              </h3>
+              <p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] tracking-[-0.045px]">
+                Descripción corta, introducción o extracto sobre el proyecto.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+            <div class="aspect-[1/0.8] w-full bg-cover bg-center bg-no-repeat" 
+                 style="background-image: url('images/proy-2.jpg');">
+            </div>
+            <div class="p-8">
+              <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[30px] leading-[normal] mb-2.5">
+                Rediseño Sitio Web del noticiero 90 minutos
+              </h3>
+              <p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] tracking-[-0.045px]">
+                Descripción corta, introducción o extracto sobre el proyecto.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button Container -->
+        <div class="flex justify-center">
+          <button class="bg-[#0b785d] text-white font-['Source_Sans_Pro'] font-semibold text-[24px] px-6 py-4 rounded-[5px] hover:bg-[#0a6b52] transition-colors duration-300">
+            Todos los proyectos
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuestra ruta de trabajo Section -->
+    <section class="bg-[#fcf5ee] relative py-[62px] lg:py-[100px] pb-20">
+      <div class="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[114px]">
+        <!-- Header Container -->
+        <div class="mb-[29px] pb-[26px]">
+          <h2 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[40px] lg:text-[48px] leading-[normal] mb-4">
+            Nuestra ruta de trabajo
+          </h2>
+          <p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] tracking-[-0.045px] max-w-[479px]">
+            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore
+          </p>
+        </div>
+
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-[26px]">
+          <!-- Card 1: Estrategia de producto / Consultoría -->
+          <div class="bg-white rounded-[15px] overflow-hidden flex flex-col">
+            <div class="py-2 px-4 flex-shrink-0 min-h-18 flex items-center">
+              <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.3rem] leading-[normal] min-h-[30px] sm:min-h-[61px] flex items-center">
+                Estrategia de producto / Consultoría
+              </h3>
+            </div>
+                         <div class="relative flex-1">
+               <picture class="block w-full h-full relative">
+                 <img src="images/ruta-1.jpg" 
+                      alt="Estrategia de producto y consultoría" 
+                      class="w-full aspect-[2/1] lg:aspect-[1/0.6] object-cover" />
+                <div class="absolute top-4 left-4">
+                  <span class="font-['Source_Sans_Pro'] font-black text-white text-[7rem] leading-[7rem] tracking-[-0.35px] opacity-80 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
+                    1
+                  </span>
+                </div>
+              </picture>
+            </div>
+          </div>
+
+          <!-- Card 2: Automatización -->
+          <div class="bg-white rounded-[15px] overflow-hidden flex flex-col">
+            <div class="py-2 px-4 flex-shrink-0 min-h-18 flex items-center">
+              <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.3rem] leading-[normal] min-h-[30px] sm:min-h-[61px] flex items-center">
+                Automatización
+              </h3>
+            </div>
+            <div class="relative flex-1">
+              <picture class="block w-full h-full relative">
+                <img src="images/proy-2.jpg" 
+                     alt="Automatización de procesos" 
+                     class="w-full aspect-[2/1] lg:aspect-[1/0.6] object-cover" />
+                <div class="absolute top-4 left-4">
+                  <span class="font-['Source_Sans_Pro'] font-black text-white text-[7rem] leading-[7rem] tracking-[-0.35px] opacity-80 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
+                    2
+                  </span>
+                </div>
+              </picture>
+            </div>
+          </div>
+
+          <!-- Card 3: Diseño centrado en el usuario -->
+          <div class="bg-white rounded-[15px] overflow-hidden flex flex-col">
+            <div class="py-2 px-4 flex-shrink-0 min-h-18 flex items-center">
+              <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.3rem] leading-[normal] min-h-[30px] sm:min-h-[61px] flex items-center">
+                Diseño centrado en el usuario
+              </h3>
+            </div>
+            <div class="relative flex-1">
+              <picture class="block w-full h-full relative">
+                <img src="images/proy-1.jpg" 
+                     alt="Diseño centrado en el usuario" 
+                     class="w-full aspect-[2/1] lg:aspect-[1/0.6] object-cover" />
+                <div class="absolute top-4 left-4">
+                  <span class="font-['Source_Sans_Pro'] font-black text-white text-[7rem] leading-[7rem] tracking-[-0.35px] opacity-80 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
+                    3
+                  </span>
+                </div>
+              </picture>
+            </div>
+          </div>
+
+          <!-- Card 4: Desarrollo e implementación -->
+          <div class="bg-white rounded-[15px] overflow-hidden flex flex-col">
+            <div class="py-2 px-4 flex-shrink-0 min-h-18 flex items-center">
+              <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.3rem] leading-[normal] min-h-[30px] sm:min-h-[61px] flex items-center">
+                Desarrollo e implementación
+              </h3>
+            </div>
+            <div class="relative flex-1">
+              <picture class="block w-full h-full relative">
+                <img src="images/proy-2.jpg" 
+                     alt="Desarrollo e implementación de soluciones" 
+                     class="w-full aspect-[2/1] lg:aspect-[1/0.6] object-cover" />
+                <div class="absolute top-4 left-4">
+                  <span class="font-['Source_Sans_Pro'] font-black text-white text-[7rem] leading-[7rem] tracking-[-0.35px] opacity-80 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
+                    4
+                  </span>
+                </div>
+              </picture>
+            </div>
+          </div>
+
+          <!-- Card 5: Infraestructura -->
+          <div class="bg-white rounded-[15px] overflow-hidden flex flex-col">
+            <div class="py-2 px-4 flex-shrink-0 min-h-18 flex items-center">
+              <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.3rem] leading-[normal] min-h-[30px] sm:min-h-[61px] flex items-center">
+                Infraestructura
+              </h3>
+            </div>
+            <div class="relative flex-1">
+              <picture class="block w-full h-full relative">
+                <img src="images/proy-1.jpg" 
+                     alt="Infraestructura tecnológica" 
+                     class="w-full aspect-[2/1] lg:aspect-[1/0.6] object-cover" />
+                <div class="absolute top-4 left-4">
+                  <span class="font-['Source_Sans_Pro'] font-black text-white text-[7rem] leading-[7rem] tracking-[-0.35px] opacity-80 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
+                    5
+                  </span>
+                </div>
+              </picture>
+            </div>
+          </div>
+
+          <!-- Card 6: Entrenamiento y soporte -->
+          <div class="bg-white rounded-[15px] overflow-hidden flex flex-col">
+            <div class="py-2 px-4 flex-shrink-0 min-h-18 flex items-center">
+              <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.3rem] leading-[normal] min-h-[0px] sm:min-h-[61px] flex items-center">
+                Entrenamiento y soporte
+              </h3>
+            </div>
+            <div class="relative flex-1">
+              <picture class="block w-full h-full relative">
+                <img src="images/proy-2.jpg" 
+                     alt="Entrenamiento y soporte técnico" 
+                     class="w-full aspect-[2/1] lg:aspect-[1/0.6] object-cover" />
+                <div class="absolute top-4 left-4">
+                  <span class="font-['Source_Sans_Pro'] font-black text-white text-[7rem] leading-[7rem] tracking-[-0.35px] opacity-80 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
+                    6
+                  </span>
+                </div>
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Clientes -->
+    <section class="bg-white relative py-14 lg:py-[100px]">
+      <div class="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <!-- Header de la sección -->
+        <div class="mb-8">
+          <h2 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[32px] sm:text-[36px] lg:text-[48px] leading-[normal] mb-4">
+            Empresas que han confiado en nosotros
+          </h2>
+          <p class="font-['Source_Sans_Pro'] text-[#363330] text-[18px] sm:text-[20px] lg:text-[22px] leading-[28px] sm:leading-[32px] lg:leading-[34px] tracking-[-0.045px] lg:tracking-[-0.055px] max-w-[677px]">
+            Hemos trabajado con clientes de diversas industrias como medios de comunicación, universidades, fintech, bancos, entre otros.
+          </p>
+        </div>
+
+        <!-- Grid de logos de clientes -->
+        <div class="grid grid-cols-3 lg:grid-cols-7 gap-2 lg:gap-6 grayscale">
+          <!-- Cliente 01 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 01.png" alt="Cliente 01" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 02 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 02.png" alt="Cliente 02" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 03 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 03.png" alt="Cliente 03" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 04 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 04.png" alt="Cliente 04" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 05 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 05.png" alt="Cliente 05" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 06 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 06.png" alt="Cliente 06" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 07 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 07.png" alt="Cliente 07" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 08 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 08.png" alt="Cliente 08" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 09 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 09.png" alt="Cliente 09" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 10 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 10.png" alt="Cliente 10" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 11 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 11.png" alt="Cliente 11" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 12 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 12.png" alt="Cliente 12" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 13 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 13.png" alt="Cliente 13" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 14 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 14.png" alt="Cliente 14" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 15 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 15.png" alt="Cliente 15" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 16 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 16.png" alt="Cliente 16" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 17 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 17.png" alt="Cliente 17" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 18 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 18.png" alt="Cliente 18" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 19 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 19.png" alt="Cliente 19" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 20 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 20.png" alt="Cliente 20" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 21 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 21.png" alt="Cliente 21" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 22 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 22.png" alt="Cliente 22" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 23 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 23.png" alt="Cliente 23" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 24 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 24.png" alt="Cliente 24" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Cliente 25 -->
+          <div class="flex items-center justify-center">
+            <div class="w-full h-full flex items-center justify-center">
+              <img src="images/logos-clientes/client 25.png" alt="Cliente 25" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#363330] relative">
+    <!-- Contenedor principal -->
+    <div class="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Primera parte: 4 columnas -->
+      <div class="pt-16 pb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
+          
+          <!-- Columna 1: Datos de contacto -->
+          <div class="flex flex-col gap-6 lg:col-span-5">
+            <h3 class="font-['Vollkorn'] font-semibold text-[#e2bc8d] text-[22px] leading-[normal]">
+              Escríbenos y comencemos a hacer tu proyecto realidad.
+            </h3>
+            
+            <!-- WhatsApp -->
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center">
+                <i class="fab fa-whatsapp text-white text-[24px]"></i>
+              </div>
+              <p class="font-['Source_Sans_Pro'] text-white text-[21px] tracking-[0.5775px]">
+                WhatsApp +57 311 599 2255
+              </p>
+            </div>
+            
+            <!-- Email -->
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 flex-shrink-0 flex items-center justify-center">
+                <i class="fas fa-envelope text-white text-[20px]"></i>
+              </div>
+              <p class="font-['Source_Sans_Pro'] text-white text-[20px] tracking-[0.55px]">
+                info@simian.co
+              </p>
+            </div>
+          </div>
+          
+          <!-- Columna 2: Menú Servicios -->
+          <div class="flex flex-col gap-2 lg:col-span-3">
+            <h4 class="font-['Source_Sans_Pro'] font-semibold text-[#e2bc8d] text-[16px] tracking-[0.28px] leading-[28px]">
+              SERVICIOS
+            </h4>
+            <nav class="flex flex-col gap-2">
+              <a href="#" class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Estrategia de negocio
+              </a>
+              <a href="#" class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Diseño
+              </a>
+              <a href="#" class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Desarrollo
+              </a>
+              <a href="#" class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Entrenamiento y soporte
+              </a>
+            </nav>
+          </div>
+          
+          <!-- Columna 3: Menú Nosotros -->
+          <div class="flex flex-col gap-2 lg:col-span-2">
+            <h4 class="font-['Source_Sans_Pro'] font-semibold text-[#e2bc8d] text-[16px] tracking-[0.28px] leading-[28px]">
+              NOSOTROS
+            </h4>
+            <nav class="flex flex-col gap-2">
+              <a href="#" class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Portafolio
+              </a>
+              <a href="#" class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Conócenos
+              </a>
+              <a href="#" class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Contáctanos
+              </a>
+            </nav>
+          </div>
+          
+          <!-- Columna 4: Redes sociales -->
+          <div class="flex flex-col gap-2 lg:col-span-2">
+            <h4 class="font-['Source_Sans_Pro'] font-semibold text-[#e2bc8d] text-[16px] tracking-[0.28px] leading-[28px]">
+              SÍGUENOS
+            </h4>
+            <div class="flex gap-6">
+              <!-- Facebook -->
+              <a href="#" class="text-white text-[20px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              
+              <!-- Twitter/X -->
+              <a href="#" class="text-white text-[20px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              
+              <!-- Instagram -->
+              <a href="#" class="text-white text-[20px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                <i class="fab fa-instagram"></i>
+              </a>
+              
+              <!-- LinkedIn -->
+              <a href="#" class="text-white text-[20px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Segunda parte: Logo, links y copyright -->
+      <div class="border-t border-[#6B6561]/20 py-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          
+          <!-- Logo a la izquierda -->
+          <div class="flex-shrink-0">
+            <img src="images/logo-simian-white.svg" alt="Simian" class="h-[40px] w-auto" />
+          </div>
+          
+          <!-- Links y copyright a la derecha -->
+          <div class="flex flex-col sm:flex-row items-center gap-6">
+            <div class="flex items-center gap-6">
+              <a href="#" class="font-['Source_Sans_Pro'] text-white text-[16px] tracking-[-0.04px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Política de cookies
+              </a>
+              <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+              <a href="#" class="font-['Source_Sans_Pro'] text-white text-[16px] tracking-[-0.04px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Política de tratamiento de datos
+              </a>
+            </div>
+            <div class="w-1.5 h-1.5 bg-white rounded-full hidden sm:block"></div>
+            <p class="font-['Source_Sans_Pro'] text-white text-[16px] tracking-[-0.04px] leading-[28px] text-center sm:text-left">
+              © Simian SAS - Todos los derechos reservados - 2022
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
