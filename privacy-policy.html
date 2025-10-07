@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simian: Desarrollo web, WordPress y automatizaciones con IA</title>
+
+		<!-- Fuentes de Google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@400;600;700&family=Vollkorn:wght@400;500;600;700&display=swap"
+			rel="stylesheet" />
+
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+
+		<!-- Meta tags para SEO -->
+		<meta
+			name="description"
+			content="Soluciones en WordPress, PWAs y automatizaciones con IA. UX/UI, Core Web Vitals y alta disponibilidad para marcas que necesitan escalar." />
+		<meta name="keywords" content="política de privacidad, tratamiento de datos, protección de datos, simian, RGPD" />
+		<meta name="author" content="Simian" />
+
+		<!-- Open Graph -->
+		<meta property="og:title" content="Política de Tratamiento de Datos | Simian" />
+		<meta
+			property="og:description"
+			content="Conoce nuestro portafolio de proyectos digitales: PWAs, sitios web, aplicaciones móviles y automatizaciones desarrolladas para diversos sectores." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="" />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="src/assets/images/favicon.png" />
+
+		<!-- Importar estilos de Tailwind CSS -->
+		<link rel="stylesheet" href="src/styles/main.css" />
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-50YE9GPTJM"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-50YE9GPTJM");
+		</script>
+	</head>
+	<body class="min-h-screen">
+		<!-- Header/Navigation -->
+		<header class="header-figma bg-[var(--Shadows-100-dark-trunk)]">
+			<div class="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-4">
+				<nav class="flex items-center justify-between h-[100px]">
+					<!-- Logo -->
+					<div class="logo-container">
+						<a href="index.html" class="group">
+							<img src="src/assets/images/logo-simian.svg" alt="Simian Logo" class="w-auto h-12 transition-transform duration-300 group-hover:scale-105" />
+						</a>
+					</div>
+
+					<!-- Desktop Navigation -->
+					<div class="items-center hidden gap-10 lg:flex">
+						<!-- Menu Item 01 - Inicio -->
+						<a
+							href="index.html"
+							class="flex flex-col gap-0.5 items-start px-2.5 py-1 rounded-md hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300">
+							<div class="menu-item">Inicio</div>
+						</a>
+
+						<!-- Menu Item 02 - Portafolio -->
+						<a
+							href="work.html"
+							class="flex flex-col gap-0.5 items-start px-2.5 py-1 rounded-md hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300">
+							<div class="menu-item">Portafolio</div>
+						</a>
+
+						<!-- Menu Item 03 - Servicios -->
+						<a
+							href="services.html"
+							class="flex flex-col gap-0.5 items-start px-2.5 py-1 rounded-md hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300">
+							<div class="menu-item">Servicios</div>
+						</a>
+
+						<!-- Menu Item 04 - Contacto -->
+						<a
+							href="contact.html"
+							class="flex flex-col gap-0.5 items-start px-2.5 py-1 rounded-md hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300">
+							<div class="menu-item">Contacto</div>
+						</a>
+					</div>
+
+					<!-- Mobile Menu Button -->
+					<button
+						id="mobile-menu-button"
+						class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-[var(--Primary-Dark-trunk)] hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[var(--Primary-Dark-trunk)] focus:ring-offset-2">
+						<svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+						<svg id="close-icon" class="hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+						</svg>
+					</button>
+				</nav>
+
+				<!-- Mobile Navigation Menu -->
+				<div id="mobile-menu" class="hidden lg:hidden">
+					<div class="py-4 border-t border-gray-200/50">
+						<div class="flex flex-col space-y-4">
+							<a href="index.html" class="text-[var(--Primary-Dark-trunk)] font-semibold text-lg py-2 px-4 rounded-md"> Inicio </a>
+							<a href="work.html" class="text-[var(--Primary-Dark-trunk)] font-semibold text-lg py-2 px-4 rounded-md"> Portafolio </a>
+							<a href="services.html" class="text-[var(--Primary-Dark-trunk)] font-semibold text-lg py-2 px-4 rounded-md"> Servicios </a>
+							<a href="contact.html" class="text-[var(--Primary-Dark-trunk)] font-semibold text-lg py-2 px-4 rounded-md"> Contacto </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Main Content -->
+		<main class="relative bg-white">
+			<!-- Hero Section -->
+			<section class="relative py-16 lg:py-24">
+				<div class="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8">
+					<!-- Page Title -->
+					<div class="mb-12 text-center">
+						<h1 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[36px] sm:text-[40px] lg:text-[48px] leading-[1.1] mb-4">
+							Política de Tratamiento de Datos Personales
+						</h1>
+						<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] sm:text-[20px] leading-[28px]">
+							Información sobre cómo recopilamos, procesamos y protegemos tus datos personales
+						</p>
+					</div>
+
+					<!-- Content -->
+					<div class="prose prose-lg max-w-none">
+						<!-- Última actualización -->
+						<div class="bg-[#fcf5ee] border-l-4 border-[#0b785d] p-6 mb-8 rounded-r-lg">
+							<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] mb-0"><strong>Última actualización:</strong> Enero 2025</p>
+						</div>
+
+						<!-- Sección 1: Información del responsable -->
+						<section class="mb-8">
+							<h2 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[28px] sm:text-[32px] leading-[1.2] mb-4">
+								1. Información del Responsable del Tratamiento
+							</h2>
+							<div class="p-6 rounded-lg bg-gray-50">
+								<ul class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] space-y-2">
+									<li><strong>Razón Social:</strong> Simian SAS</li>
+									<li><strong>NIT:</strong> 900.639.528-5</li>
+									<li><strong>Dirección:</strong> Carrera 7b #126-71</li>
+									<li><strong>Teléfono:</strong> +57 311 599 2255</li>
+									<li><strong>Email:</strong> <a href="mailto:info@simian.co" class="text-[#0b785d] hover:underline">info@simian.co</a></li>
+									<li><strong>Sitio web:</strong> www.simian.co</li>
+								</ul>
+							</div>
+						</section>
+
+						<!-- Sección 2: Finalidad del tratamiento -->
+						<section class="mb-8">
+							<h2 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[28px] sm:text-[32px] leading-[1.2] mb-4">
+								2. Finalidades del Tratamiento de Datos
+							</h2>
+							<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] mb-4">
+								Los datos personales que recopilamos son tratados para las siguientes finalidades:
+							</p>
+
+							<div class="space-y-4">
+								<div class="p-4 border border-gray-200 rounded-lg">
+									<h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[18px] mb-2">Servicios comerciales</h3>
+									<ul class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px] list-disc list-inside space-y-1">
+										<li>Prestación de servicios de desarrollo tecnológico</li>
+										<li>Atención al cliente y soporte técnico</li>
+										<li>Facturación y gestión contable</li>
+										<li>Seguimiento de proyectos</li>
+									</ul>
+								</div>
+
+								<div class="p-4 border border-gray-200 rounded-lg">
+									<h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[18px] mb-2">Comunicaciones y marketing</h3>
+									<ul class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px] list-disc list-inside space-y-1">
+										<li>Envío de información comercial y promocional</li>
+										<li>Newsletters y actualizaciones</li>
+										<li>Invitaciones a eventos y webinars</li>
+										<li>Estudios de mercado y encuestas de satisfacción</li>
+									</ul>
+								</div>
+
+								<div class="p-4 border border-gray-200 rounded-lg">
+									<h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[18px] mb-2">Análisis y mejora</h3>
+									<ul class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px] list-disc list-inside space-y-1">
+										<li>Análisis estadístico del sitio web</li>
+										<li>Mejora de nuestros servicios</li>
+										<li>Personalización de la experiencia del usuario</li>
+										<li>Prevención de fraude y seguridad</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<!-- Sección 3: Tipos de datos recopilados -->
+						<section class="mb-8">
+							<h2 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[28px] sm:text-[32px] leading-[1.2] mb-4">
+								3. Tipos de Datos Personales que Recopilamos
+							</h2>
+
+							<div class="space-y-6">
+								<!-- Datos de identificación -->
+								<div class="p-6 rounded-lg bg-gray-50">
+									<h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[20px] mb-3">Datos de identificación</h3>
+									<ul class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px] list-disc list-inside space-y-1">
+										<li>Nombre completo</li>
+										<li>Número de identificación</li>
+										<li>Cargo y empresa</li>
+										<li>Fotografía (cuando aplique)</li>
+									</ul>
+								</div>
+
+								<!-- Datos de contacto -->
+								<div class="p-6 rounded-lg bg-gray-50">
+									<h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[20px] mb-3">Datos de contacto</h3>
+									<ul class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px] list-disc list-inside space-y-1">
+										<li>Correo electrónico</li>
+										<li>Número de teléfono</li>
+										<li>Dirección física</li>
+										<li>Ciudad y país</li>
+									</ul>
+								</div>
+
+								<!-- Datos técnicos -->
+								<div class="p-6 rounded-lg bg-gray-50">
+									<h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[20px] mb-3">Datos técnicos y de navegación</h3>
+									<ul class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px] list-disc list-inside space-y-1">
+										<li>Dirección IP</li>
+										<li>Tipo de navegador y dispositivo</li>
+										<li>Páginas visitadas</li>
+										<li>Tiempo de permanencia</li>
+										<li>Cookies y tecnologías similares</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<!-- Sección 4: Legitimación -->
+						<section class="mb-8">
+							<h2 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[28px] sm:text-[32px] leading-[1.2] mb-4">4. Base Legal para el Tratamiento</h2>
+							<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] mb-4">
+								El tratamiento de tus datos personales se basa en las siguientes bases legales:
+							</p>
+							<ul class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] list-disc list-inside space-y-2">
+								<li><strong>Consentimiento:</strong> Cuando has dado tu consentimiento explícito para el tratamiento</li>
+								<li><strong>Ejecución contractual:</strong> Para el cumplimiento de contratos de servicios</li>
+								<li><strong>Interés legítimo:</strong> Para mejorar nuestros servicios y comunicaciones comerciales</li>
+								<li><strong>Obligación legal:</strong> Para cumplir con requisitos legales y normativos</li>
+							</ul>
+						</section>
+
+						<!-- Sección 5: Conservación de datos -->
+						<section class="mb-8">
+							<h2 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[28px] sm:text-[32px] leading-[1.2] mb-4">5. Tiempo de Conservación de los Datos</h2>
+							<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] mb-4">
+								Conservamos tus datos personales durante el tiempo necesario para cumplir con las finalidades establecidas:
+							</p>
+							<div class="space-y-3">
+								<div class="flex items-start gap-3">
+									<div class="w-2 h-2 bg-[#0b785d] rounded-full mt-3 flex-shrink-0"></div>
+									<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px]">
+										<strong>Datos comerciales:</strong> Durante la relación comercial y hasta 10 años después por obligaciones legales
+									</p>
+								</div>
+								<div class="flex items-start gap-3">
+									<div class="w-2 h-2 bg-[#0b785d] rounded-full mt-3 flex-shrink-0"></div>
+									<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px]">
+										<strong>Datos de marketing:</strong> Hasta que retires tu consentimiento o solicites la eliminación
+									</p>
+								</div>
+								<div class="flex items-start gap-3">
+									<div class="w-2 h-2 bg-[#0b785d] rounded-full mt-3 flex-shrink-0"></div>
+									<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px]">
+										<strong>Datos de navegación:</strong> Hasta 24 meses según la finalidad analítica
+									</p>
+								</div>
+							</div>
+						</section>
+
+						<!-- Sección 6: Derechos -->
+						<section class="mb-8">
+							<h2 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[28px] sm:text-[32px] leading-[1.2] mb-4">
+								6. Tus Derechos como Titular de los Datos
+							</h2>
+							<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] mb-4">
+								Como titular de los datos personales, tienes los siguientes derechos:
+							</p>
+
+							<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+								<div class="p-4 border border-blue-200 rounded-lg bg-blue-50">
+									<h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[16px] mb-2">Derecho de acceso</h3>
+									<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[14px] leading-[20px]">Conocer qué datos tenemos sobre ti</p>
+								</div>
+
+								<div class="p-4 border border-green-200 rounded-lg bg-green-50">
+									<h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[16px] mb-2">Derecho de rectificación</h3>
+									<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[14px] leading-[20px]">Corregir datos inexactos o incompletos</p>
+								</div>
+
+								<div class="p-4 border border-yellow-200 rounded-lg bg-yellow-50">
+									<h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[16px] mb-2">Derecho de supresión</h3>
+									<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[14px] leading-[20px]">Solicitar la eliminación de tus datos</p>
+								</div>
+
+								<div class="p-4 border border-purple-200 rounded-lg bg-purple-50">
+									<h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[16px] mb-2">Derecho de portabilidad</h3>
+									<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[14px] leading-[20px]">Recibir tus datos en formato estructurado</p>
+								</div>
+
+								<div class="p-4 border border-red-200 rounded-lg bg-red-50">
+									<h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[16px] mb-2">Derecho de oposición</h3>
+									<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[14px] leading-[20px]">Oponerte al tratamiento de tus datos</p>
+								</div>
+
+								<div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
+									<h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[16px] mb-2">Derecho de limitación</h3>
+									<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[14px] leading-[20px]">Limitar el tratamiento en ciertas circunstancias</p>
+								</div>
+							</div>
+						</section>
+
+						<!-- Sección 7: Seguridad -->
+						<section class="mb-8">
+							<h2 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[28px] sm:text-[32px] leading-[1.2] mb-4">7. Medidas de Seguridad</h2>
+							<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] mb-4">
+								Implementamos medidas técnicas y organizativas apropiadas para proteger tus datos personales:
+							</p>
+							<ul class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] list-disc list-inside space-y-2">
+								<li>Cifrado de datos en tránsito y en reposo</li>
+								<li>Acceso restringido basado en roles y necesidades</li>
+								<li>Sistemas de backup y recuperación</li>
+								<li>Monitoreo continuo de seguridad</li>
+								<li>Capacitación regular del personal</li>
+								<li>Auditorías de seguridad periódicas</li>
+							</ul>
+						</section>
+
+						<!-- Sección 8: Transferencias internacionales -->
+						<section class="mb-8">
+							<h2 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[28px] sm:text-[32px] leading-[1.2] mb-4">8. Transferencias Internacionales</h2>
+							<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] mb-4">
+								Algunos de nuestros servicios pueden implicar transferencias de datos a países fuera de Colombia. En estos casos:
+							</p>
+							<ul class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] list-disc list-inside space-y-2">
+								<li>Nos aseguramos de que el país de destino tenga un nivel adecuado de protección</li>
+								<li>Implementamos garantías adicionales como cláusulas contractuales tipo</li>
+								<li>Solo trabajamos con proveedores que cumplan con estándares internacionales de protección de datos</li>
+							</ul>
+						</section>
+
+						<!-- Sección 9: Cómo ejercer tus derechos -->
+						<section class="mb-8">
+							<h2 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[28px] sm:text-[32px] leading-[1.2] mb-4">9. Cómo Ejercer tus Derechos</h2>
+							<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] mb-4">
+								Para ejercer cualquiera de tus derechos, puedes contactarnos a través de:
+							</p>
+							<div class="bg-[#fcf5ee] p-6 rounded-lg">
+								<ul class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px] space-y-2">
+									<li>
+										<strong>Email:</strong> <a href="mailto:info@simian.co" class="text-[#0b785d] hover:underline">info@simian.co</a> (Asunto: "Ejercicio de
+										Derechos ARCO")
+									</li>
+									<li>
+										<strong>Teléfono:</strong>
+										<a href="https://wa.me/573115992255" target="_blank" rel="noopener noreferrer" class="text-[#0b785d] hover:underline">+57 311 599 2255</a>
+									</li>
+									<li><strong>Tiempo de respuesta:</strong> Máximo 15 días hábiles</li>
+								</ul>
+							</div>
+							<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px] mt-4">
+								<strong>Información requerida:</strong> Para procesar tu solicitud, necesitaremos verificar tu identidad mediante documento de identificación.
+							</p>
+						</section>
+
+						<!-- Sección 10: Modificaciones -->
+						<section class="mb-8">
+							<h2 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[28px] sm:text-[32px] leading-[1.2] mb-4">10. Modificaciones a esta Política</h2>
+							<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] mb-4">
+								Nos reservamos el derecho a modificar esta política en cualquier momento. Cuando realicemos cambios significativos:
+							</p>
+							<ul class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] leading-[28px] list-disc list-inside space-y-2">
+								<li>Te notificaremos por correo electrónico</li>
+								<li>Publicaremos un aviso en nuestro sitio web</li>
+								<li>Actualizaremos la fecha de "última modificación"</li>
+								<li>Te daremos la oportunidad de revisar y aceptar los cambios</li>
+							</ul>
+						</section>
+
+						<!-- Nota final -->
+						<div class="p-6 border border-green-200 rounded-lg bg-green-50">
+							<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px] mb-2">
+								<strong>Compromiso con la privacidad:</strong> En Simian, tu privacidad es fundamental. Nos comprometemos a tratar tus datos con el máximo
+								respeto y transparencia, cumpliendo siempre con la normativa vigente de protección de datos.
+							</p>
+							<p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[16px] leading-[24px] mb-0">
+								Si tienes alguna duda sobre esta política, no dudes en contactarnos. Estamos aquí para ayudarte.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="bg-[#363330] relative">
+			<!-- Contenedor principal -->
+			<div class="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
+				<!-- Primera parte: 4 columnas -->
+				<div class="pt-16 pb-12">
+					<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-12 lg:gap-12">
+						<!-- Columna 1: Datos de contacto -->
+						<div class="flex flex-col gap-6 lg:col-span-5">
+							<h3 class="font-['Vollkorn'] font-semibold text-[#e2bc8d] text-[22px] leading-[normal]">Hablemos de tu proyecto:</h3>
+
+							<!-- WhatsApp -->
+							<div class="flex items-center gap-2">
+								<div class="flex items-center justify-center flex-shrink-0 w-6 h-6">
+									<i class="fab fa-whatsapp text-white text-[24px]"></i>
+								</div>
+								<p class="font-['Source_Sans_Pro'] text-white text-[21px] tracking-[0.5775px]">
+									<a
+										href="https://wa.me/573115992255"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="hover:text-[var(--Primary-Banana-light)] transition-colors duration-200"
+										>WhatsApp +57 311 599 2255</a
+									>
+								</p>
+							</div>
+
+							<!-- Email -->
+							<div class="flex items-center gap-2">
+								<div class="flex items-center justify-center flex-shrink-0 w-6 h-6">
+									<i class="fas fa-envelope text-white text-[20px]"></i>
+								</div>
+								<p class="font-['Source_Sans_Pro'] text-white text-[20px] tracking-[0.55px]">
+									<a href="mailto:info@simian.co" class="hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">info@simian.co</a>
+								</p>
+							</div>
+						</div>
+
+						<!-- Columna 2: Menú Servicios -->
+						<div class="flex flex-col gap-2 lg:col-span-3">
+							<h4 class="font-['Source_Sans_Pro'] font-semibold text-[#e2bc8d] text-[16px] tracking-[0.28px] leading-[28px]">SERVICIOS</h4>
+							<ul class="space-y-1 list-disc">
+								<li class="font-['Source_Sans_Pro'] text-[#f3f2f1]/70 text-[18px] tracking-[-0.045px] leading-[22px]">Estrategia y consultoría digital</li>
+								<li class="font-['Source_Sans_Pro'] text-[#f3f2f1]/70 text-[18px] tracking-[-0.045px] leading-[22px]">Automatizaciones con IA</li>
+								<li class="font-['Source_Sans_Pro'] text-[#f3f2f1]/70 text-[18px] tracking-[-0.045px] leading-[22px]">UX/UI centrado en el usuario</li>
+								<li class="font-['Source_Sans_Pro'] text-[#f3f2f1]/70 text-[18px] tracking-[-0.045px] leading-[22px]">Desarrollo web y móvil</li>
+								<li class="font-['Source_Sans_Pro'] text-[#f3f2f1]/70 text-[18px] tracking-[-0.045px] leading-[22px]">Infraestructura, seguridad y DevOps</li>
+								<li class="font-['Source_Sans_Pro'] text-[#f3f2f1]/70 text-[18px] tracking-[-0.045px] leading-[22px]">Soporte y mejora continua</li>
+							</ul>
+						</div>
+
+						<!-- Columna 3: Menú Nosotros -->
+						<div class="flex flex-col gap-2 lg:col-span-2">
+							<h4 class="font-['Source_Sans_Pro'] font-semibold text-[#e2bc8d] text-[16px] tracking-[0.28px] leading-[28px]">NOSOTROS</h4>
+							<nav class="flex flex-col gap-2">
+								<a
+									href="work.html"
+									class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+									Portafolio
+								</a>
+								<a
+									href="services.html"
+									class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+									Servicios
+								</a>
+								<a
+									href="contact.html"
+									class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+									Contáctanos
+								</a>
+							</nav>
+						</div>
+
+						<!-- Columna 4: Redes sociales -->
+						<div class="flex flex-col gap-2 lg:col-span-2">
+							<h4 class="font-['Source_Sans_Pro'] font-semibold text-[#e2bc8d] text-[16px] tracking-[0.28px] leading-[28px]">SÍGUENOS</h4>
+							<div class="flex gap-6">
+								<!-- LinkedIn -->
+								<a
+									href="https://www.linkedin.com/company/simian-co/"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="text-white text-[20px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+									<i class="fab fa-linkedin-in"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Segunda parte: Logo, links y copyright -->
+				<div class="border-t border-[#6B6561]/20 py-8">
+					<div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+						<!-- Logo a la izquierda -->
+						<div class="flex-shrink-0">
+							<img src="src/assets/images/logo-simian-white.svg" alt="Simian" class="h-[40px] w-auto" />
+						</div>
+
+						<!-- Links y copyright a la derecha -->
+						<div class="flex flex-col items-center gap-6 sm:flex-row">
+							<div class="flex items-center gap-6">
+								<a
+									href="cookies.html"
+									class="font-['Source_Sans_Pro'] text-white text-[16px] tracking-[-0.04px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+									Política de cookies
+								</a>
+								<div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+								<a
+									href="privacy-policy.html"
+									class="font-['Source_Sans_Pro'] text-white text-[16px] tracking-[-0.04px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+									Política de tratamiento de datos
+								</a>
+							</div>
+							<div class="w-1.5 h-1.5 bg-white rounded-full hidden sm:block"></div>
+							<p class="font-['Source_Sans_Pro'] text-white text-[16px] tracking-[-0.04px] leading-[28px] text-center sm:text-left">
+								© Simian SAS - Todos los derechos reservados - 2025
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Script principal -->
+		<script type="module" src="src/main.js"></script>
+	</body>
+</html>

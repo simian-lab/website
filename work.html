@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simian: Desarrollo web, WordPress y automatizaciones con IA</title>
+  
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@400;600;700&family=Vollkorn:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Meta tags para SEO -->
+  <meta name="description" content="Soluciones en WordPress, PWAs y automatizaciones con IA. UX/UI, Core Web Vitals y alta disponibilidad para marcas que necesitan escalar.">
+  <meta name="keywords" content="portafolio digital, casos de éxito, PWA, desarrollo web, apps móviles, automatizaciones IA, proyectos digitales">
+  <meta name="author" content="Simian">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portafolio de proyectos digitales | Simian - PWAs, webs y apps móviles">
+  <meta property="og:description" content="Conoce nuestro portafolio de proyectos digitales: PWAs, sitios web, aplicaciones móviles y automatizaciones desarrolladas para diversos sectores.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="src/assets/images/favicon.png">
+  
+  <!-- Importar estilos de Tailwind CSS -->
+  <link rel="stylesheet" href="src/styles/main.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-50YE9GPTJM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-50YE9GPTJM');
+  </script>
+</head>
+<body class="min-h-screen">
+  
+  <!-- Header/Navigation -->
+  <header class="header-figma bg-[var(--Shadows-100-dark-trunk)]">
+    <div class="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-4">
+      <nav class="flex items-center justify-between h-[100px]">
+        <!-- Logo -->
+        <div class="logo-container">
+          <a href="index.html" class="group">
+            <img 
+              src="src/assets/images/logo-simian.svg" 
+              alt="Simian Logo" 
+              class="w-auto h-12 transition-transform duration-300 group-hover:scale-105"
+            />
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="items-center hidden gap-10 lg:flex">
+          <!-- Menu Item 01 - Inicio -->
+          <a href="index.html" class="flex flex-col gap-0.5 items-start px-2.5 py-1 rounded-md hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300">
+            <div class="menu-item">
+              Inicio
+            </div>
+          </a>
+          
+          <!-- Menu Item 02 - Portafolio (Active) -->
+          <a href="work.html" class="flex flex-col gap-0.5 items-center px-2.5 py-1 menu-item-active hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300">
+            <div class="menu-item">
+              Portafolio
+            </div>
+          </a>
+          
+          <!-- Menu Item 03 - Servicios -->
+          <a href="services.html" class="flex flex-col gap-0.5 items-start px-2.5 py-1 rounded-md hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300">
+            <div class="menu-item">
+              Servicios
+            </div>
+          </a>
+          
+          <!-- Menu Item 04 - Contacto -->
+          <a href="contact.html" class="flex flex-col gap-0.5 items-start px-2.5 py-1 rounded-md hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300">
+            <div class="menu-item">
+              Contacto
+            </div>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-[var(--Primary-Dark-trunk)] hover:bg-[var(--Shadows-100-dark-trunk)] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[var(--Primary-Dark-trunk)] focus:ring-offset-2">
+          <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="close-icon" class="hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden">
+        <div class="py-4 border-t border-gray-200/50">
+          <div class="flex flex-col space-y-4">
+            <a href="index.html" class="text-[var(--Primary-Dark-trunk)] font-semibold text-lg py-2 px-4 rounded-md">
+              Inicio
+            </a>
+            <a href="work.html" class="text-[var(--Primary-Dark-trunk)] font-semibold text-lg py-2 px-4 rounded-[30px] border border-[var(--Primary-Dark-trunk)]">
+              Portafolio
+            </a>
+            <a href="services.html" class="text-[var(--Primary-Dark-trunk)] font-semibold text-lg py-2 px-4 rounded-md">
+              Servicios
+            </a>
+            <a href="contact.html" class="text-[var(--Primary-Dark-trunk)] font-semibold text-lg py-2 px-4 rounded-md">
+              Contacto
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="bg-[#fcf5ee] relative">
+    <!-- Hero Section -->
+    <section class="relative">
+      <div class="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-[50px] items-start lg:items-center">
+          <!-- Left Column - Text Content -->
+          <div class="flex-1 lg:flex-[3] lg:py-24">
+            <div class="flex flex-col">
+              <h1 class="font-['Vollkorn'] font-medium text-[#0b785d] text-[36px] sm:text-[40px] lg:text-[52px] leading-[1.1] mb-3">
+                Proyectos que convierten ideas en resultados
+              </h1>
+              <p class="font-['Source_Sans_Pro'] text-[#1b1918] text-[18px] sm:text-[20px] lg:text-[24px] leading-[34px]">
+                Soluciones en diseño, desarrollo e IA de principio a fin, creadas para rendimiento, seguridad y crecimiento.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Right Column - Image -->
+          <div class="flex-1 lg:flex-[1]">
+            <img 
+              src="src/assets/images/cover-work.jpg" 
+              alt="Work Cover Image" 
+              class="object-cover aspect-[1/0.6] lg:aspect-[1/1.2] rounded-xl lg:rounded-none lg:min-w-[400px]"
+            />
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects List Section -->
+    <section class="relative lg:bg-stone-200">
+             <div class="max-w-[1140px] mx-auto px-8 lg:px-20">
+        <!-- Projects Cards  -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 relative top-[-60px]">
+          <!-- Project Card 1 -->
+          <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+            <img 
+							src="src/assets/images/work/work-1-pwa-externado.jpg" 
+							alt="PWA Universidad Externado de Colombia" 
+							class="w-full border-b border-neutral-200"
+            />
+            <div class="px-6 py-4">
+              <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                PWA Universidad Externado de Colombia
+              </h3>
+            </div>
+          </div>
+
+            <!-- Project Card 2 - Salud Total EPS -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-2-website-salud-total.jpg" 
+                alt="Salud Total EPS - Sitio web" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  Salud Total EPS - Sitio web
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 3 - EL TIEMPO Cursos -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-3-cursos-el-tiempo.jpg" 
+                alt="EL TIEMPO Cursos — E-commerce y e-learning" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  EL TIEMPO Cursos — E-commerce y e-learning
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 4 - EL TIEMPO Blogs -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-4-blogs-el-tiempo.jpg" 
+                alt="EL TIEMPO - Blogs EL TIEMPO en WordPress" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  EL TIEMPO - Blogs EL TIEMPO en WordPress
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 5 - Total Info -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-5-Totalinfo.jpg" 
+                alt="Total Info — Intranet Salud Total" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  Total Info — Intranet Salud Total
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 6 - Portal Universidad Externado -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-6-portal-web-uexternado.jpg" 
+                alt="Portal web Universidad Externado de Colombia" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  Portal web Universidad Externado de Colombia
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 7 - DaVida Club -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-7-davida-club.jpg" 
+                alt="DaVida Club — Programa de pensionados Davivienda" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  DaVida Club — Programa de pensionados Davivienda
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 8 - Portal UAO -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-8-Portal-universidad-autonoma-de-occidente.jpg" 
+                alt="Portal web Universidad Autónoma de Occidente" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  Portal web Universidad Autónoma de Occidente
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 9 - UAO Virtual -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-9-UAO-e-learning.jpg" 
+                alt="UAO Virtual — Portal e-learning" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  UAO Virtual — Portal e-learning
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 10 - 90 Minutos -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-10-90-minutos.jpg" 
+                alt="Portal web 90 Minutos" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  Portal web 90 Minutos
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 11 - App móvil Coink -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-11-coink.jpg" 
+                alt="App móvil Coink" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  App móvil Coink
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 12 - App móvil Jelpit -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-12-jelpit.jpg" 
+                alt="App móvil Jelpit" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  App móvil Jelpit
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 13 - Estrategia digital Servicio Geológico Colombiano -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-14-servicio-geologico.jpg" 
+                alt="Estrategia digital — Servicio Geológico Colombiano" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  Estrategia digital — Servicio Geológico Colombiano
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 14 - Portal web Canal 1 -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-15-canal-1.jpg" 
+                alt="Portal web Canal 1" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  Portal web Canal 1
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 15 - Sitio web Andesco -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-16-app-andesco.jpg" 
+                alt="Sitio web Andesco" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  Sitio web Andesco
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 16 - App móvil SEMANA -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-17-app-semana.jpg" 
+                alt="App móvil SEMANA" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  App móvil SEMANA
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 17 - Portal Web SPA Blu Radio -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-18-web-blu-radio.jpg" 
+                alt="Portal Web SPA Blu Radio" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  Portal Web SPA Blu Radio
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 18 - Sitio web Metric -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-19-web-metric.jpg" 
+                alt="Sitio web Metric" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  Sitio web Metric
+                </h3>
+              </div>
+            </div>
+
+            <!-- Project Card 19 - Portal web KienyKe -->
+            <div class="bg-white rounded-[15px] shadow-[0px_4px_25.4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+              <img 
+                src="src/assets/images/work/work-20-portal-kien-y-ke.jpg" 
+                alt="Portal web KienyKe" 
+                class="w-full border-b border-neutral-200"
+              />
+              <div class="px-6 py-4">
+                <h3 class="font-['Source_Sans_Pro'] font-semibold text-[#0b785d] text-[1.4rem] lg:text-[1.6rem] leading-[normal] mb-0">
+                  Portal web KienyKe
+                </h3>
+              </div>
+            </div>
+  
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#363330] relative">
+    <!-- Contenedor principal -->
+    <div class="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Primera parte: 4 columnas -->
+      <div class="pt-16 pb-12">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-12 lg:gap-12">
+          
+          <!-- Columna 1: Datos de contacto -->
+          <div class="flex flex-col gap-6 lg:col-span-5">
+            <h3 class="font-['Vollkorn'] font-semibold text-[#e2bc8d] text-[22px] leading-[normal]">
+              Hablemos de tu proyecto:
+            </h3>
+            
+            <!-- WhatsApp -->
+            <div class="flex items-center gap-2">
+              <div class="flex items-center justify-center flex-shrink-0 w-6 h-6">
+                <i class="fab fa-whatsapp text-white text-[24px]"></i>
+              </div>
+              <p class="font-['Source_Sans_Pro'] text-white text-[21px] tracking-[0.5775px]">
+                <a href="https://wa.me/573115992255" target="_blank" rel="noopener noreferrer" class="hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">WhatsApp +57 311 599 2255</a>
+              </p>
+            </div>
+            
+            <!-- Email -->
+            <div class="flex items-center gap-2">
+              <div class="flex items-center justify-center flex-shrink-0 w-6 h-6">
+                <i class="fas fa-envelope text-white text-[20px]"></i>
+              </div>
+              <p class="font-['Source_Sans_Pro'] text-white text-[20px] tracking-[0.55px]">
+                <a href="mailto:info@simian.co" class="hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">info@simian.co</a>
+              </p>
+            </div>
+          </div>
+          
+          <!-- Columna 2: Menú Servicios -->
+          <div class="flex flex-col gap-2 lg:col-span-3">
+            <h4 class="font-['Source_Sans_Pro'] font-semibold text-[#e2bc8d] text-[16px] tracking-[0.28px] leading-[28px]">
+              SERVICIOS
+            </h4>
+            <ul class="space-y-1 list-disc">
+              <li class="font-['Source_Sans_Pro'] text-[#f3f2f1]/70 text-[18px] tracking-[-0.045px] leading-[22px]">
+                Estrategia y consultoría digital
+              </li>
+              <li class="font-['Source_Sans_Pro'] text-[#f3f2f1]/70 text-[18px] tracking-[-0.045px] leading-[22px]">
+                Automatizaciones con IA
+              </li>
+              <li class="font-['Source_Sans_Pro'] text-[#f3f2f1]/70 text-[18px] tracking-[-0.045px] leading-[22px]">
+                UX/UI centrado en el usuario
+              </li>
+              <li class="font-['Source_Sans_Pro'] text-[#f3f2f1]/70 text-[18px] tracking-[-0.045px] leading-[22px]">
+                Desarrollo web y móvil
+              </li>
+              <li class="font-['Source_Sans_Pro'] text-[#f3f2f1]/70 text-[18px] tracking-[-0.045px] leading-[22px]">
+                Infraestructura, seguridad y DevOps
+              </li>
+              <li class="font-['Source_Sans_Pro'] text-[#f3f2f1]/70 text-[18px] tracking-[-0.045px] leading-[22px]">
+                Soporte y mejora continua
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Columna 3: Menú Nosotros -->
+          <div class="flex flex-col gap-2 lg:col-span-2">
+            <h4 class="font-['Source_Sans_Pro'] font-semibold text-[#e2bc8d] text-[16px] tracking-[0.28px] leading-[28px]">
+              NOSOTROS
+            </h4>
+            <nav class="flex flex-col gap-2">
+              <a href="work.html" class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Portafolio
+              </a>
+              <a href="services.html" class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Servicios
+              </a>
+              <a href="contact.html" class="font-['Source_Sans_Pro'] text-[#f3f2f1] text-[18px] tracking-[-0.045px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Contáctanos
+              </a>
+            </nav>
+          </div>
+          
+          <!-- Columna 4: Redes sociales -->
+          <div class="flex flex-col gap-2 lg:col-span-2">
+            <h4 class="font-['Source_Sans_Pro'] font-semibold text-[#e2bc8d] text-[16px] tracking-[0.28px] leading-[28px]">
+              SÍGUENOS
+            </h4>
+            <div class="flex gap-6">
+              
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/company/simian-co/" target="_blank" rel="noopener noreferrer" class="text-white text-[20px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Segunda parte: Logo, links y copyright -->
+      <div class="border-t border-[#6B6561]/20 py-8">
+        <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+          
+          <!-- Logo a la izquierda -->
+          <div class="flex-shrink-0">
+            <img src="src/assets/images/logo-simian-white.svg" alt="Simian" class="h-[40px] w-auto" />
+          </div>
+          
+          <!-- Links y copyright a la derecha -->
+          <div class="flex flex-col items-center gap-6 sm:flex-row">
+            <div class="flex items-center gap-6">
+              <a href="cookies.html" class="font-['Source_Sans_Pro'] text-white text-[16px] tracking-[-0.04px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Política de cookies
+              </a>
+              <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+              <a href="privacy-policy.html" class="font-['Source_Sans_Pro'] text-white text-[16px] tracking-[-0.04px] leading-[28px] hover:text-[var(--Primary-Banana-light)] transition-colors duration-200">
+                Política de tratamiento de datos
+              </a>
+            </div>
+            <div class="w-1.5 h-1.5 bg-white rounded-full hidden sm:block"></div>
+            <p class="font-['Source_Sans_Pro'] text-white text-[16px] tracking-[-0.04px] leading-[28px] text-center sm:text-left">
+              © Simian SAS - Todos los derechos reservados - 2025
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script específico para work page -->
+  <script type="module" src="src/work.js"></script>
+</body>
+</html>
+
